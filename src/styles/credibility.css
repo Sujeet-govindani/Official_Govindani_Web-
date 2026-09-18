@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap');
+
+/* ============================================================
+   Homepage credibility banner — ONE banner, split in two:
+     LEFT  = Meta Business Partner (dark)  — official Meta badge on a glowing pedestal
+     RIGHT = Birla Open Minds x Govindani (light) — partnership lockup with a light sheen
+   Side-by-side on desktop/tablet, stacked on mobile.
+   Namespaced .gicred. Motion is GPU-only, runs on load (readable at rest),
+   and is disabled under prefers-reduced-motion.
+   ============================================================ */
+
+.gicred-split {
+  display: grid; grid-template-columns: 1fr 1fr; width: 100%;
+  min-height: clamp(500px, 66vh, 660px);
+}
+.gicred-half {
+  position: relative; overflow: hidden; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; text-align: center;
+  gap: 20px; padding: clamp(40px, 5vw, 68px) clamp(24px, 4vw, 60px);
+}
+.gicred-half > * { position: relative; z-index: 2; }
+.gicred-inner { display: flex; flex-direction: column; align-items: center; gap: 18px; max-width: 480px; width: 100%; }
+
+.gicred-eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: 'DM Sans','Inter',sans-serif; font-weight: 700;
+  font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; margin: 0;
+}
+.gicred-eyebrow::before {
+  content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor;
+  box-shadow: 0 0 0 0 currentColor; animation: gicred-pulse 2.4s ease-out infinite;
+}
+.gicred-h {
+  font-family: 'Cormorant Garamond','EB Garamond',Georgia,serif; font-weight: 700;
+  font-size: clamp(1.85rem, 3vw, 2.75rem); line-height: 1.05; text-wrap: balance; margin: 0;
+}
+.gicred-h em { font-style: normal; }
+.gicred-sub {
+  font-family: 'DM Sans','Inter',sans-serif; font-size: clamp(.98rem, 1.2vw, 1.08rem);
+  line-height: 1.6; max-width: 42ch; margin: 0;
+}
+.gicred-cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 4px; }
+.gicred-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font-family: 'DM Sans','Inter',sans-serif; font-weight: 700; font-size: .96rem;
+  padding: 14px 26px; border-radius: 999px; text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.gicred-btn:hover { transform: translateY(-3px); }
+.gicred-btn:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+
+.gicred-rise { animation: gicred-rise .8s cubic-bezier(.2,.7,.2,1) both; }
+.gicred-rise.d1 { animation-delay: .1s; }
+.gicred-rise.d2 { animation-delay: .2s; }
+.gicred-rise.d3 { animation-delay: .3s; }
+
+/* ---------------- META half (dark) ---------------- */
+.gicred-meta { background: #070b16; color: #eef2fb; }
+.gicred-meta::before {
+  content: ""; position: absolute; inset: -20% -15% auto -15%; height: 130%;
+  background:
+    radial-gradient(50% 60% at 70% 6%, rgba(8,102,255,.6), transparent 62%),
+    radial-gradient(42% 55% at 12% 34%, rgba(120,60,255,.3), transparent 60%);
+  filter: blur(6px); z-index: 0; animation: gicred-aurora 16s ease-in-out infinite;
+}
+.gicred-meta::after {
+  content: ""; position: absolute; inset: 0; z-index: 1;
+  background-image: radial-gradient(rgba(255,255,255,.05) 1px, transparent 1px); background-size: 26px 26px;
+  mask-image: radial-gradient(circle at 50% 40%, #000, transparent 78%);
+}
+.gicred-meta .gicred-eyebrow { color: #5b9bff; }
+/* Meta half uses a Meta-style sans (Inter), not the serif — to echo Meta's own wordmark. */
+.gicred-meta .gicred-h { font-family: 'Inter','DM Sans',sans-serif; font-weight: 800; letter-spacing: -.018em; font-size: clamp(1.7rem, 2.7vw, 2.5rem); line-height: 1.08; color: #fff; }
+.gicred-meta .gicred-h em { font-weight: 800; background: linear-gradient(90deg,#0866ff,#7aa8ff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.gicred-meta .gicred-sub { color: #b9c3da; }
+.gicred-meta .gicred-sub strong { color: #fff; }
+.gicred-btn-meta { background: #0866ff; color: #fff; box-shadow: 0 12px 34px -8px rgba(8,102,255,.7); }
+.gicred-btn-meta:hover { background: #2b7bff; box-shadow: 0 18px 44px -8px rgba(8,102,255,.85); }
+.gicred-ghost-light { border: 1px solid rgba(255,255,255,.3); color: #eef2fb; }
+.gicred-ghost-light:hover { background: rgba(255,255,255,.09); }
+
+.gicred-pedestal { position: relative; display: flex; align-items: center; justify-content: center; padding: 10px; }
+.gicred-pedestal::before {
+  content: ""; position: absolute; width: 82%; height: 82%; border-radius: 50%;
+  background: radial-gradient(circle, rgba(8,102,255,.55), transparent 68%); filter: blur(26px);
+  animation: gicred-halo 4.5s ease-in-out infinite; z-index: 0;
+}
+.gicred-metabadge {
+  position: relative; z-index: 1; width: clamp(230px, 24vw, 360px); height: auto; display: block;
+  border-radius: 18px; box-shadow: 0 34px 80px -26px rgba(0,0,0,.6);
+  animation: gicred-float 6s ease-in-out infinite;
+}
+
+/* ---------------- BIRLA half (light) ---------------- */
+.gicred-birla { background: #faf5f0; color: #2a1416; }
+.gicred-birla::before {
+  content: ""; position: absolute; inset: auto -15% -30% -15%; height: 120%;
+  background:
+    radial-gradient(46% 58% at 30% 92%, rgba(171,30,35,.16), transparent 62%),
+    radial-gradient(40% 52% at 88% 12%, rgba(241,90,39,.13), transparent 60%);
+  z-index: 0;
+}
+.gicred-birla .gicred-eyebrow { color: #ab1e23; }
+.gicred-birla .gicred-h { color: #231215; }
+/* The brand name echoes the Birla logo's classical Roman-serif lettering (Cinzel). */
+.gicred-birla .gicred-h em { font-family: 'Cinzel','Cormorant Garamond',serif; font-weight: 700; letter-spacing: .01em; background: linear-gradient(90deg,#ab1e23,#e0562c); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.gicred-birla .gicred-sub { color: #5b4a4c; }
+.gicred-birla .gicred-sub strong { color: #231215; }
+.gicred-btn-birla { background: #ab1e23; color: #fff; box-shadow: 0 12px 34px -10px rgba(171,30,35,.6); }
+.gicred-btn-birla:hover { background: #c62a30; box-shadow: 0 18px 44px -10px rgba(171,30,35,.75); }
+.gicred-ghost-dark { border: 1px solid rgba(43,20,22,.28); color: #2a1416; }
+.gicred-ghost-dark:hover { background: rgba(171,30,35,.06); }
+
+/* Birla logo alone in a compact white badge — sized and styled to mirror the
+   Meta badge opposite it (same radius, soft border, tight padding — not a big
+   white block). */
+.gicred-birlacard {
+  position: relative; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  background: #fff; border: 1px solid #e9ecf0; border-radius: 18px;
+  padding: clamp(20px, 2.6vw, 32px) clamp(30px, 3.8vw, 52px);
+  box-shadow: 0 30px 72px -30px rgba(90,30,20,.38); max-width: 336px; width: 100%;
+}
+.gicred-birlacard::after {
+  content: ""; position: absolute; top: 0; bottom: 0; width: 45%;
+  background: linear-gradient(100deg, transparent, rgba(255,255,255,.7), transparent);
+  transform: translateX(-160%) skewX(-16deg); animation: gicred-sheen 6.5s ease-in-out 1.2s infinite;
+}
+.gicred-birlacard img { position: relative; z-index: 1; width: clamp(168px, 19vw, 236px); height: auto; display: block; }
+
+/* seam between halves (desktop only) */
+@media (min-width: 761px) {
+  .gicred-birla { box-shadow: inset 14px 0 40px -20px rgba(0,0,0,.35); }
+}
+
+/* ---------------- responsive: stack only on phones ---------------- */
+@media (max-width: 760px) {
+  .gicred-split { grid-template-columns: 1fr; min-height: 0; }
+  .gicred-half { padding: clamp(44px, 9vw, 64px) 22px; }
+}
+
+/* ---------------- keyframes ---------------- */
+@keyframes gicred-rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes gicred-aurora { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(4%,3%) scale(1.05); } }
+@keyframes gicred-halo { 0%,100% { opacity: .5; transform: scale(1); } 50% { opacity: .9; transform: scale(1.08); } }
+@keyframes gicred-float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes gicred-sheen { 0% { transform: translateX(-160%) skewX(-16deg); } 60%,100% { transform: translateX(320%) skewX(-16deg); } }
+@keyframes gicred-pulse { 0% { box-shadow: 0 0 0 0 currentColor; opacity: 1; } 70% { box-shadow: 0 0 0 7px transparent; opacity: .55; } 100% { box-shadow: 0 0 0 0 transparent; opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .gicred-rise, .gicred-meta::before, .gicred-pedestal::before, .gicred-metabadge, .gicred-lockup::after, .gicred-eyebrow::before { animation: none !important; }
+  .gicred-rise { opacity: 1; transform: none; }
+  .gicred-btn:hover { transform: none; }
+}

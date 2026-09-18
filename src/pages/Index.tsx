@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Header from "@/components/HomePage/Header";
 import HeroSection from "@/components/HomePage/HeroSection";
+import CredibilityBanners from "@/components/HomePage/CredibilityBanners";
 import ServicesSection from '@/components/HomePage/ServicesSection';
 import TextServicesSection from "@/components/HomePage/TextServicesSection";
 import FunkyHinglishSection from "@/components/HomePage/WhatsappInteraktSection";
@@ -32,6 +33,7 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
+        <CredibilityBanners />
         <VideoSection />
         <ServicesSection />
         <ClientTestimonialSection />
