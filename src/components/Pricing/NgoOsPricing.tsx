@@ -322,6 +322,34 @@ export default function NgoOsPricing() {
   const [pick, setPick] = useState<{ industryLabel: string; picked: string[]; described: string } | null>(null);
   const [welcome, setWelcome] = useState(false);
   const [showAllPicks, setShowAllPicks] = useState(false);
+
+  // US visitors see the Give Setu Starter plan priced in USD ($299/yr) instead
+  // of ₹25,000. Detection is one cached IP-country lookup. It is DELIBERATELY
+  // skipped when navigator.webdriver is set: prerender.mjs runs headless Chrome
+  // (webdriver=true) on a US GitHub runner, so without this guard the lookup
+  // would resolve to "US" and bake dollar pricing into the static HTML every
+  // visitor receives. Default — and the prerendered output — is always INR;
+  // only a real US browser flips it shortly after load.
+  const [isUS, setIsUS] = useState(false);
+  useEffect(() => {
+    if (typeof navigator !== 'undefined' && (navigator as { webdriver?: boolean }).webdriver) return;
+    try {
+      const cached = sessionStorage.getItem('gs.cc');
+      if (cached !== null) { setIsUS(cached === 'US'); return; }
+    } catch { /* storage blocked — fall through to the lookup */ }
+    let live = true;
+    fetch('https://ipapi.co/country/')
+      .then(r => (r.ok ? r.text() : ''))
+      .then(text => {
+        const cc = (text || '').trim().toUpperCase();
+        if (!/^[A-Z]{2}$/.test(cc)) return; // unexpected body — stay on INR
+        try { sessionStorage.setItem('gs.cc', cc); } catch { /* ignore */ }
+        if (live) setIsUS(cc === 'US');
+      })
+      .catch(() => { /* lookup failed — stay on INR */ });
+    return () => { live = false; };
+  }, []);
+
   useEffect(() => {
     try {
       const raw = sessionStorage.getItem('gs.pick');
@@ -475,11 +503,21 @@ export default function NgoOsPricing() {
               <div key={p.name} className={`plan${p.rec ? ' rec' : ''}`}>
                 {p.rec && <span className="badge">RECOMMENDED</span>}
                 <h3>{t(p.name)}</h3>
-                <div className="price">{p.annual} <span className="gst">+ 18% GST</span></div>
+                {isUS && p.name === 'STARTER' ? (
+                  <div className="price">$299 <span className="gst">/ year</span></div>
+                ) : (
+                  <div className="price">{p.annual} <span className="gst">+ 18% GST</span></div>
+                )}
                 <ul>
-                  <li>Monthly {p.monthly} + 18% GST</li>
-                  <li>3 months (−8%) {p.q} + 18% GST</li>
-                  <li>6 months (−10%) {p.h} + 18% GST</li>
+                  {isUS && p.name === 'STARTER' ? (
+                    <li>Billed annually · international pricing (no GST)</li>
+                  ) : (
+                    <>
+                      <li>Monthly {p.monthly} + 18% GST</li>
+                      <li>3 months (−8%) {p.q} + 18% GST</li>
+                      <li>6 months (−10%) {p.h} + 18% GST</li>
+                    </>
+                  )}
                   <li>{t('Website included, free')}: {t(p.site)}</li>
                   <li>{t(p.best)}</li>
                 </ul>
