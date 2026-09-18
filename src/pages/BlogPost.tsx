@@ -5,6 +5,7 @@ import SEO from '@/components/SEO';
 import { BLOG_META } from '@/seo/blogMeta';
 import { blogs } from '@/data/blogIndex';
 import { createBlogSchema, createBreadcrumbSchema } from '@/seo/schema';
+import { BLOG_FAQ_SCHEMA } from '@/seo/blogFaq';
 import { formatBlogDate, isoDate } from '@/lib/blogDate';
 
 marked.setOptions({
@@ -76,7 +77,7 @@ export default function BlogPost() {
         description={BLOG_META[blog.id]?.description ?? blog.excerpt}
         canonical={`https://govindaniit.com/blog/${blog.id}`}
         keywords={blog.tags.join(', ')}
-        schema={[blogSchema, breadcrumbSchema]}
+        schema={BLOG_FAQ_SCHEMA[blog.id] ? [blogSchema, breadcrumbSchema, BLOG_FAQ_SCHEMA[blog.id]] : [blogSchema, breadcrumbSchema]}
       />
 
       <div className="min-h-screen bg-[#060b13] text-white" style={{ paddingTop: "clamp(100px, 8vw, 120px)", paddingBottom: "clamp(48px, 5vw, 80px)" }}>
