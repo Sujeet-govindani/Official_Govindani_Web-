@@ -41,7 +41,7 @@ const allServicesMap: Record<string, { title: string; image: string; link: strin
 const categoryFirstCards: Record<string, { title: string; image: string; link: string }> = {
   'NGO': { title: 'NGO', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ngoicon.webp', link: '/pages/NgoPage' },
   'Real Estate': { title: 'Real Estate', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/REICON.webp', link: '/portfolio/virtual-tour' },
-  'Ecommerce': { title: 'E-Commerce', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ECOMMERCEICON.webp', link: '/pages/Ecommerce' },
+  'Ecommerce': { title: 'E-Commerce', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ECOMMERCEICON.webp', link: '/services/ecommerce' },
 };
 
 const categoryHighlights: Record<string, string[]> = {

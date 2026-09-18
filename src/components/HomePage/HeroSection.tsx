@@ -63,7 +63,7 @@ const SLIDE_TO_FOUNDER = { 10: 0, 11: 1, 12: 2, 13: 3, 14: 4, 15: 5 };
 
 const SERVICES = [
     { name: 'Custom CRM', route: '/crm' },
-    { name: 'E-Commerce', route: '/Ecommerce' },
+    { name: 'E-Commerce', route: '/services/ecommerce' },
     { name: 'Healthcare', route: '/hospital' },
     { name: 'Real Estate', route: '/real-estate' },
     { name: 'NGO', route: '/pages/NgoPage' },
@@ -1601,7 +1601,7 @@ const HeroCarousel = () => {
                             <div className="ec-sw ec-fl" style={{ width: '100%' }}><div className="ec-t1">{[...r1, ...r1].map((b, i) => (<div key={`r1m-${i}`} style={{ display: 'flex', alignItems: 'center', gap: 6, marginRight: 16, flexShrink: 0 }}><img src={b.icon} alt={b.name} style={{ height: 28, opacity: 0.82, objectFit: 'contain' }} onError={e => e.target.style.display = 'none'} /><span style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.74rem', color: ec.creamDim, fontWeight: 600, whiteSpace: 'nowrap' }}>{b.name}</span></div>))}</div></div>
                         </div>
                         <div className="hero-cta-mob" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '8px', animation: 'ec_in .59s ease-out .07s both', marginTop: 'auto' }}>
-                            <Link to="/pages/Ecommerce" className="ec-vm-btn mob" style={{ flex: '1 1 0', textAlign: 'center' }}>View More →</Link>
+                            <Link to="/services/ecommerce" className="ec-vm-btn mob" style={{ flex: '1 1 0', textAlign: 'center' }}>View More →</Link>
                             <Link to="/portfolio/ecommerce" className="ec-vm-btn mob" style={{ flex: '1 1 0', textAlign: 'center' }}>Portfolio</Link>
                         </div>
                     </div>
@@ -1637,7 +1637,7 @@ const HeroCarousel = () => {
                                     <p style={{ fontFamily: "'Inter',sans-serif", fontSize: tab ? '0.74rem' : '0.82rem', color: ec.creamDim, margin: 0 }}>From Code to Conversion to Courier.</p>
                                 </div>
                                 <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', animation: 'ec_in .78s ease-out .22s both', marginTop: 'auto', paddingTop: tab ? 8 : 14 }}>
-                                    <Link to="/pages/Ecommerce" className={`ec-vm-btn${tab ? ' tab' : ''}`}>View More <span style={{ fontSize: '0.85em' }}>→</span></Link>
+                                    <Link to="/services/ecommerce" className={`ec-vm-btn${tab ? ' tab' : ''}`}>View More <span style={{ fontSize: '0.85em' }}>→</span></Link>
                                     <Link to="/portfolio/ecommerce" className={`ec-vm-btn${tab ? ' tab' : ''}`}>View Portfolio</Link>
                                 </div>
                             </div>
@@ -1917,7 +1917,7 @@ const HeroCarousel = () => {
                         </div>
                         <div className="hero-cta-mob" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '8px', marginTop: 14, animation: 'log_in .56s ease-out .05s both' }}>
                             <Link
-                                to="/pages/Ecommerce"
+                                to="/services/ecommerce"
                                 style={{ ...logisticsBtnStyle(mob, tab), flex: '1 1 0', textAlign: 'center' }}
                                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px) scale(1.04)'; }}
                                 onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
@@ -1953,7 +1953,7 @@ const HeroCarousel = () => {
                                     </div>
                                     <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'nowrap', animation: 'log_in .56s ease-out .05s both' }}>
                                         <Link
-                                            to="/pages/Ecommerce"
+                                            to="/services/ecommerce"
                                             style={logisticsBtnStyle(mob, tab)}
                                             onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px) scale(1.04)'; }}
                                             onMouseLeave={e => { e.currentTarget.style.transform = ''; }}

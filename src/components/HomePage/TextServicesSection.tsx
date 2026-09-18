@@ -17,7 +17,7 @@ const TextServicesSection = () => {
     { text: "Aapki Website Bana Sakte Hain", highlight: "Website", route: "/services/website-creation" },
     { text: "Aapka Product Shoot Kar Sakte Hain", highlight: "Product Shoot", route: "/services/product-shoot" },
     { text: "Aapke Liye CRM System Build Kar Sakte Hain", highlight: "CRM", route: "/services/ci-crm" },
-    { text: "Aapke Liye E-Commerce Listing Kar Sakte Hain", highlight: "E-Commerce", route: "/pages/Ecommerce" },
+    { text: "Aapke Liye E-Commerce Listing Kar Sakte Hain", highlight: "E-Commerce", route: "/services/ecommerce" },
     { text: "Aapke Liye SaaS Based Platform Bana Sakte Hain", highlight: "SaaS", route: "/services/hotel-crm" },
     { text: "Aapke Product ki Photography Kar Sakte Hain", highlight: "Photography", route: "/Portfolioshowcase/photography" },
   ];
