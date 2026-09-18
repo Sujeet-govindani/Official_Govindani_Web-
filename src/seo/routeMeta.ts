@@ -24,10 +24,6 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "title": "Best IT & Web Development Company in Pune | Govindani",
     "description": "Govindani Infotech is a Pune-based IT & web development company: websites, e-commerce, mobile apps, WhatsApp API, SEO, digital marketing and NGO donation platforms for businesses across India."
   },
-  "/portfolio": {
-    "title": "Our Work | Website Portfolio by Category — Govindani Infotech",
-    "description": "Explore hundreds of websites custom-built by Govindani Infotech across e-commerce, business, NGO, real estate, healthcare, hospitality and virtual tours."
-  },
   "/services/meta-ads": {
     "title": "Targeted Meta Ads for Revenue Growth",
     "description": "Drive more leads and sales with our expertly managed Meta Ads services. Reach your ideal customers and boost your brand visibility with strategic social me…"
