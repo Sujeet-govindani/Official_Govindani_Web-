@@ -1,0 +1,835 @@
+GIVE SETU — WHAT IT ACTUALLY DOES.
+
+# GIVE SETU — WHAT IT ACTUALLY DOES
+
+- NGO operating system combining donations, receipts, donors, members, cases, campaigns, compliance, website and mobile app.
+- Supports English, Hindi, Marathi, Gujarati, Bengali, Tamil, Telugu and Kannada.
+- Provides a website with every plan:
+  - Starter: dedicated CMS portal.
+  - Growth: CMS portal and full WordPress website.
+  - Advanced: custom-coded UI/UX.
+- Websites are built, hosted and maintained by Govindani Infotech while the organisation remains on the plan.
+- Hosting, SSL, updates and fixes are included during the plan term.
+- The website runs on Govindani Infotech’s platform; its code is not handed over if the organisation leaves.
+- Donor, member, receipt, filing and file data can be exported in full at any time, including when leaving.
+- Supports one-time and recurring online donations.
+- Issues 80G receipts automatically in under four seconds, with immutable and gapless numbering.
+- Provides QR verification for 80G receipts.
+- Compliance Centre supports 10BD preparation, validation, portal-ready filing and automatic 10BE dispatch.
+- Maintains donor records in a Donor CRM with:
+  - Giving timeline.
+  - Donor segments.
+  - PAN recovery.
+  - Duplicate merging.
+- Provides membership management and membership ERP functions, including renewals and digital ID cards.
+- Manages live cases and live campaigns.
+- Includes a campaign engine with:
+  - Campaign pages.
+  - Tracking links.
+  - Festival campaign wizard.
+  - Live progress tracking.
+  - Monthly design templates.
+- Govindani Infotech can build a specified number of cases per month according to the selected plan.
+- Provides donor and member portals.
+- Supports recurring donor self-service, including:
+  - Donor mandates.
+  - Cancellation.
+  - Date changes.
+  - Skipping a month.
+- Provides a verified WhatsApp rail.
+- Supports WhatsApp donation receipt delivery.
+- Supports WhatsApp marketing messages.
+- Provides Android and iOS mobile applications on the Advanced route.
+- Offers a complete mobile application bundle.
+- Supports store developer accounts for Google Play and Apple.
+- Supports multiple payment gateways, with automatic failover on applicable plans.
+- Provides a developer API and webhooks.
+- Supports microsites.
+- Provides instant bulk jobs and overnight bulk jobs.
+- Maintains audit trails for a plan-specific retention period.
+- Provides CA or auditor access, including an add-on option and included seats on applicable plans.
+- Provides support with plan-specific first-response times and dedicated account management.
+- Includes AI insights with priority processing on applicable plans.
+- Provides AI campaign packs.
+- Supports AI natural-language filters.
+- Includes media storage with plan-specific capacity.
+- Provides admin seats, with custom roles and field masking on the Advanced plan.
+- Provides recurring and transactional email delivery.
+- Provides marketing email capacity and new design templates each month.
+- Provides a donor and member self-service system.
+- Supports unlimited sleeping or legacy donors on applicable plans.
+- Supports plan-specific limits for active donors, 80G receipts, members, live cases, live campaigns and media storage.
+- Supports member plan types according to the selected plan.
+- Provides a festival campaign wizard.
+- Provides new design templates each month.
+- Includes free transactional email delivery.
+- Provides a website content management system so pages can be changed without a separate developer invoice.
+- Provides a custom-coded website on the Advanced plan.
+- Provides a dedicated CMS portal for Starter and Growth.
+- Offers a separate one-time WordPress website route where the organisation owns the website code.
+- The WordPress route includes:
+  - Eighteen pages written for a non-profit.
+  - Editable features for the organisation’s team.
+  - Razorpay donations.
+  - One-time and custom donation amounts.
+  - Automated donor email.
+  - PDF donor certificate.
+  - Campaign pages with a live progress bar.
+  - Volunteer registration.
+  - Events.
+  - Free maintenance for an initial period.
+- WordPress donation and donor-handling features include:
+  - Razorpay donation integration.
+  - Live payment gateway.
+  - Instant donation confirmation.
+  - Branded automated donor confirmation emails.
+  - Downloadable acknowledgement certificates.
+  - Real-time fundraising goal tracking.
+  - Backend donation dashboard.
+  - Donor data export in CSV and Excel formats.
+  - Custom and preset donation amounts.
+  - Pop-up donation prompts triggered by time or scrolling.
+  - Live donor and impact counters.
+  - 80G number support in certificate output.
+- WordPress administration features include:
+  - Program and project creation, editing and publishing.
+  - Blog and news publishing.
+  - Rich-text editing.
+  - Categories, tags, featured images and SEO fields.
+  - Events calendar.
+  - Event countdowns and registration.
+  - Gallery management for photos and videos.
+  - Team-member management with photos and biographies.
+  - Testimonial and impact-story management.
+  - Partner and sponsor logo management.
+  - Multiple admin roles with individual permissions.
+  - Admin tutorial videos and screen-recorded walkthroughs.
+- WordPress reach and analytics features include:
+  - On-page SEO.
+  - Meta titles and descriptions.
+  - Open Graph tags.
+  - XML sitemap.
+  - Google Analytics.
+  - Visitor, session and donation-page conversion tracking.
+  - Google Tag Manager readiness.
+  - Social-media integration.
+  - Live social feeds.
+  - Blog share buttons.
+- The built-to-order route supports:
+  - Custom programme structures.
+  - Integrations with existing systems.
+  - Beneficiary login portals.
+  - Spring Boot and React.
+  - Deployment on the organisation’s own server.
+  - Custom engineering of screens and behaviours.
+  - No platform ceiling or plugin conflicts.
+  - Maintenance after handover.
+- The built-to-order route is scoped to the organisation’s requirements and does not include a subscription template library.
+- Give Setu’s donation and fundraising product references include:
+  - Recurring Donations.
+  - Donation Upsells for WooCommerce.
+  - BitPay Donations.
+  - Peer-to-peer fundraising.
+- Recurring donation forms support donor-selected or administrator-defined frequencies, time periods and amounts.
+- Fee recovery can be configured at global, gateway and form levels, with donor opt-in options.
+- Form Field Manager allows custom donation-form fields to be added and managed.
+- Funds and designations support creation of unlimited funds.
+- The platform supports donor, member, case, campaign, compliance and website data in one register.
+- Website and platform delivery routes are:
+  - One-time WordPress build for organisations primarily needing an online presence and donation collection.
+  - Give Setu subscription for organisations handling 80G receipts, 10BD, 10BE, donor records, membership, cases and campaigns.
+  - Custom-coded platform for organisations whose workflows do not fit the other routes.
+- Give Setu offers a demo process through a scheduled product demonstration.
+
+WEBSITES AND E-COMMERCE — ROUTES, PLATFORMS, PROCESS.
+
+# WEBSITES AND E-COMMERCE — ROUTES, PLATFORMS, PROCESS
+
+- **Website routes**
+  - WordPress websites for NGOs and other industries; self-hosted and handed over to the organisation.
+  - WordPress with WooCommerce and Govindani Infotech’s own plugin for e-commerce.
+  - Shopify hosted commerce for fast e-commerce launches.
+  - Custom-coded websites and applications using Spring Boot and React, deployed on the client’s server.
+  - Give Setu for NGO receipting, compliance, donor management, membership, cases and campaigns.
+  - Custom-coded builds support unusual programme structures, existing-system integrations and beneficiary portals.
+
+- **Website process**
+  - Select the platform and website purpose.
+  - Review the required scope, pages, features and timeline.
+  - Submit content and access credentials before work begins.
+  - Receive the first design draft for approval.
+  - Complete development, testing and website launch.
+  - Transfer credentials, source access and website administration at handover.
+  - Provide an administration walkthrough; NGO builds also include tutorial videos for major functions.
+  - WordPress NGO delivery is specified as 25 working days; custom-coded delivery is specified as 48 working days or as scoped.
+  - Custom-coded NGO builds include maintenance after handover; WordPress NGO builds include a 30-day maintenance period.
+
+- **WordPress NGO website deliverables**
+  - Home page with dynamic hero, mission highlights, donation call to action, programme previews, testimonials and live counter.
+  - About Us page with organisation story, founder’s message, values, vision and mission.
+  - Mission and Vision page.
+  - Team page with member photos, designations and biographies.
+  - Programmes and Projects listing and detail pages.
+  - Campaign and Cause pages with progress bars, stories and donation buttons.
+  - Volunteer registration with interest selection and automated confirmation email.
+  - Donation page with Razorpay, one-time donations, custom amounts and donor certificate option.
+  - Blog, News and Updates with categorised articles and dashboard publishing.
+  - Gallery and Media page with filterable photo and video categories.
+  - Events page with upcoming and past events, dates, venues and registration links.
+  - Impact Stories and Testimonials with media support.
+  - CSR and Partners page with corporate logos and partnership descriptions.
+  - FAQ page with accordion sections for donors, volunteers and visitors.
+  - Contact page with contact form, Google Maps, social links and office address.
+  - Terms and Conditions page required by Razorpay and payment gateways.
+  - Privacy Policy page required by Razorpay.
+  - Refund and Cancellation Policy page for donation refund procedures.
+
+- **NGO donation and donor functions**
+  - Razorpay live payment gateway integration for one-time and custom-amount donations.
+  - Instant donation confirmation.
+  - Automated branded donor confirmation emails.
+  - Automatically generated downloadable PDF donor certificates.
+  - Campaign progress bars with real-time fundraising goals.
+  - Backend donation dashboard showing donations, donor details and amounts.
+  - One-click donation export to CSV or Excel.
+  - Preset donation amounts and donor-entered custom amounts.
+  - Timed or scroll-triggered donation prompts.
+  - Live counters for donors, funds raised and beneficiaries served.
+  - Certificate output structured to carry the organisation’s 80G number.
+  - Volunteer forms with automated admin and volunteer emails.
+  - Anti-spam protection for volunteer and contact forms.
+
+- **NGO administration**
+  - Programme and project creation, editing and publishing from the backend.
+  - Blog and news editor with rich text, categories, tags, featured images and SEO fields.
+  - Events calendar with countdowns and registration.
+  - Gallery management for photo and video uploads.
+  - Team member management with photos and biographies.
+  - Testimonial and impact-story management.
+  - Partner and sponsor logo management.
+  - Multi-admin access with individual permissions.
+  - Screen-recorded tutorial videos for major administration functions.
+
+- **NGO website technical features**
+  - On-page SEO with meta titles, descriptions, Open Graph tags and XML sitemap.
+  - Google Analytics for visitors, sessions and donation-page conversions.
+  - Google Tag Manager readiness.
+  - Social media feeds and share buttons on blog, campaign and donation pages.
+  - WhatsApp chat widget for visitor enquiries.
+  - Responsive layouts for mobile, tablet and desktop.
+  - Cross-browser testing for Chrome, Firefox, Safari and Edge.
+  - Image compression, lazy loading and caching.
+  - SSL and HTTPS readiness.
+  - SMTP email configuration.
+  - Google Maps office-location embed.
+  - Website transfer with credentials, source access and final walkthrough.
+  - Bug maintenance covering Razorpay, hosting and email issues during the included maintenance period.
+
+- **Give Setu NGO system**
+  - Website included as part of the system.
+  - 80G receipt issuance with immutable, gapless numbering and QR verification.
+  - 10BD preparation and 10BE dispatch through the Compliance Centre.
+  - Donor CRM with giving timelines, segments, PAN recovery and duplicate merging.
+  - Membership management with renewals and digital ID cards.
+  - Case and campaign management.
+  - Recurring donations.
+  - Campaign engine with tracking links and festival workflow.
+  - New campaign design templates for organisations using the system.
+  - Verified WhatsApp communication rail.
+  - Donor records in a unified register.
+  - Website maintenance during the organisation’s plan term.
+  - Website code is not handed over for the platform route.
+
+- **General website development**
+  - Bespoke websites for business-specific requirements.
+  - Responsive design for different screen sizes.
+  - Custom solutions aligned with brand identity.
+  - E-commerce integration for payment and product flows.
+  - SEO-friendly website structures.
+  - SSL, firewall and data-protection features.
+  - Speed optimisation with sub-two-second load-time capability.
+  - CMS development for content management.
+  - Progressive Web App readiness with offline functionality.
+  - Websites for NGOs, e-commerce, healthcare, real estate, news, blogging, numerology and personal brands.
+  - Real-estate features including property galleries, interactive maps, advanced search filters and enquiry management.
+  - News and blog platforms designed for speed, readability and Google News visibility.
+  - Healthcare websites with accessible, HIPAA-conscious solutions and appointment-focused functionality.
+
+- **E-commerce platforms**
+  - Custom e-commerce websites built to business requirements.
+  - WordPress with WooCommerce.
+  - Shopify storefronts.
+  - Shiprocket-integrated custom e-commerce builds.
+  - Custom development with full feature modification and scalable architecture.
+  - Self-hosted WordPress with admin editing, plugin ecosystem and SEO support.
+  - Shopify features including PCI compliance, global CDN and stated uptime support.
+  - Shiprocket features including multi-carrier shipping, automated tracking and cash-on-delivery management.
+  - Portfolio examples include Baba Ji Ki Buti, Tarushpranna, Terra by Trishla, Madhav Numerology, GSD Organics, MuktaShop, Gllora, Kryelet Studios, Gau Mandir Satva, City Bazaar, Malini Charitable Trust and Khambani Foods.
+
+- **E-commerce store deliverables**
+  - Custom domain setup.
+  - SSL certificate.
+  - Product catalogue.
+  - Shopping cart.
+  - Secure checkout.
+  - Payment gateway integration.
+  - Order management.
+  - Inventory tracking.
+  - Customer accounts.
+  - Wishlist.
+  - Product reviews.
+  - Discount coupons.
+  - Tax calculation.
+  - Shipping calculator.
+  - Multi-currency support.
+  - Email notifications.
+  - SMS alerts.
+  - WhatsApp integration.
+  - Live chat support.
+  - Analytics dashboard.
+  - SEO optimisation.
+  - Social media integration.
+  - Product variants.
+  - Bulk product upload.
+  - Export reports.
+  - Mobile-responsive design.
+  - PWA support.
+  - Push notifications.
+  - Abandoned-cart recovery.
+  - Loyalty programme.
+  - Referral system.
+  - Gift cards.
+  - Product bundles.
+  - Flash sales.
+  - Pre-orders.
+  - Backorder management.
+  - Multi-vendor support.
+  - Vendor dashboard.
+  - Commission system.
+  - Payout management.
+  - Return management.
+  - Refund processing.
+  - Invoice generation.
+  - GST compliance.
+  - Custom reports.
+  - API access.
+  - Webhooks.
+  - Third-party integrations.
+  - Additional custom features can be developed as required.
+
+- **E-commerce integrations**
+  - UPI payment support.
+  - Credit-card payment support.
+  - Cash-on-delivery support.
+  - Shiprocket.
+  - FedEx.
+  - Delhivery.
+  - Other delivery partners.
+  - More than 50 payment gateways, delivery partners and tools are stated as supported.
+  - Direct payment settlement to the business account through the selected gateway.
+  - Automated shipping and delivery integration.
+  - Product, payment, shipping and operational automation systems.
+
+- **E-commerce launch process**
+  - Create a customised e-commerce website based on requirements.
+  - Configure the catalogue, shopping cart, checkout and payment gateway.
+  - Connect shipping and delivery partners.
+  - Provide a secure checkout experience.
+  - Receive payments through the selected gateway.
+  - Process orders and inventory.
+  - Dispatch through Shiprocket, FedEx, Delhivery or another delivery partner.
+  - Track deliveries and provide customer updates.
+  - Manage returns, refunds and post-delivery processes.
+
+- **Custom checkout and order-management process**
+  - Customer selects products.
+  - Customer selects product variants, quantities, delivery preferences and payment method.
+  - Customer applies coupons.
+  - Customer submits the order through checkout.
+  - System captures order details.
+  - Smart order processing begins.
+  - Payment gateway processes the transaction.
+  - Shiprocket or custom logistics handles fulfilment.
+  - System generates real-time tracking and notifications.
+  - Post-delivery returns are managed.
+  - Supports multi-carrier shipping.
+  - Supports WhatsApp notifications.
+  - Provides branded tracking pages.
+  - Supports cash-on-delivery verification calls.
+  - Supports abandoned-cart recovery.
+  - Provides automatic shipping-rate comparison.
+  - Supports NDR management.
+  - Includes a custom analytics dashboard.
+  - Includes fraud detection.
+  - Supports reverse logistics.
+  - Generates automated AWBs.
+  - Provides real-time delivery-rate comparison.
+  - Supports RTO management.
+  - Provides delivery communication through WhatsApp.
+
+- **Other related services**
+  - Website creation.
+  - E-commerce development.
+  - Payment gateway integration.
+  - Logistics integration.
+  - Marketplace brand listings on Amazon, Myntra, Nykaa and Flipkart.
+  - CRM development for leads, sales, follow-ups and internal workflows.
+  - Android and iOS app development.
+  - SEO.
+  - WhatsApp automation.
+  - Social media marketing.
+  - Google Ads.
+  - Meta Ads.
+  - LinkedIn Ads.
+  - Lead-generation systems.
+  - Graphic design.
+  - Branding and logo design.
+  - Videography.
+  - Video editing.
+  - Photography and product photography.
+  - AI automation.
+  - 360-degree virtual tours.
+  - Advanced checkout systems.
+
+THE WHATSAPP RAIL.
+
+# THE WHATSAPP RAIL
+
+- WhatsApp Business API setup and implementation in India through certified solution partners Interakt and Wati.
+- WhatsApp Business API capabilities:
+  - Bulk and personalised messaging to thousands of contacts.
+  - Automated notifications, replies and message retries.
+  - WhatsApp marketing campaigns and Marketing Messages Lite.
+  - Automated chatbots and customer workflows.
+  - Business analytics, campaign analytics, open rates, CTRs and conversions.
+  - WhatsApp Ads connecting Instagram and Facebook leads to WhatsApp conversations.
+  - Payment collection and transaction completion within WhatsApp.
+  - CRM, e-commerce and support-tool integrations.
+- WhatsApp Business API onboarding:
+  - Connect the Facebook Business Page with WhatsApp Business API.
+  - Create or verify the WhatsApp Business Account.
+  - Add and link a WhatsApp Business phone number.
+  - Apply through a WhatsApp Business Solution Provider, complete business verification and link a phone number.
+- No-code WhatsApp chatbot tools:
+  - Drag-and-drop flow builder.
+  - AI-powered intent detection.
+  - Ready-to-use chatbot templates.
+  - Automated responses.
+  - Handoff to live agents.
+  - FAQ trees with conditional branching.
+  - Keyword- and intent-based responses.
+- WhatsApp automation:
+  - Marketing, commerce and support automation.
+  - Auto-replies triggered by keywords, time windows, events or user actions.
+  - Automated workflows with message, wait, condition-branch and API-call steps.
+  - Broadcast or flow campaigns with audience segmentation and scheduling.
+  - Lead nurturing, order confirmations, appointment reminders, support FAQs, re-engagement and feedback collection.
+  - Automated abandoned-cart, onboarding, post-purchase and re-engagement flows.
+  - Automated order tracking, payment details, payment links and payment collection.
+  - Shopify sales automation covering acquisition, conversion and support.
+- WhatsApp CRM:
+  - Capture leads from WhatsApp, websites and social channels.
+  - AI-powered lead scoring, qualification and behavioural analysis.
+  - Pipeline-stage assignment and sales-pipeline management.
+  - Unified customer timeline containing interactions, deal notes, messages and activities.
+  - Personalised broadcasts with dynamic variables, rich media and scheduling.
+  - Automated follow-ups, quote sharing and one-tap payment links.
+  - Visual Kanban pipelines, role-based access, task management and bulk actions.
+  - Team inbox management, advanced filters, dashboards and real-time analytics.
+  - Mobile CRM access for pipeline management, lead replies, follow-ups and deal closure.
+  - Integrations with 60+ tools, including e-commerce platforms, payment gateways, CRMs and automation platforms.
+  - Instagram Business integration for lead capture, interaction tracking and automated responses.
+- WhatsApp commerce:
+  - WhatsApp storefronts and custom product catalogues.
+  - Product collections and catalogue categorisation.
+  - Product discovery, availability, size and colour queries within WhatsApp.
+  - Shopping carts, checkout flows and order placement inside WhatsApp.
+  - Native payments within WhatsApp using UPI, cards, net banking and other payment methods.
+  - Payment-gateway integration, including WhatsApp Pay.
+  - Payment confirmations, order-status updates, shipping updates and delivery notifications.
+  - Product catalogues in one-time and ongoing campaigns.
+  - Catalogue A/B testing.
+  - Product catalogues in campaigns, auto-replies and keyword- or attribute-based auto-replies.
+  - Personalised product recommendations based on purchase and browsing history.
+  - Shopify merchant integrations through the Interakt App Store and dedicated Shopify functionality.
+- Interakt services:
+  - Bulk messaging with RCS-enhanced delivery optimisation.
+  - WhatsApp and Instagram no-code chatbots.
+  - Built-in CRM sales pipeline.
+  - Campaign analytics.
+  - 60+ integrations, including Shopify, HubSpot and Salesforce.
+  - Shared inbox and team-based customer conversation management.
+- Wati services:
+  - Personalised broadcasts to unlimited contacts.
+  - No-code chatbot builder for automated support.
+  - Multi-agent shared inbox with smart routing and reporting.
+  - Low-code automation flows for campaigns and re-engagement.
+  - WhatsApp Click-to-Ad campaigns integrated with Meta.
+- Commerce and support integrations:
+  - Shopify.
+  - WooCommerce.
+  - Payment gateways.
+  - HubSpot.
+  - Salesforce.
+  - Freshdesk.
+  - Razorpay.
+  - CRM, helpdesk and analytics tools.
+- WhatsApp platform deliverables:
+  - API activation.
+  - WhatsApp Business Account configuration.
+  - Dashboard configuration.
+  - Chatbot scripting.
+  - Chatbot deployment.
+  - Campaign design and launch.
+  - CRM integration.
+  - E-commerce and payment integration.
+  - Shared team inbox configuration.
+  - Team training.
+  - Ongoing campaign monitoring, A/B testing and optimisation.
+- WhatsApp implementation process:
+  - Discovery call to review goals, current technology stack and customer journey.
+  - Strategy recommendation and customer-journey mapping.
+  - Platform setup, WhatsApp Business API activation and dashboard configuration.
+  - Integration with existing business tools.
+  - Build and test chatbots, automations and broadcast campaigns.
+  - Launch the configured WhatsApp presence.
+  - Ongoing reviews, A/B tests, delivery monitoring, open-rate monitoring and campaign refinements.
+- Supported WhatsApp business functions:
+  - Lead capture, nurturing, qualification and conversion.
+  - Customer support and FAQ resolution.
+  - Shared-agent conversation handling.
+  - Marketing broadcasts and re-engagement.
+  - Product browsing and catalogue sharing.
+  - Checkout, payments and order tracking.
+  - Shipping and delivery notifications.
+  - Sales-pipeline and revenue-health reporting.
+
+MARKETING, ADS AND SEO.
+
+# MARKETING, ADS AND SEO
+
+- **SEO services**
+  - Technical SEO: site structure, crawlability, index coverage, Core Web Vitals, speed, responsiveness, mobile experience, clean URLs, redirects, canonical tags, sitemap setup, security and HTTPS checks.
+  - On-page SEO: keyword and search-intent mapping, SEO titles, meta descriptions, headings, content structure, internal linking.
+  - Content and authority: topic clusters, industry blog strategy, long-form content, FAQs, guides, resources, case studies, testimonials, proof-driven pages, and schema/rich snippets for FAQs, how-to content and local results.
+  - Off-page and trust signals: backlink strategy, local SEO, Google Business Profile (GMB), citations, reviews, and brand-search optimization.
+  - Measurement: Analytics and Search Console setup, dashboards, priority-keyword ranking tracking, monthly reports covering traffic, leads, conversions and next actions.
+  - SEO is presented for NGOs, real estate, ecommerce, healthcare, numerology, personal brands and other industries.
+  - SEO examples named in the source include searches for NGOs for children, NGOs for orphanages, NGOs for cows, animal NGOs in Mumbai, and digital marketing agencies in Pune.
+- **Social media marketing**
+  - Audience research, competitor mapping, positioning, monthly content calendars, campaign themes, hooks, calls to action, platform planning, posting frequency and content pillars.
+  - Content deliverables: static posts, carousels, reels/shorts, stories, festival creatives, brand campaigns, announcement posts, captions and video scripts.
+  - Scheduled publishing across Instagram, Facebook, LinkedIn, YouTube and other agreed platforms.
+  - Comment, direct-message and review monitoring with escalation rules shared with the client team.
+  - Campaign-based growth experiments, including contests, collaborations and influencer tie-ins.
+  - Monthly analytics dashboards tracking reach, engagement, clicks, leads, sales and donations.
+  - Coordination of social advertising on Meta, Google and LinkedIn with landing pages and lead forms.
+  - WhatsApp and CRM integrations for leads, orders and donor journeys.
+  - Process: discovery and audit; strategy and calendar; content production; publishing and monitoring; monthly performance review with results, learnings and next-month actions.
+  - Industry areas named: NGOs, real estate, ecommerce, healthcare, numerology and spiritual services, and personal brands.
+- **Google Ads and PPC**
+  - Campaign setup and management, keyword research and selection, ad-copy creation, A/B testing, bid management, optimization, budget allocation and ongoing monitoring.
+  - Campaign types: Search Ads, Display Ads, Shopping Ads, Video Ads, App Ads and Smart Campaigns.
+  - Audience targeting by demographics, location, language and time of day.
+  - Geographic targeting, local lead generation, competitor analysis and auction insights.
+  - Customized reporting dashboards, performance analysis, conversion-rate tracking and ongoing data-based optimization.
+  - Reporting covers clicks, impressions, conversions, ROI and campaign performance.
+  - Supports lead and sales campaigns tailored to business objectives.
+- **Meta Ads**
+  - Campaign setup and management across Facebook and Instagram.
+  - Ad formats: Facebook Ads, Instagram Ads, Reels Ads and Messenger Ads.
+  - Audience research, segmentation, creative production, A/B testing, bid management, optimization and budget allocation.
+  - Targeting by demographics, interests, behaviours, custom audiences and online behaviour.
+  - Competitor analysis, audience insights, placement and budget optimization.
+  - Customized reporting dashboards, performance tracking, conversion-rate tracking and ongoing data-based optimization.
+  - Reporting covers clicks, impressions, conversions and campaign performance.
+- **LinkedIn Ads**
+  - B2B advertising targeting professionals and decision-makers by professional profile, industry and interests.
+  - Audience targeting, ad creative development, A/B testing, campaign setup and management, performance tracking, budget optimization, conversion tracking and lead-generation forms.
+  - Sponsored Content in the LinkedIn feed.
+  - Sponsored InMail with personalized messages and tailored campaigns.
+  - Objectives include targeted outreach, lead generation, brand awareness and website traffic.
+- **Advertising communication and reporting**
+  - Campaign access, detailed reports and essential campaign data are provided for Google Ads and Meta Ads.
+  - Real-time reporting and performance insights are included for Google Ads and Meta Ads.
+  - LinkedIn Ads includes detailed analytics, continuous optimization and performance tracking.
+  - Advertising services include industry-specific strategies, campaign updates, progress reports, responsive support, flexible service options and scalable solutions.
+- **Lead generation**
+  - Lead-generation systems to capture, nurture and convert leads.
+  - Lead forms, landing pages, campaign tracking, WhatsApp integration and CRM integration.
+  - Applications include business leads, sales leads, donations, donor journeys and orders.
+- **Related marketing deliverables and integrations**
+  - WhatsApp automation for lead capture, support and sales conversion.
+  - Website development for lead generation, sales and brand authority.
+  - Meta, Google and LinkedIn advertising coordination.
+  - Videography for marketing, branding and promotional campaigns.
+  - Graphic design for digital, social and promotional use.
+  - Video editing for storytelling and audience engagement.
+  - Photography for business, products and brands.
+  - Product shoots and studio-style product photography.
+  - Branding and logo design for brand identity development.
+  - Ecommerce development with payment, shipping and automation systems.
+  - Payment gateway integration for online transactions and donations.
+  - Logistics integration for automated shipping and delivery with logistics partners.
+  - Marketplace brand listing, including onboarding and optimization on Amazon, Myntra, Nykaa and Flipkart.
+  - CRM development for leads, sales, follow-ups and internal workflows.
+  - Android and iOS app development for customer engagement and operational efficiency.
+  - AI automation for communication, operations and customer journeys.
+  - 360-degree virtual tours for real estate, hospitality and retail showrooms.
+  - Advanced checkout systems.
+- **Industries named**
+  - Real estate.
+  - NGOs and foundations.
+  - Ecommerce.
+  - Healthcare.
+  - Numerology and spiritual services.
+  - Personal brands.
+
+DESIGN, PHOTO, VIDEO AND OTHER SERVICES.
+
+## DESIGN, PHOTO, VIDEO AND OTHER SERVICES
+
+- **Branding and Logo Design**
+  - Logo design based on brand personality, values, target audience and competitive landscape.
+  - Logo formats include minimalist wordmarks and intricate emblems.
+  - Logo applications include digital platforms, print materials, merchandise and signage.
+  - Brand identity development for trust and recognition.
+  - Logo design, branding and identity systems.
+
+- **Graphic Design**
+  - Branding and identity design.
+  - Brochures and flyers.
+  - Social media graphics.
+  - Infographics.
+  - Packaging design.
+  - Business cards and stationery.
+  - Advertisement design.
+  - Digital, social and promotional graphics.
+  - Custom designs, creative concepts and professional design execution.
+  - Use of design software and design techniques.
+  - Timely delivery.
+
+- **Photography**
+  - Business, product and brand photography.
+  - Photography for weddings, real estate, editorial and commercial projects.
+  - Photography for real estate, NGOs and social-impact projects.
+  - Light, shadow, candid portraits and post-production.
+  - Gallery and portfolio presentation.
+
+- **Product Shoot**
+  - Studio-style product photography.
+  - Product imagery for catalogues, marketing and brand presentation.
+  - Product visuals designed for online listings and conversion-focused use.
+
+- **AI Product Shoot**
+  - Catalogue-ready product visuals created without a studio shoot.
+  - AI-generated product imagery for product presentation.
+
+- **Videography**
+  - Corporate videos.
+  - Promotional films.
+  - Event coverage.
+  - Creative storytelling.
+  - Product videos.
+  - Social media videos.
+  - User-generated-content ads.
+  - Creative concept development.
+  - Storytelling and visual direction.
+  - Video production using professional equipment and production techniques.
+  - Post-production services.
+  - Corporate films for internal and external communication.
+  - Promotional content highlighting products, brands, benefits and selling points.
+  - Collaboration to understand objectives, develop concepts and align videos with brand vision.
+  - Video content for brand awareness, audience engagement, communication and marketing campaigns.
+  - Ongoing support for updates and revisions.
+
+- **Video Editing**
+  - Manipulation and rearrangement of video shots into cohesive stories.
+  - Editing for marketing materials, social media content, tutorials and corporate presentations.
+  - Consistent video style and tone aligned with brand identity.
+  - Social media video editing.
+  - Product reveal, real-estate and nature-themed video projects.
+
+- **360° Virtual Tours**
+  - Interactive tours allowing users to explore spaces in all directions.
+  - Panoramic capture and tour software.
+  - Seamless movement between areas.
+  - Remote exploration of properties and spaces from a device.
+  - Virtual tours for real estate, hospitality and retail showrooms.
+  - Real-estate tour examples include CI Grand Real Estate, CI Estate and The Park.
+
+- **Website Development**
+  - Custom websites for lead generation, sales and brand authority.
+  - High-performance website development.
+
+- **E-Commerce Development**
+  - Conversion-focused online stores.
+  - Payment, shipping and automation systems.
+  - E-commerce platform development.
+
+- **CRM Development**
+  - Industry-specific CRM systems.
+  - Lead, sales and follow-up management.
+  - Internal workflow management.
+
+- **App Development**
+  - Android applications.
+  - iOS applications.
+  - Applications for customer engagement and operational efficiency.
+
+- **Payment Gateway Integration**
+  - Integration of payment systems for online transactions and donations.
+  - Payment reconciliation.
+
+- **Checkout System**
+  - Checkout flow development.
+  - Advanced checkout systems.
+  - Checkout testing and cart-abandonment reduction.
+
+- **Logistics Integration**
+  - Automated shipping and delivery integration.
+  - Integration with leading logistics partners.
+
+- **Social Media Marketing**
+  - Social media content creation.
+  - Account management.
+  - Digital authority development.
+
+- **SEO**
+  - Search engine optimisation.
+  - Rankings, visibility and organic traffic improvement.
+
+- **Meta Ads**
+  - Facebook and Instagram advertising campaigns.
+  - Campaigns for brand awareness and sales.
+
+- **Google Ads**
+  - Google search and display advertising campaigns.
+  - ROI-focused campaign management.
+
+- **LinkedIn Ads**
+  - B2B advertising campaigns.
+  - Business lead generation on LinkedIn.
+
+- **Lead Generation Systems**
+  - Lead capture, nurturing and conversion.
+  - Systems for high-quality lead generation.
+  - Automated lead-generation workflows.
+
+- **Marketplace Brand Listing**
+  - Brand onboarding and optimisation.
+  - Marketplace listing support for Amazon, Myntra, Nykaa and Flipkart.
+
+- **WhatsApp Automation**
+  - WhatsApp lead capture.
+  - Customer support automation.
+  - Sales-conversion workflows.
+
+- **AI Automation**
+  - AI workflows for communication.
+  - Operational workflow automation.
+  - Customer-journey automation.
+
+THE COMPANY ITSELF.
+
+## THE COMPANY ITSELF
+
+- Govindani Infotech Pvt. Ltd.; established in 2018.
+- Based in Pune, Maharashtra, India; operations across India and the United States.
+- Has developed 650+ websites for India and USA.
+- Services:
+  - WordPress websites
+  - Shopify websites
+  - Social media marketing
+  - Coding websites
+  - Graphic design
+  - Photography
+  - Video editing
+  - Lead generation
+  - Performance marketing
+  - SEO
+  - Brand strategy
+  - Web development
+  - Social media
+- Built 7+ custom platforms for e-commerce, CRM and numerology systems.
+- Delivered web solutions for 160+ non-profit organizations.
+- Managed 10+ influencer, event and podcast marketing campaigns.
+- Delivered 25+ brand identities, social creatives and marketing designs.
+- Delivered 35+ photography shoots for brands and events.
+- Delivered 1,500+ reels, podcasts and campaign edits.
+- Campaign and project associations include Mangalam Builders, Birla School and CI.
+- Has run campaigns for real estate properties.
+- Listed operating locations include Nagpur, Rajasthan, Gujrat, Mumbai, Pune, Bihar, Chattisgarh and Tamilnadu.
+- Company commitments:
+  - Customer satisfaction
+  - Digital excellence
+  - Strategic innovation
+  - Data-driven strategy with creative execution
+- Founder and CEO: Sujeet Govindani.
+- Sujeet Govindani is identified as a Guinness World Record holder, global startup mentor and author of 25+ books rated 4.9/5, with 15M+ YouTube views.
+- Co-founder and Strategic Director: Gaurav Govindani.
+- Team structure:
+  - 12 WordPress developers; full-stack WordPress and Shopify expertise
+  - 6 social media members; content creators and community managers
+  - 8 coding developers; full-stack and custom application engineers
+  - 5 sales members; business development and client success
+- Team members named in the source include Anjali, Atharva, Gaurav, Ravina, Shankar, Tejas, Yash, Sakshi, Valaksh, Kartik, Sakshi S and Hitesh.
+- Registered and incorporated under the Companies Act.
+- Holds a United States certificate.
+- GST registered and compliant in Pune, Maharashtra.
+- Contact options listed:
+  - Book a strategy session
+  - Chat on WhatsApp
+
+
+PORTALS, RECEIPTS AND DATA — ALL STATED ON OUR OWN PRICING PAGE.
+
+- Donor and member portals, with full portal access on every plan.
+- Recurring donor self-service: donors manage or cancel their own mandate.
+- 80G receipt issued in under 4 seconds, numbered without gaps.
+- A donor certificate as an auto-generated, downloadable PDF acknowledgement,
+  plus a confirmation email immediately after donating.
+- Data exports are free, any time — donor, donation, member, receipt, filing and
+  campaign records.
+- 0% commission on donations, permanently.
+- A Give Setu site runs on our platform: if the plan ends, the hosted site ends
+  with it. A one-time build the client pays for is theirs.
+
+HOSTING AND MAINTENANCE — STATED ON OUR PRICING PAGES.
+
+- Website builds can include hosting for a first year, and ongoing maintenance
+  is offered. The terms and duration are settled by the team, not here.
+
+PAGES ON OUR OWN SITE THE ASSISTANT MAY LINK TO.
+
+- /about-us/about-company and /about-us/about-founder — who we are.
+- /portfolio/ngo and /pages/case-study — public work.
+- /contact-us — the contact form.
+- /pricing/ngo-os, /pricing/websites, /pricing/ngo-website — plan comparisons
+  (the assistant still does not read prices out of them).
+- /services and the pages beneath it — individual services.
+
+INDUSTRIES WE ALREADY PUBLISH PAGES FOR — SO SAYING WE SERVE THEM IS FAIR.
+
+- Education and schools (edtech), healthcare, real estate, hospitality,
+  automotive, banking and finance, beauty and cosmetics, health and wellness,
+  home decor, travel and tourism, restaurants and food, spas and salons,
+  marketing agencies, B2B sales, freelancers and consultants, and non-profits.
+- Saying we build websites for one of these is supported. Claiming a named
+  client in that industry is not.
+
+OPERATIONAL FACTS — TRUE, AND THE ASSISTANT IS INSTRUCTED TO USE THEM.
+
+- Pricing is confirmed by the team, never by the assistant.
+- Commercial terms — scope, payment stages, contracts, ownership, hosting
+  location, SLAs, timelines — are settled by the team with the client, not by
+  the assistant. Saying so is correct and is not an invented claim.
+- The team can be reached on WhatsApp at +91 92019 58271 (https://wa.me/919201958271).
+- There is a contact form on the site at /contact-us.
+- The assistant may take a name, organisation and mobile number and say someone
+  will call; passing a lead to a person is part of its job.
+- The company migrates existing websites and stores between platforms, including
+  content, media, URLs, redirects and SEO metadata.
+- Work is delivered by the company's own team in Pune.
+- NGO portfolio work is shown at /portfolio/ngo; case studies at /pages/case-study.
+- The assistant is an AI and says so if asked; it never claims to be a named person.

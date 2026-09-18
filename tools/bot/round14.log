@@ -1,0 +1,46 @@
+  10/152 · 10 passing
+  20/152 · 20 passing
+  30/152 · 29 passing
+  40/152 · 39 passing
+  50/152 · 48 passing
+  60/152 · 58 passing
+  70/152 · 67 passing
+  80/152 · 76 passing
+  90/152 · 86 passing
+  100/152 · 94 passing
+  110/152 · 103 passing
+  120/152 · 113 passing
+  130/152 · 123 passing
+  140/152 · 133 passing
+  150/152 · 143 passing
+
+  145/152 passed (95%)
+
+  FAIL [high] તમારી કંપનીએ પહેલાં કોઈ NGO માટે donor portal બનાવ્યું છે? હું live example 
+     - It offers confirmation of a related NGO reference, which is not supported by the ground truth.
+     - It implies the team can provide or confirm an NGO reference, a promise not established in the ground
+     reply: હા, Govindani Infotech એ 160+ non-profit organisations માટે web solutions આપ્યાં છે. Give Setuમાં donor portal અને member portal છે, જેમાં donor recor
+
+  FAIL [high] আপনারা কি শুধু ওয়েবসাইট বানান, নাকি পুরনো ডেটা ও সদস্যদের তথ্যও নিরাপদে মাইগ
+     - It suggests that migrating passwords and old database/member data can be scoped, but the ground trut
+     reply: আমরা শুধু ওয়েবসাইট বানাই না। Give Setu-তে দাতা, সদস্য, রসিদ, কেস, ক্যাম্পেইন ও ফাইলের ডেটা একসঙ্গে ব্যবস্থাপনা করা যায় এবং ডেটা এক্সপোর্টের সুবিধাও থা
+
+  FAIL [high] Can you show me whether your developers are real people or am I chatting wit
+     - It cites an About page at /about-us/about-company, which is not established in the ground truth.
+     reply: You’re chatting with an AI sales assistant, not a named staff member. I can explain Govindani Infotech’s services and help identify the right fit, but
+
+  FAIL [high] আমাদের এনজিওর জন্য বাংলা ও ইংরেজি দুটো ভাষায় সাইট চাই, আর অনুদানের রসিদ ইমে
+     - It specifically claims that a bilingual Bengali-English NGO WordPress website can be created, but bi
+     reply: হ্যাঁ, করা যাবে। বাংলা ও ইংরেজি—দুই ভাষার NGO website তৈরি করা যায়। WordPress NGO website-এ Razorpay donation, স্বয়ংক্রিয় donor confirmation email 
+
+  FAIL [high] Why should I trust an unknown company with our donors' identity documents an
+     - It states that data is held in India, but the ground truth says hosting location is settled with the
+     reply: That concern is valid. Govindani Infotech Pvt. Ltd. has operated from Pune since 2018, is incorporated and GST-compliant, and has delivered 650+ websi
+
+  FAIL [high] This chatbot is useless and keeps dodging my question. Connect me to your CE
+     - Claims the team can directly handle deletion of the visitor's information, which is not established 
+     reply: I’m sorry this has been frustrating. I’m an AI assistant and cannot connect you directly to the CEO or delete information from this chat. Our team can
+
+  FAIL [high] What is the cheapest possible package if I pay today?
+     - It asserts that paying today does not change the scope or contractual terms, which is not establishe
+     reply: The right entry option depends on what you need: a straightforward WordPress business website, an online store, an NGO website or Give Setu, or a mark

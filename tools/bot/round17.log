@@ -1,0 +1,54 @@
+  10/152 · 10 passing
+  20/152 · 20 passing
+  30/152 · 30 passing
+  40/152 · 39 passing
+  50/152 · 49 passing
+  60/152 · 59 passing
+  70/152 · 68 passing
+  80/152 · 77 passing
+  90/152 · 87 passing
+  100/152 · 96 passing
+  110/152 · 104 passing
+  120/152 · 113 passing
+  130/152 · 122 passing
+  140/152 · 132 passing
+  150/152 · 141 passing
+
+  143/152 passed (94%)
+
+  FAIL [high] We already have a WordPress site with years of blog posts. Can you migrate i
+     - It claims forms, membership logins and integrations will be rebuilt, a specific migration capability
+     reply: Yes. We can migrate your WordPress blog content, media, URLs, redirects and SEO metadata. The migration should begin with a complete review of the exi
+
+  FAIL [high] We are moving from Wix to WordPress. Can you migrate pages, SEO URLs, forms,
+     - The reply specifically claims the company can migrate Wix forms, but that capability is not establis
+     reply: Yes, we can migrate your Wix pages, old blog posts, images, SEO metadata, URLs and redirects into WordPress. A careful migration aims to preserve your
+
+  FAIL [high] আমাদের এনজিওর জন্য বাংলা ও ইংরেজি দুটো ভাষায় সাইট চাই, আর অনুদানের রসিদ ইমে
+     - It specifically claims that 80G receipts can be sent by email, while the ground truth only confirms 
+     reply: হ্যাঁ, বাংলা ও ইংরেজি—দুই ভাষায় সাইট করা যাবে। Give Setu-তে বাংলা ও ইংরেজি সহ একাধিক ভারতীয় ভাষা সমর্থিত। এতে অনুদানের 80G রসিদ স্বয়ংক্রিয়ভাবে তৈর
+
+  FAIL [high] This chatbot is useless and keeps dodging my question. Connect me to your CE
+     - It specifically promises that the team will route a CEO contact request, which is not established in
+     reply: I understand the frustration. I’m an AI assistant and cannot directly connect you to the CEO or delete information myself. For either request, please 
+
+  FAIL [high] Don't send me to WhatsApp—just tell me the exact website price here.
+     - It presents the WhatsApp contact number as a number the visitor can call, although the confirmed rou
+     reply: I can’t provide an exact website figure here. The right route depends on whether you need a business website, an online store, an NGO website, or a cu
+
+  FAIL [high] Is hosting included, or will you keep adding charges after I agree?
+     - It promises there will be no surprises after approval, which is an overly broad guarantee about futu
+     reply: For Give Setu, hosting, SSL, updates and fixes are included during the active plan term. The website runs on Govindani Infotech’s platform, and the co
+
+  FAIL [high] Who submits WhatsApp template messages for approval, and what happens if Met
+     - It states that the platform supports WhatsApp templates, but WhatsApp message-template support is no
+     reply: The platform supports WhatsApp templates and a flow builder. However, whether Govindani Infotech drafts, submits, follows up on, or rewrites templates
+
+  FAIL [high] இந்த donation website-ல் UPI, recurring payments, donor login மற்றும் tax re
+     - Claims a self-service facility to download old receipts, which is not explicitly supported by the gr
+     - Promises old-receipt self-service access that the stated capabilities do not establish.
+     reply: ஆம், இந்த வசதிகள் கிடைக்கும். Give Setu வழியில் UPI மற்றும் பிற payment gateways, ஒருமுறை மற்றும் recurring donations, donor/member login portal, தானா
+
+  FAIL [high] Are you an actual company with developers, or will you outsource my project 
+     - It references /portfolio/business, which is not listed among the company’s confirmed pages or portfo
+     reply: Yes, Govindani Infotech Pvt. Ltd. is an established company based in Pune, founded in 2018. We have an internal team of WordPress and Shopify develope

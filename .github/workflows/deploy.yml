@@ -1,0 +1,161 @@
+name: Build and deploy to production
+
+# Pushes to develop are what ships. Manual runs are available from the Actions
+# tab for a redeploy without a code change.
+on:
+  push:
+    branches: [develop]
+  workflow_dispatch:
+  # Articles carry real publication dates and the build only writes the ones
+  # whose date has arrived. Without a daily run they would sit unpublished until
+  # somebody happened to push. 01:30 UTC is 07:00 IST.
+  schedule:
+    - cron: '30 1 * * *'
+
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false   # never interrupt a half-finished upload
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # prerender.mjs drives a real browser. The runner already has Chrome;
+      # this resolves its path rather than letting puppeteer download its own.
+      - name: Locate Chrome
+        id: chrome
+        run: |
+          CHROME="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium-browser || true)"
+          if [ -z "$CHROME" ]; then
+            echo "Chrome not found on the runner, installing"
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq google-chrome-stable \
+              || { wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
+                   && sudo apt-get install -y -qq ./google-chrome-stable_current_amd64.deb; }
+            CHROME="$(command -v google-chrome || command -v google-chrome-stable)"
+          fi
+          echo "path=$CHROME" >> "$GITHUB_OUTPUT"
+          echo "Using $CHROME"
+
+      # `npm run build` triggers the postbuild hook, which prerenders every
+      # route into dist/. Both must succeed before anything is uploaded.
+      - name: Build and prerender
+        env:
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.path }}
+        run: npm run build
+
+      # A build that silently produced nothing must never reach the server.
+      - name: Verify the build
+        run: |
+          PAGES=$(find dist -name index.html | wc -l | tr -d ' ')
+          echo "prerendered pages: $PAGES"
+          test "$PAGES" -ge 100 || { echo "::error::only $PAGES pages built, expected 100+"; exit 1; }
+          test -f dist/.htaccess   || { echo "::error::dist/.htaccess missing — redirects and 404s would be lost"; exit 1; }
+          test -f dist/sitemap.xml || { echo "::error::dist/sitemap.xml missing"; exit 1; }
+          test -f dist/404.html    || { echo "::error::dist/404.html missing"; exit 1; }
+          test -f dist/favicon.ico || { echo "::error::dist/favicon.ico missing"; exit 1; }
+          grep -q "RewriteRule" dist/.htaccess || { echo "::error::.htaccess has no rewrite rules"; exit 1; }
+          echo "build verified"
+
+      # webfactory/ssh-agent fails with "error in libcrypto" when the secret
+      # arrives without a trailing newline, and GitHub secret storage does not
+      # reliably preserve one. Writing the file here with printf '%s\n'
+      # guarantees the newline regardless of how the secret was pasted.
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          printf '%s\n' "${{ secrets.HOSTINGER_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          # Fail loudly and specifically if the secret is not a usable key.
+          if ! ssh-keygen -y -f ~/.ssh/deploy_key >/dev/null 2>&1; then
+            echo "::error::HOSTINGER_SSH_KEY is not a valid private key."
+            echo "It must be the PRIVATE key file, including both the"
+            echo "-----BEGIN OPENSSH PRIVATE KEY----- and -----END----- lines."
+            echo "Lines received: $(wc -l < ~/.ssh/deploy_key)"
+            echo "First line: $(head -1 ~/.ssh/deploy_key | cut -c1-40)"
+            exit 1
+          fi
+          echo "key parsed, fingerprint:"
+          ssh-keygen -lf ~/.ssh/deploy_key
+          # Run #41 died here with no explanation: ssh-keyscan returned non-zero,
+          # bash -e killed the step, and 2>/dev/null had thrown the reason away.
+          # The build had already succeeded, so a momentary blip reaching the host
+          # discarded a good build. Retry, and never hide the error again.
+          for attempt in 1 2 3; do
+            if ssh-keyscan -T 20 -p "${{ secrets.HOSTINGER_PORT }}" -H "${{ secrets.HOSTINGER_HOST }}" >> ~/.ssh/known_hosts; then
+              break
+            fi
+            echo "ssh-keyscan attempt $attempt failed"
+            if [ "$attempt" = 3 ]; then
+              echo "::error::Could not reach ${{ secrets.HOSTINGER_HOST }}:${{ secrets.HOSTINGER_PORT }} to record its host key after 3 attempts."
+              exit 1
+            fi
+            sleep $((attempt * 10))
+          done
+          echo "known_hosts entries: $(wc -l < ~/.ssh/known_hosts)"
+
+      # No --delete: files already on the server are left alone. Safer, but it
+      # also means removals must be done by hand.
+      - name: Deploy
+        run: |
+          rsync -rlz --partial --stats --exclude '.DS_Store' \
+            -e "ssh -i ~/.ssh/deploy_key -p ${{ secrets.HOSTINGER_PORT }} -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" \
+            dist/ ${{ secrets.HOSTINGER_USER }}@${{ secrets.HOSTINGER_HOST }}:~/domains/govindaniit.com/public_html/
+
+      # The two blog trees are MIRRORED, unlike the rest of the site.
+      #
+      # The main sync above deliberately has no --delete, so anything uploaded
+      # once stays for ever. That is the safe default for a site, but it makes
+      # scheduled publishing impossible: a post whose date has been moved
+      # forward would keep serving its old page. Mirroring these two directories
+      # makes the server match the build — due posts appear, not-yet-due posts
+      # go away and come back on their date.
+      #
+      # Guarded, because a mirror of a broken build would empty the blog: the
+      # step refuses to run unless the build produced a sane number of posts.
+      - name: Mirror the blog directories
+        run: |
+          POSTS=$(find dist/blog -mindepth 1 -maxdepth 1 -type d | wc -l | tr -d ' ')
+          BODIES=$(find dist/blog-data -name '*.json' | wc -l | tr -d ' ')
+          echo "built: $POSTS post pages, $BODIES bodies"
+          if [ "$POSTS" -lt 50 ] || [ "$BODIES" -lt 50 ]; then
+            echo "::error::Refusing to mirror: only $POSTS pages and $BODIES bodies were built."
+            echo "That looks like a broken build, and mirroring it would remove live articles."
+            exit 1
+          fi
+          for dir in blog blog-data; do
+            rsync -rlz --delete --partial --exclude '.DS_Store' \
+              -e "ssh -i ~/.ssh/deploy_key -p ${{ secrets.HOSTINGER_PORT }} -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" \
+              "dist/$dir/" "${{ secrets.HOSTINGER_USER }}@${{ secrets.HOSTINGER_HOST }}:~/domains/govindaniit.com/public_html/$dir/"
+          done
+
+      - name: Verify production
+        run: |
+          sleep 5
+          fail=0
+          check() {
+            code=$(curl -s -o /dev/null -w "%{http_code}" -m 25 -A "Mozilla/5.0" "$1")
+            [ "$code" = "$2" ] && echo "  ok   $2  $1" || { echo "  FAIL $code (want $2)  $1"; fail=1; }
+          }
+          check https://govindaniit.com/                    200
+          check https://govindaniit.com/pages/ngopage/      200
+          check https://govindaniit.com/favicon.ico         200
+          check https://govindaniit.com/this-page-does-not-exist-xyz/ 404
+          URLS=$(curl -s -m 25 https://govindaniit.com/sitemap.xml | grep -c '<loc>')
+          echo "  sitemap URLs live: $URLS"
+          test "$URLS" -ge 100 || fail=1
+          exit $fail

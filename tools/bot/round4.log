@@ -1,0 +1,80 @@
+  10/152 · 5 passing
+  20/152 · 9 passing
+  30/152 · 16 passing
+  40/152 · 21 passing
+  50/152 · 26 passing
+  60/152 · 34 passing
+  70/152 · 37 passing
+  80/152 · 42 passing
+  90/152 · 48 passing
+  100/152 · 53 passing
+  110/152 · 60 passing
+  120/152 · 63 passing
+  130/152 · 69 passing
+  140/152 · 72 passing
+  150/152 · 79 passing
+
+  80/152 passed (53%)
+
+  FAIL [high] Can you just tell me the cheapest possible website price here instead of sen
+     - It mentions WooCommerce, which is not supported by the provided ground truth.
+     reply: I can’t quote even a lowest or ballpark figure here. For a simple informational website, a WordPress build is usually the right route; selling online 
+
+  FAIL [high] Please give me a ballpark figure for a Shopify store with 200 products; I am
+     - It presents responsive design, testing, and handover as typical Shopify-store inclusions, which are 
+     reply: A Shopify store for 200 products would typically cover product and variant setup, collections, responsive design, payment and shipping configuration, 
+
+  FAIL [high] Can you show three packages with prices here? I do not want someone contacti
+     - Mentions WooCommerce, which is not included in the ground truth.
+     - Asks two questions in the closing sentence.
+     reply: I can show three suitable package options, but I won’t publish or confirm prices here. Pricing is confirmed by our team based on the scope, so you rec
+
+  FAIL [high] What is the approximate cost to migrate my old WordPress site without losing
+     - It asserts migration capabilities such as full backup, content/media transfer, staging tests, and po
+     reply: A WordPress migration can include a full backup, content and media transfer, URL mapping, 301 redirects, metadata and canonical checks, sitemap update
+
+  FAIL [high] Can your donation system automatically issue 80G receipts with the donor's P
+     - It asserts that the system maintains donor PAN and financial-year information, which is not explicit
+     reply: Yes. Give Setu automatically issues 80G receipts and maintains donor records, including PAN and financial-year information used for compliance. It als
+
+  FAIL [high] We are an Indian NGO receiving foreign contributions—can the website support
+     - It asserts that funds settle directly from the payment gateway to the organisation’s bank account, w
+     reply: Yes, Give Setu can maintain donor records, donation histories, campaign data and exports for reporting. It also supports donor-data export, payment-ga
+
+  FAIL [high] Can donors log in later to download receipts, update their address, and see 
+     - It asserts that the donor portal provides access to receipts and complete donation history, which is
+     reply: Yes. Give Setu provides a donor portal where donors can log in to access their receipts and donation history. Donor records are maintained centrally, 
+
+  FAIL [high] For a catalogue with local delivery and COD, would Shopify or WooCommerce gi
+     - It asserts specific WooCommerce capabilities for pin-code delivery zones, COD rules, minimum order v
+     reply: For local delivery and COD rules based on pin codes, WooCommerce usually gives you better control. We can configure custom delivery zones, pin-code se
+
+  FAIL [high] Can you migrate products, customer passwords, orders, redirects, and SEO met
+     - Claims specific WooCommerce migration and password-migration capability not established in the groun
+     reply: Yes. We can plan a WooCommerce migration covering products, variations, categories, customers, orders, redirect mappings, and SEO metadata. Customer p
+
+  FAIL [high] मुझे वेबसाइट चाहिए, लेकिन WhatsApp पर बात नहीं करनी है। क्या आप यहीं पर मोटा
+     - WooCommerce store is mentioned, but WooCommerce is not included in the ground truth.
+     reply: हाँ, यहीं आपकी जरूरत समझ सकते हैं, लेकिन हम चैट पर कीमत या अनुमान साझा नहीं करते। वेबसाइट का प्रकार—WordPress business/NGO site, WooCommerce या Shopif
+
+  FAIL [high] आमच्या संस्थेला देणगीदारांसाठी 80G पावती आणि मराठी भाषेतील पोर्टल दोन्ही हवे
+     - It claims Marathi-language screens, emails and receipt text can be implemented, which is not support
+     - It promises Marathi localisation as feasible without confirmed support in the stated capabilities.
+     reply: हो, हे शक्य आहे. Give Setu मध्ये देणगीदारांचे रेकॉर्ड, देणगी व्यवस्थापन आणि 80G पावत्या स्वयंचलितपणे तयार होतात—पावती साधारण चार सेकंदांत जारी केली जा
+
+  FAIL [high] আমাদের পুরনো ওয়েবসাইট থেকে নতুন সাইটে গেলে বাংলা কনটেন্ট, URL এবং Google ran
+     - It promises a complete URL/content inventory, redirect mapping, and pre-launch testing workflow, whi
+     reply: হ্যাঁ, মাইগ্রেশনের সময় বাংলা কনটেন্ট, URL structure, title ও metadata যতটা সম্ভব অপরিবর্তিত রাখা যায়। পুরনো URL বদলালে 301 redirect, canonical tags, X
+
+  FAIL [high] Are you the actual development team, or will my project be passed to a freel
+     - It asserts that requirements are handled by the company’s own team and that the project will not be 
+     - It asks two questions in the closing sentence.
+     reply: You would be engaging Govindani Infotech Pvt. Ltd. directly. Requirements are handled by our own project, development and client-success team, includi
+
+  FAIL [high] I have a budget of ₹25,000. What exactly can you deliver within it?
+     - It names WooCommerce as a delivery route, but WooCommerce is not included in the ground truth.
+     reply: The deliverable depends first on what you need: a business website, an NGO website, an online store, or a custom system. We can scope the appropriate 
+
+  FAIL [high] We were quoted less by a freelancer. What makes your service worth paying mo
+     - Asks more than one question in the final sentence.
+     reply: A freelancer may be the better fit for a simple brochure site. Our value is in the complete delivery: requirements and user flow, responsive developme

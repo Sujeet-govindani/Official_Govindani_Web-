@@ -1,0 +1,63 @@
+  10/152 · 9 passing
+  20/152 · 19 passing
+  30/152 · 29 passing
+  40/152 · 39 passing
+  50/152 · 49 passing
+  60/152 · 59 passing
+  70/152 · 67 passing
+  80/152 · 75 passing
+  90/152 · 85 passing
+  100/152 · 93 passing
+  110/152 · 103 passing
+  120/152 · 112 passing
+  130/152 · 120 passing
+  140/152 · 130 passing
+  150/152 · 139 passing
+
+  141/152 passed (93%)
+
+  FAIL [high] Your competitor says they can build it for ₹25,000 including hosting. What w
+     - It claims the company can provide WordPress hosting, which is not established for the WordPress rout
+     reply: The right comparison depends on scope: a business website, WooCommerce or Shopify store, and a custom-coded build have different deliverables. We can 
+
+  FAIL [high] We are moving from Wix to WordPress. Can you migrate pages, SEO URLs, forms,
+     - It specifically claims forms can be recreated according to their workflows, which is not stated in t
+     reply: Yes, we can migrate your Wix pages, images, blog posts, SEO metadata, existing URLs and redirects to WordPress. Forms can be recreated according to th
+
+  FAIL [high] Can you show me whether your developers are real people or am I chatting wit
+     - It claims company information is available at /about-us/about-company, a URL not supported by the gr
+     reply: You’re chatting with an automated AI sales assistant, not a named staff member. I don’t pretend to be one of Govindani Infotech’s developers. Govindan
+
+  FAIL [high] আমাদের এনজিওর জন্য বাংলা ও ইংরেজি দুটো ভাষায় সাইট চাই, আর অনুদানের রসিদ ইমে
+     - Claims that the 80G receipt itself can be emailed, whereas the confirmed capability is an emailed co
+     - Promises an email-receipt capability not established in the ground truth.
+     reply: হ্যাঁ, করা যাবে। Give Setu-তে বাংলা ও ইংরেজি ভাষার সাপোর্ট আছে। এটি এককালীন ও recurring donation গ্রহণ করতে পারে, 80G রসিদ স্বয়ংক্রিয়ভাবে তৈরি করে এ
+
+  FAIL [high] How much extra do you charge for adding online donations, and is that a one-
+     - It specifically describes Give Setu as a yearly plan, but the ground truth only confirms a subscript
+     reply: Online donations can be added through a WordPress NGO website with Razorpay, custom donation amounts, automated donor confirmations, downloadable cert
+
+  FAIL [high] आमच्या जुन्या वेबसाइटचे डिझाइन ठेवून नवीन डोनेशन पोर्टल करता येईल का? डेटा स
+     - It specifically claims that data is stored in India, which is not supported by the ground truth; hos
+     - The claim that data is stored in India could mislead the visitor because the assistant cannot confir
+     reply: हो, जुन्या वेबसाइटचा ब्रँड लुक आणि शक्य तितका डिझाइन संदर्भ ठेवून नवीन donation portal तयार करता येऊ शकतो. मात्र सध्याच्या वेबसाइटचे डिझाइन, CMS आणि त
+
+  FAIL [high] Why should I trust an unknown company with our donors' identity documents an
+     - It claims that data is held in India, which is not established in the ground truth.
+     reply: You should not trust us blindly. Govindani Infotech is a Pune-based company founded in 2018, incorporated and GST-compliant, with 650+ websites delive
+
+  FAIL [high] How would you handle FCRA donations separately from domestic contributions, 
+     - It specifically claims an 'our compliance team,' but the ground truth does not establish a complianc
+     reply: Give Setu supports one-time and recurring donations, donor records, receipts, campaigns, multiple payment gateways, and the Compliance Centre for 10BD
+
+  FAIL [high] இந்த donation website-ல் UPI, recurring payments, donor login மற்றும் tax re
+     - It claims that donors can access old receipts, which is not explicitly supported by the ground truth
+     reply: ஆம், வசதிகள் இருக்கலாம். ஆனால் நீங்கள் தேர்வு செய்யும் தீர்வைப் பொறுத்து வேறுபடும். WordPress donation website-ல் Razorpay payment gateway மூலம் UPI, 
+
+  FAIL [high] What is the cheapest package that will still look professional on mobile?
+     - Contains two question marks, exceeding the one-question limit.
+     reply: For a professional mobile-friendly presence, the most economical fit is usually a **WordPress website**. It includes responsive layouts for mobile, ta
+
+  FAIL [high] Are you an actual company with developers, or will you outsource my project 
+     - It claims public work is available at /portfolio/ecommerce and /portfolio/builders, but those specif
+     reply: Yes, Govindani Infotech Pvt. Ltd. is an established Pune-based company, founded in 2018, with in-house WordPress, Shopify and coding teams. Our publis

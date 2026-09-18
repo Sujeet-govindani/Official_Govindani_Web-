@@ -1,0 +1,43 @@
+# Robots.txt for govindaniit.com
+#
+# One group per user-agent. The trailing "User-agent: * / Crawl-delay: 1" block
+# that used to sit at the bottom was a SECOND group for the same agent — Google
+# merges duplicate groups, but several crawlers only honour the first one they
+# see, which put the Disallow rules at risk. Crawl-delay is folded in here.
+#
+# NOTE: the retired WordPress paths (/tag/, /*/feed/, /elementor-*) are
+# deliberately NOT disallowed. They now return 404, and Google has to be able
+# to CRAWL them to see that and drop them from the index. Blocking them would
+# freeze ~145 dead URLs in the index instead of clearing them. Revisit once
+# Search Console shows them gone.
+
+User-agent: *
+Allow: /
+Disallow: /wp-admin
+Disallow: /api/
+Crawl-delay: 1
+
+# AI crawlers are explicitly welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Sitemaps
+Sitemap: https://govindaniit.com/sitemap.xml

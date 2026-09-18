@@ -1,0 +1,54 @@
+  10/152 · 10 passing
+  20/152 · 20 passing
+  30/152 · 30 passing
+  40/152 · 39 passing
+  50/152 · 47 passing
+  60/152 · 57 passing
+  70/152 · 66 passing
+  80/152 · 76 passing
+  90/152 · 86 passing
+  100/152 · 94 passing
+  110/152 · 102 passing
+  120/152 · 111 passing
+  130/152 · 121 passing
+  140/152 · 131 passing
+  150/152 · 141 passing
+
+  143/152 passed (94%)
+
+  FAIL [high] We were quoted less by a freelancer. What makes your service worth paying mo
+     - The reply does not provide a way to contact a person about pricing, such as WhatsApp, a contact form
+     reply: A freelancer may be the better fit for a small, clearly defined task. Our value is in the wider delivery system: an experienced team, structured disco
+
+  FAIL [high] Will your SEO work include schema, technical audits, Google Search Console s
+     - It specifically claims lead tracking can be connected to calls, which is not stated in the ground tr
+     reply: Yes. Our SEO work includes technical audits covering crawlability, index coverage, site structure, Core Web Vitals, speed, mobile experience, redirect
+
+  FAIL [high] આટલા બધા સવાલો પૂછ્યા પછી પણ જો તમે સીધી માહિતી નહીં આપો તો હું બીજા ડેવલપર 
+     - It claims the company can combine all listed services into a single growth plan and does not force c
+     reply: તમારી વાત યોગ્ય છે. અમારી ટીમનો ફરક માત્ર “વેબસાઇટ બનાવી આપીએ” એટલો નથી. અમે પહેલા તમારી જરૂરિયાત પ્રમાણે યોગ્ય રસ્તો પસંદ કરીએ છીએ: સામાન્ય બિઝનેસ મા
+
+  FAIL [high] WhatsApp template messages keep getting rejected by Meta. Do you help prepar
+     - Claims the company specifically reviews rejected Meta templates and revises wording, variables, cate
+     reply: We help with WhatsApp campaign design, template wording, category selection, chatbot flows and submission preparation. The team can review why Meta re
+
+  FAIL [high] आमच्या जुन्या वेबसाइटचे डिझाइन ठेवून नवीन डोनेशन पोर्टल करता येईल का? डेटा स
+     - It specifically claims that Give Setu donor and receipt data is stored in India, which is not suppor
+     reply: हो, जुन्या वेबसाइटचा look and feel जपून नवीन donation portal तयार करता येऊ शकतो. संस्था non-profit असल्यास Give Setu मध्ये one-time आणि recurring dona
+
+  FAIL [high] This chatbot is useless and keeps dodging my question. Connect me to your CE
+     - It claims the team can handle information deletion, but that capability is not established in the gr
+     - It implies the company can fulfill both CEO-connection and deletion requests, which is not guarantee
+     reply: I’m an AI assistant, and I’m sorry this has been frustrating. I can’t personally connect you directly to the CEO or delete information from this chat,
+
+  FAIL [high] Is hosting included, or will you keep adding charges after I agree?
+     - The reply says the team confirms commercial terms but provides no WhatsApp number, contact form, or 
+     reply: For Give Setu, hosting, SSL, updates and fixes are included during the active plan term. The website remains on Govindani Infotech’s platform, and the
+
+  FAIL [high] I already have a quote from another agency. Why should I pay more for yours?
+     - It promises a like-for-like review of the other agency's scope, which is not stated as a company cap
+     reply: A lower quote can be the right choice if both proposals cover the same scope. The useful comparison is what is included: design and content, mobile pe
+
+  FAIL [high] How would you handle FCRA donations separately from domestic contributions, 
+     - The reply contains two question marks, exceeding the one-question limit.
+     reply: Give Setu supports domestic donation operations, including donor records, automated 80G receipts, recurring donations, 10BD preparation, 10BE dispatch

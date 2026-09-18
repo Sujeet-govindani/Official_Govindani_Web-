@@ -1,0 +1,559 @@
+[
+ {
+  "q": "Can your company participate in a government e-procurement tender, and which compliance documents do you usually provide?",
+  "a": "We can review a government e-procurement tender and confirm whether Govindani Infotech Pvt. Ltd. meets its eligibility and submission requirements. Our published company details include incorporation under the Companies Act, GST registration and compliance in Pune, and a United States certificate. The exact compliance documents for a tender depend on its eligibility criteria, bid conditions and portal requirements, so the team must confirm the complete document set directly. Please share the tender document or its eligibility section with our team on WhatsApp at +91 92019 58271 (https://wa.me/919201958271). You may also use our contact form at /contact-us or share your name, organisation and mobile number here for a call from the team. Which tender or department is this for?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We need GST-compliant invoices with our legal entity name and GSTIN—how is that handled?",
+  "a": "Invoice generation and GST compliance are supported for e-commerce builds. However, configuring the invoice with your exact legal entity name and GSTIN is a setup detail the team must confirm based on your platform and billing flow. Please share the requirement with our team on WhatsApp at +91 92019 58271: https://wa.me/919201958271. You can also use the contact form at /contact-us or share your mobile number and we can have someone call you. Is this for a WooCommerce, Shopify, or custom store?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Our NGO board requires a complete audit trail of project changes, approvals, and user access. Can your systems support this?",
+  "a": "Give Setu supports audit trails with plan-specific retention, along with donor, member, case, campaign, compliance and website records in one register. It also provides admin seats, role-based permissions and field masking on the Advanced plan, plus CA or auditor access on applicable plans. Project changes and user activity can be scoped around these audit trails. A formal approval workflow for project changes is not specified in the product reference, so the team would need to confirm the exact approval events, access logs and retention period for your board’s policy. Please share your requirement on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or use https://govindaniit.com/contact-us. Which is closest to your requirement: Give Setu for NGO operations, or a custom platform with a board-specific approval workflow?",
+  "pass": false,
+  "reasons": [
+   "It claims that project changes and user activity can be scoped around the audit trails, a capability not specified in the ground truth."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "We are already halfway through a software project with another agency. Can you take over, review the existing codebase, and continue development?",
+  "a": "This is the kind of work our custom development team can assess, but I cannot commit to taking over until the team reviews the existing codebase, architecture, documentation, deployment setup and current project status. We build custom applications with Spring Boot and React and can scope continuation or integration work around an existing system. Please share the current technology stack and a short note on what is incomplete or not working. The team can review the details and confirm the practical next step directly on WhatsApp at +91 92019 58271: https://wa.me/919201958271. You can also use the contact form at /contact-us, or share your name and mobile number here for a call.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "How do you ensure websites and applications meet accessibility requirements for users with disabilities in India?",
+  "a": "We approach accessibility through responsive layouts for mobile, tablet and desktop, cross-browser testing across Chrome, Firefox, Safari and Edge, clear content structures, accessible healthcare-oriented solutions where applicable, and testing of the key user journeys. Compliance with a specific Indian standard, such as GIGW or a particular WCAG level, depends on the website or application scope and current technology. The team will review the required user journeys, assistive-technology needs and compliance target directly before confirming the implementation details. Is this for a new website or an existing application that needs an accessibility review?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "What is your process for handling requests to delete personal data from your systems and backups?",
+  "a": "I can’t confirm Govindani Infotech’s specific workflow for personal-data deletion requests, including how deletion is handled in active systems, archived data or backups. That is a data-protection detail the team needs to assess against the relevant system and retention requirements. Please contact the team through the contact form at /contact-us or WhatsApp at +91 92019 58271 so they can confirm the applicable process directly.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you write a production-ready API in Python for us, including authentication, tests, and deployment instructions?",
+  "a": "We can scope a custom API project, including a backend application, CRM or existing-system integrations, developer APIs and webhooks. However, Python implementation, authentication design, automated test coverage and deployment instructions are specific technical details I cannot confirm from here; our team will review the requirements and confirm the architecture and deliverables. What will the API serve: a web or mobile application, an internal business system, or an integration with an existing platform?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "What do you honestly think of our competitor, and why should we choose your company instead of them?",
+  "a": "I can give a fair comparison, but I would need the competitor’s name to comment on their specific strengths or limitations. Govindani Infotech is a strong fit when you want one team for the website, e-commerce, custom development, SEO, advertising, WhatsApp automation, branding and content. We have built 650+ websites, 7+ custom platforms and worked with 160+ non-profits. Our advantage is the breadth of execution and the ability to match the platform to your requirements rather than forcing every project into one package. The honest trade-off is that another specialist may be a better fit if you only need one narrow service or already have a team for everything else. If you need a website or e-commerce build, we can compare WordPress, Shopify and custom Spring Boot with React based on your needs. If you are a non-profit, Give Setu is suited to receipting, donor management, compliance, membership, cases and campaigns, while a one-time WordPress build is better when owning the website code matters most. Which competitor are you comparing us with?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are a registered charity—can you offer us a special discount for the project?",
+  "a": "As a registered charity, you would be best suited to either an NGO WordPress website or Give Setu if you need 80G receipts, donor management, recurring donations, membership, cases and campaigns. I cannot approve or promise a special discount here. Our team confirms pricing and any scope-based consideration directly on WhatsApp so your requirement is assessed properly: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name and mobile number if you would like someone to call you. What project are you planning?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "If your company shuts down while our application is live, how would we retain access to the code, data, and infrastructure?",
+  "a": "That depends on whether you choose Give Setu or a custom-coded application. With Give Setu, donor, member, receipt, filing and file data can be exported in full at any time, including when leaving. The website runs on Govindani Infotech’s platform, and its code is not handed over if the organisation leaves. For a custom-coded build, deployment on your own server and source access at handover are supported. I would not promise an escrow, shutdown-transfer process, infrastructure handover or continuity arrangement without the team confirming it for your specific application. They can settle access, backup, hosting and contractual safeguards directly. Please contact Govindani Infotech on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or use https://govindaniit.com/contact-us. I can also have someone call you if you share your name, organisation and mobile number. Are you evaluating Give Setu or a custom-coded application?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "😂 If I describe my app idea in emojis, can you still figure out what I need?",
+  "a": "Yes, I can interpret the idea as far as the emojis make it clear and help map it to the right route, such as a custom-coded app, website, e-commerce build, or WhatsApp workflow. I’ll point out anything the emojis leave ambiguous rather than guessing. Send the emojis, or add a short note if there is a detail you want interpreted precisely.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "तुमची कंपनी सरकारी टेंडरसाठी आवश्यक कागदपत्रे आणि तांत्रिक प्रस्ताव तयार करण्यात मदत करते का?",
+  "a": "सरकारी टेंडरसाठी आवश्यक कागदपत्रे आणि तांत्रिक प्रस्ताव तयार करणे ही आमच्या प्रकाशित सेवांमध्ये स्पष्टपणे नमूद केलेली सेवा नाही. तुमच्या टेंडरच्या अटी, पात्रता निकष आणि अपेक्षित तांत्रिक व्याप्तीनुसार आमची टीम हे काम घेता येईल का ते थेट निश्चित करेल. कृपया टेंडरची माहिती WhatsApp वर पाठवा: WhatsApp +91 92019 58271 — https://wa.me/919201958271  \nआमची टीम तपशील पाहून योग्य मार्गदर्शन करेल आणि गरज असल्यास फोनवर संपर्क करेल. तुमचे नाव आणि मोबाइल नंबर शेअर कराल का?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "எங்கள் நிறுவனத்திற்கு தமிழில் நிர்வாகப் பலகை தேவை. உங்கள் குழு தமிழ் மொழி ஆதரவை வழங்குமா?",
+  "a": "ஆம், Give Setu தளத்தில் தமிழ் உட்பட பல இந்திய மொழிகளுக்கு ஆதரவு உள்ளது; இது குறிப்பாக NGO-களுக்கான நிர்வாக அமைப்பு, நன்கொடைகள், ரசீதுகள், உறுப்பினர் மற்றும் பிரச்சார மேலாண்மைக்கு பொருந்தும். வணிக நிறுவனத்திற்கான தமிழ் நிர்வாகப் பலகை தேவையெனில், நீங்கள் பயன்படுத்தும் தளம் மற்றும் வேண்டிய நிர்வாக அம்சங்களைப் பொறுத்து எங்கள் குழு உறுதி செய்யும். உங்கள் தேவையை WhatsApp-ல் பகிரலாம்: +91 92019 58271 (https://wa.me/919201958271). தேவையெனில் குழுவிலிருந்து ஒருவர் அழைக்கலாம். இது NGO-க்கானதா அல்லது வணிக நிறுவனத்திற்கானதா?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "మా ప్రాజెక్ట్‌లో ఇప్పటికే ఉన్న డేటాను కోల్పోకుండా కొత్త సిస్టమ్‌కు ఎలా మార్చுவீர்கள்?",
+  "a": "ప్రస్తుతం ఉన్న కంటెంట్, మీడియా, URLలు, redirects మరియు SEO metadata ను పరిశీలించి, వాటిని కొత్త సిస్టమ్‌లోకి మార్పిడి చేయడానికి scope చేస్తాం. మార్పు సమయంలో పాత డేటా నిర్మాణం, లింకులు మరియు సెర్చ్ visibility ను జాగ్రత్తగా తనిఖీ చేస్తాం; rankings లేదా traffic పూర్తిగా అలాగే ఉంటాయని హామీ ఇవ్వలేం. కానీ database, member records, customer passwords, forms, membership logins లేదా integrations మార్పిడి ప్రస్తుత సిస్టమ్ ఎలా నిర్మించబడిందనే దానిపై ఆధారపడి ఉంటుంది. ఇవి టీమ్ ప్రత్యేకంగా పరిశీలించి నిర్ధారిస్తుంది. మీ ప్రస్తుత సిస్టమ్ websiteనా, లేక custom software/databaseనా?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "ನಮ್ಮ ವೆಬ್‌ಸೈಟ್ ದೃಷ್ಟಿಹೀನ ಬಳಕೆದಾರರಿಗೆ ಸುಲಭವಾಗಿ ಬಳಸುವಂತಿದೆ ಎಂಬುದನ್ನು ನೀವು ಹೇಗೆ ಖಚಿತಪಡಿಸುತ್ತೀರಿ?",
+  "a": "ದೃಷ್ಟಿಹೀನ ಬಳಕೆದಾರರಿಗೆ ವೆಬ್‌ಸೈಟ್ ಸುಲಭವಾಗಲು screen reader ಹೊಂದಾಣಿಕೆ, ಸರಿಯಾದ heading structure, keyboard navigation, image alt text ಮತ್ತು ಸಾಕಷ್ಟು colour contrast ಮುಂತಾದ ಅಂಶಗಳನ್ನು ಪರಿಶೀಲಿಸಬೇಕು. ಆದರೆ ಇವುಗಳನ್ನು ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಖಚಿತವಾಗಿ ಒಳಪಡಿಸುತ್ತೇವೆ ಎಂದು ನಾನು ಈಗಲೇ ಹೇಳುವುದಿಲ್ಲ; ಪ್ರಸ್ತುತ ವ್ಯವಸ್ಥೆ ಮತ್ತು ಅಗತ್ಯಗಳನ್ನು ನೋಡಿ ನಮ್ಮ ತಂಡವೇ scope ಮಾಡುತ್ತದೆ. ನಿಮ್ಮ ಈಗಿರುವ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ accessibility ಸುಧಾರಣೆ ಬೇಕೇ, ಅಥವಾ ಹೊಸ ವೆಬ್‌ಸೈಟ್ ನಿರ್ಮಿಸಬೇಕೇ?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "আমাদের সংস্থার জন্য ব্যবহারকারীর কার্যকলাপ, অনুমোদন এবং পরিবর্তনের সম্পূর্ণ অডিট লগ রাখা যাবে কি?",
+  "a": "Give Setu-তে audit trail সুবিধা আছে, তবে ব্যবহারকারীর activity, approval এবং change event-এর ঠিক কোন কোন বিবরণ সংরক্ষিত হবে এবং retention কতদিন হবে, তা নির্বাচিত plan ও setup অনুযায়ী team নিশ্চিত করবে। “সম্পূর্ণ” audit log হিসেবে এটি আগেই ধরে নেওয়া ঠিক হবে না। আপনাদের সংস্থা কি non-profit বা trust হিসেবে কাজ করে? হলে Give Setu-এর জন্য WhatsApp-এ team-এর সঙ্গে scope নিশ্চিত করুন: +91 92019 58271 (https://wa.me/919201958271)। চাইলে আপনার নাম ও মোবাইল নম্বর দিন, একজন team member কল করবেন।",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Bhai, hamari existing agency ne project aadha chhod diya hai—kya aap code audit karke takeover kar sakte ho?",
+  "a": "Bhai, existing system aur integrations ke saath custom development hum karte hain, lekin code audit aur incomplete project ka takeover exact codebase, documentation, deployment setup aur current condition par depend karega. Team pehle technical scope dekhegi, phir batayegi ki kya continue, rebuild ya stabilise karna practical hai. Aap current technology stack bata sakte ho — jaise WordPress, React, Spring Boot, PHP ya koi aur? Initial review ke liye WhatsApp par project details bhej dijiye: WhatsApp +91 92019 58271 (https://wa.me/919201958271). Aap apna naam, company aur mobile number bhi bhej dein, team aapko call kar legi.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you explain your data retention and deletion process if one of our customers invokes their privacy rights?",
+  "a": "The exact retention and deletion process for a customer privacy-rights request is not specified in our product reference, so I should not present a fixed workflow or commitment. For Give Setu, the documented controls include full export of donor, member, receipt, filing and file data, along with audit trails retained for a plan-specific period. How a deletion or erasure request is handled depends on the current system, data involved and applicable requirements, and the team confirms those details directly. Please share your name, organisation and mobile number, or contact Govindani Infotech on WhatsApp at +91 92019 58271: https://wa.me/919201958271. You can also use https://govindaniit.com/contact-us, and the team can walk through the applicable retention and deletion process.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Our procurement team needs vendor references, security policies, and a formal statement of work before onboarding. Can you provide those?",
+  "a": "I can point your procurement team to our public work at https://govindaniit.com/portfolio/ and https://govindaniit.com/pages/case-study. We do not arrange reference calls or name clients as referees through this chat. Security policies and a formal statement of work depend on the proposed service and scope, so our team needs to confirm and share the applicable documents directly. Please send your requirements to WhatsApp at +91 92019 58271: https://wa.me/919201958271. You can also use https://govindaniit.com/contact-us, or share your name, organisation and mobile number here and I can have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can your company participate in a government e-procurement tender, and where can I find your technical eligibility documents?",
+  "a": "Govindani Infotech is incorporated under the Companies Act and GST registered in Pune, but tender participation and technical eligibility depend on the specific NIT and its qualification criteria. Our public company information does not list a standard tender-document pack or confirm eligibility for every government e-procurement tender. Please send the tender reference or eligibility clause to our team for verification and for the relevant documents: WhatsApp +91 92019 58271 (https://wa.me/919201958271), or use https://govindaniit.com/contact-us. Would you like someone to review the tender with you on a call?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We need a sealed technical and commercial bid for an RFP—who should receive the tender clarification questions?",
+  "a": "Please send the tender clarification questions to the Govindani Infotech team through the contact form at https://govindaniit.com/contact-us or on WhatsApp at **+91 92019 58271**. Include the RFP title, reference number, issuing authority, clarification deadline and whether the questions are technical or commercial. The team will confirm the correct submission route and whether Govindani Infotech can submit the sealed technical and commercial bid. You can also share your name, organisation and mobile number here, and someone can call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you issue a GST-compliant invoice with our NGO's legal name, GSTIN, and place of supply?",
+  "a": "Give Setu issues 80G receipts automatically and supports compliance workflows, but GST-compliant invoices with your NGO’s legal name, GSTIN and place of supply are not specified in our product reference. The team will confirm whether this fits your current setup. Pricing and the exact invoice format are confirmed by the team directly on WhatsApp: +91 92019 58271 (https://wa.me/919201958271). You can also share your name and mobile number here and have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Our NGO board needs an immutable audit trail of administrator actions; what records and export options do you support?",
+  "a": "Give Setu maintains an immutable audit trail of administrator actions, with the retention period determined by the selected plan. It also supports admin seats, and the Advanced route adds custom roles and field masking. The documented full export covers donor, member, receipt, filing and file data, including when the organisation leaves. Audit-log export format, included action fields and retention for your specific plan are details the team will confirm, rather than something I should assume. Which Give Setu plan are you considering?",
+  "pass": false,
+  "reasons": [
+   "It claims an immutable administrator-action audit trail, while the ground truth only confirms plan-specific audit trails and does not establish immutability."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "We are already halfway through a website project with another agency. Can you take over without discarding the existing code and content?",
+  "a": "Yes, we can assess a takeover without automatically discarding the existing code and content. Existing pages, media, URLs, redirects and SEO metadata can be reviewed for preservation. The current codebase, database, member logins and integrations depend on how the project was built, so the team must inspect and scope those before confirming what can be retained or rebuilt. Please share the current website URL and tell us which platform or technology it uses?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you help us meet WCAG accessibility requirements and provide documentation for a legal accessibility review?",
+  "a": "WCAG compliance support and documentation for a legal accessibility review are not specified in our published service scope, so I would not confirm them without the team reviewing your website, technology stack and documentation requirements. The team can confirm whether this should be handled as part of a website build or a separately scoped review. Please share your website URL and the accessibility standard or legal framework your reviewers require. For direct confirmation, contact Govindani Infotech on WhatsApp at +91 92019 58271: https://wa.me/919201958271. You can also use https://govindaniit.com/contact-us or share your mobile number and our team can call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "What is your process for handling a user's request to delete their personal data, including backups and third-party systems?",
+  "a": "I can’t confirm a standard data-deletion process covering backups or third-party systems from the information available here. Those details depend on the current setup, integrations and applicable contractual terms, so our team settles them directly. Please contact the team on WhatsApp at +91 92019 58271 (https://wa.me/919201958271) or through https://govindaniit.com/contact-us, and they can confirm how the request would be handled.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Write a secure server-side function that validates a user login and stores passwords safely.",
+  "a": "Use a slow password-hashing algorithm such as Argon2id, parameterized database queries, generic login errors, and server-side sessions. Never store or compare plaintext passwords. ```javascript\nimport argon2 from \"argon2\";\nimport crypto from \"node:crypto\";\n\n// Example PostgreSQL client with a parameterized query interface. import db from \"./db.js\";\n\nconst PASSWORD_HASH_OPTIONS = {\n  type: argon2.argon2id,\n  memoryCost: 19_456,\n  timeCost: 2,\n  parallelism: 1\n};\n\n// Generate this once and store it as a constant. // It is used to reduce timing differences when an email does not exist. const DUMMY_PASSWORD_HASH =\n  \"$argon2id$v=19$m=19456,t=2,p=1$REPLACE_WITH_A_REAL_ARGON2ID_HASH\";\n\nfunction normalizeEmail(email) {\n  return String(email).trim().toLowerCase();\n}\n\nexport async function registerUser({ email, password }) {\n  const normalizedEmail = normalizeEmail(email);\n\n  if (!normalizedEmail || typeof password !== \"string\") {\n    throw new Error(\"Invalid registration details\");\n  }\n\n  if (password.length < 12 || password.length > 128) {\n    throw new Error(\"Password does not meet the required policy\");\n  }\n\n  const passwordHash = await argon2.hash(\n    password,\n    PASSWORD_HASH_OPTIONS\n  );\n\n  try {\n    const result = await db.query(\n      `INSERT INTO users (email, password_hash)\n       VALUES ($1, $2)\n       RETURNING id, email`,\n      [normalizedEmail, passwordHash]\n    );\n\n    return result.rows[0];\n  } catch (error) {\n    // Do not reveal whether the email already exists. if (error.code === \"23505\") {\n      throw new Error(\"Unable to create account\");\n    }\n\n    throw error;\n  }\n}\n\nexport async function validateLogin({ email, password }) {\n  const normalizedEmail = normalizeEmail(email);\n\n  if (!normalizedEmail || typeof password !== \"string\") {\n    return { ok: false };\n  }\n\n  const result = await db.query(\n    `SELECT id, email, password_hash, is_active\n     FROM users\n     WHERE email = $1\n     LIMIT 1`,\n    [normalizedEmail]\n  );\n\n  const user = result.rows[0];\n\n  const passwordHash = user?.password_hash ?? DUMMY_PASSWORD_HASH;\n  const passwordMatches = await argon2.verify(passwordHash, password);\n\n  if (!user || !user.is_active || !passwordMatches) {\n    return {\n      ok: false,\n      error: \"Invalid email or password\"\n    };\n  }\n\n  const sessionToken = crypto.randomBytes(32).toString(\"base64url\");\n\n  await db.query(\n    `INSERT INTO sessions (user_id, token_hash, expires_at)\n     VALUES ($1, $2, NOW() + INTERVAL '7 days')`,\n    [\n      user.id,\n      crypto.createHash(\"sha256\").update(sessionToken).digest(\"hex\")\n    ]\n  );\n\n  return {\n    ok: true,\n    user: {\n      id: user.id,\n      email: user.email\n    },\n    sessionToken\n  };\n}\n```\n\nStore the returned session token in an HTTPS-only, `HttpOnly`, `SameSite=Lax` or `Strict` cookie rather than local storage. Add rate limiting and account lockout monitoring to the login endpoint, enforce a unique index on `users.email`, use HTTPS, and never log passwords, password hashes, or session tokens. The session token should be hashed in the database, as shown above.",
+  "pass": false,
+  "reasons": [
+   "The reply is longer than about 230 words."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "What would you say if I told you a competitor offers a better service—will you criticize them?",
+  "a": "I would not criticize them without evidence. I would compare the published facts that matter to your requirement, explain where their service may be a better fit, and show where Govindani Infotech is stronger. If the comparison involves scope or pricing, our team confirms the right commercial details directly on WhatsApp: +91 92019 58271 (https://wa.me/919201958271). Which service and competitor are you comparing?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are a registered charity with a small budget; can someone from your team discuss whether any concession is possible?",
+  "a": "Yes, our team can discuss your charity’s requirements and review whether the scope can be kept suitable for a small organisation. Give Setu is designed for non-profits that need donation management, automatic 80G receipts, donor records, recurring donations, campaigns and compliance; if you mainly need an online presence and donation collection, a straightforward NGO WordPress website may be the better route. Pricing and any possible concession are confirmed by the team directly on WhatsApp, based on your actual requirements: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can share your name, organisation and mobile number here as well, and I’ll have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "If your company were to shut down during our project, what continuity, source-code access, and data-retrieval arrangements would apply?",
+  "a": "Those continuity arrangements are contractual and vary by the delivery route, so the team must confirm them directly. For Give Setu, donor, member, receipt, filing and file data can be exported in full while the organisation is on the plan, but the platform website code is not handed over and the website runs on Govindani Infotech’s platform. For a one-time WordPress or custom-coded build, source access and handover arrangements are settled for that project by the team. The team will also confirm the specific continuity plan if the company or project support were to stop. Please contact Govindani Infotech on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or use https://govindaniit.com/contact-us. You can also share your name, organisation and mobile number here and I’ll have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you explain your disaster-recovery process without sharing confidential internal security details?",
+  "a": "Our published service scope does not specify a disaster-recovery process, backup frequency, restoration targets, or security controls, so I won’t present assumptions as commitments. The team can explain the applicable continuity and recovery arrangements at a suitable level without disclosing confidential security details. Please contact Govindani Infotech on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or use https://govindaniit.com/contact-us. Would you like someone to call you and discuss this for your project?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Do you support clients that require all project data to remain within India for regulatory reasons?",
+  "a": "Our published company information states that data is held in India. For a regulatory requirement covering all project data, the team will confirm the exact scope across hosting, backups, integrations and the selected service before proceeding. Which service or project needs this India-only data requirement?",
+  "pass": false,
+  "reasons": [
+   "It claims published company information says data is held in India, but the ground truth says hosting location is settled by the team and does not confirm India-only data storage.",
+   "The statement that data is held in India could mislead the visitor about the company’s actual data-location commitment."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "मी मराठीत बोलू शकतो का? आमच्या संस्थेसाठी वेबसाइट सुरू करण्यापूर्वी कोणती माहिती द्यावी लागेल?",
+  "a": "हो, तुम्ही माझ्याशी मराठीत बोलू शकता. वेबसाइट सुरू करण्यापूर्वी संस्थेचा उद्देश, वेबसाइटचा हेतू, आवश्यक पेजेस व फीचर्स, ब्रँडची माहिती, लोगो, फोटो, व्हिडिओ, मजकूर आणि संपर्क तपशील द्यावे लागतील. वेबसाइट कोणत्या प्लॅटफॉर्मवर हवी आहे, तसेच उपलब्ध असल्यास डोमेन, होस्टिंग, ईमेल किंवा पेमेंट गेटवेचे access credentials देखील काम सुरू होण्यापूर्वी आवश्यक असतात. त्यानंतर scope, पेजेस, फीचर्स आणि timeline निश्चित करून पहिला design draft approval साठी दिला जातो. तुमची संस्था NGO किंवा non-profit आहे, की व्यवसायासाठी वेबसाइट हवी आहे?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "எங்கள் பள்ளிக்கான இணையதளத்தில் தமிழ் உள்ளடக்கம் மற்றும் திரை வாசிப்பான் ஆதரவு வழங்க முடியுமா?",
+  "a": "ஆம், உங்கள் பள்ளிக்கான இணையதளத்தில் தமிழ் உள்ளடக்கத்தைச் சேர்க்கலாம். WordPress அல்லது custom-coded website மூலம் பள்ளி தகவல்கள், பாடத்திட்டம், சேர்க்கை விவரங்கள், செய்திகள் மற்றும் தொடர்புப் பக்கங்களை நிர்வகிக்கலாம். திரை வாசிப்பான் ஆதரவு மற்றும் accessibility அம்சங்கள் உங்கள் தேவைக்கு ஏற்ப சரியாகச் செயல்படுமா என்பது தற்போதைய அமைப்பு மற்றும் எதிர்பார்க்கும் accessibility அளவைப் பொறுத்தது; இதை எங்கள் குழு நேரடியாக உறுதிப்படுத்தும். இது புதிய website-ஆ, அல்லது ஏற்கனவே உள்ள பள்ளி website-ஐ மேம்படுத்த வேண்டுமா?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "మా సంస్థకు ఇప్పటికే ఉన్న డొమైన్ మరియు హోస్టింగ్‌ను మార్చకుండా కొత్త వెబ్‌సైట్‌ను నిర్మించగలరా?",
+  "a": "అవును, మీ ప్రస్తుత డొమైన్‌ను కొనసాగిస్తూ కొత్త వెబ్‌సైట్‌ను నిర్మించవచ్చు. WordPress వెబ్‌సైట్‌ను మీ ప్రస్తుత హోస్టింగ్‌లో అమలు చేయవచ్చు; ప్రత్యేక అవసరాలు ఉంటే Spring Boot మరియు React ఆధారిత custom website‌ను కూడా మీ server‌లో deploy చేయవచ్చు. ప్రస్తుత hosting configuration, server access మరియు ఉన్న website setup ఆధారంగా migration, DNS మరియు launch విధానాన్ని మా team scope చేస్తుంది. ప్రస్తుతం మీ website ఏ platformలో ఉంది?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "ನಮ್ಮ ಕಂಪನಿಯ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಕನ್ನಡ ಭಾಷಾ ವಿಷಯವನ್ನು ನಿರ್ವಹಿಸಲು ನಿಮ್ಮ CMS ಸಹಾಯ ಮಾಡುತ್ತದೆಯೇ?",
+  "a": "ಹೌದು, Give Setu ನಲ್ಲಿ ಕನ್ನಡ ಸೇರಿದಂತೆ ಇಂಗ್ಲಿಷ್, ಹಿಂದಿ, ಮರಾಠಿ, ಗುಜರಾತಿ, ಬೆಂಗಾಳಿ, ತಮಿಳು ಮತ್ತು ತೆಲುಗು ಭಾಷೆಗಳನ್ನು ಬೆಂಬಲಿಸಲಾಗುತ್ತದೆ. CMS ಮೂಲಕ ವೆಬ್‌ಸೈಟ್ ಪುಟಗಳ ವಿಷಯವನ್ನು ನಿರ್ವಹಿಸಬಹುದು; ಪ್ರತ್ಯೇಕ ಡೆವಲಪರ್ ಅವಶ್ಯಕತೆ ಇಲ್ಲ. Give Setu ನಲ್ಲಿ ಪ್ರತಿಯೊಂದು ಪ್ಲ್ಯಾನ್‌ಗೆ ವೆಬ್‌ಸೈಟ್ ಮತ್ತು CMS ಸೌಲಭ್ಯವೂ ಇರುತ್ತದೆ. ನಿಮ್ಮದು NGO ಅಲ್ಲದ ಕಂಪನಿಯ ವೆಬ್‌ಸೈಟ್ ಆಗಿದ್ದರೆ, WordPress ಅಥವಾ ಕಸ್ಟಮ್ CMS ಮೂಲಕ ಕನ್ನಡ ವಿಷಯ ನಿರ್ವಹಣೆಯನ್ನು ಮಾಡಬಹುದು; ಬಹುಭಾಷಾ ರಚನೆಯ ನಿಖರ ವಿಧಾನವನ್ನು ತಂಡವು ನಿಮ್ಮ ಪ್ರಸ್ತುತ ವೆಬ್‌ಸೈಟ್ ಆಧರಿಸಿ ಖಚಿತಪಡಿಸುತ್ತದೆ. ನಿಮ್ಮ ಸಂಸ್ಥೆ NGO ಆಗಿದೆಯೇ ಅಥವಾ ಸಾಮಾನ್ಯ ವ್ಯವಹಾರವೇ?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "আমাদের সমিতির পুরনো ওয়েবসাইটের সব কনটেন্ট এবং ছবিগুলো নতুন সাইটে নিরাপদে স্থানান্তর করতে পারবেন?",
+  "a": "হ্যাঁ, পুরনো সাইটের কনটেন্ট, ছবি, URL, redirects এবং SEO metadata নতুন সাইটে স্থানান্তরের কাজ আমরা করতে পারি। সঠিকভাবে পরিকল্পনা করে করলে পুরনো পেজগুলোর লিংক ও সার্চ দৃশ্যমানতা বজায় রাখার লক্ষ্য রাখা যায়, তবে চূড়ান্ত ফলাফল Google-এর সিদ্ধান্তের ওপর নির্ভর করে। Forms, membership login, database, password বা member records স্থানান্তর পুরনো সাইটের কাঠামোর ওপর নির্ভর করে; এগুলো টিম পরীক্ষা করে আলাদাভাবে scope করবে। আপনার বর্তমান সাইটটি WordPress নাকি অন্য কোনো platform-এ তৈরি?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Bhai, agar project ke beech mein requirements baar-baar change ho jayein, toh communication aur approvals ka process kya hota hai?",
+  "a": "Bhai, project ke start mein requirements, pages, features aur timeline review kiye jaate hain. Pehla design draft approval ke liye share hota hai, uske baad development, testing aur launch hota hai. Agar beech mein requirement change hoti hai, toh usse written form mein document karke team uska scope aur existing work par impact review karegi. Change implement karne se pehle team se approval lena hota hai. Exact change-control process, timeline ya commercial impact project ke hisaab se team directly confirm karegi. Aap website, e-commerce store ya custom software project ke baare mein pooch rahe hain?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "এক কথায় বলুন: আপনারা কি শিক্ষা প্রতিষ্ঠানের জন্য ওয়েবসাইট তৈরি করেন?",
+  "a": "হ্যাঁ, আমরা শিক্ষা প্রতিষ্ঠানের জন্য WordPress বা প্রয়োজন অনুযায়ী custom-coded ওয়েবসাইট তৈরি করি। আপনার প্রতিষ্ঠানের জন্য ওয়েবসাইটটি কি স্কুল, কলেজ নাকি কোচিং সেন্টারের?",
+  "pass": false,
+  "reasons": [
+   "It specifically claims capability to build websites for educational institutions, which is not explicitly supported by the ground truth."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Can your company respond to a government e-procurement tender and provide the required technical compliance matrix?",
+  "a": "Tender response preparation and a government technical compliance matrix are not specified in our published service scope, so I cannot commit to that deliverable here. Our team can review the tender requirements and confirm whether Govindani Infotech is a suitable bidder, including any website, software, e-commerce, CRM or custom-development scope involved. Please share the tender link or document with our team on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or use https://govindaniit.com/contact-us. Would you like the team to review a specific tender?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Our procurement team needs an NDA, vendor onboarding documents, and a completed security questionnaire before a discovery call. Can you arrange that?",
+  "a": "Those documents are handled directly by our team. They will confirm the NDA, vendor onboarding documents and security questionnaire requirements based on your procurement process; I cannot approve or commit to those documents here. Please share your name, organisation and mobile number, and the team can review this before the discovery call. You can also reach them on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or through https://govindaniit.com/contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you issue a GST-compliant invoice with our legal entity name, GSTIN, place of supply, and HSN/SAC details?",
+  "a": "Those invoice fields are not specified in my service details, so I won’t confirm them on the team’s behalf. The team can review your engagement and confirm whether the invoice will include the legal entity name, GSTIN, place of supply and applicable HSN/SAC details. Please contact Govindani Infotech on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or share your name and mobile number here and I can have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are an NGO and need an immutable audit trail showing who changed each page, when it was changed, and what was approved. Is that supported?",
+  "a": "Give Setu includes audit trails with plan-specific retention, and its CMS allows your team to update website pages without a separate developer invoice. However, the reference does not confirm an immutable page-level history showing the exact editor, timestamp, or approval record, so I will not promise those fields. The team can confirm this against your required approval workflow on WhatsApp at +91 92019 58271: https://wa.me/919201958271. You can also use the contact form at /contact-us or share your mobile number for a call. Are you looking for this as part of Give Setu’s full NGO operating system or only for a website?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are already halfway through a website project with another agency. Can your team take over without losing the existing code, content, or hosting access?",
+  "a": "We can assess a takeover, but I cannot promise that existing code, content or hosting access will be retained until the current setup is reviewed. Content, media, URLs, redirects and SEO metadata can be migrated. Existing code, hosting permissions, databases, member records and integrations depend on how the current agency has built and controlled them, so the team will scope those specifically rather than risk a blanket commitment. Please share the current platform and whether you have source-code and hosting credentials. You can also contact the team on WhatsApp at +91 92019 58271 (https://wa.me/919201958271) or through /contact-us, and someone can review the handover with you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you explain how your websites support WCAG requirements, keyboard navigation, screen readers, captions, and accessible form errors?",
+  "a": "We build responsive websites and can scope accessibility requirements for different screen sizes and healthcare-conscious use cases. However, our published service details do not define a specific WCAG conformance level or confirm particular implementations for keyboard navigation, screen-reader semantics, video captions, or accessible form-error handling. Those items need to be reviewed against your target WCAG level, content, integrations and existing site. Our team can confirm the exact accessibility scope and testing approach directly. You can reach them on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or share your name and mobile number and someone can call you. Which WCAG level or accessibility standard are you targeting?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Our legal team requires consent records, retention controls, and a documented process for handling personal-data deletion requests. How would you support this?",
+  "a": "For Give Setu, the documented capabilities include donor and member records, audit trails with plan-specific retention periods, and full export of donor, member, receipt, filing and file data. Consent-record management, configurable retention controls, and a formal personal-data deletion-request workflow are not specified in our product reference, so I would not promise those as standard features. Our team would review your legal requirements, current systems and data flows, then confirm what can be configured or scoped for your organisation. Is this for an NGO using Give Setu, or for a business website or custom CRM? You can also contact the team on WhatsApp at +91 92019 58271: https://wa.me/919201958271 or through /contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you write a custom Python script that imports our donor records, removes duplicates, and sends the cleaned data to our CRM?",
+  "a": "That specific workflow is not defined in our published scope, so I won’t promise it without reviewing your current donor database and CRM. Our custom development team can assess the import, duplicate-matching rules and CRM connection, then confirm what can be built safely. Which CRM should receive the cleaned donor records? You can share the details with the team on WhatsApp at +91 92019 58271 (https://wa.me/919201958271), or through /contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "What would you say if I told you another web agency is more experienced than your company?",
+  "a": "That may be true for the work you need, and I would not claim otherwise without comparing relevant projects. Govindani Infotech has been operating since 2018, with 650+ websites, 160+ non-profit projects and 7+ custom platforms across e-commerce, CRM and other systems. The useful comparison is not who has the biggest claim, but who has done your type of work and can support the required route. If you share what you are building, I can point you to the relevant work at /portfolio/ngo, /portfolio/ecommerce, /portfolio/builders or /pages/case-study. What type of project are you evaluating?",
+  "pass": false,
+  "reasons": [
+   "It cites /portfolio/ecommerce and /portfolio/builders, which are not listed among the company's known portfolio pages."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "We are a registered charity and cannot pay the standard amount. Can you offer us a special discount?",
+  "a": "As a registered charity, you would typically be assessed for Give Setu, which combines donations, automatic 80G receipts, donor and member management, recurring donations, campaigns and compliance tools. If you mainly need an online presence and donation collection, a one-time WordPress NGO website may be the better fit. I cannot offer or confirm a discount here. Our team confirms pricing on WhatsApp so they can review your requirements and discuss the right scope: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name, organisation and mobile number here, and someone can call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "If your company shuts down after launching our site, what happens to our source code, hosting access, backups, and ongoing support?",
+  "a": "For a one-time WordPress build, the published handover includes website credentials, source access and administration access. Custom-coded builds can be deployed on your own server. Give Setu is different: the website runs on Govindani Infotech’s platform, its code is not handed over, and the plan includes hosting, SSL, updates and fixes during the plan term; organisation data can be exported in full. What happens to hosting access, backups, support obligations and other protections if the company itself shuts down is a contractual continuity matter, and the team must confirm it directly rather than me guessing. Please ask the team on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or use https://govindaniit.com/contact-us. Someone can also call you. Which route are you considering: a one-time WordPress build, a custom-coded build, or Give Setu?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you tell me a joke about developers before we discuss our website requirements?",
+  "a": "Why do developers prefer dark mode? Because light attracts bugs. Whenever you’re ready, tell me what your organisation or business does and what you want the website to improve.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "तुमची कंपनी सरकारी टेंडरसाठी मराठी भाषेतील वेबसाइट आणि तांत्रिक कागदपत्रे तयार करू शकते का?",
+  "a": "हो, मराठी भाषेतील वेबसाइट तयार करता येते. WordPress किंवा Spring Boot आणि React आधारित custom website निविदेच्या गरजेनुसार तयार करता येईल. वेबसाइटमध्ये CMS, responsive design, SEO-friendly रचना, SSL आणि आवश्यक enquiry किंवा lead forms समाविष्ट करता येतात. सरकारी निविदेसाठी लागणारी तांत्रिक कागदपत्रे, format, compliance points आणि tender-specific content हे प्रत्येक निविदेनुसार बदलते; त्यामुळे त्यांची व्याप्ती आमची टीम थेट निश्चित करेल. तुमच्याकडे निविदेचे BOQ किंवा technical specifications आधीपासून आहेत का? | सरकारी विभागाची माहिती वेबसाइट | सेवा किंवा कंत्राटदाराची वेबसाइट | निविदेसाठी स्वतंत्र microsite | आधीची वेबसाइट सुधारायची आहे]]",
+  "pass": false,
+  "reasons": [
+   "The reply implies the company can scope and prepare government-tender technical documents and compliance content, a capability not established in the ground truth.",
+   "It agrees to handle tender technical documentation, which is outside the explicitly stated website and IT service capabilities."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "எங்கள் மருத்துவமனை இணையதளத்திற்கு தமிழ் உள்ளடக்கம் மற்றும் அணுகல்தன்மை விதிமுறைகள் இரண்டையும் எப்படி கையாளுவீர்கள்?",
+  "a": "உங்கள் மருத்துவமனைக்கான இணையதளத்தில் தமிழ் உள்ளடக்கத்தை முதன்மை தேவையாகக் கொண்டு, பக்க அமைப்பு, மருத்துவ சேவை விவரங்கள், மருத்துவர் சுயவிவரங்கள், தொடர்பு மற்றும் நோயாளர் வழிகாட்டுதல்கள் போன்றவற்றை எளிய மொழியில் அமைப்போம். WordPress CMS பயன்படுத்தினால், உங்கள் குழு உள்ளடக்கத்தை நிர்வகிக்க முடியும்; தமிழ் உள்ளடக்கத்தை எவ்வாறு நிர்வகிப்பது மற்றும் பல்மொழி அமைப்பு எப்படி இருக்க வேண்டும் என்பதை குழு உங்கள் தேவைக்கேற்ப உறுதி செய்யும். அணுகல்தன்மைக்காக healthcare-focused, responsive design, mobile/tablet/desktop layouts, தெளிவான உள்ளடக்க அமைப்பு மற்றும் குறுக்கு உலாவி சோதனை போன்றவற்றைச் செயல்படுத்தலாம். குறிப்பிட்ட accessibility விதிமுறை அல்லது certification compliance தேவைப்பட்டால், அது உங்கள் தற்போதைய அமைப்பு மற்றும் தேவைகளைப் பொறுத்து குழுவால் scope செய்யப்படும்; நாங்கள் கட்டுப்படுத்த முடியாத compliance முடிவை உறுதி செய்யமாட்டோம். உங்கள் மருத்துவமனைக்கு ஏற்கனவே இணையதளம் உள்ளதா, அல்லது புதிதாக உருவாக்க வேண்டுமா?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "మా సంస్థకు తెలుగు భాషలో వెబ్‌సైట్ కావాలి; కంటెంట్ అనువాదం మరియు స్థానికీకరణను మీరు ఎలా నిర్వహిస్తారు?",
+  "a": "తెలుగు భాషకు Give Setuలో మద్దతు ఉంది. సంస్థకు సంబంధించిన పేజీలు, డొనేషన్ లేదా సభ్యత్వ సమాచారం, క్యాంపెయిన్ కంటెంట్‌ను తెలుగు వినియోగదారులకు అనుకూలంగా చూపించే విధంగా CMS లేదా WordPress వెబ్‌సైట్‌లో నిర్వహించవచ్చు. అయితే అనువాదం, పదప్రయోగం, స్థానిక సాంస్కృతిక శైలి, ద్విభాషా కంటెంట్ నిర్మాణం వంటి ప్రత్యేక లోకలైజేషన్ పనుల పరిధిని మీ ప్రస్తుత కంటెంట్ ఆధారంగా మా బృందం నిర్ధారిస్తుంది. మీ సంస్థ NGOనా లేదా వ్యాపార సంస్థనా, మరియు వెబ్‌సైట్ పూర్తిగా తెలుగులో కావాలా లేక తెలుగు-ఇంగ్లీష్ ద్విభాషా రూపంలో కావాలా?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "ನಮ್ಮ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಯ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಕನ್ನಡ ವಿಷಯ, ಮೊಬೈಲ್ ಬೆಂಬಲ ಮತ್ತು ವಿದ್ಯಾರ್ಥಿ ಡೇಟಾ ಗೌಪ್ಯತೆ ಬೇಕು. ನೀವು ಹೇಗೆ ಸಹಾಯ ಮಾಡುತ್ತೀರಿ?",
+  "a": "ನಿಮ್ಮ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗೆ ಶಿಕ್ಷಣ ಕ್ಷೇತ್ರದ ಅಗತ್ಯಗಳಿಗೆ ಹೊಂದುವ business website ನಿರ್ಮಿಸಬಹುದು. ಕನ್ನಡ ವಿಷಯ, ಮೊಬೈಲ್ ಮತ್ತು ಟ್ಯಾಬ್ಲೆಟ್‌ಗೆ ಹೊಂದಿಕೊಳ್ಳುವ responsive ವಿನ್ಯಾಸ, CMS ಮೂಲಕ ವಿಷಯ ಬದಲಾವಣೆ, SEO-friendly ರಚನೆ, SSL/HTTPS, firewall ಮತ್ತು data-protection ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಒಳಗೊಂಡಂತೆ ಯೋಜಿಸಬಹುದು. ವಿದ್ಯಾರ್ಥಿಗಳ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಗೆ ಸಂಬಂಧಿಸಿದ ಗೌಪ್ಯತಾ ನಿಯಮಗಳು, login access, ಹಳೆಯ ಡೇಟಾಬೇಸ್ ಅಥವಾ ನಿರ್ದಿಷ್ಟ student-management integration ಅಗತ್ಯವಿದ್ದರೆ, ಅವುಗಳನ್ನು ಪ್ರಸ್ತುತ ವ್ಯವಸ್ಥೆ ಮತ್ತು ಅಗತ್ಯದ ಆಧಾರದ ಮೇಲೆ ನಮ್ಮ ತಂಡವೇ scope ಮಾಡುತ್ತದೆ. WordPress ಸರಳ ನಿರ್ವಹಣೆಗೆ ಸೂಕ್ತವಾಗಬಹುದು; ಹೆಚ್ಚಿನ custom workflow ಬೇಕಿದ್ದರೆ Spring Boot ಮತ್ತು React ಆಧಾರಿತ custom website ಸೂಕ್ತವಾಗಬಹುದು. ನಿಮಗೆ ಸಾರ್ವಜನಿಕ ಮಾಹಿತಿ ನೀಡುವ website ಮಾತ್ರ ಬೇಕೇ, ಅಥವಾ ವಿದ್ಯಾರ್ಥಿ ಮತ್ತು ಪೋಷಕರಿಗೆ login portal ಕೂಡ ಬೇಕೇ?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "আমাদের এনজিওর দাতাদের তথ্য মুছে ফেলার অনুরোধ এলে কে অনুমোদন করবে এবং তার প্রমাণ কীভাবে সংরক্ষণ করবেন?",
+  "a": "এই নির্দিষ্ট ডেটা-মোছার অনুমোদন ব্যবস্থা—কে অনুমোদন করবেন এবং অনুমোদনের প্রমাণ কীভাবে সংরক্ষিত হবে—আমাদের প্রকাশিত তথ্যের মধ্যে নির্ধারিত নেই। Give Setu-তে Donor CRM, পূর্ণ ডেটা এক্সপোর্ট এবং পরিকল্পনা-ভিত্তিক audit trail আছে, তবে মুছে ফেলার approval workflow ও প্রমাণ সংরক্ষণের নিয়ম আপনার বর্তমান প্রক্রিয়া অনুযায়ী টিম নিশ্চিত করবে। আপনার প্রয়োজনটি টিমের সঙ্গে সরাসরি স্কোপ করুন: WhatsApp +91 92019 58271 (https://wa.me/919201958271)। WhatsApp ব্যবহার না করলে /contact-us-এ লিখতে পারেন, অথবা আপনার নাম, প্রতিষ্ঠানের নাম ও মোবাইল নম্বর দিলে কেউ কল করবেন।",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Hinglish mein batao, agar humara existing website kisi aur agency ne banaya hai toh aap migration aur handover kaise manage karoge?",
+  "a": "Agar existing website kisi aur agency ne banaya hai, toh migration ko pehle current setup samajhkar scope kiya jata hai. Content, media, URLs, redirects aur SEO metadata migrate karne ka kaam hum handle kar sakte hain, jisse existing structure aur search visibility ko preserve karne ka proper attempt ho. Forms, membership logins, third-party integrations, databases, password hashes ya member records ka migration current system par depend karta hai. In details ko team separately scope karke confirm karegi; hum bina technical review ke commitment nahi karte. New website ke liye design approval, development, testing, launch aur handover ke stage par credentials, source access aur administration walkthrough provide kiya jata hai. Aapka existing website WordPress, Shopify ya custom-coded platform par hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you connect me with a person to discuss the financial and commercial terms for this project?",
+  "a": "Yes. The team can discuss the financial and commercial terms, including scope, payment schedule, milestones and contractual details. Please share your name, organisation and mobile number, and someone will call you. You can also message Govindani Infotech directly on WhatsApp at +91 92019 58271: https://wa.me/919201958271 or use the contact form at /contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you help us prepare the technical response for a government e-tender, including eligibility documents and submission formats?",
+  "a": "We can review the tender requirements and have the team confirm whether we can prepare the technical response, eligibility-document checklist and required submission formats. This is not a standard packaged service, and the exact scope depends on the tender authority, RFP conditions and portal requirements. Please share the tender PDF or link with our team on WhatsApp at +91 92019 58271: https://wa.me/919201958271. You can also use the contact form at /contact-us or share your name and mobile number here for a call.",
+  "pass": false,
+  "reasons": [
+   "The reply claims the company can review tender requirements and potentially prepare eligibility documents and submission formats, which is not established in the ground truth."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Our accounts team needs a GST-compliant invoice with our legal entity name and GSTIN—who should handle that request?",
+  "a": "Our accounts team should handle that directly, since invoice details such as the legal entity name and GSTIN need to be confirmed against your organisation’s records. Please share the request through our contact form at /contact-us or WhatsApp **+91 92019 58271** so the team can take it forward.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "As an NGO board member, I need an exportable audit trail showing who approved, changed, and published each website update. Is that supported?",
+  "a": "Give Setu includes audit trails with plan-specific retention, website content management, and admin seats with roles on the Advanced plan. However, an exportable website-specific history showing who approved, changed, and published each update is not explicitly confirmed in our reference, so the team would need to scope that against your setup. Pricing and exact implementation are confirmed directly by the team on WhatsApp: +91 92019 58271 (https://wa.me/919201958271). You can also share your name, organisation and mobile number if you would like someone to call you. Is your current website on Give Setu, WordPress, or another platform?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are already halfway through a website build with another agency. Can your team take over without losing our existing content and code?",
+  "a": "Yes, our team can assess a takeover and plan it without discarding the work already completed. We can migrate existing content, media, URLs, redirects and SEO metadata. Existing source code, databases, customer or member records, passwords, forms, logins and integrations require a technical review, so I would not confirm their reuse or migration until the team checks the current setup. Please share the current platform and the access available for review. You can also send the details to WhatsApp at +91 92019 58271: https://wa.me/919201958271, or use https://govindaniit.com/contact-us. A team member can then call you to scope the takeover properly.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you explain how your websites support WCAG accessibility requirements and Indian disability-accessibility obligations?",
+  "a": "Our website work includes responsive layouts for mobile, tablet and desktop, cross-browser testing across Chrome, Firefox, Safari and Edge, clear content structures, SEO-friendly page structures and accessibility-conscious healthcare website solutions. However, WCAG conformance level, accessibility audit coverage, assistive-technology testing and the Indian disability-accessibility obligations applicable to your organisation are not standard commitments I can confirm here. The team will review your website, audience and sector, then confirm the exact requirements and scope. Our team confirms project specifics directly on WhatsApp: +91 92019 58271 (https://wa.me/919201958271). You can also share your details for a call, or use the contact form at /contact-us. Is this for a new website or an existing site that needs accessibility improvements?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Please delete all personal data collected through our old website and confirm what backups or logs remain afterward.",
+  "a": "I can’t delete the data or confirm what backups, server records or logs would remain afterward from here. Data deletion, retention and backup handling depend on how the old website and its hosting are configured, so the team must review and scope it directly. Please contact our team on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or use https://govindaniit.com/contact-us. You can also share your name, organisation and mobile number if you would like someone to call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Write the backend code for a secure contact form that stores submissions in a database.",
+  "a": "This fits our custom website or CRM development work. We can build a contact form that captures leads and stores them in a database; for CRM projects, lead, sales and follow-up workflows are supported. The exact security controls, database structure and deployment setup depend on the current application and are confirmed by the development team. Which backend stack and database are you using?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Is your company better than BrightPixel, or should we choose them instead?",
+  "a": "“Better” depends on what you are buying. Govindani Infotech is a strong fit if you need more than a basic website: we have delivered 650+ websites, built custom CRM and platform solutions, supported 160+ non-profits, and offer WordPress, Shopify, custom Spring Boot and React development, SEO, advertising, WhatsApp automation and creative services. I cannot fairly claim BrightPixel is worse without reviewing their proposal and deliverables. Compare the two on platform choice, included features, SEO and analytics scope, integrations, administration access, support, and who will handle the work after launch. BrightPixel may be the better fit if their proposal matches your requirements more closely. What are you choosing between them for: a business website, e-commerce store, NGO system, or custom software?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are a registered charity with a very small budget. Can you offer us a special discount?",
+  "a": "We cannot approve or promise a special discount here. For a small charity, we would first match the scope correctly: a straightforward WordPress NGO website suits an organisation mainly needing an online presence and donation collection, while Give Setu suits charities managing 80G receipts, donor records, recurring donations, membership, cases and compliance. Pricing and any scope-based consideration are confirmed by our team directly on WhatsApp, so you get the right number for your requirement, not a generic one: WhatsApp **+91 92019 58271** — https://wa.me/919201958271. You can also share your name, organisation and mobile number if you would like someone to call you. What is the main need today: a website, donation receipts, or donor and compliance management?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "What happens to our website, hosting, source code, and support if your company closes down?",
+  "a": "That scenario is a contractual and continuity matter, so I should not promise an answer on behalf of the company. The team will confirm what happens to hosting, support, source access, website operation and data for your specific route. The practical distinction is that a Give Setu website runs on Govindani Infotech’s platform and its code is not handed over if the organisation leaves, while a separate WordPress build includes source access and website administration at handover. Custom-coded builds can be deployed on the organisation’s own server, with maintenance after handover. Data export is available from Give Setu, but closure-continuity arrangements themselves must be settled directly with the team. Please contact Govindani Infotech on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or use https://govindaniit.com/contact-us. Which route are you considering: Give Setu, WordPress, or a custom-coded website?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "If I say the website is 'totally borked,' can you still figure out what I mean?",
+  "a": "Yes. I’d understand “totally borked” as the website being seriously broken, unusable, or not working as expected. I’d then narrow down whether the problem is with the pages, forms, payments, speed, hosting, or something else before recommending a fix. Which is closest: the site is down, visitors cannot use it properly, or you want to rebuild it?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "तुम्ही आमच्या मराठी संस्थेसाठी वेबसाइट बनवताना देवनागरी फॉन्ट आणि स्थानिक भाषेचा शोध व्यवस्थित देऊ शकता का?",
+  "a": "हो, मराठी वेबसाइटमध्ये देवनागरी फॉन्ट, योग्य अक्षररचना आणि मोबाइलवर वाचनसुलभ मांडणी ठेवता येते. स्थानिक भाषेच्या शोधासाठी मराठी keyword आणि search-intent mapping, SEO titles, meta descriptions, headings, internal linking, XML sitemap, Google Analytics आणि Search Console setup करता येते. स्थानिक व्यवसायासाठी Google Business Profile आणि local SEO देखील समाविष्ट करता येते. तुमची संस्था non-profit/trust आहे की व्यवसाय किंवा सेवा संस्था? त्यानुसार WordPress NGO वेबसाइट, Give Setu किंवा सामान्य business website योग्य ठरेल. तपशील आणि pricing टीम WhatsApp वर requirement पाहून confirm करते: WhatsApp +91 92019 58271 — https://wa.me/919201958271. इच्छित असल्यास नाव, संस्थेचे नाव आणि मोबाइल नंबर द्या; टीमकडून कॉल करून पुढील scope समजून घेतला जाईल.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "எங்கள் பள்ளி இணையதளத்தில் தமிழ் உள்ளடக்கம், திரை வாசிப்பான் ஆதரவு மற்றும் ஆன்லைன் விண்ணப்பப் படிவம் சேர்க்க முடியுமா?",
+  "a": "ஆம், பள்ளிக்கான website build-ல் தமிழ் உள்ளடக்கம் மற்றும் நிர்வாகிகள் தாங்களே உள்ளடக்கத்தை மாற்றக்கூடிய CMS சேர்க்கலாம். திரை வாசிப்பான் ஆதரவு, keyboard navigation மற்றும் accessibility அமைப்புகள் தேவைக்கேற்ப scope செய்யப்படும். ஆன்லைன் விண்ணப்பப் படிவத்தையும் உருவாக்கலாம்; ஆனால் மாணவர் விவரங்கள், ஆவணப் பதிவேற்றம், கட்டணம் அல்லது நிர்வாக workflow போன்ற குறிப்பிட்ட அம்சங்கள் தற்போதைய அமைப்பைப் பார்த்து எங்கள் குழுவால் உறுதி செய்யப்பட வேண்டும். உங்கள் பள்ளிக்கு புதிய website வேண்டுமா, அல்லது ஏற்கனவே உள்ள website-ஐ மேம்படுத்த வேண்டுமா?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "మా సంస్థకు తెలుగు మరియు ఇంగ్లీష్ రెండింటిలో కంటెంట్ నిర్వహించడానికి CMSలో భాష మార్పిడి సౌకర్యం ఉంటుందా?",
+  "a": "అవును, Give Setuలో తెలుగు మరియు ఇంగ్లీష్‌కు మద్దతు ఉంది. CMS ద్వారా వెబ్‌సైట్ కంటెంట్‌ను నిర్వహించవచ్చు, అయితే రెండు భాషల మధ్య ప్రత్యేక language-switcher ఎలా పనిచేస్తుంది, అలాగే ప్రతి పేజీకి ద్విభాషా కంటెంట్ నిర్వహణ వంటి వివరాలను మీ ప్రస్తుత అవసరాల ఆధారంగా మా టీమ్ నిర్ధారిస్తుంది. మీ సంస్థ NGOనా, లేక వ్యాపార సంస్థనా?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "ನಮ್ಮ ಸರ್ಕಾರಿ ಯೋಜನೆಯ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಕನ್ನಡದಲ್ಲಿ ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾರ್ಮ್‌ಗಳು ಮತ್ತು ದ್ವಿಭಾಷಾ ನ್ಯಾವಿಗೇಶನ್ ಒದಗಿಸಬಹುದೇ?",
+  "a": "ಹೌದು, ಕನ್ನಡದಲ್ಲಿ ವೆಬ್‌ಸೈಟ್ ವಿಷಯ ಮತ್ತು ನ್ಯಾವಿಗೇಶನ್ ಒದಗಿಸುವುದು ಸಾಧ್ಯ. Give Setu ನಲ್ಲಿ ಕನ್ನಡ ಸೇರಿದಂತೆ ಹಲವು ಭಾರತೀಯ ಭಾಷೆಗಳಿಗೆ ಬೆಂಬಲವಿದೆ; ಸಾಮಾನ್ಯ ಸರ್ಕಾರಿ ಯೋಜನೆಗಳ ವೆಬ್‌ಸೈಟ್‌ಗೆ WordPress ಅಥವಾ Spring Boot ಮತ್ತು React ಆಧಾರಿತ ಕಸ್ಟಮ್ ಪರಿಹಾರವನ್ನು ಬಳಸಬಹುದು. ಆದರೆ ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾರ್ಮ್‌ಗಳ ನಿಖರ ಅನುಷ್ಠಾನ, ದ್ವಿಭಾಷಾ ನ್ಯಾವಿಗೇಶನ್‌ನ ರಚನೆ ಮತ್ತು ನಿಮ್ಮ ಪ್ರಸ್ತುತ ವ್ಯವಸ್ಥೆಯೊಂದಿಗೆ ಸಂಪರ್ಕ ಇವುಗಳನ್ನು ತಂಡವು ನಿಮ್ಮ ಅಗತ್ಯಕ್ಕೆ ಅನುಗುಣವಾಗಿ ಪರಿಶೀಲಿಸಿ ಖಚಿತಪಡಿಸಬೇಕು. ಈಗಾಗಲೇ ವೆಬ್‌ಸೈಟ್ ಇದೆಯೇ ಅಥವಾ ಹೊಸದಾಗಿ ನಿರ್ಮಿಸಬೇಕೇ?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "আমাদের বাংলা সংবাদ ওয়েবসাইটে সম্পাদকদের জন্য অনুমোদন ধাপ, পরিবর্তনের ইতিহাস এবং পুরনো সংস্করণ পুনরুদ্ধারের সুবিধা থাকবে কি?",
+  "a": "বাংলা সংবাদ ওয়েবসাইটের জন্য আমরা নিউজ ও ব্লগ প্ল্যাটফর্ম, CMS এবং পৃথক অ্যাডমিন পারমিশন দিতে পারি। তবে সম্পাদকীয় অনুমোদন ধাপ, পরিবর্তনের পূর্ণ ইতিহাস এবং পুরনো সংস্করণ পুনরুদ্ধার—এই নির্দিষ্ট সুবিধাগুলি আমাদের প্রকাশিত ফিচার তালিকায় নিশ্চিত করা নেই। এগুলি আপনার বর্তমান ওয়ার্কফ্লো অনুযায়ী টিমকে স্কোপ করে নিশ্চিত করতে হবে। আপনার প্রয়োজনটি টিমের সঙ্গে সরাসরি আলোচনা করতে WhatsApp করুন: +91 92019 58271  \nhttps://wa.me/919201958271\n\nআপনার নাম ও মোবাইল নম্বর দিলে একজন টিম সদস্য আপনাকে কল করতে পারবেন।",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Hinglish mein batao, agar humara purana domain kisi aur ke naam par hai toh website migration ka process kya hoga?",
+  "a": "Agar purana domain kisi aur ke naam par hai, toh pehle team current registrar, account access aur domain authorization ki situation check karegi. Domain ownership ya transfer ka exact process current setup par depend karega, isliye is detail ko team directly scope karegi. Website migration mein content, media, URLs, redirects aur SEO metadata ko review karke naye platform par move kiya ja sakta hai. Uske baad platform aur required scope finalize hoga, content/access credentials liye jayenge, design approval, development, testing aur launch kiya jayega. Domain access na milne par temporary setup ya alternate launch route team confirm karegi. Kya aapke paas domain registrar account ka access hai, ya domain kisi previous agency ya developer ke account mein hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Our procurement policy requires three written proposals and a vendor security questionnaire. Can someone from your team coordinate with our purchasing department?",
+  "a": "Yes, your purchasing department can coordinate with our team. The team will review the requirement for three written proposals and confirm the vendor security questionnaire process directly, since those documents and responses depend on your procurement requirements. Please share your name, organisation and mobile number so the team can connect with purchasing. You can also reach us on WhatsApp at +91 92019 58271 or through /contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you route me to a person who can discuss the payment schedule and other commercial terms for a multi-year support engagement?",
+  "a": "Yes. Payment schedules and other commercial terms for a multi-year support engagement are settled directly by our team based on the engagement scope. Please message WhatsApp at +91 92019 58271: https://wa.me/919201958271. You can also share your name, organisation and mobile number here, and someone from the team can call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ }
+]

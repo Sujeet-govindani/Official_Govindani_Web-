@@ -1,0 +1,393 @@
+/* ══════════════════════════════════════════
+   REALISTIC TRAIN TIMELINE — train.css
+══════════════════════════════════════════ */
+.rt-section {
+  position: relative;
+  width: 100%;
+  padding: 12px 0 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ══════════════════════════════════════════
+   CARD — container is ALWAYS visible.
+   Placeholder shows before any flag arrives.
+   Once first flag hits centre, placeholder
+   fades out and milestone content fades in.
+   Content stays showing until the NEXT flag
+   arrives, at which point it crossfades to
+   the new milestone (fade-out → swap → fade-in).
+   Card never disappears between flags.
+══════════════════════════════════════════ */
+.rt-card-wrap {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+  pointer-events: none;
+}
+
+.rt-card {
+  position: relative;
+  background: rgba(8, 6, 2, 0.84);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.30);
+  border-radius: 12px;
+  /* Shorter vertically, wider horizontally */
+  padding: 12px 30px;
+  max-width: 740px;
+  width: 92%;
+  min-height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow:
+    0 6px 28px rgba(0, 0, 0, 0.55),
+    0 0 24px rgba(212, 175, 55, 0.04),
+    inset 0 1px 0 rgba(212, 175, 55, 0.14);
+}
+
+.rt-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.50), transparent);
+  border-radius: 12px 12px 0 0;
+}
+
+/* ── Placeholder — shown before first flag, hidden after ── */
+.rt-card-placeholder-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.22;
+  /* fade out when placeholder gets .rt-ph-hidden */
+  transition: opacity 0.30s ease;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.rt-card-placeholder-text.rt-ph-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.rt-card-placeholder-text span {
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(212, 175, 55, 0.7);
+}
+
+/* ── Content — crossfades between milestones ──
+   When fading=true JS removes .rt-content-visible
+   → opacity drops to 0 in 280ms
+   Then JS swaps the text and re-adds .rt-content-visible
+   → opacity rises back to 1 in 280ms
+   Result: smooth crossfade with no card flicker.
+── */
+.rt-card-content {
+  opacity: 0;
+  transform: translateY(4px);
+  /* 280ms matches the JS setTimeout delay */
+  transition: opacity 0.28s ease, transform 0.28s ease;
+  pointer-events: none;
+}
+
+.rt-card-content.rt-content-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.rt-card-year {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #D4AF37;
+  margin-bottom: 6px;
+}
+
+.rt-card-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.rt-card-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.18;
+  border-right: 1px solid rgba(212, 175, 55, 0.16);
+  padding-right: 18px;
+}
+
+.rt-card-body {
+  font-size: 0.77rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.73);
+}
+
+/* ══════════════════════════════════════════
+   TRACK
+══════════════════════════════════════════ */
+.rt-track {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+
+.rt-ballast {
+  position: absolute;
+  left: 0; right: 0;
+  height: 28px;
+  background: linear-gradient(to bottom,
+    rgba(60, 45, 15, 0.45) 0%,
+    rgba(40, 30, 10, 0.65) 50%,
+    rgba(20, 15, 5, 0.30)  100%
+  );
+  z-index: 1;
+}
+
+.rt-rail {
+  position: absolute;
+  left: 0; right: 0;
+  height: 3px;
+  z-index: 3;
+}
+
+.rt-rail-1 {
+  background: linear-gradient(to right,
+    transparent 0%,
+    rgba(180, 160, 120, 0.55) 3%,
+    rgba(200, 180, 140, 0.65) 50%,
+    rgba(180, 160, 120, 0.55) 97%,
+    transparent 100%
+  );
+  box-shadow: 0 0 5px rgba(200, 180, 140, 0.18);
+}
+
+.rt-rail-2 {
+  background: linear-gradient(to right,
+    transparent 0%,
+    rgba(180, 160, 120, 0.45) 3%,
+    rgba(200, 180, 140, 0.55) 50%,
+    rgba(180, 160, 120, 0.45) 97%,
+    transparent 100%
+  );
+  box-shadow: 0 0 4px rgba(200, 180, 140, 0.12);
+}
+
+.rt-sleepers-row {
+  position: absolute;
+  left: 0; right: 0;
+  height: 24px;
+  z-index: 2;
+}
+
+.rt-sleeper {
+  position: absolute;
+  top: 0;
+  width: 13px;
+  height: 22px;
+  background: rgba(80, 60, 20, 0.38);
+  border-radius: 1px;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ──────────────────────────────────────────
+   LEFT FADE
+   Both layers' `top` are set in JS to flagH,
+   so they ONLY cover the coach + track zone.
+   Flags above are never darkened.
+────────────────────────────────────────── */
+.rt-fade-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 18%;
+  background: linear-gradient(
+    to right,
+    rgba(5, 4, 3, 1)    0%,
+    rgba(5, 4, 3, 0.86) 32%,
+    rgba(5, 4, 3, 0.40) 64%,
+    transparent         100%
+  );
+  z-index: 8;
+  pointer-events: none;
+}
+
+.rt-fade-left-edge {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 3.5%;
+  background: linear-gradient(to right, rgba(5, 4, 3, 1) 0%, transparent 100%);
+  z-index: 9;
+  pointer-events: none;
+}
+
+/* ══════════════════════════════════════════
+   TRAIN
+══════════════════════════════════════════ */
+.rt-train {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  will-change: transform;
+  z-index: 4;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.rt-coach-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.rt-coach-svg {
+  line-height: 0;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* ══════════════════════════════════════════
+   FLAG
+   position:absolute bottom:100% sticks it
+   to the top-centre of its coach.
+══════════════════════════════════════════ */
+.rt-flag {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+  transition: filter 0.3s;
+}
+
+.rt-flag-active {
+  filter: drop-shadow(0 0 14px rgba(212, 175, 55, 0.5));
+}
+
+/* ── Smoke ── */
+.rt-smoke-wrap {
+  position: absolute;
+  top: -6px;
+  left: 13%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.rt-smoke-particle {
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(160,150,120,0.35) 0%, rgba(100,90,60,0.1) 70%, transparent 100%);
+  animation: rt-puff 2.2s ease-out infinite;
+  position: absolute;
+}
+
+.rt-sp-0 { width:12px; height:12px; animation-delay:0s;   }
+.rt-sp-1 { width:16px; height:16px; animation-delay:0.3s; }
+.rt-sp-2 { width:10px; height:10px; animation-delay:0.6s; }
+.rt-sp-3 { width:14px; height:14px; animation-delay:0.9s; }
+.rt-sp-4 { width:8px;  height:8px;  animation-delay:1.2s; }
+.rt-sp-5 { width:18px; height:18px; animation-delay:1.5s; }
+.rt-sp-6 { width:7px;  height:7px;  animation-delay:1.8s; }
+
+@keyframes rt-puff {
+  0%   { opacity:0; transform:translateY(0) translateX(0) scale(1); }
+  15%  { opacity:0.5; }
+  100% { opacity:0; transform:translateY(-42px) translateX(-18px) scale(4); }
+}
+
+/* ══════════════════════════════════════════
+   DOTS
+══════════════════════════════════════════ */
+.rt-dots {
+  display: flex;
+  justify-content: center;
+  gap: clamp(14px, 3.5vw, 42px);
+  padding: 16px 0 10px;
+  position: relative;
+  z-index: 3;
+  flex-wrap: wrap;
+}
+
+.rt-dot-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  opacity: 0.4;
+  transition: opacity 0.4s, transform 0.3s;
+}
+
+.rt-dot-item.rt-dot-active {
+  opacity: 1;
+  transform: scale(1.18);
+}
+
+.rt-dot {
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  border: 2px solid rgba(212, 175, 55, 0.5);
+  background: transparent;
+  transition: background 0.4s, border-color 0.4s, box-shadow 0.4s;
+}
+
+.rt-dot-active .rt-dot {
+  background: #D4AF37;
+  border-color: #D4AF37;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+}
+
+.rt-dot-yr {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.4s;
+}
+
+.rt-dot-active .rt-dot-yr { color: #D4AF37; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .rt-card { padding:11px 20px; max-width:90%; min-height:56px; }
+  .rt-card-inner { gap:14px; }
+  .rt-card-title { font-size:0.96rem; }
+  .rt-card-body  { font-size:0.74rem; }
+  .rt-fade-left  { width:14%; }
+}
+
+@media (max-width: 560px) {
+  .rt-card-inner { grid-template-columns:1fr; gap:6px; }
+  .rt-card-title {
+    border-right:none; padding-right:0;
+    border-bottom:1px solid rgba(212,175,55,0.14);
+    padding-bottom:6px; font-size:0.92rem;
+  }
+  .rt-fade-left { width:11%; }
+}
+
+@media (max-width: 480px) {
+  .rt-card { padding:10px 14px; max-width:96%; }
+  .rt-card-title { font-size:0.86rem; }
+  .rt-card-body  { font-size:0.71rem; }
+  .rt-card-year  { font-size:0.56rem; }
+  .rt-fade-left  { width:10%; }
+}

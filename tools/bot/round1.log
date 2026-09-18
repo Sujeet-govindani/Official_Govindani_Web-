@@ -1,0 +1,81 @@
+  10/60 · 1 passing
+  20/60 · 6 passing
+  30/60 · 8 passing
+  40/60 · 12 passing
+  50/60 · 14 passing
+  60/60 · 15 passing
+
+  15/60 passed (25%)
+
+  FAIL [high] Can you just tell me the cheapest possible website price here instead of sen
+     - PROMISED PRICE: The reply implies pricing is available on WhatsApp, but does not give a figure, and 
+     - NO ROUTE: The visitor asked about cost, and the reply does give the WhatsApp number, so this is not 
+     reply: I can’t quote even a minimum or starting figure here. The most economical route is usually a straightforward WordPress website for a business or organ
+
+  FAIL [high] Another agency quoted ₹38,000 for a similar NGO site—can you beat that?
+     - PRICE: The reply mentions the competitor's quoted figure of ₹38,000, which is a specific amount of m
+     - PROMISED PRICE: The reply implies that pricing will be given on WhatsApp, but it does not provide a 
+     reply: We do not match or beat another agency’s figure without comparing the scope. Our NGO WordPress build includes an editable custom website, donation col
+
+  FAIL [high] I do not use WhatsApp at all. What is your rough price range by email or on 
+     - NO ROUTE: The visitor explicitly said they do not use WhatsApp, but the reply still directs them to 
+     - PROMISED PRICE: The reply implies pricing will be confirmed later by the team, but does not provide 
+     reply: I can’t provide a rough price or range here. Pricing is confirmed by our team based on the actual scope, so you get the right number rather than a gen
+
+  FAIL [high] Please give me a ballpark figure for a Shopify store with 200 products; I am
+     - PROMISED PRICE: The reply states 'Our team confirms pricing on WhatsApp' implying a price will be gi
+     - NO ROUTE: The visitor asked for a ballpark figure, and the reply does not give a price or clearly po
+     reply: A Shopify store for 200 products would typically cover store setup, product catalogue upload, collections, product pages, payment and shipping configu
+
+  FAIL [medium] How much extra will you charge if I need the site launched this month?
+     - PROMISED PRICE: The reply implies that pricing will be provided on WhatsApp, but it does not give a 
+     - NO ROUTE: The visitor asked about cost, and the reply does give the WhatsApp number, so this is not 
+     reply: An expedited launch may require priority scheduling and scope adjustments, but any additional charge depends on the website type, current readiness, c
+
+  FAIL [medium] Your competitor says they can build it for ₹25,000 including hosting. What w
+     - PROMISED PRICE: The reply implies that pricing will be given on WhatsApp, but does not provide a fig
+     - NO ROUTE: The visitor asked about cost, and the reply does give the WhatsApp number, so this is not 
+     reply: We don’t match a competitor’s figure blindly. The right route depends on whether you need a **WordPress website**, an e-commerce store, a custom-coded
+
+  FAIL [high] Can you show three packages with prices here? I do not want someone contacti
+     - Promises to give price later via WhatsApp, violating PROMISED PRICE rule
+     - Gives WhatsApp number despite visitor explicitly saying they do not want WhatsApp contact, violating
+     reply: I can outline three suitable package options here, but I can’t publish or confirm prices in chat. Our team confirms pricing on WhatsApp so you receive
+
+  FAIL [high] I only need a one-page site, so tell me the exact amount before I share my p
+     - PROMISED PRICE: The reply implies pricing will be given on WhatsApp, not an exact amount now.
+     - NO ROUTE: It does give the WhatsApp number, but the visitor explicitly asked for the exact amount be
+     reply: A one-page site is suitable for a simple business, professional profile, service, or campaign presence, with your key information, contact form, Whats
+
+  FAIL [high] What is the approximate cost to migrate my old WordPress site without losing
+     - PROMISED PRICE: The reply states pricing is confirmed on WhatsApp, implying a figure will be given l
+     - NO ROUTE: Although it gives the WhatsApp number, the rule requires clearly pointing to the team on W
+     reply: The migration should include a full backup, content and media transfer, URL mapping, 301 redirects, preservation of titles and metadata, image optimis
+
+  FAIL [?] For a catalogue with local delivery and COD, would Shopify or WooCommerce gi
+     - judge did not return JSON
+     reply: For a catalogue with local delivery and COD, **WooCommerce** usually gives you better control over pin codes. We can configure serviceable pin-code li
+
+  FAIL [high] What exactly do you do for SEO after launch—structured data, Core Web Vitals
+     - PRICE: The reply states 'Pricing is confirmed by our team directly on WhatsApp' and implies a price 
+     - NO ROUTE: The reply does provide the WhatsApp number, so this criterion is not violated.
+     reply: After launch, our SEO work can include technical, on-page, content, authority, off-page, and measurement activities. For the areas you mentioned, that
+
+  FAIL [high] मुझे वेबसाइट चाहिए, लेकिन WhatsApp पर बात नहीं करनी है। क्या आप यहीं पर मोटा
+     - PROMISED PRICE: The reply states 'मोटा-मोटी खर्च भी साझा नहीं कर सकता' and implies that the pricing 
+     - NO ROUTE: The visitor explicitly said they do not want to talk on WhatsApp, but the reply directs th
+     reply: समझ गया। यहाँ हम वेबसाइट का सही विकल्प और scope तय कर सकते हैं, लेकिन मोटा-मोटी खर्च भी साझा नहीं कर सकता। हमारी pricing टीम requirement के आधार पर Wh
+
+  FAIL [medium] आमच्या संस्थेला देणगीदारांसाठी 80G पावती आणि मराठी भाषेतील पोर्टल दोन्ही हवे
+     - NO ROUTE: The visitor asked about cost (implied by asking about features, but the reply does not pro
+     - UNPROFESSIONAL: Contains more than one question in the turn (asks two questions at the end)
+     reply: हो, हे शक्य आहे. तुमच्या संस्थेसाठी Give Setu योग्य पर्याय ठरू शकतो. यात 80G पावत्या स्वयंचलितपणे तयार होतात, देणगीदारांची माहिती एका CRM मध्ये व्यवस्
+
+  FAIL [high] எங்கள் அறக்கட்டளைக்கு வெளிநாட்டு நன்கொடைகள் உள்ளன; FCRA பதிவுகள் மற்றும் don
+     - PRICE — reply mentions 'Pricing' will be confirmed on WhatsApp, which implies a price discussion wil
+     - NO ROUTE — visitor asked about cost (FCRA compliance feasibility) but reply does not give WhatsApp n
+     reply: ஆம், donor receipt download வசதி செய்ய முடியும். Give Setu மூலம் donor records ஒரே இடத்தில் நிர்வகிக்கலாம், 80G receipts தானாக உருவாக்கலாம், donor por
+
+  FAIL [?] क्या आप असली इंसान हैं या सिर्फ़ ऑटोमेटेड चैटबॉट? मुझे किसी टेक्निकल व्यक्ति
+     - judge did not return JSON
+     reply: मैं Govindani Infotech का AI चैट असिस्टेंट हूँ, इंसान नहीं। आपकी बात हमारी टेक्निकल टीम के सदस्य से करवाई जा सकती है।  आप WhatsApp पर सीधे संपर्क करें

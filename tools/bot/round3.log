@@ -1,0 +1,80 @@
+  10/152 · 7 passing
+  20/152 · 15 passing
+  30/152 · 22 passing
+  40/152 · 26 passing
+  50/152 · 32 passing
+  60/152 · 39 passing
+  70/152 · 42 passing
+  80/152 · 46 passing
+  90/152 · 51 passing
+  100/152 · 58 passing
+  110/152 · 64 passing
+  120/152 · 71 passing
+  130/152 · 80 passing
+  140/152 · 84 passing
+  150/152 · 88 passing
+
+  90/152 passed (59%)
+
+  FAIL [high] Another agency quoted ₹38,000 for a similar NGO site—can you beat that?
+     - It asserts numerous specific product capabilities and competitor-platform details without support, i
+     reply: I can’t confirm or beat another agency’s figure here. For an honest comparison, our NGO WordPress build can include donation collection, automated don
+
+  FAIL [high] What is the approximate cost to migrate my old WordPress site without losing
+     - It implies that following the migration checks will protect the site's blog traffic, which is not a 
+     reply: A safe WordPress migration should include a full backup, content and media transfer, URL preservation, 301 redirects, metadata and sitemap checks, Goo
+
+  FAIL [high] Can your donation system automatically issue 80G receipts with the donor's P
+     - invented: asserts specific capabilities and an unsupported under-four-second processing statistic.
+     - misleading: presents processing within four seconds as a definite performance promise.
+     reply: Yes. Give Setu automatically issues 80G receipts in under four seconds and can include the donor’s PAN and financial-year details. It also maintains d
+
+  FAIL [high] We are an Indian NGO receiving foreign contributions—can the website support
+     - It asserts specific product capabilities, including payment-gateway records and 10BD/10BE compliance
+     reply: Yes, Give Setu can maintain donor records, donation history, campaign data, receipts, audit trails and donor-data exports in CSV/Excel format. It also
+
+  FAIL [high] आमच्या संस्थेला देणगीदारांसाठी 80G पावती आणि मराठी भाषेतील पोर्टल दोन्ही हवे
+     - It asserts several specific Give Setu capabilities and that 80G receipts can be issued within second
+     reply: हो, हे शक्य आहे. **Give Setu** मध्ये देणगीदारांचे रेकॉर्ड, डोनर पोर्टल, ऑनलाइन देणगी, recurring donations आणि 80G पावत्या स्वयंचलितपणे तयार करण्याची स
+
+  FAIL [high] আমাদের পুরনো ওয়েবসাইট থেকে নতুন সাইটে গেলে বাংলা কনটেন্ট, URL এবং Google ran
+     - শেষে একসঙ্গে দুটি প্রশ্ন করা হয়েছে: WordPress ব্যবহার এবং একই URL structure রাখার ইচ্ছা সম্পর্কে।
+     reply: হ্যাঁ, সঠিকভাবে migration করলে বাংলা কনটেন্ট, URL structure এবং Google ranking যতটা সম্ভব অক্ষুণ্ণ রাখা যায়। আমরা পুরনো সাইটের প্রতিটি URL map করে নত
+
+  FAIL [high] તમારી કંપનીએ પહેલાં કોઈ NGO માટે donor portal બનાવ્યું છે? હું live example 
+     - It asserts a specific client statistic (160+ non-profits) and multiple product capabilities without 
+     reply: હા. Govindani Infotech એ 160+ non-profits માટે web solutions આપ્યા છે અને NGO માટેના projects અહીં જોઈ શકો છો: https://govindaniit.com/portfolio/ngo  
+
+  FAIL [high] I have a budget of ₹25,000. What exactly can you deliver within it?
+     - It asks more than one question: what the visitor is building and what it must do.
+     reply: What we can deliver depends first on whether this is for a business website, an NGO/non-profit, or an online store. For a straightforward business pre
+
+  FAIL [high] We were quoted less by a freelancer. What makes your service worth paying mo
+     - The specific claim of having developed 650+ websites is an unsupported statistic that may be fabrica
+     reply: A lower quote can be the right choice if the scope is genuinely the same. The important comparison is what you receive: clear requirements and project
+
+  FAIL [high] Can you give me a ballpark amount for rebuilding our outdated website?
+     - It asks more than one question in the opening sentence.
+     reply: Before I recommend the right rebuild route, what does your organisation do, and is the main need a modern information website, online selling, lead ge
+
+  FAIL [high] Can donors automatically receive an 80G receipt after making a payment, or w
+     - Invented: it asserts an exact under-four-second issuance time and specific 10BD/10BE capabilities wi
+     - Misleading: it presents receipt issuance in under four seconds as a definite system outcome.
+     reply: Yes. With Give Setu, donors can automatically receive an 80G receipt after a successful payment. The system issues the receipt in under four seconds a
+
+  FAIL [high] How would you handle FCRA donations separately from domestic donations in th
+     - It asserts that Give Setu maintains donor records, issues 80G receipts, manages campaigns, and suppo
+     - It asks two questions in one sentence: FCRA registration status and whether separate payment and ban
+     reply: Give Setu already maintains donor records, issues 80G receipts, manages campaigns and supports compliance workflows. However, the available specificat
+
+  FAIL [high] Can our NGO team download donor-wise reports, recurring donation data, and c
+     - Asserts several specific Give Setu capabilities, including recurring-donation self-service and bulk 
+     reply: Yes. Give Setu supports donor records, donation data, campaign data exports, bulk jobs, and admin reporting. Your team can download donor-wise data an
+
+  FAIL [high] Who owns the website, source code, domain, and database if we stop using you
+     - It asks two questions in the closing sentence: whether they want a call and what organisation to not
+     reply: It depends on the route you choose:  - **One-time WordPress website:** Your organisation owns the website, source code and credentials. They are hande
+
+  FAIL [high] Will your SEO work include schema, technical audits, Google Search Console s
+     - Asks more than one question: whether the website is live and which lead actions matter most.
+     reply: Yes. Our SEO work can include technical audits covering crawlability, index coverage, Core Web Vitals, mobile experience, redirects, canonicals, sitem

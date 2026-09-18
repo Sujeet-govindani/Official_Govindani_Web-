@@ -1,0 +1,932 @@
+[
+ {
+  "q": "Agar hamare 35,000 donors ho gaye toh Give Setu mein system rukega kya?",
+  "a": "Nahi, Give Setu system rukega nahi. 35,000 donors database mein rakh sakte hain—sleeping ya legacy donors unlimited aur free hain. Active donor ka matlab hai jisne pichhle 45 din mein donation, receipt download, OTP verification ya donor-portal login kiya ho. Advanced mein 25,000 active donors track hote hain; uske baad purane donors sleeping storage mein chale jaate hain, delete ya charge nahi hote. Unmein se koi dobara donate kare toh donation accept, receipt issue aur donor reactivate hota hai.\n\nAdvanced plan **₹80,000 + 18% GST = ₹94,400 per year** hai, with 15,000 80G receipts per month. Agar 35,000 donors ek hi month mein donate karein, toh 20,000 extra receipts × ₹0.50 = ₹10,000, plus 18% GST; donation block nahi hoti. Agar donations alag-alag months mein aayein, overage bhi month-wise calculate hoga.\n\nAapka actual concern 35,000 total donors hain ya pichhle 45 din mein active donors? Plan aur receipt usage team se confirm karne ke liye WhatsApp **+91 92019 58271** ya contact form **/contact-us** par bhejiye.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Plan limit cross hone par naye donation ko accept karega ya donor ko error dikhega?",
+  "a": "Donation accept hoga; donor ko plan limit ke kaaran error nahi dikhega.\n\nActive-donor limit cross hone par koi charge nahi lagta. Extra donors sleeping storage mein unlimited aur free rehte hain, aur unka donation aane par donor automatically reactivate ho jata hai.\n\nSirf monthly 80G receipt quota ke baad receipt overage charge hota hai, donation block nahi hota:\n\nStarter: 1,000 receipts ke baad ₹0.90 per extra receipt  \nGrowth: 5,000 receipts ke baad ₹0.70 per extra receipt  \nAdvanced: 15,000 receipts ke baad ₹0.50 per extra receipt  \n\nIn rates par 18% GST alag hai. Kaunsa Give Setu plan aap consider kar rahe hain?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Month ke beech mein donor count limit paar ho gaya toh upgrade same din karna padega kya?",
+  "a": "Nahi, same din upgrade karna zaroori nahi hai. Give Setu mein active donor limit donation limit nahi hai. Active donor ka matlab hai jisne last 45 days mein donation kiya, receipt download ki, OTP verify kiya ya donor portal open kiya.\n\nLimit cross hone par extra donors sleeping storage mein chale jaate hain—unlimited aur free. Koi donor delete nahi hota, aur sleeping donor ke dobara donate karte hi woh reactivate ho jaata hai. Donation hamesha accept aur receipt hoti rahegi. Sirf 80G receipts ka monthly quota alag meter hai; uske baad overage charge lagta hai, donation block nahi hota.\n\nAapka current plan aur active donors kitne hain? Agar upgrade evaluate karna ho toh WhatsApp par **+91 92019 58271** ya contact form **/contact-us** se team se baat kar sakte hain.",
+  "pass": false,
+  "reasons": [
+   "The /contact-us contact-form path is not provided in the quotation, though the listed phone number is supported."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Suppose 10,000 receipts allowed hain aur humne 10,500 bana diye—extra ka paisa kaise lagega?",
+  "a": "Agar aap **Growth plan** ki baat kar rahe hain, usmein 5,000 80G receipts/month included hain. 10,500 receipts par extra 5,500 receipts lagenge:\n\n5,500 × ₹0.70 = ₹3,850  \n₹3,850 + 18% GST = ₹4,543\n\nAgar aapke account mein 10,000 receipts ki custom limit hai, to 500 extra receipts ka rate plan ke hisaab se confirm hoga, kyunki standard plans mein 10,000 quota listed nahi hai. Donation block nahi hoti; sirf extra receipts ka usage charge lagta hai.\n\nExact account-wise confirmation ke liye WhatsApp **+91 92019 58271** par message karein, ya /contact-us par enquiry bhejein. Aapka plan Starter, Growth ya Advanced hai?",
+  "pass": false,
+  "reasons": [
+   "It refers to a hypothetical 10,000-receipt custom limit, which is not listed in the quotation; standard quotas are 1,000, 5,000, and 15,000 per month.",
+   "The suggestion that an account may have a custom 10,000-receipt quota is unsupported by the quotation."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Overage charge monthly bill mein aata hai ya turant card se cut hota hai?",
+  "a": "Overage monthly bill ka wait nahi karta. Usage mid-cycle accumulate hota hai aur threshold cross hone par auto-settlement hota hai:\n\nStarter: ₹500  \nGrowth: ₹1,500  \nAdvanced: ₹5,000  \n\nIsliye card se turant har receipt par cut nahi hota; exact payment method aur settlement setup team confirm karegi. Agar payment fail hokar 48 hours tak unpaid rahe, sirf marketing sends pause hote hain; donations, receipts, donor portal aur data export chalte rehte hain.\n\nAapka plan Starter, Growth ya Advanced hai to WhatsApp par +91 92019 58271 par team se billing setup confirm karwa sakte hain, ya /contact-us par enquiry bhej sakte hain.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Limit cross karne ke baad donation lena band toh nahi hoga na? Important hai.",
+  "a": "Nahi, donation lena kabhi band nahi hoga.\n\nActive donor limit cross hone par koi charge nahi lagta. Extra donors sleeping storage mein unlimited aur free rehte hain; donation karte hi woh reactivate ho jaate hain.\n\nSirf monthly 80G receipts quota ke baad overage charge lagta hai:\n\nStarter: 1,000 ke baad ₹0.90 per receipt  \nGrowth: 5,000 ke baad ₹0.70 per receipt  \nAdvanced: 15,000 ke baad ₹0.50 per receipt  \n\nIn rates par 18% GST lagega. Donation accept, process aur receipt issue hoti rahegi; receipt limit cross hone par bhi donation block, delay ya refuse nahi hoti.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Hamare donors 35k ke around hain, exact counting kaise hoti hai—duplicate aur inactive bhi count honge?",
+  "a": "35k total database donors ka matlab 35k active donors nahi hota. Active donor woh hai jisne pichhle 45 din mein donation kiya, receipt download ki, OTP verify kiya, ya donor portal open kiya. Jo inactive hain woh sleeping/legacy donors mein rahenge—unlimited aur free; unki donation hamesha accept aur receipt hogi.\n\nDuplicate records ke liye system phone, PAN ya email ke basis par possible duplicate pairs dikhata hai, aur merge karte waqt dono ki giving history preserve hoti hai. Lekin aapke current data mein duplicate merge ke baad exact count kya banega, yeh team setup dekhkar confirm karegi. Aapke 35k mein pichhle 45 din mein kitne donors ne koi activity ki hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Receipt limit exceed hui toh 80G receipt generate nahi hogi kya?",
+  "a": "Limit exceed hone par bhi 80G receipt generate hogi. Donation block, delay ya refuse nahi hota. Sirf included monthly quota ke baad additional receipt ka charge lagta hai:\n\nStarter: ₹0.90 + 18% GST per receipt  \nGrowth: ₹0.70 + 18% GST per receipt  \nAdvanced: ₹0.50 + 18% GST per receipt\n\nExample: Growth par 6,500 receipts aaye toh 5,000 included hain; extra 1,500 × ₹0.70 = ₹1,050, plus 18% GST. Receipt re-downloads free hain. Aap apna plan aur monthly receipt volume WhatsApp par +91 92019 58271 bhej dein; team exact calculation confirm karegi.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Agar ek mahine mein suddenly campaign ki wajah se bahut donations aa gaye toh extra usage ka calculation kya hai?",
+  "a": "Campaign ke mahine mein extra usage sirf **80G receipts** par calculate hota hai. Donation accept hona kabhi block ya delay nahi hota; active donors badhne par koi charge nahi lagta.\n\nStarter mein 1,000 receipts/month included hain. Uske baad ₹0.90 per receipt: 1,300 receipts = 300 × ₹0.90 = ₹270 + 18% GST = ₹318.60.\n\nGrowth mein 5,000 included hain, phir ₹0.70 per receipt: 6,500 receipts = 1,500 × ₹0.70 = ₹1,050 + GST = ₹1,239. Advanced mein 15,000 included hain, phir ₹0.50 per receipt: 18,000 receipts = 3,000 × ₹0.50 = ₹1,500 + GST = ₹1,770. Sleeping donors, imported donors, receipt re-downloads aur donation amount par charge nahi hai. Aapka current plan Starter, Growth ya Advanced hai?\n\nExact plan comparison ke liye WhatsApp par +91 92019 58271 ya /contact-us par team se connect kar sakte hain.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Over-limit amount pe per donor charge hai, per receipt hai, ya slab-wise billing hoti hai?",
+  "a": "Over-limit billing **per receipt** hoti hai, per donor nahi. Slab-wise extra billing nahi hoti: plan ki monthly 80G receipt quota cross hone ke baad har additional receipt par fixed rate lagta hai.\n\nStarter: 1,000 receipts included, uske baad ₹0.90 per receipt.  \nGrowth: 5,000 included, uske baad ₹0.70 per receipt.  \nAdvanced: 15,000 included, uske baad ₹0.50 per receipt.  \n\nSab rates par 18% GST extra hai. Example: Growth par 6,500 receipts aaye to 1,500 extra × ₹0.70 = ₹1,050, plus GST. Active donor limit cross karne, sleeping donors store karne, donor reactivate hone ya receipt re-download hone par charge nahi hai. Donation kabhi block nahi hoti.\n\nAapka plan aur monthly receipt volume WhatsApp par share karein: +91 92019 58271. Team exact calculation confirm karegi.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Humko pehle warning milegi ya bill dekhke surprise hoga?",
+  "a": "Give Setu mein usage ka hisaab visible rehta hai, isliye bill dekhkar achanak surprise nahi hona chahiye. Marketing email bhejne se pehle exact recipient count, remaining quota aur top-up cost dikhte hain. Receipt overage aur WhatsApp messages usage ke saath record hote hain aur threshold cross hone par auto-settlement hota hai: Starter ₹500, Growth ₹1,500, Advanced ₹5,000.\n\nAnnual renewal ke liye invoice 30 din pehle raise hota hai. Prices GST ke pehle hain; example, Advanced **₹80,000 + 18% GST = ₹94,400 per year**. WhatsApp messages aur receipt overage par GST alag usage ke hisaab se lagta hai. Aapka exact plan aur billing flow team WhatsApp par confirm karegi: **+91 92019 58271**.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Limit cross ho gayi but payment approve nahi hua toh account freeze kar denge kya?",
+  "a": "Agar aap **usage limit** cross hone ke baad auto-payment approve na hone ki baat kar rahe hain, toh account turant freeze nahi hota. Payment 48 hours tak unpaid rahe toh sirf marketing sends pause hote hain; donations, receipts, donor portal aur data export chalte rehte hain.\n\nAgar baat annual renewal invoice ki hai, rules alag hain: pehle 7 din full function rehta hai, day 8–30 admin panel read-only hota hai, aur day 30 ke baad public website Under Maintenance page par ja sakti hai. Exact case confirm karne ke liye team ko WhatsApp **+91 92019 58271** par message karein ya /contact-us se reach karein. Aapka plan Starter, Growth ya Advanced hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "NGO ka budget fixed hai, overage pay nahi kar paaye toh existing donor data delete toh nahi hoga?",
+  "a": "Nahi. Overage payment fail hone par donor data delete nahi hota. Agar usage charge 48 ghante tak unpaid rahe, sirf marketing sends pause hote hain; donations, receipts, donor portal aur full data export chalte rehte hain.\n\nRenewal payment late hone par bhi data delete nahi hota. Admin panel read-only ho sakta hai, lekin public website, donations, receipts aur donor receipt downloads reference ke mutabik available rehte hain, aur aap apna complete data free mein export kar sakte hain. Budget fixed hai toh Growth plan bhi dekhiye: **₹45,000 + 18% GST = ₹53,100 per year**, jisme 5,000 receipts/month included hain; uske baad ₹0.70 per receipt + GST.\n\nAapke organisation ke liye plan aur billing behaviour WhatsApp par team se confirm karwa sakte hain: **+91 92019 58271**, ya /contact-us par enquiry bhejiye.",
+  "pass": false,
+  "reasons": [
+   "The /contact-us enquiry route is not mentioned in the supplied quotation."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "35,000 donor limit ke baad agle donor ko CRM mein save kar sakte hain ya nahi?",
+  "a": "Haan, donor CRM mein save kar sakte hain. Give Setu mein sleeping ya legacy donors ki storage unlimited aur free hai. **Advanced plan mein 25,000 active donors** track hote hain; active ka matlab jisne pichhle 45 din mein donation, receipt download, OTP verification ya donor-portal login kiya ho.\n\nAgar 35,000 donors mein se 25,000 se zyada active ho jaate hain, extra donors sleeping storage mein rahenge—delete nahi honge, searchable rahenge, aur donation karte hi dobara active ho jaayenge. Donor limit cross karne par charge nahi lagta; sirf monthly 15,000 80G receipts ke baad ₹0.50 per extra receipt + 18% GST lagta hai.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Donation receive ho gaya but receipt limit khatam hai—receipt baad mein issue kar sakte hain kya?",
+  "a": "Nahi—receipt quota khatam hone par donation block ya receipt delay nahi hoti. Receipt turant issue hoti hai aur sirf included monthly limit ke baad overage charge lagta hai:\n\nStarter: ₹0.90 per extra receipt  \nGrowth: ₹0.70 per extra receipt  \nAdvanced: ₹0.50 per extra receipt  \n\nIn rates par 18% GST lagega. Jaise Growth par 300 extra receipts hon, to 300 × ₹0.70 = ₹210, plus 18% GST = ₹247.80. Donation kabhi block nahi hoti, aur receipt re-downloads free rehte hain.\n\nAapka plan Starter, Growth ya Advanced hai? Exact calculation ke liye WhatsApp par +91 92019 58271 ya /contact-us par team se baat kar sakte hain.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Crossing limit ka charge current month mein lagega ya next renewal invoice mein?",
+  "a": "Active donor limit cross hone par koi charge nahi lagta. Sleeping ya imported donors bhi unlimited aur free rehte hain.\n\nAgar aap monthly 80G receipt quota ki baat kar rahe hain, to overage current month mein hi settle hota hai, renewal invoice mein nahi. Starter mein ₹0.90, Growth mein ₹0.70 aur Advanced mein ₹0.50 per extra receipt, plus 18% GST. Auto-settlement threshold cross hone par charge mid-cycle hota hai: Starter ₹500, Growth ₹1,500, Advanced ₹5,000. Donations block nahi hoti.\n\nAapka exact usage confirm karne ke liye WhatsApp par +91 92019 58271 par message karein, ya /contact-us form bhejein.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Agar sirf do din ke liye limit exceed hui aur phir donors remove kiye, tab bhi full overage lagega?",
+  "a": "Active donors limit sirf tracking capacity hai—use 2 din ke liye cross karne par koi overage nahi lagta. Extra donors sleeping storage mein chale jaate hain, unlimited aur free; donor remove karne ki zarurat nahi.\n\nOverage sirf calendar month mein included limit se zyada issue hue 80G receipts par lagta hai. Jaise Growth mein 5,000 receipts included hain; uske baad ₹0.70 + 18% GST per receipt, chahe donors baad mein remove kar diye jaayen. Donation block nahi hoti.\n\nAapka exact usage team WhatsApp par check karke bata sakti hai: +91 92019 58271. ઉપલ",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Donor count har saal reset hota hai ya lifetime total badhta rehta hai?",
+  "a": "Donor count har saal reset nahi hota. Donor records lifetime database mein stored rehte hain, aur sleeping/legacy donors unlimited aur free hote hain.\n\nPlan capacity sirf **active donors** par apply hoti hai: jis donor ne pichhle 45 din mein donation kiya, receipt download ki, OTP verify kiya ya portal login kiya. Jo inactive ho jaate hain woh sleeping storage mein chale jaate hain; dobara donation karte hi reactivate ho jaate hain. Donation kisi bhi donor se hamesha accept aur receipt ki jaati hai.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Receipts ka limit financial year ke hisaab se hai ya subscription month ke hisaab se?",
+  "a": "Receipt limit **calendar month** ke hisaab se hai, financial year ya subscription month ke hisaab se nahi.\n\nStarter mein 1,000, Growth mein 5,000 aur Advanced mein 15,000 80G receipts per calendar month included hain. Is limit ke upar donation block nahi hoti; sirf extra receipt usage charge hota hai. Receipt re-downloads quota mein count nahi hote.\n\nFinancial year ka relation receipt numbering se hai: numbering 1 April ko reset hoti hai, jaise RCP/2026-27/000481.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Humare CA bol rahe hain overage unpredictable hai—maximum bill pe koi cap ya alert milta hai?",
+  "a": "CA ki concern valid hai. Give Setu mein 80G receipt overage par koi published maximum-bill cap ya automatic alert stated nahi hai. Sirf actual monthly receipts ke beyond charge hota hai: Starter ₹0.90, Growth ₹0.70, Advanced ₹0.50 per receipt, plus 18% GST. Usage auto-settlement threshold Starter ₹500, Growth ₹1,500 aur Advanced ₹5,000 hai; payment fail hokar 48 hours tak unpaid rahe to marketing sends pause hote hain, lekin donations, receipts, donor portal aur data export chalte rehte hain.\n\nWhatsApp marketing ke liye alag spend cap available hai, jo marketing sends ko aapke set ceiling par pause karta hai. Receipt overage ke cap ya alert ko team aapke setup ke hisaab se confirm karegi. WhatsApp par **+91 92019 58271** ya /contact-us par team se written confirmation le sakte hain. Aapka organisation Starter, Growth ya Advanced mein se kis plan par consider kar raha hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Payment fail ho gaya toh extra usage ke liye grace period milega kya?",
+  "a": "Haan, usage payment fail hone par 48 hours ka window hota hai. Usage charges threshold cross hone par auto-settle hote hain: Starter ₹500, Growth ₹1,500, Advanced ₹5,000.\n\nAgar payment 48 hours tak unpaid rahe, sirf marketing sends pause hote hain. Donations accept hona, 80G receipts, donor portal aur data export continue rehte hain. Extra usage charges plan ke hisaab se apply hote hain; koi penalty amount reference mein listed nahi hai. Specific billing case ke liye team se WhatsApp par +91 92019 58271 ya /contact-us par baat karein.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Limit cross hone par plan automatically upgrade kar dete ho kya bina permission ke?",
+  "a": "Nahi, bina permission ke plan automatically upgrade nahi hota.\n\nActive donor limit cross hone par koi extra charge ya forced upgrade nahi hota. Sleeping ya imported donors unlimited aur free rehte hain. Sirf monthly 80G receipts quota se zyada hone par overage lagta hai: Starter mein ₹0.90, Growth mein ₹0.70, Advanced mein ₹0.50 per extra receipt, plus 18% GST. Donation block, delay ya refuse nahi hoti.\n\nAapka organisation kaunsa plan use kar raha hai, aur aap active donors ya monthly receipts ki limit ki baat kar rahe hain? Exact situation team se confirm karne ke liye WhatsApp **+91 92019 58271** ya /contact-us par bhejiye.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Agar hum upgrade nahi karna chahte, toh excess donors ko export karke system normal chala sakte hain?",
+  "a": "Haan, aap excess donors export kar sakte hain—full data export free hai, aur donors ko export karna active-donor capacity ko reduce karne ka required step nahi hai.\n\nGive Setu mein active donor ka matlab hai jisne pichhle 45 din mein donation kiya, receipt download ki, OTP verify kiya ya donor portal khola. Capacity cross hone par purane donors sleeping storage mein chale jaate hain; storage unlimited aur free hai, data searchable rehta hai, aur unka donation hamesha accept aur receipt hota hai. Sirf 80G receipts ki monthly quota alag meter hai.\n\nAapka current plan aur active donors dekhkar team confirm karegi ki upgrade ki zaroorat hai ya nahi. WhatsApp par +91 92019 58271 ya /contact-us par details bhej sakte hain. Aapke pichhle 45 din mein lagbhag kitne donors ne activity ki hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "35k donors touch karne se pehle dashboard mein remaining capacity clearly dikhegi kya?",
+  "a": "Haan, bulk action se pehle **Activation Preview** exact batata hai ki kitne donors active honge aur uske baad capacity kya rahegi. Advanced mein 25,000 active donors tracked hote hain; sleeping ya imported donors unlimited aur free rehte hain.\n\nLekin dashboard mein “remaining capacity” ka exact visual format reference mein specified nahi hai. Agar aap 35,000 donors ko actively engage karna chahte hain, team current setup ke hisaab se ye detail confirm karegi. WhatsApp par +91 92019 58271 ya /contact-us par bhej sakte hain.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Small trust hain bhai, extra bill afford nahi hua toh Give Setu wale pehle phone karenge ya service seedha band?",
+  "a": "Seedha pehle band nahi hota. Reference ke hisaab se payment late hone par billing contact ko reminders aur panel mein banner milta hai.\n\nDays 1–7: sab kuch chalta rahega. Days 8–30: admin panel read-only ho jayega, lekin website live, donations aur receipts chalte rahenge. Day 30 ke baad public website “Under Maintenance” page par ja sakti hai; billing, export aur donor receipt access open rehte hain. Payment hone par service restore hoti hai.\n\nAgar aapka trust chhota hai aur basic website, donation aur 80G receipts chahiye, toh **Starter ₹25,000 + 18% GST per year** se shuru karna zyada practical ho sakta hai. Budget concern ho toh team se terms discuss karne ke liye WhatsApp **+91 92019 58271** ya contact form **/contact-us** par bhejiye.",
+  "pass": false,
+  "reasons": [
+   "The /contact-us path is not provided in the quotation and appears to be an invented contact channel."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Active donor ka matlab aapke system mein exactly kya hai—jisne iss saal diya, ya WhatsApp khola bhi toh active?",
+  "a": "Active donor ka matlab hai jisne pichhle 45 din mein koi real activity ki ho:\n\n- donation ki ho\n- receipt download ya re-download ki ho\n- OTP se verify kiya ho\n- donor portal open kiya ho\n\nSirf WhatsApp message kholna active donor ki definition mein listed nahi hai. Jo donors inactive ya sleeping hain, woh unlimited aur free storage mein rehte hain; unka data delete nahi hota. Woh dobara donation karte hi reactivate ho jaate hain, aur donation hamesha accept aur receipt hoti hai.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Hamare paas 2 lakh purane donor records hain, sabko upload karne par plan ka rate badhega kya?",
+  "a": "Nahi, 2 lakh purane donor records upload karne se plan ka rate nahi badhega. Sleeping ya imported donors unlimited aur free hain; database import bhi kisi bhi size ka free hai. Sirf pichhle 45 din mein donation, receipt download, OTP verification ya donor-portal login karne wale donors “active” count hote hain.\n\nPlan ki capacity active donors par hoti hai: Starter 2,000, Growth 10,000, Advanced 25,000. Donations receive karne par koi limit nahi hai; sirf monthly 80G receipts quota ke baad overage lagta hai. Aapki file badi ya messy ho to team import karke validation report degi; data cleanup alag requirement ho sakti hai, jise team confirm karegi.\n\nAapke 2 lakh records mein pichhle 45 din mein roughly kitne donors active rahe hain? Exact plan aur cost confirm karne ke liye WhatsApp par +91 92019 58271 par message karein, ya /contact-us par enquiry bhejein.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Jo donor teen saal se kuch nahi diya, usko database mein rakhne ka koi extra charge lagega?",
+  "a": "Nahi, 3 saal se inactive donor ko database mein rakhne ka koi extra charge nahi lagega. Sleeping ya legacy donors unlimited aur free hain. Sirf last 45 din mein donation, receipt download, OTP verification ya donor portal login karne wale donors active count hote hain. Woh donor dobara donation kare to donation accept aur receipt issue hogi, aur donor reactivate ho jayega.\n\nGive Setu mein 0% donation commission hai. Details confirm karne ke liye WhatsApp par **+91 92019 58271** par message karein, ya /contact-us par enquiry bhejein.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Sleeping donors ko alag list mein daal sakte hain bina unka record delete kiye?",
+  "a": "Haan, system mein jo donors last 45 din mein donation, receipt download, OTP verification ya portal login nahi karte, woh sleeping storage mein chale jaate hain. Unka record delete nahi hota; sleeping donors unlimited aur free rehte hain, searchable hote hain, aur dobara donation karte hi reactivate ho jaate hain.\n\nAgar aapka matlab unhe ek alag custom list ya label mein dikhana hai, yeh current setup ke hisaab se team confirm karegi. Aap WhatsApp par +91 92019 58271 likh sakte hain, ya /contact-us se enquiry bhej sakte hain. Aapko sirf sleeping donors ko filter karke dekhna hai ya export bhi chahiye?",
+  "pass": false,
+  "reasons": [
+   "Quotation supports filtering/segmenting donors and keeping sleeping donors searchable, but the reply deflects custom-list/label confirmation to the team instead of directly explaining that they can be filtered or segmented without deletion."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Agar koi purana donor phir se ₹500 deta hai, system usko automatically active bana dega?",
+  "a": "Haan. Agar sleeping ya purana donor dobara ₹500 donate karta hai, donation automatically accept aur receipt ke saath issue hoti hai, aur donor turant active status mein reactivate ho jata hai. Active ka matlab hai ki usne pichhle 45 din mein donation, receipt download, OTP verification ya donor portal login kiya ho. Is reactivation par koi per-donor charge nahi hai.\n\nGive Setu ke plan details ke liye WhatsApp par +91 92019 58271 par team se baat kar sakte hain.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Donor count naam se hota hai ya total transactions se? Ek aadmi ne 20 baar diya toh 20 donors maanoge?",
+  "a": "Donor count **unique person** ke basis par hota hai, total transactions ke basis par nahi. Ek aadmi ne 20 baar donation diya, toh woh **1 donor** maana jayega, 20 donors nahi.\n\nGive Setu mein “active donor” woh hai jisne last 45 days mein donation kiya, receipt download ki, OTP verify kiya ya donor portal open kiya. Us aadmi ke 20 donations se 20 receipts count hongi, lekin donor count mein 1 person hi rahega. System PAN, phone ya email se matching karta hai aur doubtful duplicate ko suggest karta hai.\n\nSleeping ya imported donors unlimited aur free store hote hain. Aapke roughly kitne unique donors ne last 45 days mein activity ki hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Sirf contact import karne se donor active count mein chala jayega kya?",
+  "a": "Nahi. Sirf contacts ya donor database import karne se donor active count mein nahi aata. Imported donors sleeping/legacy storage mein rehte hain, jo unlimited aur free hai.\n\nDonor tab active count mein aata hai jab pichhle 45 din mein donation kare, receipt download ya re-download kare, OTP verify kare, ya donor portal open kare. Kisi sleeping donor ki donation aate hi woh automatically active ho jata hai; donation accept aur receipt issue hone par koi donor-cap charge nahi lagta.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Humare 2 lakh names mein kaafi duplicate aur incomplete numbers hain, import ke pehle cleaning kaise hogi?",
+  "a": "2 lakh names import kiye ja sakte hain, aur sleeping ya imported donors ko store karna free hai. Lekin duplicate records aur incomplete mobile numbers ki cleaning import se pehle alag data-cleanup work hai; team file inspect karke quote approve hone ke baad hi karegi. Reference rate **₹5,000–₹1,50,000**, actual condition ke hisaab se, plus 18% GST hai. Import khud free hai, lekin cleaning ko automatic ya fully deduplicated maan kar nahi chalna chahiye.\n\nAapki file ka format aur duplicate matching rules team confirm karegi. Details aur quote ke liye WhatsApp **+91 92019 58271** par file structure ka brief bhejiye, ya /contact-us se enquiry karein. Aapke records Excel/CSV mein hain ya kisi existing software/database mein?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Inactive donors ko bulk WhatsApp campaign bhej sakte hain kya reactivation ke liye?",
+  "a": "Haan, inactive ya lapsed donors ko segment karke bulk WhatsApp reactivation campaign bhej sakte hain. Growth se WhatsApp rail available hai; message rate **₹1.00 + 18% GST per message** hai. Advanced mein lapsed-donor ranking aur win-back sequences bhi milte hain; rate **₹0.98 + 18% GST per message** hai. Donors jo unsubscribe kar chuke hain unhe messages automatically suppress kiya jata hai.\n\nWhatsApp messages ke liye Meta-approved templates aur flow builder platform mein available hain. Aapke templates draft, submit ya reject hone par rewrite karne ka kaam team specifics ke hisaab se confirm karegi. Team se baat ke liye WhatsApp karein: **+91 92019 58271**. Aapke approx kitne inactive donors hain?",
+  "pass": false,
+  "reasons": [
+   "The quotation does not mention a WhatsApp flow builder or that the team rewrites rejected templates; it only specifies template management with approval-status sync."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Agar donor ne iss financial year mein payment nahi kiya but monthly pledge chal raha hai, woh active hai ya nahi?",
+  "a": "Agar monthly pledge chal raha hai lekin is financial year mein payment nahi hua, to sirf pledge ke basis par donor **active nahi** maana jayega.\n\nActive tab maana jayega jab usne pichhle 45 din mein donation kiya ho, receipt download ki ho, OTP verify kiya ho, ya donor portal open kiya ho. Warna donor sleeping/legacy storage mein rahega, jo unlimited aur free hai; payment hote hi woh automatically active ho jayega.\n\nAapke exact case ko team se verify karwana ho to WhatsApp par +91 92019 58271 ya /contact-us par bhej sakte hain. Pichhle 45 din mein kya donor ne portal login, OTP verification ya receipt download kiya hai?",
+  "pass": false,
+  "reasons": [
+   "The /contact-us route is not provided in the quotation, though the listed phone number is supported."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Old donors ka data kitne saal tak safe rahega? Koi auto-delete toh nahi hota?",
+  "a": "Haan, sleeping ya legacy donors ka data unlimited aur free rehta hai; auto-delete nahi hota. Donor ne 45 din tak donation, receipt download, OTP verification ya portal login na kiya ho, tab bhi record stored rehta hai, searchable hota hai, aur dobara donation karte hi active ho jata hai.\n\nData India mein held hota hai, PAN column-level encryption aur role-based masking ke saath. System mein delete facility nahi hai, aur aap kabhi bhi complete data export le sakte hain. Aapki organisation ka data already kisi plan par hai ya naya system dekh rahe hain?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Donor ne bas receipt ke liye details di thi, donation nahi kiya—usko CRM mein kis category mein rakhenge?",
+  "a": "Donation nahi ki, to unhe automatically donor category mein rakhna sahi nahi hoga. Give Setu reference mein receipt-only details ke liye alag CRM category defined nahi hai; isliye final classification current entry/source ke basis par team confirm karegi.\n\nAgar unhone OTP verify kiya ya donor portal open kiya, to woh last 45 days ke liye **active donor** definition mein aa sakte hain. Warna record sleeping/imported storage mein reh sakta hai, jo free aur unlimited hai. Specific mapping ke liye WhatsApp +91 92019 58271 ya /contact-us par team se confirm karwa sakte hain. Kya unhone OTP verify ya donor portal open kiya tha?",
+  "pass": false,
+  "reasons": [
+   "It directs the visitor to the unprovided /contact-us route, which is not in the quotation.",
+   "The quotation answers this: downloading or re-downloading a receipt also makes someone an active donor for 45 days, but the reply omits this and defers final classification to the team."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Kya active aur dormant donors ke liye alag reports milengi trustee meeting ke liye?",
+  "a": "Haan, system active aur sleeping/dormant donors ko alag identify karta hai. Active donor woh hai jisne pichhle 45 din mein donation, receipt download, OTP verification ya donor portal login kiya ho; dormant donors unlimited aur free storage mein rehte hain.\n\nTrustee meeting ke liye reports columns aur filters se banayi ja sakti hain, aur scheduled board reports PDF ya Excel mein email ho sakti hain. “Active vs dormant” ka exact report format team confirm karegi. Details ke liye WhatsApp par +91 92019 58271 ya contact form /contact-us par bhejiye.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Plan lene ke baad database badh gaya toh per donor paisa dena padega ya fixed subscription hai?",
+  "a": "Give Setu mein per-donor charge nahi hai. Subscription plan fixed rehta hai: Starter ₹25,000/year, Growth ₹45,000/year, ya Advanced ₹80,000/year, sab par 18% GST extra.\n\nDatabase mein sleeping ya imported donors unlimited aur free rehte hain. Active donors ka limit plan ke hisaab se 2,000, 10,000 ya 25,000 hai; limit cross hone par bhi donor se per-person paisa nahi liya jata aur donation accept hota hai.\n\nSirf 80G receipts ka monthly quota cross hone par usage charge lagta hai: Starter mein 1,000 ke baad ₹0.90, Growth mein 5,000 ke baad ₹0.70, aur Advanced mein 15,000 ke baad ₹0.50 per extra receipt, plus 18% GST. Example: Growth mein 6,500 receipts aaye toh 1,500 × ₹0.70 = ₹1,050, plus GST.\n\nAap apna plan aur current monthly receipt volume WhatsApp par bhej sakte hain: +91 92019 58271. Team exact fit aur calculation confirm karegi.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "2 lakh records upload karne ke baad hum sirf 10,000 ko use karenge, billing kis basis par hogi?",
+  "a": "2 lakh records upload karne par billing 2 lakh records ke basis par nahi hogi. Jo donors last 45 din mein donation, receipt download, OTP verification ya donor portal login karte hain, wahi **active donors** count honge. Baaki sleeping ya legacy donors unlimited aur free storage mein rahenge; unki reactivation par bhi charge nahi hai.\n\nAgar aapke 10,000 active donors hain, to **Growth plan — ₹45,000 + 18% GST = ₹53,100 per year** — us capacity ke liye fit hai. Isme 5,000 80G receipts per month included hain; uske baad ₹0.70 per additional receipt + 18% GST lagega. Upload karna, database store karna aur donor count cross karna alag se billed nahi hai.\n\nExact plan comparison aur aapke receipt calculation ke liye WhatsApp par team se baat karein: +91 92019 58271. Aapke busiest month mein approximately kitni 80G receipts issue hoti hain?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Ek donor ka mobile number badal gaya hai, naya record banega ya purane wale se merge kar sakte hain?",
+  "a": "Yeh current donor record aur available matching details par depend karta hai. Give Setu phone, PAN ya email ke basis par duplicate merge suggestions dikha sakta hai, lekin mobile number badalne par purane record ko merge karna hai ya naya record banana hai, yeh team current setup dekhkar confirm karegi.\n\nApna organisation name aur current record ka short detail WhatsApp par bhejiye: **+91 92019 58271**. Team aapko sahi process bata degi.",
+  "pass": false,
+  "reasons": [
+   "The quotation plainly states that duplicate records can be identified using phone, PAN or email and merged while preserving both giving histories, but the reply deflects the decision to the team instead of answering directly."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Reactivation campaign ke baad jo log reply nahi karte, unko sleeping mark karne ka rule hum set kar sakte hain?",
+  "a": "Reactivation campaign ka reply na aana, apne aap sleeping mark karne ka custom rule reference mein confirmed nahi hai. Give Setu mein donor **active** tab maana jata hai jab usne pichhle 45 din mein donation kiya ho, receipt download ki ho, OTP verify kiya ho ya donor portal khola ho. Baaki donors sleeping storage mein unlimited aur free rehte hain; donation karte hi reactivate ho jaate hain.\n\nAapke campaign ke baad custom segmentation ya automation rule chahiye to team current setup ke basis par confirm karegi. WhatsApp par +91 92019 58271 par message karein, ya /contact-us par enquiry bhejein.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Inactive donor ko email ya WhatsApp bhejna allowed hai system se, ya koi limit hoti hai?",
+  "a": "Haan, sleeping/inactive donors ko system mein unlimited aur free store kar sakte hain. Unhe marketing email ya WhatsApp campaign bhejna plan ke communication limits ke hisaab se hota hai; inactive donor hone par alag per-donor charge nahi lagta.\n\nMarketing email quota Starter mein 1,000, Growth mein 2,500 aur Advanced mein 25,000 recipients per month hai. Transactional emails, jaise receipts aur confirmations, unlimited free hain.\n\nWhatsApp rail Growth se available hai. Growth par ₹1.00 + 18% GST per message aur Advanced par ₹0.98 + 18% GST per message lagta hai; platform fee ya monthly subscription nahi hai. Bulk action se kitne donors active tracking mein aa sakte hain, system pehle preview dikhaata hai.\n\nAapka plan Starter, Growth ya Advanced mein se kaunsa hai? Details team se WhatsApp par +91 92019 58271 ya /contact-us par confirm karwa sakte hain.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "CSV mein donor history, last donation date aur source column hai—ye sab import ho jayega na?",
+  "a": "CSV import available hai, aur column mapper, validation report aur dry-run milta hai. Donor history, last donation date aur source columns import honge ya nahi, yeh CSV ke format aur data structure par depend karega; exact mapping team confirm karegi. 50,000 rows tak self-service import hai, aur larger ya messy files team free mein upload karti hai.\n\nCSV ka sample WhatsApp par +91 92019 58271 bhej dijiye, ya /contact-us par details submit kijiye. Aapka CSV roughly kitni rows ka hai?",
+  "pass": false,
+  "reasons": [
+   "The /contact-us submission route is not mentioned in the quotation."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Agar same family ke donations alag-alag names se hain, Give Setu unko family ya household ke roop mein dikha sakta hai?",
+  "a": "Family ya household view ke roop mein donations dikhana Give Setu ke reference mein listed feature nahi hai, isliye main isko confirmed capability nahi bolunga. System donor records ko PAN, phone ya email ke basis par match karta hai aur possible duplicates merge karne ke liye suggest karta hai; lekin alag names ko ek family ke under group karna aapke current data structure par depend karega.\n\nTeam is detail ko aapke setup ke hisaab se confirm karegi. WhatsApp par **+91 92019 58271** message karein ya /contact-us form submit karein.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Hamare CA ne bola old donor data alag archive rakho—archive records ka subscription mein kya treatment hai?",
+  "a": "Agar aap purane donor records ki baat kar rahe hain, to unhe sleeping/legacy donors ke roop mein unlimited aur free rakha ja sakta hai—har plan mein. Import bhi free hai, aur koi per-donor subscription charge nahi hai. Donor baad mein donation, receipt download, OTP verification ya portal login kare to automatically active ho jata hai.\n\nAgar “archive” se aap subscription khatam hone ke baad Cold Vault storage keh rahe hain, to rate **₹499/year** hai. Alag documents, audit files ya non-donor archive ka treatment current setup ke hisaab se team confirm karegi. Aap WhatsApp par +91 92019 58271 bhej sakte hain; archive mein exactly kya rakhna hai—donor records ya documents?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Kya system batayega ki kaunse sleeping donors pehle regularly dete the aur ab ruk gaye?",
+  "a": "Haan—**Advanced** plan ka AI Insights donor behaviour dekhta hai: kaun kitni baar aur kitna donate karta tha, kaun ab lapsed ho gaya, aur unhe lifetime value ke hisaab se rank karta hai. Resurrection Engine un lapsed donors ke liye unki language mein win-back sequences bhi generate karta hai. Sleeping donors unlimited aur free store hote hain; dobara donation karte hi woh automatically reactivate ho jaate hain.\n\nAdvanced ka annual price **₹80,000 + 18% GST = ₹94,400/year** hai. Ismein 25,000 active donors tracking, AI Insights, 15,000 80G receipts per month aur 0% donation commission included hai. Plan comparison ya aapke donor data ke hisaab se fit samajhne ke liye WhatsApp **+91 92019 58271** par team se baat kar sakte hain. Aapke organisation mein roughly kitne donors ne pichhle 45 din mein donation, receipt download ya portal login kiya hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Donor ko active banane ke liye minimum donation amount hota hai kya, ₹1 bhi count karega?",
+  "a": "Active donor ke liye definition mein “donation kiya” count hota hai, aur sleeping ya imported donor ki real donation hote hi woh reactivate ho jata hai. Lekin minimum donation amount, jaise ₹1, ke count hone ki baat reference mein specifically defined nahi hai—yeh team current setup ke hisaab se confirm karegi.\n\nAap WhatsApp par **+91 92019 58271** message karein ya /contact-us par enquiry bhejein; team ₹1 donation rule clearly confirm kar degi.",
+  "pass": false,
+  "reasons": [
+   "The quotation states that a real donation from any donor is accepted and reactivates them, with no donation-value minimum; the reply deflects this to the team instead of answering."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Import ke time galat data chadh gaya toh undo ya rollback ka option milega?",
+  "a": "Import se pehle self-service wizard validation report aur dry-run deta hai, taaki data commit hone se pehle errors dekhe ja saken. Lekin galat import ke baad exact rollback ya undo ka scope reference mein fixed nahi hai; yeh current data aur import method par depend karta hai, team confirm karegi.\n\nAap team ko WhatsApp par +91 92019 58271 par import file aur system details bhej sakte hain. Aapka data self-service wizard se import hoga ya team upload karegi?",
+  "pass": false,
+  "reasons": [
+   "Quotation plainly states a 30-day undo bin for anything deleted by accident and 15-minute recovery points, but the reply omits these and deflects to team confirmation."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Hum pehle 2 lakh ka database upload karke phir duplicate hata sakte hain, ya pehle hi limit aur charges clear karo?",
+  "a": "2 lakh donor database import ho sakta hai. Import karne ka alag charge nahi hai, aur sleeping/imported donors unlimited free store hote hain. 50,000 rows tak self-service import wizard hai; 2 lakh ya messy file hamari team upload kar sakti hai, free.\n\nDuplicate merge ke liye system phone, PAN ya email ke basis par possible duplicate pairs dikhata hai, aur merge se dono ki giving history preserve hoti hai. Lekin agar file mein extensive cleanup ya manual data correction chahiye, woh inspection ke baad **₹5,000–₹1,50,000** quote hota hai. Isliye basic import free hai; cleanup ka charge file ki condition par depend karega.\n\nAap file ka format aur duplicate pattern team ko WhatsApp **+91 92019 58271** par bhej sakte hain, ya /contact-us se enquiry bhej sakte hain. Aapke duplicates mainly PAN, mobile ya email mein hain?",
+  "pass": false,
+  "reasons": [
+   "The /contact-us enquiry path is not provided in the quotation."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Humare NGO mein 3 log hain aur 800 donors—Starter lenge ya Growth hi lena padega?",
+  "a": "Aapke 800 donors ke liye **Starter kaafi hai**—isme 2,000 active donors aur 1,000 80G receipts per month included hain. 800 total donors hone par bhi sleeping donors unlimited aur free rehte hain.\n\nDhyan rahe, Starter mein 2 admin seats hain. Agar teesre person ko admin access chahiye, to additional admin seat ₹299/month + 18% GST hai. Starter plan ₹25,000/year + 18% GST hai. Growth ₹45,000/year + 18% GST hai aur 5 admin seats, 10,000 active donors, donor/member portals, Compliance Centre aur WhatsApp rail deta hai.\n\nIsliye meri recommendation Starter hai, jab tak aapko WhatsApp rail, full portals ya Compliance Centre ki zaroorat na ho. Teesre vyakti ko system mein admin login chahiye? WhatsApp par team se baat karne ke liye +91 92019 58271 ya /contact-us par enquiry bhej sakte hain.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Turnover chhota hai, cases zyada hain. Plan size staff se decide hota hai ya donor count se?",
+  "a": "Plan size primarily donor activity aur monthly 80G receipts se decide hota hai, turnover se nahi. Cases ki sankhya se plan upgrade nahi hota—live cases har plan mein unlimited aur free hain.\n\nStaff ka role admin seats mein aata hai: Starter mein 2, Growth mein 5, aur Advanced mein 15 seats. Donor capacity Starter mein 2,000 active donors, Growth mein 10,000, aur Advanced mein 25,000 hai. Active donor woh hai jisne pichhle 45 din mein donation, receipt download, OTP verification ya portal login kiya ho; sleeping donors unlimited aur free store hote hain.\n\nAapke profile mein, agar active donors 2,000 ke andar, monthly receipts 1,000 ke andar aur 2 admin users kaafi hain, to Starter practical fit ho sakta hai. Aapke kitne active donors hain?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Abhi Starter leke kaam chala sakte hain kya, baad mein zarurat par Growth kar denge?",
+  "a": "Haan, **Starter** se shuru karke baad mein **Growth** par move kar sakte hain. Starter ₹25,000 + 18% GST = **₹29,500 per year** hai. Ismein basic WordPress website, 2,000 active donors, 1,000 80G receipts per month, donor portal ka receipt access aur unlimited sleeping donors milte hain.\n\nJab aapko 2,000 se zyada active donors, 1,000 se zyada monthly receipts, full donor/member portals, WhatsApp rail ya Compliance Centre chahiye ho, tab Growth ₹45,000 + 18% GST = **₹53,100 per year** rahega. Starter se Growth upgrade ka exact process team confirm karegi. Agar aap Advanced custom-coded website se start nahi kar rahe hain, to yeh practical route hai.\n\nAapka organisation abhi kis stage par hai — no system, manual receipts, ya existing website? | I have no system at all | I have a site but receipts are manual | We have outgrown what we have | Just comparing prices]]\n\nPricing aur upgrade route ke liye WhatsApp par +91 92019 58271 ya contact form /contact-us par team se baat kar sakte hain.",
+  "pass": false,
+  "reasons": [
+   "It implies Growth is required once active donors exceed 2,000 or monthly receipts exceed 1,000, but exceeding the active-donor number is never charged or blocked, and Starter can continue with receipt overage charges beyond 1,000."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Growth plan sach mein kis type ke NGO ke liye bana hai? Hum mid-size bhi nahi hain.",
+  "a": "Growth plan mid-size NGO ke liye hi nahi hai. Agar aapka organisation chhota hai lekin aapko donor/member portals, WhatsApp receipts, recurring donations aur 10BD/10BE Compliance Centre chahiye, to Growth relevant ho sakta hai.\n\nGrowth ki cost **₹45,000 + 18% GST = ₹53,100 per year** hai. Ismein 10,000 active donors tak tracking, 5,000 80G receipts per month, 3,000 members, full donor/member portals, WhatsApp rail aur one filing batch per financial year milta hai. WhatsApp messages ₹1 + GST per message hain. Active donor ka matlab last 45 days mein donation, receipt download, OTP verification ya portal login karne wala donor hai; sleeping donors unlimited aur free rehte hain.\n\nAgar aapko sirf basic website, donation system, 2,000 active donors aur 1,000 receipts per month chahiye, to Starter zyada sensible hai: **₹25,000 + 18% GST = ₹29,500 per year**. Aapke liye sabse important kya hai—basic presence, ya receipts/compliance/WhatsApp ka manual kaam kam karna?\n\nAap apna current setup WhatsApp par +91 92019 58271 bhej sakte hain; team aapko Starter aur Growth mein seedha comparison de degi.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Sirf donation, receipts aur basic donor records chahiye—Advanced lena toh paisa waste hoga na?",
+  "a": "Haan, aapki stated need ke hisaab se Advanced lena unnecessary hoga.\n\n**Starter: ₹25,000 + 18% GST = ₹29,500 per year.** Isme donation collection, automatic 80G receipts, basic donor records, donor matching, 2,000 active donors, 1,000 receipts per month, unlimited sleeping/imported donors aur receipt access by OTP milta hai. Donations par 0% commission hai.\n\nGrowth tab dekhein jab WhatsApp rail, donor/member full portals, Compliance Centre, 10BD/10BE filing ya 2,000 se zyada active donors chahiye. Growth **₹45,000 + GST = ₹53,100 per year** hai. Advanced **₹80,000 + GST = ₹94,400 per year** tabhi justify hota hai jab 10,000 se zyada active donors, AI Insights, mobile app, microsites ya Advanced-level capacity chahiye.\n\nAapke peak month mein lagbhag kitni 80G receipts issue hoti hain? WhatsApp par team se Starter-vs-Growth comparison mangwa sakte hain: **+91 92019 58271**.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Hamare 2,000 contacts hain but active donors sirf 200. Is hisaab se kaunsa plan fit rahega?",
+  "a": "Aapke case mein **Starter plan** fit rahega. 200 active donors, Starter ki 2,000 active-donor capacity ke andar hain; baaki sleeping ya legacy contacts unlimited aur free store hote hain. Annual price **₹25,000 + 18% GST** hai. Ismein 1,000 80G receipts per month included hain; uske baad ₹0.90 per receipt + GST lagega. Donations par 0% commission hai.\n\nStarter mein WhatsApp rail available nahi hai. Agar aapko WhatsApp receipts, donor/member portals ya Compliance Centre chahiye, to Growth ₹45,000 + 18% GST se relevant hoga. Aapke busiest month mein lagbhag kitni 80G receipts issue hoti hain?\n\nAap exact comparison ke liye WhatsApp par +91 92019 58271 message kar sakte hain, ya /contact-us par enquiry bhej sakte hain.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Year ke beech mein plan badalna ho toh allowed hai ya annual commitment mein phas jayenge?",
+  "a": "Plan ek saal ke liye liya jata hai, aur reference mein renewal par plan change karne ka option hai. Year ke beech mein downgrade ya upgrade allowed hai ya nahi, aur uska billing adjustment kaise hoga, yeh contractual detail hai jo team aapke case ke hisaab se confirm karegi.\n\nAap WhatsApp par **+91 92019 58271** bhej dijiye; team current plan, desired plan aur remaining term dekhkar exact answer degi. Contact form bhi available hai: https://govindaniit.com/contact-us",
+  "pass": false,
+  "reasons": [
+   "Says plans are taken for one year, although the quotation also offers monthly, 3-month and 6-month terms with a 3-month minimum.",
+   "Does not clearly answer whether a mid-year upgrade or downgrade is allowed or explain the applicable billing treatment; it defers the question to the team."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Starter se Growth upgrade karne par remaining months ka adjustment milega kya?",
+  "a": "Starter se Growth upgrade par remaining months ka adjustment quotation mein specified nahi hai. Is billing detail ko team aapke current plan aur paid term ke hisaab se directly confirm karegi.\n\nWhatsApp par **+91 92019 58271** par message karein, ya /contact-us form submit karein.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Agar pehle zyada features chahiye aur baad mein budget tight ho gaya toh downgrade kar sakte hain?",
+  "a": "Haan, annual renewal par downgrade kar sakte hain. Advanced se Growth par aane par **₹45,000 + 18% GST = ₹53,100 per year** hoga, yani Advanced ke ₹94,400 all-in renewal ke mukable ₹41,300 bachega. Aapka custom-coded website same design, URL, hosting, SSL aur bug cover ke saath continue rahega.\n\nStarter par downgrade nahi ho sakta agar Year 1 mein Advanced ka custom-coded website liya hai; aise case mein Growth minimum renewal plan hai. Plan choice aapke active donors aur monthly 80G receipts ke actual numbers ke basis par kar sakte hain. Team se renewal aur exact transition WhatsApp par confirm karwa sakte hain: **+91 92019 58271**, ya /contact-us par enquiry bhej sakte hain.",
+  "pass": false,
+  "reasons": [
+   "The /contact-us path is not provided in the quotation, though the phone number is supported."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Downgrade karne par purana data, receipts aur donor history delete toh nahi hogi?",
+  "a": "Advanced se Growth par downgrade karne par purana donor data, receipts aur donor history delete nahi hoti. Donors jo 45 din mein active nahi rahe, sleeping storage mein unlimited aur free rehte hain; unka donation aate hi donor reactivate ho jata hai. Receipts aur full data export bhi available rehte hain.\n\nGrowth renewal **₹45,000 + 18% GST = ₹53,100 per year** hai. Advanced ka custom-coded website bhi Growth par same design aur URL ke saath maintained rehta hai. Starter Advanced website ke baad renewal option nahi hai, kyunki Starter custom-coded website ko host, patch aur support nahi karta.\n\nAapka current plan aur downgrade situation team WhatsApp par confirm kar degi: **+91 92019 58271**, ya contact form **/contact-us** par details bhej sakte hain.",
+  "pass": false,
+  "reasons": [
+   "The /contact-us contact form path is not provided in the quotation."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Renewal ke time same plan automatically continue hota hai ya dobara selection karna padega?",
+  "a": "Renewal par same plan automatically continue nahi maana jata. Har saal aap apne usage ke hisaab se plan dobara choose karte hain—same plan continue kar sakte hain ya lower plan par ja sakte hain.\n\nAgar Advanced website li hai, to renewal ka minimum option Growth rahega, kyunki Starter custom-coded website ko support nahi karta. Growth renewal **₹45,000 + 18% GST = ₹53,100/year** hai, aur Advanced **₹80,000 + 18% GST = ₹94,400/year**. Selection aur renewal details team WhatsApp par confirm karegi: **+91 92019 58271**. Aap kaunsa plan use kar rahe hain?",
+  "pass": false,
+  "reasons": [
+   "It says renewal details will be confirmed by the team on WhatsApp, but the quotation does not specify WhatsApp as the renewal-confirmation channel."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Renewal par Starter option kyun nahi dikh raha? Pehle toh Starter available tha.",
+  "a": "Renewal par Starter isliye option nahi dikh raha kyunki Starter mein basic WordPress website support hai. Agar Year 1 mein Advanced ka custom-coded website bana hai, to us website ko Starter par host, patch ya support nahi kiya ja sakta. Isliye **Growth renewal floor** hai.\n\nGrowth ka renewal ₹45,000 + 18% GST = **₹53,100 per year** hai. Ismein aapka custom-coded website same design aur URL ke saath continue hota hai; rebuild nahi hota. Advanced continue karna ho to ₹80,000 + 18% GST = **₹94,400 per year** hai. Starter sirf un organisations ke liye hai jo Starter se hi renew kar rahi hain aur basic WordPress website use karti hain.\n\nAapka exact renewal status team WhatsApp par confirm kar degi: **+91 92019 58271**, ya contact form: https://govindaniit.com/contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Kya Starter sirf new customers ke liye hai aur renewal mein zabardasti Growth lena padega?",
+  "a": "Starter sirf new customers ke liye nahi hai. Lekin agar Year 1 mein **Advanced** liya tha aur custom-coded website bani thi, to renewal mein Starter allowed nahi hai; **Growth ₹45,000 + 18% GST = ₹53,100/year** minimum hai, kyunki Starter mein us custom website ko host, patch aur support karne ki capacity nahi hai.\n\nAgar aap Starter se continue kar rahe hain, to aapke exact renewal case ko team confirm karegi. Starter ka annual plan **₹25,000 + 18% GST = ₹29,500/year** hai. Renewal rules confirm karne ke liye WhatsApp par +91 92019 58271 ya contact form: /contact-us par bhejiye. Abhi aapka current plan Starter hai ya Advanced?",
+  "pass": false,
+  "reasons": [
+   "The quotation states that Starter is not a renewal option only for organisations that took the Advanced custom-coded website; deferring Starter-renewal confirmation to the team leaves the plainly answerable case unresolved."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Hum abhi Starter par hain—renewal ke baad minimum Growth karna compulsory hai kya?",
+  "a": "Nahi—agar aap abhi **Starter** par hain, to renewal ke baad Growth compulsory nahi hai. Aap Starter ko renew kar sakte hain: ₹25,000 + 18% GST = ₹29,500 saal ka.\n\nGrowth tab lena useful hoga jab aapko WhatsApp rail, full donor/member portals, Compliance Centre, 10,000 active donors tak capacity, ya 5,000 80G receipts per month chahiye. Growth ka all-in annual cost ₹53,100 hai.\n\nRenewal confirm karne ke liye WhatsApp par +91 92019 58271 ya /contact-us par team se baat karein. Aap Starter continue karna chahte hain ya Growth ke features ki zarurat hai?",
+  "pass": false,
+  "reasons": [
+   "The /contact-us URL is not provided in the quotation and appears to be an invented contact route."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Growth enough rahega kya agar hum 5,000 donors aur 10 projects manage karne lagen?",
+  "a": "Haan, **Growth** likely enough rahega. 5,000 donors ke liye Growth mein 10,000 active donors tracked hote hain; sleeping ya legacy donors unlimited aur free rehte hain. 10 live cases/projects bhi allowed hain, kyunki live cases unlimited hain. Aap khud unlimited cases bana sakte hain, ya hamari team se 5 cases per month banwa sakte hain.\n\nGrowth ka annual plan ₹45,000 + 18% GST = ₹53,100 per year. Isme 5,000 80G receipts per month included hain; uske baad ₹0.70 per receipt + GST. WhatsApp rail Growth se available hai, jiska rate ₹1.00 per message + 18% GST hai. Growth mein donor/member portals, recurring donor self-service aur Compliance Centre bhi included hain.\n\nBas yeh confirm karna important hai: kya 5,000 aapke total donors hain, ya last 45 days mein active donors? Aap details team ko WhatsApp par +91 92019 58271 bhej sakte hain, ya /contact-us par enquiry submit kar sakte hain.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "NGO ka staff 6 log ka hai, par users sirf 2 honge. Growth lena chahiye ya Starter?",
+  "a": "Agar users sirf 2 hon, to **Starter** staff count ke hisaab se fit hai: isme 2 admin seats, 2,000 active donors, 1,000 80G receipts per month aur basic WordPress website milti hai. Iski cost ₹25,000 + 18% GST per year hai.\n\n**Growth** tab lena chahiye jab aapko WhatsApp rail, donor/member portals, Compliance Centre, 5 admin seats, 10,000 active donors, 5,000 receipts per month ya richer WordPress campaign website chahiye. Growth ₹45,000 + 18% GST hai, yani ₹53,100 per year. Staff 6 hone se automatically Growth zaroori nahi hota, kyunki actual users 2 hain.\n\nAapke active donors aur busiest month mein 80G receipts roughly kitne hote hain? Exact recommendation ke liye WhatsApp par +91 92019 58271 ya /contact-us par team se baat kar sakte hain.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Advanced ka actual fayda kya hai jo Growth mein nahi milega? Sales wali generic baat mat bolna.",
+  "a": "Seedhi baat: **Advanced ₹80,000 + 18% GST = ₹94,400/year** hai. Growth **₹45,000 + 18% GST = ₹53,100/year** hai, yani Advanced ke liye extra **₹41,300/year**.\n\nAdvanced ka actual, measurable fayda ye hai:\n\n- Active donors: Growth 10,000 tak, Advanced 25,000 tak. Sleeping ya imported donors dono plans mein unlimited aur free hain, isliye sirf database mein zyada naam hone par Advanced ki zaroorat nahi.\n- 80G receipts: Growth mein 5,000/month included, uske baad ₹0.70 per receipt. Advanced mein 15,000/month included, uske baad ₹0.50 per receipt. Example: 18,000 receipts par Growth ka overage 13,000 × ₹0.70 = ₹9,100, Advanced ka 3,000 × ₹0.50 = ₹1,500.\n- AI Insights: Advanced mein churn-risk scoring, lapsed-donor ranking, retention cohorts, festival year-on-year aur channel attribution milta hai. Growth mein ye intelligence layer nahi hai.\n- Compliance: Growth mein ek 10BD filing batch per financial year hai. Advanced mein unlimited batches, priority review queue aur deadline-week priority handling hai.\n- Website aur campaign capability: Advanced mein custom-coded UI/UX website, A/B campaign page variants aur ek microsite included hai. Growth mein website best WordPress build hai; custom-coded site Advanced ka differentiator hai.\n- API: Advanced mein Developer API aur webhooks 300 requests/minute tak included hain. Growth mein ye ₹1,999/month add-on hai.\n- Scale: Advanced mein 15 admin seats, custom roles, 50 GB storage, 25,000 marketing emails/month aur 150 AI campaign packs/month hain. Growth mein 5 seats, 25 GB, 2,500 marketing emails aur 65 AI packs hain.\n- Mobile application: Android/iOS application Advanced-only add-on hai; Android ₹30,000 + GST, iOS ₹30,000 + GST, ya complete bundle ₹1,00,000 + GST.\n\nJo Growth mein bhi milta hai: donor/member portals, recurring donor self-service, Compliance Centre, festival campaign wizard, automatic payment-gateway failover, unlimited live cases/campaigns, 0% donation commission aur transactional email. Isliye agar aap 10,000 active donors se neeche hain, 5,000 monthly receipts cross nahi karte, ek 10BD batch kaafi hai aur AI/API/custom website nahi chahiye, to Growth zyada sensible hai. Advanced tab justify hota hai jab inmein se koi actual requirement ho.\n\nAapke current active donors aur busiest month ke 80G receipts ke basis par exact comparison team se WhatsApp par kara sakte hain: **+91 92019 58271**.",
+  "pass": false,
+  "reasons": [
+   "Reply is substantially longer than approximately 280 words."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Budget approval yearly milta hai, toh mid-year upgrade ka extra bill kaise calculate hoga?",
+  "a": "Mid-year upgrade ka exact extra-bill ya pro-rata calculation quotation mein fixed nahi diya gaya hai, isliye main amount assume nahi karunga. Team aapke current plan, remaining term aur upgrade plan ke basis par directly confirm karegi.\n\nReference ke annual plan rates hain: Starter ₹25,000, Growth ₹45,000, Advanced ₹80,000 — sab par 18% GST. Annual all-in figures respectively ₹29,500, ₹53,100 aur ₹94,400 hain. Aap WhatsApp par +91 92019 58271 ya contact form /contact-us se apna current plan aur upgrade month bhejkar exact calculation le sakte hain.",
+  "pass": false,
+  "reasons": [
+   "It directs the visitor to an unsubstantiated “contact form /contact-us”; the quotation only provides the WhatsApp number and panel/project-group contact routes."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Plan upgrade karte hi naye features milte hain ya next billing cycle tak wait karna padega?",
+  "a": "Plan upgrade ke baad naye features turant activate honge ya next billing cycle se, yeh current subscription aur upgrade process par depend karta hai. Is activation timing ko team hi confirm karegi; main contractual billing terms assume nahi karunga.\n\nApna plan aur organisation details WhatsApp par bhej dijiye: **+91 92019 58271**. Team upgrade amount, GST aur feature activation date clearly confirm karegi.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Humara kaam seasonal hai—kya 6 mahine Growth aur baaki time Starter rakh sakte hain?",
+  "a": "Seasonal use ke liye **6-month Growth** ka listed price ₹24,300 + 18% GST hai, aur **6-month Starter** ₹13,500 + 18% GST. Dono terms ka total ₹37,800 + 18% GST hoga, agar team is plan sequence ko approve karti hai.\n\nLekin plans ko saal ke beech Growth se Starter mein switch karna billing arrangement ka matter hai; team exact terms confirm karegi. Dhyan rahe, WhatsApp rail Growth se available hai, Starter mein nahi. WhatsApp par team se baat karne ke liye +91 92019 58271 par message karein ya /contact-us par enquiry bhejein. Aapka active season kaunse 6 mahine hota hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Renewal ke waqt price badh gaya toh existing plan ke customers ko old rate milega ya nahi?",
+  "a": "Current term ke dauran aapka rate locked rehta hai. Renewal ke liye koi future price revision ho, toh woh 30 days’ written notice ke baad hi apply ho sakta hai aur retrospectively nahi lagta. Current Advanced annual rate **₹80,000 + 18% GST = ₹94,400** hai; renewal par exact applicable rate team confirm karegi.\n\nAapka plan, renewal date aur notice terms WhatsApp par verify karwane ke liye +91 92019 58271 par message karein, ya /contact-us par enquiry bhejein. Aapka current plan kaunsa hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Starter mein limit cross ho gayi toh system band hoga ya automatically Growth suggest karega?",
+  "a": "Starter ki **active donor limit 2,000** cross hone par system band nahi hota. Active donors se koi extra charge nahi lagta; sleeping ya imported donors unlimited aur free rehte hain. Donation kisi bhi donor se accept aur receipt hoti rahegi.\n\nStarter mein **1,000 80G receipts/month** included hain. Uske baad ₹0.90 + 18% GST per extra receipt lagega; donation block nahi hoti. Agar usage charge ₹500 cross hone par auto-settlement fail ho aur 48 hours tak unpaid rahe, sirf marketing sends pause hote hain—donations, receipts, donor portal aur data export chalte rehte hain. Growth automatically suggest hone ki facility reference mein stated nahi hai; aapki actual active donors aur monthly receipts dekhkar team Growth recommend kar sakti hai. Starter ₹25,000 + GST = ₹29,500/year, Growth ₹45,000 + GST = ₹53,100/year. Plan discussion ke liye WhatsApp **+91 92019 58271** ya contact form: /contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Chhoti trust hai, lekin 80G receipts aur 10BD ka compliance important hai—Growth kaafi hai na?",
+  "a": "Haan, chhoti trust ke liye **Growth — ₹45,000 + 18% GST = ₹53,100 per year** generally kaafi hai. Isme automatic 80G receipts, 5,000 receipts per month, 10,000 active donors, donor/member portals, aur 10BD/10BE Compliance Centre ke saath ek filing batch per financial year milta hai. 5,000 se upar receipt par ₹0.70 per receipt + GST lagega; donation block nahi hota.\n\nGrowth me WhatsApp rail bhi available hai: marketing ya receipt message ₹1 + 18% GST per message. Agar aapko ek saal me ek se zyada 10BD batch, 25,000 active donors, ya 15,000 monthly receipts ki zaroorat ho, tab Advanced dekhna chahiye. Aapke busiest month me lagbhag kitne 80G receipts issue hote hain?\n\nExact plan comparison ke liye WhatsApp par +91 92019 58271 ya contact form /contact-us par team se baat kar sakte hain.",
+  "pass": false,
+  "reasons": [
+   "The /contact-us contact form is not stated in the quotation."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Board bol raha hai pehle Starter lo, CA bol raha hai Advanced. Practical difference samjhao, kaunsa lu?",
+  "a": "Seedhi baat: agar CA ki concern 10BD/10BE compliance, receipt audit trail aur donor records ko lekar hai, to Advanced practical choice hai. **Advanced ₹80,000 + 18% GST = ₹94,400 per year.** Isme 25,000 active donors, 15,000 80G receipts per month, one free CA/auditor seat, full donor and member portals, Compliance Centre, unlimited 10BD batches with priority review queue, 8-year audit-trail retention, custom-coded website, WhatsApp rail aur 0% donation commission milta hai.\n\n**Starter ₹25,000 per year + 18% GST** basic WordPress website, 2,000 active donors, 1,000 receipts per month, 2 admin seats, 1,000 marketing emails aur receipt access by OTP ke liye hai. Isme WhatsApp rail aur Compliance Centre nahi hai; CA/auditor access add-on ke roop mein available hai. Isliye Starter tab lo jab organisation chhota hai, compliance filing manually manage ho sakti hai, aur basic website plus receipt system hi chahiye.\n\nMeri recommendation: sirf “future mein shayad growth hogi” ke basis par Advanced mat lo. Lekin agar CA abhi se 10BD/10BE, audit trail aur filing controls ko mandatory maan rahe hain, to Advanced lo. Board ko yeh bhi dikha sakte ho ki Growth renewal par **₹45,000 + 18% GST = ₹53,100** hota hai, jab tak active donors 10,000 se neeche aur monthly receipts 5,000 se neeche rahen. Plan comparison aur final fit team WhatsApp par confirm karegi: +91 92019 58271 ya /contact-us. Aapke organisation mein pichhle 45 din mein roughly kitne donors active rahe hain?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Agar hum plan downgrade nahi kar sakte renewal par, toh cancellation ya data export ka process kya hai?",
+  "a": "Renewal par Advanced se Growth par move kar sakte hain; Starter option nahi hota agar Advanced ka custom-coded website bana hai. Agar cancellation karni ho, cancellation ke exact terms aur process team confirm karegi.\n\nData export aap kabhi bhi free mein le sakte hain, aur complete data export par exit fee nahi hai. Cancellation ya export request ke liye WhatsApp par **+91 92019 58271** message karein, ya /contact-us par form submit karein.",
+  "pass": false,
+  "reasons": [
+   "The /contact-us form and WhatsApp cancellation process are not stated in the quotation.",
+   "It deflects cancellation terms to the team instead of stating that exit is allowed at any time with no exit fee; complete data export is free."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Freelancer 10-15 hazaar mein website aur donation form bana dega, phir Give Setu ka subscription kyun bharna?",
+  "a": "Freelancer ka **₹10–15 hazaar** option sensible hai agar aapko sirf basic website aur simple donation form chahiye. Us case mein Give Setu lena zaroori nahi hai.\n\nGive Setu website se zyada poora NGO operating system hai: automatic 80G receipts, donor portal, recurring donations, donor CRM, campaigns, membership, 10BD/10BE Compliance Centre, data import/export aur 0% donation commission. Starter **₹25,000 + 18% GST = ₹29,500 per year** hai; ismein basic WordPress website, 2,000 active donors aur 1,000 80G receipts per month milte hain. Growth **₹45,000 + 18% GST = ₹53,100 per year** se donor/member portals, WhatsApp rail aur Compliance Centre milta hai.\n\nSeedhi baat: basic presence ke liye freelancer better value ho sakta hai. Agar manual receipts, donor tracking ya compliance aapka actual problem hai, tab Give Setu ka subscription justify hota hai. Give Setu website plan ke saath hosted aur maintained rehti hai; yeh one-time code handover model nahi hai.\n\nAapka main need sirf website hai, ya automatic 80G receipts aur donor management bhi chahiye? Team se exact comparison ke liye WhatsApp **+91 92019 58271** par message karein ya /contact-us form use karein.",
+  "pass": false,
+  "reasons": [
+   "It repeats ₹10–15 thousand as the price for a freelancer's website and donation form, which is an external service price that should be referred to the team."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Aap log bol rahe ho ₹0.50 paise per donation type kuch charge hai—yeh 50 paise hai ya half rupee, exactly kya milta hai ismein?",
+  "a": "₹0.50 ka matlab **50 paise** hai, lekin yeh donation par charge nahi hai. Advanced plan mein mahine ke **15,000 80G receipts included** hain. Sirf uske baad ke har extra receipt par ₹0.50 + 18% GST lagta hai.\n\nExample: 18,000 receipts mein 3,000 extra honge, yani 3,000 × ₹0.50 = ₹1,500; GST ke baad total ₹1,770. Donation kabhi block nahi hota, aur donation par hamara commission **0%** hai.\n\nIs charge mein numbered 80G receipt, QR-based public verification, permanent receipt record, correction history aur email/WhatsApp delivery jaise receipt-engine functions chalte hain. Agar aap 15,000 receipts se neeche hain, yeh overage charge nahi lagega.\n\nAap Advanced plan ki baat kar rahe hain? Exact plan comparison ke liye WhatsApp par +91 92019 58271 ya /contact-us par team se baat kar sakte hain.",
+  "pass": false,
+  "reasons": [
+   "It implies that WhatsApp delivery is covered by the ₹0.50 receipt overage, but WhatsApp receipt messages carry a separate per-message charge plus GST."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Humara nephew IT mein hai, weekend mein poora system bana dega. NGO ko software company ko paise dene ki kya zaroorat?",
+  "a": "Bilkul, agar aapke nephew ke paas time, compliance knowledge aur long-term maintenance ki capacity hai, toh basic website ya donation form woh bana sakte hain. Lekin website banana aur NGO ka poora operating system chalana alag cheezein hain: gapless 80G receipts, QR verification, receipt correction history, donor portal, recurring UPI AutoPay, 10BD/10BE compliance, donor CRM, campaign ledgers, WhatsApp/email delivery, backups, security aur ongoing updates.\n\nGive Setu ka value isi ongoing responsibility mein hai. Advanced plan **₹80,000 + 18% GST = ₹94,400 per year** hai; Growth **₹45,000 + 18% GST = ₹53,100 per year** hai. Ismein 0% donation commission, hosting, SSL, maintenance, gateway integration, donor/member systems aur compliance tools included hain. Apna stack alag se chalane ke reference comparison mein ₹3,76,500 per year ka operating cost aur ₹2,75,000 ka one-time custom build diya gaya hai—lekin agar nephew genuinely system ko saalon tak maintain karega, toh DIY financially sensible ho sakta hai.\n\nSeedhi baat: agar aapko sirf website chahiye aur code ownership important hai, nephew ya one-time custom build better fit ho sakta hai. Agar receipts, compliance aur donor operations ka risk team se hatana hai, tab Give Setu justify hota hai. Aapka nephew sirf website banayega ya receipts, 10BD/10BE aur donor operations bhi long-term handle karega? WhatsApp par team se practical comparison karwa sakte hain: +91 92019 58271, ya /contact-us par enquiry bhejiye.",
+  "pass": false,
+  "reasons": [
+   "It suggests a one-time custom build may be a suitable option, although the quotation explicitly says Govindani no longer sells one-time websites and instead includes websites within an NGO OS plan."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "AWS account hum khud le lenge, server bhi manage kar lenge. Give Setu ke liye alag paisa kis baat ka?",
+  "a": "AWS account aur server manage karna sirf infrastructure hai. Give Setu ka paisa server rent ke liye nahi, balki NGO operating system ke liye hai: automatic 80G receipts, donor CRM, recurring donations, donor/member portals, campaigns, 10BD/10BE Compliance Centre, payment gateway integration, website, data import/export, maintenance, training aur 0% donation commission.\n\nAgar aapko Growth-level system chahiye, price **₹45,000 + 18% GST = ₹53,100 per year** hai. Isme 10,000 active donors, 5,000 receipts per month, full portals, WhatsApp rail, compliance centre, 2 gateways with failover aur best WordPress website included hai. Advanced **₹80,000 + 18% GST = ₹94,400 per year** hai, jisme 25,000 active donors, 15,000 receipts per month, custom-coded website, AI Insights, unlimited 10BD batches, API aur mobile application capability milti hai.\n\nAgar aap sirf AWS infrastructure lena chahte hain aur receipts, compliance, donor system aur website platform nahi chahiye, to woh Give Setu ka use-case nahi hai. Aapke exact setup ke hisaab se team hi batayegi ki separate arrangement possible hai ya nahi. WhatsApp par +91 92019 58271 ya contact form /contact-us se team ko bhej sakte hain. Aapki organisation mein abhi main problem receipts hai, donor management hai, ya sirf server infrastructure?",
+  "pass": false,
+  "reasons": [
+   "The /contact-us contact form path is not stated in the quotation."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Google Sheets, WhatsApp aur Tally se kaam chal raha hai toh CRM ke naam pe monthly bill kyun?",
+  "a": "Agar Google Sheets, WhatsApp aur Tally se aapka kaam reliably ho raha hai, toh sirf “CRM” naam ke liye monthly bill dena zaroori nahi hai. CRM tab justify hota hai jab manual follow-ups, duplicate records, missed renewals, donor/customer history, reporting ya reconciliation mein actual problem aa rahi ho.\n\nNon-profit ke liye Give Setu CRM se aage jaakar 80G receipts, donor/member portals, recurring donations, campaigns aur 10BD/10BE compliance handle karta hai. Starter **₹25,000 + 18% GST per year** hai, yani ₹29,500 all-in; Growth **₹45,000 + 18% GST**, yani ₹53,100 all-in. Business ke liye CRM ka price published nahi hai; team requirement ke hisaab se quote deti hai. Aap NGO/non-profit hain ya regular business? WhatsApp par +91 92019 58271 par apna current workflow bhejiye; team seedha batayegi ki system ki zaroorat hai ya aapka present setup kaafi hai.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Donation platform commission le raha hai, but only successful donation pe. Fixed subscription se woh zyada mehenga nahi padega kya?",
+  "a": "Haan, chhoti collection par successful-donation commission cheaper pad sakta hai. Example: ₹20 lakh annual collection par 3% platform ₹60,000 lega, jabki Give Setu Growth **₹45,000 + 18% GST = ₹53,100/year** hai. Growth mein 0% donation commission hai; payment gateway ka apna standard fee alag rahega.\n\nCollection badhne par fixed plan ka fayda clear hota hai. ₹50 lakh par 3% commission ₹1,50,000 hota hai, jabki Advanced **₹80,000 + 18% GST = ₹94,400/year**; yani ₹55,600 ka difference. ₹1 crore par commission ₹3,00,000 hota hai, aur Advanced lene par ₹2,05,600 bachta hai. Advanced mein website, receipts, donor CRM, compliance, campaigns, hosting aur WhatsApp rail bhi included hain; WhatsApp messages aur receipt overage usage ke hisaab se alag lagte hain.\n\nAapki organisation ka annual donation collection roughly kitna hai? Exact comparison ke liye WhatsApp par +91 92019 58271 ya /contact-us par team se baat kar sakte hain.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Free CRM use kar lenge, thoda manual entry karni padegi toh koi project coordinator kar dega na?",
+  "a": "Free CRM use karna possible hai, lekin daily manual entry aapke project coordinator se karwana hamari published service ke andar automatically included nahi hai. Give Setu non-profits ke liye donor records, receipts, portals, campaigns aur reporting ko centralise karta hai; existing database import team kar sakti hai, lekin ongoing data-entry arrangement team se confirm hoga.\n\nAgar aap non-profit hain, Give Setu Starter **₹25,000 + 18% GST = ₹29,500 per year** se shuru hota hai. Isme 2,000 active donors, 1,000 80G receipts per month aur unlimited sleeping/imported donors milte hain. WhatsApp rail Growth se available hai. Agar aap business hain, toh CRM requirement custom scoping mein jayegi; uska price team WhatsApp par batayegi.\n\nTeam se confirm karne ke liye WhatsApp **+91 92019 58271** par message karein ya /contact-us par enquiry bhejein. Aapki organisation non-profit hai ya business?",
+  "pass": false,
+  "reasons": [
+   "It says using a free CRM is possible, but the quotation provides no free CRM plan; donor CRM is included only within paid NGO OS plans."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Agar ek local developer sasta bana ke de raha hai toh aapke software mein aisa kya hai jo uske code mein nahi hoga?",
+  "a": "Agar requirement sirf ek basic website ki hai, local developer sasta aur suitable ho sakta hai. Uske code ko bina dekhe yeh kehna sahi nahi hoga ki usme kya nahi hoga. Agar aapko code par control chahiye, toh one-time WordPress ya custom-coded build ka route zyada appropriate hai.\n\nAgar aap registered non-profit hain, Give Setu sirf website nahi hai: automatic 80G receipts, donor aur member portals, recurring donations, campaigns, compliance centre, donor CRM, payment gateway failover, WhatsApp rail, unlimited sleeping-donor storage, data import/export aur ongoing platform maintenance ek system mein milte hain. Iska website plan ke andar included hota hai, lekin system subscription band hone par website platform par nahi chalti. Agar aap business hain, toh business website, WooCommerce, Shopify ya custom build compare karna chahiye—not Give Setu.\n\nSahi comparison karne ke liye aapka organisation registered non-profit hai ya business? Team se scope aur pricing WhatsApp par confirm karwa sakte hain: +91 92019 58271, ya /contact-us par enquiry bhej sakte hain.",
+  "pass": false,
+  "reasons": [
+   "It directs the visitor to an unsupported “/contact-us” enquiry path.",
+   "It suggests a one-time WordPress or custom-coded build route, whereas the quotation explicitly says one-time websites are no longer sold and the website is included within the subscription plan."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Hum chhoti trust hain, mahine mein 20 donations aati hain. Itne kam volume ke liye paid system justify kaise hoga?",
+  "a": "20 donations mahine mein hone par paid system tabhi justify hoga jab aapko automatic 80G receipts, donation website, donor records aur reporting ki zarurat ho. Sirf donations collect karne ke liye, spreadsheet aur manual receipts zyada sensible ho sakte hain.\n\nAapke volume ke liye Advanced nahi, **Give Setu Starter** fit hai: ₹25,000 + 18% GST = ₹29,500 saal ka. 20 donations × 12 months = 240 donations saal mein, isliye 1,000 receipts/month ki included limit ke andar rahenge; receipt overage nahi lagega. Isme basic WordPress website, donation system, automatic 80G receipts, hosting, SSL, domain connection, payment gateway integration, maintenance, data import/export aur training milti hai. 240 donations par effective cost lagbhag ₹122.92 per donation banti hai.\n\nAgar aapko abhi website ya automated receipts ki zarurat nahi hai, toh main Starter push nahi karunga. Website-only build ka price team scope karke WhatsApp par batayegi. Aap humein +91 92019 58271 par WhatsApp karein ya /contact-us par enquiry bhejein.\n\n[[ASK Kaunsa aapke case ke sabse kareeb hai? | Abhi sab manual hai | 80G receipts automate karni hain | Website bhi chahiye | Sirf prices compare kar raha hoon]]",
+  "pass": false,
+  "reasons": [
+   "It says a website-only build can be scoped and priced, but the quotation explicitly states that one-time websites are no longer sold; the website is only included within an NGO OS plan."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Website toh WordPress pe free theme se ban jayegi, phir Give Setu ka website included bolke price kyun le rahe ho?",
+  "a": "Free theme se basic WordPress website ban sakti hai, lekin **Give Setu ka price website ke liye alag se nahi hai**. Give Setu ek yearly NGO operating system hai: 80G receipts, donor records, donation forms, recurring donations, campaigns, member portal, compliance tools, hosting, SSL, maintenance aur website isme saath aate hain.\n\nAgar aap registered non-profit hain aur sirf basic website chahiye, Starter plan **₹25,000 + 18% GST = ₹29,500 per year** hai. Isme basic WordPress website ke saath donation system, hosting, SSL, domain connection, gateway integration aur maintenance milta hai. Growth **₹45,000 + 18% GST = ₹53,100 per year** hai, jisme richer campaign aur case-page structure milta hai. Website-only build chahiye toh woh Give Setu nahi, separate WordPress project hoga; uska price team scope ke baad WhatsApp par batayegi.\n\nAapko sirf website chahiye, ya 80G receipts aur donor-management system bhi? WhatsApp: +91 92019 58271 ya form: https://govindaniit.com/contact-us",
+  "pass": false,
+  "reasons": [
+   "It says a website-only build can be handled as a separate WordPress project, whereas the quotation explicitly says one-time websites are no longer sold and the website is included only within an NGO OS plan."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Open-source tools available hain, NGO ke liye discount ya free version kyun nahi hai?",
+  "a": "Open-source tool ka software licence free ho sakta hai, lekin NGO ko hosting, security, updates, payment gateway, 80G receipts, donor records, 10BD/10BE compliance, WhatsApp aur technical maintenance alag se manage karna padta hai. Give Setu in cheezon ko ek managed system mein deta hai: automatic 80G receipts, donor/member portals, recurring donations, campaigns, compliance tools, website, data import/export aur onboarding.\n\nSeparate NGO discount ya free version quotation mein published nahi hai. Chhoti organisation ke liye **Starter ₹25,000 + 18% GST = ₹29,500 per year** hai; ismein basic WordPress website, donation system, 2,000 active donors aur 1,000 80G receipts per month included hain. Donations par commission 0% hai.\n\nAap open-source ke saath khud setup aur maintenance karna chahte hain, ya managed system chahiye jisme team Pune se handle kare? Scope ke hisaab se human team se budget discuss karne ke liye WhatsApp karein: **+91 92019 58271**, ya /contact-us par enquiry bhejein.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Pehle bhi vendor ne annual payment liya aur support gayab ho gaya. Aapko paise dene ke baad actual accountability kya hai?",
+  "a": "Aapka concern valid hai. Agar aap non-profit ke liye Give Setu dekh rahe hain, to accountability informal WhatsApp support par nahi chhodi jaati: har request ticket ke roop mein record hoti hai, panel mein dedicated account manager dikhaya jaata hai, aur published first-response window Starter par 48 hours, Growth par 24 hours, aur Advanced par 12 hours hai. Yeh first response ka time hai; issue resolve hone ka time complexity par depend karta hai.\n\nAnnual plan mein onboarding, team training, data import validation, hosting, SSL, maintenance aur support process included hain. Data export bhi available hai, lekin exact contractual terms, escalation boundaries aur aapke project ki commitments team hi writing mein confirm karegi. Main “support kabhi gayab nahi hoga” jaisa promise nahi karunga.\n\nAap apna naam, organisation aur mobile number WhatsApp par bhej sakte hain: **+91 92019 58271**. Team directly accountability model samjha kar aapke sawaal ka written answer degi. Aapka organisation non-profit/trust hai ya business?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Mera CA bolta hai Excel plus proper backup enough hai. 80G receipt aur donor list ke liye poora platform lena zaroori hai kya?",
+  "a": "Sirf Excel aur proper backup se kaam chal sakta hai, agar aapka donor volume chhota hai aur CA manual receipt process, numbering, correction aur donor-wise tracking manage kar raha hai. Poora platform lena mandatory nahi hai.\n\nLekin Excel automatic 80G receipt issue nahi karta. Give Setu ka **Starter plan ₹25,000 + 18% GST per year** hai. Isme online, offline ya imported donation par automatic 80G receipt, gapless numbering, QR verification, correction history, donor receipt access by OTP, unlimited sleeping/imported donor storage, data import-export aur backup/security milte hain. Capacity 2,000 active donors aur 1,000 receipts per month hai. WhatsApp rail Starter mein nahi; woh Growth se available hai.\n\nMeri practical recommendation: agar aapko sirf donor list rakhni hai aur receipts kam hain, Excel continue kijiye. Agar receipt process manual hai, audit trail weak hai, ya donor ko purani receipt khud download karni hai, tab Starter sensible entry point hai. Aapke busiest month mein lagbhag kitni 80G receipts issue hoti hain?\n\nExact comparison aur team se confirmation ke liye WhatsApp **+91 92019 58271** ya contact form **/contact-us** par bhejiye.",
+  "pass": false,
+  "reasons": [
+   "The contact form path \"/contact-us\" is not provided in the quotation."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Payment gateway already receipt aur transaction report de raha hai, phir aapka system beech mein kyun chahiye?",
+  "a": "Agar aapko sirf payment confirmation aur transaction report chahiye, to payment gateway kaafi ho sakta hai. Give Setu gateway ka replacement nahi hai; payment gateway paisa process karta hai, jabki Give Setu poora NGO operations layer sambhalta hai.\n\nIsme gateway report ke alawa gapless 80G receipts, QR verification, correction history, offline cash/cheque/UPI entries, donor matching, donor portal se receipt download, recurring donation self-service, donor CRM, campaigns, members aur 10BD/10BE compliance centre milta hai. Payment gateway se paisa seedha aapke bank account mein settle hota hai; hum funds hold nahi karte.\n\nAgar aapke liye abhi main problem sirf payment collection hai, to alag system ki zaroorat nahi ho sakti. Aaj sabse zyada manual kaam kis cheez mein ho raha hai—80G receipts, donor records, ya compliance?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Commission wale apps mein setup fee nahi hoti. Aapka fixed plan lene se donation ka kitna paisa bachega ya doobega?",
+  "a": "Commission app mein setup fee na hona alag baat hai; asli cost har donation par lagne wala percentage hai. Give Setu mein donation commission **0% forever** hai. Annual plan ke baad gateway ka apna standard fee, roughly 2%, alag rahega—woh kisi bhi platform par lagta hai.\n\nAgar 3% commission app se compare karein:\n\n- ₹20,00,000 annual collection: commission ₹60,000. Growth ka all-in ₹53,100/year hone par ₹6,900 bachega; Advanced par ₹34,400 zyada jayega.\n- ₹50,00,000 collection: commission ₹1,50,000. Growth par ₹96,900 bachega; Advanced par ₹55,600 bachega.\n- ₹1,00,00,000 collection: commission ₹3,00,000. Growth par ₹2,46,900 bachega; Advanced par ₹2,05,600 bachega.\n\nAdvanced ka annual price **₹80,000 + 18% GST = ₹94,400** hai. Isme custom-coded website, receipts, donor CRM, compliance, portals, WhatsApp rail aur 0% donation commission milta hai. Growth **₹45,000 + 18% GST = ₹53,100** hai aur chhoti ya mid-sized NGO ke liye zyada sensible ho sakta hai. Naya WhatsApp Business setup chahiye to ₹3,000 + GST one-time hai; gateway application aur integration free hai.\n\nAapki realistic annual donation collection kitni hai, aur kya woh mostly online aati hai? Us figure par main exact “commission app minus Give Setu” saving nikal dunga. Team se final comparison ke liye WhatsApp **+91 92019 58271** ya /contact-us par enquiry bhej sakte hain.",
+  "pass": false,
+  "reasons": [
+   "The /contact-us URL is not provided in the quotation; all stated prices and arithmetic otherwise match."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Hum AWS pe host karenge toh data, domain aur backup hamare control mein rahega. Give Setu mein lock-in toh nahi hoga?",
+  "a": "Give Setu AWS par aapke account mein host hone wala setup nahi hai; website aur platform Govindani ke hosted platform par chalte hain. Reference ke mutabik data, backups aur files India mein rakhe jaate hain, aur complete data export kabhi bhi free hai, lekin plan band hone par Give Setu website/platform access rukta hai aur code handover ka commitment nahi hai.\n\nAWS account, domain ownership, backup control aur exit ke exact contractual terms team aapke current setup ke hisaab se confirm karegi. WhatsApp par +91 92019 58271 ya /contact-us par details bhejiye.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Mere board ke uncle ka kehna hai software companies bas NGO ko fancy dashboard bechti hain. Iska measurable fayda kya hai?",
+  "a": "Uncle ka doubt valid hai. Give Setu ka measurable fayda dashboard nahi, operational numbers hain:\n\n80G receipt donation settle hone ke 4 seconds ke andar email aur WhatsApp par jaati hai; system 50 receipts per second tak issue karta hai. Receipts ka financial-year numbering gapless hota hai, QR verification hoti hai, correction ka original record permanently linked rehta hai, aur donor apni receipt OTP se khud download kar sakta hai.\n\nFundraising mein 0% commission hai. Donor database mein sleeping ya imported donors unlimited aur free rehte hain; active donor ka matlab last 45 days mein donation, receipt download, OTP verification ya portal login karne wala donor hai. Recurring donors khud date change ya ek month skip kar sakte hain, aur campaign tracking se pata chalta hai ki kaunsa link, poster ya WhatsApp message donation laaya. Compliance Centre PAN validation, 10BD/10BE batches aur certificates ko structured banata hai. Board ko scheduled PDF ya Excel reports mil sakti hain, isliye discussion “kitna kaam hua” se “kitna collect hua, kitne donors retain hue, aur kaunsa campaign perform hua” par aata hai.\n\nAgar aapki current problem sirf public presence hai, to Give Setu zaroori nahi—straightforward WordPress NGO website kaafi ho sakti hai. Agar receipts manual hain, donor data spreadsheets mein bikhra hai, recurring donations drop ho rahi hain, ya campaign-wise result nahi dikh raha, tab system ka measurable value nikalta hai. Aapke organisation mein abhi sabse bada measurable gap receipts, donor management, compliance ya fundraising reporting mein hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Agar volunteer ek din mein donor data Google Form se collect kar sakta hai, toh CRM ke liye itna kharcha kyun?",
+  "a": "Bilkul—agar aapko sirf donor ka naam, mobile aur donation amount collect karna hai, toh Google Form kaafi ho sakta hai. Us case mein CRM par kharcha karna zaroori nahi.\n\nKharcha tab justify hota hai jab volunteer ke form ke baad ka kaam manual na rahe: automatic 80G receipt, donor ki complete giving history, duplicate donor matching, recurring donation management, donor segmentation, receipt re-download aur compliance reporting. Growth aur Advanced plans mein donor/member portals aur 10BD/10BE Compliance Centre bhi milta hai. Donor data store karna khud paid nahi hai; Give Setu mein sleeping ya imported donors unlimited aur free hain. Sirf registered non-profit ke liye Starter **₹25,000/year + 18% GST** se shuru hota hai, jisme basic WordPress website, donation system, up to 2,000 active donors aur 1,000 80G receipts per month hain.\n\nSeedha rule: Google Form aapka data-entry tool hai; Give Setu tab useful hai jab receipts, donor follow-up, compliance aur reporting ko systemise karna ho. Agar aapka current problem sirf data collection hai, toh hum aapko neeche ka option recommend karenge, Advanced nahi. WhatsApp par team se comparison kar sakte hain: **+91 92019 58271**, ya /contact-us par enquiry bhej sakte hain.\n\nAaj sabse bada issue kya hai—sirf data collection, manual receipts, ya donor reporting?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Freelancer ko ek baar payment, aapko har saal payment—simple maths mein freelancer better nahi hai?",
+  "a": "Haan—agar aapko sirf ek simple website chahiye aur freelancer ka one-time quote reasonable hai, to one-time build financially better ho sakta hai. Lekin us quote mein hosting, SSL, updates, security, payment integration, future changes aur maintenance kya hai, yeh freelancer se clearly confirm karna hoga.\n\nAgar aap registered non-profit hain, to Give Setu Starter **₹25,000 + 18% GST = ₹29,500 per year** hai. Ismein WordPress website ke saath donation system, 80G receipts, donor management, hosting, SSL, domain connection, payment gateway integration, data import/export, onboarding aur maintenance milte hain. Give Setu website plan ke saath platform par chalti hai; plan band hone par woh service bhi band hoti hai aur code handover ka commitment nahi hai.\n\nIsliye simple website ke liye one-time build, aur receipts, donors, campaigns aur compliance ke liye Give Setu—dono alag needs hain. Aapki organisation non-profit hai ya regular business? Freelancer ka quote aur scope bhejkar WhatsApp **+91 92019 58271** par team se direct comparison karwa sakte hain, ya /contact-us par enquiry bhej sakte hain.",
+  "pass": false,
+  "reasons": [
+   "It asserts that there is no code-handover commitment, which is not stated in the quotation.",
+   "The claim that the service simply stops when the plan ends is presented without the quotation's detailed renewal, non-payment, and data-export conditions."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Nephew website bana dega, CA 10BD-10BE dekh lega, WhatsApp alag se hai. Give Setu exactly kaunsa extra kaam bachata hai?",
+  "a": "Agar nephew website bana de, CA 10BD–10BE sambhal le aur WhatsApp ke liye alag tool already hai, to Give Setu ka website ya compliance centre aapke liye main value nahi rahega.\n\nGive Setu ka extra kaam yeh bachata hai: har online, offline ya imported donation par automatic 80G receipt; gapless numbering, QR verification, correction history aur donor ke OTP portal se receipt download; donor CRM with giving history, duplicate matching, segmentation aur PAN recovery; recurring donors ko date change ya ek mahina skip karne ka self-service; donation gateway failover; members, digital ID cards, renewals; live cases aur campaigns ke ledgers; branch-wise reporting; unlimited donor import/export; audit trail; transactional email; aur payment, donor, receipt, campaign aur compliance data ko ek system mein rakhna.\n\nCA ko replace nahi karta; Compliance Centre data validation, missing PAN follow-up, filing-ready export aur 10BE dispatch automate karta hai. WhatsApp alag hone par Give Setu ka WhatsApp rail bhi duplicate ho sakta hai; Growth mein platform fee nahi hai, lekin message rate ₹1.00 + 18% GST hai. Isliye aapke case mein Give Setu tabhi justify hoga jab manual receipts, donor follow-up, recurring giving, member management ya scattered systems ka operational load problem ho. Warna nephew ka business website aur aapke existing tools zyada sensible ho sakte hain.\n\nTeam Pune se exact fit compare kar degi. WhatsApp par +91 92019 58271 ya contact form: govindaniit.com/contact-us. Aapke organisation mein sabse zyada manual kaam receipts, donor records, memberships ya recurring donations mein hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Free WhatsApp groups aur broadcast se donors ko update kar rahe hain, paid WhatsApp integration lene ka point kya hai?",
+  "a": "Free WhatsApp groups aur broadcast informal updates ke liye theek hain. Paid WhatsApp Business API ka point tab hai jab aapko individual donor ko automatic 80G receipt, payment confirmation, recurring-donation reminder, 10BE certificate aur campaign messages bhejne hain.\n\nGive Setu mein WhatsApp rail Growth se available hai. Growth par **₹1.00 + 18% GST per message** aur Advanced par **₹0.98 + 18% GST per message**. Example: 1,000 messages Growth par ₹1,000 + GST = ₹1,180; Advanced par ₹980 + GST = ₹1,156. Koi platform fee, monthly subscription, wallet ya minimum commitment nahi hai; email se transactional receipts unlimited free rehti hain.\n\nIska fayda verified Meta WhatsApp Business number, display name, template section, flow builder, approval-status sync, automatic opt-out aur donor-wise receipts hai. Meta approval ke liye templates draft ya submit karwana team se confirm hota hai. Agar aapko sirf monthly announcement bhejna hai, free broadcast kaafi ho sakta hai; agar receipt, compliance aur donor automation chahiye, paid rail relevant hai.\n\nAapka main use-case receipts hai ya campaign updates? WhatsApp par details ke liye +91 92019 58271 par message karein, ya /contact-us form use karein.",
+  "pass": false,
+  "reasons": [
+   "\"flow builder\" is not a capability stated in the quotation."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "₹0.50 charge bolke chhota lagta hai, lekin 1 lakh donations mein 50,000 ho gaya—yeh amount kyun den?",
+  "a": "Sahi concern hai. **₹0.50 sirf Advanced plan ke 15,000 monthly 80G receipts ke baad lagta hai**—active donors ya donations par charge nahi hai. Agar 1,00,000 donations ek hi calendar month mein aaye, calculation hoga: 1,00,000 − 15,000 = 85,000 extra receipts; 85,000 × ₹0.50 = ₹42,500, plus 18% GST = ₹50,150. Agar 1 lakh receipts quota ke bahar hon, tab ₹50,000 + GST hoga.\n\nYeh charge donation lene ka commission nahi hai. Ismein gapless receipt numbering, frozen receipt record, QR verification, correction history, email/WhatsApp delivery aur receipt register maintain hota hai; donation block ya delay nahi hota. Agar 1 lakh donations saal bhar mein spread hain, toh monthly distribution dekhna hoga—har month sirf 15,000 se upar wale receipts count honge. Aap apna monthly donation pattern WhatsApp par bhej sakte hain: **+91 92019 58271**, ya /contact-us par enquiry karein.",
+  "pass": false,
+  "reasons": [
+   "The /contact-us enquiry route is not provided in the quotation, although the quoted pricing, features, contact number, and arithmetic are otherwise correct."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Aapka plan sasta dikh raha hai but implementation, training, migration aur GST mila ke final bill kitna banega?",
+  "a": "Agar aap registered NGO, trust, society ya Section 8 organisation hain, Give Setu ka GST-inclusive annual total ye hai: Starter **₹29,500** (₹25,000 + 18% GST), Growth **₹53,100** (₹45,000 + 18% GST), aur Advanced **₹94,400** (₹80,000 + 18% GST).\n\nImplementation, team onboarding/training, payment-gateway application and integration, donor-data import at any size, hosting, SSL, maintenance aur domain connection plan mein included hain. Existing website ko migrate karna ho to website migration **₹20,000 + GST** one-time hai. Messy legacy database cleanup alag se **₹5,000–₹1,50,000** tak quoted hota hai. Naya WhatsApp Business setup chahiye to **₹3,000 + GST** one-time; messages alag usage rate par hote hain. Exact final bill aapke current website aur database dekhkar team confirm karegi.\n\nAap registered non-profit/trust/society/Section 8 hain, ya normal business ke liye website chahiye? WhatsApp par team se final figure ke liye +91 92019 58271 par message karein, ya /contact-us par enquiry bhejein.",
+  "pass": false,
+  "reasons": [
+   "Reply contains more than one question mark."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Agar kal Give Setu band ho gaya toh hamara donor data aur receipts ka kya hoga—paise deke risk hi khareed rahe hain kya?",
+  "a": "Aapka concern valid hai: Give Setu reference mein full donor-data export kabhi bhi free diya gaya hai, lekin agar platform achanak band ho ya insolvency jaisi situation ho, us scenario ki guarantee main nahi de sakta. Yeh requirement team aapke specifics ke against confirm karegi—WhatsApp par **+91 92019 58271** ya /contact-us se unse baat kar lijiye.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Free tools se jugaad karke paisa field project mein lagana zyada sensible nahi hai kya?",
+  "a": "Kabhi-kabhi free tools se shuru karna sensible hota hai—especially agar organisation chhoti hai, donations kam hain aur team spreadsheets sambhal sakti hai. Lekin jaise-jaise receipts, donor records, recurring donations, 10BD/10BE compliance aur reporting badhte hain, hidden cost staff ka time, manual errors aur disconnected tools ban jaata hai.\n\nAgar aap registered non-profit, trust ya society hain, Give Setu Starter **₹25,000 per year + 18% GST** mein basic WordPress website, donation system, automatic 80G receipts, donor records, hosting, SSL, maintenance, gateway integration aur training deta hai. Ismein 2,000 active donors aur 1,000 80G receipts per month included hain; sleeping donors unlimited aur free rehte hain. Agar aapka kaam abhi small-scale hai, Advanced lene ke bajay Starter se budget field project ke liye bachana zyada sensible ho sakta hai.\n\nAapka organisation registered non-profit hai, aur abhi sabse bada manual problem receipts hai, donor tracking hai ya reporting?\n\nBudget compare karne ke liye team se WhatsApp par baat karein: **+91 92019 58271**.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "80G receipt ka number sequence beech mein toot gaya hai, auditor isko pakdega kya?",
+  "a": "Haan, auditor gap in 80G receipt sequence ko question kar sakta hai, kyunki missing number ka explanation aur register reconciliation maanga ja sakta hai. Lekin aapke specific case mein auditor kya objection lega, yeh existing receipt register aur gap ke reason par depend karta hai; team se confirm karna hoga.\n\nGive Setu mein financial-year-wise gapless numbering hoti hai. Galti hone par original receipt delete nahi hoti: cancellation watermark ke saath register mein rehti hai, fresh receipt issue hoti hai aur dono permanently link hote hain.\n\nKya yeh sequence Give Setu ke bahar issue hui receipts mein toota hai ya Give Setu mein? Team ko WhatsApp par +91 92019 58271 ya contact form /contact-us se bhejiye.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Donor ne PAN nahi diya, phir bhi receipt issue kar sakte hain ya 80G benefit gaya?",
+  "a": "हाँ, PAN न मिलने पर भी donation receipt issue हो सकती है। Give Setu में receipt issue होना PAN पर निर्भर नहीं है; missing PAN donors के लिए system WhatsApp और email reminder sequence भी चला सकता है, और valid reply मिलने पर PAN record में update होता है।\n\nलेकिन receipt issue होना और donor को 80G tax benefit मिलना अलग बातें हैं। PAN या अन्य अनिवार्य विवरण न होने पर 80G claim की eligibility प्रभावित हो सकती है। Cash donation ₹2,000 से अधिक होने पर system receipt पर सही non-80G notice अपने-आप दिखाता है। Specific donor case में final tax treatment team से confirm कराएँ।\n\nआपका donation cash है या online?",
+  "pass": false,
+  "reasons": [
+   "The visitor used Hinglish in Latin script, but the reply was entirely in Devanagari Hindi."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Cash donation ₹2,500 aaya tha—receipt bana di, ab compliance mein problem hogi?",
+  "a": "₹2,500 cash donation par system receipt ko **non-80G notice** ke saath render karta hai, kyunki ₹2,000 se upar cash donation ko 80G claim ke liye treat nahi kiya jana chahiye. Isliye receipt issue hona apne-aap mein problem nahi hai, lekin receipt par correct notice hona zaroori hai.\n\nAgar receipt 80G benefit dikhate hue issue ho gayi hai, to is specific record ko team se verify karwa kar correction/reissue karna hoga. Govindani team se WhatsApp par sampark karein: **+91 92019 58271**. Receipt number ya screenshot bhejkar poochhein ki kya us par non-80G notice aa raha hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Galat naam se 80G receipt nikal gayi. Cancel karke nayi bana sakte hain bina numbering kharab kiye?",
+  "a": "Haan, Give Setu mein galat naam wali 80G receipt ko silently edit nahi kiya jata. Original receipt cancel mark ke saath register mein permanently rahegi, uska number retain hoga, aur linked fresh receipt naye sahi naam se issue hogi. Isse numbering mein gap nahi aayega; corrected copy donor ko email aur WhatsApp par bheji ja sakti hai.\n\nReceipt number aur sahi naam WhatsApp par **+91 92019 58271** bhej dijiye, team correction process confirm karegi. Receipt ka number kya hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Financial year change hote hi receipt numbering 1 se start karni chahiye ya previous series continue?",
+  "a": "Financial year change hote hi receipt numbering **1 se reset** honi chahiye. Previous financial year ki series continue nahi hoti.\n\nGive Setu mein numbering financial year ke hisaab se hoti hai, jaise **RCP/2026-27/000481**, aur 1 April se naya financial year sequence start hota hai. Series gapless rehti hai, aur corrected receipt ka original number permanently register mein linked rehta hai.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "10BD filing ke liye saare donors ka data ek saath upload hota hai kya, ya monthly batch bhi possible hai?",
+  "a": "10BD filing ke liye data validation ke baad portal-ready batch export hota hai, aur filed batch record mein store rehta hai. Growth plan mein **1 filing batch per financial year** included hai; Advanced plan mein **unlimited batches per financial year** aur priority review queue included hai.\n\nMonthly batch possible hai ya aapke filing workflow mein saare eligible donors ek saath jayenge, yeh current records aur filing setup par depend karta hai—team is detail ko confirm karegi. WhatsApp par +91 92019 58271 ya /contact-us par apna organisation name, current plan aur donor-data format bhej dijiye.",
+  "pass": false,
+  "reasons": [
+   "The quotation states the batch limits directly: Growth includes one filing batch per financial year, while Advanced includes unlimited batches, so deferring whether monthly batches are possible to the team is unhelpful."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "10BE certificate donor ko nahi mila toh portal se dobara generate kar sakte hain?",
+  "a": "10BE certificate email ya WhatsApp se automatically dispatch hota hai. Donor portal mein 10BE ko dobara generate ya download karne ka feature reference mein specified nahi hai, isliye yeh detail team current setup ke basis par confirm karegi.\n\nWhatsApp par +91 92019 58271 par message karein ya /contact-us form bharein.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Auditor bol raha hai receipts mein correction fluid use nahi karna chahiye—software mein amendment ka proper trail rahega?",
+  "a": "Haan, Give Setu mein receipt par direct edit ya correction fluid ka process nahi hota. Original receipt cancel hoti hai, uspar watermark rehta hai, original number register mein permanently محفوظ रहता hai, aur corrected receipt naye number ke saath original se permanently linked hoti hai. Donor ko corrected copy email aur WhatsApp se automatically bheji jaati hai.\n\nHar change ka audit trail bhi record hota hai—kisne, kya, kab aur kahan se change kiya. Receipt ka original data freeze rehta hai, isliye baad mein address, logo ya template badalne par purani receipt ka record silently change nahi hota.\n\nAapke auditor ko ye process formally dikhana hai, ya aap abhi manual receipts se software par shift kar rahe hain? Team se confirmation ke liye WhatsApp par +91 92019 58271 ya /contact-us par bhejiye.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Ek donor ne ₹1 lakh diya but PAN number galat bhej diya, 10BD submit karne se pehle kaise fix karenge?",
+  "a": "Growth ya Advanced ke Compliance Centre mein 10BD filing se pehle PAN checksum, format errors aur duplicates validate hote hain. Galat PAN ko system mein directly correct karne ka exact process current record aur donor verification par depend karta hai; team is detail ko confirm karegi. Donor ko automated WhatsApp/email nudge bhejkar valid PAN reply lene aur checksum validation ke baad record update karne ka PAN recovery flow available hai.\n\n₹1 lakh donation ka receipt ya 10BD filing block nahi hoti; correction filing se pehle karna chahiye. Apni organisation ka naam aur current PAN-entry ka issue WhatsApp par **+91 92019 58271** bhejiye, ya /contact-us par team ko reach kijiye.",
+  "pass": false,
+  "reasons": [
+   "It incorrectly states that 10BD filing is not blocked; the quotation says PAN errors are validated and listed for correction before filing, but does not guarantee filing can proceed with an incorrect PAN."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Receipt issue kar di thi bina address ke, ab donor address de raha hai. Purani receipt edit karna allowed hai?",
+  "a": "Purani receipt ko direct edit karna allowed nahi hai. System mein edit button nahi hota.\n\nAap original receipt ko correction ke through cancel kar sakte hain. Original receipt watermark ke saath register mein permanently rahegi, uska number retain hoga, aur donor address ke saath nayi receipt issue hogi jo purani receipt se permanently linked rahegi. Donor ko corrected copy automatically bheji ja sakti hai.\n\nAgar aap existing receipt ka correction karna chahte hain, WhatsApp par team ko receipt number aur updated address bhej dijiye: +91 92019 58271.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Hamare accountant ne ek receipt duplicate number se bana di, system isko rokega ya baad mein pata chalega?",
+  "a": "Give Setu mein receipt numbering gapless financial-year sequence mein hoti hai, isliye system ke andar manually duplicate number assign nahi kiya ja sakta. Har receipt ka number register mein permanently record hota hai, aur receipt par QR verification bhi hota hai.\n\nAgar correction chahiye, existing receipt ko silently edit nahi kiya jaata: original receipt cancel watermark ke saath register mein rehti hai, nayi receipt ko fresh number milta hai, dono permanently link hote hain aur donor ko corrected copy bheji jaati hai. Agar duplicate receipt system ke bahar accountant ne banayi hai, uska exact handling current setup par depend karega; team se WhatsApp par confirm karwa sakte hain: +91 92019 58271.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "80G receipts mein cash aur online donation alag series mein rakhna compulsory hai kya?",
+  "a": "Is requirement par blanket “compulsory” nahi bolunga—yeh aapki entity aur compliance practice ke specifics par depend karta hai, team confirm karegi. Give Setu mein cash, online aur imported donations same receipt engine mein process hote hain, aur register ko year, branch, source ya status se filter kiya ja sakta hai; numbering financial year ke hisaab se gapless rehti hai.\n\nAapke exact 80G setup ke liye team se WhatsApp par confirm karwa lijiye: **+91 92019 58271**.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Donor ka PAN unavailable hai because foreigner hai—uska donation 10BD mein kaise report hoga?",
+  "a": "Agar donation foreign-currency ya FCRA-governed hai, Give Setu mein woh abhi process nahi hota. Foreign donor ka PAN unavailable hone par 10BD reporting ka exact treatment current donation route aur documents par depend karega; team is detail ko case ke specifics ke saath confirm karegi.\n\nApna organisation name aur donation ka route share karke WhatsApp par **+91 92019 58271** contact karein, ya /contact-us par enquiry bhejein. Kya donation FCRA route se aaya hai ya domestic INR payment gateway se?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "March 31 ko donation aaya aur April 1 ko entry hui, financial year kis mein count hoga?",
+  "a": "Receipt numbering financial year ke hisaab se 1 April ko reset hoti hai. Lekin 31 March ko settled donation ki 1 April entry hone par woh kis financial year mein count hogi, yeh settlement date aur entry details par depend karta hai; team is specific case ko confirm karegi.\n\nWhatsApp: +91 92019 58271 ya contact form: /contact-us",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Auditor ko har cancelled receipt ka record dikhana padta hai kya, ya sirf valid receipts enough hain?",
+  "a": "Sirf valid receipts dikhana safe approach nahi hai. Give Setu mein cancelled receipt ka original number register mein permanently retained rehta hai, cancelled receipt par watermark hota hai, aur corrected receipt usse permanently link hoti hai. Receipt register se valid, cancelled aur corrected records view ya export kiye ja sakte hain.\n\nAuditor ko exactly kaunsa record ya report submit karna hai, yeh aapke audit context par depend karta hai; team is specific requirement ko confirm karegi. WhatsApp par +91 92019 58271 ya /contact-us se team ko bhej dijiye.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "10BD reject ho gaya because donor details mismatch. Correction karke revised filing ka option milega?",
+  "a": "10BD reject hone ke baad revised filing ka option aapke filing status aur donor-detail mismatch par depend karega. Give Setu mein PAN validation, duplicate/error checks aur filing-batch export available hai, lekin rejected filing ko revise karke resubmit karne ka exact process team confirm karegi.\n\nApna organisation name, Give Setu plan aur rejection message WhatsApp par bhejiye: **+91 92019 58271**. Aap /contact-us se bhi team tak pahunch sakte hain. Aapka plan Starter, Growth ya Advanced hai?",
+  "pass": false,
+  "reasons": [
+   "It defers the revised-filing process to the team instead of stating the quotation’s plan-based option: Growth permits one 10BD batch per financial year with additional batches at ₹1,999, while Advanced includes unlimited batches with a priority review queue."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Cash donation ₹2,000 exact hai—80G receipt valid rahegi na, limit se upar toh nahi hai?",
+  "a": "हाँ, ₹2,000 की exact cash donation ₹2,000 से ऊपर नहीं है, इसलिए 80G receipt valid रहेगी। ₹2,000 से अधिक cash donation पर system receipt में सही non-80G notice अपने-आप दिखाता है।\n\nGive Setu receipt engine cash, cheque और UPI entries को process करता है और gapless 80G receipt जारी करता है। आपके organisation के specific tax case की पुष्टि team से करा सकते हैं: WhatsApp +91 92019 58271 या /contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Trust ke multiple projects hain, kya receipt numbering project-wise rakh sakte hain without compliance issue?",
+  "a": "Give Setu mein receipt numbering **organisation-wise financial-year sequence** ke roop mein hoti hai, jaise RCP/2026-27/000481. Branch-wise tagging aur reporting available hai, lekin project-wise separate receipt series rakhna aur uska compliance treatment current reference mein confirmed nahi hai. Agar projects same trust/PAN ke under hain, is detail ko team aapke setup ke hisaab se confirm karegi.\n\nAap WhatsApp par **+91 92019 58271** par project structure aur current receipt format bhej sakte hain, ya /contact-us se enquiry submit kar sakte hain. Kya aapke multiple projects ek hi registered trust/PAN ke under hain?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Ek donor company ne PAN ke jagah GSTIN diya hai, 80G aur 10BD ke liye chalega?",
+  "a": "GSTIN ko PAN ke badle 80G receipt ya 10BD filing mein accept kiya ja sakta hai ya nahi, yeh organisation aur donor record ke specifics par depend karta hai; team se confirm karna hoga. Details ke liye WhatsApp **+91 92019 58271** par message karein ya /contact-us form bhar dein.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Filing se pehle system missing PAN ya duplicate donor ko flag karta hai kya?",
+  "a": "Haan. Growth aur Advanced ke Compliance Centre mein filing se pehle missing PAN, PAN format/checksum errors aur duplicates flag hote hain. Dashboard valid PAN coverage aur missing-address list bhi dikhata hai, taaki correction filing se pehle ho sake.\n\nDonor CRM phone, PAN ya email ke basis par possible duplicate pairs suggest karta hai; merge karne par dono ki giving history preserve hoti hai. Missing PAN donors ko automated WhatsApp aur email sequence bhi bheja ja sakta hai, jiska valid reply checksum validation ke baad record mein update hota hai. Growth mein saal ka 1 filing batch included hai; Advanced mein unlimited batches aur priority review queue hai. Aapka organisation abhi Growth category mein hai ya Advanced volume par?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ }
+]

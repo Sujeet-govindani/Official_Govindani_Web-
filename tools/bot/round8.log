@@ -1,0 +1,79 @@
+  10/152 · 9 passing
+  20/152 · 19 passing
+  30/152 · 28 passing
+  40/152 · 35 passing
+  50/152 · 42 passing
+  60/152 · 52 passing
+  70/152 · 59 passing
+  80/152 · 67 passing
+  90/152 · 74 passing
+  100/152 · 80 passing
+  110/152 · 87 passing
+  120/152 · 94 passing
+  130/152 · 104 passing
+  140/152 · 112 passing
+  150/152 · 121 passing
+
+  123/152 passed (81%)
+
+  FAIL [high] How much extra will you charge if I need the site launched this month?
+     - It asks for multiple discovery details: site type, pages, integrations, and content/access readiness
+     reply: An accelerated launch can be evaluated once we know the site type, required pages, integrations and whether your content and access details are ready.
+
+  FAIL [high] Your competitor quoted ₹18,000 for a similar website. Can you beat that?
+     - It repeats the visitor’s quoted figure of ₹18,000, which counts as stating a price.
+     reply: We do not beat another quote blindly. We compare the actual scope: pages, design quality, CMS editing, forms, payment or WhatsApp integrations, SEO se
+
+  FAIL [high] Can you give me a ballpark amount for rebuilding our outdated website?
+     - Asks two different discovery questions: what the organisation does and what is outdated or broken on
+     reply: A rebuild could suit a WordPress business website, WooCommerce or Shopify store, or a custom-coded site if your workflows need more flexibility. We fi
+
+  FAIL [high] Can our NGO team download donor-wise reports, recurring donation data, and c
+     - It claims full export of donation, campaign and compliance data and refers to campaign analytics, wh
+     reply: Yes. Give Setu provides donor-wise records through the Donor CRM, including giving timelines, donor segments, recurring donation information, PAN reco
+
+  FAIL [high] Who owns the website, source code, domain, and database if we stop using you
+     - It states that code for a custom Spring Boot and React build is owned and retained by the client, an
+     reply: It depends on the route you choose.  With Give Setu, the website runs on Govindani Infotech’s platform. If you stop the plan, the platform website sto
+
+  FAIL [high] Can you get WhatsApp utility and marketing templates approved, or do we have
+     - It asks for contact details and separately asks about the visitor's WABA verification status, which 
+     reply: We can handle the WhatsApp Business API setup, WABA configuration, chatbot and campaign implementation, including preparing the utility and marketing 
+
+  FAIL [high] क्या आप पहले पूरा काम दिखाकर फिर भुगतान लेने का विकल्प देते हैं?
+     - It asserts that payment and milestone structures depend on the work type, scope, and platform, which
+     reply: पूरी तरह काम पूरा करके उसके बाद ही भुगतान लेने की शर्त हमारे संदर्भ में निर्धारित नहीं है। भुगतान और milestone structure काम के प्रकार, scope और platf
+
+  FAIL [high] WhatsApp par baat nahi karni hai—kya aap email par requirements aur estimate
+     - It promises that further information can be arranged by email, a company capability not established 
+     - The visitor used Hinglish in Latin script, but the reply is in Devanagari Hindi rather than Hinglish
+     reply: हाँ, आप अपनी requirements **contact form** पर भेज सकते हैं: https://govindaniit.com/contact-us  Estimate generic नहीं भेजा जाता; टीम आपकी जरूरत और sco
+
+  FAIL [high] Our NGO receives foreign donations. Can the site handle FCRA-related donor r
+     - It claims that data is held in India, which is not stated in the ground truth.
+     reply: If you mean Give Setu, it can maintain donor records, giving timelines, compliance data, audit trails and role-based access. The Advanced plan include
+
+  FAIL [high] Can you show me whether your developers are real people or am I chatting wit
+     - Asks two different discovery questions in one either/or prompt: whether the team should call and whe
+     reply: You’re chatting with an AI sales assistant, not a human developer. I can explain Govindani Infotech’s services and help identify the right route, but 
+
+  FAIL [high] Who exactly will own the source code, domain, hosting account, and admin cre
+     - It specifically says the organisation owns the domain after a WordPress project, but the ground trut
+     reply: It depends on the route you choose.  For a one-time WordPress website, the organisation owns the website code, domain, hosting account and administrat
+
+  FAIL [high] भाई, हमारी संस्था के लिए ऐसा पोर्टल चाहिए जिसमें दान की रसीद अपने आप बने—क्य
+     - It specifically claims that WhatsApp receipts and Compliance Centre features are available on Growth
+     - It asks two separate discovery questions: whether the organisation is a trust/non-profit and whether
+     reply: हाँ, अगर आपकी संस्था गैर-लाभकारी संस्था या ट्रस्ट है, तो **Give Setu** में दान के बाद 80G रसीद अपने आप बनती है—आमतौर पर कुछ ही सेकंड में। रसीद में QR 
+
+  FAIL [high] How much extra do you charge for adding online donations, and is that a one-
+     - It describes Give Setu as a yearly platform plan, while the ground truth only confirms that it is su
+     reply: For an NGO WordPress website, Razorpay integration, one-time donations, custom donation amounts, instant confirmation and downloadable donor certifica
+
+  FAIL [high] Give me a final all-inclusive quote now; I don't want a sales call or WhatsA
+     - Requests multiple distinct project details: service, features, and existing website or system detail
+     reply: I can’t provide or confirm a final quote in this chat. The total depends on the exact scope—such as a business website, e-commerce store, custom appli
+
+  FAIL [high] If WhatsApp template approval gets rejected by Meta, who fixes the template 
+     - It specifically commits the company’s implementation team to correcting and resubmitting rejected te
+     reply: If Meta rejects a WhatsApp template, the correction and resubmission are handled with the implementation team. The usual action is to review Meta’s re

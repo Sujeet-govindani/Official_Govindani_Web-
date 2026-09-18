@@ -1,0 +1,78 @@
+  10/152 · 10 passing
+  20/152 · 18 passing
+  30/152 · 26 passing
+  40/152 · 32 passing
+  50/152 · 41 passing
+  60/152 · 50 passing
+  70/152 · 59 passing
+  80/152 · 66 passing
+  90/152 · 74 passing
+  100/152 · 81 passing
+  110/152 · 88 passing
+  120/152 · 98 passing
+  130/152 · 104 passing
+  140/152 · 112 passing
+  150/152 · 120 passing
+
+  121/152 passed (80%)
+
+  FAIL [high] Can donors log in later to download receipts, update their address, and see 
+     - It specifically claims donors can download past receipts through the self-service portal, which is n
+     reply: Yes. In Give Setu, donors can log in to a self-service portal to download past receipts and view their giving history. The Donor CRM also maintains ea
+
+  FAIL [high] आमच्या संस्थेला देणगीदारांसाठी 80G पावती आणि मराठी भाषेतील पोर्टल दोन्ही हवे
+     - It claims donors can view their donations and receipts through the portal, a specific portal capabil
+     reply: हो, हे शक्य आहे. Give Setu मध्ये 80G पावत्या स्वयंचलितपणे तयार होतात, QR पडताळणीसह देणगीदार पोर्टल मिळते आणि मराठी भाषेचा सपोर्ट उपलब्ध आहे. देणगीदारा
+
+  FAIL [high] તમારી કંપનીએ પહેલાં કોઈ NGO માટે donor portal બનાવ્યું છે? હું live example 
+     - The reply contains the figure "160થી વધુ".
+     reply: હા, અમારી Give Setu સિસ્ટમમાં donor અને member portals સામેલ છે. તેમાં donor records, donation history, recurring donation self-service, mandate cance
+
+  FAIL [high] Your competitor quoted ₹18,000 for a similar website. Can you beat that?
+     - The reply contains the figure "+91 92019 58271" as a WhatsApp contact number.
+     reply: I can’t confirm whether we can beat another quote without comparing the actual scope. We can build WordPress, WooCommerce, Shopify or custom websites;
+
+  FAIL [high] We were quoted less by a freelancer. What makes your service worth paying mo
+     - The reply contains the figure "+91 92019 58271".
+     reply: A freelancer may be the right choice for a simple website. Our value is the broader delivery responsibility: a structured discovery process, design an
+
+  FAIL [high] Can donors automatically receive an 80G receipt after making a payment, or w
+     - Contains the figure "under four seconds".
+     reply: Donors can receive an 80G receipt automatically after a successful payment. Give Setu issues the receipt in under four seconds, with immutable, gaples
+
+  FAIL [high] Can our NGO team download donor-wise reports, recurring donation data, and c
+     - Claims full export of campaign-related records, which is not specified in the ground truth.
+     reply: Give Setu supports full export of donor records, donation data, receipts, member data and campaign-related records from the platform. The Donor CRM in
+
+  FAIL [high] For an online store with about 300 products and Razorpay payments, would you
+     - The reply contains the figure "300" in "about 300 products".
+     reply: For about 300 products with Razorpay, I’d generally recommend **WooCommerce** if you want flexibility, custom product fields, SEO control, shipping in
+
+  FAIL [high] આટલા બધા સવાલો પૂછ્યા પછી પણ જો તમે સીધી માહિતી નહીં આપો તો હું બીજા ડેવલપર 
+     - The reply contains the figures "650+", "160+" and "7+".
+     - It claims the team does not push expensive custom solutions, which is not established in the ground 
+     reply: તમારી નારાજગી યોગ્ય છે. સીધી વાત કહું તો અમારી ટીમ માત્ર વેબસાઇટ બનાવતી નથી; અમે પહેલાં તમારી જરૂરિયાત પ્રમાણે યોગ્ય રસ્તો પસંદ કરાવીએ છીએ—સરળ WordPre
+
+  FAIL [high] Can I pay in two stages instead of paying the full website amount upfront?
+     - Contains the figure "+91 92019 58271" as a WhatsApp contact number.
+     reply: Payment schedules are contractual and vary by project, so the team will confirm whether a two-stage arrangement is suitable for your website scope. Pl
+
+  FAIL [high] Can you show me whether your developers are real people or am I chatting wit
+     - Reply contains figures: "650+ websites", "7+ custom platforms", and "+91 92019 58271".
+     reply: You’re chatting with an AI sales assistant, not a human developer or named staff member. I won’t pretend otherwise. Govindani Infotech has a real deve
+
+  FAIL [high] A local agency quoted ₹38,000 including GST. Can you beat that, and why shou
+     - The reply contains figures: "2018" and "+91 92019 58271".
+     reply: I can’t confirm or beat another agency’s quote here. The fair comparison is what the scope includes: platform, number of pages, editable content, paym
+
+  FAIL [high] I only need a rough budget range before I share my number. What will this us
+     - The reply contains the figure "+91 92019 58271".
+     reply: I can’t give a rough range or confirm a figure here. Pricing is confirmed by our team on WhatsApp so you get the right number for your requirement, no
+
+  FAIL [high] How much extra do you charge for adding online donations, and is that a one-
+     - It asserts that Give Setu runs as a yearly plan, but the ground truth only confirms a subscription/p
+     reply: Online donations can be added to a WordPress NGO website through Razorpay, with one-time or custom donation amounts, instant confirmations, donor emai
+
+  FAIL [high] Can recurring donors pause their monthly contribution themselves, or will ou
+     - The reply does not provide a WhatsApp number, contact form, or offer of a call for this money-relate
+     reply: Yes. In Give Setu, recurring donors get self-service controls for their mandates, including pausing or skipping a month, changing the payment date, an

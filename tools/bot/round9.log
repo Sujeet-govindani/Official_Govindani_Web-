@@ -1,0 +1,80 @@
+  10/152 · 9 passing
+  20/152 · 18 passing
+  30/152 · 26 passing
+  40/152 · 36 passing
+  50/152 · 46 passing
+  60/152 · 54 passing
+  70/152 · 62 passing
+  80/152 · 71 passing
+  90/152 · 79 passing
+  100/152 · 86 passing
+  110/152 · 95 passing
+  120/152 · 103 passing
+  130/152 · 112 passing
+  140/152 · 116 passing
+  150/152 · 125 passing
+
+  127/152 passed (84%)
+
+  FAIL [high] How much extra will you charge if I need the site launched this month?
+     - Asks two discovery questions about what is being built and which platform is being considered.
+     reply: A same-month launch depends on the platform, page count, features, and whether your content and approvals are ready. We can assess an accelerated Word
+
+  FAIL [high] If you host the website, can we still move it to our own server later withou
+     - It commits the team to confirming exact migration and contractual terms in writing, which is not sta
+     reply: It depends on the route. A regular WordPress website can be self-hosted, with website administration and source access transferred at handover. A cust
+
+  FAIL [high] Are you the actual development team, or will my project be passed to a freel
+     - It promises that the team will confirm in writing who will handle each part before proceeding, which
+     reply: You would be working with Govindani Infotech’s development team. We have in-house WordPress, Shopify and full-stack coding teams, including developers
+
+  FAIL [high] Your competitor quoted ₹18,000 for a similar website. Can you beat that?
+     - Repeats the visitor's quoted figure of ₹18,000.
+     reply: We can compare the scope, but I can’t confirm whether we will beat another agency’s quote without checking what is included. A proper comparison shoul
+
+  FAIL [high] Do you charge separately for every small change after launch, or is that cov
+     - It specifically promises that the team will confirm inclusions and additional-work terms in writing 
+     reply: Post-launch changes depend on the website route, the agreed scope, and whether the request is a bug fix, content update, or a new feature. The team co
+
+  FAIL [high] Can I pay in two stages instead of paying the full website amount upfront?
+     - It specifically claims that payment stages are confirmed in writing for each website project, which 
+     reply: Payment stages are a contractual term and are confirmed in writing by our team for each website project. Please contact Govindani Infotech on WhatsApp
+
+  FAIL [high] WhatsApp template messages keep getting rejected by Meta. Do you help prepar
+     - Asks two separate discovery questions: for the rejected template and what it is intended to send.
+     reply: Yes. We help prepare WhatsApp Business API templates for marketing, utility, authentication, notifications and support journeys. We can refine the wor
+
+  FAIL [high] If our existing hosting expires during migration, how will you prevent the w
+     - It specifically promises that the team will confirm the continuity plan in writing, which is not est
+     reply: Avoiding downtime requires planning the migration before the current hosting expires. A safe migration normally includes a complete backup, staging an
+
+  FAIL [high] I only need a rough budget range before I share my number. What will this us
+     - Asks two separate discovery questions: what the visitor wants to build and what problem it should so
+     reply: I understand wanting to screen the budget first. We don’t share rough ranges because the scope changes significantly between a business website, an on
+
+  FAIL [high] Give me a final all-inclusive quote now; I don't want a sales call or WhatsA
+     - It asks for several distinct discovery details: required services, current systems, and integrations
+     reply: I can’t issue a final all-inclusive quote in chat. The scope changes significantly depending on whether you need a business website, e-commerce store,
+
+  FAIL [high] If WhatsApp template approval gets rejected by Meta, who fixes the template 
+     - It claims the company’s WhatsApp implementation team handles template corrections and resubmissions,
+     reply: Our WhatsApp implementation team reviews the rejection reason and handles the required template changes and resubmission where applicable. The exact c
+
+  FAIL [high] Can you move our existing WordPress site to your hosting without breaking UR
+     - Asks for both the current hosting provider and contact details, which are more than one discovery qu
+     reply: We can assess a WordPress migration to our hosting, including the site files, database, URL structure and redirects. The team will need to confirm the
+
+  FAIL [high] Why should I trust an unknown company with our donors' identity documents an
+     - No direct route to a person such as a WhatsApp number, contact form, or call is provided for the pay
+     - It claims that data is held in India and that the team will confirm security details in writing, nei
+     reply: That is a fair concern. Govindani Infotech Pvt. Ltd. was founded in 2018, is incorporated and GST-registered in Pune, and has delivered work for 160+ 
+
+  FAIL [high] This chatbot is useless and keeps dodging my question. Connect me to your CE
+     - It invents a process where the team will verify the deletion request and confirm the action in writi
+     - It implies the company can complete and confirm deletion, which is an unsupported promise.
+     reply: I understand your frustration. I’m an AI assistant and cannot connect you directly to the CEO or delete records from this chat.  For an urgent deletio
+
+  FAIL [high] Is hosting included, or will you keep adding charges after I agree?
+     - It does not provide a WhatsApp number, contact form, or offer to connect with a person for the charg
+     - It specifically promises that hosting and ongoing charges for other builds will be confirmed in writ
+     reply: For Give Setu, hosting, SSL, updates and fixes are included during the active plan term. For WordPress, Shopify or custom builds, hosting and ongoing 

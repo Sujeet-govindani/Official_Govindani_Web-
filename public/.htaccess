@@ -1,0 +1,174 @@
+# .htaccess — govindaniit.com
+#
+# Lives in public/ so it is versioned and ships with every build. It previously
+# existed only on the server, which meant a clean deploy would have wiped the
+# SPA fallback and 404'd every route with no record of how to restore it.
+#
+# Order matters: redirects must run before the SPA fallback, or the fallback
+# swallows the request and serves index.html instead of redirecting.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # ─── 0a. Server-side API: never rewritten ─────────────────────────────────
+  #
+  # /api/ is PHP that must execute, not a client route. Without this the rules
+  # below hand it to the SPA fallback (or 404 it) and the chat endpoint is
+  # unreachable. It runs before every other rule for that reason.
+  RewriteCond %{REQUEST_URI} ^/api/ [NC]
+  RewriteRule ^ - [L]
+
+
+  # ─── 0. Canonical host: www -> non-www ────────────────────────────────────
+  #
+  # https://www.govindaniit.com/ served 200 with byte-identical content to the
+  # bare domain, so every page existed on two hostnames. The canonical tag was
+  # consolidating most of it, but Search Console still showed the brand query
+  # "govindani infotech pvt ltd" at position 28.5 while the punctuated variant
+  # sat at 1.2 — split signals across the two hosts.
+  #
+  # This must run BEFORE every other rule, or a path redirect fires first and
+  # the visitor lands on www anyway.
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+  # ─── 1. Retire the pre-migration URL structure ────────────────────────────
+  #
+  # These paths are still in Google's index from the previous site and have
+  # accumulated authority for years. Until now they returned 200 with the
+  # homepage, so that authority pooled on the homepage instead of reaching the
+  # pages that can actually convert. 301 sends it to the right destination.
+  RewriteRule ^ngo-websites/?$        /pages/ngopage/          [R=301,L,NC]
+  RewriteRule ^ngofaqs/?$             /pages/ngopage/          [R=301,L,NC]
+  RewriteRule ^about-us/?$            /about-us/about-company/  [R=301,L,NC]
+  RewriteRule ^team/?$                /about-us/about-company/  [R=301,L,NC]
+  RewriteRule ^blogs/?$               /pages/case-study/       [R=301,L,NC]
+
+  # ─── URL structure consolidation ─────────────────────────────────────────
+  #
+  # Service pages had grown at the top level (/lead-generation, /seo, …) while
+  # others already sat under /services/. Twenty-two URLs also carried uppercase
+  # letters, which Apache treats as distinct paths. These 301s move every old
+  # URL to its canonical home so accumulated authority follows.
+  #
+  # Two rules of thumb encoded here:
+  #   1. Longest paths first — /ecommerce must not match inside
+  #      /social-media/ecommerce.
+  #   2. NO [NC] flag. A case-insensitive rule for a case-only rename such as
+  #      Virtual-Tours -> virtual-tours matches its own target and loops
+  #      forever. Matching exactly is both correct and safe.
+  RewriteRule ^WhatsappInterakt/Freelancer-Consultant/?$   /whatsapp/industries/freelancer-consultant/   [R=301,L,NC]
+  RewriteRule ^WhatsappInterakt/Restaurants-Food/?$   /whatsapp/industries/restaurants-food/   [R=301,L,NC]
+  RewriteRule ^WhatsappInterakt/Beauty-Cosmetics/?$   /whatsapp/industries/beauty-cosmetics/   [R=301,L,NC]
+  RewriteRule ^WhatsappInterakt/Marketing-Agency/?$   /whatsapp/industries/marketing-agency/   [R=301,L,NC]
+  RewriteRule ^WhatsappInterakt/Banking-Finance/?$   /whatsapp/industries/banking-finance/   [R=301,L,NC]
+  RewriteRule ^WhatsappInterakt/Health-Wellness/?$   /whatsapp/industries/health-wellness/   [R=301,L,NC]
+  RewriteRule ^WhatsappInterakt/Travel-Tourism/?$   /whatsapp/industries/travel-tourism/   [R=301,L,NC]
+  RewriteRule ^social-media/personal-branding/?$   /services/social-media/personal-branding/   [R=301,L,NC]
+  RewriteRule ^WhatsappInterakt/Spas-Salons/?$   /whatsapp/industries/spas-salons/   [R=301,L,NC]
+  RewriteRule ^WhatsappInterakt/Real-Estate/?$   /whatsapp/industries/real-estate/   [R=301,L,NC]
+  RewriteRule ^WhatsappInterakt/Home-Decor/?$   /whatsapp/industries/home-decor/   [R=301,L,NC]
+  RewriteRule ^WhatsappInterakt/Automotive/?$   /whatsapp/industries/automotive/   [R=301,L,NC]
+  RewriteRule ^social-media/live-profiles/?$   /services/social-media/live-profiles/   [R=301,L,NC]
+  RewriteRule ^WhatsappInterakt/B2B-Sales/?$   /whatsapp/industries/b2b-sales/   [R=301,L,NC]
+  RewriteRule ^services/platform-listing/?$   /services/marketplace-brand-listing/   [R=301,L,NC]
+  RewriteRule ^social-media/real-estate/?$   /services/social-media/real-estate/   [R=301,L,NC]
+  RewriteRule ^social-media/hospitality/?$   /services/social-media/hospitality/   [R=301,L,NC]
+  RewriteRule ^WhatsappInterakt/EdTech/?$   /whatsapp/industries/edtech/   [R=301,L,NC]
+  RewriteRule ^portfolio/EcommercePage/?$   /portfolio/ecommerce/   [R=301,L,NC]
+  RewriteRule ^social-media/astrology/?$   /services/social-media/astrology/   [R=301,L,NC]
+  RewriteRule ^social-media/ecommerce/?$   /services/social-media/ecommerce/   [R=301,L,NC]
+  RewriteRule ^services/Virtual-Tours/?$   /services/virtual-tours/   [R=301,L]
+  RewriteRule ^AboutUs/about-company/?$   /about-us/about-company/   [R=301,L,NC]
+  RewriteRule ^AboutUs/about-founder/?$   /about-us/about-founder/   [R=301,L,NC]
+  RewriteRule ^social-media/plans/?$   /services/social-media/plans/   [R=301,L,NC]
+  RewriteRule ^portfolio/Business/?$   /portfolio/business/   [R=301,L]
+  RewriteRule ^portfolio/careers/?$   /careers/   [R=301,L,NC]
+  RewriteRule ^social-media/ngo/?$   /services/social-media/ngo/   [R=301,L,NC]
+  RewriteRule ^lead-generation/?$   /services/lead-generation/   [R=301,L,NC]
+  RewriteRule ^pages/Ecommerce/?$   /services/ecommerce/   [R=301,L,NC]
+  RewriteRule ^portfolio/NGO/?$   /portfolio/ngo/   [R=301,L]
+  RewriteRule ^Video-Section/?$   /video-section/   [R=301,L]
+  RewriteRule ^social-media/?$   /services/social-media/   [R=301,L,NC]
+  RewriteRule ^Rcs/fallback/?$   /rcs/fallback/   [R=301,L]
+  RewriteRule ^videography/?$   /services/videography/   [R=301,L,NC]
+  RewriteRule ^ecommerce/?$   /services/ecommerce/   [R=301,L,NC]
+  RewriteRule ^seo/?$   /services/seo/   [R=301,L,NC]
+
+  # /wp-admin: a WordPress path on a React site. Retired; send it home.
+  RewriteRule ^wp-admin/?$   /   [R=301,L,NC]
+
+  # /portfolio/news-blogging retired: all nine entries were fabricated
+  # clients with images that never existed. Point it at real case studies.
+  RewriteRule ^portfolio/news-blogging/?$   /pages/case-study/   [R=301,L,NC]
+
+  # ─── 2. Real 404s (replaces the old SPA fallback) ─────────────────────────
+  #
+  # Every route is now prerendered into its own directory with an index.html,
+  # so the SPA fallback is no longer needed to serve real pages — and it was
+  # actively harmful: it returned HTTP 200 with the homepage for ANY unmatched
+  # URL. Google read that as an unlimited supply of duplicate homepages, which
+  # burned crawl budget and suppressed indexing of the pages that matter.
+  #
+  # A request that matches no file and no directory is genuinely not a page.
+  # Let it fall through to Apache, which serves ErrorDocument 404 below with a
+  # real 404 status.
+  RewriteRule ^index\.html$ - [L,NC]
+</IfModule>
+
+# ─── 2b. 404 document ───────────────────────────────────────────────────────
+ErrorDocument 404 /404.html
+
+# ─── 3. Security headers ────────────────────────────────────────────────────
+#
+# The audit found none of these present — only upgrade-insecure-requests. They
+# cost nothing and are checked by most security and SEO scanners.
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  # HSTS: only meaningful because the site is already HTTPS-only.
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# ─── 4. Caching ─────────────────────────────────────────────────────────────
+#
+# Vite fingerprints asset filenames, so hashed files are safe to cache for a
+# year — a change produces a new filename. HTML must NOT be cached long, or
+# visitors keep an old page that references deleted bundles.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css                "access plus 1 year"
+  ExpiresByType application/javascript  "access plus 1 year"
+  ExpiresByType text/javascript         "access plus 1 year"
+  ExpiresByType image/webp              "access plus 1 year"
+  ExpiresByType image/png               "access plus 1 year"
+  ExpiresByType image/jpeg              "access plus 1 year"
+  ExpiresByType image/svg+xml           "access plus 1 year"
+  ExpiresByType font/woff2              "access plus 1 year"
+  ExpiresByType text/html               "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|webp|png|jpe?g|svg|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# ─── 5. Compression ─────────────────────────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml
+  AddOutputFilterByType DEFLATE application/javascript text/javascript
+  AddOutputFilterByType DEFLATE application/json image/svg+xml
+</IfModule>
+
+# ─── Never serve the private directory or a stray config ──────────────────
+<FilesMatch "^(config|secrets)\.php$">
+  Require all denied
+</FilesMatch>
+RedirectMatch 404 ^/gs-private(/|$)

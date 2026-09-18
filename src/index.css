@@ -1,0 +1,1384 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Syncopate:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ============================================================
+     ✅ CRITICAL: ENABLE SCROLLING - HIGHEST PRIORITY
+     ============================================================ */
+  html {
+    overflow: visible !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    position: relative;
+  }
+
+  body {
+    overflow: visible !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    
+    min-height: 100%;
+    position: relative;
+    -moz-overflow-scrolling: touch;
+  }
+
+  main {
+    overflow: visible !important;
+    overflow-y: visible !important;
+  }
+  
+  /* ============================================================
+     ✅ SECTION ISOLATION - NO SCROLL BLOCKING
+     ============================================================ */
+  
+  section {
+    position: relative;
+    isolation: isolate;
+    z-index: 1;
+    overscroll-behavior: auto;
+  }
+
+  section + section {
+    margin-top: 0;
+    clear: both;
+  }
+
+  .pin-spacer {
+    position: relative !important;
+    isolation: isolate;
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
+
+  /* Remove default margins */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  p, figure, blockquote,
+  ul, ol, dl,
+  pre {
+    margin: 0;
+  }
+
+  ul, ol {
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+
+  /* Media elements */
+  img, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
+}
+
+/* ============================================================
+   ✅ SMOOTH SCROLLING OPTIMIZATION
+   ============================================================ */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ============================================================
+   ✅ SECTION-SPECIFIC STYLES - NO SCROLL BLOCKING
+   ============================================================ */
+
+.quote-trigger,
+.vt2-trigger,
+.mp3-trigger,
+.s4-trigger {
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  overscroll-behavior: auto;
+}
+
+/* ============================================================
+   ✅ TESTIMONIALS SECTION - MOBILE VIDEOS ON TOP OF HEADINGS
+   ============================================================ */
+
+.testimonials-section {
+  background-color: #0d1929 !important;
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  overscroll-behavior: auto;
+}
+
+.testimonials-section * {
+  background-color: transparent !important;
+}
+
+.testimonials-section .pin-box,
+.testimonials-section .vd-card {
+  background-color: transparent !important;
+}
+
+/* ============================================================
+   ✅ MOBILE ONLY: VIDEOS OVERLAY ON HEADINGS (LIKE IMAGE 2)
+   ============================================================ */
+@media (max-width: 767px) {
+  .testimonials-section {
+    @apply bg-milk relative w-full;
+    background-color: #000 !important;
+    min-height: 100vh !important;
+    height: 100vh !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* ✅ CENTERED HEADINGS BEHIND CARDS */
+  .testimonials-section .testimonials-title-wrapper {
+    position: absolute !important;
+    top: 50% !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: translateY(-50%) !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 1 !important; /* ✅ LOWER z-index so videos appear on top */
+    pointer-events: none !important;
+    background: transparent !important;
+  }
+
+  .testimonials-section .testimonials-title-wrapper > div {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2vh !important;
+    width: 100% !important;
+  }
+
+  /* Huge title styling - BRIGHT FIRST HEADING */
+  .testimonials-section h1 {
+    @apply uppercase text-[18.5vw] leading-[105%] tracking-[-.2vw] font-bold;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    opacity: 1 !important; /* ✅ BRIGHT - NO BLUR */
+    filter: none !important; /* ✅ NO BLUR FILTER */
+  }
+
+  .testimonials-section .first-title,
+  .testimonials-section .third-title {
+    background: linear-gradient(to right, #d4af37, #f4e5b8, #d4af37) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-shadow: 0 0 60px rgba(212, 175, 55, 0.4) !important;
+    opacity: 1 !important; /* ✅ BRIGHT BY DEFAULT - NO ANIMATIONS */
+    filter: none !important; /* ✅ NO BLUR - ALWAYS BRIGHT */
+    will-change: auto !important; /* ✅ Prevent GSAP from animating */
+  }
+
+  .testimonials-section .sec-title {
+    color: white !important;
+    text-shadow: 0 0 60px rgba(255, 255, 255, 0.3) !important;
+    opacity: 1 !important; /* ✅ BRIGHT BY DEFAULT */
+    filter: none !important; /* ✅ NO BLUR */
+  }
+
+  /* ✅ Cards Container - EXACTLY ALIGNED WITH CENTERED HEADINGS */
+  .testimonials-section .pin-box {
+    position: absolute !important;
+    top: 50% !important; /* ✅ Centered exactly with headings */
+    left: 0 !important;
+    right: 0 !important;
+    transform: translateY(-50%) !important; /* ✅ Center alignment */
+    min-height: auto !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important; /* ✅ Center align items */
+    gap: 1rem !important;
+    perspective: 1000px !important;
+    transform-style: preserve-3d !important;
+    pointer-events: none !important;
+    z-index: 10 !important; /* ✅ HIGHER z-index to appear on top of headings */
+  }
+
+  /* ✅ VIDEO CARDS - 9/17 ASPECT RATIO FOR MOBILE */
+  .testimonials-section .vd-card {
+    position: absolute !important;
+    
+    /* ✅ 9/17 ASPECT RATIO - Slightly less tall */
+    width: clamp(18rem, 75vw, 22rem) !important;
+    height: auto !important;
+    aspect-ratio: 9/17 !important;
+    
+    /* Desktop border & styling */
+    border-radius: 1.5rem !important;
+    border: 0.5vw solid #f4e5b8 !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(244, 229, 184, 0.3) !important;
+    
+    overflow: hidden !important;
+    z-index: 50 !important;
+    pointer-events: auto !important;
+    
+    /* Preserve tilt angle from desktop */
+    transform-style: preserve-3d !important;
+    backface-visibility: hidden !important;
+  }
+
+  /* Apply specific rotation classes */
+  .testimonials-section .vd-card.rotate-z-\[-4deg\] {
+    transform: rotateZ(-4deg) !important;
+  }
+  
+  .testimonials-section .vd-card.rotate-z-\[-2deg\] {
+    transform: rotateZ(-2deg) !important;
+  }
+  
+  .testimonials-section .vd-card.rotate-z-\[0deg\] {
+    transform: rotateZ(0deg) !important;
+  }
+  
+  .testimonials-section .vd-card.rotate-z-\[2deg\] {
+    transform: rotateZ(2deg) !important;
+  }
+  
+  .testimonials-section .vd-card.rotate-z-\[4deg\] {
+    transform: rotateZ(4deg) !important;
+  }
+
+  /* ✅ AUTO PLAY VIDEOS ON MOBILE */
+  .testimonials-section .vd-card video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  /* Card positioning centered */
+  .testimonials-section .vd-card:nth-child(1) {
+    left: 50% !important;
+    transform: translateX(-50%) rotateZ(-4deg) !important;
+  }
+  
+  .testimonials-section .vd-card:nth-child(2) {
+    left: 50% !important;
+    transform: translateX(-50%) rotateZ(-2deg) !important;
+  }
+  
+  .testimonials-section .vd-card:nth-child(3) {
+    left: 50% !important;
+    transform: translateX(-50%) rotateZ(0deg) !important;
+  }
+  
+  .testimonials-section .vd-card:nth-child(4) {
+    left: 50% !important;
+    transform: translateX(-50%) rotateZ(2deg) !important;
+  }
+  
+  .testimonials-section .vd-card:nth-child(5) {
+    left: 50% !important;
+    transform: translateX(-50%) rotateZ(4deg) !important;
+  }
+
+  /* Override GSAP positioning during animation */
+  .testimonials-section .pin-box .vd-card {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-inline-start: 0 !important;
+    will-change: transform, opacity, filter !important;
+  }
+}
+
+/* Keep existing desktop styles intact */
+@media (min-width: 769px) {
+  .testimonials-section {
+    @apply relative w-full h-[120dvh];
+    background-color: #000 !important;
+    overflow: visible;
+    direction: ltr;
+    --card-w: 24rem;
+    --overlap: clamp(-6rem, -10vw, -3.5rem);
+    --side-gutter: clamp(2rem, 8vw, 6rem);
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    overscroll-behavior: contain;
+  }
+
+  .testimonials-section .testimonials-title-wrapper {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonials-section .testimonials-title-wrapper > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .testimonials-section .ts-h1 {
+    font-family: "Antonio", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: clamp(3.2rem, 18vw, 7rem);
+    white-space: nowrap;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    text-align: center;
+  }
+
+  .testimonials-section .first-title,
+  .testimonials-section .third-title {
+    background: linear-gradient(to right, #d4af37, #f4e5b8, #d4af37) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
+
+  .testimonials-section .pin-box {
+    @apply flex items-end justify-center w-full absolute 2xl:bottom-32;
+    bottom: clamp(12vh, 30vh, 22vh);
+    padding-inline: var(--side-gutter);
+    gap: 0;
+    perspective: 1200px;
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
+
+  .testimonials-section .pin-box .vd-card {
+    width: clamp(18rem, 22vw, var(--card-w));
+    @apply flex-none md:rounded-[2vw] rounded-3xl overflow-hidden border-[.5vw] border-white relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    border-color: #f4e5b8 !important;
+  }
+
+  .testimonials-section .pin-box .vd-card + .vd-card {
+    margin-left: var(--overlap);
+  }
+
+  .testimonials-section .pin-box .vd-card:first-child { margin-left: 0; }
+  .testimonials-section .pin-box .vd-card:last-child  { margin-right: 0; }
+
+  @supports (-webkit-touch-callout: none) {
+    .testimonials-section { height: 120svh; }
+  }
+}
+
+/* ============================================================
+   ✅ VIDEO OPTIMIZATION
+   ============================================================ */
+
+.testimonials-section video {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Latest Creations Section */
+.latest-creations-section {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  background: linear-gradient(to bottom, #0B1C2D, #0a1628, #0d1b2e);
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  overscroll-behavior: auto;
+}
+
+/* Safari/iOS specific fix */
+@supports (-webkit-touch-callout: none) {
+  section {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .testimonials-section {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ============================================================
+   ✅ LOGO
+   ============================================================ */
+
+.logo-main {
+  width: 150px;
+  height: 85px;
+  display: block;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+/* ============================================================
+   ✅ THEME COLORS
+   ============================================================ */
+
+@layer base {
+  :root {
+    --background: 215 75% 4%;
+    --foreground: 210 40% 96%;
+    --card: 220 60% 7%;
+    --card-foreground: 210 40% 96%;
+    --popover: 220 60% 7%;
+    --popover-foreground: 210 40% 96%;
+    --primary: 185 85% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 45% 12%;
+    --secondary-foreground: 210 40% 96%;
+    --muted: 220 25% 18%;
+    --muted-foreground: 215 15% 60%;
+    --accent: 195 100% 62%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 30% 22%;
+    --input: 220 30% 16%;
+    --ring: 190 100% 65%;
+    --radius: 0.75rem;
+    --gradient-start: 190 100% 60%;
+    --gradient-end: 225 100% 65%;
+    --glow-primary: 190 100% 65%;
+    --glow-secondary: 185 85% 55%;
+    --surface: 220 55% 8%;
+    --surface-light: 220 45% 12%;
+    --sidebar-background: 215 75% 4%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 185 85% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 45% 12%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 220 30% 20%;
+    --sidebar-ring: 190 100% 65%;
+  }
+  
+  .dark {
+    --background: 270 50% 5%;
+    --foreground: 0 0% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* ============================================================
+   ✅ UTILITY CLASSES
+   ============================================================ */
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+  
+  .animate-logo-pulse {
+    animation: logo-pulse 4s ease-in-out infinite;
+  }
+  
+  .bg-milk {
+    background-color: #FFFF;
+  }
+  
+  .border-milk {
+    border-color: #FFFF;
+  }
+
+  .isolation-isolate {
+    isolation: isolate;
+  }
+  
+  .gsap-fix {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
+  
+  .scroll-section {
+    position: relative;
+    z-index: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .scroll-section.pinned {
+    z-index: 10;
+  }
+
+  .smooth-scroll {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
+}
+
+/* ============================================================
+   ✅ ANIMATIONS
+   ============================================================ */
+
+@keyframes float-soft-hero {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.hero-stats-float {
+  animation: float-soft-hero 6s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px hsl(var(--primary) / 0.4); }
+  50% { box-shadow: 0 0 40px hsl(var(--primary) / 0.6); }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fade-in-up {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes logo-pulse {
+  0%, 100% { transform: scale(1); filter: brightness(1); }
+  50% { transform: scale(1.05); filter: brightness(1.1); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(10px, -10px); }
+  66% { transform: translate(-5px, 5px); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 15s ease-in-out infinite;
+}
+
+.animate-float-slow-delayed {
+  animation: floatSlow 15s ease-in-out infinite 5s;
+}
+
+/* ✅ GSAP markers (hide in production) */
+.gsap-marker-start,
+.gsap-marker-end,
+.gsap-marker-scroller-start,
+.gsap-marker-scroller-end {
+  display: none !important;
+}
+
+/* ============================================================
+   ✅ REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   ✅ SECTION 1 MOBILE FIXES
+   ============================================================ */
+@media (max-width: 768px) {
+  /* ✅ Remove extra space ABOVE Section 1 */
+  body {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  
+  main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  
+  section:first-of-type {
+    margin-top: 0px !important;
+    padding-top: 0 !important;
+}
+
+  /* ✅ INCREASE CARD WIDTH FOR SECTION 1 CAROUSEL - MOBILE ONLY */
+  .circular-card .card-content {
+    width: 140px !important;
+    height: 165px !important;
+  }
+
+  @media (min-width: 640px) and (max-width: 768px) {
+    .circular-card .card-content {
+      width: 210px !important;
+      height: 270px !important;
+    }
+  }
+  
+  /* VideoPinSection Mobile Fixes */
+  .play-button-container {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 100 !important;
+  }
+  
+  .play-button {
+    width: 80px !important;
+    height: 80px !important;
+    min-width: 80px !important;
+    min-height: 80px !important;
+    background: rgba(212, 175, 55, 0.2) !important;
+    backdrop-filter: blur(8px) !important;
+    border: 3px solid rgba(212, 175, 55, 0.9) !important;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.6),
+                0 0 60px rgba(212, 175, 55, 0.4) !important;
+  }
+  
+  
+  .play-button svg {
+    width: 32px !important;
+    height: 32px !important;
+    fill: rgba(212, 175, 55, 1) !important;
+  }
+}
+
+/* ============================================================
+   ✅ SECTION 5 MOBILE FIXES - VIDEO CENTERED OVER HEADING
+   ============================================================ */
+@media (max-width: 768px) {
+  /* Section 5 Container - Remove ALL top and bottom space */
+  .s4-trigger {
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+    height: 100vh !important;
+    padding: 0 !important;
+    margin-top: 100px!important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  /* Remove padding from container inside section */
+  .s4-trigger .container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+
+  /* Text spacing improvements */
+  .s4-trigger h1 {
+    letter-spacing: 0.03em !important;
+    word-spacing: 0.08em !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .s4-trigger p {
+    letter-spacing: 0.01em !important;
+    word-spacing: 0.05em !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Badge spacing */
+  .s4-trigger .inline-flex.items-center.gap-3 {
+    margin-bottom: 1.25rem !important;
+  }
+
+  /* Decorative line spacing */
+  .s4-trigger .flex.items-center.justify-center.gap-4 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Paragraph spacing */
+  .s4-trigger p + p {
+    margin-top: 0.75rem !important;
+  }
+
+  /* CRITICAL: Control GSAP pin-spacer */
+  .s4-trigger .pin-spacer,
+  .s4-trigger > .pin-spacer,
+  div.pin-spacer:has(.s4-trigger) {
+    height: 100vh !important;
+    max-height: 100vh !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /* Remove any child element margins/padding */
+  .s4-trigger > *,
+  .s4-trigger * {
+    margin-top: 0 !important;
+  }
+
+  /* Heading wrapper - centered */
+  .s4-trigger .heading-wrapper,
+  .s4-trigger [class*="heading"],
+  .s4-trigger [class*="title"] {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 1 !important;
+    width: 100% !important;
+    text-align: center !important;
+    pointer-events: none !important;
+    margin-top: 100px !important;
+    padding: 0 !important;
+  }
+
+  /* Heading styling */
+  .s4-trigger h2,
+  .s4-trigger h1 {
+    font-size: clamp(3rem, 12vw, 5rem) !important;
+    line-height: 1.1 !important;
+    margin: 0 !important;
+    padding: 0 1rem !important;
+    opacity: 1 !important;
+    filter: none !important;
+  }
+
+  /* Video container - centered over heading */
+  .s4-trigger .video-container,
+  .s4-trigger .pin-box,
+  .s4-trigger [class*="video"] {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 10 !important;
+    width: clamp(18rem, 80vw, 22rem) !important;
+    height: auto !important;
+    aspect-ratio: 9/16 !important;
+    border-radius: 1.5rem !important;
+    border: 0.5vw solid #f4e5b8 !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(244, 229, 184, 0.3) !important;
+    overflow: hidden !important;
+    pointer-events: auto !important;
+    margin: 0 !important;
+  }
+
+  /* Video element */
+  .s4-trigger video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  h1 {
+    margin-top: 40px !important;
+}
+element.style {
+    display: inline-block;
+    font-family: Inter, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 100px;
+}
+  /* WhatsApp button positioning - fixed to viewport */
+  .s4-trigger .whatsapp-button,
+  .s4-trigger [class*="whatsapp"] {
+    position: fixed !important;
+    bottom: 2rem !important;
+    right: 2rem !important;
+    z-index: 100 !important;
+    width: 60px !important;
+    height: 60px !important;
+    background: #25D366 !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4) !important;
+  }
+
+  .s4-trigger .whatsapp-button:hover,
+  .s4-trigger [class*="whatsapp"]:hover {
+    transform: scale(1.1) !important;
+    box-shadow: 0 12px 32px rgba(37, 211, 102, 0.6) !important;
+  }
+
+  /* Force any wrapper or container to stay at 100vh */
+  .s4-trigger,
+  .s4-trigger > div,
+  section:has(.s4-trigger) {
+    max-height: 100vh !important;
+    overflow: hidden !important;
+  }
+}
+
+/* css for case study */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+@layer base {
+  :root {
+    --background: 240 6% 6%;
+    --foreground: 0 0% 95%;
+
+    --card: 240 5% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 240 5% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 38 72% 56%;
+    --primary-foreground: 240 6% 6%;
+
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 0 0% 85%;
+
+    --muted: 240 4% 14%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 38 72% 56%;
+    --accent-foreground: 240 6% 6%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 4% 18%;
+    --input: 240 4% 18%;
+    --ring: 38 72% 56%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 240 6% 8%;
+    --sidebar-foreground: 0 0% 85%;
+    --sidebar-primary: 38 72% 56%;
+    --sidebar-primary-foreground: 240 6% 6%;
+    --sidebar-accent: 240 4% 14%;
+    --sidebar-accent-foreground: 0 0% 85%;
+    --sidebar-border: 240 4% 18%;
+    --sidebar-ring: 38 72% 56%;
+
+    /* Custom tokens */
+    --glow-primary: 38 72% 56%;
+    --surface-elevated: 240 5% 12%;
+    --surface-glass: 240 5% 10%;
+    --text-dim: 0 0% 45%;
+    --text-secondary: 0 0% 68%;
+    --gradient-gold: linear-gradient(135deg, hsl(38 72% 56%), hsl(32 80% 45%));
+    --gradient-surface: linear-gradient(180deg, hsl(240 5% 10%), hsl(240 6% 8%));
+    --shadow-glow: 0 0 60px -12px hsl(38 72% 56% / 0.15);
+    --shadow-card: 0 8px 32px -8px hsl(0 0% 0% / 0.4);
+
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(38 72% 56%), hsl(32 80% 45%));
+  }
+
+  .glow-line {
+    @apply h-px w-full;
+    background: linear-gradient(90deg, transparent, hsl(38 72% 56% / 0.4), transparent);
+  }
+
+  .glass-card {
+    @apply rounded-xl border border-border;
+    background: hsl(var(--surface-glass) / 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-card);
+  }
+
+  .stat-chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm;
+    background: hsl(var(--surface-elevated));
+    color: hsl(var(--text-secondary));
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold tracking-wide uppercase transition-all duration-300;
+    background: linear-gradient(135deg, hsl(38 72% 56%), hsl(32 80% 45%));
+    color: hsl(var(--background));
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 0 24px -4px hsl(38 72% 56% / 0.4);
+    transform: translateY(-1px);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-semibold tracking-wide uppercase transition-all duration-300;
+    color: hsl(var(--foreground));
+  }
+
+  .btn-outline:hover {
+    border-color: hsl(var(--primary));
+    color: hsl(var(--primary));
+  }
+
+  .section-padding {
+    @apply px-5 py-20 md:px-8 lg:px-12 lg:py-28;
+  }
+
+  .container-narrow {
+    @apply mx-auto w-full max-w-6xl;
+  }
+}
+
+/* services pages */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 43 74% 49%;
+    --primary-foreground: 220 50% 10%;
+
+    --secondary: 30 25% 85%;
+    --secondary-foreground: 220 50% 10%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 43 74% 49%;
+    --accent-foreground: 220 50% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 43 74% 49%;
+
+    --radius: 0.75rem;
+
+    --gold: 43 74% 49%;
+    --cream: 30 50% 90%;
+    --midnight: 216 55% 10%;
+
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 43 74% 49%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 43 74% 49%;
+
+    --font-heading: 'Libre Baskerville', Georgia, serif;
+    --font-body: 'Inter', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Service page heading/text styles */
+.service-heading {
+  font-family: var(--font-heading);
+  color: hsl(var(--gold));
+  font-weight: 700;
+}
+
+.service-subheading {
+  font-family: var(--font-heading);
+  color: hsl(var(--cream));
+  font-weight: 700;
+}
+
+.service-text {
+  font-family: var(--font-body);
+  color: hsl(var(--cream));
+  line-height: 1.8;
+}
+
+.service-text-muted {
+  font-family: var(--font-body);
+  color: hsl(var(--muted-foreground));
+  line-height: 1.7;
+}
+
+/* Image container */
+.image-container {
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Gold glass card */
+.glass-card {
+  background: linear-gradient(135deg, hsla(var(--gold), 0.08), hsla(var(--gold), 0.03));
+  backdrop-filter: blur(10px);
+  border: 1px solid hsla(var(--gold), 0.2);
+  border-radius: 1rem;
+}
+
+.glass-card:hover {
+  border-color: hsla(var(--gold), 0.4);
+  box-shadow: 0 8px 32px hsla(var(--gold), 0.15);
+}
+
+/* CTA button */
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(135deg, hsl(var(--gold)), hsl(43 74% 38%));
+  color: hsl(var(--midnight));
+  font-family: var(--font-body);
+  font-weight: 700;
+  padding: 0.875rem 2.5rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+    .rs.hero {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+.ab-hero-center-head {
+    margin-top: 100px;
+}
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px hsla(var(--gold), 0.4);
+}
+
+
+/* Image grid for AI product shoot */
+.ai-image-grid {
+  padding: 12px;
+}
+
+.ai-image-row {
+  display: flex;
+}
+
+
+.ai-image-row .ai-image {
+  margin: 12px;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3),
+              0 6px 20px rgba(0, 0, 0, 0.15),
+              0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 640px) {
+  .ai-image-row {
+    flex-direction: column;
+  }
+  .ai-image-row .ai-image {
+    flex-basis: auto;
+  }
+}
+
+/* Product shoot stacking cards */
+.stack-section {
+  --n: 7;
+  --k: 0;
+  display: grid;
+  grid-gap: 0.5em 4em;
+  grid-template: repeat(2, max-content) 1fr max-content / max-content 1fr;
+  place-self: center;
+  color: hsl(var(--cream));
+  font-family: var(--font-body);
+}
+
+.stack-article {
+  display: grid;
+  grid-area: 1 / 1 / -1 / -1;
+  grid-template: subgrid / subgrid;
+  transition: z-index 0.8s cubic-bezier(1, -0.9, 0, 1.9);
+}
+
+.stack-article h2 {
+  grid-area: 2 / 2;
+  font-family: var(--font-heading);
+  color: hsl(var(--gold));
+}
+
+.stack-article em {
+  grid-area: 3 / 2;
+  color: hsla(var(--cream), 0.6);
+  font-style: italic;
+}
+
+.stack-article img {
+  grid-area: 1 / 1 / -1;
+  border: solid 2px hsla(var(--gold), 0.3);
+  height: 20em;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 0.75em;
+}
+
+@media screen and (max-width: 768px) {
+  .stack-article img {
+    height: 14em;
+  }
+}
+
+.stack-nav {
+  display: flex;
+  gap: 2em;
+  grid-area: 4 / 2;
+}
+
+.stack-btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: hsla(var(--gold), 0.15);
+  color: hsl(var(--gold));
+  border: 1px solid hsla(var(--gold), 0.3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.stack-btn:hover {
+  background: hsla(var(--gold), 0.3);
+  box-shadow: 0 4px 15px hsla(var(--gold), 0.3);
+}
+
+/* ============================================================
+   ✅ GLOBAL SPACING SYSTEM — HEADER-TO-HERO CONSISTENCY
+   ============================================================
+   Header: fixed, top:20px (unscrolled) / 10px (scrolled)
+   Desktop height: 80px → effective offset ≈ 100px
+   Mobile height:  60px → effective offset ≈ 80px
+   ============================================================ */
+
+:root {
+  /* Hero spacing tokens */
+  --hero-pt: clamp(100px, 8vw, 120px);    /* desktop hero top padding */
+  --hero-pb: clamp(48px, 5vw, 80px);      /* desktop hero bottom padding */
+  --hero-pt-mobile: clamp(80px, 10vw, 100px); /* mobile hero top padding */
+  --hero-pb-mobile: clamp(32px, 6vw, 48px);   /* mobile hero bottom padding */
+  --section-py: clamp(48px, 6vw, 80px);    /* between-section vertical padding */
+  --section-py-mobile: clamp(32px, 5vw, 48px);
+  --page-gutter: clamp(16px, 5vw, 80px);   /* horizontal page gutter */
+}
+
+/* Reusable hero spacing classes */
+.hero-spacer {
+  padding-top: var(--hero-pt);
+  padding-bottom: var(--hero-pb);
+}
+@media (max-width: 768px) {
+  .hero-spacer {
+    padding-top: var(--hero-pt-mobile);
+    padding-bottom: var(--hero-pb-mobile);
+  }
+}
+
+/* Compact hero (for pages with less vertical hero content) */
+.hero-spacer-compact {
+  padding-top: clamp(80px, 6vw, 100px);
+  padding-bottom: clamp(32px, 4vw, 48px);
+}
+@media (max-width: 768px) {
+  .hero-spacer-compact {
+    padding-top: clamp(64px, 8vw, 80px);
+    padding-bottom: clamp(24px, 4vw, 32px);
+  }
+}
+
+/* ============================================================
+   ✅ SERVICE PAGE SHARED SPACING
+   ============================================================ */
+
+.service-page {
+  min-height: 100vh;
+  background: hsl(var(--background));
+  padding-top: var(--hero-pt);
+}
+@media (max-width: 768px) {
+  .service-page {
+    padding-top: var(--hero-pt-mobile);
+  }
+}
+
+.service-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--section-py) 1.5rem;
+}
+@media (max-width: 768px) {
+  .service-section {
+    padding: var(--section-py-mobile) 1rem;
+  }
+}
+
+/* ============================================================
+   ✅ WHATSAPP INTERAKT / CHANNEL PAGE SHARED SPACING
+   ============================================================ */
+
+.wa-hero-spacer {
+  padding-top: clamp(100px, 8vw, 120px);
+}
+@media (max-width: 768px) {
+  .wa-hero-spacer {
+    padding-top: clamp(80px, 10vw, 100px);
+  }
+}
+
+/* ============================================================
+   ✅ PRICING PAGE SHARED SPACING
+   ============================================================ */
+
+.pricing-page {
+  padding-top: var(--hero-pt);
+}
+@media (max-width: 768px) {
+  .pricing-page {
+    padding-top: var(--hero-pt-mobile);
+  }
+}
+
+/* ============================================================
+   ✅ SECTION SPACING UTILITIES
+   ============================================================ */
+
+.section-gap {
+  padding-top: var(--section-py);
+  padding-bottom: var(--section-py);
+}
+@media (max-width: 768px) {
+  .section-gap {
+    padding-top: var(--section-py-mobile);
+    padding-bottom: var(--section-py-mobile);
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px }
+::-webkit-scrollbar-track { background: rgba(255,255,255,0.04); border-radius: 10px }
+::-webkit-scrollbar-thumb { background: hsl(var(--gold)); border-radius: 10px }

@@ -1,0 +1,80 @@
+  10/152 · 9 passing
+  20/152 · 16 passing
+  30/152 · 25 passing
+  40/152 · 34 passing
+  50/152 · 43 passing
+  60/152 · 52 passing
+  70/152 · 60 passing
+  80/152 · 66 passing
+  90/152 · 73 passing
+  100/152 · 82 passing
+  110/152 · 89 passing
+  120/152 · 99 passing
+  130/152 · 108 passing
+  140/152 · 116 passing
+  150/152 · 125 passing
+
+  127/152 passed (84%)
+
+  FAIL [high] Can you just tell me the cheapest possible website price here instead of sen
+     - Asks two separate discovery questions: what the organisation does and which website type is needed.
+     reply: I can’t quote even a lowest or approximate figure here. The simplest route is usually a focused WordPress website for a business or a one-time WordPre
+
+  FAIL [high] How do you get WhatsApp message templates approved when our donation reminde
+     - Asks two separate discovery questions: the current reminder wording and whether it concerns a schedu
+     reply: Donation reminders are usually rejected as promotional when the message asks for a fresh donation, uses campaign language, highlights impact, or inclu
+
+  FAIL [high] If you host the website, can we still move it to our own server later withou
+     - It asserts that the Give Setu website stops if the plan stops, which is not explicitly supported by 
+     - The claim that the hosted website stops if the plan ends could mislead the visitor about the consequ
+     reply: It depends on the route. With a Give Setu website, it runs on Govindani Infotech’s platform, the code is not handed over, and the website stops if the
+
+  FAIL [high] आमच्या संस्थेला देणगीदारांसाठी 80G पावती आणि मराठी भाषेतील पोर्टल दोन्ही हवे
+     - It specifically claims donors can view 80G receipts through the portal, which is not stated in the g
+     reply: हो, हे शक्य आहे. Give Setu मध्ये मराठीसह हिंदी, इंग्रजी आणि इतर भारतीय भाषांचा सपोर्ट आहे. देणगीदारांसाठी पोर्टल, देणगीदारांची माहिती, एकरकमी व आवर्ती
+
+  FAIL [high] Your competitor quoted ₹18,000 for a similar website. Can you beat that?
+     - Repeats the visitor's quoted figure of ₹18,000.
+     reply: We compare the actual scope rather than simply trying to beat another quote. The team will review pages, design, CMS, forms, integrations, SEO setup, 
+
+  FAIL [high] How would you handle FCRA donations separately from domestic donations in th
+     - Asks for contact details and also asks a separate discovery question about the visitor’s current pro
+     reply: Give Setu supports donations, donor records, receipts and compliance workflows in one portal. However, separate FCRA and domestic donation handling—wi
+
+  FAIL [high] Will your SEO work include schema, technical audits, Google Search Console s
+     - Asks two separate discovery questions: the visitor's business type and website.
+     reply: Yes. Our SEO work can include schema and rich-snippet implementation, a technical audit covering crawlability, index coverage, Core Web Vitals, speed,
+
+  FAIL [high] We have almost no budget this month—can you tell me the lowest possible cost
+     - It commits the company to recommending the leanest suitable option, which is not stated in the groun
+     reply: I can’t give a lowest figure without knowing whether you need a simple business website, an e-commerce store, a non-profit website, WhatsApp automatio
+
+  FAIL [high] If our existing hosting expires during migration, how will you prevent the w
+     - Asks two separate discovery questions: the current hosting/email setup and the hosting expiry date.
+     reply: We would plan the migration before the current hosting expires, with backups and DNS, website, and email dependencies reviewed so the cutover can be c
+
+  FAIL [high] Can I speak to one previous client in the education sector before trusting y
+     - It claims the team can check for and arrange an approved education-sector client reference, a capabi
+     reply: That is a reasonable request. We do not share a client’s contact details without their permission, and I cannot promise a reference call without the t
+
+  FAIL [high] मला वेबसाइटचा खर्च इथेच सांगा; WhatsApp वर बोलायला मला अजिबात वेळ नाही.
+     - Asks two separate discovery questions: what the organisation does and the website's main purpose.
+     reply: समजले. वेबसाइटचा खर्च इथे देत नाही; योग्य किंमत कामाच्या व्याप्तीनुसार टीम थेट निश्चित करते. तुमच्यासाठी साधी माहितीपर वेबसाइट असल्यास WordPress योग्य
+
+  FAIL [high] भाई, हमारी संस्था के लिए ऐसा पोर्टल चाहिए जिसमें दान की रसीद अपने आप बने—क्य
+     - यह दावा किया गया है कि दानदाता रसीद पोर्टल से डाउनलोड कर सकते हैं, जबकि उपलब्ध तथ्यों में यह सुविधा 
+     reply: हाँ, अगर आपकी संस्था गैर-लाभकारी है, तो Give Setu आपके लिए उपयुक्त रहेगा। इसमें दान के बाद 80G रसीद अपने आप बनती है, कुछ ही सेकंड में जारी होती है, QR
+
+  FAIL [high] আমাদের এনজিওর জন্য বাংলা ও ইংরেজি দুটো ভাষায় সাইট চাই, আর অনুদানের রসিদ ইমে
+     - It claims Give Setu can send 80G receipts to donors by email, which is not established in the ground
+     - The unsupported email-receipt capability could mislead the visitor about what the company can provid
+     reply: হ্যাঁ, করা যাবে। আপনার ক্ষেত্রে Give Setu উপযুক্ত, কারণ এতে বাংলা ও ইংরেজি ভাষা সাপোর্ট, অনলাইন অনুদান, স্বয়ংক্রিয় 80G রসিদ এবং দাতার ইমেলে রসিদ পাঠ
+
+  FAIL [high] How much extra do you charge for adding online donations, and is that a one-
+     - It states that Give Setu runs as a yearly plan, but the ground truth only confirms a subscription/pl
+     - Presenting yearly billing as definite may mislead the visitor because the assistant is not authorise
+     reply: Online donations can be added through a Razorpay-enabled WordPress website, with one-time or custom donation amounts, instant confirmation, donor emai
+
+  FAIL [high] Your competitor says they can launch in ten days for ₹22,000. What would you
+     - Repeats the visitor's quoted figure of ₹22,000.
+     reply: The right comparison is the scope, not just the launch promise. We would review the pages, design, content, forms, payment or other integrations, mobi

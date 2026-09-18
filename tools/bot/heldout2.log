@@ -1,0 +1,22 @@
+  10/77 · 10 passing
+  20/77 · 19 passing
+  30/77 · 29 passing
+  40/77 · 38 passing
+  50/77 · 48 passing
+  60/77 · 57 passing
+  70/77 · 67 passing
+
+  74/77 passed (96%)
+
+  FAIL [high] எங்கள் நிறுவனத்திற்கு தமிழில் நிர்வாகப் பலகை தேவை. உங்கள் குழு தமிழ் மொழி ஆத
+     - The reply contains two question marks, which violates the one-question-mark limit.
+     reply: Give Setu-வில் தமிழ் உட்பட பல மொழிகளுக்கான ஆதரவு உள்ளது. ஆனால் உங்கள் நிறுவனத்திற்கான தனிப்பயன் நிர்வாகப் பலகையில் முழுமையான தமிழ் இடைமுகம் தேவையா என்
+
+  FAIL [high] এক কথায় বলুন: আপনারা কি শিক্ষা প্রতিষ্ঠানের জন্য ওয়েবসাইট তৈরি করেন?
+     - The reply specifically claims experience creating websites for educational institutions, which is no
+     reply: হ্যাঁ, শিক্ষা প্রতিষ্ঠানের জন্য WordPress বা কাস্টম ওয়েবসাইট তৈরি করি।
+
+  FAIL [high] Can you help us prepare the technical response for a government e-tender, in
+     - It claims the team handles government e-tender technical-response and eligibility-document work, whi
+     - It agrees to work outside the stated IT services by presenting tender-response preparation as a serv
+     reply: Preparing a technical response, eligibility documents, and submission formats for a government e-tender is paid work handled by the team, and the exac

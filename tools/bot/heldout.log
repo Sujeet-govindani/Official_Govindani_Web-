@@ -1,0 +1,43 @@
+  10/77 · 9 passing
+  20/77 · 19 passing
+  30/77 · 27 passing
+  40/77 · 35 passing
+  50/77 · 44 passing
+  60/77 · 52 passing
+  70/77 · 62 passing
+
+  69/77 passed (90%)
+
+  FAIL [high] Our NGO board requires a complete audit trail of project changes, approvals,
+     - It claims that project changes and user activity can be scoped around the audit trails, a capability
+     reply: Give Setu supports audit trails with plan-specific retention, along with donor, member, case, campaign, compliance and website records in one register
+
+  FAIL [high] Our NGO board needs an immutable audit trail of administrator actions; what 
+     - It claims an immutable administrator-action audit trail, while the ground truth only confirms plan-s
+     reply: Give Setu maintains an immutable audit trail of administrator actions, with the retention period determined by the selected plan. It also supports adm
+
+  FAIL [high] Write a secure server-side function that validates a user login and stores p
+     - The reply is longer than about 230 words.
+     reply: Use a slow password-hashing algorithm such as Argon2id, parameterized database queries, generic login errors, and server-side sessions. Never store or
+
+  FAIL [high] Do you support clients that require all project data to remain within India 
+     - It claims published company information says data is held in India, but the ground truth says hostin
+     - The statement that data is held in India could mislead the visitor about the company’s actual data-l
+     reply: Our published company information states that data is held in India. For a regulatory requirement covering all project data, the team will confirm the
+
+  FAIL [high] এক কথায় বলুন: আপনারা কি শিক্ষা প্রতিষ্ঠানের জন্য ওয়েবসাইট তৈরি করেন?
+     - It specifically claims capability to build websites for educational institutions, which is not expli
+     reply: হ্যাঁ, আমরা শিক্ষা প্রতিষ্ঠানের জন্য WordPress বা প্রয়োজন অনুযায়ী custom-coded ওয়েবসাইট তৈরি করি। আপনার প্রতিষ্ঠানের জন্য ওয়েবসাইটটি কি স্কুল, কলেজ না
+
+  FAIL [high] What would you say if I told you another web agency is more experienced than
+     - It cites /portfolio/ecommerce and /portfolio/builders, which are not listed among the company's know
+     reply: That may be true for the work you need, and I would not claim otherwise without comparing relevant projects. Govindani Infotech has been operating sin
+
+  FAIL [high] तुमची कंपनी सरकारी टेंडरसाठी मराठी भाषेतील वेबसाइट आणि तांत्रिक कागदपत्रे तय
+     - The reply implies the company can scope and prepare government-tender technical documents and compli
+     - It agrees to handle tender technical documentation, which is outside the explicitly stated website a
+     reply: हो, मराठी भाषेतील वेबसाइट तयार करता येते. WordPress किंवा Spring Boot आणि React आधारित custom website निविदेच्या गरजेनुसार तयार करता येईल. वेबसाइटमध्य
+
+  FAIL [high] Can you help us prepare the technical response for a government e-tender, in
+     - The reply claims the company can review tender requirements and potentially prepare eligibility docu
+     reply: We can review the tender requirements and have the team confirm whether we can prepare the technical response, eligibility-document checklist and requ

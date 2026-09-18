@@ -1,0 +1,474 @@
+/* ===================================================================
+   ROYAL LUXURY BRAND STYLING
+   Libre Baskerville Typography System
+   =================================================================== */
+
+/* Import Libre Baskerville from Google Fonts */
+
+/* ===================================================================
+   ROOT VARIABLES - Royal Color Palette
+   =================================================================== */
+
+:root {
+  /* Primary Royal Gold */
+  --royal-gold: #d4af37;
+  --royal-gold-light: #f4d03f;
+  --royal-gold-dark: #b8941f;
+  
+  /* Amber Gradient Stops */
+  --amber-50: #fffbeb;
+  --amber-100: #fef3c7;
+  --amber-200: #fde68a;
+  --amber-400: #fbbf24;
+  --amber-600: #d97706;
+  --amber-900: #78350f;
+  
+  /* Neutral Luxury Tones */
+  --zinc-900: #18181b;
+  --zinc-950: #09090b;
+  --black: #000000;
+  --white: #ffffff;
+  
+  /* Typography */
+  --font-serif: 'Libre Baskerville', 'Garamond', 'Georgia', serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* Spacing Scale */
+  --space-luxury: 4rem;
+  --space-comfortable: 3rem;
+  --space-standard: 2rem;
+}
+
+/* ===================================================================
+   TYPOGRAPHY - Royal Serif System
+   =================================================================== */
+
+.font-serif {
+  font-family: var(--font-serif);
+  font-feature-settings: 'liga' 1, 'kern' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Elegant heading scale */
+.royal-heading-xl {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.royal-heading-lg {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.royal-heading-md {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* Body text - optimized for readability */
+.royal-body {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.royal-body-sm {
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* Quote styling */
+.royal-quote {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  line-height: 1.7;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* ===================================================================
+   GRADIENTS - Sophisticated Color Blends
+   =================================================================== */
+
+.royal-gradient-gold {
+  background: linear-gradient(
+    135deg,
+    #fde68a 0%,
+    #fbbf24 25%,
+    #f59e0b 50%,
+    #d97706 75%,
+    #b8941f 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.royal-gradient-subtle {
+  background: linear-gradient(
+    180deg,
+    rgba(251, 191, 36, 0.1) 0%,
+    rgba(217, 119, 6, 0.05) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.royal-gradient-radial {
+  background: radial-gradient(
+    circle at center,
+    rgba(212, 175, 55, 0.1) 0%,
+    transparent 70%
+  );
+}
+
+/* ===================================================================
+   LUXURY EFFECTS - Subtle & Refined
+   =================================================================== */
+
+/* Sophisticated glow - never garish */
+.royal-glow {
+  box-shadow: 
+    0 0 40px rgba(212, 175, 55, 0.1),
+    0 0 80px rgba(212, 175, 55, 0.05);
+}
+
+.royal-glow-hover:hover {
+  box-shadow: 
+    0 0 50px rgba(212, 175, 55, 0.15),
+    0 0 100px rgba(212, 175, 55, 0.08);
+  transition: box-shadow 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Elegant border shimmer */
+@keyframes royalShimmer {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.royal-border-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.royal-border-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(212, 175, 55, 0.3) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: royalShimmer 3s linear infinite;
+  pointer-events: none;
+}
+
+/* Subtle backdrop blur for premium feel */
+.royal-glass {
+  background: rgba(24, 24, 27, 0.4);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+/* ===================================================================
+   ANIMATIONS - Refined Motion
+   =================================================================== */
+
+/* Elegant fade up */
+@keyframes royalFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.royal-fade-up {
+  animation: royalFadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Sophisticated scale */
+@keyframes royalScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.royal-scale {
+  animation: royalScale 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Gentle glow pulse */
+@keyframes royalGlowPulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.royal-glow-pulse {
+  animation: royalGlowPulse 3s ease-in-out infinite;
+}
+
+/* Border draw animation */
+@keyframes royalBorderDraw {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.royal-border-draw {
+  stroke-dasharray: 1000;
+  animation: royalBorderDraw 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ===================================================================
+   INTERACTIVE STATES - Premium UX
+   =================================================================== */
+
+/* Elegant hover lift */
+.royal-hover-lift {
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.royal-hover-lift:hover {
+  transform: translateY(-8px);
+}
+
+/* Subtle scale on hover */
+.royal-hover-scale {
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.royal-hover-scale:hover {
+  transform: scale(1.02);
+}
+
+/* Smooth opacity transitions */
+.royal-transition-opacity {
+  transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ===================================================================
+   DECORATIVE ELEMENTS
+   =================================================================== */
+
+/* Elegant ornamental divider */
+.royal-divider {
+  position: relative;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(212, 175, 55, 0.3) 50%,
+    transparent 100%
+  );
+}
+
+.royal-divider::before,
+.royal-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 6px;
+  height: 6px;
+  background: rgba(212, 175, 55, 0.4);
+}
+
+.royal-divider::before {
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Corner accents */
+.royal-corner-accent {
+  position: relative;
+}
+
+.royal-corner-accent::before,
+.royal-corner-accent::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.royal-corner-accent::before {
+  top: 0;
+  left: 0;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.royal-corner-accent::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+}
+
+/* ===================================================================
+   BACKGROUND TEXTURES - Subtle Luxury
+   =================================================================== */
+
+.royal-texture-dots {
+  background-image: radial-gradient(
+    circle,
+    rgba(212, 175, 55, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 30px 30px;
+}
+
+.royal-texture-lines {
+  background-image: linear-gradient(
+    rgba(212, 175, 55, 0.03) 1px,
+    transparent 1px
+  );
+  background-size: 100% 40px;
+}
+
+/* ===================================================================
+   SCROLLBAR - Branded Experience
+   =================================================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(212, 175, 55, 0.3),
+    rgba(217, 119, 6, 0.3)
+  );
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(212, 175, 55, 0.5),
+    rgba(217, 119, 6, 0.5)
+  );
+}
+
+/* ===================================================================
+   SELECTION - Brand Colors
+   =================================================================== */
+
+::selection {
+  background: rgba(212, 175, 55, 0.2);
+  color: var(--white);
+}
+
+::-moz-selection {
+  background: rgba(212, 175, 55, 0.2);
+  color: var(--white);
+}
+
+/* ===================================================================
+   ACCESSIBILITY - Reduced Motion
+   =================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===================================================================
+   RESPONSIVE TYPOGRAPHY
+   =================================================================== */
+
+@media (max-width: 768px) {
+  .royal-body {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .royal-quote {
+    font-size: 1.125rem;
+  }
+}
+
+/* ===================================================================
+   UTILITY CLASSES - Royal Spacing
+   =================================================================== */
+
+.royal-section-spacing {
+  padding-top: var(--space-luxury);
+  padding-bottom: var(--space-luxury);
+}
+
+.royal-content-spacing {
+  padding-top: var(--space-comfortable);
+  padding-bottom: var(--space-comfortable);
+}
+
+.royal-element-spacing {
+  margin-bottom: var(--space-standard);
+}
+
+/* ===================================================================
+   PRINT STYLES - Maintain Elegance
+   =================================================================== */
+
+@media print {
+  .royal-gradient-gold {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  .royal-glow,
+  .royal-border-shimmer::before {
+    display: none;
+  }
+}

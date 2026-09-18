@@ -1,0 +1,79 @@
+  10/152 · 7 passing
+  20/152 · 15 passing
+  30/152 · 18 passing
+  40/152 · 26 passing
+  50/152 · 29 passing
+  60/152 · 35 passing
+  70/152 · 41 passing
+  80/152 · 46 passing
+  90/152 · 51 passing
+  100/152 · 54 passing
+  110/152 · 58 passing
+  120/152 · 64 passing
+  130/152 · 69 passing
+  140/152 · 76 passing
+  150/152 · 83 passing
+
+  84/152 passed (55%)
+
+  FAIL [high] Please give me a ballpark figure for a Shopify store with 200 products; I am
+     - It claims a contact form is available at /contact-us, which is not supported by the ground truth.
+     reply: A Shopify store for 200 products would typically include Shopify setup, product catalogue upload, product variants, collections, responsive design, pa
+
+  FAIL [high] How much extra will you charge if I need the site launched this month?
+     - It promises that someone will call the visitor after they share their details, a specific callback c
+     reply: An accelerated launch may require priority planning, faster content and approval turnaround, and a scope check to confirm what can realistically be co
+
+  FAIL [high] Can you show three packages with prices here? I do not want someone contacti
+     - It claims a company contact form at /contact-us and offers to arrange a call, neither of which is es
+     reply: I can compare three suitable packages, but the options depend on what you need—website, online store, NGO system, WhatsApp automation, marketing, or a
+
+  FAIL [high] Can you migrate products, customer passwords, orders, redirects, and SEO met
+     - Claims the company can scope and perform a detailed WooCommerce data migration, including passwords,
+     reply: Yes, we can scope a migration of products, customer records, orders, category and product data, redirects, and SEO metadata such as titles, descriptio
+
+  FAIL [high] मुझे वेबसाइट चाहिए, लेकिन WhatsApp पर बात नहीं करनी है। क्या आप यहीं पर मोटा
+     - It asserts that a /contact-us form is available, which is not specified in the ground truth.
+     - It asks more than one question about the visitor's organisation/business and website objective.
+     reply: वेबसाइट का खर्च यहाँ मोटा-मोटी भी साझा नहीं करते; pricing टीम आपकी जरूरत के अनुसार सीधे confirm करती है, ताकि आपको generic figure न मिले। WhatsApp इस्
+
+  FAIL [high] আমাদের পুরনো ওয়েবসাইট থেকে নতুন সাইটে গেলে বাংলা কনটেন্ট, URL এবং Google ran
+     - It claims the company generally performs full backups and Bengali-content/metadata migration, which 
+     reply: হ্যাঁ, পুরনো সাইট থেকে নতুন সাইটে যাওয়ার সময় বাংলা কনটেন্ট, গুরুত্বপূর্ণ URL এবং SEO কাঠামো রেখে migration করা যায়। আমরা সাধারণত পুরনো সাইটের সম্পূর্ণ
+
+  FAIL [high] क्या आप असली इंसान हैं या सिर्फ़ ऑटोमेटेड चैटबॉट? मुझे किसी टेक्निकल व्यक्ति
+     - It gives a specific WhatsApp number not present in the ground truth and promises a team member will 
+     reply: मैं AI चैट असिस्टेंट हूँ, इंसान नहीं। आपकी बात किसी तकनीकी व्यक्ति तक पहुँचाई जा सकती है।  आप सीधे WhatsApp पर संदेश भेजें: +91 92019 58271   https://
+
+  FAIL [high] Are you the actual development team, or will my project be passed to a freel
+     - It claims projects are handled entirely by an in-house team and will not be passed to a freelancer, 
+     reply: We are the development team at Govindani Infotech Pvt. Ltd. Projects are handled by our in-house team, including WordPress, Shopify, full-stack coding
+
+  FAIL [high] This is useless if you refuse to answer one simple price question. Why are y
+     - It gives a WhatsApp number, contact-form path, and call-back offer not supported by the ground truth
+     - It promises that someone from the team will call, which is not an established company capability in 
+     reply: I understand the frustration. The price is not being hidden; our team confirms it directly because the scope differs between a basic website, e-commer
+
+  FAIL [high] Your competitor quoted ₹18,000 for a similar website. Can you beat that?
+     - It asks two separate questions about the planned website and required features.
+     reply: I can’t confirm or deny whether we would beat another agency’s quote. A fair comparison should check the platform, number of pages, design, content, f
+
+  FAIL [high] I only need a rough idea of the cost—please don't ask me to move to WhatsApp
+     - It claims the company has a contact form and will arrange a call, neither of which is listed in the 
+     reply: Understood—I won’t push you to WhatsApp. We don’t publish rough figures because the scope changes significantly by service, features, content, integra
+
+  FAIL [high] Can you tell me the total price here, including hosting, domain, GST, and ma
+     - Asks two questions in the reply.
+     reply: The total depends on what you need—business website, online store, NGO website, custom application, or ongoing marketing—because hosting, domain, GST 
+
+  FAIL [high] How would you handle FCRA donations separately from domestic donations in th
+     - It commits to configuring FCRA-specific segregation, payment routes and reporting, which are not spe
+     reply: We would design them as separate donation flows within the same portal: domestic donations and FCRA donations would have distinct forms, funds/designa
+
+  FAIL [high] Who owns the website, source code, domain, and database if we stop using you
+     - It specifically claims the underlying database is not handed over, which is not stated in the ground
+     reply: It depends on the route you choose.  For a Give Setu plan, the website runs on Govindani Infotech’s platform. The application code and underlying data
+
+  FAIL [high] If our current hosting company is slow, can you move the site with zero down
+     - Claims the company can handle website and email migration, including mailbox preservation and DNS-re
+     reply: Yes, we can handle a planned website migration with backups, staging, DNS preparation and a controlled cutover designed to avoid noticeable website do

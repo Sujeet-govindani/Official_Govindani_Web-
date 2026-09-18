@@ -1,0 +1,30 @@
+[
+ {
+  "q": "Agar hamare 35,000 donors ho gaye toh Give Setu mein system rukega kya?",
+  "a": "Nahi, 35,000 donors hone par Give Setu system nahi rukega. Donor count par koi per-donor charge nahi hai. Advanced plan mein 25,000 active donors track hote hain; baaki donors sleeping storage mein unlimited aur free rehte hain. Kisi sleeping ya imported donor ka real donation hamesha accept aur receipt hota hai, aur woh donor free mein reactivate ho jata hai.\n\nAdvanced ka annual price **₹80,000 + 18% GST = ₹94,400** hai, jisme 15,000 80G receipts per month included hain. Agar ek hi month mein 35,000 donations aur receipts aaye, toh 20,000 extra receipts × ₹0.50 = ₹10,000, plus GST. Agar donations alag-alag months mein spread hon, toh overage us month ke receipts ke hisaab se lagega. Donation kabhi block nahi hota. Details ke liye WhatsApp par +91 92019 58271 ya contact form https://govindaniit.com/contact-us par bhej sakte hain. Aapke 35,000 donors total database mein hain ya 35,000 log har mahine active hote hain?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Plan limit cross hone par naye donation ko accept karega ya donor ko error dikhega?",
+  "a": "Plan limit cross hone par bhi naya donation accept hoga. Donor ko error nahi dikhega.\n\nActive-donor limit capacity for tracking, segmentation aur reporting hai, donation limit nahi. Limit se bahar ke donors sleeping storage mein free aur unlimited rehte hain. Unka real donation hamesha accept hoga, 80G receipt issue hogi aur donor free mein reactivate ho jayega.\n\nAgar monthly 80G receipt quota cross hota hai, receipt phir bhi issue hoti hai; sirf extra receipt ka usage charge lagta hai: Starter ₹0.90, Growth ₹0.70, Advanced ₹0.50 per receipt, plus 18% GST. Donations kabhi block nahi hote.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Month ke beech mein donor count limit paar ho gaya toh upgrade same din karna padega kya?",
+  "a": "Nahi, same din upgrade karna zaroori nahi hai. Active-donor limit cross hone par extra donors sleeping storage mein chale jaate hain, jo unlimited aur free hai. Unka data delete nahi hota; woh searchable rehte hain, aur real donation, receipt download, OTP verification ya portal login par free mein reactivate ho jaate hain.\n\nDonation kabhi block nahi hoti aur har donation ki receipt issue hoti hai. Active-donor count koi per-donor billing meter nahi hai; yeh sirf active tracking, segmentation aur reporting ki capacity hai. Upgrade tab karein jab aapko zyada donors ko continuously track karna ho. Aapka current plan kaunsa hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Suppose 10,000 receipts allowed hain aur humne 10,500 bana diye—extra ka paisa kaise lagega?",
+  "a": "Agar 10,000 receipts included hain aur 10,500 issue hue, to 500 receipts ka overage lagega. Rate plan ke hisaab se hoga:\n\nGrowth rate par: 500 × ₹0.70 = ₹350 + 18% GST = ₹413  \nAdvanced rate par: 500 × ₹0.50 = ₹250 + 18% GST = ₹295  \nStarter rate par: 500 × ₹0.90 = ₹450 + 18% GST = ₹531\n\nPublished plans mein Growth quota 5,000 aur Advanced quota 15,000 receipts per month hai, isliye 10,000 quota kisi custom arrangement ka hoga to exact rate plan ke basis par confirm hoga. Donation block nahi hota; overage usage auto-settlement threshold cross hone par charge hota hai. Aap WhatsApp par +91 92019 58271 ya contact form https://govindaniit.com/contact-us se exact plan confirm kara sakte hain.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ }
+]

@@ -1,0 +1,498 @@
+[
+ {
+  "q": "Can you just tell me the cheapest possible website price here instead of sending me to WhatsApp?",
+  "a": "I can’t quote a website figure here. The leanest route is usually a WordPress business website for a standard online presence; product sales suit WooCommerce or Shopify, while non-profits may need an NGO WordPress build or Give Setu for receipting and donor management. Our team confirms pricing on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name and mobile number here and I’ll have someone call you. What is the website for?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Another agency quoted ₹38,000 for a similar NGO site—can you beat that?",
+  "a": "We do not compare or beat another agency’s figure in chat. For an NGO that mainly needs a professional presence and donation collection, the one-time WordPress build includes NGO pages, Razorpay donations, donor confirmation emails, downloadable certificates, campaign progress bars, volunteer registration, events, blog, gallery, SEO setup and administration access. If you also need automated 80G receipts, 10BD/10BE compliance, donor CRM, memberships and recurring donations, Give Setu is the better fit. Our team confirms pricing on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name, organisation and mobile number here and I’ll have someone call you. Which is the bigger priority — a website and donations, or receipts and compliance?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "I do not use WhatsApp at all. What is your rough price range by email or on this chat?",
+  "a": "I can’t provide a rough range here or by email. Pricing is confirmed by our team after understanding the scope, so you receive the right figure for your requirement rather than a generic estimate. Since you do not use WhatsApp, you can use our contact form at https://govindaniit.com/contact-us or share your name and mobile number here and I’ll arrange a call from the team. Which service are you considering—website, e-commerce, WhatsApp automation, marketing, or something else?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Please give me a ballpark figure for a Shopify store with 200 products; I am not ready for a sales call.",
+  "a": "A Shopify store suits a catalogue of this size and can include product setup, shopping cart, secure checkout, payment gateway, inventory and order management, shipping integration, customer accounts, analytics, SEO, mobile-responsive design and WhatsApp integration. We do not give ballpark figures because the final scope depends on catalogue setup, design, payment, shipping and any custom features. Our team confirms pricing on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can message them whenever you are ready; alternatively, use the contact form at /contact-us. A call can be arranged later if you want one.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "How much extra will you charge if I need the site launched this month?",
+  "a": "An accelerated launch depends on the platform, required pages, features, and whether your content and access details are ready. The team will confirm the schedule and any applicable scope adjustment directly. Our team confirms pricing on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name and mobile number if you would like someone to call you. What kind of site are you launching?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Your competitor says they can build it for ₹25,000 including hosting. What would you charge?",
+  "a": "A fair comparison depends on what is being built: a straightforward WordPress business website, an NGO website, an online store, or a custom system. The scope can include the platform, pages, payment or e-commerce features, content management, SEO structure and maintenance, so we do not match a competitor quote without checking those details. Our team confirms pricing on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271 (https://wa.me/919201958271). I can also have someone call you—please share your name and mobile number. What does the organisation do?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you show three packages with prices here? I do not want someone contacting me on WhatsApp.",
+  "a": "I can outline three routes, but I can’t publish or confirm package prices here. For a business, the usual choices are a WordPress website for an online presence, WooCommerce or Shopify for selling products, and a custom Spring Boot and React build for unusual workflows or integrations. The right route depends on what you need included. Our team confirms pricing against the actual scope rather than showing a generic package figure. Since you do not want WhatsApp, you can use the contact form at https://govindaniit.com/contact-us, or share your name, organisation and mobile number here and I can have someone call you. Which are you looking for: a business website, an online store, or an NGO system?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "I only need a one-page site, so tell me the exact amount before I share my phone number.",
+  "a": "A one-page site is suitable for a focused online presence with your key information, services, enquiry action and mobile-responsive design. The right route depends on whether this is for a business, shop, clinic, or non-profit. Our team confirms pricing directly on WhatsApp so you get the right amount for your requirement, not a generic figure: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You do not need to share your phone here; you can also use the contact form at /contact-us. Which type of organisation is the site for?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "What is the approximate cost to migrate my old WordPress site without losing its blog traffic?",
+  "a": "A WordPress migration can include moving content and media, preserving URLs where possible, setting redirects, and carrying across SEO metadata so the migration aims to preserve existing blog visibility and traffic. Rankings and traffic cannot be guaranteed because Google controls those outcomes. Forms, member logins, databases and integrations depend on how the current site is built, so the team confirms those specifics directly. Our team confirms pricing on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name and mobile number here and have someone call you. Is the new site staying on WordPress?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can your donation system automatically issue 80G receipts with the donor's PAN and financial year details?",
+  "a": "Yes, Give Setu automatically issues 80G receipts with immutable, gapless numbering, QR verification and PAN recovery in the Donor CRM. It also supports 10BD preparation and 10BE dispatch through the Compliance Centre. Whether the donor’s PAN and financial-year details appear on the receipt itself is a specific format detail the team confirms against your setup. Please contact WhatsApp at +91 92019 58271: https://wa.me/919201958271. I can also arrange a call—please share your name, organisation and mobile number.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are an Indian NGO receiving foreign contributions—can the website support FCRA donation records and reporting exports?",
+  "a": "Give Setu keeps donation, donor, receipt, filing and related data in one register, with full data exports available. It also supports automated 80G receipts and Compliance Centre workflows for 10BD preparation, validation, portal-ready filing and 10BE dispatch. FCRA-specific donation records, reporting formats and exports are not detailed in our published product scope, so the team must confirm this against your current reporting setup. Our team confirms such requirements directly on WhatsApp so you get the right answer for your organisation: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name, organisation and mobile number here and have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can donors log in later to download receipts, update their address, and see their complete donation history?",
+  "a": "Give Setu provides donor and member portals, a donor giving timeline, automatic 80G receipts, and recurring-donation self-service. Whether donors can download previous receipts and edit their address directly in the portal depends on the current setup, so the team confirms those details against your requirements. Please contact WhatsApp at +91 92019 58271: https://wa.me/919201958271, or share your name and mobile number and I can have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "How do you get WhatsApp message templates approved when our donation reminders keep being rejected as promotional?",
+  "a": "WhatsApp templates are reviewed by Meta based on consent, message purpose, wording, variables and whether the content looks like marketing. Donation reminders can be rejected as promotional when they use urgency, appeals, campaign language or an offer instead of being a clear service update linked to an existing donor action. Templates should also include accurate variables and a suitable opt-out route where required. Our WhatsApp rail includes template management and a no-code flow builder. Whether our team drafts, submits, follows up on or rewrites your rejected templates is confirmed against your account and message history. Please share the requirement on WhatsApp at **+91 92019 58271**: https://wa.me/919201958271, or use https://govindaniit.com/contact-us. I can also have someone call you—please send your name, organisation and mobile number.",
+  "pass": false,
+  "reasons": [
+   "It claims the WhatsApp rail includes template management, which is not stated in the ground truth."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "For a catalogue with local delivery and COD, would Shopify or WooCommerce give us better control over pin codes?",
+  "a": "For tighter control over local delivery zones and pin-code rules, WooCommerce is usually the better fit. It gives more room for custom shipping logic, COD conditions, delivery charges and integrations such as Shiprocket, which supports multi-carrier shipping, tracking and COD management. Shopify is better when you want a faster, hosted launch with standard shipping and COD workflows, but highly specific pin-code rules may require app or integration support. The exact pin-code setup should be confirmed by our team against your delivery areas and COD policy. Would you prefer maximum delivery-rule control, or a faster simpler launch?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you migrate products, customer passwords, orders, redirects, and SEO metadata from our existing WooCommerce store?",
+  "a": "We can discuss migrating products, redirects and SEO metadata from your existing WooCommerce store. Customer passwords, customer records and order history depend on how the current store is built, so the team must confirm and scope those specifically rather than promise them in advance. Please share the current store details with our team on WhatsApp at +91 92019 58271: https://wa.me/919201958271. They can also confirm the migration approach and pricing directly. Is keeping existing customer logins the most important requirement?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "If you host the website, can we still move it to our own server later without being locked in?",
+  "a": "It depends on the route. A Give Setu website runs on Govindani Infotech’s platform, and its code is not handed over if you leave; your donor, member, receipt, filing and file data can be exported. If owning and moving the website code matters, the one-time self-hosted WordPress route or a custom Spring Boot and React build is the better fit. The team confirms the exact transfer and contractual terms directly. WhatsApp +91 92019 58271: https://wa.me/919201958271. You can also use https://govindaniit.com/contact-us or share your name and mobile number for a call. Which route are you considering—Give Setu, WordPress, or custom-coded?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "What exactly do you do for SEO after launch—structured data, Core Web Vitals, schema, and Google Search Console setup?",
+  "a": "After launch, our SEO work covers technical checks for site structure, crawlability, index coverage, Core Web Vitals, speed, mobile responsiveness, clean URLs, redirects, canonical tags, sitemap, security and HTTPS. We also set up Analytics and Google Search Console, configure measurement dashboards, and track priority keywords, traffic, leads and conversions. For on-page SEO, we map keywords to search intent, improve SEO titles, meta descriptions, headings, content structure and internal linking. We also implement schema and rich-result markup for FAQs, how-to content and local results, where relevant. Ongoing work can include content strategy, topic clusters, local SEO, Google Business Profile, citations, reviews, backlink strategy and monthly reports with next actions. Details such as which schema types suit your site are confirmed after reviewing the website. You can see the service at https://govindaniit.com/services/seo. Is the site already live and connected to Google Search Console?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "मुझे वेबसाइट चाहिए, लेकिन WhatsApp पर बात नहीं करनी है। क्या आप यहीं पर मोटा-मोटी खर्च बता सकते हैं?",
+  "a": "समझ गया—WhatsApp पर बात करना जरूरी नहीं है। वेबसाइट का सही विकल्प इस बात पर निर्भर करता है कि आप NGO हैं, सामान्य व्यवसाय हैं या ऑनलाइन उत्पाद बेचते हैं। हम NGO और सामान्य व्यवसायों के लिए WordPress वेबसाइट, ऑनलाइन बिक्री के लिए WooCommerce या Shopify, और विशेष जरूरतों के लिए Spring Boot व React पर custom website बनाते हैं। मोटा-मोटी खर्च की पुष्टि हमारी टीम आपकी जरूरत और वेबसाइट के scope के आधार पर सीधे करती है, ताकि आपको generic figure नहीं बल्कि सही quote मिले। आप https://govindaniit.com/contact-us पर enquiry भेज सकते हैं या अपना नाम, organisation और mobile number दें—हमारी टीम आपको call कर लेगी। आपकी संस्था या business किस तरह का है?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "आमच्या संस्थेला देणगीदारांसाठी 80G पावती आणि मराठी भाषेतील पोर्टल दोन्ही हवे आहेत—हे शक्य आहे का?",
+  "a": "हो, हे शक्य आहे. Give Setu मध्ये मराठीसह भारतीय भाषांचा सपोर्ट आहे आणि देणगीदारांसाठी पोर्टल उपलब्ध आहे. प्लॅटफॉर्म 80G पावत्या आपोआप तयार करतो, त्यांना QR पडताळणीसह देतो आणि एकदाच तसेच recurring donations हाताळतो. देणगीदारांना त्यांच्या देणगीचा इतिहास आणि संबंधित सेवा वापरता येतात. तुमच्या संस्थेसाठी Give Setu योग्य ठरेल, विशेषतः 80G पावत्या, देणगीदार व्यवस्थापन आणि मराठीतील डिजिटल अनुभव एकत्र हवा असल्यास. सध्या तुमच्याकडे अंदाजे किती सक्रिय देणगीदार आहेत?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "எங்கள் அறக்கட்டளைக்கு வெளிநாட்டு நன்கொடைகள் உள்ளன; FCRA பதிவுகள் மற்றும் donor receipt download வசதி செய்ய முடியுமா?",
+  "a": "80G ரசீதுகளை தானாக உருவாக்குதல், QR verification, donor records, donor portal மற்றும் தரவு export ஆகியவை Give Setu-வில் உள்ளன. ஆனால் FCRA பதிவுகள் மற்றும் donor portal-ல் பழைய ரசீதுகளை download செய்வது உங்கள் தற்போதைய அமைப்பைப் பொறுத்து குழு உறுதிப்படுத்த வேண்டிய குறிப்பிட்ட அம்சங்கள்; இதை எங்கள் குழு நேரடியாக சரிபார்க்கும். WhatsApp: +91 92019 58271 — https://wa.me/919201958271  \nஉங்கள் பெயர், அறக்கட்டளையின் பெயர் மற்றும் மொபைல் எண்ணை அனுப்புங்கள்; ஒருவர் உங்களை அழைப்பார்.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "আমাদের পুরনো ওয়েবসাইট থেকে নতুন সাইটে গেলে বাংলা কনটেন্ট, URL এবং Google ranking ঠিক থাকবে তো?",
+  "a": "বাংলা কনটেন্ট, ছবি, পেজের URL, redirects এবং SEO metadata সঠিকভাবে স্থানান্তর করা যায়। এতে পুরনো URL থেকে নতুন URL-এ redirect রাখা এবং Google Search Console-এ প্রয়োজনীয় সেটআপ করা হয়, যাতে ranking ও traffic ধরে রাখার সর্বোচ্চ চেষ্টা করা যায়। তবে Google ranking নিশ্চিত করা যায় না—চূড়ান্ত সিদ্ধান্ত Google-এর। ফর্ম, লগইন, ডেটাবেস বা অন্য কোনো integration থাকলে সেগুলো বর্তমান সিস্টেম দেখে টিমকে আলাদাভাবে নিশ্চিত করতে হবে। আপনার পুরনো ওয়েবসাইটটি কোন প্ল্যাটফর্মে তৈরি—WordPress, custom নাকি অন্য কিছু?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "क्या आप असली इंसान हैं या सिर्फ़ ऑटोमेटेड चैटबॉट? मुझे किसी टेक्निकल व्यक्ति से बात करनी है।",
+  "a": "मैं एक AI चैट असिस्टेंट हूँ, इंसान नहीं। मैं आपकी आवश्यकता समझकर सही सेवा तक मार्गदर्शन कर सकता हूँ, और तकनीकी व्यक्ति से बात करने के लिए आपकी जानकारी टीम तक भेज सकता हूँ। आप अपना नाम, संगठन और मोबाइल नंबर भेज दें; टीम का व्यक्ति आपसे संपर्क करेगा। आप सीधे WhatsApp पर भी लिख सकते हैं: +91 92019 58271  \nhttps://wa.me/919201958271",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "તમારી કંપનીએ પહેલાં કોઈ NGO માટે donor portal બનાવ્યું છે? હું live example જોયા વગર વિશ્વાસ કેવી રીતે કરું?",
+  "a": "હા, Govindani Infotech એ 160થી વધુ non-profit organisations માટે web work કર્યું છે. તમે અમારી જાહેર NGO portfolio અહીં જોઈ શકો છો: https://govindaniit.com/portfolio/ngo અને case studies અહીં છે: https://govindaniit.com/pages/case-study\n\nપરંતુ કોઈ NGOનું private donor portal અથવા live client system હું અહીં બતાવવાનો કે reference client ગોઠવવાનો વાયદો નહીં કરું. વિશ્વાસ માટે તમે અમારી જાહેર work, NGO website route અને Give Setuનું scheduled product demonstration જોઈ શકો છો. Give Setuમાં donor CRM, recurring donations, automatic 80G receipts, donor/member portals, campaigns અને Compliance Centre સામેલ છે. ટીમ તમારી જરૂરિયાત પ્રમાણે સીધી સમજ આપશે. WhatsApp પર +91 92019 58271 અથવા https://wa.me/919201958271 પર સંપર્ક કરો, અથવા તમારું નામ અને mobile number મોકલો જેથી કોઈ વ્યક્તિ call કરે. તમારે મુખ્યત્વે NGO website જોઈતી છે કે donor-management system?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Are you the actual development team, or will my project be passed to a freelancer after I share the requirements?",
+  "a": "You’re speaking with an AI assistant. Govindani Infotech has its own WordPress, Shopify and custom-development teams, including full-stack engineers, but whether any part of a specific project involves an external freelancer is something the team confirms for that project. Share your requirements directly with the team on WhatsApp at +91 92019 58271: https://wa.me/919201958271. You can also request a call through https://govindaniit.com/contact-us, and they can explain who will handle the work before you proceed.",
+  "pass": false,
+  "reasons": [
+   "It implies that an external freelancer might handle part of the project, whereas the company’s work is delivered by its own team."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "This is useless if you refuse to answer one simple price question. Why are you hiding the cost, and who can I complain to?",
+  "a": "I understand the frustration. We do not publish or confirm a generic price because the scope changes by platform, features and requirements; our team confirms the correct pricing directly rather than giving you a misleading figure. You can raise a complaint through our contact form at https://govindaniit.com/contact-us or WhatsApp **+91 92019 58271**: https://wa.me/919201958271. I can also have someone call you—please share your name and mobile number.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Your competitor quoted ₹18,000 for a similar website. Can you beat that?",
+  "a": "We do not promise to beat another quote without comparing the actual scope. Govindani Infotech can build WordPress business websites, NGO websites, WooCommerce or Shopify stores, and custom-coded websites; the right comparison depends on pages, payment or donation flows, integrations and content requirements. Our team confirms pricing on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name and mobile number here and I can have someone call you. What type of website are you comparing?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "I only need a rough idea of the cost—please don't ask me to move to WhatsApp.",
+  "a": "Understood—I won’t send you to WhatsApp. We don’t publish rough figures because the scope differs between a business website, online store, NGO system, and custom build. You can use our contact form at https://govindaniit.com/contact-us, or share your name and mobile number here and someone from the team can call you with the applicable pricing. Which are you considering: a business website, online store, NGO system, or custom application?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "What is your cheapest possible package for a small NGO website?",
+  "a": "For a small NGO that mainly needs an online presence and donation collection, the most straightforward fit is a one-time WordPress NGO website. It includes core pages, Razorpay donations, automated donor confirmation emails, downloadable donor certificates, campaign pages with progress bars, volunteer registration, events, blog, gallery, contact forms, SEO basics and an admin walkthrough. If you need automated 80G receipts, 10BD and 10BE compliance, donor CRM, memberships, recurring donations and campaign management, Give Setu is the better fit instead. Our team confirms pricing on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name and mobile number here and I’ll have someone call you. Is your NGO mainly looking for a website and donations, or do you also need compliance and donor management?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you tell me the total price here, including hosting, domain, GST, and maintenance?",
+  "a": "For a website, the total depends on the route—WordPress, WooCommerce, Shopify or custom-coded—and on the pages and features required. Hosting, domain, GST and maintenance terms are confirmed by the team for the specific project. Our team confirms pricing on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name and mobile number here, and I’ll have someone call you. Which type of website are you looking to build?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "I have a budget of ₹25,000. What exactly can you deliver within it?",
+  "a": "The right deliverable depends first on what you need to fix. For a business needing an online presence, the suitable route is usually a WordPress website; for selling products, WooCommerce or Shopify; for a non-profit needing 80G receipts, donor records and compliance, Give Setu or an NGO website build. Our team confirms pricing and exact scope directly on WhatsApp so you get the right deliverables for your requirement, not a generic package: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name and mobile number here, and I can have someone call you. What does your organisation do, and what should the website or system achieve?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Why do you hide the price behind WhatsApp? Just give me a starting figure.",
+  "a": "We are not hiding it. A WordPress business site, an online store, a custom-coded platform and an NGO system are different solutions, so a generic starting figure can mislead you. Our team confirms pricing on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp **+91 92019 58271** (https://wa.me/919201958271). What are you looking to build — a business website, an online store, a custom platform, or an NGO system? You can also share your name and mobile number here and I’ll have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We were quoted less by a freelancer. What makes your service worth paying more for?",
+  "a": "A freelancer may be the better fit for a small, straightforward website. Our value is in the wider delivery capability: WordPress, Shopify, WooCommerce and custom Spring Boot–React builds, with structured design, development, testing, SEO-ready setup, integrations and administration walkthroughs. Govindani Infotech has built 650+ websites, 160+ non-profit websites and custom platforms across industries. The right comparison is not only the quote; it is what is included, who handles the work, and whether the solution can support your next stage. If your requirement is simple, we will say so rather than push a larger build. Our team confirms pricing on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name and mobile number here, and someone can call you. What are you comparing at the moment: a business website, an online store, or a custom system?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "If I pay today, can you offer a discount? I don't want a sales call.",
+  "a": "I can’t approve a discount or confirm payment terms in chat. Those commercial terms are settled by the team based on the exact scope. You don’t need to take a sales call. Please message WhatsApp at +91 92019 58271: https://wa.me/919201958271, or use the contact form at /contact-us. The team can respond there with the applicable terms.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you give me a ballpark amount for rebuilding our outdated website?",
+  "a": "We can rebuild it on WordPress for a manageable, editable website, Shopify or WooCommerce if you sell online, or Spring Boot and React if you need a fully custom system. The work can cover responsive design, content structure, SEO-friendly setup, forms, payments or integrations where relevant, testing and launch. We do not give ballpark figures in chat. Our team confirms pricing on WhatsApp so you get the right number for your requirement: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name and mobile number here, and I can have someone call you. What does your organisation or business do?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can donors automatically receive an 80G receipt after making a payment, or will our staff need to send it manually?",
+  "a": "Donors can receive 80G receipts automatically after payment. Give Setu issues them in under four seconds with immutable, gapless numbering and QR verification. It also supports WhatsApp receipt delivery and donor portals. A WordPress NGO website can provide downloadable donor certificates and automated confirmation emails, but if you need automated 80G receipting, compliance workflows and donor records together, Give Setu is the better fit. Which setup are you using today?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "How would you handle FCRA donations separately from domestic donations in the same portal?",
+  "a": "Separate handling of FCRA and domestic donations is exactly the kind of requirement our team confirms against your current setup and compliance workflow. Please contact Govindani Infotech on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or use https://govindaniit.com/contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can our NGO team download donor-wise reports, recurring donation data, and campaign performance from the admin panel?",
+  "a": "Yes, Give Setu provides donor records with giving timelines, donor segments, recurring-donation management, campaign pages, tracking links and live progress tracking. Donor, receipt, filing and file data can also be exported in full; the WordPress NGO route supports donor-data export in CSV and Excel formats. A separate downloadable report specifically for recurring donations or campaign-performance metrics is not explicitly defined in the product details, so the team should confirm that against your setup. Which platform are you using today — Give Setu or a WordPress NGO website?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Who owns the website, source code, domain, and database if we stop using your service later?",
+  "a": "For website, source code, domain and database ownership, the team confirms the position against your chosen route and contract; Give Setu websites run on Govindani Infotech’s platform, and the platform code is not handed over when the plan ends, while your donor, member, receipt, filing and file data can be exported in full. Please confirm the exact terms with the team on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or through https://govindaniit.com/contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We already have a WordPress site with years of blog posts. Can you migrate it without breaking URLs or SEO?",
+  "a": "Yes, the migration can cover your blog content, media, existing URLs, redirects and SEO metadata. The process is designed to preserve your URL structure and search visibility, but no agency can guarantee Google rankings or traffic after a migration. If your site also has member logins, forms, databases or third-party integrations, those depend on how the current site is built and the team will scope them specifically. Are you moving to a new WordPress build or to another platform?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "For an online store with about 300 products and Razorpay payments, would you recommend Shopify or WooCommerce?",
+  "a": "For about 300 products with Razorpay, I’d generally recommend **WooCommerce**. It gives you a WordPress store with product management, inventory, customer accounts, coupons, analytics, SEO support and Razorpay payment integration, while leaving more room for custom checkout, shipping and catalogue features as the store grows. Choose Shopify if your priority is a faster hosted launch with less technical administration. Shopify is better suited when you want a managed commerce platform and your requirements are close to standard e-commerce workflows. We can build either route; the e-commerce work is described at https://govindaniit.com/services/ecommerce. Is your main priority easier day-to-day management, or more control over custom features and checkout?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you get WhatsApp utility and marketing templates approved, or do we have to deal with Meta ourselves?",
+  "a": "The WhatsApp platform supports utility and marketing message templates, along with a flow builder, but whether our team drafts, submits, follows up on, or revises templates for Meta approval is a requirement the team confirms against your setup. Please contact WhatsApp at +91 92019 58271 (https://wa.me/919201958271) or use https://govindaniit.com/contact-us, and someone can call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "If our current hosting company is slow, can you move the site with zero downtime and preserve our email accounts?",
+  "a": "Website content, media, URLs, redirects and SEO metadata can be handled as part of a migration. However, zero downtime cannot be guaranteed, and preserving email accounts depends on how your current hosting and mail setup are configured. This is exactly the kind of migration detail the team confirms against the existing setup. Please contact Govindani Infotech on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or share your name and mobile number and I’ll have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Will your SEO work include schema, technical audits, Google Search Console setup, and tracking actual leads?",
+  "a": "Yes. Our SEO service includes technical SEO audits covering site structure, crawlability, index coverage, Core Web Vitals, speed, mobile experience, redirects, canonical tags, sitemap setup, security and HTTPS checks. It also includes schema and rich-snippet work for FAQs, how-to content and local results, plus Google Analytics and Search Console setup. For measurement, reporting covers traffic, leads, conversions and next actions, along with priority-keyword tracking and monthly performance reports. SEO is designed to improve visibility and organic traffic, but rankings and lead volumes cannot be guaranteed. The team confirms the exact scope directly on WhatsApp so you get the right plan for your website: WhatsApp +91 92019 58271 (https://wa.me/919201958271). I can also have someone call you—please share your name, organisation and mobile number.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "क्या आप पहले पूरा काम दिखाकर फिर भुगतान लेने का विकल्प देते हैं?",
+  "a": "यह भुगतान चरणों और डिलीवरी की शर्तों पर निर्भर करता है, जिन्हें हमारी टीम आपके प्रोजेक्ट के अनुसार सीधे तय करती है। WhatsApp पर संपर्क करें: +91 92019 58271 (https://wa.me/919201958271), या अपना नाम और मोबाइल नंबर भेजें—टीम आपसे कॉल पर बात कर लेगी।",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "WhatsApp par baat nahi karni hai—kya aap email par requirements aur estimate bhej sakte ho?",
+  "a": "Haan, WhatsApp zaroori nahi hai. Aap apni requirements /contact-us par bhej sakte hain; team email ke madhyam se details samjhegi aur requirement ke hisaab se estimate confirm karegi. Pricing team directly confirm karti hai, kyunki scope ke hisaab se badalti hai. Agar aap chahein to main kisi team member se call karwa sakta hoon—apna naam aur mobile number bhej dijiye?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "तुम लोग असली इंसान हो या सिर्फ chatbot? मेरे सवाल का सीधा जवाब दो।",
+  "a": "मैं एक AI chatbot हूँ, असली इंसान नहीं। मैं Govindani Infotech की सेवाओं के बारे में जानकारी दे सकता हूँ, और जरूरत होने पर आपको हमारी टीम से जोड़ सकता हूँ।",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "तुमच्या टीमने वेबसाइट बनवल्यावर आमच्या कर्मचाऱ्यांना ती स्वतः अपडेट करता येईल का?",
+  "a": "हो. WordPress वेबसाइटमध्ये तुमच्या टीमला डॅशबोर्डमधून पेजेस, ब्लॉग व न्यूज, प्रोग्राम्स, इव्हेंट्स, गॅलरी, टीम मेंबर्स, testimonials आणि इतर कंटेंट स्वतः अपडेट करता येतो. NGO वेबसाइटसाठी वेगवेगळ्या admin permissions आणि प्रमुख कामांसाठी tutorial videos व walkthroughsही दिले जातात. Give Setu मध्येही वेबसाइटचे content management system समाविष्ट असते, त्यामुळे वेगळ्या developer शिवाय पेजेस बदलता येतात. Custom-coded वेबसाइटमध्ये admin panel आणि editing सुविधा तुमच्या workflowनुसार टीमकडून confirm केल्या जातात. तुम्हाला WordPress वेबसाइट हवी आहे की Give Setu मधील वेबसाइट?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "எங்கள் அறக்கட்டளைக்கு தமிழ் மற்றும் ஆங்கிலம் இரண்டிலும் நன்கொடை ரசீது தானாக அனுப்ப முடியுமா?",
+  "a": "Give Setu தமிழ் மற்றும் ஆங்கிலம் உட்பட பல மொழிகளை ஆதரிக்கிறது; 80G ரசீதுகளை தானாக உருவாக்கி அனுப்பும் வசதியும் உள்ளது. ஒரே ரசீதை தமிழ் மற்றும் ஆங்கிலம் இரண்டிலும் வெளியிடுவது உங்கள் அமைப்பின் தேவைக்கு ஏற்ப குழுவால் உறுதிப்படுத்தப்படும் — WhatsApp +91 92019 58271: https://wa.me/919201958271 அல்லது /contact-us வழியாக அணுகலாம்.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "আপনারা কি শুধু ওয়েবসাইট বানান, নাকি পুরনো ডেটা ও সদস্যদের তথ্যও নিরাপদে মাইগ্রেট করেন?",
+  "a": "আমরা শুধু ওয়েবসাইট বানাই না—পুরনো কনটেন্ট, মিডিয়া, URL, redirects এবং SEO metadata মাইগ্রেশনের কাজও করি। তবে database, password hash, member records, login forms বা integrations কীভাবে মাইগ্রেট হবে, তা বর্তমান সিস্টেমের ওপর নির্ভর করে; এই অংশটি টিম সরাসরি যাচাই করে scope করে। আপনার বর্তমান সিস্টেম ও প্রয়োজন অনুযায়ী টিমের সঙ্গে নিশ্চিত করতে WhatsApp করুন: +91 92019 58271 (https://wa.me/919201958271)। চাইলে আপনার নাম ও মোবাইল নম্বর দিন, আমি কলের অনুরোধ পাঠাতে পারি। বর্তমানে ডেটা কোন প্ল্যাটফর্ম বা সফটওয়্যারে আছে?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "આટલા બધા સવાલો પૂછ્યા પછી પણ જો તમે સીધી માહિતી નહીં આપો તો હું બીજા ડેવલપર પાસે જઈશ—તમારી ટીમ ખરેખર શું અલગ કરે છે?",
+  "a": "તમારી વાત યોગ્ય છે—સીધી માહિતી મળવી જોઈએ. અમારી ટીમનો ફરક માત્ર વેબસાઇટ બનાવવામાં નથી; અમે તમારી જરૂરિયાત પ્રમાણે યોગ્ય રસ્તો પસંદ કરીએ છીએ. જો તમને માત્ર સારી દેખાતી અને સંચાલિત કરી શકાય તેવી વેબસાઇટ જોઈએ, તો WordPress યોગ્ય છે અને હેન્ડઓવર વખતે સોર્સ એક્સેસ તથા એડમિનિસ્ટ્રેશન આપવામાં આવે છે. જો તમે પ્રોડક્ટ વેચો છો, તો WooCommerce અથવા Shopify સાથે કેટલોગ, ચેકઆઉટ, પેમેન્ટ, શિપિંગ અને ઓર્ડર મેનેજમેન્ટ જોડાય છે. NGO માટે Give Setu વેબસાઇટ સાથે 80G રસીદ, donor CRM, recurring donations, membership, campaigns અને compliance એક જ સિસ્ટમમાં આપે છે. અને જો તમારો workflow સામાન્ય પ્લેટફોર્મમાં બંધાતો ન હોય, તો Spring Boot અને React પર custom-coded system બનાવી શકાય છે. અમે યોગ્ય વિકલ્પ, તેની મર્યાદા અને શું હેન્ડઓવર થશે તે સ્પષ્ટ કહીએ છીએ—ઉદાહરણ તરીકે Give Setuમાં વેબસાઇટ પ્લેટફોર્મ સાથે ચાલે છે અને તેનો કોડ હેન્ડઓવર થતો નથી; કોડની માલિકી મહત્વની હોય તો one-time WordPress અથવા custom build યોગ્ય છે. તમે કયા પ્રકારનું કામ કરો છો—બિઝનેસ, NGO કે online store?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Your competitor said they can build our NGO site for ₹18,000. Can you beat that, or should I not waste time here?",
+  "a": "I can’t confirm or beat another agency’s quote here. For an NGO that mainly needs a professional presence and donation collection, the right comparison is a one-time WordPress NGO website with Razorpay donations, donor confirmation emails, downloadable certificates, campaign pages, volunteer registration, events, blog, SEO setup and an administration walkthrough. If you need automated 80G receipts, 10BD/10BE compliance, donor CRM, membership, cases and campaigns, Give Setu is the more suitable route. Our team confirms pricing directly on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name and mobile number here and I’ll have someone call you. Which matters more for your organisation: a straightforward website and donations, or complete receipting and compliance?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "I don't want to move to WhatsApp just to hear a price. Can you give me at least a ballpark here?",
+  "a": "I understand. I can’t give a ballpark or confirm a figure here. Pricing is confirmed by the team based on the actual scope, so you get the right number rather than a generic estimate. You can use the contact form at /contact-us, or share your name and mobile number and I’ll have someone call you. Which service are you considering: a business website, e-commerce, WhatsApp automation, marketing, or Give Setu?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Is there a cheaper package if I provide the content, logo, and photos myself?",
+  "a": "Providing your own content, logo and photos can reduce the work involved, since we can use those assets instead of creating them. The final scope still depends on whether you need a business website, online store, or other features. Our team confirms pricing on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271  \nhttps://wa.me/919201958271\n\nYou can also share your name and mobile number, and I’ll have someone call you. What is the website for?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We have almost no budget this month—can you tell me the lowest possible cost before I explain the project?",
+  "a": "I can’t quote or confirm a lowest price in chat. The leanest route depends on what you need: a simple business or organisation presence usually points to a WordPress website; product sales point to WooCommerce or Shopify; a non-profit needing 80G receipts, donor records and compliance should consider Give Setu. Our team confirms pricing on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271 (https://wa.me/919201958271). They can also call you. What are you trying to build, and is it for a business, a non-profit or online product sales?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Another agency quoted ₹42,000 including hosting and maintenance. What would your equivalent cost be?",
+  "a": "The equivalent depends on the scope: number of pages, platform, features, integrations, and whether you need a business website, WooCommerce store, Shopify store, or custom-coded build. We can compare the inclusions properly rather than comparing only the headline figure. Our team confirms pricing on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name and mobile number here and I’ll have someone call you. Is this for a business website, an online store, or a custom application?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Do you charge separately for every small change after launch, or is that covered in the amount you quote on WhatsApp?",
+  "a": "Whether post-launch changes are included or handled separately depends on the project scope and the maintenance terms. The team confirms those details directly, so there is no ambiguity after launch. Pricing and inclusions are confirmed on WhatsApp based on your actual requirement: +91 92019 58271 (https://wa.me/919201958271). I can also have someone call you—please share your name, organisation and mobile number?",
+  "pass": false,
+  "reasons": [
+   "It assures that there will be no ambiguity after launch, which is an unsupported absolute promise."
+  ],
+  "severity": "high"
+ },
+ {
+  "q": "Can I pay in two stages instead of paying the full website amount upfront?",
+  "a": "Payment schedules, including whether a website can be paid in two stages, are settled directly by the team and depend on the project terms. I can’t confirm that here. Please message Govindani Infotech on WhatsApp at +91 92019 58271: https://wa.me/919201958271. You can also share your name and mobile number here, and someone can call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "If I only need a one-page campaign website, what kind of budget should I keep? Please don't just tell me to WhatsApp.",
+  "a": "For a one-page campaign website, a focused WordPress landing-page build is usually the right starting point rather than a full platform. It can present the campaign clearly, work across mobile and desktop, support your brand identity, and be structured for SEO and lead or donation actions. If this is for an NGO, we can also consider the NGO WordPress route with campaign pages, donation collection, progress tracking and donor confirmations; the exact scope depends on what the campaign needs. I won’t give you a made-up budget. Our team confirms pricing directly so you get the right number for the actual page, content and integrations—not a generic quote. You can reach them on WhatsApp at +91 92019 58271: https://wa.me/919201958271, use the contact form at /contact-us, or share your mobile number and I can have someone call you. Is the campaign for a non-profit or for a business or brand?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are a small trust and need a very basic website. Is there a nonprofit rate, and where do I ask about it?",
+  "a": "For a small trust that mainly needs an online presence and donation collection, a straightforward WordPress NGO website is likely the right fit. It can include programme pages, donation collection through Razorpay, donor confirmation emails, downloadable certificates, volunteer registration, events, blog, gallery and basic SEO features. Non-profit pricing is confirmed directly by our team based on the website scope. Please ask on WhatsApp at +91 92019 58271: https://wa.me/919201958271. You can also use the contact form at /contact-us or share your name and mobile number here for a call from the team.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can your donation form automatically issue receipts showing the donor's name, PAN, address, 80G details, and transaction ID?",
+  "a": "Yes, the donation system automatically issues 80G receipts, with immutable numbering and QR verification. It also stores donor records, including PAN recovery, and supports downloadable donor certificates. The exact receipt fields—such as the donor’s address, PAN display, and transaction ID—depend on the form and payment-gateway setup, so the team confirms those details directly. Please contact WhatsApp at +91 92019 58271: https://wa.me/919201958271, or share your name and mobile number and I can have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Our NGO receives foreign donations. Can the site handle FCRA-related donor records without exposing sensitive information?",
+  "a": "Give Setu can manage donor records, giving timelines, donor segments, PAN recovery, duplicate merging, donor and member portals, audit trails, and—on the Advanced route—custom roles with field masking. It also supports website and donor data in one register. FCRA-specific record fields, access rules, retention requirements, and whether your exact sensitive-information workflow is supported are details the team confirms against your setup. Pricing and implementation details are confirmed directly by the team on WhatsApp: +91 92019 58271 (https://wa.me/919201958271). You can also use the contact form at /contact-us, or share your name, organisation and mobile number and I’ll have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "I need separate dashboards for donors, volunteers, and staff—can permissions be configured so volunteers cannot see donation data?",
+  "a": "Give Setu supports donor and member portals, while staff access can use admin seats, custom roles and field masking on the Advanced route. WordPress supports multiple admin roles with individual permissions; however, separate volunteer dashboards and whether donation data can be fully hidden depend on your current setup, so the team must confirm that detail. Please share which platform you are considering—Give Setu, WordPress, or a custom build? Pricing and configuration are confirmed directly by our team on WhatsApp: +91 92019 58271 (https://wa.me/919201958271). You can also use the contact form at /contact-us, or share your name and mobile number if you would like someone to call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you connect a donor portal to Razorpay and automatically reconcile failed, refunded, and recurring payments?",
+  "a": "Give Setu supports donor portals, Razorpay donations, recurring donations and donor records. Automatic reconciliation of failed, refunded and recurring Razorpay payments is a specific workflow the team must confirm against your current setup, so I won’t promise it here. Please contact the team on WhatsApp at +91 92019 58271: https://wa.me/919201958271. They can also arrange a call. Which system is your donor portal currently running on?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "WhatsApp template messages keep getting rejected by Meta. Do you help prepare templates that are more likely to be approved?",
+  "a": "Our WhatsApp platform includes template messaging and a flow builder. Rejections commonly happen when a template is promotional but submitted as utility, uses unclear consent or opt-out language, contains misleading claims, or has variables and links that do not match the message purpose. Whether our team prepares, submits, follows up on, or rewrites templates for Meta approval is confirmed against your setup. Contact WhatsApp at +91 92019 58271: https://wa.me/919201958271, or share your name and mobile number and we can have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are moving from Wix to WordPress. Can you migrate pages, SEO URLs, forms, images, and old blog posts without breaking Google rankings?",
+  "a": "Yes, the team can migrate your Wix pages, blog posts, images, SEO metadata, URLs and redirects to WordPress. The migration is designed to preserve your existing URL structure and help maintain search visibility, but no agency can guarantee Google rankings because Google controls the final outcome. Forms and their connected workflows depend on how your current Wix setup is built, so the team confirms and scopes those separately. Which form functionality must be retained?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "For a 12,000-product store, would you recommend Shopify or WooCommerce if we need regional tax rules and several payment gateways?",
+  "a": "It gives more flexibility for custom tax logic, product variations, gateway configuration, bulk product management and integrations. Our WooCommerce route includes catalogue, inventory, tax calculation, multiple payment gateways, bulk uploads, export reports, API access and webhooks. Shopify is the better fit when you want a faster hosted launch with less technical maintenance, but the exact tax rules and gateway compatibility should be confirmed against your selling regions and checkout requirements. You can see the e-commerce route at https://govindaniit.com/services/ecommerce. Which regions will you be selling to?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "If our existing hosting expires during migration, how will you prevent the website and email accounts from going offline?",
+  "a": "This is the kind of migration and service-continuity requirement the team confirms against the specifics of your current hosting, DNS and email setup. Please contact the team on WhatsApp at +91 92019 58271 (https://wa.me/919201958271) or use /contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you show me whether your developers are real people or am I chatting with an automated sales bot?",
+  "a": "You’re chatting with an automated AI sales assistant, not a human developer. I won’t pretend to be a staff member. The development work is done by Govindani Infotech’s team. The company is based in Pune and has WordPress, Shopify and full-stack developers, including a dedicated coding team for Spring Boot and React projects. You can learn about the company at https://govindaniit.com/about-us/about-company and view public work at https://govindaniit.com/portfolio/business, https://govindaniit.com/portfolio/ngo and https://govindaniit.com/pages/case-study. For direct confirmation from the team, contact WhatsApp at +91 92019 58271: https://wa.me/919201958271. You can also use https://govindaniit.com/contact-us. Would you like someone from the team to call you?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Who exactly will own the source code, domain, hosting account, and admin credentials after the project is delivered?",
+  "a": "Ownership of the source code, domain, hosting account and admin credentials is a contractual project detail that the team confirms directly for the specific build. Please contact WhatsApp at +91 92019 58271: https://wa.me/919201958271. I can also have someone call you—please share your name, organisation and mobile number.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can I speak to one previous client in the education sector before trusting your company?",
+  "a": "I can’t arrange a private conversation with a previous client or provide a client as a referee. You can review our public case studies at https://govindaniit.com/pages/case-study, and our team can answer questions about relevant education-sector work directly via WhatsApp at +91 92019 58271: https://wa.me/919201958271.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ }
+]

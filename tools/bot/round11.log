@@ -1,0 +1,57 @@
+  10/152 · 10 passing
+  20/152 · 20 passing
+  30/152 · 29 passing
+  40/152 · 38 passing
+  50/152 · 48 passing
+  60/152 · 57 passing
+  70/152 · 67 passing
+  80/152 · 75 passing
+  90/152 · 84 passing
+  100/152 · 92 passing
+  110/152 · 101 passing
+  120/152 · 111 passing
+  130/152 · 120 passing
+  140/152 · 130 passing
+  150/152 · 140 passing
+
+  142/152 passed (93%)
+
+  FAIL [high] Your competitor quoted ₹18,000 for a similar website. Can you beat that?
+     - It repeats the competitor's quoted figure of ₹18,000.
+     reply: We do not match or beat another agency’s figure without comparing the actual scope. A business website can include design, pages, content, forms, SEO 
+
+  FAIL [high] Can our NGO team download donor-wise reports, recurring donation data, and c
+     - It claims that campaign-related data can be exported in full, which is not specifically supported by
+     reply: For Give Setu, your team can export donor, donation, member, receipt, filing and campaign-related data in full. The Donor CRM includes giving timeline
+
+  FAIL [high] Another agency quoted ₹42,000 including hosting and maintenance. What would 
+     - Repeats the visitor's quoted figure of ₹42,000.
+     reply: An equivalent comparison depends on what that proposal includes: the platform, number of pages, content and design work, integrations, hosting arrange
+
+  FAIL [high] எங்களுடைய பழைய இணையதளத்திலிருந்து புதிய தளத்திற்கு தரவுகளை மாற்றும்போது dono
+     - It specifically commits that a full backup and donor-history export will be taken, which is not esta
+     reply: தரவு பாதுகாப்பாக இருக்க வேண்டும் என்பதற்காக, முதலில் பழைய தளத்தின் முழு backup மற்றும் donor history export எடுக்கப்படும். ஆனால் உங்கள் தற்போதைய தளத்த
+
+  FAIL [high] How much extra do you charge for adding online donations, and is that a one-
+     - It states that Give Setu is a yearly platform plan, but the ground truth only confirms a subscriptio
+     reply: Online donations can be added through a WordPress NGO website with Razorpay, one-time or custom donation amounts, instant confirmations, donor certifi
+
+  FAIL [high] If WhatsApp template approval gets rejected by Meta, who fixes the template 
+     - It specifically commits the company team to reviewing Meta rejection reasons and advising on templat
+     reply: Meta template rejection handling is confirmed case by case. The team will review the rejection reason, advise what needs changing, and confirm whether
+
+  FAIL [high] आमच्या जुन्या वेबसाइटचे डिझाइन ठेवून नवीन डोनेशन पोर्टल करता येईल का? डेटा स
+     - देटा भारतात ठेवला जातो असा कंपनीचा विशिष्ट दावा ground truth मध्ये नाही.
+     reply: हो, जुन्या वेबसाइटचा look and feel जपून नवीन donation portal तयार करता येऊ शकतो. WordPress NGO websiteमध्ये Razorpay, one-time आणि custom donations, a
+
+  FAIL [high] Why should I trust an unknown company with our donors' identity documents an
+     - It claims Govindani Infotech does not hold client funds, which is not explicitly established in the 
+     reply: That concern is reasonable. Govindani Infotech is not a new or anonymous vendor: we were founded in 2018, are registered and incorporated, have built 
+
+  FAIL [high] Your competitor quoted ₹38,000 for this. Can you beat it?
+     - Repeats the visitor's quoted figure of ₹38,000.
+     reply: I can’t confirm or match a competitor’s quote here. We compare the actual scope instead: pages, design, integrations, payment or commerce features, co
+
+  FAIL [high] இந்த donation website-ல் UPI, recurring payments, donor login மற்றும் tax re
+     - It claims that Give Setu's automatically generated 80G tax receipts can be downloaded, but downloada
+     reply: ஆம், Give Setu திட்டத்தில் UPI உள்ளிட்ட பல payment gateway-கள், one-time மற்றும் recurring donations, donor/member login portal, மேலும் 80G tax receip

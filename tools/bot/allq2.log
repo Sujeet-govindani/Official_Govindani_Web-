@@ -1,0 +1,61 @@
+  10/229 · 10 passing
+  20/229 · 19 passing
+  30/229 · 29 passing
+  40/229 · 38 passing
+  50/229 · 47 passing
+  60/229 · 57 passing
+  70/229 · 67 passing
+  80/229 · 77 passing
+  90/229 · 87 passing
+  100/229 · 96 passing
+  110/229 · 106 passing
+  120/229 · 115 passing
+  130/229 · 124 passing
+  140/229 · 134 passing
+  150/229 · 144 passing
+  160/229 · 154 passing
+  170/229 · 163 passing
+  180/229 · 173 passing
+  190/229 · 183 passing
+  200/229 · 192 passing
+  210/229 · 201 passing
+  220/229 · 211 passing
+
+  220/229 passed (96%)
+
+  FAIL [high] How do you get WhatsApp message templates approved when our donation reminde
+     - It claims the team may draft, submit, follow up on, or rewrite rejected WhatsApp templates, which is
+     reply: Template approval and handling Meta rejections is exactly the kind of detail our team confirms against your account and message use case. The WhatsApp
+
+  FAIL [high] Can you give me a ballpark amount for rebuilding our outdated website?
+     - Contains more than one question mark.
+     reply: The right rebuild route depends mainly on whether this is a business, non-profit, or an online store. We handle WordPress rebuilds, WooCommerce or Sho
+
+  FAIL [high] આટલા બધા સવાલો પૂછ્યા પછી પણ જો તમે સીધી માહિતી નહીં આપો તો હું બીજા ડેવલપર 
+     - It claims the company does not push customers toward larger plans and recommends a direct fit, which
+     reply: તમારી વાત યોગ્ય છે—તમને પહેલા ઉપયોગી માહિતી મળવી જોઈએ. Govindani Infotechની ખાસિયત માત્ર વેબસાઇટ બનાવવામાં નથી, પણ યોગ્ય પ્લેટફોર્મ પસંદ કરવામાં છે: સ
+
+  FAIL [high] आमच्या जुन्या वेबसाइटचे डिझाइन ठेवून नवीन डोनेशन पोर्टल करता येईल का? डेटा स
+     - It claims that Give Setu data is stored in India, which is not supported by the ground truth.
+     - The unsupported India data-storage claim could mislead the visitor about data hosting and security.
+     reply: जुन्या वेबसाइटची visual identity जपून नवीन donation portal तयार करण्याचा मार्ग उपलब्ध आहे. NGO साठी WordPress buildमध्ये Razorpay donations, custom do
+
+  FAIL [high] Who submits WhatsApp template messages for approval, and what happens if Met
+     - It claims the WhatsApp platform includes a template section, which is not supported by the ground tr
+     reply: The WhatsApp platform includes a template section and flow builder. Whether our team drafts, submits, follows up on, or rewrites a template after Meta
+
+  FAIL [high] இந்த donation website-ல் UPI, recurring payments, donor login மற்றும் tax re
+     - It specifically claims that Give Setu provides UPI support and downloadable tax receipts, but the gr
+     reply: ஆம், இது எந்த route தேர்வு செய்கிறீர்கள் என்பதைக் பொறுத்தது. **Give Setu** மூலம் UPI மற்றும் பல payment gateways, one-time மற்றும் recurring donations
+
+  FAIL [high] ನಮ್ಮ ವೆಬ್‌ಸೈಟ್ ದೃಷ್ಟಿಹೀನ ಬಳಕೆದಾರರಿಗೆ ಸುಲಭವಾಗಿ ಬಳಸುವಂತಿದೆ ಎಂಬುದನ್ನು ನೀವು ಹೇಗೆ
+     - It commits the company to screen-reader compliance and an accessibility audit, which are not stated 
+     reply: ದೃಷ್ಟಿಹೀನ ಬಳಕೆದಾರರಿಗೆ screen-reader compliance ಮತ್ತು accessibility audit ಕುರಿತು ನಿಖರವಾದ ವಿಧಾನವನ್ನು ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ನ ಅಗತ್ಯಗಳಿಗೆ ಅನುಗುಣವಾಗಿ ನಮ್ಮ ತಂಡವೇ 
+
+  FAIL [high] What would you say if I told you another web agency is more experienced than
+     - The reply directs the visitor to https://govindaniit.com/portfolio/business, a portfolio path not su
+     reply: I wouldn’t argue with that without knowing how they define “more experienced.” Govindani Infotech has been operating since 2018, with 650+ websites, 1
+
+  FAIL [high] మా సంస్థకు తెలుగు భాషలో వెబ్‌సైట్ కావాలి; కంటెంట్ అనువాదం మరియు స్థానికీకరణన
+     - It presents content translation, localization, bilingual page construction, and language-switching a
+     reply: తెలుగు భాషా వెబ్‌సైట్‌కు WordPress, Shopify లేదా custom-coded website మార్గాలు ఉన్నాయి. మీరు NGO అయితే Give Setuలో తెలుగు సహా తెలుగు, హిందీ, మరాఠీ, గు

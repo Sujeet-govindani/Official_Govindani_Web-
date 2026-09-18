@@ -1,0 +1,6069 @@
+[
+ {
+  "q": "Hamare 900 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "On Starter, we issued 4,000 receipts in one month. What is the overage?",
+  "must": [
+   "2,700",
+   "2700"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 4,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "2,700",
+   "2700"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 15,000 receipts ban gayi — extra charge kitna?",
+  "must": [
+   "0",
+   "included",
+   "koi extra",
+   "nahi lagega",
+   "no extra",
+   "shunya",
+   "zero"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage zero"
+ },
+ {
+  "q": "Starter पर एक महीने में 5,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "3,600",
+   "3600"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth mein usage bill kis amount ke baad aata hai?",
+  "must": [
+   "1,500",
+   "1500"
+  ],
+  "must_not": [
+   "500",
+   "5000"
+  ],
+  "tag": "usage threshold"
+ },
+ {
+  "q": "Advanced plan mein live cases par kya charge hai?",
+  "must": [
+   "free",
+   "muft",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "unlimited free"
+ },
+ {
+  "q": "At what accrued amount does Starter raise a usage bill?",
+  "must": [
+   "500"
+  ],
+  "must_not": [
+   "1500",
+   "5000"
+  ],
+  "tag": "usage threshold"
+ },
+ {
+  "q": "Advanced plan mein saal ka kitna dena hoga?",
+  "must": [
+   "80,000",
+   "80000"
+  ],
+  "must_not": [
+   "25000",
+   "45000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "We manage 5,000 active donors. Which plan do we need?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "apple developer account ki cost batao",
+  "must": [
+   "8,500",
+   "8500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "11,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth पर एक महीने में 12,500 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "5,250",
+   "5250"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Hamari list mein 30,000 log hain but active donors sirf 4,000 hain. Kaunsa plan?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "active-not-list"
+ },
+ {
+  "q": "Advanced पर एक महीने में 15,100 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "50"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "How much is the advanced website build value?",
+  "must": [
+   "2,50,000",
+   "250,000",
+   "250000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "2,500 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced पर एक महीने में 45,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "15,000",
+   "15000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Hamare 75,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "whatsapp business setup ke liye kitna dena hoga?",
+  "must": [
+   "3,000",
+   "3000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Hamare paas 20,000 purane sleeping donor records hain — inka charge lagega?",
+  "must": [
+   "free",
+   "koi charge nahi",
+   "muft",
+   "nahi lagega",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "sleeping free"
+ },
+ {
+  "q": "On Advanced, we issued 19,000 receipts in one month. What is the overage?",
+  "must": [
+   "2,000",
+   "2000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced mein extra receipt ka per-piece charge kya hai?",
+  "must": [
+   "0.50"
+  ],
+  "must_not": [
+   "0.70",
+   "0.90"
+  ],
+  "tag": "overage rate"
+ },
+ {
+  "q": "Advanced पर एक महीने में 30,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "7,500",
+   "7500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Monthly included receipts on Starter?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "15000",
+   "5000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "Growth plan mein transactional email jaise receipts aur confirmations par kya charge hai?",
+  "must": [
+   "asimit",
+   "free",
+   "muft",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "unlimited free"
+ },
+ {
+  "q": "Hamare 750 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "How much is the cold vault per year?",
+  "must": [
+   "499"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Growth में कितने सदस्य जोड़ सकते हैं?",
+  "must": [
+   "3,000",
+   "3000"
+  ],
+  "must_not": [
+   "1000",
+   "10000"
+  ],
+  "tag": "members"
+ },
+ {
+  "q": "android app ke liye kitna dena hoga?",
+  "must": [
+   "30,000",
+   "30000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 2,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "900"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 19,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "2,000",
+   "2000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "both apps bundle ke liye kitna dena hoga?",
+  "must": [
+   "1,00,000",
+   "100,000",
+   "100000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 5,500 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "350"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "On Growth, we issued 12,500 receipts in one month. What is the overage?",
+  "must": [
+   "5,250",
+   "5250"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Hamare 7,500 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "We manage 50,000 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth plan mein mahine ke kitne 80G receipts included hain?",
+  "must": [
+   "5,000",
+   "5000"
+  ],
+  "must_not": [
+   "1000",
+   "15000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "25,001 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "100,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Hamare 1,800 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced mein usage bill kis amount ke baad aata hai?",
+  "must": [
+   "5,000",
+   "5000"
+  ],
+  "must_not": [
+   "1500",
+   "500"
+  ],
+  "tag": "usage threshold"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 25,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "14,000",
+   "14000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced plan kitne donors handle kar sakta hai?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "10000",
+   "2000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Starter plan budget mein kitna rakhna padega?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "45000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "1,500 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter ka email limit kitna hai per month?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "2500",
+   "25000"
+  ],
+  "tag": "email allowance"
+ },
+ {
+  "q": "Advanced पर एक महीने में 75,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "30,000",
+   "30000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "How much is the ios app?",
+  "must": [
+   "30,000",
+   "30000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "What does the Growth plan cost?",
+  "must": [
+   "45,000",
+   "45000"
+  ],
+  "must_not": [
+   "25000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Apple developer account kiske naam par lena hota hai, kitne ka?",
+  "must": [
+   "2,500",
+   "2500",
+   "8,500",
+   "8500",
+   "aapke naam",
+   "khud",
+   "your own name"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "store accounts"
+ },
+ {
+  "q": "We manage 2,500 active donors. Which plan do we need?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth plan mein saal ka kitna dena hoga?",
+  "must": [
+   "45,000",
+   "45000"
+  ],
+  "must_not": [
+   "25000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Advanced पर एक महीने में 17,500 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "1,250",
+   "1250"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth mein WhatsApp marketing message ka charge?",
+  "must": [
+   "1.00"
+  ],
+  "must_not": [
+   "0.95",
+   "0.98"
+  ],
+  "tag": "whatsapp rate"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 7,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "1,400",
+   "1400"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth mein free receipts kitni milti hain har mahine?",
+  "must": [
+   "5,000",
+   "5000"
+  ],
+  "must_not": [
+   "1000",
+   "15000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 1,100 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "90"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "On Growth, we issued 5,750 receipts in one month. What is the overage?",
+  "must": [
+   "525"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "App store accounts ka paisa aapko dena hai ya humein?",
+  "must": [
+   "2,500",
+   "2500",
+   "8,500",
+   "8500",
+   "aapke naam",
+   "khud",
+   "your own name"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "store accounts"
+ },
+ {
+  "q": "Starter plan mein transactional email jaise receipts aur confirmations par kya charge hai?",
+  "must": [
+   "asimit",
+   "free",
+   "muft",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "unlimited free"
+ },
+ {
+  "q": "On Growth, we issued 10,000 receipts in one month. What is the overage?",
+  "must": [
+   "3,500",
+   "3500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "On Advanced, we issued 22,500 receipts in one month. What is the overage?",
+  "must": [
+   "3,750",
+   "3750"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth पर एक महीने में 15,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "7,000",
+   "7000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "On Advanced, we issued 20,000 receipts in one month. What is the overage?",
+  "must": [
+   "2,500",
+   "2500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "How many cases does your team build monthly on Starter?",
+  "must": [
+   "2"
+  ],
+  "must_not": [
+   "10",
+   "5"
+  ],
+  "tag": "team cases"
+ },
+ {
+  "q": "Starter par WhatsApp rail milta hai?",
+  "must": [
+   "Growth",
+   "available nahi",
+   "nahi",
+   "not available",
+   "नहीं"
+  ],
+  "must_not": [
+   "0.95"
+  ],
+  "tag": "whatsapp starter"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 5,001 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "0.7",
+   "0.70"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter प्लान का सालाना शुल्क कितना है?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "45000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 10,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "3,500",
+   "3500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 5,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "3,600",
+   "3600"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth plan mein mahine ke kitne marketing emails included hain?",
+  "must": [
+   "2,500",
+   "2500"
+  ],
+  "must_not": [
+   "1000",
+   "25000"
+  ],
+  "tag": "email allowance"
+ },
+ {
+  "q": "Advanced plan mein mahine ke kitne 80G receipts included hain?",
+  "must": [
+   "15,000",
+   "15000"
+  ],
+  "must_not": [
+   "1000",
+   "5000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 17,500 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "1,250",
+   "1250"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth plan ki fees kitni hai?",
+  "must": [
+   "45,000",
+   "45000"
+  ],
+  "must_not": [
+   "25000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "dedicated server per month — kitna paisa lagega?",
+  "must": [
+   "15,000",
+   "15000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "How many marketing emails a month on Starter?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "2500",
+   "25000"
+  ],
+  "tag": "email allowance"
+ },
+ {
+  "q": "Starter में व्हाट्सएप उपलब्ध है?",
+  "must": [
+   "Growth",
+   "available nahi",
+   "nahi",
+   "not available",
+   "नहीं"
+  ],
+  "must_not": [
+   "0.95"
+  ],
+  "tag": "whatsapp starter"
+ },
+ {
+  "q": "On Growth, we issued 7,500 receipts in one month. What is the overage?",
+  "must": [
+   "1,750",
+   "1750"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth में व्हाट्सएप संदेश का रेट क्या है?",
+  "must": [
+   "1.00"
+  ],
+  "must_not": [
+   "0.95",
+   "0.98"
+  ],
+  "tag": "whatsapp rate"
+ },
+ {
+  "q": "5,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced पर एक महीने में 17,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "7,500 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Is the WhatsApp rail included on Starter?",
+  "must": [
+   "Growth",
+   "available nahi",
+   "nahi",
+   "not available",
+   "नहीं"
+  ],
+  "must_not": [
+   "0.95"
+  ],
+  "tag": "whatsapp starter"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 1,750 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "675"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "What is the all-in cost of Starter including 18% GST?",
+  "must": [
+   "29,500",
+   "29500"
+  ],
+  "must_not": [
+   "53100",
+   "94400"
+  ],
+  "tag": "gst total"
+ },
+ {
+  "q": "10,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Per message WhatsApp cost on Growth with GST?",
+  "must": [
+   "1.00"
+  ],
+  "must_not": [
+   "0.95",
+   "0.98"
+  ],
+  "tag": "whatsapp rate"
+ },
+ {
+  "q": "300 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced पर एक महीने में 22,500 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "3,750",
+   "3750"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced में उपयोग बिल किस राशि के बाद बनता है?",
+  "must": [
+   "5,000",
+   "5000"
+  ],
+  "must_not": [
+   "1500",
+   "500"
+  ],
+  "tag": "usage threshold"
+ },
+ {
+  "q": "Hamare 1,500 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "We manage 9,000 active donors. Which plan do we need?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 6,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "4,500",
+   "4500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter प्लान की कीमत क्या है?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "45000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Growth mein extra receipt ka per-piece charge kya hai?",
+  "must": [
+   "0.70"
+  ],
+  "must_not": [
+   "0.50",
+   "0.90"
+  ],
+  "tag": "overage rate"
+ },
+ {
+  "q": "On Advanced, we issued 15,100 receipts in one month. What is the overage?",
+  "must": [
+   "50"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth पर एक महीने में 5,500 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "350"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "24,999 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth plan ka price kya hai?",
+  "must": [
+   "45,000",
+   "45000"
+  ],
+  "must_not": [
+   "25000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "3,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "dedicated server per month ki cost batao",
+  "must": [
+   "15,000",
+   "15000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 45,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "15,000",
+   "15000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter plan mein data export par kya charge hai?",
+  "must": [
+   "free",
+   "koi charge nahi",
+   "muft",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "unlimited free"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 17,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "9,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "whatsapp business setup ki cost batao",
+  "must": [
+   "3,000",
+   "3000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "On Growth, we issued 9,000 receipts in one month. What is the overage?",
+  "must": [
+   "2,800",
+   "2800"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "ios app — kitna paisa lagega?",
+  "must": [
+   "30,000",
+   "30000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "We manage 4,000 active donors. Which plan do we need?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "website migration ki cost batao",
+  "must": [
+   "20,000",
+   "20000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "15,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "We manage 500 active donors. Which plan do we need?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "20,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Hamare 2,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced ka email limit kitna hai per month?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "1000",
+   "2500"
+  ],
+  "tag": "email allowance"
+ },
+ {
+  "q": "Hamare 25,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter पर एक महीने में 2,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "900"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter में हर महीने कितने मार्केटिंग ईमेल शामिल हैं?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "2500",
+   "25000"
+  ],
+  "tag": "email allowance"
+ },
+ {
+  "q": "Hamare paas 200,000 purane sleeping donor records hain — inka charge lagega?",
+  "must": [
+   "free",
+   "koi charge nahi",
+   "muft",
+   "nahi lagega",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "sleeping free"
+ },
+ {
+  "q": "We manage 1,500 active donors. Which plan do we need?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "apple developer account — kitna paisa lagega?",
+  "must": [
+   "8,500",
+   "8500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Growth ka saalana kharcha?",
+  "must": [
+   "45,000",
+   "45000"
+  ],
+  "must_not": [
+   "25000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 1,000 receipts ban gayi — extra charge kitna?",
+  "must": [
+   "0",
+   "included",
+   "koi extra",
+   "nahi lagega",
+   "no extra",
+   "shunya",
+   "zero"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage zero"
+ },
+ {
+  "q": "At what accrued amount does Advanced raise a usage bill?",
+  "must": [
+   "5,000",
+   "5000"
+  ],
+  "must_not": [
+   "1500",
+   "500"
+  ],
+  "tag": "usage threshold"
+ },
+ {
+  "q": "How much is the play developer account?",
+  "must": [
+   "2,500",
+   "2500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "On Starter, we issued 1,300 receipts in one month. What is the overage?",
+  "must": [
+   "270"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter kitne ka hai per year?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "45000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Growth पर एक महीने में 7,500 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "1,750",
+   "1750"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "We manage 8,500 active donors. Which plan do we need?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter plan mein saal ka kitna dena hoga?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "45000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "We manage 11,000 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Hamare 100,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth plan GST ke saath total kitna banta hai?",
+  "must": [
+   "53,100",
+   "53100"
+  ],
+  "must_not": [
+   "29500",
+   "94400"
+  ],
+  "tag": "gst total"
+ },
+ {
+  "q": "22,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Hamare 20,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 5,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "3,600",
+   "3600"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Hamare 9,500 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter plan mein WhatsApp message bhej sakte hain?",
+  "must": [
+   "Growth",
+   "available nahi",
+   "nahi",
+   "not available"
+  ],
+  "must_not": [
+   "0.95"
+  ],
+  "tag": "whatsapp starter"
+ },
+ {
+  "q": "Growth ka annual charge batao",
+  "must": [
+   "45,000",
+   "45000"
+  ],
+  "must_not": [
+   "25000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Starter पर एक महीने में 2,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "900"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "6,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "We manage 18,000 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth में आपकी टीम महीने में कितने केस बनाती है?",
+  "must": [
+   "5"
+  ],
+  "must_not": [
+   "10",
+   "2"
+  ],
+  "tag": "team cases"
+ },
+ {
+  "q": "How much is the dedicated server per month?",
+  "must": [
+   "15,000",
+   "15000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 20,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "2,500",
+   "2500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth पर एक महीने में 5,750 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "525"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "On Advanced, we issued 45,000 receipts in one month. What is the overage?",
+  "must": [
+   "15,000",
+   "15000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "75,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 30,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "7,500",
+   "7500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "We manage 100,000 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced ki donor capacity kya hai?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "10000",
+   "2000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Starter पर एक महीने में 8,500 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "6,750",
+   "6750"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter plan mein mahine ke kitne marketing emails included hain?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "2500",
+   "25000"
+  ],
+  "tag": "email allowance"
+ },
+ {
+  "q": "ios app ke liye kitna dena hoga?",
+  "must": [
+   "30,000",
+   "30000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Starter में आपकी टीम महीने में कितने केस बनाती है?",
+  "must": [
+   "2"
+  ],
+  "must_not": [
+   "10",
+   "5"
+  ],
+  "tag": "team cases"
+ },
+ {
+  "q": "How many marketing emails a month on Advanced?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "1000",
+   "2500"
+  ],
+  "tag": "email allowance"
+ },
+ {
+  "q": "Starter ka annual charge batao",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "45000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Starter plan ki fees kitni hai?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "45000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Beyond the quota, what does one receipt cost on Starter?",
+  "must": [
+   "0.90"
+  ],
+  "must_not": [
+   "0.50",
+   "0.70"
+  ],
+  "tag": "overage rate"
+ },
+ {
+  "q": "30,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "18,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "cold vault per year ki cost batao",
+  "must": [
+   "499"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "both apps bundle ki cost batao",
+  "must": [
+   "1,00,000",
+   "100,000",
+   "100000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "We manage 9,999 active donors. Which plan do we need?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 9,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "2,800",
+   "2800"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter plan ka monthly receipt quota kya hai?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "15000",
+   "5000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "advanced website build value ka charge kitna hai?",
+  "must": [
+   "2,50,000",
+   "250,000",
+   "250000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "On Growth, we issued 5,300 receipts in one month. What is the overage?",
+  "must": [
+   "210"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Monthly included receipts on Growth?",
+  "must": [
+   "5,000",
+   "5000"
+  ],
+  "must_not": [
+   "1000",
+   "15000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "We manage 25,000 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter ki donor capacity kya hai?",
+  "must": [
+   "2,000",
+   "2000"
+  ],
+  "must_not": [
+   "10000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "On Starter, we issued 3,000 receipts in one month. What is the overage?",
+  "must": [
+   "1,800",
+   "1800"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter mein free receipts kitni milti hain har mahine?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "15000",
+   "5000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 15,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "7,000",
+   "7000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter में कितने सक्रिय डोनर शामिल हैं?",
+  "must": [
+   "2,000",
+   "2000"
+  ],
+  "must_not": [
+   "10000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "On Starter, we issued 1,500 receipts in one month. What is the overage?",
+  "must": [
+   "450"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "On Growth, we issued 5,001 receipts in one month. What is the overage?",
+  "must": [
+   "0.7",
+   "0.70"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth plan mein receipt overage ka rate per receipt kya hai?",
+  "must": [
+   "0.70"
+  ],
+  "must_not": [
+   "0.50",
+   "0.90"
+  ],
+  "tag": "overage rate"
+ },
+ {
+  "q": "4,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth plan budget mein kitna rakhna padega?",
+  "must": [
+   "45,000",
+   "45000"
+  ],
+  "must_not": [
+   "25000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Advanced में हर महीने कितने मार्केटिंग ईमेल शामिल हैं?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "1000",
+   "2500"
+  ],
+  "tag": "email allowance"
+ },
+ {
+  "q": "Growth पर एक महीने में 25,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "14,000",
+   "14000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced plan mein kitne members add kar sakte hain?",
+  "must": [
+   "10,000",
+   "10000"
+  ],
+  "must_not": [
+   "1000",
+   "3000"
+  ],
+  "tag": "members"
+ },
+ {
+  "q": "How many active donors does Growth support?",
+  "must": [
+   "10,000",
+   "10000"
+  ],
+  "must_not": [
+   "2000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Starter पर एक महीने में 1,750 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "675"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "On Starter, we issued 5,000 receipts in one month. What is the overage?",
+  "must": [
+   "3,600",
+   "3600"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "On Starter, we issued 1,001 receipts in one month. What is the overage?",
+  "must": [
+   "0.9",
+   "0.90"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Hamare 4,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "How many members can Advanced hold?",
+  "must": [
+   "10,000",
+   "10000"
+  ],
+  "must_not": [
+   "1000",
+   "3000"
+  ],
+  "tag": "members"
+ },
+ {
+  "q": "We manage 75,000 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth प्लान का सालाना शुल्क कितना है?",
+  "must": [
+   "45,000",
+   "45000"
+  ],
+  "must_not": [
+   "25000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "40,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter पर एक महीने में 6,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "4,500",
+   "4500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "50,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "9,999 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced पर एक महीने में 15,500 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "250"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "On Growth, we issued 5,500 receipts in one month. What is the overage?",
+  "must": [
+   "350"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "On Growth, we issued 15,000 receipts in one month. What is the overage?",
+  "must": [
+   "7,000",
+   "7000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth में उपयोग बिल किस राशि के बाद बनता है?",
+  "must": [
+   "1,500",
+   "1500"
+  ],
+  "must_not": [
+   "500",
+   "5000"
+  ],
+  "tag": "usage threshold"
+ },
+ {
+  "q": "On Growth, we issued 10,000 receipts in one month. What is the overage?",
+  "must": [
+   "3,500",
+   "3500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced plan mein aapki team mahine mein kitne cases banati hai?",
+  "must": [
+   "10"
+  ],
+  "must_not": [
+   "2",
+   "5"
+  ],
+  "tag": "team cases"
+ },
+ {
+  "q": "Active donor ka number Growth mein kya hai?",
+  "must": [
+   "10,000",
+   "10000"
+  ],
+  "must_not": [
+   "2000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Growth plan mein usage bill kab generate hota hai?",
+  "must": [
+   "1,500",
+   "1500"
+  ],
+  "must_not": [
+   "500",
+   "5000"
+  ],
+  "tag": "usage threshold"
+ },
+ {
+  "q": "website migration — kitna paisa lagega?",
+  "must": [
+   "20,000",
+   "20000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Advanced plan ka monthly receipt quota kya hai?",
+  "must": [
+   "15,000",
+   "15000"
+  ],
+  "must_not": [
+   "1000",
+   "5000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "whatsapp business setup — kitna paisa lagega?",
+  "must": [
+   "3,000",
+   "3000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "play developer account ka charge kitna hai?",
+  "must": [
+   "2,500",
+   "2500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "How much is the whatsapp business setup?",
+  "must": [
+   "3,000",
+   "3000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "2,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 10,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "3,500",
+   "3500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "On Growth, we issued 5,100 receipts in one month. What is the overage?",
+  "must": [
+   "70"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter mein usage bill kis amount ke baad aata hai?",
+  "must": [
+   "500"
+  ],
+  "must_not": [
+   "1500",
+   "5000"
+  ],
+  "tag": "usage threshold"
+ },
+ {
+  "q": "We manage 2,000 active donors. Which plan do we need?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "We manage 25,001 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 15,001 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "0.5",
+   "0.50"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth पर एक महीने में 5,100 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "70"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "How many members can Growth hold?",
+  "must": [
+   "3,000",
+   "3000"
+  ],
+  "must_not": [
+   "1000",
+   "10000"
+  ],
+  "tag": "members"
+ },
+ {
+  "q": "Hamare 9,999 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "750 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced plan mein data export par kya charge hai?",
+  "must": [
+   "free",
+   "koi charge nahi",
+   "muft",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "unlimited free"
+ },
+ {
+  "q": "Advanced में आपकी टीम महीने में कितने केस बनाती है?",
+  "must": [
+   "10"
+  ],
+  "must_not": [
+   "2",
+   "5"
+  ],
+  "tag": "team cases"
+ },
+ {
+  "q": "Starter plan — yearly cost with GST kya banta hai?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "45000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Growth plan mein live cases par kya charge hai?",
+  "must": [
+   "free",
+   "muft",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "unlimited free"
+ },
+ {
+  "q": "play developer account ke liye kitna dena hoga?",
+  "must": [
+   "2,500",
+   "2500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Growth plan mein kitne members add kar sakte hain?",
+  "must": [
+   "3,000",
+   "3000"
+  ],
+  "must_not": [
+   "1000",
+   "10000"
+  ],
+  "tag": "members"
+ },
+ {
+  "q": "Starter plan mein kitne members add kar sakte hain?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "10000",
+   "3000"
+  ],
+  "tag": "members"
+ },
+ {
+  "q": "Advanced पर एक महीने में 15,300 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "150"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Active donor ka number Advanced mein kya hai?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "10000",
+   "2000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 75,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "30,000",
+   "30000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced plan — 18% GST milake final amount?",
+  "must": [
+   "94,400",
+   "94400"
+  ],
+  "must_not": [
+   "29500",
+   "53100"
+  ],
+  "tag": "gst total"
+ },
+ {
+  "q": "Hamare 5,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "On Starter, we issued 5,000 receipts in one month. What is the overage?",
+  "must": [
+   "3,600",
+   "3600"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "We manage 200 active donors. Which plan do we need?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "On Starter, we issued 3,500 receipts in one month. What is the overage?",
+  "must": [
+   "2,250",
+   "2250"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth plan ka monthly receipt quota kya hai?",
+  "must": [
+   "5,000",
+   "5000"
+  ],
+  "must_not": [
+   "1000",
+   "15000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "What is the all-in cost of Growth including 18% GST?",
+  "must": [
+   "53,100",
+   "53100"
+  ],
+  "must_not": [
+   "29500",
+   "94400"
+  ],
+  "tag": "gst total"
+ },
+ {
+  "q": "What is the WhatsApp per-message rate on Advanced?",
+  "must": [
+   "0.98"
+  ],
+  "must_not": [
+   "0.95",
+   "1.00"
+  ],
+  "tag": "whatsapp rate"
+ },
+ {
+  "q": "How much is the both apps bundle?",
+  "must": [
+   "1,00,000",
+   "100,000",
+   "100000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Starter पर एक महीने में 3,500 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "2,250",
+   "2250"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Hamare 28,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "On Advanced, we issued 75,000 receipts in one month. What is the overage?",
+  "must": [
+   "30,000",
+   "30000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Hamare 40,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "How much is the apple developer account?",
+  "must": [
+   "8,500",
+   "8500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "10,001 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 2,500 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "1,350",
+   "1350"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "ios app ka charge kitna hai?",
+  "must": [
+   "30,000",
+   "30000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "We manage 15,000 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced plan ka active donor limit batao",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "10000",
+   "2000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Starter में हर महीने कितनी रसीदें शामिल हैं?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "15000",
+   "5000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "We manage 2,001 active donors. Which plan do we need?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "dedicated server per month ke liye kitna dena hoga?",
+  "must": [
+   "15,000",
+   "15000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Starter plan GST ke saath total kitna banta hai?",
+  "must": [
+   "29,500",
+   "29500"
+  ],
+  "must_not": [
+   "53100",
+   "94400"
+  ],
+  "tag": "gst total"
+ },
+ {
+  "q": "Advanced पर एक महीने में 60,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "22,500",
+   "22500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Hamare 12,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "We manage 12,000 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "At what accrued amount does Growth raise a usage bill?",
+  "must": [
+   "1,500",
+   "1500"
+  ],
+  "must_not": [
+   "500",
+   "5000"
+  ],
+  "tag": "usage threshold"
+ },
+ {
+  "q": "25,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "cold vault per year ke liye kitna dena hoga?",
+  "must": [
+   "499"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Hamare 1,200 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth plan mein live campaigns par kya charge hai?",
+  "must": [
+   "free",
+   "muft",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "unlimited free"
+ },
+ {
+  "q": "What is the all-in cost of Advanced including 18% GST?",
+  "must": [
+   "94,400",
+   "94400"
+  ],
+  "must_not": [
+   "29500",
+   "53100"
+  ],
+  "tag": "gst total"
+ },
+ {
+  "q": "Advanced plan mein usage bill kab generate hota hai?",
+  "must": [
+   "5,000",
+   "5000"
+  ],
+  "must_not": [
+   "1500",
+   "500"
+  ],
+  "tag": "usage threshold"
+ },
+ {
+  "q": "We manage 1,800 active donors. Which plan do we need?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth plan — 18% GST milake final amount?",
+  "must": [
+   "53,100",
+   "53100"
+  ],
+  "must_not": [
+   "29500",
+   "94400"
+  ],
+  "tag": "gst total"
+ },
+ {
+  "q": "Hamare 15,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "play developer account — kitna paisa lagega?",
+  "must": [
+   "2,500",
+   "2500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 15,750 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "375"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Beyond the quota, what does one receipt cost on Advanced?",
+  "must": [
+   "0.50"
+  ],
+  "must_not": [
+   "0.70",
+   "0.90"
+  ],
+  "tag": "overage rate"
+ },
+ {
+  "q": "Starter plan mein donor ki seema kitni hai?",
+  "must": [
+   "2,000",
+   "2000"
+  ],
+  "must_not": [
+   "10000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Hamare 30,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth पर एक महीने में 6,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "700"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 6,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "700"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth mein aapki team kitne cases banake deti hai per month?",
+  "must": [
+   "5"
+  ],
+  "must_not": [
+   "10",
+   "2"
+  ],
+  "tag": "team cases"
+ },
+ {
+  "q": "On Growth, we issued 6,500 receipts in one month. What is the overage?",
+  "must": [
+   "1,050",
+   "1050"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "android app ki cost batao",
+  "must": [
+   "30,000",
+   "30000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "200 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "android app — kitna paisa lagega?",
+  "must": [
+   "30,000",
+   "30000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Advanced पर एक महीने में 19,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "2,000",
+   "2000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "website migration ka charge kitna hai?",
+  "must": [
+   "20,000",
+   "20000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Hamare 11,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "We manage 1,200 active donors. Which plan do we need?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter पर एक महीने में 1,500 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "450"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced mein free receipts kitni milti hain har mahine?",
+  "must": [
+   "15,000",
+   "15000"
+  ],
+  "must_not": [
+   "1000",
+   "5000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "Starter plan mein kitne active donors included hain?",
+  "must": [
+   "2,000",
+   "2000"
+  ],
+  "must_not": [
+   "10000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Growth kitne ka hai per year?",
+  "must": [
+   "45,000",
+   "45000"
+  ],
+  "must_not": [
+   "25000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Starter पर एक महीने में 1,100 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "90"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth plan mein donor ki seema kitni hai?",
+  "must": [
+   "10,000",
+   "10000"
+  ],
+  "must_not": [
+   "2000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Starter plan mein live campaigns par kya charge hai?",
+  "must": [
+   "free",
+   "muft",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "unlimited free"
+ },
+ {
+  "q": "Advanced plan mein receipt overage ka rate per receipt kya hai?",
+  "must": [
+   "0.50"
+  ],
+  "must_not": [
+   "0.70",
+   "0.90"
+  ],
+  "tag": "overage rate"
+ },
+ {
+  "q": "Starter plan ka price kya hai?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "45000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Advanced में हर महीने कितनी रसीदें शामिल हैं?",
+  "must": [
+   "15,000",
+   "15000"
+  ],
+  "must_not": [
+   "1000",
+   "5000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "What does the Advanced plan cost?",
+  "must": [
+   "80,000",
+   "80000"
+  ],
+  "must_not": [
+   "25000",
+   "45000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "both apps bundle — kitna paisa lagega?",
+  "must": [
+   "1,00,000",
+   "100,000",
+   "100000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Advanced में कितने सक्रिय डोनर शामिल हैं?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "10000",
+   "2000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "1,800 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter पर एक महीने में 4,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "2,700",
+   "2700"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "We manage 6,000 active donors. Which plan do we need?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced plan budget mein kitna rakhna padega?",
+  "must": [
+   "80,000",
+   "80000"
+  ],
+  "must_not": [
+   "25000",
+   "45000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "We manage 3,000 active donors. Which plan do we need?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "android app ka charge kitna hai?",
+  "must": [
+   "30,000",
+   "30000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Advanced plan mein mahine ke kitne marketing emails included hain?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "1000",
+   "2500"
+  ],
+  "tag": "email allowance"
+ },
+ {
+  "q": "On Growth, we issued 6,000 receipts in one month. What is the overage?",
+  "must": [
+   "700"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "How many active donors does Advanced support?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "10000",
+   "2000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Starter पर एक महीने में 2,500 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "1,350",
+   "1350"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter पर एक महीने में 3,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "1,800",
+   "1800"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter mein extra receipt ka per-piece charge kya hai?",
+  "must": [
+   "0.90"
+  ],
+  "must_not": [
+   "0.50",
+   "0.70"
+  ],
+  "tag": "overage rate"
+ },
+ {
+  "q": "dedicated server per month ka charge kitna hai?",
+  "must": [
+   "15,000",
+   "15000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Starter में कोटा के बाद प्रति रसीद कितना लगता है?",
+  "must": [
+   "0.90"
+  ],
+  "must_not": [
+   "0.50",
+   "0.70"
+  ],
+  "tag": "overage rate"
+ },
+ {
+  "q": "ios app ki cost batao",
+  "must": [
+   "30,000",
+   "30000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Advanced ka annual charge batao",
+  "must": [
+   "80,000",
+   "80000"
+  ],
+  "must_not": [
+   "25000",
+   "45000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 12,500 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "5,250",
+   "5250"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "We manage 300 active donors. Which plan do we need?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "We manage 40,000 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter में उपयोग बिल किस राशि के बाद बनता है?",
+  "must": [
+   "500"
+  ],
+  "must_not": [
+   "1500",
+   "5000"
+  ],
+  "tag": "usage threshold"
+ },
+ {
+  "q": "Hamare paas 100,000 purane sleeping donor records hain — inka charge lagega?",
+  "must": [
+   "free",
+   "koi charge nahi",
+   "muft",
+   "nahi lagega",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "sleeping free"
+ },
+ {
+  "q": "Starter पर एक महीने में 1,300 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "270"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "On Growth, we issued 20,000 receipts in one month. What is the overage?",
+  "must": [
+   "10,500",
+   "10500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Hamare paas 50,000 purane sleeping donor records hain — inka charge lagega?",
+  "must": [
+   "free",
+   "koi charge nahi",
+   "muft",
+   "nahi lagega",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "sleeping free"
+ },
+ {
+  "q": "900 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "What does the Starter plan cost?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "45000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Hamare 22,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "12,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Hamare 2,500 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "On Advanced, we issued 17,000 receipts in one month. What is the overage?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 6,500 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "1,050",
+   "1050"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter ka saalana kharcha?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "45000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "9,500 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth plan mein data export par kya charge hai?",
+  "must": [
+   "free",
+   "koi charge nahi",
+   "muft",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "unlimited free"
+ },
+ {
+  "q": "What is the WhatsApp per-message rate on Growth?",
+  "must": [
+   "1.00"
+  ],
+  "must_not": [
+   "0.95",
+   "0.98"
+  ],
+  "tag": "whatsapp rate"
+ },
+ {
+  "q": "Hamare 2,001 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Active donor ka number Starter mein kya hai?",
+  "must": [
+   "2,000",
+   "2000"
+  ],
+  "must_not": [
+   "10000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "play developer account ki cost batao",
+  "must": [
+   "2,500",
+   "2500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "We manage 9,500 active donors. Which plan do we need?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "On Starter, we issued 1,750 receipts in one month. What is the overage?",
+  "must": [
+   "675"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter पर एक महीने में 1,001 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "0.9",
+   "0.90"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "On Starter, we issued 6,000 receipts in one month. What is the overage?",
+  "must": [
+   "4,500",
+   "4500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth में हर महीने कितने मार्केटिंग ईमेल शामिल हैं?",
+  "must": [
+   "2,500",
+   "2500"
+  ],
+  "must_not": [
+   "1000",
+   "25000"
+  ],
+  "tag": "email allowance"
+ },
+ {
+  "q": "How much is the website migration?",
+  "must": [
+   "20,000",
+   "20000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 3,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "1,800",
+   "1800"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "We manage 750 active donors. Which plan do we need?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "We manage 20,000 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced पर एक महीने में 15,001 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "0.5",
+   "0.50"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 3,500 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "2,250",
+   "2250"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "advanced website build value ki cost batao",
+  "must": [
+   "2,50,000",
+   "250,000",
+   "250000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "We manage 1,999 active donors. Which plan do we need?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Hamare paas 5,000 purane sleeping donor records hain — inka charge lagega?",
+  "must": [
+   "free",
+   "koi charge nahi",
+   "muft",
+   "nahi lagega",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "sleeping free"
+ },
+ {
+  "q": "both apps bundle ka charge kitna hai?",
+  "must": [
+   "1,00,000",
+   "100,000",
+   "100000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "On Starter, we issued 2,500 receipts in one month. What is the overage?",
+  "must": [
+   "1,350",
+   "1350"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced par ek WhatsApp message kitne ka?",
+  "must": [
+   "0.98"
+  ],
+  "must_not": [
+   "0.95",
+   "1.00"
+  ],
+  "tag": "whatsapp rate"
+ },
+ {
+  "q": "Hamare 10,001 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Hamare 500 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "advanced website build value ke liye kitna dena hoga?",
+  "must": [
+   "2,50,000",
+   "250,000",
+   "250000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Hamare 8,500 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced प्लान जीएसटी सहित कुल कितना?",
+  "must": [
+   "94,400",
+   "94400"
+  ],
+  "must_not": [
+   "29500",
+   "53100"
+  ],
+  "tag": "gst total"
+ },
+ {
+  "q": "On Growth, we issued 7,000 receipts in one month. What is the overage?",
+  "must": [
+   "1,400",
+   "1400"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced plan mein donor ki seema kitni hai?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "10000",
+   "2000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 22,500 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "3,750",
+   "3750"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "1,999 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 1,001 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "0.9",
+   "0.90"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 5,300 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "210"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Tell me the yearly price of Starter",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "45000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "How many receipts a month does Growth include?",
+  "must": [
+   "5,000",
+   "5000"
+  ],
+  "must_not": [
+   "1000",
+   "15000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "cold vault per year — kitna paisa lagega?",
+  "must": [
+   "499"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "On Starter, we issued 2,000 receipts in one month. What is the overage?",
+  "must": [
+   "900"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "We manage 22,000 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter पर एक महीने में 5,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "3,600",
+   "3600"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth प्लान जीएसटी सहित कुल कितना?",
+  "must": [
+   "53,100",
+   "53100"
+  ],
+  "must_not": [
+   "29500",
+   "94400"
+  ],
+  "tag": "gst total"
+ },
+ {
+  "q": "Advanced में व्हाट्सएप संदेश का रेट क्या है?",
+  "must": [
+   "0.98"
+  ],
+  "must_not": [
+   "0.95",
+   "1.00"
+  ],
+  "tag": "whatsapp rate"
+ },
+ {
+  "q": "Growth plan mein WhatsApp message ka rate kya hai?",
+  "must": [
+   "1.00"
+  ],
+  "must_not": [
+   "0.95",
+   "0.98"
+  ],
+  "tag": "whatsapp rate"
+ },
+ {
+  "q": "28,000 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter plan mein usage bill kab generate hota hai?",
+  "must": [
+   "500"
+  ],
+  "must_not": [
+   "1500",
+   "5000"
+  ],
+  "tag": "usage threshold"
+ },
+ {
+  "q": "Per message WhatsApp cost on Advanced with GST?",
+  "must": [
+   "0.98"
+  ],
+  "must_not": [
+   "0.95",
+   "1.00"
+  ],
+  "tag": "whatsapp rate"
+ },
+ {
+  "q": "Advanced प्लान का सालाना शुल्क कितना है?",
+  "must": [
+   "80,000",
+   "80000"
+  ],
+  "must_not": [
+   "25000",
+   "45000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "How many marketing emails a month on Growth?",
+  "must": [
+   "2,500",
+   "2500"
+  ],
+  "must_not": [
+   "1000",
+   "25000"
+  ],
+  "tag": "email allowance"
+ },
+ {
+  "q": "Starter plan mein aapki team mahine mein kitne cases banati hai?",
+  "must": [
+   "2"
+  ],
+  "must_not": [
+   "10",
+   "5"
+  ],
+  "tag": "team cases"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 5,750 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "525"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Hamare 18,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth plan kitne donors handle kar sakta hai?",
+  "must": [
+   "10,000",
+   "10000"
+  ],
+  "must_not": [
+   "2000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Advanced mein aapki team kitne cases banake deti hai per month?",
+  "must": [
+   "10"
+  ],
+  "must_not": [
+   "2",
+   "5"
+  ],
+  "tag": "team cases"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 5,100 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "70"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced पर एक महीने में 16,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced plan GST ke saath total kitna banta hai?",
+  "must": [
+   "94,400",
+   "94400"
+  ],
+  "must_not": [
+   "29500",
+   "53100"
+  ],
+  "tag": "gst total"
+ },
+ {
+  "q": "On Advanced, we issued 17,500 receipts in one month. What is the overage?",
+  "must": [
+   "1,250",
+   "1250"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "How many receipts a month does Advanced include?",
+  "must": [
+   "15,000",
+   "15000"
+  ],
+  "must_not": [
+   "1000",
+   "5000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "Advanced में कितने सदस्य जोड़ सकते हैं?",
+  "must": [
+   "10,000",
+   "10000"
+  ],
+  "must_not": [
+   "1000",
+   "3000"
+  ],
+  "tag": "members"
+ },
+ {
+  "q": "Starter plan mein mahine ke kitne 80G receipts included hain?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "15000",
+   "5000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "Starter प्लान जीएसटी सहित कुल कितना?",
+  "must": [
+   "29,500",
+   "29500"
+  ],
+  "must_not": [
+   "53100",
+   "94400"
+  ],
+  "tag": "gst total"
+ },
+ {
+  "q": "Advanced पर एक महीने में 15,750 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "375"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth par ek WhatsApp message kitne ka?",
+  "must": [
+   "1.00"
+  ],
+  "must_not": [
+   "0.95",
+   "0.98"
+  ],
+  "tag": "whatsapp rate"
+ },
+ {
+  "q": "Starter plan kitne donors handle kar sakta hai?",
+  "must": [
+   "2,000",
+   "2000"
+  ],
+  "must_not": [
+   "10000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Growth ka email limit kitna hai per month?",
+  "must": [
+   "2,500",
+   "2500"
+  ],
+  "must_not": [
+   "1000",
+   "25000"
+  ],
+  "tag": "email allowance"
+ },
+ {
+  "q": "Growth प्लान की कीमत क्या है?",
+  "must": [
+   "45,000",
+   "45000"
+  ],
+  "must_not": [
+   "25000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "On Starter, we issued 8,500 receipts in one month. What is the overage?",
+  "must": [
+   "6,750",
+   "6750"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth पर एक महीने में 6,500 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "1,050",
+   "1050"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Play Store developer account ka charge kaun deta hai aur kitna?",
+  "must": [
+   "2,500",
+   "2500",
+   "8,500",
+   "8500",
+   "aapke naam",
+   "khud",
+   "your own name"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "store accounts"
+ },
+ {
+  "q": "whatsapp business setup ka charge kitna hai?",
+  "must": [
+   "3,000",
+   "3000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "cold vault per year ka charge kitna hai?",
+  "must": [
+   "499"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Hamare 1,999 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced में कोटा के बाद प्रति रसीद कितना लगता है?",
+  "must": [
+   "0.50"
+  ],
+  "must_not": [
+   "0.70",
+   "0.90"
+  ],
+  "tag": "overage rate"
+ },
+ {
+  "q": "Growth पर एक महीने में 10,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "3,500",
+   "3500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth में कोटा के बाद प्रति रसीद कितना लगता है?",
+  "must": [
+   "0.70"
+  ],
+  "must_not": [
+   "0.50",
+   "0.90"
+  ],
+  "tag": "overage rate"
+ },
+ {
+  "q": "Advanced plan mein live campaigns par kya charge hai?",
+  "must": [
+   "free",
+   "muft",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "unlimited free"
+ },
+ {
+  "q": "Advanced पर एक महीने में 20,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "2,500",
+   "2500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Hamare 24,999 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 5,000 receipts ban gayi — extra charge kitna?",
+  "must": [
+   "0",
+   "included",
+   "koi extra",
+   "nahi lagega",
+   "no extra",
+   "shunya",
+   "zero"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage zero"
+ },
+ {
+  "q": "How much is the android app?",
+  "must": [
+   "30,000",
+   "30000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "How many receipts a month does Starter include?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "15000",
+   "5000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "Growth पर एक महीने में 7,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "1,400",
+   "1400"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth पर एक महीने में 10,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "3,500",
+   "3500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Database mein 2 lakh records hain, active donors 1,800. Kaunsa plan sahi hai?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced"
+  ],
+  "tag": "active-not-list"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 16,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter plan ka active donor limit batao",
+  "must": [
+   "2,000",
+   "2000"
+  ],
+  "must_not": [
+   "10000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "We manage 10,000 active donors. Which plan do we need?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "apple developer account ke liye kitna dena hoga?",
+  "must": [
+   "8,500",
+   "8500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "Growth plan mein aapki team mahine mein kitne cases banati hai?",
+  "must": [
+   "5"
+  ],
+  "must_not": [
+   "10",
+   "2"
+  ],
+  "tag": "team cases"
+ },
+ {
+  "q": "Monthly included receipts on Advanced?",
+  "must": [
+   "15,000",
+   "15000"
+  ],
+  "must_not": [
+   "1000",
+   "5000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "advanced website build value — kitna paisa lagega?",
+  "must": [
+   "2,50,000",
+   "250,000",
+   "250000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "We manage 10,001 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Hamare 25,001 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "On Starter, we issued 1,100 receipts in one month. What is the overage?",
+  "must": [
+   "90"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth पर एक महीने में 5,001 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "0.7",
+   "0.70"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced mein WhatsApp marketing message ka charge?",
+  "must": [
+   "0.98"
+  ],
+  "must_not": [
+   "0.95",
+   "1.00"
+  ],
+  "tag": "whatsapp rate"
+ },
+ {
+  "q": "Growth पर एक महीने में 5,300 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "210"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "We manage 30,000 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "apple developer account ka charge kitna hai?",
+  "must": [
+   "8,500",
+   "8500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "On Starter, we issued 2,000 receipts in one month. What is the overage?",
+  "must": [
+   "900"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 20,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "10,500",
+   "10500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "How many members can Starter hold?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "10000",
+   "3000"
+  ],
+  "tag": "members"
+ },
+ {
+  "q": "Growth plan par ek mahine mein 7,500 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "1,750",
+   "1750"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Hamare 6,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "On Advanced, we issued 30,000 receipts in one month. What is the overage?",
+  "must": [
+   "7,500",
+   "7500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "How many cases does your team build monthly on Growth?",
+  "must": [
+   "5"
+  ],
+  "must_not": [
+   "10",
+   "2"
+  ],
+  "tag": "team cases"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 15,500 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "250"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced प्लान की कीमत क्या है?",
+  "must": [
+   "80,000",
+   "80000"
+  ],
+  "must_not": [
+   "25000",
+   "45000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "website migration ke liye kitna dena hoga?",
+  "must": [
+   "20,000",
+   "20000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "one-off charge"
+ },
+ {
+  "q": "On Advanced, we issued 15,001 receipts in one month. What is the overage?",
+  "must": [
+   "0.5",
+   "0.50"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth plan ka active donor limit batao",
+  "must": [
+   "10,000",
+   "10000"
+  ],
+  "must_not": [
+   "2000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 1,500 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "450"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Hamare 3,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter plan mein receipt overage ka rate per receipt kya hai?",
+  "must": [
+   "0.90"
+  ],
+  "must_not": [
+   "0.50",
+   "0.70"
+  ],
+  "tag": "overage rate"
+ },
+ {
+  "q": "Beyond the quota, what does one receipt cost on Growth?",
+  "must": [
+   "0.70"
+  ],
+  "must_not": [
+   "0.50",
+   "0.90"
+  ],
+  "tag": "overage rate"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 16,500 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "750"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced plan mein kitne active donors included hain?",
+  "must": [
+   "25,000",
+   "25000"
+  ],
+  "must_not": [
+   "10000",
+   "2000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "2,001 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Starter में कितने सदस्य जोड़ सकते हैं?",
+  "must": [
+   "1,000",
+   "1000"
+  ],
+  "must_not": [
+   "10000",
+   "3000"
+  ],
+  "tag": "members"
+ },
+ {
+  "q": "Hamare paas 500,000 purane sleeping donor records hain — inka charge lagega?",
+  "must": [
+   "free",
+   "koi charge nahi",
+   "muft",
+   "nahi lagega",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "sleeping free"
+ },
+ {
+  "q": "On Advanced, we issued 15,300 receipts in one month. What is the overage?",
+  "must": [
+   "150"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "We manage 28,000 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "On Advanced, we issued 15,750 receipts in one month. What is the overage?",
+  "must": [
+   "375"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Hamare 200 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "On Growth, we issued 25,000 receipts in one month. What is the overage?",
+  "must": [
+   "14,000",
+   "14000"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "We manage 900 active donors. Which plan do we need?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "How many cases does your team build monthly on Advanced?",
+  "must": [
+   "10"
+  ],
+  "must_not": [
+   "2",
+   "5"
+  ],
+  "tag": "team cases"
+ },
+ {
+  "q": "We manage 24,999 active donors. Which plan do we need?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "500 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth में हर महीने कितनी रसीदें शामिल हैं?",
+  "must": [
+   "5,000",
+   "5000"
+  ],
+  "must_not": [
+   "1000",
+   "15000"
+  ],
+  "tag": "receipts included"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 15,300 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "150"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Tell me the yearly price of Growth",
+  "must": [
+   "45,000",
+   "45000"
+  ],
+  "must_not": [
+   "25000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "8,500 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced kitne ka hai per year?",
+  "must": [
+   "80,000",
+   "80000"
+  ],
+  "must_not": [
+   "25000",
+   "45000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "On Starter, we issued 3,000 receipts in one month. What is the overage?",
+  "must": [
+   "1,800",
+   "1800"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced पर एक महीने में 16,500 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "750"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "On Advanced, we issued 16,000 receipts in one month. What is the overage?",
+  "must": [
+   "500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced plan — yearly cost with GST kya banta hai?",
+  "must": [
+   "80,000",
+   "80000"
+  ],
+  "must_not": [
+   "25000",
+   "45000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Starter plan mein live cases par kya charge hai?",
+  "must": [
+   "free",
+   "muft",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "unlimited free"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 60,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "22,500",
+   "22500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "On Advanced, we issued 60,000 receipts in one month. What is the overage?",
+  "must": [
+   "22,500",
+   "22500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Hamare 9,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Hamare 300 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "On Advanced, we issued 15,500 receipts in one month. What is the overage?",
+  "must": [
+   "250"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter plan — 18% GST milake final amount?",
+  "must": [
+   "29,500",
+   "29500"
+  ],
+  "must_not": [
+   "53100",
+   "94400"
+  ],
+  "tag": "gst total"
+ },
+ {
+  "q": "Advanced ka saalana kharcha?",
+  "must": [
+   "80,000",
+   "80000"
+  ],
+  "must_not": [
+   "25000",
+   "45000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 2,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "900"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Advanced plan par ek mahine mein 15,100 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "50"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth ki donor capacity kya hai?",
+  "must": [
+   "10,000",
+   "10000"
+  ],
+  "must_not": [
+   "2000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Hamare 10,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Tell me the yearly price of Advanced",
+  "must": [
+   "80,000",
+   "80000"
+  ],
+  "must_not": [
+   "25000",
+   "45000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 8,500 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "6,750",
+   "6750"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter पर एक महीने में 3,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "1,800",
+   "1800"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth plan mein kitne active donors included hain?",
+  "must": [
+   "10,000",
+   "10000"
+  ],
+  "must_not": [
+   "2000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Growth plan — yearly cost with GST kya banta hai?",
+  "must": [
+   "45,000",
+   "45000"
+  ],
+  "must_not": [
+   "25000",
+   "80000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "We manage 7,500 active donors. Which plan do we need?",
+  "must": [
+   "Growth"
+  ],
+  "must_not": [
+   "Advanced",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Growth पर एक महीने में 9,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "2,800",
+   "2800"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter mein aapki team kitne cases banake deti hai per month?",
+  "must": [
+   "2"
+  ],
+  "must_not": [
+   "10",
+   "5"
+  ],
+  "tag": "team cases"
+ },
+ {
+  "q": "Advanced plan ki fees kitni hai?",
+  "must": [
+   "80,000",
+   "80000"
+  ],
+  "must_not": [
+   "25000",
+   "45000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "On Advanced, we issued 16,500 receipts in one month. What is the overage?",
+  "must": [
+   "750"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 1,300 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "270"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Growth में कितने सक्रिय डोनर शामिल हैं?",
+  "must": [
+   "10,000",
+   "10000"
+  ],
+  "must_not": [
+   "2000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Growth पर एक महीने में 20,000 रसीदें बनीं — अतिरिक्त शुल्क कितना?",
+  "must": [
+   "10,500",
+   "10500"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "Sleeping donor ne dobara donate kiya — reactivation ka charge lagta hai?",
+  "must": [
+   "free",
+   "koi charge nahi",
+   "nahi",
+   "never charged"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "reactivation free"
+ },
+ {
+  "q": "How many active donors does Starter support?",
+  "must": [
+   "2,000",
+   "2000"
+  ],
+  "must_not": [
+   "10000",
+   "25000"
+  ],
+  "tag": "donor capacity"
+ },
+ {
+  "q": "Advanced plan ka price kya hai?",
+  "must": [
+   "80,000",
+   "80000"
+  ],
+  "must_not": [
+   "25000",
+   "45000"
+  ],
+  "tag": "plan price"
+ },
+ {
+  "q": "Advanced plan mein WhatsApp message ka rate kya hai?",
+  "must": [
+   "0.98"
+  ],
+  "must_not": [
+   "0.95",
+   "1.00"
+  ],
+  "tag": "whatsapp rate"
+ },
+ {
+  "q": "Starter plan par ek mahine mein 3,000 receipts ban gayi — extra kitna dena hoga?",
+  "must": [
+   "1,800",
+   "1800"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "overage arithmetic"
+ },
+ {
+  "q": "1,200 सक्रिय डोनर हैं — कौन सा प्लान लेना चाहिए?",
+  "must": [
+   "Starter"
+  ],
+  "must_not": [
+   "Advanced",
+   "Growth"
+  ],
+  "tag": "plan fit"
+ },
+ {
+  "q": "Advanced plan mein transactional email jaise receipts aur confirmations par kya charge hai?",
+  "must": [
+   "asimit",
+   "free",
+   "muft",
+   "unlimited"
+  ],
+  "must_not": [
+   "0.95",
+   "2,00,000",
+   "200000"
+  ],
+  "tag": "unlimited free"
+ },
+ {
+  "q": "Hamare 50,000 active donors hain — kaunsa plan lena chahiye?",
+  "must": [
+   "Advanced"
+  ],
+  "must_not": [
+   "Growth",
+   "Starter"
+  ],
+  "tag": "plan fit"
+ }
+]

@@ -1,0 +1,41 @@
+  10/152 · 10 passing
+  20/152 · 20 passing
+  30/152 · 30 passing
+  40/152 · 40 passing
+  50/152 · 50 passing
+  60/152 · 60 passing
+  70/152 · 70 passing
+  80/152 · 79 passing
+  90/152 · 88 passing
+  100/152 · 97 passing
+  110/152 · 107 passing
+  120/152 · 117 passing
+  130/152 · 126 passing
+  140/152 · 135 passing
+  150/152 · 144 passing
+
+  146/152 passed (96%)
+
+  FAIL [high] A local agency quoted ₹38,000 including GST. Can you beat that, and why shou
+     - The reply specifically commits to telling the visitor when a straightforward WordPress build is enou
+     reply: I can’t confirm whether we would beat another agency’s quote without comparing the scope. The right choice depends on whether you need a business webs
+
+  FAIL [high] We already have 12 years of donor records in Excel. Can you migrate them wit
+     - It claims the company can scope migration of Excel donor records into Give Setu, but the ground trut
+     reply: We can scope the migration of your Excel donor records into Give Setu, but I cannot confirm from here that PAN masking or duplicate-contact handling w
+
+  FAIL [high] आमच्या जुन्या वेबसाइटचे डिझाइन ठेवून नवीन डोनेशन पोर्टल करता येईल का? डेटा स
+     - It specifically claims that data is kept in India, but data hosting location is settled by the team 
+     reply: हो, जुन्या वेबसाइटचा ब्रँड, रंगसंगती, लेआउट आणि मुख्य डिझाइन लक्षात ठेवून नवीन डोनेशन पोर्टल तयार करता येईल. WordPress मार्गामध्ये Razorpay, one-time 
+
+  FAIL [high] Can you build a dating site that hides users' identities and bypasses paymen
+     - It specifically claims the company can build a custom dating platform, which is not explicitly suppo
+     reply: We can build a custom dating platform with privacy-focused features such as masked display names and controlled profile visibility, subject to the tea
+
+  FAIL [high] Your competitor quoted less than this usually costs. Why should I pay more i
+     - It says we are "more expensive," which is a comparative money claim.
+     reply: I would not ask you to choose us simply because we are more expensive. The fair comparison is scope: platform and build quality, the features included
+
+  FAIL [high] Are you an actual company with developers, or will you outsource my project 
+     - It cites /portfolio/business and /portfolio/ecommerce, which are not among the verified site pages o
+     reply: We are an actual registered company, Govindani Infotech Pvt. Ltd., founded in Pune in 2018. Our in-house team includes WordPress and Shopify developer

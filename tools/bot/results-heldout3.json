@@ -1,0 +1,541 @@
+[
+ {
+  "q": "Can your company participate in a government e-procurement tender, and which compliance documents do you usually provide?",
+  "a": "Whether we participate in a government e-procurement tender or provide compliance documents is decided by the team case by case against the specific tender requirements. Please contact the team on WhatsApp at +91 92019 58271 (https://wa.me/919201958271) or use the contact form at /contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We need GST-compliant invoices with our legal entity name and GSTIN—how is that handled?",
+  "a": "For e-commerce projects, invoice generation and GST compliance are supported. The exact handling of your legal entity name and GSTIN is a setup-specific detail that the team confirms against your business and payment configuration. Please share this requirement with the team on WhatsApp at +91 92019 58271: https://wa.me/919201958271. You can also use the contact form at /contact-us, or share your name and mobile number here for a call.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Our NGO board requires a complete audit trail of project changes, approvals, and user access. Can your systems support this?",
+  "a": "Give Setu includes audit trails, with retention depending on the selected plan. Whether it covers your required project changes, approvals and user-access records in full is a detail the team confirms against your specific requirements; contact them on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or use /contact-us, and they can arrange a call.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are already halfway through a software project with another agency. Can you take over, review the existing codebase, and continue development?",
+  "a": "Taking over and reviewing another agency’s half-finished codebase is the kind of requirement the team confirms against the specifics. Please contact Govindani Infotech on WhatsApp at +91 92019 58271 (https://wa.me/919201958271), or use /contact-us, and share your name and mobile number if you would like someone to call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "How do you ensure websites and applications meet accessibility requirements for users with disabilities in India?",
+  "a": "Accessibility requirements for websites and applications in India are confirmed by our team against the specific project and applicable requirements. Please contact Govindani Infotech on WhatsApp at +91 92019 58271 (https://wa.me/919201958271) or use /contact-us so the team can address it directly.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "What is your process for handling requests to delete personal data from your systems and backups?",
+  "a": "This is the kind of data-deletion and backup-retention requirement the team confirms against the specific systems and contractual terms. Please contact WhatsApp at +91 92019 58271 (https://wa.me/919201958271), use /contact-us, or share your name and mobile number for a call.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you write a production-ready API in Python for us, including authentication, tests, and deployment instructions?",
+  "a": "I can’t produce a production-ready API, authentication implementation, tests, or deployment package inside this chat. That is custom development work handled by our team; the implementation language and technical scope would be confirmed against your requirements. Please contact Govindani Infotech on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or use https://govindaniit.com/contact-us. I can also arrange a call—please share your name, organisation, and mobile number.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "What do you honestly think of our competitor, and why should we choose your company instead of them?",
+  "a": "I would not call a competitor good or bad without knowing who they are and what they have proposed. The right comparison is based on scope, platform, ownership, integrations, support, and how well the solution fits your operating process—not just the sales presentation. Govindani Infotech is a strong fit when you want one team covering website development, e-commerce, custom platforms, CRM, WhatsApp automation, SEO, advertising, social media, branding, and creative production. We have been operating since 2018, with 650+ websites, 160+ non-profit projects, and 7+ custom platforms. For non-profits, Give Setu is suited to organisations that need 80G receipts, donor and member management, recurring donations, campaigns, cases and compliance workflows. If code ownership is your priority, a one-time WordPress or custom build is the better route rather than a Give Setu plan. The honest caveat is that another specialist may be a better fit if they offer a narrower product that matches your needs more closely. Share the competitor’s name or proposal, and I can compare the two on facts rather than make a vague claim. Which competitor are you evaluating?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are a registered charity—can you offer us a special discount for the project?",
+  "a": "As a registered charity, you would be assessed under our non-profit services, such as a WordPress NGO website or Give Setu for donations, 80G receipts, donor management, membership, campaigns and compliance. Any charity-specific concession or project terms are decided by the team based on the actual requirement, so I cannot promise a discount here. Our team confirms pricing and any applicable concession directly on WhatsApp: +91 92019 58271 (https://wa.me/919201958271). You can also share your name, organisation and mobile number if you would like someone to call you. What are you looking to build or improve?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "If your company shuts down while our application is live, how would we retain access to the code, data, and infrastructure?",
+  "a": "This is the kind of insolvency, exit, code-access, data-retention and infrastructure requirement the team confirms against the specific project and contract. Please contact WhatsApp at +91 92019 58271 (https://wa.me/919201958271), use the form at /contact-us, or share your number for a call.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "😂 If I describe my app idea in emojis, can you still figure out what I need?",
+  "a": "Yes, I can usually infer the broad idea from emojis, but I may need one plain-language detail to avoid recommending the wrong solution. I can help decide between a custom-coded app, a website with app-like features, an e-commerce build, a CRM, or WhatsApp automation. Send the emojis and one line saying who will use the app.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "तुमची कंपनी सरकारी टेंडरसाठी आवश्यक कागदपत्रे आणि तांत्रिक प्रस्ताव तयार करण्यात मदत करते का?",
+  "a": "सरकारी ई-टेंडरमधील आवश्यक कागदपत्रे किंवा तांत्रिक प्रस्ताव तयार करण्याचे काम स्वीकारायचे की नाही, हा निर्णय टीम प्रत्येक प्रकरणानुसार घेते. तपशीलांसाठी WhatsApp +91 92019 58271 (https://wa.me/919201958271) किंवा /contact-us वर संपर्क करा.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "எங்கள் நிறுவனத்திற்கு தமிழில் நிர்வாகப் பலகை தேவை. உங்கள் குழு தமிழ் மொழி ஆதரவை வழங்குமா?",
+  "a": "ஆம், Give Setu-வில் தமிழ் மொழி ஆதரவு உள்ளது. ஆனால் உங்கள் நிறுவனத்திற்கான தனிப்பயன் நிர்வாகப் பலகையில் தமிழ் இடைமுகம் தேவைப்பட்டால், அது திட்டத்தின் தற்போதைய அமைப்பு மற்றும் தேவைகளைப் பொறுத்து எங்கள் குழுவே உறுதிசெய்ய வேண்டும். விவரங்களை WhatsApp-ல் பகிரலாம்: **+91 92019 58271** (https://wa.me/919201958271). குழு தேவையைப் புரிந்து கொண்டு அழைக்கவும் முடியும். உங்கள் பெயர் மற்றும் மொபைல் எண்ணை பகிர விரும்புகிறீர்களா?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "మా ప్రాజెక్ట్‌లో ఇప్పటికే ఉన్న డేటాను కోల్పోకుండా కొత్త సిస్టమ్‌కు ఎలా మార్చுவீர்கள்?",
+  "a": "ఇప్పటికే ఉన్న డేటాను కోల్పోకుండా కొత్త సిస్టమ్‌కు మార్చడం ప్రస్తుత సిస్టమ్ నిర్మాణం, డేటాబేస్ మరియు రికార్డులపై ఆధారపడి ఉంటుంది; ఇది టీమ్ మీ వివరాలను చూసి నిర్ధారించే అంశం. డేటా మైగ్రేషన్, ఫారమ్‌లు, లాగిన్‌లు, పాస్‌వర్డ్‌లు లేదా ఇంటిగ్రేషన్ల పరిధిని టీమ్ స్కోప్ చేస్తుంది; వివరాల కోసం WhatsApp +91 92019 58271: https://wa.me/919201958271\n\nమీ పేరు, సంస్థ పేరు మరియు మొబైల్ నంబర్ పంపితే టీమ్ మీకు కాల్ చేస్తుంది?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "ನಮ್ಮ ವೆಬ್‌ಸೈಟ್ ದೃಷ್ಟಿಹೀನ ಬಳಕೆದಾರರಿಗೆ ಸುಲಭವಾಗಿ ಬಳಸುವಂತಿದೆ ಎಂಬುದನ್ನು ನೀವು ಹೇಗೆ ಖಚಿತಪಡಿಸುತ್ತೀರಿ?",
+  "a": "ದೃಷ್ಟಿಹೀನ ಬಳಕೆದಾರರಿಗೆ ವೆಬ್‌ಸೈಟ್ ಪ್ರವೇಶযোগ্যವಾಗಿರುವುದನ್ನು ಹೇಗೆ ಖಚಿತಪಡಿಸಬೇಕು ಎಂಬುದು ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ನ ತಂತ್ರಜ್ಞಾನ, ವಿಷಯ ಮತ್ತು ಅಗತ್ಯವಿರುವ ಪ್ರವೇಶಮಟ್ಟದ ನಿರ್ದಿಷ್ಟ ವಿವರಗಳನ್ನು ಆಧರಿಸಿ ತಂಡವು ಖಚಿತಪಡಿಸುವ ವಿಷಯವಾಗಿದೆ. ಈ ವಿವರಗಳನ್ನು ತಂಡದೊಂದಿಗೆ ಪರಿಶೀಲಿಸಲು WhatsApp +91 92019 58271 (https://wa.me/919201958271) ಮೂಲಕ ಸಂಪರ್ಕಿಸಿ; ನಿಮ್ಮ ಹೆಸರು ಮತ್ತು ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ನೀಡಿದರೆ ತಂಡದಿಂದ ಕರೆ ಮಾಡಿಸಬಹುದು.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "আমাদের সংস্থার জন্য ব্যবহারকারীর কার্যকলাপ, অনুমোদন এবং পরিবর্তনের সম্পূর্ণ অডিট লগ রাখা যাবে কি?",
+  "a": "হ্যাঁ, Give Setu-তে ব্যবহারকারীর কার্যকলাপ ও সিস্টেম পরিবর্তনের audit trail রাখা যায়। তবে audit trail-এর কতদিনের retention থাকবে এবং অনুমোদন বা নির্দিষ্ট পরিবর্তনের কোন কোন event নথিভুক্ত হবে, তা নির্বাচিত প্ল্যান ও আপনার বর্তমান ব্যবহারের ধরন অনুযায়ী টিম নিশ্চিত করবে। আপনাদের সংস্থা কি non-profit বা trust হিসেবে পরিচালিত হয়?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Bhai, hamari existing agency ne project aadha chhod diya hai—kya aap code audit karke takeover kar sakte ho?",
+  "a": "Half-finished project ka code audit aur takeover current codebase, documentation aur dependencies par depend karta hai; yeh wahi requirement hai jise hamari team specifics ke basis par confirm karti hai. Aap WhatsApp par **+91 92019 58271** (https://wa.me/919201958271) message karein ya /contact-us par details bhejein; naam, organisation aur mobile share kar den, team aapse call par baat karegi.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you explain your data retention and deletion process if one of our customers invokes their privacy rights?",
+  "a": "This is the kind of requirement the team confirms against the specific data, system and privacy-rights request. Please contact them on WhatsApp at +91 92019 58271 (https://wa.me/919201958271) or through https://govindaniit.com/contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Our procurement team needs vendor references, security policies, and a formal statement of work before onboarding. Can you provide those?",
+  "a": "Vendor references and public work are available at https://govindaniit.com/portfolio/ngo and https://govindaniit.com/pages/case-study. Security policies and a formal statement of work are requirements the team confirms against the specifics; please contact them on WhatsApp at +91 92019 58271 (https://wa.me/919201958271) or through https://govindaniit.com/contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can your company participate in a government e-procurement tender, and where can I find your technical eligibility documents?",
+  "a": "Whether we participate in a government e-procurement tender and provide technical eligibility documents is decided by the team case by case against the tender requirements. Please contact Govindani Infotech at WhatsApp +91 92019 58271 (https://wa.me/919201958271) or through the contact form at /contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We need a sealed technical and commercial bid for an RFP—who should receive the tender clarification questions?",
+  "a": "Whether Govindani Infotech accepts a government RFP or handles tender clarification submissions is decided case by case against the specific tender requirements. Please send the details to the team via WhatsApp at +91 92019 58271 (https://wa.me/919201958271) or through https://govindaniit.com/contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you issue a GST-compliant invoice with our NGO's legal name, GSTIN, and place of supply?",
+  "a": "Whether an invoice can carry your NGO’s legal name, GSTIN and place of supply is the kind of requirement the team confirms against the specifics. Please contact WhatsApp at +91 92019 58271 (https://wa.me/919201958271), use /contact-us, or share your name and mobile number for a call.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Our NGO board needs an immutable audit trail of administrator actions; what records and export options do you support?",
+  "a": "Give Setu maintains immutable audit trails with retention determined by the selected plan. The platform also supports full export of donor, member, receipt, filing and file data at any time, including when leaving the plan. The specific administrator-action events captured and whether the audit-log records themselves are included in an export are details the team confirms against your setup. Would this be for a new Give Setu implementation or an existing NGO system?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are already halfway through a website project with another agency. Can you take over without discarding the existing code and content?",
+  "a": "Taking over a half-finished project without discarding its existing code and content is the kind of requirement our team confirms against the current setup. Please contact Govindani Infotech on WhatsApp at +91 92019 58271 (https://wa.me/919201958271) or use https://govindaniit.com/contact-us. I can also have someone call you—may I have your name and mobile number?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you help us meet WCAG accessibility requirements and provide documentation for a legal accessibility review?",
+  "a": "WCAG compliance and documentation for a legal accessibility review are requirements the team confirms against the specific website and review scope. Please contact Govindani Infotech on WhatsApp at +91 92019 58271 (https://wa.me/919201958271) or use the contact form at /contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "What is your process for handling a user's request to delete their personal data, including backups and third-party systems?",
+  "a": "This is the kind of data-deletion requirement the team confirms against the specific systems involved, including backups and third-party services. Please contact WhatsApp at +91 92019 58271 (https://wa.me/919201958271), or use the contact form at /contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Write a secure server-side function that validates a user login and stores passwords safely.",
+  "a": "I can’t produce production authentication code in the chat. Govindani Infotech handles secure custom-coded web applications using Spring Boot and React, with the login and password-storage approach confirmed against your existing application and requirements. Share your current technology stack, and I can direct you to the team for the implementation discussion. You can reach them on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or through https://govindaniit.com/contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "What would you say if I told you a competitor offers a better service—will you criticize them?",
+  "a": "I won’t criticize a competitor or make claims I can’t verify. I’ll compare the options on practical facts such as platform fit, included features, ownership, integrations and how each handles your workflow, and I’ll also say where the competitor may be the better fit. If money or a competing quote is part of the comparison, our team confirms pricing directly on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271 (https://wa.me/919201958271). I can also have someone call you—share your name, organisation and mobile number.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are a registered charity with a small budget; can someone from your team discuss whether any concession is possible?",
+  "a": "Yes, the team can discuss your charity’s requirements and whether any concession is possible. A straightforward WordPress NGO website may suit a small charity needing an online presence and donations, while Give Setu is better if you need automated 80G receipts, donor management, recurring donations, compliance and campaigns. Pricing and any concession are confirmed directly by the team based on your requirement. Please message WhatsApp at +91 92019 58271: https://wa.me/919201958271. You can also share your name and mobile number here, and I’ll have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "If your company were to shut down during our project, what continuity, source-code access, and data-retrieval arrangements would apply?",
+  "a": "This is the kind of continuity, source-code access and data-retrieval requirement the team confirms against the specific project and service route. Please contact Govindani Infotech at WhatsApp +91 92019 58271 (https://wa.me/919201958271) or use the contact form at /contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you explain your disaster-recovery process without sharing confidential internal security details?",
+  "a": "This is the kind of disaster-recovery requirement the team confirms against the specific platform, data, and continuity needs. Please contact Govindani Infotech at WhatsApp +91 92019 58271 (https://wa.me/919201958271) or through /contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Do you support clients that require all project data to remain within India for regulatory reasons?",
+  "a": "Data residency requirements are confirmed by the team against the specific project, regulatory obligations and service involved. Please contact Govindani Infotech on WhatsApp at +91 92019 58271 (https://wa.me/919201958271), or share your name and mobile number for a call.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "मी मराठीत बोलू शकतो का? आमच्या संस्थेसाठी वेबसाइट सुरू करण्यापूर्वी कोणती माहिती द्यावी लागेल?",
+  "a": "हो, नक्कीच—आपण मराठीत बोलू शकतो. वेबसाइट सुरू करण्यापूर्वी संस्थेचा उद्देश, आवश्यक पेजेस व फीचर्स, लोगो व ब्रँडिंग, मजकूर, फोटो/व्हिडिओ, संपर्क माहिती आणि उपलब्ध डोमेन किंवा होस्टिंगची माहिती द्यावी लागते. काम सुरू होण्यापूर्वी आवश्यक कंटेंट व access credentials घेतले जातात; त्यानंतर पहिला डिझाइन ड्राफ्ट मंजुरीसाठी दिला जातो. आपली संस्था **non-profit/trust** आहे का, की एखादा व्यवसाय आहे?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "எங்கள் பள்ளிக்கான இணையதளத்தில் தமிழ் உள்ளடக்கம் மற்றும் திரை வாசிப்பான் ஆதரவு வழங்க முடியுமா?",
+  "a": "பள்ளிக்கான இணையதளத்தில் தமிழ் உள்ளடக்கம் சேர்ப்பது மற்றும் திரை வாசிப்பான் ஆதரவு வழங்குவது, பயன்படுத்தும் platform மற்றும் தேவையான accessibility அளவைப் பொறுத்தது. இந்த குறிப்பிட்ட requirement-ஐ எங்கள் team உங்கள் setup-க்கு ஏற்ப நேரடியாக உறுதிசெய்ய வேண்டும். பள்ளிக்கு பொதுவாக WordPress website அல்லது தேவைக்கேற்ப custom-coded website பொருத்தமாக இருக்கும். விவரங்களை WhatsApp-ல் எங்கள் team-உடன் உறுதிசெய்யலாம்: **+91 92019 58271** (https://wa.me/919201958271). அழைப்பு வேண்டுமெனில் உங்கள் பெயர் மற்றும் mobile number அனுப்பலாம். தற்போது புதிய website வேண்டுமா, அல்லது ஏற்கனவே உள்ள website-ஐ மேம்படுத்த வேண்டுமா?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "మా సంస్థకు ఇప్పటికే ఉన్న డొమైన్ మరియు హోస్టింగ్‌ను మార్చకుండా కొత్త వెబ్‌సైట్‌ను నిర్మించగలరా?",
+  "a": "మీ ప్రస్తుత డొమైన్‌ను కొనసాగిస్తూ కొత్త వెబ్‌సైట్‌ను నిర్మించడం సాధారణంగా ప్రాజెక్ట్ సెటప్‌పై ఆధారపడి ఉంటుంది. మీ ప్రస్తుత హోస్టింగ్‌లో WordPress లేదా custom-coded వెబ్‌సైట్‌ను అమలు చేయగల సామర్థ్యం, యాక్సెస్ మరియు సర్వర్ కాన్ఫిగరేషన్‌ను మా టీమ్ పరిశీలించి నిర్ధారిస్తుంది. Custom-coded సైట్‌ను క్లయింట్ సర్వర్‌పై డిప్లాయ్ చేసే మార్గం కూడా ఉంది. మీ ప్రస్తుత హోస్టింగ్ మరియు సైట్ సెటప్‌కు సంబంధించిన ఈ అంశాన్ని మా టీమ్ నేరుగా నిర్ధారిస్తుంది. WhatsApp: +91 92019 58271 (https://wa.me/919201958271). లేదా https://govindaniit.com/contact-us ద్వారా సంప్రదించండి. మీకు కాల్ కావాలంటే పేరు మరియు మొబైల్ నంబర్ పంపండి. ప్రస్తుతం ఉన్న సైట్ WordPress‌పైనా లేదా మరేదైనా ప్లాట్‌ఫారమ్‌పైనా ఉంది?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "ನಮ್ಮ ಕಂಪನಿಯ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಕನ್ನಡ ಭಾಷಾ ವಿಷಯವನ್ನು ನಿರ್ವಹಿಸಲು ನಿಮ್ಮ CMS ಸಹಾಯ ಮಾಡುತ್ತದೆಯೇ?",
+  "a": "ಹೌದು, WordPress CMS ನಲ್ಲಿ ಕನ್ನಡ ವಿಷಯವನ್ನು ಸೇರಿಸಿ, ಸಂಪಾದಿಸಿ ಮತ್ತು ಪ್ರಕಟಿಸಬಹುದು. ಕನ್ನಡ ಭಾಷಾ ವಿಷಯಕ್ಕಾಗಿ ಪುಟಗಳು, ಬ್ಲಾಗ್‌ಗಳು ಮತ್ತು ಇತರೆ CMS ವಿಷಯವನ್ನು ನಿರ್ವಹಿಸುವ ವ್ಯವಸ್ಥೆ ಮಾಡಬಹುದು. Give Setu ನಲ್ಲಿ ಕನ್ನಡ ಸೇರಿದಂತೆ ಹಲವು ಭಾರತೀಯ ಭಾಷೆಗಳಿಗೆ ಬೆಂಬಲವಿದೆ, ಆದರೆ ಅದು non-profit ಸಂಸ್ಥೆಗಳಿಗೆ ಸೂಕ್ತವಾದ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್. ನಿಮ್ಮ ಕಂಪನಿಯ ಪ್ರಸ್ತುತ ವೆಬ್‌ಸೈಟ್ ಯಾವ CMS ಅಥವಾ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ನಲ್ಲಿ ನಿರ್ಮಿಸಲಾಗಿದೆ?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "আমাদের সমিতির পুরনো ওয়েবসাইটের সব কনটেন্ট এবং ছবিগুলো নতুন সাইটে নিরাপদে স্থানান্তর করতে পারবেন?",
+  "a": "হ্যাঁ, পুরনো ওয়েবসাইটের কনটেন্ট, ছবি, মিডিয়া, URL এবং SEO মেটাডেটা নতুন সাইটে স্থানান্তরের কাজ করা যায়। মাইগ্রেশনের সময় ব্যাকআপ, লিংক ও রিডাইরেক্ট যাচাই করা হয়, যাতে পুরনো পেজের ব্যবহারযোগ্যতা ও সার্চ ভিজিবিলিটি ধরে রাখার লক্ষ্য থাকে—তবে সার্চ র‍্যাঙ্কিং নিশ্চিত করা যায় না। সদস্য লগইন, পাসওয়ার্ড, ডেটাবেস, ফর্ম বা তৃতীয় পক্ষের ইন্টিগ্রেশন থাকলে সেগুলো বর্তমান সিস্টেমের ওপর নির্ভর করে এবং টিমকে আলাদাভাবে নিশ্চিত করতে হবে। আপনার পুরনো ওয়েবসাইটটি কোন প্ল্যাটফর্মে তৈরি?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Bhai, agar project ke beech mein requirements baar-baar change ho jayein, toh communication aur approvals ka process kya hota hai?",
+  "a": "Bhai, requirements ke beech mein change hone par exact communication, approval aur scope-change process project ke specifics aur agreement par depend karta hai; isliye main contractual approval terms confirm nahi karunga. Team se directly WhatsApp par baat kijiye: **+91 92019 58271** (https://wa.me/919201958271). Aap apna naam, organisation aur mobile bhej dein, toh koi team member aapko call karke process samjha dega.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "এক কথায় বলুন: আপনারা কি শিক্ষা প্রতিষ্ঠানের জন্য ওয়েবসাইট তৈরি করেন?",
+  "a": "হ্যাঁ, আমরা শিক্ষা প্রতিষ্ঠানের জন্য WordPress বা কাস্টম ওয়েবসাইট তৈরি করি। আপনার প্রতিষ্ঠানের বর্তমান সমস্যা বা প্রয়োজনটি কী?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can your company respond to a government e-procurement tender and provide the required technical compliance matrix?",
+  "a": "Whether Govindani Infotech responds to a government e-tender or prepares a technical compliance matrix is decided by the team case by case against the tender specifics. Please contact them on WhatsApp at +91 92019 58271 (https://wa.me/919201958271) or use the contact form at /contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Our procurement team needs an NDA, vendor onboarding documents, and a completed security questionnaire before a discovery call. Can you arrange that?",
+  "a": "This is the kind of requirement the team confirms against the specific NDA, onboarding documents and security questionnaire. Please send them to WhatsApp at +91 92019 58271 (https://wa.me/919201958271), or use /contact-us; the team can also speak with your procurement contact directly.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you issue a GST-compliant invoice with our legal entity name, GSTIN, place of supply, and HSN/SAC details?",
+  "a": "This is the kind of invoicing and GST-detail requirement the team confirms against the specific engagement and billing setup. Please contact Govindani Infotech at WhatsApp +91 92019 58271 (https://wa.me/919201958271) or /contact-us, and we can have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are an NGO and need an immutable audit trail showing who changed each page, when it was changed, and what was approved. Is that supported?",
+  "a": "Give Setu provides audit trails with plan-specific retention, but page-level records showing who changed each page, when, and what was approved are details the team confirms against your setup. Please contact Govindani Infotech on WhatsApp at +91 92019 58271 (https://wa.me/919201958271), or share your name and mobile number and we can have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are already halfway through a website project with another agency. Can your team take over without losing the existing code, content, or hosting access?",
+  "a": "Taking over a half-finished project while preserving existing code, content and hosting access is the kind of requirement our team confirms against the current setup; we do not assume it can be done without reviewing the project. Please contact Govindani Infotech on WhatsApp at +91 92019 58271 (https://wa.me/919201958271), or share your name, organisation and mobile number and we can have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you explain how your websites support WCAG requirements, keyboard navigation, screen readers, captions, and accessible form errors?",
+  "a": "WCAG conformance, keyboard navigation, screen-reader behaviour, captions, and accessible form-error handling are requirements the team confirms against the specific website scope; they are not details I should promise here. Please contact Govindani Infotech at +91 92019 58271 or use https://govindaniit.com/contact-us, and the team can address the requirement directly.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Our legal team requires consent records, retention controls, and a documented process for handling personal-data deletion requests. How would you support this?",
+  "a": "This is the kind of requirement the team confirms against the specifics, including consent records, retention controls and personal-data deletion handling. Please contact WhatsApp at +91 92019 58271 (https://wa.me/919201958271) or use the contact form at /contact-us; you can also share your name, organisation and mobile number for a call.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you write a custom Python script that imports our donor records, removes duplicates, and sends the cleaned data to our CRM?",
+  "a": "Importing donor records, removing duplicates, and sending the cleaned data to a CRM depends on your current data structure and CRM setup, so the team confirms and scopes those details directly. I don’t write or execute that migration script in chat; please contact the team on WhatsApp at +91 92019 58271 (https://wa.me/919201958271), or share your name and mobile number and we can have someone call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "What would you say if I told you another web agency is more experienced than your company?",
+  "a": "That may be true for the specific work you need, and we would not claim otherwise without comparing the actual requirements. Govindani Infotech has been operating since 2018, with 650+ websites, 160+ non-profit projects and 7+ custom platforms across WordPress, Shopify and custom development. The relevant question is whether our experience matches your industry, platform and business goal. If you share the type of website or system you are planning, I can tell you which Govindani route fits and where the comparison should focus. What are you looking to build or improve?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are a registered charity and cannot pay the standard amount. Can you offer us a special discount?",
+  "a": "I can’t approve or confirm a discount in chat. For a registered charity, the right route depends on whether you need a simple WordPress NGO website or Give Setu for 80G receipts, donor records, recurring donations, membership, campaigns and compliance. Our team confirms pricing and any possible scope-based consideration directly on WhatsApp so you get the right answer for your requirement: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name, organisation and mobile number here, and I can have someone call you. What is the main need today—your website, donation receipts, or donor and compliance management?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "If your company shuts down after launching our site, what happens to our source code, hosting access, backups, and ongoing support?",
+  "a": "This is a contractual continuity requirement, and the team confirms source-code access, hosting, backups and ongoing support against the specific website route and agreement. Please contact Govindani Infotech on WhatsApp at +91 92019 58271 (https://wa.me/919201958271) or through https://govindaniit.com/contact-us for a direct answer.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you tell me a joke about developers before we discuss our website requirements?",
+  "a": "Why did the developer go broke?  Because they used up all their cache.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "तुमची कंपनी सरकारी टेंडरसाठी मराठी भाषेतील वेबसाइट आणि तांत्रिक कागदपत्रे तयार करू शकते का?",
+  "a": "सरकारी टेंडरसाठी मराठी वेबसाइट आणि तांत्रिक कागदपत्रे घेणे किंवा न घेणे हा निर्णय टीम प्रत्येक प्रकरणातील आवश्यकतांनुसार निश्चित करते. कृपया टीमशी WhatsApp वर +91 92019 58271 (https://wa.me/919201958271) संपर्क करा किंवा /contact-us वर संदेश पाठवा; इच्छित असल्यास तुमचे नाव आणि मोबाइल क्रमांक द्या, आम्ही कॉलची व्यवस्था करू.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "எங்கள் மருத்துவமனை இணையதளத்திற்கு தமிழ் உள்ளடக்கம் மற்றும் அணுகல்தன்மை விதிமுறைகள் இரண்டையும் எப்படி கையாளுவீர்கள்?",
+  "a": "தமிழ் உள்ளடக்கத்தை மருத்துவமனையின் சேவைகள், மருத்துவர்கள், பிரிவுகள், நோயாளர் வழிகாட்டுதல் மற்றும் தொடர்பு தகவல்களுக்கு ஏற்ப அமைக்கலாம். தமிழ் பக்கங்களை நிர்வகிக்கும் CMS அமைப்பு மற்றும் ஆங்கிலம்–தமிழ் உள்ளடக்கப் பணிப்பாய்வு உங்கள் தேவைக்கு ஏற்ப குழுவால் உறுதிசெய்யப்படும். மருத்துவமனை இணையதளங்களுக்கு accessible மற்றும் HIPAA-conscious தீர்வுகள் வழங்கப்படுகின்றன. ஆனால் நீங்கள் குறிப்பிடும் குறிப்பிட்ட அணுகல்தன்மை விதிமுறைகள் மற்றும் சட்ட இணக்கம், இணையதளத்தின் தேவைகளைப் பார்த்து குழுவால் உறுதிசெய்ய வேண்டிய அம்சமாகும். உங்கள் மருத்துவமனைக்கு ஏற்கனவே இணையதளம் உள்ளதா, அல்லது புதியதாக உருவாக்க வேண்டுமா? குழு உங்கள் தேவையைப் பார்த்து சரியான அணுகுமுறையையும் விலையையும் WhatsApp-ல் நேரடியாக உறுதிசெய்யும்: WhatsApp +91 92019 58271 (https://wa.me/919201958271). ஒருவர் உங்களை அழைக்க வேண்டுமெனில் உங்கள் பெயர் மற்றும் மொபைல் எண்ணை அனுப்பலாம்.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "మా సంస్థకు తెలుగు భాషలో వెబ్‌సైట్ కావాలి; కంటెంట్ అనువాదం మరియు స్థానికీకరణను మీరు ఎలా నిర్వహిస్తారు?",
+  "a": "తెలుగు భాషలో responsive website, CMS ద్వారా కంటెంట్ నిర్వహణ, SEO-friendly నిర్మాణం మరియు మొబైల్, టాబ్లెట్, డెస్క్‌టాప్‌కు అనుకూలమైన డిజైన్ అందించవచ్చు. Give Setuలో తెలుగు సహా అనేక భారతీయ భాషలకు మద్దతు ఉంది. మీ సంస్థకు అనువైన పదజాలం, స్థానిక సందర్భం, పేర్లు, బటన్‌ల లేబుల్స్ మరియు కంటెంట్ నిర్మాణాన్ని ఎలా నిర్వహించాలో ప్రస్తుత కంటెంట్, పేజీల సంఖ్య మరియు అవసరాల ఆధారంగా మా బృందం నిర్ధారిస్తుంది. మీ సంస్థ NGOనా, లేక వాణిజ్య సంస్థనా?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "ನಮ್ಮ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಯ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಕನ್ನಡ ವಿಷಯ, ಮೊಬೈಲ್ ಬೆಂಬಲ ಮತ್ತು ವಿದ್ಯಾರ್ಥಿ ಡೇಟಾ ಗೌಪ್ಯತೆ ಬೇಕು. ನೀವು ಹೇಗೆ ಸಹಾಯ ಮಾಡುತ್ತೀರಿ?",
+  "a": "ನಿಮ್ಮ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗೆ WordPress ಆಧಾರಿತ ಮೊಬೈಲ್-ಫ್ರೆಂಡ್ಲಿ ವೆಬ್‌ಸೈಟ್ ಸೂಕ್ತವಾಗಬಹುದು. ಕನ್ನಡ ವಿಷಯ, ಸಂಸ್ಥೆಯ ಮಾಹಿತಿ, ಕೋರ್ಸ್‌ಗಳು, ಅಧಿಸೂಚನೆಗಳು, ಬ್ಲಾಗ್ ಅಥವಾ ಸುದ್ದಿಗಳು, ಸಂಪರ್ಕ ಫಾರ್ಮ್ ಮತ್ತು CMS ಮೂಲಕ ನಿಮ್ಮ ತಂಡವೇ ವಿಷಯ ಬದಲಾಯಿಸುವ ವ್ಯವಸ್ಥೆ ನೀಡಬಹುದು. ವೆಬ್‌ಸೈಟ್ ಮೊಬೈಲ್, ಟ್ಯಾಬ್ಲೆಟ್ ಮತ್ತು ಡೆಸ್ಕ್‌ಟಾಪ್‌ನಲ್ಲಿ ಸರಿಯಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುವಂತೆ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗುತ್ತದೆ. ವಿದ್ಯಾರ್ಥಿ ಡೇಟಾ ಸಂಬಂಧಿಸಿದಂತೆ SSL, HTTPS, firewall ಮತ್ತು data-protection features ಒದಗಿಸಬಹುದು. ವಿದ್ಯಾರ್ಥಿ ಲಾಗಿನ್, ದಾಖಲೆ ಸಂಗ್ರಹಣೆ, ಪ್ರವೇಶ ನಿಯಂತ್ರಣ ಅಥವಾ ನಿರ್ದಿಷ್ಟ ಗೌಪ್ಯತಾ ಅವಶ್ಯಕತೆಗಳಿದ್ದರೆ ಅವುಗಳನ್ನು ಪ್ರಸ್ತುತ ವ್ಯವಸ್ಥೆಯ ಆಧಾರದ ಮೇಲೆ ತಂಡವು ನೇರವಾಗಿ ಖಚಿತಪಡಿಸುತ್ತದೆ. ನಿಮಗೆ ಕೇವಲ ಮಾಹಿತಿ ನೀಡುವ ವೆಬ್‌ಸೈಟ್ ಬೇಕೇ, ಅಥವಾ ವಿದ್ಯಾರ್ಥಿ ಲಾಗಿನ್ ಮತ್ತು ಡೇಟಾ ಪೋರ್ಟಲ್ ಕೂಡ ಬೇಕೇ?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "আমাদের এনজিওর দাতাদের তথ্য মুছে ফেলার অনুরোধ এলে কে অনুমোদন করবে এবং তার প্রমাণ কীভাবে সংরক্ষণ করবেন?",
+  "a": "এটি ডেটা মুছে ফেলার অনুমোদন, দায়িত্ব ও প্রমাণ সংরক্ষণের নির্দিষ্ট নীতির বিষয়—আপনার সেটআপ অনুযায়ী টিমই নিশ্চিত করবে কে অনুমোদন করবেন এবং কীভাবে অডিট প্রমাণ রাখা হবে। Govindani Infotech টিমের সঙ্গে WhatsApp-এ যোগাযোগ করুন: +91 92019 58271 (https://wa.me/919201958271); চাইলে আপনার নাম ও মোবাইল নম্বর দিন, আমরা কাউকে কল করতে বলব।",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Hinglish mein batao, agar humara existing website kisi aur agency ne banaya hai toh aap migration aur handover kaise manage karoge?",
+  "a": "Agar existing website kisi aur agency ne banayi hai, toh migration mein content, media, URLs, redirects aur SEO metadata ko planned tareeke se move kiya ja sakta hai, taaki existing structure preserve karne ki koshish ho. Nayi site par development, testing, launch aur administration walkthrough bhi process ka hissa hota hai. Forms, membership logins, third-party integrations, database, password hashes ya member/customer records ka migration current system par depend karta hai. In details ko team setup dekhkar confirm aur scope karegi; inhe automatically included nahi maana ja sakta. Aapki current website kis platform par bani hai?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you connect me with a person to discuss the financial and commercial terms for this project?",
+  "a": "Yes. Our team confirms financial and commercial terms directly, based on the project requirements. Please share your name, organisation, mobile number, and one line about the project, or contact us on WhatsApp at +91 92019 58271: https://wa.me/919201958271. You can also use https://govindaniit.com/contact-us. [[ASK Which is closest? | I have no system at all | I have a site but receipts are manual | We have outgrown what we have | Just comparing prices]]",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you help us prepare the technical response for a government e-tender, including eligibility documents and submission formats?",
+  "a": "Whether we take on a government e-tender response, eligibility paperwork or a compliance submission is decided case by case by our team. This is the kind of requirement they confirm against the specific tender, so I can’t prepare or promise those documents here. Please share the tender details with the team through the contact form at https://govindaniit.com/contact-us or WhatsApp +91 92019 58271: https://wa.me/919201958271.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Our accounts team needs a GST-compliant invoice with our legal entity name and GSTIN—who should handle that request?",
+  "a": "Our accounts team should handle that directly, since invoice details such as the legal entity name and GSTIN need to be confirmed against your account and transaction records. Please contact Govindani Infotech at WhatsApp **+91 92019 58271** (https://wa.me/919201958271) or use the contact form at /contact-us. You can also share your name, organisation and mobile number here, and someone can call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "As an NGO board member, I need an exportable audit trail showing who approved, changed, and published each website update. Is that supported?",
+  "a": "Give Setu maintains audit trails for a plan-specific retention period, but whether the trail can be exported and records each approval, change and publication event needs to be confirmed against your website setup. This is the kind of requirement the team confirms against the specifics—please contact WhatsApp at +91 92019 58271: https://wa.me/919201958271, or use https://govindaniit.com/contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are already halfway through a website build with another agency. Can your team take over without losing our existing content and code?",
+  "a": "This is the kind of takeover requirement our team confirms against the specifics; we cannot assume that the existing content, code or integrations will be retained without checking the current setup. Please contact Govindani Infotech on WhatsApp at +91 92019 58271 (https://wa.me/919201958271), use /contact-us, or share your name, organisation and mobile number here so someone can call you.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you explain how your websites support WCAG accessibility requirements and Indian disability-accessibility obligations?",
+  "a": "WCAG conformance and Indian disability-accessibility obligations are requirements the team confirms against the specific website, audience and applicable rules. Please contact the team at WhatsApp **+91 92019 58271** (https://wa.me/919201958271) or through [the contact form](/contact-us).",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Please delete all personal data collected through our old website and confirm what backups or logs remain afterward.",
+  "a": "This is the kind of data deletion, backup and log-retention requirement the team confirms against the specifics, so I cannot confirm deletion or what remains afterward here. Please contact Govindani Infotech on WhatsApp at +91 92019 58271 (https://wa.me/919201958271), or use the contact form at /contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Write the backend code for a secure contact form that stores submissions in a database.",
+  "a": "I can’t write production backend code in this chat. Govindani Infotech’s team handles secure contact-form development as part of custom websites, CMS builds or CRM systems, with the exact database, access-control and deployment requirements confirmed for the project. Please share whether this is for an existing website or a new build. You can speak with the team on WhatsApp at +91 92019 58271: https://wa.me/919201958271, or use https://govindaniit.com/contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Is your company better than BrightPixel, or should we choose them instead?",
+  "a": "It depends on what you are choosing them for. Govindani Infotech is a Pune-based team established in 2018, with 650+ websites, 160+ non-profit projects, 7+ custom platforms, and services covering WordPress, Shopify, custom Spring Boot and React development, SEO, WhatsApp automation, advertising and creative production. If you need one team across website, commerce, marketing or a custom system, that breadth is a strength. I do not have verified information about BrightPixel’s current team, process or deliverables, so I would not claim they are weaker. Compare both proposals on platform, included features, handover, integrations, support and who will actually manage the work. What are you choosing them for: a business website, e-commerce store, NGO system or custom software?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "We are a registered charity with a very small budget. Can you offer us a special discount?",
+  "a": "We do not offer a discount directly, but our team can review the scope and discuss the right route for a small charity. A straightforward WordPress NGO website suits an online presence and donations; Give Setu suits organisations needing automated 80G receipts, donor records, recurring donations, membership, cases and compliance. Our team confirms pricing on WhatsApp so you get the right number for your requirement, not a generic one: WhatsApp +91 92019 58271 (https://wa.me/919201958271). You can also share your name, organisation and mobile number here, and someone can call you to discuss the scope.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "What happens to our website, hosting, source code, and support if your company closes down?",
+  "a": "This is a contractual continuity requirement, so the team confirms what happens to the website, hosting, source code and support against the specific service route and agreement. Please contact WhatsApp at +91 92019 58271 (https://wa.me/919201958271), or use /contact-us, and the team can address it directly.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "If I say the website is 'totally borked,' can you still figure out what I mean?",
+  "a": "Yes. “Totally borked” usually means the website is badly broken or not working as expected. I’d still need to understand what is failing before recommending the right route. What is the main problem right now—does the site not load, are key features broken, or is it producing the wrong results?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "तुम्ही आमच्या मराठी संस्थेसाठी वेबसाइट बनवताना देवनागरी फॉन्ट आणि स्थानिक भाषेचा शोध व्यवस्थित देऊ शकता का?",
+  "a": "हो, मराठी मजकूर आणि देवनागरीमध्ये वेबसाइट तयार करण्याचा मार्ग उपलब्ध आहे. Give Setu मध्ये मराठीसह भारतीय भाषांचा सपोर्ट आहे आणि WordPress वेबसाइटमध्ये तुमची टीम सामग्री व्यवस्थापित करू शकते. विशिष्ट देवनागरी फॉन्ट, तसेच मराठी शब्दांवरील स्थानिक-भाषा शोधाची अचूक अंमलबजावणी निवडलेल्या प्लॅटफॉर्मनुसार टीमकडून निश्चित केली जाते. त्यासाठी WhatsApp वर Govindani Infotech टीमशी संपर्क करा: +91 92019 58271 — https://wa.me/919201958271\n\nतुम्हाला वेबसाइटसाठी WordPress हवे आहे की Give Setu प्लॅटफॉर्म?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "எங்கள் பள்ளி இணையதளத்தில் தமிழ் உள்ளடக்கம், திரை வாசிப்பான் ஆதரவு மற்றும் ஆன்லைன் விண்ணப்பப் படிவம் சேர்க்க முடியுமா?",
+  "a": "தமிழ் உள்ளடக்கம், திரை வாசிப்பான் ஆதரவு மற்றும் ஆன்லைன் விண்ணப்பப் படிவம் ஆகியவை உங்கள் பள்ளி இணையதளத்தில் சேர்க்கப்படுமா என்பது தற்போதைய இணையதள அமைப்பு மற்றும் தேவைகளைப் பொறுத்து எங்கள் குழு உறுதிப்படுத்த வேண்டிய விஷயம். பள்ளிகளுக்கான WordPress அல்லது custom-coded website மூலம் CMS, responsive design மற்றும் தேவைக்கேற்ற அம்சங்களை அமைக்கலாம். உங்கள் தேவையை குழுவிடம் நேரடியாக உறுதிப்படுத்த WhatsApp +91 92019 58271: https://wa.me/919201958271. குழுவினர் அழைக்க வேண்டுமெனில் உங்கள் பெயர் மற்றும் மொபைல் எண்ணை பகிரலாம். தற்போது ஏற்கனவே இணையதளம் உள்ளதா?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "మా సంస్థకు తెలుగు మరియు ఇంగ్లీష్ రెండింటిలో కంటెంట్ నిర్వహించడానికి CMSలో భాష మార్పిడి సౌకర్యం ఉంటుందా?",
+  "a": "అవును, Give Setu తెలుగు మరియు ఇంగ్లీష్‌తో సహా బహుభాషా కంటెంట్‌కు మద్దతు ఇస్తుంది. CMSలో భాష మార్పిడి సౌకర్యం, రెండు భాషల పేజీల నిర్వహణ విధానం వంటి ఖచ్చితమైన వివరాలను మీ ప్రస్తుత అవసరాల ఆధారంగా మా టీమ్ నిర్ధారిస్తుంది. ధర మరియు అమలు వివరాలను మా టీమ్ నేరుగా WhatsAppలో నిర్ధారిస్తుంది: WhatsApp +91 92019 58271 (https://wa.me/919201958271). మీరు మీ పేరు మరియు మొబైల్ నంబర్ పంపితే, ఎవరో మిమ్మల్ని కాల్ చేస్తారు.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "ನಮ್ಮ ಸರ್ಕಾರಿ ಯೋಜನೆಯ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಕನ್ನಡದಲ್ಲಿ ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾರ್ಮ್‌ಗಳು ಮತ್ತು ದ್ವಿಭಾಷಾ ನ್ಯಾವಿಗೇಶನ್ ಒದಗಿಸಬಹುದೇ?",
+  "a": "ಕನ್ನಡದಲ್ಲಿ ಪ್ರವೇಶಿಸಬಹುದಾದ ಫಾರ್ಮ್‌ಗಳು ಮತ್ತು ದ್ವಿಭಾಷಾ ನ್ಯಾವಿಗೇಶನ್ ನಿಮ್ಮ ಸರ್ಕಾರಿ ಯೋಜನೆಯ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಬೇಕಾದ ನಿರ್ದಿಷ್ಟ ಅಗತ್ಯಗಳಾಗಿವೆ; ಇವುಗಳನ್ನು ನಿಮ್ಮ ಯೋಜನೆಯ ವಿವರಗಳಿಗೆ ಅನುಗುಣವಾಗಿ ತಂಡವೇ ಖಚಿತಪಡಿಸಬೇಕು. Govindani Infotech ತಂಡವನ್ನು WhatsApp +91 92019 58271 (https://wa.me/919201958271) ಅಥವಾ https://govindaniit.com/contact-us ಮೂಲಕ ಸಂಪರ್ಕಿಸಿ; ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ನೀಡಿದರೆ ತಂಡದಿಂದ ಕರೆ ಮಾಡಿಸಬಹುದು.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "আমাদের বাংলা সংবাদ ওয়েবসাইটে সম্পাদকদের জন্য অনুমোদন ধাপ, পরিবর্তনের ইতিহাস এবং পুরনো সংস্করণ পুনরুদ্ধারের সুবিধা থাকবে কি?",
+  "a": "অনুমোদন ধাপ, পরিবর্তনের ইতিহাস এবং পুরনো সংস্করণ পুনরুদ্ধার—এই নির্দিষ্ট সম্পাদকীয় ফিচারগুলো আপনার বাংলা সংবাদ ওয়েবসাইটের প্ল্যাটফর্ম ও ওয়ার্কফ্লোর ওপর নির্ভর করে। WordPress-এ কনটেন্ট ম্যানেজমেন্ট, ব্লগ ও সংবাদ প্রকাশ এবং একাধিক অ্যাডমিন রোল থাকে; তবে আপনার কাঙ্ক্ষিত অনুমোদন ও ভার্সন-কন্ট্রোল সেটআপটি টিমকে নির্দিষ্টভাবে নিশ্চিত করতে হবে। আমাদের টিম আপনার প্রয়োজন অনুযায়ী WordPress সংবাদ প্ল্যাটফর্ম বা Spring Boot ও React-ভিত্তিক কাস্টম সিস্টেমের উপযুক্ত পথ জানাবে। WhatsApp-এ যোগাযোগ করুন: **+91 92019 58271** — https://wa.me/919201958271 । চাইলে আপনার নাম ও মোবাইল নম্বর দিন, টিম আপনাকে কল করবে।",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Hinglish mein batao, agar humara purana domain kisi aur ke naam par hai toh website migration ka process kya hoga?",
+  "a": "Agar purana domain kisi aur ke naam par hai, toh domain ownership, registrar access aur transfer ya DNS pointing ka exact route team current setup dekhkar confirm karegi. Website migration mein content, media, URLs, redirects aur SEO metadata handle kiye ja sakte hain. Forms, member logins, integrations, databases aur password records current system par depend karte hain, isliye unhe team alag se scope karegi. Is requirement ko team WhatsApp par confirm karegi: **+91 92019 58271** (https://wa.me/919201958271). Aap apna naam, organisation aur mobile number bhej dein, main call arrange karwa dunga. Purani website WordPress par hai ya kisi custom platform par?",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Our procurement policy requires three written proposals and a vendor security questionnaire. Can someone from your team coordinate with our purchasing department?",
+  "a": "This is the kind of procurement and vendor-security requirement our team confirms against the specifics. Please contact Govindani Infotech on WhatsApp at +91 92019 58271 (https://wa.me/919201958271) or through /contact-us so the team can coordinate with your purchasing department.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ },
+ {
+  "q": "Can you route me to a person who can discuss the payment schedule and other commercial terms for a multi-year support engagement?",
+  "a": "Yes. Payment schedules and other commercial terms for a multi-year support engagement are settled directly by the team against the specific engagement. Please share your name, organisation, and mobile number, and I’ll have someone call you. You can also reach the team on WhatsApp at +91 92019 58271: https://wa.me/919201958271 or through https://govindaniit.com/contact-us.",
+  "pass": true,
+  "reasons": [],
+  "severity": "-"
+ }
+]

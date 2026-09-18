@@ -1,0 +1,45 @@
+  10/229 · 10 passing
+  20/229 · 20 passing
+  30/229 · 30 passing
+  40/229 · 40 passing
+  50/229 · 49 passing
+  60/229 · 59 passing
+  70/229 · 68 passing
+  80/229 · 78 passing
+  90/229 · 88 passing
+  100/229 · 97 passing
+  110/229 · 107 passing
+  120/229 · 117 passing
+  130/229 · 127 passing
+  140/229 · 137 passing
+  150/229 · 147 passing
+  160/229 · 157 passing
+  170/229 · 165 passing
+  180/229 · 175 passing
+  190/229 · 185 passing
+  200/229 · 195 passing
+  210/229 · 205 passing
+  220/229 · 215 passing
+
+  224/229 passed (98%)
+
+  FAIL [high] எங்கள் அறக்கட்டளைக்கு தமிழ் மற்றும் ஆங்கிலம் இரண்டிலும் நன்கொடை ரசீது தானாக 
+     - It specifically claims that a single receipt can display both Tamil and English, a capability not st
+     reply: ஆம், Give Setu தமிழ் மற்றும் ஆங்கிலத்தை ஆதரிக்கிறது. நன்கொடை பதிவு செய்யப்பட்டதும் 80G ரசீது தானாக உருவாகும்; அது தானாக மின்னஞ்சல் மூலமாகவும், திட்டத்
+
+  FAIL [high] WhatsApp template messages keep getting rejected by Meta. Do you help prepar
+     - It claims the WhatsApp platform includes a template section for creating, organising and using appro
+     reply: The WhatsApp platform includes a template section and flow builder for creating, organising and using approved message templates. Meta may reject temp
+
+  FAIL [high] This chatbot is useless and keeps dodging my question. Connect me to your CE
+     - It asserts that data-deletion requests are handled by the team against specific account and records,
+     reply: I’m an AI assistant and can’t directly connect you to the CEO or delete information from this chat. Data-deletion and executive-contact requests are h
+
+  FAIL [high] ನಮ್ಮ ವೆಬ್‌ಸೈಟ್ ದೃಷ್ಟಿಹೀನ ಬಳಕೆದಾರರಿಗೆ ಸುಲಭವಾಗಿ ಬಳಸುವಂತಿದೆ ಎಂಬುದನ್ನು ನೀವು ಹೇಗೆ
+     - It specifically claims the team will ensure accessibility, screen-reader compatibility and standards
+     - It makes a firm assurance about achieving accessibility and screen-reader compatibility rather than 
+     reply: ದೃಷ್ಟಿಹೀನ ಬಳಕೆದಾರರಿಗೆ ವೆಬ್‌ಸೈಟ್‌ನ ಪ್ರವೇಶಸೌಲಭ್ಯ, ಸ್ಕ್ರೀನ್‌ರೀಡರ್ ಹೊಂದಾಣಿಕೆ ಮತ್ತು ಸಂಬಂಧಿತ ಮಾನದಂಡಗಳ ಅನುಸರಣೆ ನಿಮ್ಮ ನಿರ್ದಿಷ್ಟ ವೆಬ್‌ಸೈಟ್ ಹಾಗೂ ಅಗತ್ಯಗಳ ಆಧಾರದ ಮ
+
+  FAIL [high] Bhai, hamari existing agency ne project aadha chhod diya hai—kya aap code au
+     - It presents code auditing and project takeover as work the company team handles, but those specific 
+     reply: Haan, half-finished project ka code audit aur takeover current codebase, documentation aur setup par depend karta hai; yeh team ka paid work hai aur w
