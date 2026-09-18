@@ -22,11 +22,6 @@ export default function Portfolio() {
     <>
       <Header />
       <main className="giport">
-        <header className="giport-hero">
-          <p className="giport-eyebrow">Our Work</p>
-          <h1>Websites we&rsquo;ve <em>custom-built</em></h1>
-          <p>Hundreds of live builds across every industry. Pick a category to explore the projects &mdash; each one custom coded and developed by Govindani Infotech.</p>
-        </header>
         <div className="giport-grid">
           {CATEGORIES.map((c, i) => (
             <Link key={c.to} className="giport-tile" to={c.to} style={{ ['--g' as string]: c.g }}>
