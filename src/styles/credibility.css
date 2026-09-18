@@ -15,8 +15,10 @@
 }
 .gicred-half {
   position: relative; overflow: hidden; display: flex; flex-direction: column;
-  align-items: center; justify-content: center; text-align: center;
-  gap: 20px; padding: clamp(40px, 5vw, 68px) clamp(24px, 4vw, 60px);
+  align-items: center; justify-content: center; text-align: center; gap: 20px;
+  /* Extra top padding clears the site's fixed 80px header, so the badge/logo
+     never scrolls under the navbar. */
+  padding: clamp(96px, 10vw, 128px) clamp(24px, 4vw, 60px) clamp(48px, 5vw, 72px);
 }
 .gicred-half > * { position: relative; z-index: 2; }
 .gicred-inner { display: flex; flex-direction: column; align-items: center; gap: 18px; max-width: 480px; width: 100%; }
@@ -136,7 +138,9 @@
 /* ---------------- responsive: stack only on phones ---------------- */
 @media (max-width: 760px) {
   .gicred-split { grid-template-columns: 1fr; min-height: 0; }
-  .gicred-half { padding: clamp(44px, 9vw, 64px) 22px; }
+  .gicred-half { padding: clamp(84px, 15vw, 104px) 22px clamp(46px, 9vw, 60px); }
+  /* The lower (Birla) half no longer needs header clearance once stacked. */
+  .gicred-half + .gicred-half { padding-top: clamp(48px, 9vw, 64px); }
 }
 
 /* ---------------- keyframes ---------------- */
