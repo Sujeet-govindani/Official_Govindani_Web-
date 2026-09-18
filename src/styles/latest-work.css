@@ -1,0 +1,65 @@
+/* "Check out our latest websites" — homepage showcase of custom-built sites.
+   Namespaced .giwork. Light, premium, responsive (3 / 2 / 1 columns). */
+.giwork { width: 100%; background: #faf7f3; padding: clamp(56px, 7vw, 100px) 20px; box-sizing: border-box; }
+.giwork-wrap { max-width: 1200px; margin: 0 auto; }
+.giwork-head { text-align: center; margin: 0 auto clamp(34px, 4vw, 54px); max-width: 720px; }
+.giwork-eyebrow {
+  font-family: 'DM Sans','Inter',sans-serif; font-weight: 700; font-size: .72rem;
+  letter-spacing: .2em; text-transform: uppercase; color: #b08328; margin: 0 0 12px;
+}
+.giwork-h {
+  font-family: 'Cormorant Garamond','EB Garamond',Georgia,serif; font-weight: 700;
+  font-size: clamp(2rem, 4.2vw, 3.1rem); line-height: 1.06; color: #211a12; margin: 0 0 12px; text-wrap: balance;
+}
+.giwork-h em { font-style: normal; background: linear-gradient(90deg,#b8860b,#e0a93b); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.giwork-sub { font-family: 'DM Sans','Inter',sans-serif; font-size: clamp(1rem,1.3vw,1.1rem); line-height: 1.6; color: #6d6153; margin: 0; }
+
+.giwork-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(20px, 2.4vw, 32px); }
+
+.giwork-card {
+  display: flex; flex-direction: column; text-decoration: none; color: inherit;
+  background: #fff; border: 1px solid #ece3d6; border-radius: 18px; overflow: hidden;
+  box-shadow: 0 18px 44px -26px rgba(90,60,20,.35);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.giwork-card:hover { transform: translateY(-6px); box-shadow: 0 34px 70px -30px rgba(90,60,20,.5); border-color: #e0cba8; }
+.giwork-card:focus-visible { outline: 2px solid #b8860b; outline-offset: 3px; }
+
+.giwork-cat {
+  position: absolute; top: 44px; right: 12px; z-index: 3;
+  font-family: 'DM Sans','Inter',sans-serif; font-weight: 700; font-size: .68rem; letter-spacing: .12em;
+  text-transform: uppercase; color: #fff; background: rgba(20,16,10,.78);
+  padding: 6px 12px; border-radius: 999px; -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+}
+/* browser-frame screenshot */
+.giwork-shot { position: relative; display: block; background: #eee7dc; }
+.giwork-bar {
+  display: flex; align-items: center; gap: 6px; height: 34px; padding: 0 14px;
+  background: #f2ede4; border-bottom: 1px solid #e6dccb;
+}
+.giwork-bar i { width: 9px; height: 9px; border-radius: 50%; background: #d8cbb6; flex: 0 0 auto; }
+.giwork-url {
+  margin-left: 10px; font-family: 'DM Sans',monospace; font-size: .72rem; color: #9a8b74;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.giwork-shot img { display: block; width: 100%; aspect-ratio: 1280 / 820; object-fit: cover; object-position: center top; background: #efe9df; }
+
+.giwork-info { display: flex; flex-direction: column; gap: 7px; padding: 20px 22px 24px; }
+.giwork-name { font-family: 'Cormorant Garamond','EB Garamond',serif; font-weight: 700; font-size: 1.5rem; color: #211a12; line-height: 1.1; }
+.giwork-tag { font-family: 'DM Sans','Inter',sans-serif; font-size: .82rem; font-weight: 600; color: #b08328; letter-spacing: .01em; }
+.giwork-visit { margin-top: 6px; font-family: 'DM Sans','Inter',sans-serif; font-size: .9rem; font-weight: 700; color: #211a12; }
+.giwork-card:hover .giwork-visit { color: #b8860b; }
+
+.giwork-more { text-align: center; margin-top: clamp(36px, 4vw, 56px); }
+.giwork-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: 'DM Sans','Inter',sans-serif; font-weight: 700; font-size: 1.02rem;
+  padding: 16px 36px; border-radius: 999px; text-decoration: none;
+  color: #fff; background: linear-gradient(90deg,#b8860b,#dca63a);
+  box-shadow: 0 14px 34px -10px rgba(184,134,11,.6); transition: transform .18s ease, box-shadow .18s ease;
+}
+.giwork-btn:hover { transform: translateY(-3px); box-shadow: 0 20px 44px -10px rgba(184,134,11,.75); }
+
+@media (max-width: 900px) { .giwork-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .giwork-grid { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .giwork-card, .giwork-btn { transition: none; } .giwork-card:hover, .giwork-btn:hover { transform: none; } }

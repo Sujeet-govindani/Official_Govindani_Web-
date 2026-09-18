@@ -21,8 +21,12 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "description": "We partner with nonprofits, trusts, and mission-led organizations to build digital experiences that drive clarity, trust, and measurable impact."
   },
   "/": {
-    "title": "NGO Website & Donation Platform Development",
-    "description": "NGO website and donation platform development in India, with scalable digital systems, secure donation flows, automation, tracking, and donor management."
+    "title": "Best IT & Web Development Company in Pune | Govindani",
+    "description": "Govindani Infotech is a Pune-based IT & web development company: websites, e-commerce, mobile apps, WhatsApp API, SEO, digital marketing and NGO donation platforms for businesses across India."
+  },
+  "/portfolio": {
+    "title": "Our Work | Website Portfolio by Category — Govindani Infotech",
+    "description": "Explore hundreds of websites custom-built by Govindani Infotech across e-commerce, business, NGO, real estate, healthcare, hospitality and virtual tours."
   },
   "/services/meta-ads": {
     "title": "Targeted Meta Ads for Revenue Growth",

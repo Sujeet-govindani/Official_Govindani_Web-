@@ -64,6 +64,7 @@ const AboutPage = lazy(() => import("./pages/AboutPage"));
 const Virtualtour = lazy(() => import("./pages/Virtualtour"));
 const EcommercePage = lazy(() => import("./pages/EcommercePage"));
 import Ngoportfolio from "./pages/NGOportfolio";
+const PortfolioIndex = lazy(() => import("./pages/Portfolio"));
 const RealEstatePage = lazy(() => import("./pages/RealEstate"));
 const BusinessWebsitesPage = lazy(() => import("./pages/Business"));
 const EducationPage = lazy(() => import("./pages/Hospitality"));
@@ -164,6 +165,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about-us/about-founder" element={<AboutPage />} />
+            <Route path="/portfolio" element={<PortfolioIndex />} />
             <Route path="/portfolio/virtual-tour" element={<Virtualtour />} />
             <Route path="/portfolio/ecommerce" element={<EcommercePage />} />
             <Route path="/portfolio/ngo" element={< Ngoportfolio/>} />
