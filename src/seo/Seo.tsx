@@ -92,6 +92,48 @@ function lookup(pathname: string) {
   return lower ? ROUTE_META[lower] : DEFAULT_META;
 }
 
+/**
+ * A BreadcrumbList for the page. Google renders it as the little "site › section
+ * › page" trail under the SERP result, and it was previously never emitted even
+ * though createBreadcrumbSchema existed. Home is always first; intermediate
+ * segments are only included when they are a real ROUTE_META page (so every
+ * crumb points at a URL that actually resolves, never a 404 section stub); the
+ * last crumb is the current page. Returned WITHOUT its own @context so it can
+ * sit inside a page-level @graph.
+ */
+function breadcrumb(clean: string, currentName: string) {
+  const items: { name: string; url: string }[] = [{ name: 'Home', url: SITE + '/' }];
+  const segs = clean.split('/').filter(Boolean);
+  let acc = '';
+  segs.forEach((seg, i) => {
+    acc += '/' + seg;
+    if (i === segs.length - 1) {
+      items.push({ name: currentName, url: SITE + acc + '/' });
+    } else if (ROUTE_META[acc]) {
+      const t = ROUTE_META[acc].title;
+      items.push({
+        name: t.includes('|') ? t.slice(0, t.indexOf('|')).trim() : t,
+        url: SITE + acc + '/',
+      });
+    }
+  });
+  return {
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((it, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: it.name,
+      item: it.url,
+    })),
+  };
+}
+
+/** Drop the top-level @context so an object can be nested inside an @graph. */
+function stripContext(o: unknown) {
+  const { ['@context']: _drop, ...rest } = (o ?? {}) as Record<string, unknown>;
+  return rest;
+}
+
 export default function Seo() {
   const { pathname } = useLocation();
 
@@ -143,20 +185,32 @@ export default function Seo() {
       setMeta('property', 'article:published_time', post.date);
       setPageSchema({
         '@context': 'https://schema.org',
-        '@type': 'BlogPosting',
-        headline: post.title,
-        description: post.description,
-        datePublished: post.date,
-        dateModified: post.date,
-        mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
-        author: { '@type': 'Organization', name: 'Govindani Infotech Pvt. Ltd.' },
-        publisher: {
-          '@type': 'Organization',
-          name: 'Govindani Infotech Pvt. Ltd.',
-          url: SITE,
-        },
+        '@graph': [
+          {
+            '@type': 'BlogPosting',
+            headline: post.title,
+            description: post.description,
+            datePublished: post.date,
+            dateModified: post.date,
+            mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+            author: { '@type': 'Organization', name: 'Govindani Infotech Pvt. Ltd.' },
+            publisher: {
+              '@type': 'Organization',
+              name: 'Govindani Infotech Pvt. Ltd.',
+              url: SITE,
+            },
+          },
+          breadcrumb(clean, post.title),
+        ],
+      });
+    } else if (clean) {
+      // Every inner page gets its section schema PLUS a breadcrumb trail.
+      setPageSchema({
+        '@context': 'https://schema.org',
+        '@graph': [stripContext(schemaFor(pathname)), breadcrumb(clean, fitted)],
       });
     } else {
+      // Homepage: Organization + WebSite + LocalBusiness, no breadcrumb needed.
       setPageSchema(schemaFor(pathname));
     }
   }, [pathname]);
