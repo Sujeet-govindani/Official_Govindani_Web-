@@ -12,11 +12,11 @@
 /* header — dark pill behind logo so it stays visible on the light bar */
 .gusa-top {
   position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between;
-  padding: 10px clamp(16px, 4vw, 44px); background: rgba(255,253,248,.94);
-  backdrop-filter: blur(10px); border-bottom: 1px solid var(--line);
+  padding: 12px clamp(16px, 4vw, 44px); background: var(--navy);
+  border-bottom: 1px solid rgba(255,255,255,.08); box-shadow: 0 8px 24px -14px rgba(11,25,41,.6);
 }
-.gusa-logo-wrap { display: inline-flex; align-items: center; background: var(--navy); border-radius: 999px; padding: 8px 18px; box-shadow: 0 6px 18px -8px rgba(11,25,41,.5); }
-.gusa-logo { height: 34px; width: auto; }
+.gusa-logo-wrap { display: inline-flex; align-items: center; background: transparent; padding: 0; }
+.gusa-logo { height: 36px; width: auto; }
 .gusa-top-cta {
   background: linear-gradient(90deg, var(--gold), var(--gold-lt)); color: #fff; border: 0; cursor: pointer;
   font-family: inherit; font-weight: 700; font-size: .9rem; padding: 12px 22px; border-radius: 999px;
@@ -145,6 +145,16 @@
 .gusa-pager button { font-family: 'Sora',sans-serif; font-weight: 700; font-size: .9rem; color: var(--navy); background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 10px 18px; cursor: pointer; }
 .gusa-pager button:disabled { opacity: .4; cursor: default; }
 .gusa-pager-info { font-weight: 600; color: var(--muted); font-size: .9rem; }
+
+/* inline library (paginated, opens on the page — not a popup) */
+.gusa-lib { max-width: 1200px; margin: clamp(26px,4vw,44px) auto 0; padding: 0 clamp(20px,5vw,60px); scroll-margin-top: 80px; }
+.gusa-lib-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+.gusa-lib-count { color: var(--muted); font-size: .6em; font-family: 'Sora',sans-serif; }
+.gusa-lib-close { background: none; border: 1px solid var(--line); border-radius: 999px; padding: 9px 18px; font-family: 'Sora',sans-serif; font-weight: 700; font-size: .88rem; color: var(--navy); cursor: pointer; white-space: nowrap; }
+.gusa-lib-close:hover { background: var(--cream); }
+.gusa-lib-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
+.gusa-lib-grid .gusa-slide { width: auto; }
+.gusa-lib-grid .gusa-shot { height: 260px; }
 
 /* "all websites" banner */
 .gusa-allbanner { max-width: 1080px; margin: clamp(30px,4vw,48px) auto 0; display: flex; flex-wrap: wrap; gap: 18px; align-items: center; justify-content: space-between; background: linear-gradient(135deg, var(--navy), #12233b); color: #fff; border-radius: 20px; padding: clamp(24px,3.5vw,40px); }

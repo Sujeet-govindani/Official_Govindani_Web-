@@ -93,7 +93,10 @@ export default function UsaLanding() {
   const [viewAll, setViewAll] = useState<{ label: string; items: Work[] } | null>(null);
   const [page, setPage] = useState(0);
   const PER_PAGE = 15;
-  const openAll = useCallback((label: string, items: Work[]) => { setViewAll({ label, items }); setPage(0); }, []);
+  const openAll = useCallback((label: string, items: Work[]) => {
+    setViewAll({ label, items }); setPage(0);
+    setTimeout(() => document.getElementById('gusa-lib')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 70);
+  }, []);
 
   useEffect(() => {
     // Calendly popup assets
@@ -120,12 +123,11 @@ export default function UsaLanding() {
   }, []);
 
   useEffect(() => {
-    if (!viewAll && !askInterest) return;
+    // Only the interest popup locks scroll; the library is inline, not a modal.
+    if (!askInterest) return;
     const prev = document.body.style.overflow; document.body.style.overflow = 'hidden';
-    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setViewAll(null); };
-    document.addEventListener('keydown', onKey);
-    return () => { document.body.style.overflow = prev; document.removeEventListener('keydown', onKey); };
-  }, [viewAll, askInterest]);
+    return () => { document.body.style.overflow = prev; };
+  }, [askInterest]);
 
   const showNGO = interest === 'ngo' || interest === 'both' || interest === null;
   const showEcom = interest === 'ecommerce' || interest === 'both' || interest === null;
@@ -206,8 +208,8 @@ export default function UsaLanding() {
 
       {/* work carousels */}
       <section className="gusa-work" id="work">
-        <h2 className="gusa-h2">{ALL.length}+ websites &mdash; and counting</h2>
-        <p className="gusa-sub">Every site is live and custom-built. Hover to pause &middot; tap &ldquo;View all&rdquo; to page through the full library.</p>
+        <h2 className="gusa-h2">1000+ websites &mdash; and counting</h2>
+        <p className="gusa-sub">Every site is live and custom-built. Hover to pause &middot; tap &ldquo;View all&rdquo; to page through the library.</p>
         {(ngoFirst ? [
           showNGO && <Marquee key="ngo" label={`Non-profit & NGO websites (${NGO.length})`} items={NGO.slice(0, 14)} onViewAll={() => openAll('Non-profit & NGO websites', NGO)} />,
           showEcom && <Marquee key="ecom" label={`E-commerce & online stores (${ECOM.length})`} items={ECOM} onViewAll={() => openAll('E-commerce & online stores', ECOM)} />,
@@ -221,11 +223,40 @@ export default function UsaLanding() {
 
         <div className="gusa-allbanner">
           <div>
-            <h3>Explore all {ALL.length}+ websites we&rsquo;ve built</h3>
-            <p>NGOs, online stores, clinics, real estate, corporates &amp; more &mdash; one library.</p>
+            <h3>1000+ websites built &mdash; explore the library</h3>
+            <p>NGOs, online stores, clinics, real estate, corporates &amp; more &mdash; a sample of what we&rsquo;ve delivered.</p>
           </div>
-          <button type="button" className="gusa-btn" onClick={() => openAll(`All our websites`, ALL)}>Browse all {ALL.length}+ &rarr;</button>
+          <button type="button" className="gusa-btn" onClick={() => openAll(`Our work`, ALL)}>Browse our work &rarr;</button>
         </div>
+
+        {/* inline library (paginated) — opens right here, not in a popup */}
+        {viewAll && (() => {
+          const pages = Math.ceil(viewAll.items.length / PER_PAGE);
+          return (
+            <div className="gusa-lib" id="gusa-lib">
+              <div className="gusa-lib-head">
+                <h3 className="gusa-h2 gusa-h2-left">{viewAll.label} <span className="gusa-lib-count">({viewAll.items.length})</span></h3>
+                <button type="button" className="gusa-lib-close" onClick={() => setViewAll(null)}>Close &#10005;</button>
+              </div>
+              <div className="gusa-lib-grid" key={page}>
+                {viewAll.items.slice(page * PER_PAGE, (page + 1) * PER_PAGE).map((w) => (
+                  <a key={`${w.n}-${w.u}`} className="gusa-slide" href={w.u !== '#' ? w.u : undefined} target={w.u !== '#' ? '_blank' : undefined} rel="noopener noreferrer">
+                    <div className="gusa-shot"><img src={w.i} alt={w.n} loading="lazy" /></div>
+                    <span className="gusa-slide-name">{w.n}{w.u !== '#' && <em> &#8599;</em>}</span>
+                  </a>
+                ))}
+              </div>
+              {pages > 1 && (
+                <div className="gusa-pager">
+                  <button type="button" onClick={() => { setPage((p) => Math.max(0, p - 1)); document.getElementById('gusa-lib')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} disabled={page === 0}>&larr; Prev</button>
+                  <span className="gusa-pager-info">Page {page + 1} of {pages}</span>
+                  <button type="button" onClick={() => { setPage((p) => Math.min(pages - 1, p + 1)); document.getElementById('gusa-lib')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} disabled={page >= pages - 1}>Next &rarr;</button>
+                </div>
+              )}
+              <div className="gusa-all-cta"><button type="button" className="gusa-btn" onClick={openCalendly}>Get a website like these &rarr;</button></div>
+            </div>
+          );
+        })()}
       </section>
 
       {/* legal / registration */}
@@ -306,38 +337,6 @@ export default function UsaLanding() {
         document.body,
       )}
 
-      {/* view-all grid modal */}
-      {viewAll && typeof document !== 'undefined' && createPortal(
-        <div className="gusa-modal" role="dialog" aria-modal="true" aria-label={viewAll.label}>
-          <div className="gusa-modal-back" onClick={() => setViewAll(null)}></div>
-          <div className="gusa-modal-panel gusa-allpanel">
-            <div className="gusa-all-head">
-              <h3 className="gusa-modal-h">{viewAll.label} <span>({viewAll.items.length})</span></h3>
-              <button type="button" className="gusa-x" onClick={() => setViewAll(null)} aria-label="Close">&#10005;</button>
-            </div>
-            <div className="gusa-all-grid">
-              {viewAll.items.slice(page * PER_PAGE, (page + 1) * PER_PAGE).map((w) => (
-                <a key={`${w.n}-${w.u}`} className="gusa-slide" href={w.u !== '#' ? w.u : undefined} target={w.u !== '#' ? '_blank' : undefined} rel="noopener noreferrer">
-                  <div className="gusa-shot"><img src={w.i} alt={w.n} loading="lazy" /></div>
-                  <span className="gusa-slide-name">{w.n}{w.u !== '#' && <em> &#8599;</em>}</span>
-                </a>
-              ))}
-            </div>
-            {viewAll.items.length > PER_PAGE && (() => {
-              const pages = Math.ceil(viewAll.items.length / PER_PAGE);
-              return (
-                <div className="gusa-pager">
-                  <button type="button" onClick={() => setPage((p) => Math.max(0, p - 1))} disabled={page === 0}>&larr; Prev</button>
-                  <span className="gusa-pager-info">Page {page + 1} of {pages}</span>
-                  <button type="button" onClick={() => setPage((p) => Math.min(pages - 1, p + 1))} disabled={page >= pages - 1}>Next &rarr;</button>
-                </div>
-              );
-            })()}
-            <div className="gusa-all-cta"><button type="button" className="gusa-btn" onClick={openCalendly}>Get a website like these &rarr;</button></div>
-          </div>
-        </div>,
-        document.body,
-      )}
     </div>
   );
 }

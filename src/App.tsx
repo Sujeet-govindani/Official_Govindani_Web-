@@ -147,9 +147,11 @@ const FAQPage = lazy(() => import("./pages/FAQPage"));
 const queryClient = new QueryClient();
 
 const CLEAN_ROUTES = ["/usa", "/us"];
-function SiteHeader() { const { pathname } = useLocation(); return CLEAN_ROUTES.includes(pathname) ? null : <Header />; }
-function SiteBottomNav() { const { pathname } = useLocation(); return CLEAN_ROUTES.includes(pathname) ? null : <BottomNav />; }
-function SiteFooter() { const { pathname } = useLocation(); return CLEAN_ROUTES.includes(pathname) ? null : <Footer />; }
+// normalize so "/usa/", "/USA" etc. also count as clean (standalone) routes
+const isCleanRoute = (p: string) => CLEAN_ROUTES.includes((p.replace(/\/+$/, '') || '/').toLowerCase());
+function SiteHeader() { const { pathname } = useLocation(); return isCleanRoute(pathname) ? null : <Header />; }
+function SiteBottomNav() { const { pathname } = useLocation(); return isCleanRoute(pathname) ? null : <BottomNav />; }
+function SiteFooter() { const { pathname } = useLocation(); return isCleanRoute(pathname) ? null : <Footer />; }
 
 const App = () => (
   <HelmetProvider>
