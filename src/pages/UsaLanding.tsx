@@ -205,7 +205,7 @@ export default function UsaLanding() {
     // navigator.webdriver), so the popup is not baked into the static HTML as a
     // dead, non-interactive overlay. Real visitors get it client-side.
     let saved: string | null = null;
-    try { saved = localStorage.getItem(INTEREST_KEY); } catch { /* private */ }
+    try { saved = sessionStorage.getItem(INTEREST_KEY); } catch { /* private */ }
     const isPrerender = typeof navigator !== 'undefined' && navigator.webdriver;
     if (saved === 'ngo' || saved === 'ecommerce' || saved === 'both') setInterest(saved);
     else if (!isPrerender) setAskInterest(true);
@@ -214,7 +214,7 @@ export default function UsaLanding() {
 
   const chooseInterest = useCallback((v: Interest) => {
     setInterest(v); setAskInterest(false);
-    try { localStorage.setItem(INTEREST_KEY, v); } catch { /* private */ }
+    try { sessionStorage.setItem(INTEREST_KEY, v); } catch { /* private */ }
   }, []);
 
   useEffect(() => {
