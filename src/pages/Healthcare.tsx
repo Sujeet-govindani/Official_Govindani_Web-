@@ -251,7 +251,7 @@ const HealthcarePage = () => {
 
   const allProjects = [
     // >>> latest-captured portfolio sites (auto-added, review before deploy)
-    { title: "Dentivaa (Femdent Care)", category: "healthcare", url: "https://dentivaa.com", image: "/images/portfolio-sites/dentivaa.jpg" },
+    { title: "Dentivaa (Femdent Care)", category: "healthcare", url: "https://dentivaa.com", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioSites/dentivaa.jpg" },
     // <<< latest-captured
     {
       title: "OUR HEALTHCARE WEBSITE",

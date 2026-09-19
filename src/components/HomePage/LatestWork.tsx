@@ -13,9 +13,9 @@ import '@/styles/latest-work.css';
 const R2 = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images';
 
 const WORKS = [
-  { name: 'Baba Ji Ki Buti', category: 'E-Commerce', url: 'https://babajikibuti.com/home', img: '/images/latest-work/babaji.jpg' },
-  { name: 'Tarush Pranaa', category: 'Business Website', url: 'https://tarushpranaa.com', img: '/images/latest-work/tarush.jpg' },
-  { name: 'Mahipatsinh Foundation', category: 'NGO & Donations', url: 'https://mahipatsinhfoundation.org', img: '/images/latest-work/mahipat.jpg' },
+  { name: 'Baba Ji Ki Buti', category: 'E-Commerce', url: 'https://babajikibuti.com/home', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/LatestWork/babaji.jpg' },
+  { name: 'Tarush Pranaa', category: 'Business Website', url: 'https://tarushpranaa.com', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/LatestWork/tarush.jpg' },
+  { name: 'Mahipatsinh Foundation', category: 'NGO & Donations', url: 'https://mahipatsinhfoundation.org', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/LatestWork/mahipat.jpg' },
 ];
 
 const CATEGORIES = [

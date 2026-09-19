@@ -82,11 +82,14 @@ export default function UsaLanding() {
     const s = document.createElement('script');
     s.src = 'https://assets.calendly.com/assets/external/widget.js'; s.async = true;
     document.body.appendChild(s);
-    // remembered interest, else ask
+    // remembered interest, else ask — but never during prerender (headless =
+    // navigator.webdriver), so the popup is not baked into the static HTML as a
+    // dead, non-interactive overlay. Real visitors get it client-side.
     let saved: string | null = null;
     try { saved = localStorage.getItem(INTEREST_KEY); } catch { /* private */ }
+    const isPrerender = typeof navigator !== 'undefined' && navigator.webdriver;
     if (saved === 'ngo' || saved === 'ecommerce' || saved === 'both') setInterest(saved);
-    else setAskInterest(true);
+    else if (!isPrerender) setAskInterest(true);
     return () => { css.remove(); s.remove(); };
   }, []);
 
@@ -201,7 +204,7 @@ export default function UsaLanding() {
           </div>
           <div className="gusa-legal-docs">
             <figure className="gusa-doc">
-              <img src="/images/usa/wy-articles-of-organization.jpg" alt="Wyoming Articles of Organization — Govindani Infotech LLC" loading="lazy" />
+              <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/USA/wy-articles-of-organization.jpg" alt="Wyoming Articles of Organization — Govindani Infotech LLC" loading="lazy" />
               <figcaption>Articles of Organization &middot; Wyoming Secretary of State<br /><span>Public filing ID 2025-001850382</span></figcaption>
             </figure>
             <div className="gusa-doc-badges">

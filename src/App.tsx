@@ -149,6 +149,7 @@ const queryClient = new QueryClient();
 const CLEAN_ROUTES = ["/usa", "/us"];
 function SiteHeader() { const { pathname } = useLocation(); return CLEAN_ROUTES.includes(pathname) ? null : <Header />; }
 function SiteBottomNav() { const { pathname } = useLocation(); return CLEAN_ROUTES.includes(pathname) ? null : <BottomNav />; }
+function SiteFooter() { const { pathname } = useLocation(); return CLEAN_ROUTES.includes(pathname) ? null : <Footer />; }
 
 const App = () => (
   <HelmetProvider>
@@ -282,7 +283,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
           </Suspense>
-          <Footer />
+          <SiteFooter />
         </div>
       </TooltipProvider>
       {/* Desktop keeps the two floating buttons. On mobile they are replaced by

@@ -282,7 +282,7 @@ const BusinessWebsitesPage = () => {
 
   const bwProjects = [
     // >>> latest-captured portfolio sites (auto-added, review before deploy)
-    { title: "Finosquare Reality & Loan Advisor LLP", category: "business", url: "https://finosquare.com", image: "/images/portfolio-sites/finosquare-llp.jpg" },
+    { title: "Finosquare Reality & Loan Advisor LLP", category: "business", url: "https://finosquare.com", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioSites/finosquare-llp.jpg" },
     // <<< latest-captured
     { title: "HAPPILEE DIGITAL INNOVATIONS", category: "business", url: "https://happileedigitalinnovations.com/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/BusinessWebsites/Business-Website-Happili-Digital-Innovations.webp" },
     { title: "Aadev International Trade Solutions", category: "business", url: "https://aadevtrade.com", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/BusinessWebsites/Business-Website-Aadev-International-Trade-Solutions.webp" },
