@@ -37,6 +37,16 @@
 .gusa-trustchips { list-style: none; display: flex; flex-wrap: wrap; gap: 10px 20px; justify-content: center; padding: 0; margin: 8px 0 0; }
 .gusa-trustchips li { font-size: .88rem; font-weight: 600; color: var(--navy); }
 
+/* rotating trust strip */
+.gusa-trustbar { background: var(--navy); overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
+.gusa-trusttrack { display: flex; align-items: center; width: max-content; animation: gusa-scroll calc(var(--tn, 12) * 3.2s) linear infinite; }
+.gusa-trustbar:hover .gusa-trusttrack { animation-play-state: paused; }
+.gusa-trustitem { display: inline-flex; align-items: center; gap: 10px; white-space: nowrap; color: #fff; font-weight: 600; font-size: .95rem; padding: 15px 22px; position: relative; }
+.gusa-trustitem::after { content: ""; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 5px; height: 5px; border-radius: 50%; background: var(--gold-lt); opacity: .55; }
+.gusa-trustic { font-size: 1.15rem; line-height: 1; }
+.gusa-metaic { color: #4c9bff; font-weight: 800; font-size: 1.35rem; }
+@media (prefers-reduced-motion: reduce) { .gusa-trusttrack { animation: none; overflow-x: auto; } }
+
 /* section headings */
 .gusa-h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: clamp(1.9rem, 3.8vw, 2.8rem); color: var(--navy); text-align: center; margin: 0 0 8px; text-wrap: balance; line-height: 1.05; }
 .gusa-h2-left { text-align: left; }

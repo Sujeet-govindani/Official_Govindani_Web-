@@ -69,6 +69,24 @@ const ECOM_FEATURES = [
   'Analytics, email & marketing integrations',
 ];
 
+// Rotating trust strip items (icon + label). `meta` styles the ∞ in Meta blue.
+const TRUST: { ic: string; t: string; meta?: boolean }[] = [
+  { ic: '🇺🇸', t: 'US-registered LLC · Wyoming' },
+  { ic: '∞', t: 'Meta Business Partner', meta: true },
+  { ic: '✅', t: 'Federal EIN issued' },
+  { ic: '🌐', t: '1000+ websites delivered' },
+  { ic: '⭐', t: '5.0 average client rating' },
+  { ic: '🏆', t: '8+ years building on the web' },
+  { ic: '⚡', t: 'Custom-coded — never templates' },
+  { ic: '🔒', t: '100% ownership · zero commission' },
+  { ic: '💳', t: 'PayPal · Stripe · Apple Pay' },
+  { ic: '🕐', t: 'On-time delivery, every time' },
+  { ic: '🌍', t: 'US · India · serving worldwide' },
+  { ic: '🤝', t: 'A dedicated project manager' },
+  { ic: '🎯', t: 'SEO & conversion-first builds' },
+  { ic: '💬', t: 'WhatsApp support that replies' },
+];
+
 export default function UsaLanding() {
   const [interest, setInterest] = useState<Interest | null>(null);
   const [askInterest, setAskInterest] = useState(false);
@@ -166,14 +184,19 @@ export default function UsaLanding() {
             <button type="button" className="gusa-btn" onClick={openCalendly}>Book a free consultation &rarr;</button>
             <a className="gusa-btn gusa-btn-ghost" href="#work">See our work</a>
           </div>
-          <ul className="gusa-trustchips">
-            <li>&#127482;&#127480; US-registered LLC (Wyoming)</li>
-            <li>&#10003; Federal EIN issued</li>
-            <li>&#10003; Meta Business Partner</li>
-            <li>&#10003; 200+ websites delivered</li>
-          </ul>
         </div>
       </section>
+
+      {/* rotating trust strip */}
+      <div className="gusa-trustbar" aria-label="Why teams trust Govindani">
+        <div className="gusa-trusttrack" style={{ ['--tn' as string]: TRUST.length }}>
+          {[...TRUST, ...TRUST].map((t, i) => (
+            <span className="gusa-trustitem" key={`${t.t}-${i}`} aria-hidden={i >= TRUST.length}>
+              <span className={`gusa-trustic${t.meta ? ' gusa-metaic' : ''}`}>{t.ic}</span>{t.t}
+            </span>
+          ))}
+        </div>
+      </div>
 
       {/* tailored offer blocks */}
       {ngoFirst ? <>{showNGO && NgoBlock}{showEcom && EcomBlock}</> : <>{showEcom && EcomBlock}{showNGO && NgoBlock}</>}
