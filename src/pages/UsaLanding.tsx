@@ -61,9 +61,11 @@ function Marquee({ items, onViewAll, label }: { items: Work[]; onViewAll: () => 
   useEffect(() => {
     const el = ref.current; if (!el) return;
     let raf = 0;
+    // start midway so there's room to loop both directions
+    el.scrollLeft = 1;
     const step = () => {
       if (!paused.current && el.scrollWidth > el.clientWidth + 4) {
-        el.scrollLeft += 0.5;
+        el.scrollLeft += 1.1;
         if (el.scrollLeft >= el.scrollWidth / 2) el.scrollLeft -= el.scrollWidth / 2;
       }
       raf = requestAnimationFrame(step);
@@ -362,25 +364,7 @@ export default function UsaLanding() {
         </section>
       )}
 
-      {/* 2 — one agency, everything you need */}
-      <section className="gusa-services">
-        <h2 className="gusa-h2">One agency. Everything you need.</h2>
-        <p className="gusa-sub">We don&rsquo;t just build the website &mdash; we run the whole growth engine for you.</p>
-        <div className="gusa-svc-grid">
-          {[
-            ['💻', 'Website & e-commerce', 'Custom-coded, Shopify & WordPress'],
-            ['📱', 'Social media management', 'Content, calendars & community'],
-            ['🎯', 'Performance marketing', 'Meta & Google ads that convert'],
-            ['🎨', 'Logo & graphic design', 'Brand identity & creatives'],
-            ['📸', 'Product & brand shoots', 'Studio-grade visuals'],
-            ['🤝', 'A team that owns it', 'One dedicated partner, end to end'],
-          ].map(([ic, t, d]) => (
-            <div className="gusa-svc" key={t}><span className="gusa-svc-ic">{ic}</span><h3>{t}</h3><p>{d}</p></div>
-          ))}
-        </div>
-      </section>
-
-      {/* 3 — 1000+ websites & counting (stat band) */}
+      {/* 1000+ websites & counting (stat band) */}
       <section className="gusa-stat">
         <div className="gusa-stat-in">
           <p className="gusa-stat-num">1000+</p>
@@ -409,15 +393,15 @@ export default function UsaLanding() {
         <h2 className="gusa-h2">Explore more of our work</h2>
         <p className="gusa-sub">Every site is live and custom-built. Drag or swipe to browse &middot; tap &ldquo;View all&rdquo; for the full library.</p>
         {(ngoFirst ? [
-          showNGO && <Marquee key="ngo" label={`Non-profit & NGO websites (${NGO.length})`} items={NGO.slice(0, 14)} onViewAll={() => openAll('Non-profit & NGO websites', NGO)} />,
-          showEcom && <Marquee key="ecom" label={`E-commerce & online stores (${ECOM.length})`} items={ECOM} onViewAll={() => openAll('E-commerce & online stores', ECOM)} />,
+          showNGO && <Marquee key="ngo" label="Non-profit & NGO websites" items={NGO.slice(0, 14)} onViewAll={() => openAll('Non-profit & NGO websites', NGO)} />,
+          showEcom && <Marquee key="ecom" label="E-commerce & online stores" items={ECOM} onViewAll={() => openAll('E-commerce & online stores', ECOM)} />,
         ] : [
-          showEcom && <Marquee key="ecom" label={`E-commerce & online stores (${ECOM.length})`} items={ECOM} onViewAll={() => openAll('E-commerce & online stores', ECOM)} />,
-          showNGO && <Marquee key="ngo" label={`Non-profit & NGO websites (${NGO.length})`} items={NGO.slice(0, 14)} onViewAll={() => openAll('Non-profit & NGO websites', NGO)} />,
+          showEcom && <Marquee key="ecom" label="E-commerce & online stores" items={ECOM} onViewAll={() => openAll('E-commerce & online stores', ECOM)} />,
+          showNGO && <Marquee key="ngo" label="Non-profit & NGO websites" items={NGO.slice(0, 14)} onViewAll={() => openAll('Non-profit & NGO websites', NGO)} />,
         ])}
-        {showEcom && <Marquee label={`Business & corporate (${BUSINESS.length})`} items={BUSINESS} onViewAll={() => openAll('Business & corporate', BUSINESS)} />}
-        {interest === 'both' && <Marquee label={`Healthcare & clinics (${HEALTH.length})`} items={HEALTH} onViewAll={() => openAll('Healthcare & clinics', HEALTH)} />}
-        {interest === 'both' && <Marquee label={`Real estate, hospitality & more (${OTHERS.length})`} items={OTHERS} onViewAll={() => openAll('Real estate, hospitality & more', OTHERS)} />}
+        {showEcom && <Marquee label="Business & corporate" items={BUSINESS} onViewAll={() => openAll('Business & corporate', BUSINESS)} />}
+        {interest === 'both' && <Marquee label="Healthcare & clinics" items={HEALTH} onViewAll={() => openAll('Healthcare & clinics', HEALTH)} />}
+        {interest === 'both' && <Marquee label="Real estate, hospitality & more" items={OTHERS} onViewAll={() => openAll('Real estate, hospitality & more', OTHERS)} />}
 
         <div className="gusa-allbanner">
           <div>
@@ -430,7 +414,7 @@ export default function UsaLanding() {
         {/* inline library — auto-feeds more as you scroll (no pages, no gaps) */}
         <div className="gusa-lib" id="gusa-lib">
           <div className="gusa-lib-head">
-            <h3 className="gusa-h2 gusa-h2-left">{viewAll.label} <span className="gusa-lib-count">(showing {Math.min(shown, viewAll.items.length)} of {viewAll.items.length})</span></h3>
+            <h3 className="gusa-h2 gusa-h2-left">{viewAll.label}</h3>
           </div>
           <div className="gusa-lib-grid">
             {viewAll.items.slice(0, shown).map((w) => (
@@ -446,6 +430,24 @@ export default function UsaLanding() {
             </div>
           )}
           <div className="gusa-all-cta"><button type="button" className="gusa-btn" onClick={openCalendly}>Get a website like these &rarr;</button></div>
+        </div>
+      </section>
+
+      {/* one agency — everything you need (kept near the end) */}
+      <section className="gusa-services">
+        <h2 className="gusa-h2">One agency. Everything you need.</h2>
+        <p className="gusa-sub">We don&rsquo;t just build the website &mdash; we run the whole growth engine for you.</p>
+        <div className="gusa-svc-grid">
+          {[
+            ['💻', 'Website & e-commerce', 'Custom-coded, Shopify & WordPress'],
+            ['📱', 'Social media management', 'Content, calendars & community'],
+            ['🎯', 'Performance marketing', 'Meta & Google ads that convert'],
+            ['🎨', 'Logo & graphic design', 'Brand identity & creatives'],
+            ['📸', 'Product & brand shoots', 'Studio-grade visuals'],
+            ['🤝', 'A team that owns it', 'One dedicated partner, end to end'],
+          ].map(([ic, t, d]) => (
+            <div className="gusa-svc" key={t}><span className="gusa-svc-ic">{ic}</span><h3>{t}</h3><p>{d}</p></div>
+          ))}
         </div>
       </section>
 

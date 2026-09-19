@@ -5,9 +5,10 @@
   --gold: #b8860b; --gold-lt: #dca63a; --navy: #0b1929; --ink: #1a1a22;
   --cream: #faf6ee; --line: #ece3d3; --muted: #6b6357;
   font-family: 'Sora', system-ui, sans-serif; color: var(--ink); background: #fffdf8;
-  /* offset for the fixed header (sticky fails: an ancestor has overflow-x:hidden) */
   padding-top: 0;
+  overflow-x: hidden; /* no sideways scroll / cut text on mobile */
 }
+.gusa section { max-width: 100%; }
 .gusa * { box-sizing: border-box; }
 .gusa img { max-width: 100%; display: block; }
 
@@ -85,7 +86,9 @@
 .gusa-cat-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 0 clamp(20px, 5vw, 60px); margin-bottom: 14px; }
 .gusa-cat-h { font-size: 1.06rem; font-weight: 700; color: var(--navy); margin: 0; }
 .gusa-viewall { background: none; border: 0; cursor: pointer; font-family: inherit; font-weight: 700; font-size: .9rem; color: var(--gold); white-space: nowrap; }
-.gusa-marquee { overflow-x: auto; overflow-y: hidden; cursor: grab; touch-action: pan-x; -webkit-overflow-scrolling: touch; scrollbar-width: none; -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
+/* touch-action: pan-y so a finger on a card scrolls the PAGE up/down (no freeze);
+   the carousel moves on its own via the auto-scroll. Horizontal is auto-only. */
+.gusa-marquee { overflow-x: hidden; overflow-y: hidden; touch-action: pan-y; scrollbar-width: none; -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
 .gusa-marquee::-webkit-scrollbar { display: none; }
 .gusa-marquee:active { cursor: grabbing; }
 .gusa-track { display: flex; gap: 18px; width: max-content; padding: 4px clamp(20px, 5vw, 60px); }
