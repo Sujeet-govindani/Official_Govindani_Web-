@@ -146,9 +146,15 @@ export default function UsaLanding() {
             <p className="gusa-addr">&#128205; 30 N Gould St, Ste N, Sheridan, WY 82801, USA</p>
           </div>
           <div className="gusa-legal-docs">
-            {/* TODO: replace with real US registration / incorporation document images */}
-            <div className="gusa-doc-ph">US Registration Certificate<span>document to be added</span></div>
-            <div className="gusa-doc-ph">EIN / Incorporation<span>document to be added</span></div>
+            <figure className="gusa-doc">
+              <img src="/images/usa/wy-articles-of-organization.jpg" alt="Wyoming Articles of Organization — Govindani Infotech LLC" loading="lazy" />
+              <figcaption>Articles of Organization &middot; Wyoming Secretary of State<br /><span>Public filing ID 2025-001850382</span></figcaption>
+            </figure>
+            <div className="gusa-doc-badges">
+              <div className="gusa-badge-card"><span className="gusa-badge-ic">&#127482;&#127480;</span><div><h4>Registered US LLC</h4><p>Govindani Infotech LLC &middot; Wyoming, USA</p></div></div>
+              <div className="gusa-badge-card"><span className="gusa-badge-ic">&#10003;</span><div><h4>Federal EIN issued</h4><p>Registered with the IRS for US tax &amp; banking</p></div></div>
+              <div className="gusa-badge-card"><span className="gusa-badge-ic">&#128196;</span><div><h4>Full papers on request</h4><p>Operating agreement &amp; compliance docs shared during onboarding</p></div></div>
+            </div>
           </div>
         </div>
       </section>
