@@ -44,7 +44,8 @@ const Index = () => {
         <FunkyHinglishSection/>
         <PortfolioSection/>
         <PortfolioShowcase/>
-        <NGOdisplay/>
+        {/* NGOdisplay ("We build backbones" NGO-infrastructure section) hidden from home per request */}
+        {/* <NGOdisplay/> */}
         {/* <ContactUsPage/> */}
         {/* <NgoFooter/> */}
         {/* <ContentMarketing/> */}

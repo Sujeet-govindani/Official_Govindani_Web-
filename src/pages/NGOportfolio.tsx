@@ -351,7 +351,7 @@ const NgoPortfolio = () => {
   const allProjects = [
     { title: "Popatbhai Charitable Trust", category: "ngo", url: "https://popatbhaicharitablefoundation.org/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Popatbhai-Charitable-Trust.webp" },
     { title: "Harsh Chhikkara Jan Seva Trust", category: "ngo", url: "https://harshchhikara.com/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Harsh-Chhikkara-Jan-Seva-Trust.webp" },
-    { title: "Mahipatsinh Foundation", category: "ngo", url: "https://mahipatsinhfoundation.org/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Mahipatsinh-Foundation.webp" },
+    { title: "Mahipatsinh Foundation", category: "ngo", url: "https://mahipatsinhfoundation.org/", image: "/images/portfolio-sites/mahipatsinh.jpg" },
     { title: "Gau Seva Dham", category: "ngo", url: "https://gausevadham.org/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Gau-Seva-Dham.webp" },
     { title: "Community Welfare", category: "ngo", url: "https://mallakhambartist.org/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Mallakhamb-Artist.webp" },
     { title: "Nanhi Pari Foundation", category: "ngo", url: "https://nanhiparifoundation.org/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Nanhi-Pari-Foundationngo.webp" },

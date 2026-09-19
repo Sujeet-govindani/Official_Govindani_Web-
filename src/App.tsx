@@ -4,7 +4,7 @@ import { HelmetProvider } from "react-helmet-async";
 // import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
 
 import { ScrollToTop } from "./components/ScrollToTop";
 import LangSync from "./i18n/LangSync";
@@ -19,6 +19,7 @@ import GetQuoteFloating from "./components/GetQuoteFloating";
 import ChatWidget from "./components/ChatWidget";
 import BottomNav from "./components/BottomNav/BottomNav";
 const AllServices = lazy(() => import("./pages/AllServices"));
+const UsaLanding = lazy(() => import("./pages/UsaLanding"));
 const VideoSection = lazy(() => import("./components/HomePage/Section2Video"));
 
 
@@ -145,6 +146,10 @@ const FAQPage = lazy(() => import("./pages/FAQPage"));
 
 const queryClient = new QueryClient();
 
+const CLEAN_ROUTES = ["/usa", "/us"];
+function SiteHeader() { const { pathname } = useLocation(); return CLEAN_ROUTES.includes(pathname) ? null : <Header />; }
+function SiteBottomNav() { const { pathname } = useLocation(); return CLEAN_ROUTES.includes(pathname) ? null : <BottomNav />; }
+
 const App = () => (
   <HelmetProvider>
   <QueryClientProvider client={queryClient}>
@@ -156,7 +161,7 @@ const App = () => (
           {/* <Toaster /> */}
           {/* <Sonner /> */}
           
-          <Header />
+          <SiteHeader />
 
           <LangSync />
         <ScrollToTop />
@@ -167,6 +172,8 @@ const App = () => (
             <Route path="/portfolio/virtual-tour" element={<Virtualtour />} />
             <Route path="/portfolio/ecommerce" element={<EcommercePage />} />
             <Route path="/portfolio/ngo" element={< Ngoportfolio/>} />
+            <Route path="/usa" element={<UsaLanding/>} />
+            <Route path="/us" element={<UsaLanding/>} />
             <Route path="/portfolio/builders" element={<RealEstatePage/>} /> 
             <Route path="/portfolio/business" element={<BusinessWebsitesPage />} /> 
             <Route path="/services/ci-crm" element={<CIBuilderCRM />} />
@@ -291,7 +298,7 @@ const App = () => (
           mobile too — sitting clear of the dock (see the mobile CSS). */}
       <ChatWidget />
 
-      <BottomNav />
+      <SiteBottomNav />
     </BrowserRouter>
   </QueryClientProvider>
   </HelmetProvider>
