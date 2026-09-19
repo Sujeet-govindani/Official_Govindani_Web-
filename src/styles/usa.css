@@ -1,101 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap');
 
-/* USA landing page — namespaced .gusa. Light, trustworthy, gold-accented. */
+/* USA landing — namespaced .gusa. Light, trustworthy, gold-accented. */
 .gusa {
   --gold: #b8860b; --gold-lt: #dca63a; --navy: #0b1929; --ink: #1a1a22;
   --cream: #faf6ee; --line: #ece3d3; --muted: #6b6357;
-  font-family: 'Sora', system-ui, sans-serif; color: var(--ink);
-  background: #fffdf8;
+  font-family: 'Sora', system-ui, sans-serif; color: var(--ink); background: #fffdf8;
 }
 .gusa * { box-sizing: border-box; }
 .gusa img { max-width: 100%; display: block; }
 
-/* top bar */
+/* header — dark pill behind logo so it stays visible on the light bar */
 .gusa-top {
   position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between;
-  padding: 12px clamp(16px, 4vw, 44px); background: rgba(255,253,248,.92);
+  padding: 10px clamp(16px, 4vw, 44px); background: rgba(255,253,248,.94);
   backdrop-filter: blur(10px); border-bottom: 1px solid var(--line);
 }
-.gusa-logo { height: 40px; width: auto; }
+.gusa-logo-wrap { display: inline-flex; align-items: center; background: var(--navy); border-radius: 999px; padding: 8px 18px; box-shadow: 0 6px 18px -8px rgba(11,25,41,.5); }
+.gusa-logo { height: 34px; width: auto; }
 .gusa-top-cta {
-  background: linear-gradient(90deg, var(--gold), var(--gold-lt)); color: #fff; text-decoration: none;
-  font-weight: 700; font-size: .9rem; padding: 11px 22px; border-radius: 999px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-lt)); color: #fff; border: 0; cursor: pointer;
+  font-family: inherit; font-weight: 700; font-size: .9rem; padding: 12px 22px; border-radius: 999px;
   box-shadow: 0 10px 26px -10px rgba(184,134,11,.6);
 }
 
 /* hero */
-.gusa-hero {
-  background:
-    radial-gradient(60% 80% at 80% 0%, rgba(220,166,58,.16), transparent 60%),
-    linear-gradient(180deg, var(--cream), #fffdf8);
-  padding: clamp(48px, 8vw, 96px) clamp(20px, 5vw, 60px);
-}
+.gusa-hero { background: radial-gradient(60% 80% at 80% 0%, rgba(220,166,58,.16), transparent 60%), linear-gradient(180deg, var(--cream), #fffdf8); padding: clamp(44px, 7vw, 88px) clamp(20px, 5vw, 60px); }
 .gusa-hero-in { max-width: 900px; margin: 0 auto; text-align: center; }
-.gusa-eyebrow {
-  font-weight: 700; letter-spacing: .18em; text-transform: uppercase; font-size: .74rem;
-  color: var(--gold); margin: 0 0 14px;
-}
-.gusa-h1 {
-  font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700;
-  font-size: clamp(2.3rem, 6vw, 4rem); line-height: 1.03; margin: 0 0 18px; color: var(--navy);
-  text-wrap: balance;
-}
-.gusa-h1 em { font-style: normal; background: linear-gradient(90deg, var(--gold), var(--gold-lt)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.gusa-lead { font-size: clamp(1rem, 1.5vw, 1.18rem); line-height: 1.65; color: var(--muted); max-width: 42rem; margin: 0 auto; }
-.gusa-hero-cta { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin: 30px 0 22px; }
-.gusa-btn {
-  display: inline-flex; align-items: center; gap: 8px; text-decoration: none; cursor: pointer; border: 0;
-  font-family: inherit; font-weight: 700; font-size: 1rem; padding: 15px 32px; border-radius: 999px;
-  color: #fff; background: linear-gradient(90deg, var(--gold), var(--gold-lt));
-  box-shadow: 0 14px 34px -10px rgba(184,134,11,.55); transition: transform .18s ease;
-}
+.gusa-eyebrow { font-weight: 700; letter-spacing: .16em; text-transform: uppercase; font-size: .74rem; color: var(--gold); margin: 0 0 14px; }
+.gusa-h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: clamp(2.4rem, 6.4vw, 4.2rem); line-height: 1.02; margin: 0 0 18px; color: var(--navy); text-wrap: balance; }
+.gusa-h1 em, .gusa-h2 em { font-style: normal; background: linear-gradient(90deg, var(--gold), var(--gold-lt)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.gusa-lead { font-size: clamp(1rem, 1.5vw, 1.16rem); line-height: 1.65; color: var(--muted); max-width: 42rem; margin: 0 auto; }
+.gusa-hero-cta { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin: 28px 0 22px; }
+.gusa-btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; cursor: pointer; border: 0; font-family: inherit; font-weight: 700; font-size: 1rem; padding: 15px 32px; border-radius: 999px; color: #fff; background: linear-gradient(90deg, var(--gold), var(--gold-lt)); box-shadow: 0 14px 34px -10px rgba(184,134,11,.55); transition: transform .18s ease; }
 .gusa-btn:hover { transform: translateY(-3px); }
 .gusa-btn-ghost { background: transparent; color: var(--navy); border: 1px solid var(--line); box-shadow: none; }
-.gusa-trustchips { list-style: none; display: flex; flex-wrap: wrap; gap: 10px 22px; justify-content: center; padding: 0; margin: 8px 0 0; }
-.gusa-trustchips li { font-size: .9rem; font-weight: 600; color: var(--navy); }
+.gusa-trustchips { list-style: none; display: flex; flex-wrap: wrap; gap: 10px 20px; justify-content: center; padding: 0; margin: 8px 0 0; }
+.gusa-trustchips li { font-size: .88rem; font-weight: 600; color: var(--navy); }
 
-/* section shells */
-.gusa-h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: clamp(1.8rem, 3.6vw, 2.7rem); color: var(--navy); text-align: center; margin: 0 0 8px; text-wrap: balance; }
+/* section headings */
+.gusa-h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: clamp(1.9rem, 3.8vw, 2.8rem); color: var(--navy); text-align: center; margin: 0 0 8px; text-wrap: balance; line-height: 1.05; }
 .gusa-h2-left { text-align: left; }
-.gusa-sub { text-align: center; color: var(--muted); max-width: 44rem; margin: 0 auto clamp(24px, 3vw, 38px); font-size: 1rem; }
+.gusa-sub { text-align: center; color: var(--muted); max-width: 46rem; margin: 0 auto clamp(22px, 3vw, 36px); }
 
-/* services */
-.gusa-services { padding: clamp(48px, 7vw, 88px) clamp(20px, 5vw, 60px); }
-.gusa-svc-grid { max-width: 1080px; margin: 28px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.gusa-svc { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 30px 26px; box-shadow: 0 20px 50px -34px rgba(90,60,10,.4); }
-.gusa-svc-ic { font-size: 1.9rem; }
-.gusa-svc h3 { font-size: 1.12rem; margin: 14px 0 8px; color: var(--navy); }
-.gusa-svc p { margin: 0; color: var(--muted); font-size: .96rem; line-height: 1.55; }
+/* offer blocks */
+.gusa-offer { padding: clamp(44px, 6vw, 80px) clamp(20px, 5vw, 60px); }
+.gusa-offer-ngo { background: var(--cream); }
+.gusa-offer-in { max-width: 920px; margin: 0 auto; }
+.gusa-ticks { list-style: none; padding: 0; margin: 22px 0 26px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 26px; }
+.gusa-ticks li { display: flex; gap: 10px; align-items: flex-start; font-size: .98rem; color: var(--ink); line-height: 1.45; }
+.gusa-tick { flex: 0 0 auto; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-size: .8rem; color: #fff; background: linear-gradient(90deg, var(--gold), var(--gold-lt)); margin-top: 1px; }
+.gusa-pay { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 4px; }
+.gusa-pay span { font-weight: 700; font-size: .82rem; color: var(--navy); background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; box-shadow: 0 8px 20px -14px rgba(0,0,0,.4); }
 
-/* work carousels */
-.gusa-work { padding: clamp(40px, 6vw, 80px) 0; background: var(--cream); }
+/* work carousels — auto-scroll marquee */
+.gusa-work { padding: clamp(40px, 6vw, 80px) 0; background: #fffdf8; }
 .gusa-work .gusa-h2, .gusa-work .gusa-sub { padding: 0 20px; }
-.gusa-cat { margin-top: clamp(28px, 4vw, 44px); }
-.gusa-cat-h { font-size: 1.05rem; font-weight: 700; color: var(--navy); margin: 0 0 14px; padding: 0 clamp(20px, 5vw, 60px); }
-.gusa-rail {
-  display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory;
-  padding: 4px clamp(20px, 5vw, 60px) 18px; -webkit-overflow-scrolling: touch;
-}
-.gusa-rail::-webkit-scrollbar { height: 8px; }
-.gusa-rail::-webkit-scrollbar-thumb { background: rgba(184,134,11,.35); border-radius: 999px; }
-.gusa-slide { flex: 0 0 auto; width: clamp(260px, 30vw, 340px); scroll-snap-align: start; text-decoration: none; color: inherit; }
-.gusa-shot { height: 300px; overflow: hidden; border-radius: 16px; border: 1px solid var(--line); background: #fff; box-shadow: 0 22px 54px -30px rgba(30,20,0,.5); }
-.gusa-shot img { width: 100%; height: auto; object-fit: cover; object-position: center top; transition: object-position 4.5s ease; }
-.gusa-slide:hover .gusa-shot img { object-position: center bottom; }
-.gusa-slide-name { display: block; margin-top: 12px; font-weight: 600; font-size: .96rem; color: var(--navy); }
+.gusa-cat { margin-top: clamp(26px, 4vw, 42px); }
+.gusa-cat-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 0 clamp(20px, 5vw, 60px); margin-bottom: 14px; }
+.gusa-cat-h { font-size: 1.06rem; font-weight: 700; color: var(--navy); margin: 0; }
+.gusa-viewall { background: none; border: 0; cursor: pointer; font-family: inherit; font-weight: 700; font-size: .9rem; color: var(--gold); white-space: nowrap; }
+.gusa-marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
+.gusa-track { display: flex; gap: 18px; width: max-content; padding: 4px clamp(20px, 5vw, 60px); animation: gusa-scroll calc(var(--n, 8) * 4.2s) linear infinite; }
+.gusa-marquee:hover .gusa-track { animation-play-state: paused; }
+@keyframes gusa-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.gusa-slide { flex: 0 0 auto; width: clamp(260px, 30vw, 330px); text-decoration: none; color: inherit; }
+.gusa-shot { height: 290px; overflow: hidden; border-radius: 16px; border: 1px solid var(--line); background: #fff; box-shadow: 0 22px 54px -30px rgba(30,20,0,.5); }
+.gusa-shot img { width: 100%; height: auto; object-fit: cover; object-position: center top; }
+.gusa-slide-name { display: block; margin-top: 12px; font-weight: 600; font-size: .95rem; color: var(--navy); }
 .gusa-slide-name em { font-style: normal; color: var(--gold); }
 
 /* legal */
-.gusa-legal { padding: clamp(48px, 7vw, 88px) clamp(20px, 5vw, 60px); }
-.gusa-legal-in { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(28px, 4vw, 56px); align-items: center; }
+.gusa-legal { padding: clamp(44px, 7vw, 84px) clamp(20px, 5vw, 60px); background: var(--cream); }
+.gusa-legal-in { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(28px, 4vw, 52px); align-items: center; }
 .gusa-addr { font-weight: 600; color: var(--navy); margin: 16px 0 0; }
 .gusa-legal-docs { display: flex; flex-direction: column; gap: 16px; }
 .gusa-doc { margin: 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 22px 54px -34px rgba(90,60,10,.45); }
-.gusa-doc img { width: 100%; height: auto; display: block; border-bottom: 1px solid var(--line); }
+.gusa-doc img { width: 100%; height: auto; border-bottom: 1px solid var(--line); }
 .gusa-doc figcaption { padding: 12px 16px; font-weight: 700; color: var(--navy); font-size: .9rem; line-height: 1.4; }
 .gusa-doc figcaption span { font-weight: 500; color: var(--muted); font-size: .8rem; }
 .gusa-doc-badges { display: grid; gap: 12px; }
-.gusa-badge-card { display: flex; gap: 12px; align-items: center; background: var(--cream); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+.gusa-badge-card { display: flex; gap: 12px; align-items: center; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
 .gusa-badge-ic { font-size: 1.5rem; flex: 0 0 auto; }
 .gusa-badge-card h4 { margin: 0 0 2px; color: var(--navy); font-size: .98rem; }
 .gusa-badge-card p { margin: 0; color: var(--muted); font-size: .85rem; line-height: 1.4; }
@@ -104,26 +88,69 @@
 .gusa-thanks { padding: clamp(48px, 7vw, 84px) clamp(20px, 5vw, 60px); background: var(--navy); color: #fff; text-align: center; }
 .gusa-thanks .gusa-h2 { color: #fff; }
 .gusa-center { margin-left: auto; margin-right: auto; }
-.gusa-thanks .gusa-lead { color: rgba(255,255,255,.8); }
-
-/* booking */
-.gusa-book { padding: clamp(48px, 7vw, 88px) clamp(20px, 5vw, 60px); }
-.gusa-calendly { max-width: 1000px; margin: 8px auto 0; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
-.gusa-book-fallback { text-align: center; color: var(--muted); margin-top: 18px; }
-.gusa-book-fallback a { color: var(--gold); font-weight: 600; }
+.gusa-thanks .gusa-lead { color: rgba(255,255,255,.82); }
 
 /* footer */
-.gusa-foot { background: #08101c; color: rgba(255,255,255,.8); text-align: center; padding: 40px 20px; }
-.gusa-foot .gusa-logo { height: 44px; margin: 0 auto 14px; }
-.gusa-foot p { margin: 4px 0; font-size: .9rem; }
-.gusa-foot-sm { color: rgba(255,255,255,.5); font-size: .8rem; }
+.gusa-foot { background: #08101c; color: rgba(255,255,255,.78); padding: 48px clamp(20px, 5vw, 60px) 30px; }
+.gusa-foot-in { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 28px; }
+.gusa-foot-brand .gusa-logo { height: 42px; margin-bottom: 12px; }
+.gusa-foot-brand p { font-size: .92rem; line-height: 1.55; color: rgba(255,255,255,.6); margin: 0; }
+.gusa-foot-addr h5 { margin: 0 0 8px; font-size: .82rem; letter-spacing: .06em; text-transform: uppercase; color: var(--gold-lt); }
+.gusa-foot-addr p { margin: 0; font-size: .9rem; line-height: 1.6; }
+.gusa-foot-addr a { color: rgba(255,255,255,.85); text-decoration: none; }
+.gusa-foot-link { background: none; border: 0; color: var(--gold-lt); cursor: pointer; font-family: inherit; font-size: .9rem; padding: 0; text-decoration: underline; }
+.gusa-foot-sm { text-align: center; color: rgba(255,255,255,.45); font-size: .8rem; margin: 32px 0 0; }
+
+/* mobile sticky book bar */
+.gusa-sticky { display: none; }
+
+/* modals (interest + view-all) — portaled to <body>, so redeclare tokens here */
+.gusa-modal {
+  --gold: #b8860b; --gold-lt: #dca63a; --navy: #0b1929; --ink: #1a1a22;
+  --cream: #faf6ee; --line: #ece3d3; --muted: #6b6357;
+  font-family: 'Sora', system-ui, sans-serif; color: var(--ink);
+  position: fixed; inset: 0; z-index: 99999; display: flex; align-items: center; justify-content: center; padding: 20px;
+}
+.gusa-modal img { max-width: 100%; display: block; }
+.gusa-modal-back { position: absolute; inset: 0; background: rgba(8,12,20,.7); backdrop-filter: blur(6px); }
+.gusa-modal-panel { position: relative; z-index: 2; background: #fffdf8; border-radius: 22px; box-shadow: 0 40px 120px -30px rgba(0,0,0,.7); font-family: 'Sora', sans-serif; }
+.gusa-modal-h { font-family: 'Cormorant Garamond', serif; font-weight: 700; color: var(--navy); font-size: clamp(1.5rem, 3vw, 2.1rem); margin: 6px 0 0; }
+.gusa-modal-h span { color: var(--muted); font-size: .7em; }
+.gusa-modal-note { color: var(--muted); margin: 8px 0 20px; font-size: .96rem; }
+/* interest */
+.gusa-interest { width: min(560px, 100%); padding: clamp(28px, 4vw, 44px); text-align: center; }
+.gusa-interest-grid { display: grid; gap: 12px; margin-top: 8px; }
+.gusa-interest-grid button { display: flex; align-items: center; gap: 14px; text-align: left; font-family: inherit; font-size: 1.02rem; font-weight: 600; color: var(--navy); background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; cursor: pointer; transition: border-color .16s, transform .16s, box-shadow .16s; }
+.gusa-interest-grid button:hover { border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 16px 40px -22px rgba(184,134,11,.6); }
+.gusa-interest-grid button span { font-size: 1.5rem; }
+/* view all */
+.gusa-allpanel { width: min(1080px, 100%); max-height: 88vh; display: flex; flex-direction: column; padding: clamp(20px, 3vw, 32px); }
+.gusa-all-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+.gusa-x { flex: 0 0 auto; width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line); background: #fff; color: var(--navy); font-size: 1.05rem; cursor: pointer; }
+.gusa-all-grid { overflow: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; padding: 4px; }
+.gusa-all-grid .gusa-slide { width: auto; }
+.gusa-all-grid .gusa-shot { height: 240px; }
+.gusa-all-cta { text-align: center; padding-top: 18px; }
 
 /* responsive */
 @media (max-width: 900px) {
-  .gusa-svc-grid { grid-template-columns: 1fr; }
   .gusa-legal-in { grid-template-columns: 1fr; }
+  .gusa-foot-in { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 760px) {
+  .gusa-ticks { grid-template-columns: 1fr; }
+  .gusa-foot-in { grid-template-columns: 1fr; }
+  .gusa-top-cta { display: none; } /* replaced by sticky bar on mobile */
+  .gusa { padding-bottom: 76px; } /* clear the sticky bar */
+  .gusa-sticky {
+    display: flex; gap: 10px; align-items: center; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom, 0px)); background: rgba(255,253,248,.96);
+    backdrop-filter: blur(10px); border-top: 1px solid var(--line); box-shadow: 0 -10px 30px -18px rgba(0,0,0,.4);
+  }
+  .gusa-sticky-book { flex: 1; text-align: center; border: 0; cursor: pointer; font-family: 'Sora',sans-serif; font-weight: 700; font-size: 1rem; padding: 15px; border-radius: 999px; color: #fff; background: linear-gradient(90deg, var(--gold), var(--gold-lt)); }
+  .gusa-sticky-wa { flex: 0 0 auto; width: 50px; height: 50px; border-radius: 50%; display: grid; place-items: center; font-size: 1.4rem; background: #25d366; text-decoration: none; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .gusa-btn:hover { transform: none; }
-  .gusa-shot img { transition: none; }
+  .gusa-btn:hover, .gusa-interest-grid button:hover { transform: none; }
+  .gusa-track { animation: none; flex-wrap: nowrap; overflow-x: auto; }
 }

@@ -1,136 +1,193 @@
-import { useEffect } from 'react';
+import { useEffect, useState, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import { Helmet } from 'react-helmet-async';
+import { NGO, ECOM, HEALTH, BUSINESS, type Work } from '@/data/usaWork';
 import '@/styles/usa.css';
 
 /**
- * Dedicated USA landing page — a single shareable link for US prospects.
- * Showcases our website + social-media services, real work by category
- * (NGO / E-Commerce / Healthcare carousels), our US registration for trust,
- * and a Calendly booking to schedule a consultation.
+ * Dedicated USA landing page (/usa, and intended for usa.govindaniit.com).
+ * Standalone: the global site header/bottom-nav are hidden on this route.
  *
- * PLACEHOLDERS to confirm with the client:
- *   - CALENDLY_URL  → replace with the real Calendly scheduling link
- *   - LEGAL_DOCS    → add the actual US registration / incorporation document images/PDFs
- *   - a few USA-specific site links the client will share
+ * Flow: an interest popup on arrival (NGO / E-commerce / Both) tailors which
+ * offer blocks + work carousels lead. Every "Book" CTA opens the Calendly
+ * popup (no cheap inline widget). Carousels auto-scroll; "View all" opens a
+ * full grid per category.
  */
 
 const CALENDLY_URL = 'https://calendly.com/sujeet-govindaniit/30min';
+const WA = '919201958278';
 const R2 = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images';
-const ECOM = `${R2}/PortfolioProjects/PortFolioWebsites/E-Commerce`;
+const INTEREST_KEY = 'gi_usa_interest';
+type Interest = 'ngo' | 'ecommerce' | 'both';
 
-const NGO_WORK = [
-  { name: 'Mahipatsinh Foundation', url: 'https://mahipatsinhfoundation.org', img: '/images/portfolio-sites/mahipatsinh.jpg' },
-  { name: 'Aajol Parivar', url: 'https://aajol.org', img: '/images/portfolio-sites/aajol-parivar.jpg' },
-  { name: 'Anugrah Foundation', url: 'https://anugrahfoundation.org', img: '/images/portfolio-sites/anugrah-foundation.jpg' },
-  { name: 'Amee Foundation', url: 'https://ameefoundation.com', img: '/images/portfolio-sites/amee-foundation.jpg' },
-  { name: 'Nostro Destino Foundation', url: 'https://nostrodestino.org', img: '/images/portfolio-sites/nostro-destino-foundation.jpg' },
-  { name: 'Bhumi Mitra Foundation', url: 'https://bhumimitra.org', img: '/images/portfolio-sites/bhumi-mitra-foundation.jpg' },
-  { name: 'Kishan Singh Foundation', url: 'https://kishanfoundation.org', img: '/images/portfolio-sites/kishan-singh-foundation.jpg' },
-  { name: 'Handmade Heart Foundation', url: 'https://handmadehearts.org', img: '/images/portfolio-sites/handmade-heart-foundation.jpg' },
-];
+function openCalendly() {
+  const C = (window as unknown as { Calendly?: { initPopupWidget: (o: { url: string }) => void } }).Calendly;
+  if (C) C.initPopupWidget({ url: CALENDLY_URL });
+  else window.open(CALENDLY_URL, '_blank', 'noopener,noreferrer');
+}
 
-const ECOM_WORK = [
-  { name: 'Baba Ji Ki Buti', url: 'https://babajikibuti.com/home', img: `${ECOM}/Coding/Coding-Babajikibuti.webp` },
-  { name: 'Tarush Pranaa', url: 'https://tarushpranaa.com', img: `${ECOM}/Coding/Coding-Tarushpranna.webp` },
-  { name: 'Terra by Trishla', url: '#', img: `${ECOM}/Wordpress/Wordpress-Terra-By-Trishla.webp` },
-  { name: 'GSD Organics', url: '#', img: `${ECOM}/Wordpress/Wordpress-Gsd-Organics.webp` },
-  { name: 'Mukta Shop', url: '#', img: `${ECOM}/Shopify/Shopify-Muktashop.webp` },
-  { name: 'Gllora', url: '#', img: `${ECOM}/Shopify/Shopify-Gllora.webp` },
-  { name: 'Kryelet Studios', url: '#', img: `${ECOM}/Shopify/Shopify-kryelet-studios.webp` },
-];
-
-const HEALTH_WORK = [
-  { name: 'Dentivaa', url: 'https://dentivaa.com', img: '/images/portfolio-sites/dentivaa.jpg' },
-  { name: 'Mahaveer Eye Hospital', url: 'https://mahaveereyehospital.com', img: `${R2}/PortfolioProjects/PortFolioWebsites/Healthcare/Healthcare-mahaveer-eye-hospital.webp` },
-];
-
-function Carousel({ id, items }: { id: string; items: { name: string; url: string; img: string }[] }) {
+/* ---- auto-scrolling marquee carousel (pauses on hover) ---- */
+function Marquee({ items, onViewAll, label }: { items: Work[]; onViewAll: () => void; label: string }) {
+  const loop = [...items, ...items]; // duplicate for seamless scroll
   return (
-    <div className="gusa-rail" aria-label={id}>
-      {items.map((w) => (
-        <a key={w.name} className="gusa-slide" href={w.url && w.url !== '#' ? w.url : undefined}
-           target={w.url && w.url !== '#' ? '_blank' : undefined} rel="noopener noreferrer">
-          <div className="gusa-shot"><img src={w.img} alt={`${w.name} website by Govindani Infotech`} loading="lazy" /></div>
-          <span className="gusa-slide-name">{w.name}{w.url && w.url !== '#' && <em> &#8599;</em>}</span>
-        </a>
-      ))}
+    <div className="gusa-cat">
+      <div className="gusa-cat-head">
+        <h3 className="gusa-cat-h">{label}</h3>
+        <button type="button" className="gusa-viewall" onClick={onViewAll}>View all &rarr;</button>
+      </div>
+      <div className="gusa-marquee">
+        <div className="gusa-track" style={{ ['--n' as string]: items.length }}>
+          {loop.map((w, idx) => (
+            <a key={`${w.n}-${idx}`} className="gusa-slide" href={w.u !== '#' ? w.u : undefined}
+               target={w.u !== '#' ? '_blank' : undefined} rel="noopener noreferrer" aria-hidden={idx >= items.length}>
+              <div className="gusa-shot"><img src={w.i} alt={`${w.n} website by Govindani Infotech`} loading="lazy" /></div>
+              <span className="gusa-slide-name">{w.n}{w.u !== '#' && <em> &#8599;</em>}</span>
+            </a>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
 
+const GIVESETU_FEATURES = [
+  '100% ownership — zero platform commission on donations',
+  'Recurring, one-time, tribute & anonymous donations',
+  'Instant 80G / tax receipts, auto-generated PDFs',
+  'Peer-to-peer & campaign fundraising with progress bars',
+  'Direct donor relationship — full donor data is yours',
+  'WhatsApp + SMS + Email donor automation',
+  'Transparent accounting, reports & CSR pages',
+  'International donations, all major gateways, FCRA-ready',
+];
+const ECOM_FEATURES = [
+  'PayPal, Stripe, Apple Pay & all major cards',
+  'Product catalog, cart & secure one-page checkout',
+  'Inventory, orders, shipping & tax management',
+  'Coupons, offers & abandoned-cart recovery',
+  'Mobile-first, lightning-fast, SEO-ready',
+  'Analytics, email & marketing integrations',
+];
+
 export default function UsaLanding() {
+  const [interest, setInterest] = useState<Interest | null>(null);
+  const [askInterest, setAskInterest] = useState(false);
+  const [viewAll, setViewAll] = useState<{ label: string; items: Work[] } | null>(null);
+
   useEffect(() => {
-    // Load Calendly inline widget assets once.
+    // Calendly popup assets
     const css = document.createElement('link');
     css.rel = 'stylesheet'; css.href = 'https://assets.calendly.com/assets/external/widget.css';
     document.head.appendChild(css);
     const s = document.createElement('script');
     s.src = 'https://assets.calendly.com/assets/external/widget.js'; s.async = true;
     document.body.appendChild(s);
+    // remembered interest, else ask
+    let saved: string | null = null;
+    try { saved = localStorage.getItem(INTEREST_KEY); } catch { /* private */ }
+    if (saved === 'ngo' || saved === 'ecommerce' || saved === 'both') setInterest(saved);
+    else setAskInterest(true);
     return () => { css.remove(); s.remove(); };
   }, []);
+
+  const chooseInterest = useCallback((v: Interest) => {
+    setInterest(v); setAskInterest(false);
+    try { localStorage.setItem(INTEREST_KEY, v); } catch { /* private */ }
+  }, []);
+
+  useEffect(() => {
+    if (!viewAll && !askInterest) return;
+    const prev = document.body.style.overflow; document.body.style.overflow = 'hidden';
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setViewAll(null); };
+    document.addEventListener('keydown', onKey);
+    return () => { document.body.style.overflow = prev; document.removeEventListener('keydown', onKey); };
+  }, [viewAll, askInterest]);
+
+  const showNGO = interest === 'ngo' || interest === 'both' || interest === null;
+  const showEcom = interest === 'ecommerce' || interest === 'both' || interest === null;
+  const ngoFirst = interest !== 'ecommerce';
+
+  const NgoBlock = (
+    <section className="gusa-offer gusa-offer-ngo" key="ngo-offer">
+      <div className="gusa-offer-in">
+        <p className="gusa-eyebrow">For NGOs &amp; non-profits &middot; powered by Give Setu</p>
+        <h2 className="gusa-h2 gusa-h2-left">Your own donation-ready NGO website<br /><em>from just $1,000</em></h2>
+        <p className="gusa-lead">For our US &amp; international clients we provide the <strong>complete advanced Give Setu plan</strong> &mdash; a full fundraising platform you own outright, no crowdfunding commissions, no listing pages.</p>
+        <ul className="gusa-ticks">
+          {GIVESETU_FEATURES.map((f) => <li key={f}><span className="gusa-tick">&#10003;</span>{f}</li>)}
+        </ul>
+        <button type="button" className="gusa-btn" onClick={openCalendly}>Get your NGO website &rarr;</button>
+      </div>
+    </section>
+  );
+  const EcomBlock = (
+    <section className="gusa-offer gusa-offer-ecom" key="ecom-offer">
+      <div className="gusa-offer-in">
+        <p className="gusa-eyebrow">For online stores &amp; brands</p>
+        <h2 className="gusa-h2 gusa-h2-left">A store built to sell worldwide<br /><em>from just $1,000</em></h2>
+        <p className="gusa-lead">Custom e-commerce with global checkout &mdash; take payments the way US customers expect.</p>
+        <div className="gusa-pay">
+          <span>PayPal</span><span>Stripe</span><span>Apple&nbsp;Pay</span><span>Visa</span><span>Mastercard</span>
+        </div>
+        <ul className="gusa-ticks">
+          {ECOM_FEATURES.map((f) => <li key={f}><span className="gusa-tick">&#10003;</span>{f}</li>)}
+        </ul>
+        <button type="button" className="gusa-btn" onClick={openCalendly}>Build my store &rarr;</button>
+      </div>
+    </section>
+  );
 
   return (
     <div className="gusa">
       <Helmet>
-        <title>US Web &amp; Social Media Partner | Govindani Infotech</title>
-        <meta name="description" content="Govindani Infotech builds high-converting websites, e-commerce stores and social media for US businesses & non-profits. US-registered. Book a free consultation." />
+        <title>US Web, E-commerce &amp; NGO Sites from $1,000 | Govindani Infotech</title>
+        <meta name="description" content="US-registered web partner: donation-ready NGO sites (advanced Give Setu plan) and global e-commerce stores from $1,000. Book a free consultation." />
       </Helmet>
 
-      {/* top bar */}
+      {/* header */}
       <header className="gusa-top">
-        <img className="gusa-logo" src={`${R2}/govindanilogo-400w.webp`} alt="Govindani Infotech" />
-        <a className="gusa-top-cta" href="#book">Book a consultation</a>
+        <span className="gusa-logo-wrap"><img className="gusa-logo" src={`${R2}/govindanilogo-400w.webp`} alt="Govindani Infotech" /></span>
+        <button type="button" className="gusa-top-cta" onClick={openCalendly}>Book a free consultation</button>
       </header>
 
       {/* hero */}
       <section className="gusa-hero">
         <div className="gusa-hero-in">
-          <p className="gusa-eyebrow">US-registered &middot; Wyoming, USA</p>
-          <h1 className="gusa-h1">Websites &amp; social media that<br /><em>grow US businesses</em></h1>
+          <p className="gusa-eyebrow">US-registered LLC &middot; Wyoming, USA</p>
+          <h1 className="gusa-h1">Get your own website<br /><em>from just $1,000</em></h1>
           <p className="gusa-lead">
-            We design, build and market high-converting websites, online stores and social presence for
-            US companies and non-profits &mdash; custom-coded to your goals, delivered end-to-end.
+            Donation-ready NGO platforms and global e-commerce stores &mdash; custom-built end-to-end
+            by a US-registered team you can hold accountable.
           </p>
           <div className="gusa-hero-cta">
-            <a className="gusa-btn" href="#book">Book a free consultation &rarr;</a>
+            <button type="button" className="gusa-btn" onClick={openCalendly}>Book a free consultation &rarr;</button>
             <a className="gusa-btn gusa-btn-ghost" href="#work">See our work</a>
           </div>
           <ul className="gusa-trustchips">
-            <li>&#127482;&#127480; US-registered entity</li>
+            <li>&#127482;&#127480; US-registered LLC (Wyoming)</li>
+            <li>&#10003; Federal EIN issued</li>
             <li>&#10003; Meta Business Partner</li>
             <li>&#10003; 200+ websites delivered</li>
           </ul>
         </div>
       </section>
 
-      {/* services */}
-      <section className="gusa-services">
-        <h2 className="gusa-h2">What we do for you</h2>
-        <div className="gusa-svc-grid">
-          <div className="gusa-svc"><span className="gusa-svc-ic">&#128187;</span><h3>Website design &amp; development</h3><p>Custom, fast, mobile-first websites that turn visitors into customers.</p></div>
-          <div className="gusa-svc"><span className="gusa-svc-ic">&#128722;</span><h3>E-commerce stores</h3><p>Shopify, WooCommerce &amp; custom stores built to sell and scale.</p></div>
-          <div className="gusa-svc"><span className="gusa-svc-ic">&#128241;</span><h3>Social media marketing</h3><p>Content, campaigns and Meta ads managed by a Meta Business Partner.</p></div>
-        </div>
-      </section>
+      {/* tailored offer blocks */}
+      {ngoFirst ? <>{showNGO && NgoBlock}{showEcom && EcomBlock}</> : <>{showEcom && EcomBlock}{showNGO && NgoBlock}</>}
 
       {/* work carousels */}
       <section className="gusa-work" id="work">
         <h2 className="gusa-h2">A snapshot of our work</h2>
-        <p className="gusa-sub">A few examples per category &mdash; scroll sideways. Every site below is live and custom-built.</p>
-
-        <div className="gusa-cat">
-          <h3 className="gusa-cat-h">Non-profit &amp; NGO websites</h3>
-          <Carousel id="NGO work" items={NGO_WORK} />
-        </div>
-        <div className="gusa-cat">
-          <h3 className="gusa-cat-h">E-commerce &amp; online stores</h3>
-          <Carousel id="E-commerce work" items={ECOM_WORK} />
-        </div>
-        <div className="gusa-cat">
-          <h3 className="gusa-cat-h">Healthcare &amp; clinics</h3>
-          <Carousel id="Healthcare work" items={HEALTH_WORK} />
-        </div>
+        <p className="gusa-sub">Every site below is live and custom-built. Hover to pause &middot; tap &ldquo;View all&rdquo; for the full list.</p>
+        {(ngoFirst ? [
+          showNGO && <Marquee key="ngo" label="Non-profit & NGO websites" items={NGO.slice(0, 12)} onViewAll={() => setViewAll({ label: 'Non-profit & NGO websites', items: NGO })} />,
+          showEcom && <Marquee key="ecom" label="E-commerce & online stores" items={ECOM} onViewAll={() => setViewAll({ label: 'E-commerce & online stores', items: ECOM })} />,
+        ] : [
+          showEcom && <Marquee key="ecom" label="E-commerce & online stores" items={ECOM} onViewAll={() => setViewAll({ label: 'E-commerce & online stores', items: ECOM })} />,
+          showNGO && <Marquee key="ngo" label="Non-profit & NGO websites" items={NGO.slice(0, 12)} onViewAll={() => setViewAll({ label: 'Non-profit & NGO websites', items: NGO })} />,
+        ])}
+        <Marquee label="Healthcare & clinics" items={HEALTH} onViewAll={() => setViewAll({ label: 'Healthcare & clinics', items: HEALTH })} />
+        <Marquee label="Business & corporate" items={BUSINESS} onViewAll={() => setViewAll({ label: 'Business & corporate', items: BUSINESS })} />
       </section>
 
       {/* legal / registration */}
@@ -139,10 +196,7 @@ export default function UsaLanding() {
           <div className="gusa-legal-copy">
             <p className="gusa-eyebrow">Registered &amp; accountable</p>
             <h2 className="gusa-h2 gusa-h2-left">A US-registered company you can trust</h2>
-            <p className="gusa-lead">
-              Govindani Infotech is a registered business in the United States, so you work with a
-              legally accountable partner &mdash; contracts, invoicing and support, all above board.
-            </p>
+            <p className="gusa-lead">Govindani Infotech LLC is registered with the Wyoming Secretary of State and holds a US federal EIN &mdash; so you work with a legally accountable partner for contracts, invoicing and support.</p>
             <p className="gusa-addr">&#128205; 30 N Gould St, Ste N, Sheridan, WY 82801, USA</p>
           </div>
           <div className="gusa-legal-docs">
@@ -159,29 +213,83 @@ export default function UsaLanding() {
         </div>
       </section>
 
-      {/* trust / thank you */}
+      {/* thanks */}
       <section className="gusa-thanks">
         <h2 className="gusa-h2">Thank you for trusting us</h2>
-        <p className="gusa-lead gusa-center">
-          Every brand on this page put their vision in our hands &mdash; and we delivered. We&rsquo;d be
-          honored to do the same for you. No pressure, just an honest conversation about your goals.
-        </p>
+        <p className="gusa-lead gusa-center">Every brand on this page put their vision in our hands &mdash; and we delivered. We&rsquo;d be honored to do the same for you.</p>
+        <button type="button" className="gusa-btn" onClick={openCalendly} style={{ marginTop: '22px' }}>Book your free consultation &rarr;</button>
       </section>
 
-      {/* calendly booking */}
-      <section className="gusa-book" id="book">
-        <h2 className="gusa-h2">Book your free consultation</h2>
-        <p className="gusa-sub">Pick a time that works for you &mdash; we&rsquo;ll walk you through exactly how we&rsquo;d approach your project.</p>
-        <div className="calendly-inline-widget gusa-calendly" data-url={CALENDLY_URL} style={{ minWidth: '320px', height: '680px' }} />
-        <p className="gusa-book-fallback">Prefer to talk first? WhatsApp us at{' '}
-          <a href="https://wa.me/919201958278" target="_blank" rel="noopener noreferrer">+91 92019 58278</a>.</p>
-      </section>
-
+      {/* footer — one clean footer, both addresses */}
       <footer className="gusa-foot">
-        <img className="gusa-logo" src={`${R2}/govindanilogo-400w.webp`} alt="Govindani Infotech" />
-        <p>Govindani Infotech Pvt. Ltd. &middot; USA: 30 N Gould St, Ste N, Sheridan, WY 82801</p>
+        <div className="gusa-foot-in">
+          <div className="gusa-foot-brand">
+            <img className="gusa-logo" src={`${R2}/govindanilogo-400w.webp`} alt="Govindani Infotech" />
+            <p>Websites, e-commerce &amp; social media for businesses and non-profits worldwide.</p>
+          </div>
+          <div className="gusa-foot-addr">
+            <h5>&#127482;&#127480; United States</h5>
+            <p>Govindani Infotech LLC<br />30 N Gould St, Ste N<br />Sheridan, WY 82801</p>
+          </div>
+          <div className="gusa-foot-addr">
+            <h5>&#127470;&#127475; India</h5>
+            <p>Govindani Infotech Pvt. Ltd.<br />2nd Floor, Landmark Plaza, 206<br />Satara Rd, Pune, MH 411009</p>
+          </div>
+          <div className="gusa-foot-addr">
+            <h5>Talk to us</h5>
+            <p><a href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer">WhatsApp: +91 92019 58278</a><br />
+            <button type="button" className="gusa-foot-link" onClick={openCalendly}>Book a consultation</button></p>
+          </div>
+        </div>
         <p className="gusa-foot-sm">&copy; {new Date().getFullYear()} Govindani Infotech. All rights reserved.</p>
       </footer>
+
+      {/* mobile sticky book bar */}
+      <div className="gusa-sticky">
+        <a className="gusa-sticky-wa" href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">&#128172;</a>
+        <button type="button" className="gusa-sticky-book" onClick={openCalendly}>Book a free consultation</button>
+      </div>
+
+      {/* interest popup */}
+      {askInterest && typeof document !== 'undefined' && createPortal(
+        <div className="gusa-modal" role="dialog" aria-modal="true" aria-label="What are you interested in">
+          <div className="gusa-modal-back"></div>
+          <div className="gusa-modal-panel gusa-interest">
+            <p className="gusa-eyebrow">Welcome &#128075;</p>
+            <h3 className="gusa-modal-h">What can we build for you?</h3>
+            <p className="gusa-modal-note">Pick one so we show you the most relevant work &amp; pricing.</p>
+            <div className="gusa-interest-grid">
+              <button type="button" onClick={() => chooseInterest('ngo')}><span>&#127757;</span>NGO / Non-profit website</button>
+              <button type="button" onClick={() => chooseInterest('ecommerce')}><span>&#128722;</span>E-commerce / Online store</button>
+              <button type="button" onClick={() => chooseInterest('both')}><span>&#10024;</span>Both / Just exploring</button>
+            </div>
+          </div>
+        </div>,
+        document.body,
+      )}
+
+      {/* view-all grid modal */}
+      {viewAll && typeof document !== 'undefined' && createPortal(
+        <div className="gusa-modal" role="dialog" aria-modal="true" aria-label={viewAll.label}>
+          <div className="gusa-modal-back" onClick={() => setViewAll(null)}></div>
+          <div className="gusa-modal-panel gusa-allpanel">
+            <div className="gusa-all-head">
+              <h3 className="gusa-modal-h">{viewAll.label} <span>({viewAll.items.length})</span></h3>
+              <button type="button" className="gusa-x" onClick={() => setViewAll(null)} aria-label="Close">&#10005;</button>
+            </div>
+            <div className="gusa-all-grid">
+              {viewAll.items.map((w) => (
+                <a key={w.n} className="gusa-slide" href={w.u !== '#' ? w.u : undefined} target={w.u !== '#' ? '_blank' : undefined} rel="noopener noreferrer">
+                  <div className="gusa-shot"><img src={w.i} alt={w.n} loading="lazy" /></div>
+                  <span className="gusa-slide-name">{w.n}{w.u !== '#' && <em> &#8599;</em>}</span>
+                </a>
+              ))}
+            </div>
+            <div className="gusa-all-cta"><button type="button" className="gusa-btn" onClick={openCalendly}>Get a website like these &rarr;</button></div>
+          </div>
+        </div>,
+        document.body,
+      )}
     </div>
   );
 }
