@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { Helmet } from 'react-helmet-async';
 import { NGO, ECOM, HEALTH, BUSINESS, OTHERS, ALL, type Work } from '@/data/usaWork';
@@ -30,19 +30,58 @@ function openCalendly() {
 
 /* ---- auto-scrolling marquee carousel (pauses on hover) ---- */
 function Marquee({ items, onViewAll, label }: { items: Work[]; onViewAll: () => void; label: string }) {
-  const loop = [...items, ...items]; // duplicate for seamless scroll
+  const loop = [...items, ...items]; // duplicate for seamless loop
+  const ref = useRef<HTMLDivElement>(null);
+  const paused = useRef(false);
+  const drag = useRef({ active: false, startX: 0, startScroll: 0, moved: false });
+
+  // Auto-scroll + finger/mouse drag. Native overflow-x gives touch swipe; a
+  // pointer handler adds mouse drag on desktop. Auto-scroll pauses on interaction.
+  useEffect(() => {
+    const el = ref.current; if (!el) return;
+    let raf = 0;
+    const step = () => {
+      if (!paused.current && el.scrollWidth > el.clientWidth + 4) {
+        el.scrollLeft += 0.5;
+        if (el.scrollLeft >= el.scrollWidth / 2) el.scrollLeft -= el.scrollWidth / 2;
+      }
+      raf = requestAnimationFrame(step);
+    };
+    raf = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(raf);
+  }, []);
+
+  const onEnter = () => { paused.current = true; };
+  const onLeave = () => { paused.current = false; drag.current.active = false; };
+  const onDown = (e: React.PointerEvent) => {
+    paused.current = true;
+    if (e.pointerType === 'mouse') drag.current = { active: true, startX: e.clientX, startScroll: ref.current!.scrollLeft, moved: false };
+  };
+  const onMove = (e: React.PointerEvent) => {
+    if (!drag.current.active) return;
+    const dx = e.clientX - drag.current.startX;
+    if (Math.abs(dx) > 4) drag.current.moved = true;
+    ref.current!.scrollLeft = drag.current.startScroll - dx;
+  };
+  const onUp = () => { drag.current.active = false; setTimeout(() => { paused.current = false; }, 600); };
+  // prevent a drag from also triggering the card link
+  const onClickCapture = (e: React.MouseEvent) => { if (drag.current.moved) { e.preventDefault(); e.stopPropagation(); drag.current.moved = false; } };
+
   return (
     <div className="gusa-cat">
       <div className="gusa-cat-head">
         <h3 className="gusa-cat-h">{label}</h3>
         <button type="button" className="gusa-viewall" onClick={onViewAll}>View all &rarr;</button>
       </div>
-      <div className="gusa-marquee">
-        <div className="gusa-track" style={{ ['--n' as string]: items.length }}>
+      <div className="gusa-marquee" ref={ref}
+           onMouseEnter={onEnter} onMouseLeave={onLeave}
+           onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp}
+           onClickCapture={onClickCapture}>
+        <div className="gusa-track">
           {loop.map((w, idx) => (
             <a key={`${w.n}-${idx}`} className="gusa-slide" href={w.u !== '#' ? w.u : undefined}
-               target={w.u !== '#' ? '_blank' : undefined} rel="noopener noreferrer" aria-hidden={idx >= items.length}>
-              <div className="gusa-shot"><img src={w.i} alt={`${w.n} website by Govindani Infotech`} loading="lazy" /></div>
+               target={w.u !== '#' ? '_blank' : undefined} rel="noopener noreferrer" aria-hidden={idx >= items.length} draggable={false}>
+              <div className="gusa-shot"><img src={w.i} alt={`${w.n} website by Govindani Infotech`} loading="lazy" draggable={false} /></div>
               <span className="gusa-slide-name">{w.n}{w.u !== '#' && <em> &#8599;</em>}</span>
             </a>
           ))}
@@ -92,7 +131,9 @@ const TRUST: { ic: string; t: string; meta?: boolean }[] = [
 export default function UsaLanding() {
   const [interest, setInterest] = useState<Interest | null>(null);
   const [askInterest, setAskInterest] = useState(false);
-  const [viewAll, setViewAll] = useState<{ label: string; items: Work[] } | null>(null);
+  // Library is permanent (never closes) — defaults to the full ALL list; category
+  // "View all" buttons just swap which set it shows.
+  const [viewAll, setViewAll] = useState<{ label: string; items: Work[] }>({ label: 'All our websites', items: ALL });
   const [page, setPage] = useState(0);
   const PER_PAGE = 15;
   const openAll = useCallback((label: string, items: Work[]) => {
@@ -238,7 +279,6 @@ export default function UsaLanding() {
             <div className="gusa-lib" id="gusa-lib">
               <div className="gusa-lib-head">
                 <h3 className="gusa-h2 gusa-h2-left">{viewAll.label} <span className="gusa-lib-count">({viewAll.items.length})</span></h3>
-                <button type="button" className="gusa-lib-close" onClick={() => setViewAll(null)}>Close &#10005;</button>
               </div>
               <div className="gusa-lib-grid" key={page}>
                 {viewAll.items.slice(page * PER_PAGE, (page + 1) * PER_PAGE).map((w) => (
@@ -288,6 +328,7 @@ export default function UsaLanding() {
       <section className="gusa-thanks">
         <h2 className="gusa-h2">Thank you for trusting us</h2>
         <p className="gusa-lead gusa-center">Every brand on this page put their vision in our hands &mdash; and we delivered. We&rsquo;d be honored to do the same for you.</p>
+        <p className="gusa-usline gusa-usline-dark">&#127482;&#127480; A US-registered company &middot; Sheridan, Wyoming &middot; serving businesses & non-profits across America</p>
         <button type="button" className="gusa-btn" onClick={openCalendly} style={{ marginTop: '22px' }}>Book your free consultation &rarr;</button>
       </section>
 
@@ -295,6 +336,7 @@ export default function UsaLanding() {
       <section className="gusa-book" id="book">
         <h2 className="gusa-h2">Book your free consultation</h2>
         <p className="gusa-sub">Pick a time that works for you &mdash; it&rsquo;s booked instantly, right here.</p>
+        <p className="gusa-usline">&#127482;&#127480; Govindani Infotech LLC &middot; 30 N Gould St, Ste N, Sheridan, WY 82801 &middot; serving all 50 states</p>
         <div className="gusa-book-frame">
           <div className="calendly-inline-widget" data-url={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=fffdf8&primary_color=b8860b`} style={{ minWidth: '320px', height: '720px' }} />
         </div>

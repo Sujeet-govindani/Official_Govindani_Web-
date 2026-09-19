@@ -12,9 +12,11 @@
 /* header — dark pill behind logo so it stays visible on the light bar */
 .gusa-top {
   position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between;
-  padding: 12px clamp(16px, 4vw, 44px); background: var(--navy);
+  padding: max(14px, env(safe-area-inset-top, 0px)) clamp(16px, 4vw, 44px) 14px; background: var(--navy);
   border-bottom: 1px solid rgba(255,255,255,.08); box-shadow: 0 8px 24px -14px rgba(11,25,41,.6);
 }
+/* anchor targets clear the sticky header so headings aren't hidden under it */
+.gusa section, .gusa-lib, #work, #book { scroll-margin-top: 88px; }
 .gusa-logo-wrap { display: inline-flex; align-items: center; background: transparent; padding: 0; }
 .gusa-logo { height: 36px; width: auto; }
 .gusa-top-cta {
@@ -69,9 +71,10 @@
 .gusa-cat-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 0 clamp(20px, 5vw, 60px); margin-bottom: 14px; }
 .gusa-cat-h { font-size: 1.06rem; font-weight: 700; color: var(--navy); margin: 0; }
 .gusa-viewall { background: none; border: 0; cursor: pointer; font-family: inherit; font-weight: 700; font-size: .9rem; color: var(--gold); white-space: nowrap; }
-.gusa-marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
-.gusa-track { display: flex; gap: 18px; width: max-content; padding: 4px clamp(20px, 5vw, 60px); animation: gusa-scroll calc(var(--n, 8) * 4.2s) linear infinite; }
-.gusa-marquee:hover .gusa-track { animation-play-state: paused; }
+.gusa-marquee { overflow-x: auto; overflow-y: hidden; cursor: grab; touch-action: pan-x; -webkit-overflow-scrolling: touch; scrollbar-width: none; -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
+.gusa-marquee::-webkit-scrollbar { display: none; }
+.gusa-marquee:active { cursor: grabbing; }
+.gusa-track { display: flex; gap: 18px; width: max-content; padding: 4px clamp(20px, 5vw, 60px); }
 @keyframes gusa-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .gusa-slide { flex: 0 0 auto; width: clamp(260px, 30vw, 330px); text-decoration: none; color: inherit; }
 .gusa-shot { height: 290px; overflow: hidden; border-radius: 16px; border: 1px solid var(--line); background: #fff; box-shadow: 0 22px 54px -30px rgba(30,20,0,.5); }
@@ -99,6 +102,10 @@
 .gusa-thanks .gusa-h2 { color: #fff; }
 .gusa-center { margin-left: auto; margin-right: auto; }
 .gusa-thanks .gusa-lead { color: rgba(255,255,255,.82); }
+
+/* USA presence line (sprinkled across the page) */
+.gusa-usline { font-size: .86rem; font-weight: 600; color: var(--muted); margin: 14px auto 0; max-width: 46rem; text-align: center; }
+.gusa-usline-dark { color: rgba(255,255,255,.72); }
 
 /* inline booking (Calendly embedded in the page) */
 .gusa-book { padding: clamp(44px, 7vw, 84px) clamp(16px, 4vw, 60px); background: var(--cream); text-align: center; }
@@ -179,7 +186,7 @@
   .gusa-top-cta { display: none; } /* replaced by sticky bar on mobile */
   .gusa { padding-bottom: 76px; } /* clear the sticky bar */
   .gusa-sticky {
-    display: flex; gap: 10px; align-items: center; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    display: flex; gap: 10px; align-items: center; position: fixed; left: 0; right: 0; bottom: 0; z-index: 9999;
     padding: 10px 14px calc(10px + env(safe-area-inset-bottom, 0px)); background: rgba(255,253,248,.96);
     backdrop-filter: blur(10px); border-top: 1px solid var(--line); box-shadow: 0 -10px 30px -18px rgba(0,0,0,.4);
   }
