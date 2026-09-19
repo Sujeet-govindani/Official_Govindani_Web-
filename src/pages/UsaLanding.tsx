@@ -2,7 +2,6 @@ import { useEffect, useState, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { Helmet } from 'react-helmet-async';
 import { NGO, ECOM, HEALTH, BUSINESS, OTHERS, ALL, US_NGO, type Work } from '@/data/usaWork';
-import CredibilityBanners from '@/components/HomePage/CredibilityBanners';
 import '@/styles/usa.css';
 
 /**
@@ -391,8 +390,16 @@ export default function UsaLanding() {
         </div>
       </section>
 
-      {/* 4 — Meta + Birla, split credibility banner (same as the homepage) */}
-      <CredibilityBanners />
+      {/* 4 — Meta Business Partner credibility */}
+      <section className="gusa-meta">
+        <div className="gusa-meta-in">
+          <img className="gusa-meta-badge" src={`${R2}/partners/meta-partner-badge-dark.png`} alt="Meta Business Partner" loading="lazy" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
+          <p className="gusa-eyebrow gusa-meta-eyebrow">Officially recognised by Meta</p>
+          <h2 className="gusa-h2"><em>Meta</em> approves a few. We made the cut.</h2>
+          <p className="gusa-lead gusa-center">You don&rsquo;t take our word for it &mdash; you take Meta&rsquo;s. Govindani is a <strong>verified Meta Business Partner</strong>, vetted and badged by Meta itself to run your ads and growth.</p>
+          <button type="button" className="gusa-btn" onClick={openCalendly} style={{ marginTop: '20px' }}>Run ads with a Meta Partner &rarr;</button>
+        </div>
+      </section>
 
       {/* 5 — our functionalities (tailored offer blocks) */}
       {ngoFirst ? <>{showNGO && NgoBlock}{showEcom && EcomBlock}</> : <>{showEcom && EcomBlock}{showNGO && NgoBlock}</>}

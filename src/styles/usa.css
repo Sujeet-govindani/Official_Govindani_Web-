@@ -310,3 +310,13 @@
 .gusa-incl { margin-top: 4px; }
 .gusa-incl-card { transition: transform .18s ease; }
 .gusa-incl-card:hover { transform: translateY(-2px); }
+
+/* Meta Business Partner credibility (dark, premium) */
+.gusa-meta { padding: clamp(48px,7vw,88px) clamp(20px,5vw,60px); background: radial-gradient(60% 80% at 70% 0%, rgba(8,102,255,.28), transparent 62%), linear-gradient(135deg, #070b16, #0f1b33); color: #fff; text-align: center; }
+.gusa-meta-in { max-width: 720px; margin: 0 auto; }
+.gusa-meta-badge { width: clamp(220px, 26vw, 300px); height: auto; margin: 0 auto 22px; border-radius: 18px; box-shadow: 0 30px 70px -28px rgba(0,0,0,.6); }
+.gusa-meta .gusa-h2 { color: #fff; }
+.gusa-meta .gusa-h2 em { background: linear-gradient(90deg,#0866ff,#7aa8ff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.gusa-meta .gusa-lead { color: rgba(255,255,255,.82); }
+.gusa-meta .gusa-lead strong { color: #fff; }
+.gusa-meta-eyebrow { color: #5b9bff; }
