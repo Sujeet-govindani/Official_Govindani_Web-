@@ -289,3 +289,24 @@
 .gusa-offer-ngo .gusa-pwr { background: #fffdf8; }
 .gusa-pwr-h { display: flex; align-items: center; gap: 8px; }
 .gusa-pwr-h::before { content: ""; width: 22px; height: 3px; border-radius: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-lt)); }
+
+/* desktop floating book-a-call (hidden on mobile — sticky bar covers it) */
+.gusa-float { display: none; }
+@media (min-width: 761px) {
+  .gusa-float { display: flex; align-items: center; gap: 12px; position: fixed; right: 22px; bottom: 22px; z-index: 90; }
+  .gusa-float-wa { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: #25d366; color: #fff; box-shadow: 0 14px 30px -10px rgba(37,211,102,.6); transition: transform .18s; }
+  .gusa-float-wa:hover { transform: translateY(-3px); }
+  .gusa-float-book { display: inline-flex; align-items: center; gap: 9px; border: 0; cursor: pointer; font-family: 'Sora',sans-serif; font-weight: 700; font-size: 1rem; color: #0b1929; background: linear-gradient(90deg, var(--gold), var(--gold-lt)); padding: 15px 24px; border-radius: 999px; box-shadow: 0 16px 36px -10px rgba(184,134,11,.7); transition: transform .18s; }
+  .gusa-float-book:hover { transform: translateY(-3px); }
+}
+
+/* functionality section — premium finish */
+.gusa-offer-in > .gusa-eyebrow { font-size: .78rem; }
+.gusa-offer .gusa-h2-left { font-size: clamp(2rem, 4vw, 3rem); }
+.gusa-pwr-grid { gap: 18px; }
+.gusa-pwr { transition: transform .18s ease, box-shadow .18s ease; }
+.gusa-pwr:hover { transform: translateY(-3px); box-shadow: 0 28px 60px -34px rgba(30,20,0,.6); }
+.gusa-pwr .gusa-ticks-1 li { font-size: .96rem; }
+.gusa-incl { margin-top: 4px; }
+.gusa-incl-card { transition: transform .18s ease; }
+.gusa-incl-card:hover { transform: translateY(-2px); }
