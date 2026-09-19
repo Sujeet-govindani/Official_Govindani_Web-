@@ -16,10 +16,9 @@
      both halves. The floating header samples its background colour just below the
      pill; without this band it straddled the dark Meta half + the cream Birla half
      and averaged to a muddy two-tone. One colour here = one consistent header. */
-  /* Band must be taller than the header's colour-sample line (~130px from top)
-     so the floating header always samples this one cream colour, never the
-     dark-Meta / cream-Birla split beneath it. */
-  padding-top: clamp(134px, 13vw, 164px);
+  /* Small uniform top band (kept modest so it doesn't read as empty white space
+     on the homepage where this banner sits mid-page, not under the header). */
+  padding-top: clamp(40px, 5vw, 64px);
   background: #faf5f0;
 }
 .gicred-half {
@@ -146,7 +145,7 @@
 @media (max-width: 760px) {
   /* Double class beats a global `section:first-of-type { padding-top:0 }` mobile
      reset that would otherwise cancel the header-clearance band. */
-  .gicred-split.gicred-split { grid-template-columns: 1fr; min-height: 0; padding-top: clamp(90px, 16vw, 112px) !important; }
+  .gicred-split.gicred-split { grid-template-columns: 1fr; min-height: 0; padding-top: clamp(36px, 8vw, 56px) !important; }
   .gicred-half { padding: clamp(28px, 7vw, 44px) 22px clamp(46px, 9vw, 60px); }
 }
 

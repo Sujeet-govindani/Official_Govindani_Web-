@@ -149,9 +149,25 @@ const queryClient = new QueryClient();
 const CLEAN_ROUTES = ["/usa", "/us"];
 // normalize so "/usa/", "/USA" etc. also count as clean (standalone) routes
 const isCleanRoute = (p: string) => CLEAN_ROUTES.includes((p.replace(/\/+$/, '') || '/').toLowerCase());
-function SiteHeader() { const { pathname } = useLocation(); return isCleanRoute(pathname) ? null : <Header />; }
+// The USA landing keeps the FULL site header (so visitors can explore the whole
+// site), but drops the footer, bottom dock and floating widgets — it has its own
+// clean footer + a single sticky Book/WhatsApp bar.
+function SiteHeader() { return <Header />; }
 function SiteBottomNav() { const { pathname } = useLocation(); return isCleanRoute(pathname) ? null : <BottomNav />; }
 function SiteFooter() { const { pathname } = useLocation(); return isCleanRoute(pathname) ? null : <Footer />; }
+function SiteFloats() {
+  const { pathname } = useLocation();
+  if (isCleanRoute(pathname)) return null;
+  return (
+    <>
+      <div className="hidden md:block">
+        <WhatsAppFloating />
+        <GetQuoteFloating />
+      </div>
+      <ChatWidget />
+    </>
+  );
+}
 
 const App = () => (
   <HelmetProvider>
@@ -288,18 +304,9 @@ const App = () => (
           <SiteFooter />
         </div>
       </TooltipProvider>
-      {/* Desktop keeps the two floating buttons. On mobile they are replaced by
-          the bottom dock below, which absorbs both actions and stops the three
-          of them stacking on top of each other in the same corner. */}
-      <div className="hidden md:block">
-        <WhatsAppFloating />
-        <GetQuoteFloating />
-      </div>
-
-      {/* The chat is NOT desktop-only: the bottom dock absorbs WhatsApp and Get
-          Quote, but nothing else offers the assistant, so it must render on
-          mobile too — sitting clear of the dock (see the mobile CSS). */}
-      <ChatWidget />
+      {/* Floating WhatsApp / Get-Quote / assistant — hidden on the USA landing
+          (it has its own sticky Book + WhatsApp bar and no site forms). */}
+      <SiteFloats />
 
       <SiteBottomNav />
     </BrowserRouter>

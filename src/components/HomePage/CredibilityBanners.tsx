@@ -17,7 +17,7 @@ export default function CredibilityBanners() {
           <div className="gicred-pedestal gicred-rise">
             <img
               className="gicred-metabadge"
-              src="/images/partners/meta-partner-badge-dark.png"
+              src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/partners/meta-partner-badge-dark.png"
               alt="Meta Business Partner — official badge"
               width="360" height="202" loading="lazy"
             />
@@ -38,7 +38,7 @@ export default function CredibilityBanners() {
       <div className="gicred-half gicred-birla">
         <div className="gicred-inner">
           <div className="gicred-birlacard gicred-rise">
-            <img src="/images/partners/birla-open-minds-mark.svg" alt="Birla Open Minds" width="268" height="175" loading="lazy" />
+            <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/partners/birla-open-minds-mark.svg" alt="Birla Open Minds" width="268" height="175" loading="lazy" />
           </div>
           <p className="gicred-eyebrow gicred-rise d1">A Birla-legacy institution chose us</p>
           <h2 className="gicred-h gicred-rise d1">The digital force behind<br /><em>Birla Open Minds.</em></h2>

@@ -15,16 +15,37 @@ import '@/styles/usa.css';
  */
 
 const CALENDLY_URL = 'https://calendly.com/sujeet-govindaniit/30min';
-const WA = '919201958278';
+const WA = '919201958273';
 const R2 = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images';
 const INTEREST_KEY = 'gi_usa_interest';
 type Interest = 'ngo' | 'ecommerce' | 'both';
 
-// All "Book" CTAs scroll to the inline booking section embedded in the page
-// (Calendly inline embed), rather than opening a popup overlay.
+// On touch devices a single tap just "interacts" (no navigation); a double tap
+// visits the site. On desktop, a normal click navigates. Prevents accidental
+// redirects and lets people preview the auto-scrolling screenshot first.
+function cardTap(e: React.MouseEvent<HTMLAnchorElement>) {
+  const a = e.currentTarget;
+  const href = a.getAttribute('href');
+  if (!href) { e.preventDefault(); return; }
+  const touch = typeof window !== 'undefined' && window.matchMedia('(hover: none)').matches;
+  if (!touch) return; // desktop: normal navigation
+  e.preventDefault();
+  const now = Date.now();
+  const last = Number(a.dataset.lt || 0);
+  if (now - last < 550) {
+    window.open(href, '_blank', 'noopener,noreferrer');
+    a.dataset.lt = '0'; a.classList.remove('gusa-tapped');
+  } else {
+    a.dataset.lt = String(now);
+    a.classList.add('gusa-tapped');
+    window.setTimeout(() => a.classList.remove('gusa-tapped'), 1600);
+  }
+}
+
+// All "Book" CTAs open the Calendly popup (fast, no long scroll to a far-down form).
 function openCalendly() {
-  const el = document.getElementById('book');
-  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const C = (window as unknown as { Calendly?: { initPopupWidget: (o: { url: string }) => void } }).Calendly;
+  if (C) C.initPopupWidget({ url: CALENDLY_URL });
   else window.open(CALENDLY_URL, '_blank', 'noopener,noreferrer');
 }
 
@@ -79,9 +100,9 @@ function Marquee({ items, onViewAll, label }: { items: Work[]; onViewAll: () => 
            onClickCapture={onClickCapture}>
         <div className="gusa-track">
           {loop.map((w, idx) => (
-            <a key={`${w.n}-${idx}`} className="gusa-slide" href={w.u !== '#' ? w.u : undefined}
+            <a key={`${w.n}-${idx}`} className="gusa-slide" href={w.u !== '#' ? w.u : undefined} onClick={cardTap}
                target={w.u !== '#' ? '_blank' : undefined} rel="noopener noreferrer" aria-hidden={idx >= items.length} draggable={false}>
-              <div className="gusa-shot"><img src={w.i} alt={`${w.n} website by Govindani Infotech`} loading="lazy" draggable={false} /></div>
+              <div className="gusa-shot"><img src={w.i} alt={`${w.n} website by Govindani Infotech`} loading="lazy" draggable={false} /><span className="gusa-taphint" aria-hidden="true">👆 Double-tap to visit</span></div>
               <span className="gusa-slide-name">{w.n}{w.u !== '#' && <em> &#8599;</em>}</span>
             </a>
           ))}
@@ -91,23 +112,42 @@ function Marquee({ items, onViewAll, label }: { items: Work[]; onViewAll: () => 
   );
 }
 
-const GIVESETU_FEATURES = [
-  '100% ownership — zero platform commission on donations',
-  'Recurring, one-time, tribute & anonymous donations',
-  'Instant 80G / tax receipts, auto-generated PDFs',
-  'Peer-to-peer & campaign fundraising with progress bars',
-  'Direct donor relationship — full donor data is yours',
-  'WhatsApp + SMS + Email donor automation',
-  'Transparent accounting, reports & CSR pages',
-  'International donations, all major gateways, FCRA-ready',
+// The advanced Give Setu plan — full power (no starter/growth comparison).
+const NGO_POWER: [string, string[]][] = [
+  ['Website & ownership', ['Full custom-coded UI/UX website — a $2,500+ value, free', '100% ownership · 0% commission on donations, forever', 'Full donor & member portals']],
+  ['Donors, members & receipts', ['25,000 active donors tracked + unlimited sleeping/legacy donors', '15,000 80G tax receipts every month', '10,000 members across 15 plans']],
+  ['Fundraising engine', ['Unlimited live cases & campaigns', '10 cases built by our team every month', 'Recurring donor self-service · festival campaign wizard · 1 microsite']],
+  ['Automation & AI', ['WhatsApp rail · 25,000 marketing emails/mo · unlimited transactional email', '150 AI campaign packs/mo · unlimited AI natural-language filters', 'AI Insights engine']],
+  ['Compliance & trust', ['Compliance Centre — US (IRS-ready) + India (10BD / 10BE), unlimited batches + priority', 'Case-verification badge · 8-year audit trail · dedicated CA / auditor seat']],
+  ['Payments, API & scale', ['2+ payment gateways with failover', 'Developer API (300 req/min) & webhooks', '50 GB media · 15 admin seats + custom roles & field masking', '12-hour priority support · 15 instant bulk jobs/mo · unlimited overnight jobs']],
 ];
-const ECOM_FEATURES = [
-  'PayPal, Stripe, Apple Pay & all major cards',
-  'Product catalog, cart & secure one-page checkout',
-  'Inventory, orders, shipping & tax management',
-  'Coupons, offers & abandoned-cart recovery',
-  'Mobile-first, lightning-fast, SEO-ready',
-  'Analytics, email & marketing integrations',
+// Complete e-commerce functionality set (54 functions), grouped.
+const ECOM_POWER: [string, string[]][] = [
+  ['🛒 Store & catalogue', ['Catalogue with categories, filters, search & sorting', 'Product pages — images, variants, stock status, reviews', 'Inventory & stock management with low-stock email alerts', 'Auto out-of-stock badges']],
+  ['💳 Checkout & payments', ['Razorpay / Cashfree / Stripe — UPI, cards, net-banking, wallets', 'Partial COD with configurable ratio per product/category', 'Cart with coupons, quantity update & order review', 'Order confirmation / thank-you screen']],
+  ['📦 Order management', ['Admin order dashboard — view, filter, process, hold, cancel', 'Real-time tracking: Confirmed → Packed → Shipped → Out for delivery → Delivered', 'Return & refund management with gateway refunds', 'Full audit trail on every order']],
+  ['📧 Email automation', ['9 automated emails — placed, paid, processed, shipped, out-for-delivery, delivered, cancelled, refund initiated & completed', 'Professional SMTP (not server mail)']],
+  ['🎟️ Coupons & marketing', ['Unlimited coupons — %, flat, free-shipping, product/cart/first-order/user-specific', 'Flash sales · BOGO · referral codes · loyalty points', 'Sales analytics — revenue, top products, coupon performance']],
+  ['👤 Customer dashboard', ['Account with order history & tracking links', 'Address book · downloadable invoices · wishlist', 'Loyalty points balance']],
+  ['⚙️ Admin panel', ['Product, category & attribute management + bulk update', 'Order fulfilment, inventory, coupons & discounts', 'Sales reports · customer management · multi-admin roles']],
+  ['🔧 Technical', ['Mobile responsive · cross-browser · SSL/HTTPS', 'Speed-optimised (lazy load, caching, image compression)', 'SEO — meta, Open Graph, XML sitemap · Google Analytics · WhatsApp chat widget']],
+];
+// "On us" value props — the big reasons to say yes
+const NGO_INCLUDED = [
+  ['🎁', '100% custom-coded website', 'Yours for a lifetime, free — you only pay the subscription'],
+  ['🌐', 'Hosting is on us', 'Premium hosting handled for you, every year'],
+  ['🛠️', '1 full year of maintenance', 'Updates, fixes & support — on us'],
+  ['✉️', 'Marketing emails on us', 'Donor campaigns set up and sent for you'],
+  ['💬', 'Dedicated WhatsApp integration', 'Reach donors where they actually reply'],
+  ['🧾', 'US + India tax compliance', 'IRS-ready records for the US · 80G / 10BD-10BE for India — built in'],
+];
+const ECOM_INCLUDED = [
+  ['🧾', 'WhatsApp receipts to customers', 'Every order confirmed instantly on WhatsApp'],
+  ['📸', 'Professional product shoots', 'We shoot & retouch your catalog'],
+  ['🎨', 'Design, layouts & USP', 'Store design, sections and positioning done for you'],
+  ['📈', 'Marketing & performance ads', 'We drive traffic that converts — Meta Business Partner'],
+  ['🛒', 'Custom-coded or Shopify', 'Baba Ji Ki Buti & Tarush (custom) · Gllora (Shopify)'],
+  ['🔑', '100% the website is yours', 'Full ownership, full data, no lock-in'],
 ];
 
 // Rotating trust strip items (icon + label). `meta` styles the ∞ in Meta blue.
@@ -193,9 +233,20 @@ export default function UsaLanding() {
         <p className="gusa-eyebrow">For NGOs &amp; non-profits &middot; powered by Give Setu</p>
         <h2 className="gusa-h2 gusa-h2-left">Your own donation-ready NGO website<br /><em>from just $1,000</em></h2>
         <p className="gusa-lead">For our US &amp; international clients we provide the <strong>complete advanced Give Setu plan</strong> &mdash; a full fundraising platform you own outright, no crowdfunding commissions, no listing pages.</p>
-        <ul className="gusa-ticks">
-          {GIVESETU_FEATURES.map((f) => <li key={f}><span className="gusa-tick">&#10003;</span>{f}</li>)}
-        </ul>
+        <div className="gusa-pwr-grid">
+          {NGO_POWER.map(([group, items]) => (
+            <div className="gusa-pwr" key={group}>
+              <h4 className="gusa-pwr-h">{group}</h4>
+              <ul className="gusa-ticks gusa-ticks-1">{items.map((f) => <li key={f}><span className="gusa-tick">&#10003;</span>{f}</li>)}</ul>
+            </div>
+          ))}
+        </div>
+        <p className="gusa-incl-head">Everything below is <em>on us</em> &mdash; you just run your cause</p>
+        <div className="gusa-incl">
+          {NGO_INCLUDED.map(([ic, t, d]) => (
+            <div className="gusa-incl-card" key={t}><span className="gusa-incl-ic">{ic}</span><div><h4>{t}</h4><p>{d}</p></div></div>
+          ))}
+        </div>
         <button type="button" className="gusa-btn" onClick={openCalendly}>Get your NGO website &rarr;</button>
       </div>
     </section>
@@ -209,9 +260,20 @@ export default function UsaLanding() {
         <div className="gusa-pay">
           <span>PayPal</span><span>Stripe</span><span>Apple&nbsp;Pay</span><span>Visa</span><span>Mastercard</span>
         </div>
-        <ul className="gusa-ticks">
-          {ECOM_FEATURES.map((f) => <li key={f}><span className="gusa-tick">&#10003;</span>{f}</li>)}
-        </ul>
+        <div className="gusa-pwr-grid">
+          {ECOM_POWER.map(([group, items]) => (
+            <div className="gusa-pwr" key={group}>
+              <h4 className="gusa-pwr-h">{group}</h4>
+              <ul className="gusa-ticks gusa-ticks-1">{items.map((f) => <li key={f}><span className="gusa-tick">&#10003;</span>{f}</li>)}</ul>
+            </div>
+          ))}
+        </div>
+        <p className="gusa-incl-head">Done-for-you, end to end &mdash; <em>we handle all of it</em></p>
+        <div className="gusa-incl">
+          {ECOM_INCLUDED.map(([ic, t, d]) => (
+            <div className="gusa-incl-card" key={t}><span className="gusa-incl-ic">{ic}</span><div><h4>{t}</h4><p>{d}</p></div></div>
+          ))}
+        </div>
         <button type="button" className="gusa-btn" onClick={openCalendly}>Build my store &rarr;</button>
       </div>
     </section>
@@ -224,11 +286,7 @@ export default function UsaLanding() {
         <meta name="description" content="US-registered web partner: donation-ready NGO sites (advanced Give Setu plan) and global e-commerce stores from $1,000. Book a free consultation." />
       </Helmet>
 
-      {/* header */}
-      <header className="gusa-top">
-        <a className="gusa-logo-wrap" href="https://govindaniit.com/" aria-label="Govindani Infotech home"><img className="gusa-logo" src={`${R2}/govindanilogo-400w.webp`} alt="Govindani Infotech" /></a>
-        <button type="button" className="gusa-top-cta" onClick={openCalendly}>Book a free consultation</button>
-      </header>
+      {/* header comes from the global site nav (full site, so visitors can explore everything) */}
 
       {/* hero */}
       <section className="gusa-hero">
@@ -257,25 +315,82 @@ export default function UsaLanding() {
         </div>
       </div>
 
-      {/* featured: websites we've built for US-based non-profits */}
-      <section className="gusa-usngo">
-        <div className="gusa-usngo-in">
-          <p className="gusa-eyebrow">&#127482;&#127480; Built for US-based non-profits</p>
-          <h2 className="gusa-h2">Trusted by US NGOs &mdash; including a 501(c)(3)</h2>
-          <p className="gusa-sub">Real donation-ready websites we designed &amp; built for non-profits registered in the United States.</p>
-          <div className="gusa-usngo-grid">
-            {US_NGO.map((w) => (
-              <a key={w.n} className="gusa-usngo-card" href={w.u} target="_blank" rel="noopener noreferrer">
-                <div className="gusa-usngo-shot"><img src={w.i} alt={`${w.n} — US NGO website by Govindani Infotech`} loading="lazy" /></div>
-                <span className="gusa-usngo-name">{w.n} <em>&#8599;</em></span>
-              </a>
-            ))}
-          </div>
+      {/* interest switch — one-click toggle between tailored experiences */}
+      <div className="gusa-switch">
+        <span className="gusa-switch-label">I&rsquo;m here for:</span>
+        <div className="gusa-switch-btns">
+          <button type="button" className={interest === 'ngo' ? 'on' : ''} onClick={() => chooseInterest('ngo')}>NGO / Non-profit</button>
+          <button type="button" className={interest === 'ecommerce' ? 'on' : ''} onClick={() => chooseInterest('ecommerce')}>E-commerce</button>
+          <button type="button" className={interest === 'both' || interest === null ? 'on' : ''} onClick={() => chooseInterest('both')}>Explore both</button>
         </div>
-      </section>
+      </div>
+
+      {/* featured top 3 — tailored to interest */}
+      {showNGO && (
+        <section className="gusa-usngo">
+          <div className="gusa-usngo-in">
+            <p className="gusa-eyebrow">&#127482;&#127480; Top 3 &middot; Trusted by US non-profits</p>
+            <h2 className="gusa-h2">The best NGO sites we&rsquo;ve built &mdash; including a 501(c)(3)</h2>
+            <p className="gusa-sub">Real donation-ready websites for non-profits registered in the United States.</p>
+            <div className="gusa-usngo-grid">
+              {US_NGO.map((w) => (
+                <a key={w.n} className="gusa-usngo-card" href={w.u} onClick={cardTap} target="_blank" rel="noopener noreferrer">
+                  <div className="gusa-usngo-shot"><img src={w.i} alt={`${w.n} — US NGO website by Govindani Infotech`} loading="lazy" /><span className="gusa-taphint" aria-hidden="true">👆 Double-tap to visit</span></div>
+                  <span className="gusa-usngo-name">{w.n} <em>&#8599;</em></span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      {showEcom && (
+        <section className="gusa-usngo">
+          <div className="gusa-usngo-in">
+            <p className="gusa-eyebrow">&#128722; Top 3 &middot; Stores we&rsquo;re proud of</p>
+            <h2 className="gusa-h2">The best online stores we&rsquo;ve built</h2>
+            <p className="gusa-sub">End-to-end e-commerce &mdash; custom-coded &amp; Shopify &mdash; built to sell.</p>
+            <div className="gusa-usngo-grid">
+              {[ECOM[0], ECOM[1], ECOM[3]].map((w) => (
+                <a key={w.n} className="gusa-usngo-card" href={w.u !== '#' ? w.u : undefined} onClick={cardTap} target={w.u !== '#' ? '_blank' : undefined} rel="noopener noreferrer">
+                  <div className="gusa-usngo-shot"><img src={w.i} alt={`${w.n} — e-commerce website by Govindani Infotech`} loading="lazy" /><span className="gusa-taphint" aria-hidden="true">👆 Double-tap to visit</span></div>
+                  <span className="gusa-usngo-name">{w.n}{w.u !== '#' && <em> &#8599;</em>}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* tailored offer blocks */}
       {ngoFirst ? <>{showNGO && NgoBlock}{showEcom && EcomBlock}</> : <>{showEcom && EcomBlock}{showNGO && NgoBlock}</>}
+
+      {/* everything under one roof */}
+      <section className="gusa-services">
+        <h2 className="gusa-h2">One agency. Everything you need.</h2>
+        <p className="gusa-sub">We don&rsquo;t just build the website &mdash; we run the whole growth engine for you.</p>
+        <div className="gusa-svc-grid">
+          {[
+            ['💻', 'Website & e-commerce', 'Custom-coded, Shopify & WordPress'],
+            ['📱', 'Social media management', 'Content, calendars & community'],
+            ['🎯', 'Performance marketing', 'Meta & Google ads that convert'],
+            ['🎨', 'Logo & graphic design', 'Brand identity & creatives'],
+            ['📸', 'Product & brand shoots', 'Studio-grade visuals'],
+            ['♾️', 'Meta Business Partner', 'Officially recognised by Meta'],
+          ].map(([ic, t, d]) => (
+            <div className="gusa-svc" key={t}><span className="gusa-svc-ic">{ic}</span><h3>{t}</h3><p>{d}</p></div>
+          ))}
+        </div>
+      </section>
+
+      {/* Birla Open Minds credibility */}
+      <section className="gusa-birla">
+        <div className="gusa-birla-in">
+          <img className="gusa-birla-logo" src={`${R2}/partners/birla-open-minds-mark.svg`} alt="Birla Open Minds" loading="lazy" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
+          <p className="gusa-eyebrow">A Birla-legacy institution chose us</p>
+          <h2 className="gusa-h2">The digital force behind <em>Birla Open Minds</em></h2>
+          <p className="gusa-lead gusa-center">Birla Open Minds is part of the storied Birla legacy &mdash; a network of <strong>250+ schools across India</strong> and a globally respected name in education. They trust Govindani to build, structure and power their digital world &mdash; engineered for the scale a name like Birla demands.</p>
+        </div>
+      </section>
 
       {/* work carousels */}
       <section className="gusa-work" id="work">
@@ -288,9 +403,9 @@ export default function UsaLanding() {
           showEcom && <Marquee key="ecom" label={`E-commerce & online stores (${ECOM.length})`} items={ECOM} onViewAll={() => openAll('E-commerce & online stores', ECOM)} />,
           showNGO && <Marquee key="ngo" label={`Non-profit & NGO websites (${NGO.length})`} items={NGO.slice(0, 14)} onViewAll={() => openAll('Non-profit & NGO websites', NGO)} />,
         ])}
-        <Marquee label={`Healthcare & clinics (${HEALTH.length})`} items={HEALTH} onViewAll={() => openAll('Healthcare & clinics', HEALTH)} />
-        <Marquee label={`Business & corporate (${BUSINESS.length})`} items={BUSINESS} onViewAll={() => openAll('Business & corporate', BUSINESS)} />
-        <Marquee label={`Real estate, hospitality & more (${OTHERS.length})`} items={OTHERS} onViewAll={() => openAll('Real estate, hospitality & more', OTHERS)} />
+        {showEcom && <Marquee label={`Business & corporate (${BUSINESS.length})`} items={BUSINESS} onViewAll={() => openAll('Business & corporate', BUSINESS)} />}
+        {interest === 'both' && <Marquee label={`Healthcare & clinics (${HEALTH.length})`} items={HEALTH} onViewAll={() => openAll('Healthcare & clinics', HEALTH)} />}
+        {interest === 'both' && <Marquee label={`Real estate, hospitality & more (${OTHERS.length})`} items={OTHERS} onViewAll={() => openAll('Real estate, hospitality & more', OTHERS)} />}
 
         <div className="gusa-allbanner">
           <div>
@@ -307,8 +422,8 @@ export default function UsaLanding() {
           </div>
           <div className="gusa-lib-grid">
             {viewAll.items.slice(0, shown).map((w) => (
-              <a key={`${w.n}-${w.u}`} className="gusa-slide" href={w.u !== '#' ? w.u : undefined} target={w.u !== '#' ? '_blank' : undefined} rel="noopener noreferrer">
-                <div className="gusa-shot"><img src={w.i} alt={w.n} loading="lazy" /></div>
+              <a key={`${w.n}-${w.u}`} className="gusa-slide" href={w.u !== '#' ? w.u : undefined} onClick={cardTap} target={w.u !== '#' ? '_blank' : undefined} rel="noopener noreferrer">
+                <div className="gusa-shot"><img src={w.i} alt={w.n} loading="lazy" /><span className="gusa-taphint" aria-hidden="true">👆 Double-tap to visit</span></div>
                 <span className="gusa-slide-name">{w.n}{w.u !== '#' && <em> &#8599;</em>}</span>
               </a>
             ))}
@@ -362,7 +477,7 @@ export default function UsaLanding() {
           <div className="calendly-inline-widget" data-url={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=fffdf8&primary_color=b8860b`} style={{ minWidth: '320px', height: '720px' }} />
         </div>
         <p className="gusa-book-fallback">Prefer to talk first? WhatsApp us at{' '}
-          <a href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer">+91 92019 58278</a>.</p>
+          <a href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer">+91 92019 58273</a>.</p>
       </section>
 
       {/* footer — one clean footer, both addresses */}
@@ -382,7 +497,7 @@ export default function UsaLanding() {
           </div>
           <div className="gusa-foot-addr">
             <h5>Talk to us</h5>
-            <p><a href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer">WhatsApp: +91 92019 58278</a><br />
+            <p><a href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer">WhatsApp: +91 92019 58273</a><br />
             <button type="button" className="gusa-foot-link" onClick={openCalendly}>Book a consultation</button></p>
           </div>
         </div>
