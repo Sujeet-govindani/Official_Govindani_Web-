@@ -100,6 +100,13 @@
 .gusa-center { margin-left: auto; margin-right: auto; }
 .gusa-thanks .gusa-lead { color: rgba(255,255,255,.82); }
 
+/* inline booking (Calendly embedded in the page) */
+.gusa-book { padding: clamp(44px, 7vw, 84px) clamp(16px, 4vw, 60px); background: var(--cream); text-align: center; }
+.gusa-book-frame { max-width: 1000px; margin: 8px auto 0; background: #fffdf8; border: 1px solid var(--line); border-radius: 20px; overflow: hidden; box-shadow: 0 34px 90px -44px rgba(30,20,0,.55); }
+.gusa-book-frame .calendly-inline-widget { width: 100%; }
+.gusa-book-fallback { text-align: center; color: var(--muted); margin: 18px auto 0; }
+.gusa-book-fallback a { color: var(--gold); font-weight: 600; }
+
 /* footer */
 .gusa-foot { background: #08101c; color: rgba(255,255,255,.78); padding: 48px clamp(20px, 5vw, 60px) 30px; }
 .gusa-foot-in { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 28px; }

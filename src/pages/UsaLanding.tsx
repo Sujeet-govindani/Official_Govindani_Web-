@@ -20,9 +20,11 @@ const R2 = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images';
 const INTEREST_KEY = 'gi_usa_interest';
 type Interest = 'ngo' | 'ecommerce' | 'both';
 
+// All "Book" CTAs scroll to the inline booking section embedded in the page
+// (Calendly inline embed), rather than opening a popup overlay.
 function openCalendly() {
-  const C = (window as unknown as { Calendly?: { initPopupWidget: (o: { url: string }) => void } }).Calendly;
-  if (C) C.initPopupWidget({ url: CALENDLY_URL });
+  const el = document.getElementById('book');
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   else window.open(CALENDLY_URL, '_blank', 'noopener,noreferrer');
 }
 
@@ -287,6 +289,17 @@ export default function UsaLanding() {
         <h2 className="gusa-h2">Thank you for trusting us</h2>
         <p className="gusa-lead gusa-center">Every brand on this page put their vision in our hands &mdash; and we delivered. We&rsquo;d be honored to do the same for you.</p>
         <button type="button" className="gusa-btn" onClick={openCalendly} style={{ marginTop: '22px' }}>Book your free consultation &rarr;</button>
+      </section>
+
+      {/* inline booking — Calendly embedded directly in the page (no popup) */}
+      <section className="gusa-book" id="book">
+        <h2 className="gusa-h2">Book your free consultation</h2>
+        <p className="gusa-sub">Pick a time that works for you &mdash; it&rsquo;s booked instantly, right here.</p>
+        <div className="gusa-book-frame">
+          <div className="calendly-inline-widget" data-url={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=fffdf8&primary_color=b8860b`} style={{ minWidth: '320px', height: '720px' }} />
+        </div>
+        <p className="gusa-book-fallback">Prefer to talk first? WhatsApp us at{' '}
+          <a href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer">+91 92019 58278</a>.</p>
       </section>
 
       {/* footer — one clean footer, both addresses */}
