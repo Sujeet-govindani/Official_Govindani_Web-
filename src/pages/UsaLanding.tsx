@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { Helmet } from 'react-helmet-async';
-import { NGO, ECOM, HEALTH, BUSINESS, OTHERS, ALL, type Work } from '@/data/usaWork';
+import { NGO, ECOM, HEALTH, BUSINESS, OTHERS, ALL, US_NGO, type Work } from '@/data/usaWork';
 import '@/styles/usa.css';
 
 /**
@@ -134,12 +134,23 @@ export default function UsaLanding() {
   // Library is permanent (never closes) — defaults to the full ALL list; category
   // "View all" buttons just swap which set it shows.
   const [viewAll, setViewAll] = useState<{ label: string; items: Work[] }>({ label: 'All our websites', items: ALL });
-  const [page, setPage] = useState(0);
-  const PER_PAGE = 15;
+  const STEP = 15;
+  const [shown, setShown] = useState(STEP);
+  const feedRef = useRef<HTMLDivElement>(null);
   const openAll = useCallback((label: string, items: Work[]) => {
-    setViewAll({ label, items }); setPage(0);
+    setViewAll({ label, items }); setShown(STEP);
     setTimeout(() => document.getElementById('gusa-lib')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 70);
   }, []);
+
+  // auto-feed: reveal more cards as the sentinel scrolls into view (no pages, no gaps)
+  useEffect(() => {
+    const el = feedRef.current; if (!el) return;
+    const io = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) setShown((s) => Math.min(viewAll.items.length, s + STEP));
+    }, { rootMargin: '600px' });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [viewAll, shown]);
 
   useEffect(() => {
     // Calendly popup assets
@@ -215,7 +226,7 @@ export default function UsaLanding() {
 
       {/* header */}
       <header className="gusa-top">
-        <span className="gusa-logo-wrap"><img className="gusa-logo" src={`${R2}/govindanilogo-400w.webp`} alt="Govindani Infotech" /></span>
+        <a className="gusa-logo-wrap" href="https://govindaniit.com/" aria-label="Govindani Infotech home"><img className="gusa-logo" src={`${R2}/govindanilogo-400w.webp`} alt="Govindani Infotech" /></a>
         <button type="button" className="gusa-top-cta" onClick={openCalendly}>Book a free consultation</button>
       </header>
 
@@ -246,6 +257,23 @@ export default function UsaLanding() {
         </div>
       </div>
 
+      {/* featured: websites we've built for US-based non-profits */}
+      <section className="gusa-usngo">
+        <div className="gusa-usngo-in">
+          <p className="gusa-eyebrow">&#127482;&#127480; Built for US-based non-profits</p>
+          <h2 className="gusa-h2">Trusted by US NGOs &mdash; including a 501(c)(3)</h2>
+          <p className="gusa-sub">Real donation-ready websites we designed &amp; built for non-profits registered in the United States.</p>
+          <div className="gusa-usngo-grid">
+            {US_NGO.map((w) => (
+              <a key={w.n} className="gusa-usngo-card" href={w.u} target="_blank" rel="noopener noreferrer">
+                <div className="gusa-usngo-shot"><img src={w.i} alt={`${w.n} — US NGO website by Govindani Infotech`} loading="lazy" /></div>
+                <span className="gusa-usngo-name">{w.n} <em>&#8599;</em></span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* tailored offer blocks */}
       {ngoFirst ? <>{showNGO && NgoBlock}{showEcom && EcomBlock}</> : <>{showEcom && EcomBlock}{showNGO && NgoBlock}</>}
 
@@ -272,33 +300,26 @@ export default function UsaLanding() {
           <button type="button" className="gusa-btn" onClick={() => openAll(`Our work`, ALL)}>Browse our work &rarr;</button>
         </div>
 
-        {/* inline library (paginated) — opens right here, not in a popup */}
-        {viewAll && (() => {
-          const pages = Math.ceil(viewAll.items.length / PER_PAGE);
-          return (
-            <div className="gusa-lib" id="gusa-lib">
-              <div className="gusa-lib-head">
-                <h3 className="gusa-h2 gusa-h2-left">{viewAll.label} <span className="gusa-lib-count">({viewAll.items.length})</span></h3>
-              </div>
-              <div className="gusa-lib-grid" key={page}>
-                {viewAll.items.slice(page * PER_PAGE, (page + 1) * PER_PAGE).map((w) => (
-                  <a key={`${w.n}-${w.u}`} className="gusa-slide" href={w.u !== '#' ? w.u : undefined} target={w.u !== '#' ? '_blank' : undefined} rel="noopener noreferrer">
-                    <div className="gusa-shot"><img src={w.i} alt={w.n} loading="lazy" /></div>
-                    <span className="gusa-slide-name">{w.n}{w.u !== '#' && <em> &#8599;</em>}</span>
-                  </a>
-                ))}
-              </div>
-              {pages > 1 && (
-                <div className="gusa-pager">
-                  <button type="button" onClick={() => { setPage((p) => Math.max(0, p - 1)); document.getElementById('gusa-lib')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} disabled={page === 0}>&larr; Prev</button>
-                  <span className="gusa-pager-info">Page {page + 1} of {pages}</span>
-                  <button type="button" onClick={() => { setPage((p) => Math.min(pages - 1, p + 1)); document.getElementById('gusa-lib')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} disabled={page >= pages - 1}>Next &rarr;</button>
-                </div>
-              )}
-              <div className="gusa-all-cta"><button type="button" className="gusa-btn" onClick={openCalendly}>Get a website like these &rarr;</button></div>
+        {/* inline library — auto-feeds more as you scroll (no pages, no gaps) */}
+        <div className="gusa-lib" id="gusa-lib">
+          <div className="gusa-lib-head">
+            <h3 className="gusa-h2 gusa-h2-left">{viewAll.label} <span className="gusa-lib-count">(showing {Math.min(shown, viewAll.items.length)} of {viewAll.items.length})</span></h3>
+          </div>
+          <div className="gusa-lib-grid">
+            {viewAll.items.slice(0, shown).map((w) => (
+              <a key={`${w.n}-${w.u}`} className="gusa-slide" href={w.u !== '#' ? w.u : undefined} target={w.u !== '#' ? '_blank' : undefined} rel="noopener noreferrer">
+                <div className="gusa-shot"><img src={w.i} alt={w.n} loading="lazy" /></div>
+                <span className="gusa-slide-name">{w.n}{w.u !== '#' && <em> &#8599;</em>}</span>
+              </a>
+            ))}
+          </div>
+          {shown < viewAll.items.length && (
+            <div className="gusa-feed" ref={feedRef}>
+              <button type="button" className="gusa-btn gusa-btn-ghost" onClick={() => setShown((s) => Math.min(viewAll.items.length, s + STEP))}>Load more websites &darr;</button>
             </div>
-          );
-        })()}
+          )}
+          <div className="gusa-all-cta"><button type="button" className="gusa-btn" onClick={openCalendly}>Get a website like these &rarr;</button></div>
+        </div>
       </section>
 
       {/* legal / registration */}

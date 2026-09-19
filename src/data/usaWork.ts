@@ -168,4 +168,10 @@ export const OTHERS: Work[] = [
   {n:'CAFÉ NOURIS',u:'https://cafenouris.com/',i:'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Hospitality/Hospitality-Cafe-Nouris.png'},
 ];
 
+export const US_NGO: Work[] = [
+  {n:'Friends of Muskan Sansthan USA · 501(c)(3)',u:'https://usa.muskansewa.org/',i:'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioSites/muskan-sewa-usa.jpg'},
+  {n:'Hand in Hand We Can',u:'https://handinhandwecan.org/',i:'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioSites/hand-in-hand-usa.jpg'},
+  {n:'WST Foundation',u:'https://wstfoundation.org/',i:'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioSites/wst-foundation-usa.jpg'},
+];
+
 export const ALL: Work[] = [...NGO, ...ECOM, ...HEALTH, ...BUSINESS, ...OTHERS];
