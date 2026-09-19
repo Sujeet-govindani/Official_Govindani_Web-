@@ -83,3 +83,33 @@
   .giwork-card img { transition: none; }
   .giwork-modal, .giwork-modal-panel { animation: none; }
 }
+
+/* ---- two-button row + ghost variant ---- */
+.giwork-more { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; align-items: center; }
+.giwork-btn-ghost {
+  background: transparent; color: #dca63a;
+  border: 1px solid rgba(220,166,58,.55); box-shadow: none;
+}
+.giwork-btn-ghost:hover { background: rgba(220,166,58,.1); box-shadow: none; }
+
+/* ---- lead-form popup ---- */
+.giwork-formpanel { width: min(520px, 100%); }
+.giwork-formpanel .giwork-x { position: absolute; top: 16px; right: 16px; }
+.giwork-form-note { font-family: 'DM Sans','Inter',sans-serif; color: rgba(255,255,255,.62); font-size: .92rem; line-height: 1.55; margin: 10px 0 20px; }
+.giwork-form-note a { color: #dca63a; }
+.giwork-form { display: flex; flex-direction: column; gap: 14px; }
+.giwork-field { display: flex; flex-direction: column; gap: 6px; text-align: left; }
+.giwork-field > span { font-family: 'DM Sans','Inter',sans-serif; font-size: .82rem; font-weight: 600; color: rgba(255,255,255,.8); }
+.giwork-field input, .giwork-field select, .giwork-field textarea {
+  font-family: 'DM Sans','Inter',sans-serif; font-size: .96rem; color: #fff;
+  background: rgba(255,255,255,.06); border: 1px solid rgba(220,166,58,.28);
+  border-radius: 12px; padding: 12px 14px; outline: none; transition: border-color .18s, background .18s;
+}
+.giwork-field textarea { resize: vertical; }
+.giwork-field select option { color: #111; }
+.giwork-field input:focus, .giwork-field select:focus, .giwork-field textarea:focus { border-color: #dca63a; background: rgba(255,255,255,.1); }
+.giwork-field input::placeholder, .giwork-field textarea::placeholder { color: rgba(255,255,255,.4); }
+.giwork-form-submit { justify-content: center; margin-top: 6px; width: 100%; }
+.giwork-sent { text-align: center; padding: 10px 0 4px; }
+.giwork-sent-tick { width: 62px; height: 62px; margin: 0 auto 14px; border-radius: 50%; display: grid; place-items: center; font-size: 1.8rem; color: #0d0a06; background: linear-gradient(90deg,#b8860b,#dca63a); }
+.giwork-sent .giwork-btn-ghost { margin-top: 18px; }

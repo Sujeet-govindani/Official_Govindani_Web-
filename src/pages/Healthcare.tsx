@@ -250,6 +250,9 @@ const HealthcarePage = () => {
   const videoRef = useRef(null);
 
   const allProjects = [
+    // >>> latest-captured portfolio sites (auto-added, review before deploy)
+    { title: "Dentivaa (Femdent Care)", category: "healthcare", url: "https://dentivaa.com", image: "/images/portfolio-sites/dentivaa.jpg" },
+    // <<< latest-captured
     {
       title: "OUR HEALTHCARE WEBSITE",
       category: "healthcare",

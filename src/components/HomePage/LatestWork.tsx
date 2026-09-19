@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { Link } from 'react-router-dom';
 import '@/styles/latest-work.css';
 
@@ -26,17 +27,52 @@ const CATEGORIES = [
   { title: 'Hospitality', img: `${R2}/RESTOICON.webp`, to: '/portfolio/hospitality' },
 ];
 
+const WA_NUMBER = '919201958278';
+// Once a visitor submits the lead form ANYWHERE on the site, this flag unlocks
+// every gated portfolio entry point so they are never asked to fill it again.
+const LEAD_KEY = 'gi_lead_unlocked';
+
 export default function LatestWork() {
   const [open, setOpen] = useState(false);
+  const [formOpen, setFormOpen] = useState(false);
+  const [unlocked, setUnlocked] = useState(false);
+  const [form, setForm] = useState({ name: '', phone: '', kind: 'NGO / Non-profit', detail: '' });
 
   useEffect(() => {
-    if (!open) return;
-    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false); };
+    try { if (localStorage.getItem(LEAD_KEY) === '1') setUnlocked(true); } catch { /* private mode */ }
+  }, []);
+
+  useEffect(() => {
+    const anyOpen = open || formOpen;
+    if (!anyOpen) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') { setOpen(false); setFormOpen(false); } };
     document.addEventListener('keydown', onKey);
     const prev = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
     return () => { document.removeEventListener('keydown', onKey); document.body.style.overflow = prev; };
-  }, [open]);
+  }, [open, formOpen]);
+
+  // Gate: if they've filled the form before, open the portfolio straight away;
+  // otherwise show the lead form first.
+  const openPortfolio = () => {
+    if (unlocked) setOpen(true);
+    else setFormOpen(true);
+  };
+
+  const submitForm = (e: React.FormEvent) => {
+    e.preventDefault();
+    const msg =
+      `Hi Govindani Infotech! I'd like a website like the ones in your portfolio.%0A%0A` +
+      `Name: ${encodeURIComponent(form.name)}%0A` +
+      `Phone: ${encodeURIComponent(form.phone)}%0A` +
+      `Type: ${encodeURIComponent(form.kind)}%0A` +
+      `Details: ${encodeURIComponent(form.detail)}`;
+    window.open(`https://wa.me/${WA_NUMBER}?text=${msg}`, '_blank', 'noopener,noreferrer');
+    try { localStorage.setItem(LEAD_KEY, '1'); localStorage.setItem('gi_lead_info', JSON.stringify(form)); } catch { /* private mode */ }
+    setUnlocked(true);       // remembered — never gate this visitor again
+    setFormOpen(false);
+    setOpen(true);           // reveal the full portfolio options right away
+  };
 
   return (
     <section className="giwork" aria-labelledby="giwork-h">
@@ -63,11 +99,11 @@ export default function LatestWork() {
         </div>
 
         <div className="giwork-more">
-          <button type="button" className="giwork-btn" onClick={() => setOpen(true)}>Check hundreds more &rarr;</button>
+          <button type="button" className="giwork-btn" onClick={openPortfolio}>View more &amp; get yours &rarr;</button>
         </div>
       </div>
 
-      {open && (
+      {open && typeof document !== 'undefined' && createPortal(
         <div className="giwork-modal" role="dialog" aria-modal="true" aria-label="Website portfolio categories">
           <div className="giwork-modal-back" onClick={() => setOpen(false)}></div>
           <div className="giwork-modal-panel">
@@ -87,7 +123,47 @@ export default function LatestWork() {
               ))}
             </div>
           </div>
-        </div>
+        </div>,
+        document.body,
+      )}
+
+      {formOpen && typeof document !== 'undefined' && createPortal(
+        <div className="giwork-modal" role="dialog" aria-modal="true" aria-label="Request a website">
+          <div className="giwork-modal-back" onClick={() => setFormOpen(false)}></div>
+          <div className="giwork-modal-panel giwork-formpanel">
+            <button type="button" className="giwork-x" onClick={() => setFormOpen(false)} aria-label="Close">&#10005;</button>
+            <p className="giwork-modal-title">One quick step</p>
+            <h3 className="giwork-modal-h">Unlock our full portfolio</h3>
+            <p className="giwork-form-note">Tell us a little about you &mdash; we&rsquo;ll open all our work instantly and take your requirement forward on WhatsApp. <strong>Just once</strong>, we won&rsquo;t ask again.</p>
+            <form className="giwork-form" onSubmit={submitForm}>
+              <label className="giwork-field">
+                <span>Your name</span>
+                <input type="text" required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="e.g. Rahul Sharma" />
+              </label>
+              <label className="giwork-field">
+                <span>WhatsApp number</span>
+                <input type="tel" required pattern="[0-9+ ]{8,15}" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} placeholder="e.g. 98765 43210" />
+              </label>
+              <label className="giwork-field">
+                <span>What kind of website?</span>
+                <select value={form.kind} onChange={(e) => setForm({ ...form, kind: e.target.value })}>
+                  <option>NGO / Non-profit</option>
+                  <option>E-Commerce / Store</option>
+                  <option>Business / Corporate</option>
+                  <option>Healthcare / Clinic</option>
+                  <option>Real Estate</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label className="giwork-field">
+                <span>Anything specific? (optional)</span>
+                <textarea rows={2} value={form.detail} onChange={(e) => setForm({ ...form, detail: e.target.value })} placeholder="Pages, features, references&hellip;"></textarea>
+              </label>
+              <button type="submit" className="giwork-btn giwork-form-submit">Unlock portfolio &amp; continue &rarr;</button>
+            </form>
+          </div>
+        </div>,
+        document.body,
       )}
     </section>
   );
