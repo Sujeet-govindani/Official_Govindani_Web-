@@ -321,5 +321,7 @@
 .gusa-meta .gusa-lead strong { color: #fff; }
 .gusa-meta-eyebrow { color: #5b9bff; }
 
-/* hero must clear the fixed global header — beat the global `section:first-of-type { padding-top:0 !important }` reset */
-.gusa section.gusa-hero { padding-top: clamp(104px, 13vw, 140px) !important; }
+/* hero must clear the fixed global header — beat the global `section:first-of-type { padding-top:0 !important }` reset.
+   The mobile header pill is noticeably taller than desktop, so give it more room. */
+.gusa section.gusa-hero { padding-top: clamp(116px, 13vw, 148px) !important; }
+@media (max-width: 760px) { .gusa section.gusa-hero { padding-top: 168px !important; } }
