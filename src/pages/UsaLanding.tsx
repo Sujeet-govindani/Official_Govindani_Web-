@@ -14,7 +14,7 @@ import '@/styles/usa.css';
  *   - a few USA-specific site links the client will share
  */
 
-const CALENDLY_URL = 'https://calendly.com/govindaniit/consultation'; // TODO: confirm real link
+const CALENDLY_URL = 'https://calendly.com/sujeet-govindaniit/30min';
 const R2 = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images';
 const ECOM = `${R2}/PortfolioProjects/PortFolioWebsites/E-Commerce`;
 
