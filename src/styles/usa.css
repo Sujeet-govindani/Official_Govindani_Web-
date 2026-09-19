@@ -271,3 +271,21 @@
 }
 @keyframes gusa-imgscroll { 0% { object-position: center top; } 100% { object-position: center bottom; } }
 @keyframes gusa-hintpulse { 0%,100% { transform: translateX(-50%) translateY(0); opacity: .95; } 50% { transform: translateX(-50%) translateY(-3px); opacity: 1; } }
+
+/* 1000+ stat band */
+.gusa-stat { padding: clamp(48px,7vw,88px) clamp(20px,5vw,60px); background: linear-gradient(135deg, var(--navy), #12233b); color: #fff; text-align: center; }
+.gusa-stat-in { max-width: 760px; margin: 0 auto; }
+.gusa-stat-num { font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: clamp(3.6rem, 12vw, 6.5rem); line-height: 1; margin: 0; background: linear-gradient(90deg, var(--gold-lt), #fff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.gusa-stat .gusa-h2 { color: #fff; margin-top: 4px; }
+.gusa-stat .gusa-sub { color: rgba(255,255,255,.78); }
+
+/* credibility logos row (Birla + Meta) */
+.gusa-cred-logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(24px,4vw,52px); margin-bottom: 20px; }
+.gusa-birla-logo { height: clamp(64px, 9vw, 92px); width: auto; }
+.gusa-meta-logo { height: clamp(72px, 10vw, 104px); width: auto; border-radius: 14px; }
+
+/* functionality cards — premium, not plain text */
+.gusa-pwr { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 20px 20px 18px; box-shadow: 0 20px 50px -36px rgba(30,20,0,.5); }
+.gusa-offer-ngo .gusa-pwr { background: #fffdf8; }
+.gusa-pwr-h { display: flex; align-items: center; gap: 8px; }
+.gusa-pwr-h::before { content: ""; width: 22px; height: 3px; border-radius: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-lt)); }

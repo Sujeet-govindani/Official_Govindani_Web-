@@ -114,13 +114,13 @@ function Marquee({ items, onViewAll, label }: { items: Work[]; onViewAll: () => 
 
 // The advanced Give Setu plan — full power (no starter/growth comparison).
 const NGO_POWER: [string, string[]][] = [
-  ['Website & ownership', ['Full custom-coded UI/UX website — a $2,500+ value, free', '100% ownership · 0% commission on donations, forever', 'Full donor & member portals']],
-  ['Donors, members & receipts', ['25,000 active donors tracked + unlimited sleeping/legacy donors', '15,000 tax-deductible receipts/month — US IRS acknowledgments (Pub 1771) + India 80G', '10,000 members across 15 plans']],
-  ['Fundraising engine', ['Unlimited live cases & campaigns', '10 cases built by our team every month', 'Recurring donor self-service · festival campaign wizard · 1 microsite']],
-  ['Automation & AI', ['WhatsApp rail · 25,000 marketing emails/mo · unlimited transactional email', '150 AI campaign packs/mo · unlimited AI natural-language filters', 'AI Insights engine']],
-  ['US compliance — built in', ['Form 990 export · Schedule B contributor disclosure', 'Written acknowledgment ($250+) · quid-pro-quo statements ($75+)', 'Form 8283 non-cash gifts ($500 / $5,000) · year-end statements']],
-  ['India compliance & trust', ['80G receipts · 10BD / 10BE filing — unlimited batches + priority', 'Case-verification badge · 8-year audit trail · dedicated CA / auditor seat']],
-  ['Payments, API & scale', ['2+ payment gateways with failover', 'Developer API (300 req/min) & webhooks', '50 GB media · 15 admin seats + custom roles & field masking', '12-hour priority support · 15 instant bulk jobs/mo · unlimited overnight jobs']],
+  ['Your own platform', ['A fully custom-coded website & donor platform — built for you, yours to own', 'Zero platform commission on donations, forever', 'Beautiful donor & member portals under your own brand']],
+  ['Donors & giving', ['Track unlimited donors — active, recurring and lapsed', 'One-time, recurring, tribute & anonymous giving', 'Recurring-donor self-service — donors manage their own gifts']],
+  ['Tax receipts — US & India', ['Automatic IRS tax-deductible receipts for your US donors', '80G certificates for your Indian donors', 'Instant PDFs, year-end statements & immutable records']],
+  ['Memberships & campaigns', ['Build membership tiers & plans for your community', 'Unlimited live cases & fundraising campaigns', 'Our team designs & builds fresh campaign cases for you every month']],
+  ['Marketing on autopilot', ['Create high-converting campaigns with AI in seconds', 'WhatsApp, email & SMS donor journeys — done for you', 'AI insights that tell you who to thank, nudge & re-engage']],
+  ['US compliance, built in', ['IRS Form 990 export & Schedule B contributor disclosure', 'Written acknowledgments ($250+) & quid-pro-quo statements ($75+)', 'Form 8283 non-cash gifts & audit-ready trail — India 10BD / 10BE too']],
+  ['Enterprise-grade & yours', ['Multiple payment gateways with automatic failover', 'Developer API & webhooks · generous media storage', 'Custom admin roles, priority support & a dedicated CA / auditor seat']],
 ];
 // Complete e-commerce functionality set (54 functions), grouped.
 const ECOM_POWER: [string, string[]][] = [
@@ -362,10 +362,7 @@ export default function UsaLanding() {
         </section>
       )}
 
-      {/* tailored offer blocks */}
-      {ngoFirst ? <>{showNGO && NgoBlock}{showEcom && EcomBlock}</> : <>{showEcom && EcomBlock}{showNGO && NgoBlock}</>}
-
-      {/* everything under one roof */}
+      {/* 2 — one agency, everything you need */}
       <section className="gusa-services">
         <h2 className="gusa-h2">One agency. Everything you need.</h2>
         <p className="gusa-sub">We don&rsquo;t just build the website &mdash; we run the whole growth engine for you.</p>
@@ -376,27 +373,43 @@ export default function UsaLanding() {
             ['🎯', 'Performance marketing', 'Meta & Google ads that convert'],
             ['🎨', 'Logo & graphic design', 'Brand identity & creatives'],
             ['📸', 'Product & brand shoots', 'Studio-grade visuals'],
-            ['♾️', 'Meta Business Partner', 'Officially recognised by Meta'],
+            ['🤝', 'A team that owns it', 'One dedicated partner, end to end'],
           ].map(([ic, t, d]) => (
             <div className="gusa-svc" key={t}><span className="gusa-svc-ic">{ic}</span><h3>{t}</h3><p>{d}</p></div>
           ))}
         </div>
       </section>
 
-      {/* Birla Open Minds credibility */}
-      <section className="gusa-birla">
-        <div className="gusa-birla-in">
-          <img className="gusa-birla-logo" src={`${R2}/partners/birla-open-minds-mark.svg`} alt="Birla Open Minds" loading="lazy" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
-          <p className="gusa-eyebrow">A Birla-legacy institution chose us</p>
-          <h2 className="gusa-h2">The digital force behind <em>Birla Open Minds</em></h2>
-          <p className="gusa-lead gusa-center">Birla Open Minds is part of the storied Birla legacy &mdash; a network of <strong>250+ schools across India</strong> and a globally respected name in education. They trust Govindani to build, structure and power their digital world &mdash; engineered for the scale a name like Birla demands.</p>
+      {/* 3 — 1000+ websites & counting (stat band) */}
+      <section className="gusa-stat">
+        <div className="gusa-stat-in">
+          <p className="gusa-stat-num">1000+</p>
+          <h2 className="gusa-h2">websites built &mdash; and counting</h2>
+          <p className="gusa-sub">Live, custom-built websites for causes and brands across the US, India and the world.</p>
+          <button type="button" className="gusa-btn" onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>See our work &darr;</button>
         </div>
       </section>
 
-      {/* work carousels */}
+      {/* 4 — Birla legacy + Meta official partner */}
+      <section className="gusa-birla">
+        <div className="gusa-birla-in">
+          <div className="gusa-cred-logos">
+            <img className="gusa-birla-logo" src={`${R2}/partners/birla-open-minds-mark.svg`} alt="Birla Open Minds" loading="lazy" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
+            <img className="gusa-meta-logo" src={`${R2}/partners/meta-partner-badge-dark.png`} alt="Meta Business Partner" loading="lazy" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
+          </div>
+          <p className="gusa-eyebrow">Trusted by a Birla-legacy institution &middot; Official Meta Business Partner</p>
+          <h2 className="gusa-h2">The team behind <em>Birla Open Minds</em> &mdash; and a Meta-recognised partner</h2>
+          <p className="gusa-lead gusa-center">Birla Open Minds is part of the storied Birla legacy &mdash; <strong>250+ schools across India</strong> and a globally respected name in education &mdash; and they trust Govindani to build and power their digital world. We&rsquo;re also an <strong>official Meta Business Partner</strong>, vetted by Meta itself to run your ads and growth.</p>
+        </div>
+      </section>
+
+      {/* 5 — our functionalities (tailored offer blocks) */}
+      {ngoFirst ? <>{showNGO && NgoBlock}{showEcom && EcomBlock}</> : <>{showEcom && EcomBlock}{showNGO && NgoBlock}</>}
+
+      {/* 6 — other projects (work carousels + library) */}
       <section className="gusa-work" id="work">
-        <h2 className="gusa-h2">1000+ websites &mdash; and counting</h2>
-        <p className="gusa-sub">Every site is live and custom-built. Hover to pause &middot; tap &ldquo;View all&rdquo; to page through the library.</p>
+        <h2 className="gusa-h2">Explore more of our work</h2>
+        <p className="gusa-sub">Every site is live and custom-built. Drag or swipe to browse &middot; tap &ldquo;View all&rdquo; for the full library.</p>
         {(ngoFirst ? [
           showNGO && <Marquee key="ngo" label={`Non-profit & NGO websites (${NGO.length})`} items={NGO.slice(0, 14)} onViewAll={() => openAll('Non-profit & NGO websites', NGO)} />,
           showEcom && <Marquee key="ecom" label={`E-commerce & online stores (${ECOM.length})`} items={ECOM} onViewAll={() => openAll('E-commerce & online stores', ECOM)} />,
