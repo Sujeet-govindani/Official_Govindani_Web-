@@ -115,10 +115,11 @@ function Marquee({ items, onViewAll, label }: { items: Work[]; onViewAll: () => 
 // The advanced Give Setu plan — full power (no starter/growth comparison).
 const NGO_POWER: [string, string[]][] = [
   ['Website & ownership', ['Full custom-coded UI/UX website — a $2,500+ value, free', '100% ownership · 0% commission on donations, forever', 'Full donor & member portals']],
-  ['Donors, members & receipts', ['25,000 active donors tracked + unlimited sleeping/legacy donors', '15,000 80G tax receipts every month', '10,000 members across 15 plans']],
+  ['Donors, members & receipts', ['25,000 active donors tracked + unlimited sleeping/legacy donors', '15,000 tax-deductible receipts/month — US IRS acknowledgments (Pub 1771) + India 80G', '10,000 members across 15 plans']],
   ['Fundraising engine', ['Unlimited live cases & campaigns', '10 cases built by our team every month', 'Recurring donor self-service · festival campaign wizard · 1 microsite']],
   ['Automation & AI', ['WhatsApp rail · 25,000 marketing emails/mo · unlimited transactional email', '150 AI campaign packs/mo · unlimited AI natural-language filters', 'AI Insights engine']],
-  ['Compliance & trust', ['Compliance Centre — US (IRS-ready) + India (10BD / 10BE), unlimited batches + priority', 'Case-verification badge · 8-year audit trail · dedicated CA / auditor seat']],
+  ['US compliance — built in', ['Form 990 export · Schedule B contributor disclosure', 'Written acknowledgment ($250+) · quid-pro-quo statements ($75+)', 'Form 8283 non-cash gifts ($500 / $5,000) · year-end statements']],
+  ['India compliance & trust', ['80G receipts · 10BD / 10BE filing — unlimited batches + priority', 'Case-verification badge · 8-year audit trail · dedicated CA / auditor seat']],
   ['Payments, API & scale', ['2+ payment gateways with failover', 'Developer API (300 req/min) & webhooks', '50 GB media · 15 admin seats + custom roles & field masking', '12-hour priority support · 15 instant bulk jobs/mo · unlimited overnight jobs']],
 ];
 // Complete e-commerce functionality set (54 functions), grouped.
