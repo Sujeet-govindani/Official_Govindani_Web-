@@ -622,10 +622,16 @@ const RealEstatePage = () => {
         .re-projects-section {
           position: relative;
           background: linear-gradient(to bottom, #000, #07090d, #000);
-          padding: 100px 28px 80px;
+          padding: 0 28px 80px;
           overflow: hidden;
           width: 100%;
         }
+        /* Header clearance, matched to the NGO portfolio for a consistent gap
+           between the fixed header and the hero title across the site. Double
+           class + important beats the global section:first-of-type reset. */
+        .re-projects-section.re-projects-section { padding-top: 108px !important; }
+        @media (max-width: 900px) { .re-projects-section.re-projects-section { padding-top: 116px !important; } }
+        @media (max-width: 600px) { .re-projects-section.re-projects-section { padding-top: 124px !important; } }
         /* Add a spacer for fixed navbar on mobile - just like original */
         .re-projects-section::before {
           content: '';
@@ -664,10 +670,11 @@ const RealEstatePage = () => {
         .re-projects-title {
           font-family: 'Libre Baskerville', serif;
           font-size: clamp(1.9rem, 3.8vw, 3rem); font-weight: 700;
-          line-height: 1.18; color: #fff; 
-          margin-top: 160px;
-          
-
+          line-height: 1.18; color: #fff;
+          /* Header clearance now lives on the section (below), matching the NGO
+             portfolio. The old margin-top:160px pushed this title far below the
+             header on tall screens, leaving a big empty gap. */
+          margin-top: 0;
         }
         .re-projects-title span {
           background: linear-gradient(90deg, #d4af37, #f4e5b8, #d4af37);

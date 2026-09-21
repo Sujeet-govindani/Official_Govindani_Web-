@@ -307,7 +307,14 @@ const HealthcarePage = () => {
         .nb-page { background:#000; min-height:100vh; overflow-x:hidden; }
 
         /* ══ HERO ══ */
-        .nb-hero-section { position:relative;background:#000;min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 28px 80px;overflow:hidden; }
+        .nb-hero-section { position:relative;background:#000;min-height:auto;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:0 28px 80px;overflow:hidden; }
+        /* Consistent header clearance across the portfolio (matches NGO / real
+           estate). Was a 70vh centered hero whose gap swung with screen height —
+           tiny on short screens, huge on tall ones. Double class + important
+           beats the global section:first-of-type reset. */
+        .nb-hero-section.nb-hero-section { padding-top: 108px !important; }
+        @media (max-width: 900px) { .nb-hero-section.nb-hero-section { padding-top: 116px !important; } }
+        @media (max-width: 600px) { .nb-hero-section.nb-hero-section { padding-top: 124px !important; } }
         @media(max-width:640px){
           .nb-hero-section { padding:40px 14px 60px; justify-content:flex-start; min-height:unset; }
         }
