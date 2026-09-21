@@ -749,10 +749,18 @@ const NgoPortfolio = () => {
         .ngo-hero-section {
           position: relative;
           background: #000;
-          padding: 20px 22px 76px;
+          padding: 0 22px 76px;
           overflow: hidden;
           width: 100%;
         }
+        /* Header clearance. The fixed floating header is about 80px tall on
+           desktop and taller on phones. A global section:first-of-type reset in
+           index.css, plus a former inline paddingTop of 0, kept this hero flush
+           to the top and hid the title behind the header. Double class plus
+           important beats both, and is stepped up on smaller screens. */
+        .ngo-hero-section.ngo-hero-section { padding-top: 108px !important; }
+        @media (max-width: 900px) { .ngo-hero-section.ngo-hero-section { padding-top: 116px !important; } }
+        @media (max-width: 600px) { .ngo-hero-section.ngo-hero-section { padding-top: 124px !important; } }
         .ngo-hero-section::before {
           content:'';
           position: absolute; inset: 0;
@@ -1091,7 +1099,7 @@ const NgoPortfolio = () => {
         
         }
         @media (max-width: 768px) {
-          .ngo-hero-section  { padding-top: 110px; }
+          .ngo-hero-section  { padding-top: 124px; }
           .ngo-closing-section { padding: 60px 16px; min-height: auto; }
           .ngo-hero-header   { margin-bottom: 36px; }
           .ngo-search-bar-wrap { margin-bottom: 32px; padding: 0; }
@@ -1103,7 +1111,7 @@ const NgoPortfolio = () => {
         
         }
         @media (max-width: 640px) {
-          .ngo-hero-section  { padding-top: 100px; padding-left: 14px; padding-right: 14px; }
+          .ngo-hero-section  { padding-top: 116px; padding-left: 14px; padding-right: 14px; }
           .ngo-closing-section { padding: 52px 14px; }
           .ngo-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
           .ngo-card-outer { height: 260px; }
@@ -1169,7 +1177,7 @@ const NgoPortfolio = () => {
       <div className="ngo-page">
 
         {/* ════ SECTION 1 HERO + ALL PROJECTS ════ */}
-        <section className="ngo-hero-section" style={{ paddingTop: '0px' }}>
+        <section className="ngo-hero-section">
 
           {/* The navbar spacer that used to sit here is gone: .ngo-page now
               supplies the standard opening margin (100px mobile / 120px

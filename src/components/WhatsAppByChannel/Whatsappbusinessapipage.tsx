@@ -397,6 +397,14 @@ const WhatsAppBusinessAPIPage: React.FC = () => {
           .wba-heading { font-size:15px !important; }
           .hero-h1     { font-size:20px !important; }
         }
+
+        /* Header clearance. The global section:first-of-type reset in index.css
+           zeroed this hero section's padding-top, so the h1 sat behind the fixed
+           header. Double class plus important beats that reset; the h1 no longer
+           needs its marginTop workaround. Stepped up on smaller screens. */
+        .wba-root .hero-sec.hero-sec { padding-top: 112px !important; }
+        @media (max-width: 900px) { .wba-root .hero-sec.hero-sec { padding-top: 120px !important; } }
+        @media (max-width: 600px) { .wba-root .hero-sec.hero-sec { padding-top: 124px !important; } }
       `}</style>
 
       <div ref={pageRef} className="wba-root min-h-screen" style={{ background: "#000" }}>
@@ -432,7 +440,7 @@ const WhatsAppBusinessAPIPage: React.FC = () => {
                   className="hero-h1"
                   style={{
                     fontSize: "32px",
-                    marginTop: "100px",
+                    marginTop: "0px",
                   }}
                 >
                   Transform Your Business with<br />WhatsApp Business API
