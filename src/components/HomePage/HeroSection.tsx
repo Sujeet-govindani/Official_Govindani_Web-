@@ -1517,7 +1517,10 @@ const HeroCarousel = () => {
                             >
                                 We Build Digital Systems.
                                 <br />
-                                <span style={{ whiteSpace: tab ? 'normal' : 'nowrap' }}>
+                                {/* Was whiteSpace:nowrap on desktop, which forced this line onto
+                                    one row that overflowed the text column and ran under the people
+                                    collage. Letting it wrap keeps it inside its own column. */}
+                                <span style={{ whiteSpace: 'normal' }}>
                                     That Help NGO's Raise Crores.
                                 </span>
                             </h1>
