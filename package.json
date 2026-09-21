@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "python3 tools/seo/gen_blog_faq.py",
     "build": "vite build",
     "postbuild": "node prerender.mjs --timeout 90000 && python3 tools/blog/prune_scheduled.py && python3 tools/seo/gen_sitemap.py",
     "build:dev": "vite build --mode development",

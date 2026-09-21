@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { ROUTE_META, DEFAULT_META, CANONICAL_OVERRIDES } from './routeMeta';
 import { BLOG_META } from './blogMeta';
+import { BLOG_FAQ_SCHEMA } from './blogFaq';
 import { schemaFor } from './schema';
 
 const SITE = 'https://govindaniit.com';
@@ -183,6 +184,12 @@ export default function Seo() {
     const post = blog ? BLOG_META[blog[1]] : undefined;
     if (post) {
       setMeta('property', 'article:published_time', post.date);
+      // Mirror the visible "Frequently Asked Questions" section as FAQPage
+      // structured data, when this article has one. This is emitted here (not
+      // via react-helmet in BlogPost) because only setPageSchema is captured by
+      // prerender.mjs, so this is the copy Google actually receives. @context is
+      // stripped because the node lives inside the page's @graph.
+      const faq = BLOG_FAQ_SCHEMA[blog![1]];
       setPageSchema({
         '@context': 'https://schema.org',
         '@graph': [
@@ -201,6 +208,7 @@ export default function Seo() {
             },
           },
           breadcrumb(clean, post.title),
+          ...(faq ? [stripContext(faq)] : []),
         ],
       });
     } else if (clean) {
