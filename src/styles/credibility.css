@@ -12,13 +12,10 @@
 .gicred-split {
   display: grid; grid-template-columns: 1fr 1fr; width: 100%;
   min-height: clamp(500px, 66vh, 660px);
-  /* A single uniform header-clearance band across the FULL width sits on top of
-     both halves. The floating header samples its background colour just below the
-     pill; without this band it straddled the dark Meta half + the cream Birla half
-     and averaged to a muddy two-tone. One colour here = one consistent header. */
-  /* Small uniform top band (kept modest so it doesn't read as empty white space
-     on the homepage where this banner sits mid-page, not under the header). */
-  padding-top: clamp(40px, 5vw, 64px);
+  /* No top band: this banner sits mid-page on the homepage (never under the
+     floating header), so a cream padding-top only read as an empty white bar
+     between the hero and the Meta/Birla halves. Let the halves start flush. */
+  padding-top: 0;
   background: #faf5f0;
 }
 .gicred-half {
@@ -143,9 +140,7 @@
 
 /* ---------------- responsive: stack only on phones ---------------- */
 @media (max-width: 760px) {
-  /* Double class beats a global `section:first-of-type { padding-top:0 }` mobile
-     reset that would otherwise cancel the header-clearance band. */
-  .gicred-split.gicred-split { grid-template-columns: 1fr; min-height: 0; padding-top: clamp(36px, 8vw, 56px) !important; }
+  .gicred-split.gicred-split { grid-template-columns: 1fr; min-height: 0; padding-top: 0 !important; }
   .gicred-half { padding: clamp(28px, 7vw, 44px) 22px clamp(46px, 9vw, 60px); }
 }
 
