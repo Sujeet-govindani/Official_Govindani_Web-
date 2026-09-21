@@ -2354,7 +2354,7 @@ const HeroCarousel = () => {
     Desktop keeps it, where the extra shortcut does no harm. */}
               <RadialNavMenu mob={mob} isFirstSlide={origSlide === 0} />
 
-            <div ref={wrapperRef} style={{ position: 'relative', width: '100%', minHeight: mob ? `calc(100svh - ${dockH}px)` : '100vh', margin: 0, padding: 0, overflowX: 'hidden', top: 0 }}>
+            <div ref={wrapperRef} style={{ position: 'relative', width: '100%', minHeight: mob ? `calc(100svh - ${dockH}px)` : 'auto', margin: 0, padding: 0, overflowX: 'hidden', top: 0 }}>
                 <div style={{ position: 'relative', overflowX: 'clip', overflowY: 'visible', margin: 0, width: '100%' }}>
 
                     <div style={{ position: 'sticky', top: 100, height: 0, overflow: 'visible', zIndex: 9999, pointerEvents: 'none' }}>
@@ -2375,7 +2375,7 @@ const HeroCarousel = () => {
                         className="sec"
                         onTouchStart={handleTouchStart}
                         onTouchEnd={handleTouchEnd}
-                        style={{ minHeight: mob ? `calc(100svh - ${dockH}px)` : '100vh', background: '#0d1b2a', margin: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', overflowX: 'hidden', overflowY: 'visible', position: 'relative', top: 0, touchAction: 'pan-y',
+                        style={{ minHeight: mob ? `calc(100svh - ${dockH}px)` : 'auto', background: '#0d1b2a', margin: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', overflowX: 'hidden', overflowY: 'visible', position: 'relative', top: 0, touchAction: 'pan-y',
                             // RadialNavMenu is absolutely positioned at right:0 over this
                             // full-width section, so slide content ran underneath it — at
                             // 1382px the expanded menu column sat on top of the stat cards.
