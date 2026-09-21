@@ -78,3 +78,8 @@ tools/seo/fix_targets.json
 # deliberately, not as a side effect of a run.
 tools/bot/results-local-*.json
 tools/bot/local*.log
+
+# BackstopJS — keep the reference baseline, ignore generated test output
+backstop_data/bitmaps_test/
+backstop_data/html_report/
+backstop_data/ci_report/
