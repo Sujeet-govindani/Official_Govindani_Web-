@@ -1499,8 +1499,11 @@ const HeroCarousel = () => {
                            On a tablet even the corrected split leaves the text column near
                            300px, which squeezed the three stat cards to 83px each — a word
                            per line. Below 1024 the hero stacks instead. */
-                        gridTemplateColumns: tab ? '1fr' : 'minmax(0, 1fr) minmax(0, 1.8fr)',
-                        gap: tab ? '20px' : '40px', alignItems: 'start',
+                        /* Text column widened and the gap increased so the people
+                           collage sits clearly further right, away from the
+                           headline (was minmax(0,1fr) minmax(0,1.8fr) / 40px). */
+                        gridTemplateColumns: tab ? '1fr' : 'minmax(0, 1.1fr) minmax(0, 1.5fr)',
+                        gap: tab ? '20px' : '56px', alignItems: 'start',
                       }}>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: tab ? '14px' : '20px' }}>
                             <h1
