@@ -1,9 +1,19 @@
 // Generated from the prerendered pages themselves — each title and description comes
 // from that page's own H1 and opening paragraph. Regenerate after content changes.
 
-export type RouteMeta = { title: string; description: string };
+export type RouteMeta = { title: string; description: string; image?: string };
 
 export const ROUTE_META: Record<string, RouteMeta> = {
+  "/usa": {
+    "title": "US Web, E-commerce & NGO Sites from $1,000 | Govindani Infotech",
+    "description": "US-registered web partner: donation-ready NGO sites and global e-commerce stores from $1,000. Book a free 30-minute consultation.",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-usa.jpg"
+  },
+  "/us": {
+    "title": "US Web, E-commerce & NGO Sites from $1,000 | Govindani Infotech",
+    "description": "US-registered web partner: donation-ready NGO sites and global e-commerce stores from $1,000. Book a free 30-minute consultation.",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-usa.jpg"
+  },
   "/pricing/ngo-os": {
     "title": "Give Setu Pricing | NGO Donation Software ₹25,000",
     "description": "Give Setu pricing covers donations, 80G receipts, donors, members, cases, campaigns, compliance and website, with 0% commission on every rupee raised forever."

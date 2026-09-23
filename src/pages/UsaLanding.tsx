@@ -1,6 +1,5 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { Helmet } from 'react-helmet-async';
 import { NGO, ECOM, HEALTH, BUSINESS, OTHERS, ALL, US_NGO, type Work } from '@/data/usaWork';
 import '@/styles/usa.css';
 
@@ -284,10 +283,9 @@ export default function UsaLanding() {
 
   return (
     <div className="gusa">
-      <Helmet>
-        <title>US Web, E-commerce &amp; NGO Sites from $1,000 | Govindani Infotech</title>
-        <meta name="description" content="US-registered web partner: donation-ready NGO sites (advanced Give Setu plan) and global e-commerce stores from $1,000. Book a free consultation." />
-      </Helmet>
+      {/* Title, description and social card (og:image = the designed /usa card)
+          come from ROUTE_META['/usa'] via the global Seo component, so there is a
+          single, prerendered source of truth and no duplicate/competing tags. */}
 
       {/* header comes from the global site nav (full site, so visitors can explore everything) */}
 

@@ -178,6 +178,14 @@ export default function Seo() {
     setMeta('property', 'og:type', pathname === '/' ? 'website' : 'article');
     setMeta('name', 'twitter:title', fitted);
     setMeta('name', 'twitter:description', meta.description);
+    // Per-route social image: a route can supply its own designed card
+    // (e.g. /usa), otherwise the site logo. Set in place so there is exactly
+    // one og:image / twitter:image tag, never a duplicate for scrapers to pick
+    // the wrong one from.
+    const ogImage = meta.image ||
+      'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/LOGO.webp';
+    setMeta('property', 'og:image', ogImage);
+    setMeta('name', 'twitter:image', ogImage);
 
     // An article deserves Article schema, with its own dates.
     const blog = pathname.match(/^\/blog\/([^/]+)\/?$/);
