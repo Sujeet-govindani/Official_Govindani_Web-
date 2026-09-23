@@ -256,7 +256,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   },
   "/portfolio/virtual-tour": {
     "title": "Real Estate Services | Govindani Infotech",
-    "description": "Step into the future of real estate with immersive 360° property tours and premium visual storytelling"
+    "description": "Step into the future of real estate with immersive 360° property tours and premium visual storytelling",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-vtour.jpg"
   },
   "/whatsapp/industries/b2b-sales": {
     "title": "Close B2B Sales Faster with WhatsApp",
@@ -264,7 +265,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   },
   "/real-estate": {
     "title": "Real Estate Services | Govindani Infotech",
-    "description": "Step into the future of real estate with immersive 360° property tours and premium visual storytelling"
+    "description": "Step into the future of real estate with immersive 360° property tours and premium visual storytelling",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-vtour.jpg"
   },
   "/whatsapp/industries/spas-salons": {
     "title": "Get More Spa and Salon Appointments with WhatsApp",
@@ -332,11 +334,13 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   },
   "/portfolio/hospitality": {
     "title": "Our Restaurant & Resort Websites | Govindani Infotech",
-    "description": "We craft visually stunning and conversion-focused websites for restaurants, cafes, and resorts. From elegant digital menus and online reservation systems t…"
+    "description": "We craft visually stunning and conversion-focused websites for restaurants, cafes, and resorts. From elegant digital menus and online reservation systems t…",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-hospitality.jpg"
   },
   "/portfolio/healthcare": {
     "title": "Our Healthcare Websites | Govindani Infotech",
-    "description": "We create dynamic healthcare websites designed to connect patients and providers seamlessly. From hospital portals to wellness platforms and telemedicine s…"
+    "description": "We create dynamic healthcare websites designed to connect patients and providers seamlessly. From hospital portals to wellness platforms and telemedicine s…",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-healthcare.jpg"
   },
   "/portfolio/ngo": {
     "title": "Our NGO Projects | Govindani Infotech",
@@ -345,15 +349,18 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   },
   "/portfolio/ecommerce": {
     "title": "E-Commerce Website Portfolio | Govindani Infotech",
-    "description": "Online stores we have built, from single-brand shops to multi-vendor marketplaces."
+    "description": "Online stores we have built, from single-brand shops to multi-vendor marketplaces.",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-ecom.jpg"
   },
   "/portfolio/builders": {
     "title": "Builder & Real Estate Website Portfolio | Govindani Infotech",
-    "description": "Project websites, virtual tours and lead systems built for builders and developers."
+    "description": "Project websites, virtual tours and lead systems built for builders and developers.",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-realestate.jpg"
   },
   "/portfolio/business": {
     "title": "Business Website Portfolio | Govindani Infotech",
-    "description": "Websites we have built for businesses across manufacturing, services, healthcare and retail."
+    "description": "Websites we have built for businesses across manufacturing, services, healthcare and retail.",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-business.jpg"
   },
   "/pricing/other-services": {
     "title": "All Services. One Agency. | Govindani Infotech",
