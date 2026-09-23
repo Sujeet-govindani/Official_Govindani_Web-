@@ -7,12 +7,12 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   "/usa": {
     "title": "US Web, E-commerce & NGO Sites from $1,000 | Govindani Infotech",
     "description": "US-registered web partner: donation-ready NGO sites and global e-commerce stores from $1,000. Book a free 30-minute consultation.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-usa.jpg"
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-usa-v2.jpg"
   },
   "/us": {
     "title": "US Web, E-commerce & NGO Sites from $1,000 | Govindani Infotech",
     "description": "US-registered web partner: donation-ready NGO sites and global e-commerce stores from $1,000. Book a free 30-minute consultation.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-usa.jpg"
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-usa-v2.jpg"
   },
   "/pricing/ngo-os": {
     "title": "Give Setu Pricing | NGO Donation Software ₹25,000",
