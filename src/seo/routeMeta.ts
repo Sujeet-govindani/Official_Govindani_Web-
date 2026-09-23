@@ -14,9 +14,20 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "description": "US-registered web partner: donation-ready NGO sites and global e-commerce stores from $1,000. Book a free 30-minute consultation.",
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-usa-v2.jpg"
   },
+  "/blog": {
+    "title": "Blog | Digital Growth Insights for NGOs & Businesses",
+    "description": "Practical, current guides on websites, e-commerce, WhatsApp, SEO and digital marketing — India-first, by Govindani Infotech.",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-blog.jpg"
+  },
+  "/services": {
+    "title": "Our Services | Web, E-commerce, WhatsApp & Growth",
+    "description": "Web, e-commerce, mobile apps, WhatsApp API, ads, SEO, design and NGO donation platforms — one partner, end to end.",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+  },
   "/pricing/ngo-os": {
     "title": "Give Setu Pricing | NGO Donation Software ₹25,000",
-    "description": "Give Setu pricing covers donations, 80G receipts, donors, members, cases, campaigns, compliance and website, with 0% commission on every rupee raised forever."
+    "description": "Give Setu pricing covers donations, 80G receipts, donors, members, cases, campaigns, compliance and website, with 0% commission on every rupee raised forever.",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-givesetu.jpg"
   },
   "/pricing/ngo-website": {
     "title": "NGO Website Pricing India | WordPress ₹35,000, Give Setu",
@@ -32,7 +43,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   },
   "/": {
     "title": "Best IT & Web Development Company in Pune | Govindani",
-    "description": "Govindani Infotech is a Pune-based IT & web development company: websites, e-commerce, mobile apps, WhatsApp API, SEO, digital marketing and NGO donation platforms for businesses across India."
+    "description": "Govindani Infotech is a Pune-based IT & web development company: websites, e-commerce, mobile apps, WhatsApp API, SEO, digital marketing and NGO donation platforms for businesses across India.",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-home.jpg"
   },
   "/services/meta-ads": {
     "title": "Targeted Meta Ads for Revenue Growth",
@@ -68,7 +80,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   },
   "/services/ecommerce": {
     "title": "Stop Losing Money to Platform Fees | Govindani Infotech",
-    "description": "YOUR BUSINESS, YOUR WAY Stop Losing Money to Platform Fees Build your own e-commerce store. Keep 100% of your profits. No commissions, ever."
+    "description": "YOUR BUSINESS, YOUR WAY Stop Losing Money to Platform Fees Build your own e-commerce store. Keep 100% of your profits. No commissions, ever.",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-ecom.jpg"
   },
   "/services/social-media/live-profiles": {
     "title": "See Our Social Media Work Live | Govindani Infotech",
@@ -100,7 +113,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   },
   "/services/seo": {
     "title": "SEO That Turns Search Traffic Into Business",
-    "description": "SEO services in India turn search traffic into business through strategic optimisation, helping brands reach donors, buyers, bookings, and serious inquiries."
+    "description": "SEO services in India turn search traffic into business through strategic optimisation, helping brands reach donors, buyers, bookings, and serious inquiries.",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-seo.jpg"
   },
   "/services/social-media/hospitality": {
     "title": "Social Media Marketing for Hospitality, Hotels & Resorts",
@@ -136,7 +150,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   },
   "/about-us/about-company": {
     "title": "Empowering Brands Transforming Futures | Govindani Infotech",
-    "description": "Nagpur Rajasthan Gujrat Mumbai Pune Bihar Chattisgarh Tamilnadu India Operations Numbers That Define Us"
+    "description": "Nagpur Rajasthan Gujrat Mumbai Pune Bihar Chattisgarh Tamilnadu India Operations Numbers That Define Us",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-about.jpg"
   },
   "/whatsapp/forms": {
     "title": "Amplify Conversations to Conversion With WhatsApp Forms",
@@ -172,7 +187,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   },
   "/whatsapp/business-api": {
     "title": "Transform Your Business with WhatsApp Business API",
-    "description": "Send bulk messages on WhatsApp Get your team on WhatsApp Send fast automated notifications Setup automated WhatsApp chatbot Run powerful WhatsApp marketing…"
+    "description": "Send bulk messages on WhatsApp Get your team on WhatsApp Send fast automated notifications Setup automated WhatsApp chatbot Run powerful WhatsApp marketing…",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
   },
   "/pricing/websites": {
     "title": "Predictable Pricing. No Surprises. | Govindani Infotech",
@@ -324,7 +340,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   },
   "/portfolio/ngo": {
     "title": "Our NGO Projects | Govindani Infotech",
-    "description": "Crafting impactful digital experiences for non-profit organisations websites that inspire action, build trust, and amplify every cause they stand for."
+    "description": "Crafting impactful digital experiences for non-profit organisations websites that inspire action, build trust, and amplify every cause they stand for.",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-ngo.jpg"
   },
   "/portfolio/ecommerce": {
     "title": "E-Commerce Website Portfolio | Govindani Infotech",
@@ -344,7 +361,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   },
   "/contact-us": {
     "title": "Contact the Govindani Infotech Team",
-    "description": "Get in touch about NGO donation platforms, websites, CRM or digital marketing. Offices in Pune with teams across India."
+    "description": "Get in touch about NGO donation platforms, websites, CRM or digital marketing. Offices in Pune with teams across India.",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-contact.jpg"
   },
   "/explore-career": {
     "title": "Explore Career | Govindani Infotech",

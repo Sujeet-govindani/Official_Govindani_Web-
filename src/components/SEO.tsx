@@ -17,7 +17,7 @@ const SEO = ({
   title,
   description,
   canonical,
-  ogImage = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/LOGO.webp',
+  ogImage = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-default.jpg',
   ogType = 'website',
   keywords = '',
   schema,

@@ -183,7 +183,7 @@ export default function Seo() {
     // one og:image / twitter:image tag, never a duplicate for scrapers to pick
     // the wrong one from.
     const ogImage = meta.image ||
-      'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/LOGO.webp';
+      'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-default.jpg';
     setMeta('property', 'og:image', ogImage);
     setMeta('name', 'twitter:image', ogImage);
 
