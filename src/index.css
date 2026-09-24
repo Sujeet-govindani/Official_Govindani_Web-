@@ -1391,3 +1391,12 @@ element.style {
   content-visibility: auto;
   contain-intrinsic-size: auto 800px;
 }
+
+/* PERF EXPERIMENT (mobile): disable all animations to measure whether the 88
+   continuously-animating elements are what caps the mobile score, or whether it
+   is hydration/DOM-bound. Revert if it does not move the number. */
+@media (max-width: 768px) {
+  *, *::before, *::after {
+    animation: none !important;
+  }
+}
