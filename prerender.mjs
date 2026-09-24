@@ -79,7 +79,10 @@ async function readRoutes() {
     // Only posts whose date has arrived. A scheduled post must not exist as a
     // file on the server: hidden-from-the-listing but still fetchable is not
     // scheduling, it is just an unlinked page.
-    const today = new Date().toISOString().slice(0, 10);
+    // India date, not UTC — a post dated the 25th must prerender on the 25th in
+    // IST, not wait until 00:00 UTC (05:30 IST). Matches isPublished() on the
+    // client so a post is baked and rendered on the same day.
+    const today = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Kolkata' });
     let due = 0, held = 0;
     for (const m of blogsSrc.matchAll(/\{ id: "([^"]+)"[^\n]*?date: "([^"]*)" \}/g)) {
       if (!m[2] || m[2] <= today) { routes.add('/blog/' + m[1]); due++; }

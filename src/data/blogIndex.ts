@@ -17,10 +17,13 @@ export type BlogPost = {
  * whatever has come due, so nothing needs a person to press anything.
  */
 export function isPublished(date: string, now = new Date()): boolean {
-  // Compared as plain YYYY-MM-DD strings: no timezone can shift a post a day.
-  const today = new Date(now.getTime() - now.getTimezoneOffset() * 60000)
-    .toISOString()
-    .slice(0, 10);
+  // A post's date is its intended INDIA publish date, so "today" is India's
+  // date, not the visitor's or the build server's. Using the visitor's local
+  // date meant a US reader 404'd a post until midnight their time; using the
+  // UTC build date meant a post dated the 25th stayed hidden until ~05:30 IST
+  // (00:00 UTC) — its whole publish morning. Asia/Kolkata makes it go live on
+  // its stated day for everyone. Compared as plain YYYY-MM-DD strings.
+  const today = now.toLocaleDateString('en-CA', { timeZone: 'Asia/Kolkata' });
   return !date || date <= today;
 }
 
