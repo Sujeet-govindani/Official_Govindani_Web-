@@ -25,17 +25,21 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
+        {/* content-visibility:auto (cv-defer) lets the browser skip layout &
+            paint for each below-the-fold section until it's scrolled near — the
+            single biggest cut to the mobile Style & Layout / Rendering cost on
+            this long, animation-heavy page. */}
         <Suspense fallback={null}>
-          <CredibilityBanners />
-          <VideoSection />
-          <LatestWork />
-          <ServicesSection />
-          <ClientTestimonialSection />
-          <AboutUsSection />
-          <TextServicesSection />
-          <FunkyHinglishSection />
-          <PortfolioSection />
-          <PortfolioShowcase />
+          <div className="cv-defer"><CredibilityBanners /></div>
+          <div className="cv-defer"><VideoSection /></div>
+          <div className="cv-defer"><LatestWork /></div>
+          <div className="cv-defer"><ServicesSection /></div>
+          <div className="cv-defer"><ClientTestimonialSection /></div>
+          <div className="cv-defer"><AboutUsSection /></div>
+          <div className="cv-defer"><TextServicesSection /></div>
+          <div className="cv-defer"><FunkyHinglishSection /></div>
+          <div className="cv-defer"><PortfolioSection /></div>
+          <div className="cv-defer"><PortfolioShowcase /></div>
         </Suspense>
       </main>
     </div>

@@ -1382,3 +1382,12 @@ element.style {
 ::-webkit-scrollbar { width: 5px }
 ::-webkit-scrollbar-track { background: rgba(255,255,255,0.04); border-radius: 10px }
 ::-webkit-scrollbar-thumb { background: hsl(var(--gold)); border-radius: 10px }
+
+/* Off-screen homepage sections skip layout & paint until scrolled near.
+   contain-intrinsic-size reserves an estimated height so the scrollbar stays
+   stable; the browser remembers each section's real size after first render.
+   This is the biggest single cut to mobile Style & Layout / Rendering cost. */
+.cv-defer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 800px;
+}
