@@ -629,9 +629,9 @@ const RealEstatePage = () => {
         /* Header clearance, matched to the NGO portfolio for a consistent gap
            between the fixed header and the hero title across the site. Double
            class + important beats the global section:first-of-type reset. */
-        .re-projects-section.re-projects-section { padding-top: 108px !important; }
-        @media (max-width: 900px) { .re-projects-section.re-projects-section { padding-top: 116px !important; } }
-        @media (max-width: 600px) { .re-projects-section.re-projects-section { padding-top: 124px !important; } }
+        .re-projects-section.re-projects-section { padding-top: 156px !important; }
+        @media (max-width: 900px) { .re-projects-section.re-projects-section { padding-top: 168px !important; } }
+        @media (max-width: 600px) { .re-projects-section.re-projects-section { padding-top: 180px !important; } }
         /* Add a spacer for fixed navbar on mobile - just like original */
         .re-projects-section::before {
           content: '';

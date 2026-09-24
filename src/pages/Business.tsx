@@ -805,7 +805,7 @@ const BusinessWebsitesPage = () => {
           {/* Navbar spacer — matched to the NGO / real-estate header clearance
               so the gap below the fixed header is consistent across the site. */}
           <div style={{
-            display: "block", width: "100%", height: isMobile ? "116px" : "108px",
+            display: "block", width: "100%", height: isMobile ? "168px" : "156px",
             flexShrink: 0, pointerEvents: "none", paddingTop: '0px'
           }} aria-hidden="true" />
 

@@ -312,9 +312,9 @@ const HealthcarePage = () => {
            estate). Was a 70vh centered hero whose gap swung with screen height —
            tiny on short screens, huge on tall ones. Double class + important
            beats the global section:first-of-type reset. */
-        .nb-hero-section.nb-hero-section { padding-top: 108px !important; }
-        @media (max-width: 900px) { .nb-hero-section.nb-hero-section { padding-top: 116px !important; } }
-        @media (max-width: 600px) { .nb-hero-section.nb-hero-section { padding-top: 124px !important; } }
+        .nb-hero-section.nb-hero-section { padding-top: 156px !important; }
+        @media (max-width: 900px) { .nb-hero-section.nb-hero-section { padding-top: 168px !important; } }
+        @media (max-width: 600px) { .nb-hero-section.nb-hero-section { padding-top: 180px !important; } }
         @media(max-width:640px){
           .nb-hero-section { padding:40px 14px 60px; justify-content:flex-start; min-height:unset; }
         }

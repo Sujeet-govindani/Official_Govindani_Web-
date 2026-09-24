@@ -758,9 +758,9 @@ const NgoPortfolio = () => {
            index.css, plus a former inline paddingTop of 0, kept this hero flush
            to the top and hid the title behind the header. Double class plus
            important beats both, and is stepped up on smaller screens. */
-        .ngo-hero-section.ngo-hero-section { padding-top: 108px !important; }
-        @media (max-width: 900px) { .ngo-hero-section.ngo-hero-section { padding-top: 116px !important; } }
-        @media (max-width: 600px) { .ngo-hero-section.ngo-hero-section { padding-top: 124px !important; } }
+        .ngo-hero-section.ngo-hero-section { padding-top: 156px !important; }
+        @media (max-width: 900px) { .ngo-hero-section.ngo-hero-section { padding-top: 168px !important; } }
+        @media (max-width: 600px) { .ngo-hero-section.ngo-hero-section { padding-top: 180px !important; } }
         .ngo-hero-section::before {
           content:'';
           position: absolute; inset: 0;
