@@ -580,7 +580,7 @@ const BrandCards = ({ mob, tab, activeBrand, onBrandClick }) => {
                 onMouseEnter={e => { if (!isActive) { e.currentTarget.style.transform = 'translateY(-2px) scale(1.03)'; } }}
                 onMouseLeave={e => { if (!isActive) { e.currentTarget.style.transform = ''; } }}
             >
-                <img src={b.src} alt={b.name} style={{ width: imgSz, height: imgSz, objectFit: 'contain', borderRadius: mob ? 5 : 7, flexShrink: 0 }} onError={e => e.target.style.display = 'none'} />
+                <img src={b.src} alt={b.name} style={{ width: imgSz, height: imgSz, objectFit: 'contain', borderRadius: mob ? 5 : 7, flexShrink: 0 }} onError={e => e.target.style.display = 'none'}  loading="lazy" decoding="async" />
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 1, minWidth: 0 }}>
                     <span style={{ fontFamily: "'Libre Baskerville',serif", fontSize: mob ? '0.62rem' : tab ? '0.7rem' : '0.8rem', fontWeight: 700, color: b.dark ? ec.gold : '#3D2B1F', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{b.name}</span>
                     <span style={{ fontFamily: "'Inter',sans-serif", fontSize: mob ? '0.45rem' : tab ? '0.52rem' : '0.58rem', color: b.dark ? 'rgba(201,178,138,0.72)' : 'rgba(107,66,38,0.72)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{b.sub}</span>
@@ -1753,7 +1753,7 @@ const HeroCarousel = () => {
                                 {rightIcons.map((ic, i) => (
                                     <React.Fragment key={`ric-${i}`}>
                                         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
-                                            <img src={ic.src} alt={ic.label} style={{ height: mob ? 18 : tab ? 20 : 24, objectFit: 'contain', opacity: 0.74 }} onError={e => e.target.style.display = 'none'} />
+                                            <img src={ic.src} alt={ic.label} style={{ height: mob ? 18 : tab ? 20 : 24, objectFit: 'contain', opacity: 0.74 }} onError={e => e.target.style.display = 'none'}  loading="lazy" decoding="async" />
                                             <span style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.5rem', color: 'rgba(255,255,255,0.36)', textAlign: 'center' }}>{ic.label}</span>
                                         </div>
                                         {i < rightIcons.length - 1 && <div style={{ width: 1, height: mob ? 18 : 22, background: 'rgba(200,210,230,0.18)', flexShrink: 0 }} />}
@@ -1874,7 +1874,7 @@ const HeroCarousel = () => {
                                 <React.Fragment key={`lgstep-${i}`}>
                                     <div style={{ display: 'flex', alignItems: 'center', width: '100%', gap: mob ? 8 : 12, padding: mob ? '0 4px 0 6px' : '2px 4px 2px 8px' }}>
                                         <div style={{ flexShrink: 0, width: mob ? (veryShortVh ? 26 : shortVh ? 34 : 46) : 80, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                            <img src={step.img} alt={step.title.replace('\n', ' ')} style={{ width: mob ? (veryShortVh ? 26 : shortVh ? 34 : 46) : 80, height: mob ? (veryShortVh ? 26 : shortVh ? 34 : 46) : 80, objectFit: 'contain', filter: 'drop-shadow(0 4px 14px rgba(80,200,255,0.4))', animation: 'log_glow 4s ease-in-out infinite', animationDelay: `${i * 0.4}s`, display: 'block' }} onError={e => e.target.style.display = 'none'} />
+                                            <img src={step.img} alt={step.title.replace('\n', ' ')} style={{ width: mob ? (veryShortVh ? 26 : shortVh ? 34 : 46) : 80, height: mob ? (veryShortVh ? 26 : shortVh ? 34 : 46) : 80, objectFit: 'contain', filter: 'drop-shadow(0 4px 14px rgba(80,200,255,0.4))', animation: 'log_glow 4s ease-in-out infinite', animationDelay: `${i * 0.4}s`, display: 'block' }} onError={e => e.target.style.display = 'none'}  loading="lazy" decoding="async" />
                                         </div>
                                         <div style={{ flex: 1, minWidth: 0 }}>
                                             <p style={{ fontFamily: "'Libre Baskerville',serif", fontSize: mob ? '0.84rem' : '1.02rem', fontWeight: 700, color: '#fff', margin: 0, lineHeight: 1.18 }}>{step.title.replace('\n', ' ')}</p>
@@ -1906,7 +1906,7 @@ const HeroCarousel = () => {
                                                 <React.Fragment key={dupI}>
                                                     {partnerIcons.map((ic, idx) => (
                                                         <div key={`${dupI}-${idx}`} style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '0 14px', flexShrink: 0 }}>
-                                                            <img src={ic.src} alt={ic.label} style={{ height: 17, objectFit: 'contain', opacity: 1, filter: 'none', transform: ic.label === 'Razorpay' ? 'scale(1.25)' : 'none' }} onError={e => e.target.style.display = 'none'} />
+                                                            <img src={ic.src} alt={ic.label} style={{ height: 17, objectFit: 'contain', opacity: 1, filter: 'none', transform: ic.label === 'Razorpay' ? 'scale(1.25)' : 'none' }} onError={e => e.target.style.display = 'none'}  loading="lazy" decoding="async" />
                                                             <span style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.58rem', color: '#1a1a2e', fontWeight: 600, whiteSpace: 'nowrap' }}>{ic.label}</span>
                                                             <div style={{ width: 1, height: 13, background: 'rgba(0,0,0,0.15)', marginLeft: 5, flexShrink: 0 }} />
                                                         </div>
@@ -1918,7 +1918,7 @@ const HeroCarousel = () => {
                                 </div>
                             </div>
                             <div style={{ flexShrink: 0, width: '40%' }}>
-                                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/maingraph.webp" alt="Revenue graph" style={{ width: '100%', maxHeight: 85, objectFit: 'contain', objectPosition: 'right bottom', filter: 'drop-shadow(0 4px 20px rgba(80,200,255,0.5))', animation: 'log_glow 4s ease-in-out infinite', display: 'block' }} onError={e => e.target.style.display = 'none'} />
+                                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/maingraph.webp" alt="Revenue graph" style={{ width: '100%', maxHeight: 85, objectFit: 'contain', objectPosition: 'right bottom', filter: 'drop-shadow(0 4px 20px rgba(80,200,255,0.5))', animation: 'log_glow 4s ease-in-out infinite', display: 'block' }} onError={e => e.target.style.display = 'none'}  loading="lazy" decoding="async" />
                             </div>
                         </div>
                         <div className="hero-cta-mob" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '8px', marginTop: 14, animation: 'log_in .56s ease-out .05s both' }}>
@@ -1978,7 +1978,7 @@ const HeroCarousel = () => {
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', justifyContent: 'flex-start', gap: tab ? 8 : 12, animation: 'log_in .52s ease-out .04s both', paddingRight: 0 }}>
                                     <div style={{ position: 'relative', width: tab ? '58%' : '56%', marginRight: tab ? 10 : 18 }}>
-                                        <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/maingraph.webp" alt="Revenue graph" style={{ width: '100%', maxHeight: tab ? 115 : 165, objectFit: 'contain', objectPosition: 'right top', filter: 'drop-shadow(0 6px 30px rgba(80,200,255,0.45))', animation: 'log_glow 4s ease-in-out infinite', display: 'block' }} onError={e => e.target.style.display = 'none'} />
+                                        <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/maingraph.webp" alt="Revenue graph" style={{ width: '100%', maxHeight: tab ? 115 : 165, objectFit: 'contain', objectPosition: 'right top', filter: 'drop-shadow(0 6px 30px rgba(80,200,255,0.45))', animation: 'log_glow 4s ease-in-out infinite', display: 'block' }} onError={e => e.target.style.display = 'none'}  loading="lazy" decoding="async" />
                                     </div>
                                     <div style={{ width: '100%', alignSelf: 'flex-start', display: 'flex', justifyContent: 'flex-end', animation: 'log_in .56s ease-out .06s both', paddingRight: tab ? 59 : 60 }}>
                                         <div className="partner-bar-wrap" style={{ width: tab ? '58%' : '55%' }}>
@@ -1986,7 +1986,7 @@ const HeroCarousel = () => {
                                                 <div className="partner-bar-track">
                                                     {[...partnerIcons, ...partnerIcons].map((ic, idx) => (
                                                         <div key={`pbd-${idx}`} style={{ display: 'flex', alignItems: 'center', gap: tab ? 7 : 10, padding: tab ? '0 18px' : '0 22px', flexShrink: 0 }}>
-                                                            <img src={ic.src} alt={ic.label} style={{ height: tab ? 34 : 44, width: 'auto', objectFit: 'contain', opacity: 1, filter: 'none', flexShrink: 0, transform: ic.label === 'Razorpay' ? 'scale(1.25)' : 'none' }} onError={e => e.target.style.display = 'none'} />
+                                                            <img src={ic.src} alt={ic.label} style={{ height: tab ? 34 : 44, width: 'auto', objectFit: 'contain', opacity: 1, filter: 'none', flexShrink: 0, transform: ic.label === 'Razorpay' ? 'scale(1.25)' : 'none' }} onError={e => e.target.style.display = 'none'}  loading="lazy" decoding="async" />
                                                             <span style={{ fontFamily: "'Inter',sans-serif", fontSize: tab ? '0.72rem' : '0.82rem', color: '#1a1a2e', fontWeight: 600, whiteSpace: 'nowrap', letterSpacing: '0.2px' }}>{ic.label}</span>
                                                             <div style={{ width: 1, height: tab ? 20 : 26, background: 'rgba(0,0,0,0.13)', marginLeft: tab ? 4 : 5, flexShrink: 0 }} />
                                                         </div>
@@ -2075,7 +2075,7 @@ const HeroCarousel = () => {
                                     {processSteps.map((step, i) => (
                                         <div key={`lgstepd-${i}`} style={{ flex: '1 1 0', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', padding: tab ? '0 1px' : '0 2px', position: 'relative' }}>
                                             {i === 4 && [{ top: '-12%', left: '18%', sz: 14, delay: '0s' }, { top: '4%', left: '62%', sz: 10, delay: '0.55s' }, { top: '-6%', left: '76%', sz: 12, delay: '1.05s' }, { top: '14%', left: '8%', sz: 9, delay: '0.75s' }, { top: '28%', left: '82%', sz: 11, delay: '1.35s' }, { top: '-18%', left: '45%', sz: 8, delay: '0.25s' }].map((sp, si) => (<div key={si} style={{ position: 'absolute', top: sp.top, left: sp.left, width: sp.sz, height: sp.sz, animation: `sparkle 2.4s ease-in-out ${sp.delay} infinite`, pointerEvents: 'none', zIndex: 10 }}><svg width={sp.sz} height={sp.sz} viewBox="0 0 20 20"><path d="M10 0 L11.5 8.5 L20 10 L11.5 11.5 L10 20 L8.5 11.5 L0 10 L8.5 8.5 Z" fill="rgba(80,200,255,0.9)" /></svg></div>))}
-                                            <img src={step.img} alt={step.title.replace('\n', ' ')} style={{ width: '100%', maxWidth: tab ? 110 : 150, height: tab ? 80 : 110, objectFit: 'contain', filter: 'drop-shadow(0 4px 14px rgba(80,200,255,0.35))', animation: 'log_glow 4s ease-in-out infinite', animationDelay: `${i * 0.45}s` }} onError={e => e.target.style.display = 'none'} />
+                                            <img src={step.img} alt={step.title.replace('\n', ' ')} style={{ width: '100%', maxWidth: tab ? 110 : 150, height: tab ? 80 : 110, objectFit: 'contain', filter: 'drop-shadow(0 4px 14px rgba(80,200,255,0.35))', animation: 'log_glow 4s ease-in-out infinite', animationDelay: `${i * 0.45}s` }} onError={e => e.target.style.display = 'none'}  loading="lazy" decoding="async" />
                                         </div>
                                     ))}
                                 </div>
@@ -2278,7 +2278,7 @@ const HeroCarousel = () => {
                             <Callout uid={`ig${slide}`} label={short(cur.socialCounts.instagram)} Icon={IgIcon} gradient="linear-gradient(135deg,#833AB4,#E1306C)" glow="rgba(131,58,180,0.55)" pillDir="right" imageEdge="left" topPx={SZ.igTop} dotD={SZ.dotD} pillW={SZ.pillW} pillH={SZ.pillH} iconDot={SZ.iconDot} fs={SZ.fs} delay={0} edgePadPx={SZ.edgePadLeft} onClick={() => openLink(SOCIAL_LINKS[0])} />
                             <Callout uid={`yt${slide}`} label={short(cur.socialCounts.youtube)} Icon={YtIcon} gradient="linear-gradient(135deg,#FF0000,#FF4444)" glow="rgba(255,0,0,0.5)" pillDir="right" imageEdge="left" bottomPx={SZ.ytBottom} dotD={SZ.dotD} pillW={SZ.pillW} pillH={SZ.pillH} iconDot={SZ.iconDot} fs={SZ.fs} delay={1} edgePadPx={SZ.edgePadLeft} onClick={() => openLink(SOCIAL_LINKS[1])} />
                             <Callout uid={`fb${slide}`} label={short(cur.socialCounts.facebook)} Icon={FbIcon} gradient="linear-gradient(135deg,#1877F2,#4DABF7)" glow="rgba(24,119,242,0.5)" pillDir="left" imageEdge="right" topPx={SZ.fbTop} dotD={SZ.fbDotD} pillW={SZ.pillW} pillH={SZ.pillH} iconDot={SZ.iconDot} fs={SZ.fs} delay={2} edgePadPx={SZ.fbEdgePad} onClick={() => openLink(SOCIAL_LINKS[2])} />
-                            <img src={cur.imageUrl} alt={cur.founderName} style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block', filter: 'drop-shadow(0 8px 16px rgba(0,0,0,0.3))', position: 'relative', zIndex: 10 }} onError={e => { e.target.onerror = null; e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3E%3Crect width='100%25' height='100%25' fill='%230a1929'/%3E%3C/svg%3E"; }} />
+                            <img src={cur.imageUrl} alt={cur.founderName} style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block', filter: 'drop-shadow(0 8px 16px rgba(0,0,0,0.3))', position: 'relative', zIndex: 10 }} onError={e => { e.target.onerror = null; e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3E%3Crect width='100%25' height='100%25' fill='%230a1929'/%3E%3C/svg%3E"; }}  loading="lazy" decoding="async" />
                             <div style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', padding: mob ? '0.4rem 0.9rem' : '0.55rem 1.2rem', borderRadius: 8, background: '#000', border: '1px solid rgba(255,255,255,0.15)', display: 'flex', flexDirection: 'column', alignItems: 'center', minWidth: mob ? 200 : 350, maxWidth: '92%', textAlign: 'center', whiteSpace: 'nowrap', zIndex: 20 }}>
                                 <h2 style={{ color: '#fff', fontSize: mob ? '0.8rem' : '0.95rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.8px', marginBottom: '0.3rem', lineHeight: 1.3, overflow: 'hidden', textOverflow: 'ellipsis', width: '100%' }}>{cur.founderName}</h2>
                                 <p style={{ fontSize: mob ? '0.65rem' : '0.75rem', color: colors.lightMetallicGold, fontWeight: 600, letterSpacing: '0.8px', textTransform: 'uppercase', borderTop: `1px solid ${colors.metallicGold}40`, paddingTop: '0.3rem', width: '100%', overflow: 'hidden', textOverflow: 'ellipsis' }}>{cur.founderTitle}</p>

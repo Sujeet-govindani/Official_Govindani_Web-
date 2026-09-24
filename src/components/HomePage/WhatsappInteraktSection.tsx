@@ -41,7 +41,7 @@ const FloatingBgImages = ({ revealed }: { revealed: boolean }) => (
         animate={revealed ? { opacity: 1, scale: img.scale, rotate: img.rotate } : { opacity: 0, scale: 0.85, rotate: img.rotate }}
         transition={{ opacity: { duration: 0.9, delay: 0.15 + i * 0.12, ease: "easeOut" }, scale: { duration: 0.9, delay: 0.15 + i * 0.12, ease: "easeOut" } }}
       >
-        <img
+        <img loading="lazy" decoding="async"
           src={img.src}
           alt={`showcase-${i + 1}`}
           style={{
@@ -63,7 +63,7 @@ const FloatingBgImages = ({ revealed }: { revealed: boolean }) => (
 const LaptopCarousel = ({ activeIdx }: { activeIdx: number }) => (
   <div style={{ width: "100%", height: "100%", position: "relative", overflow: "hidden", background: "#000" }}>
     {LAPTOP_CAROUSEL_IMAGES.map((src, i) => (
-      <img
+      <img loading="lazy" decoding="async"
         key={i}
         src={src}
         alt={`Screen ${i + 1}`}
@@ -97,7 +97,7 @@ const MobileImageCarousel = ({ images }: { images: string[] }) => {
   return (
     <div style={{ width: "100%", height: "100%", position: "relative", overflow: "hidden", transformStyle: "preserve-3d", transform: "translateZ(0)" }}>
       {images.map((src, i) => (
-        <img key={i} src={src} alt={`Screen ${i + 1}`}
+        <img loading="lazy" decoding="async" key={i} src={src} alt={`Screen ${i + 1}`}
           style={{ 
             position: "absolute", 
             inset: 0, 
@@ -233,7 +233,7 @@ const LaptopScreenContent = () => {
       }}>
         <div style={{ display: "flex", width: "max-content", animation: "marqueeScroll 30s linear infinite" }}>
           {[...Array(4)].map((_, i) => (
-            <img key={i} src={LOGO_STRIP_SRC} alt="Partner logos"
+            <img loading="lazy" decoding="async" key={i} src={LOGO_STRIP_SRC} alt="Partner logos"
               style={{ height: "clamp(20px, 2.8vw, 38px)", width: "auto", display: "block", opacity: 0.9, flexShrink: 0 }}
             />
           ))}

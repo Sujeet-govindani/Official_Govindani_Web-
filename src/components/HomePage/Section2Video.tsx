@@ -269,7 +269,7 @@ const VideoSection: React.FC<{ videoUrl?: string; logoUrl?: string }> = ({
               <div className="founder-pill-outer">
                 <div style={s.pill} className="founder-pill-badge">
                   {logoUrl ? (
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={logoUrl}
                       alt="Logo"
                       className="pill-avatar"

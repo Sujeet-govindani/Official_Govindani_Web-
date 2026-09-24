@@ -284,7 +284,7 @@ const ClientTestimonialSection: React.FC = () => {
                     key={index}
                     className="flex-shrink-0 w-28 sm:w-32 flex items-center justify-center mx-3"
                   >
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={partner.image}
                       alt={partner.name}
                       className="w-full h-16 sm:h-20 object-contain"
@@ -303,7 +303,7 @@ const ClientTestimonialSection: React.FC = () => {
                     key={index}
                     className="flex-shrink-0 w-28 sm:w-32 flex items-center justify-center mx-3"
                   >
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={partner.image}
                       alt={partner.name}
                       className="w-full h-16 sm:h-20 object-contain"
@@ -339,7 +339,7 @@ const ClientTestimonialSection: React.FC = () => {
                     key={index}
                     className="flex-shrink-0 w-28 sm:w-32 flex items-center justify-center mx-3"
                   >
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={client.image}
                       alt={client.name}
                       className="w-full h-16 sm:h-20 object-contain"
@@ -358,7 +358,7 @@ const ClientTestimonialSection: React.FC = () => {
                     key={index}
                     className="flex-shrink-0 w-28 sm:w-32 flex items-center justify-center mx-3"
                   >
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={client.image}
                       alt={client.name}
                       className="w-full h-16 sm:h-20 object-contain"
