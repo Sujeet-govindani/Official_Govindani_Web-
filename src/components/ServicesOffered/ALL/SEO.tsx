@@ -449,7 +449,7 @@ const SEOSection = () => {
                   </div>
                 </div>
                 <div className="proof-sc-imgwrap">
-                  <img src={shot.src} alt={`${shot.client} ranking for "${shot.query}"`} className="proof-sc-img" />
+                  <img src={shot.src} alt={`${shot.client} ranking for "${shot.query}"`} className="proof-sc-img"  loading="lazy" decoding="async" />
                   <div className="proof-highlight-box" style={{ top: `${shot.highlightTop}%` }} />
                   <div className="proof-highlight-bar" style={{ top: `${shot.highlightTop}%` }} />
                   <div className="proof-arrow-wrap" style={{ top: `calc(${shot.highlightTop}% + 7%)` }}>

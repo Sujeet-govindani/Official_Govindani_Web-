@@ -832,7 +832,7 @@ export default function VideographyPage() {
                         </div>
                         <Fade direction="right" delay={0.2}>
                             <div style={{ width: "100%", height: isMobile ? 280 : 460, borderRadius: isMobile ? 16 : "16px 0 0 16px", overflow: "hidden" }}>
-                                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/video2.webp" alt="Videography" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/video2.webp" alt="Videography" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}  loading="lazy" decoding="async" />
                             </div>
                         </Fade>
                     </div>

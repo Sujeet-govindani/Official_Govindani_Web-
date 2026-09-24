@@ -225,7 +225,7 @@ function BrandPill({ name, logoSrc }: BrandPillProps) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}>
       {logoSrc ? (
-        <img src={logoSrc} alt={name} style={{ height: "32px", width: "auto", maxWidth: "110px", objectFit: "contain", display: "block" }} />
+        <img src={logoSrc} alt={name} style={{ height: "32px", width: "auto", maxWidth: "110px", objectFit: "contain", display: "block" }}  loading="lazy" decoding="async" />
       ) : (
         <span style={{ fontFamily: "'Baskerville','Libre Baskerville',Georgia,serif", fontSize: "14px", letterSpacing: "0.04em", color: hovered ? "#f5d87a" : "rgba(245,216,122,0.75)", whiteSpace: "nowrap" }}>
           {name}
@@ -314,7 +314,7 @@ function CampaignCard({ title, desc, delay, image }: { title: string; desc: stri
     <Reveal delay={delay} direction="up">
       <HoverCard className="p-6 flex flex-col gap-4 h-full">
         {image ? (
-          <img src={image} alt={title} className="w-full rounded-xl" style={{ objectFit: "contain", display: "block" }} />
+          <img src={image} alt={title} className="w-full rounded-xl" style={{ objectFit: "contain", display: "block" }}  loading="lazy" decoding="async" />
         ) : (
           <AppImage alt={title} />
         )}

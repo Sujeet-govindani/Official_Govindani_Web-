@@ -244,7 +244,7 @@ export default function GoogleAdsPage() {
               </div>
             </div>
             <div className="hero-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80" alt="Google Ads Dashboard" />
+              <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80" alt="Google Ads Dashboard"  loading="lazy" decoding="async" />
               <div className="hero-img-frame" />
               <div style={{ position: "absolute", bottom: 24, left: 24, zIndex: 3, background: "rgba(0,0,0,0.7)", backdropFilter: "blur(10px)", border: "1px solid rgba(212,175,55,0.4)", borderRadius: 14, padding: "14px 20px", display: "flex", alignItems: "center", gap: 12 }}>
                 <div style={{ width: 36, height: 36, borderRadius: "50%", background: "linear-gradient(135deg,#D4AF37,#B8860B)", display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -301,7 +301,7 @@ export default function GoogleAdsPage() {
       </section>
 
       <section className="ppc-bg-section" id="services">
-        <img className="ppc-bg-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1400&q=75" alt="" aria-hidden="true" />
+        <img className="ppc-bg-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1400&q=75" alt="" aria-hidden="true"  loading="lazy" decoding="async" />
         <div className="ppc-bg-overlay" />
         <div className="container" style={{ position: "relative", zIndex: 2, width: "100%" }}>
           <div className="ppc-bg-content">
@@ -346,7 +346,7 @@ export default function GoogleAdsPage() {
         <div className="glow-blob" style={{ width: 500, height: 500, bottom: 0, right: 0, opacity: 0.35 }} />
         <div className="container" style={{ position: "relative", zIndex: 1 }}>
           <div style={{ position: "relative", borderRadius: 20, overflow: "hidden", marginBottom: 8, padding: "48px 40px", background: "rgba(212,175,55,0.03)", border: "1px solid rgba(212,175,55,0.18)" }}>
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=60" alt="" aria-hidden="true" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", filter: "brightness(0.12) saturate(0.6)", zIndex: 0 }} />
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=60" alt="" aria-hidden="true" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", filter: "brightness(0.12) saturate(0.6)", zIndex: 0 }}  loading="lazy" decoding="async" />
             <div style={{ position: "relative", zIndex: 1, maxWidth: 560 }}>
               <div className="label-pill"><span className="label-dot" />Decision Guide</div>
               <h2 className="heading-lg">Factors to Evaluate in Your Search for a{" "}<span className="gold-accent">PPC Company in India</span></h2>

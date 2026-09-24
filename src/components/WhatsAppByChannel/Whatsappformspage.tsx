@@ -353,7 +353,7 @@ function EngageSection({ engageRef, visible }: {
             <div className="relative w-full max-w-lg">
               <div className={`relative transition-all duration-300 ${animating ? "opacity-0 scale-[0.97]" : "opacity-100 scale-100"}`} style={{ paddingTop: "133.33%" }}>
                 {step.imageSrc ? (
-                  <img src={step.imageSrc} alt={step.imageAlt} className="absolute inset-0 w-full h-full object-contain" />
+                  <img src={step.imageSrc} alt={step.imageAlt} className="absolute inset-0 w-full h-full object-contain"  loading="lazy" decoding="async" />
                 ) : (
                   <div className="absolute inset-0 flex flex-col items-center justify-center">
                     <svg className="w-10 h-10 text-[#C9A84C]/25 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">

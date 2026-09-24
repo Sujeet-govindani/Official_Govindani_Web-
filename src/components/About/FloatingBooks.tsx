@@ -118,7 +118,7 @@ function MiniBook({ book }) {
           className="buy-btn"
         >
           Buy Now
-          <img src={KINDLE_ICON_PATH} alt="Kindle" className="kindle-icon" onError={(e) => { e.target.style.display = "none"; }} />
+          <img src={KINDLE_ICON_PATH} alt="Kindle" className="kindle-icon" onError={(e) => { e.target.style.display = "none"; }}  loading="lazy" decoding="async" />
         </a>
       </div>
     </div>

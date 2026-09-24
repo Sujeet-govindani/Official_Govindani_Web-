@@ -236,7 +236,7 @@ function FeatureCard({ icon, title, desc, delay, imageSrc }: {
         </div>
         <SubText className="text-sm">{desc}</SubText>
         {imageSrc ? (
-          <img src={imageSrc} alt={title} className="w-full rounded-xl mt-auto" style={{ display: "block", objectFit: "cover" }} />
+          <img src={imageSrc} alt={title} className="w-full rounded-xl mt-auto" style={{ display: "block", objectFit: "cover" }}  loading="lazy" decoding="async" />
         ) : (
           <div className="aspect-[16/9] rounded-xl mt-auto" style={{
             background: "linear-gradient(135deg,rgba(200,146,42,0.12),rgba(245,216,122,0.04))",
@@ -313,7 +313,7 @@ function VideoCard({ title, src, youtubeSrc, thumbnailSrc, delay }: {
           ) : (
             <>
               {thumbToShow ? (
-                <img src={thumbToShow} alt={title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                <img src={thumbToShow} alt={title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", display: "block" }}  loading="lazy" decoding="async" />
               ) : (
                 <div style={{ position: "absolute", inset: 0 }}><MediaBox alt={title} aspect="aspect-[16/10]" className="h-full" /></div>
               )}
@@ -394,7 +394,7 @@ function TestimonialCarousel({ onActiveChange }: { onActiveChange?: (i: number) 
       <div className="flex flex-col md:flex-row items-center gap-10 md:gap-12">
         <div className="flex-shrink-0" style={{ width: "220px", minHeight: "260px" }}>
           {slide.avatarSrc ? (
-            <img src={slide.avatarSrc} alt={slide.avatarAlt} style={{ width: "220px", height: "280px", objectFit: "cover", display: "block", borderRadius: "20px" }} />
+            <img src={slide.avatarSrc} alt={slide.avatarAlt} style={{ width: "220px", height: "280px", objectFit: "cover", display: "block", borderRadius: "20px" }}  loading="lazy" decoding="async" />
           ) : (
             <div style={{ width: "220px", height: "280px", borderRadius: "20px", background: "linear-gradient(135deg,rgba(200,146,42,0.15),rgba(245,216,122,0.05))", border: "1px dashed rgba(200,146,42,0.4)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
               <span style={{ color: "#c8922a", fontWeight: 700, fontSize: "56px", fontFamily: "'Libre Baskerville',Georgia,serif", opacity: 0.5 }}>{slide.name.charAt(0)}</span>

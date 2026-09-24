@@ -206,7 +206,7 @@ function BrandPill({ name, logoSrc }: BrandPillProps) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}>
       {logoSrc ? (
-        <img src={logoSrc} alt={name} style={{ height: "32px", width: "auto", maxWidth: "110px", objectFit: "contain", display: "block" }} />
+        <img src={logoSrc} alt={name} style={{ height: "32px", width: "auto", maxWidth: "110px", objectFit: "contain", display: "block" }}  loading="lazy" decoding="async" />
       ) : (
         <span style={{ fontFamily: "'Baskerville','Libre Baskerville',Georgia,serif", fontSize: "14px", letterSpacing: "0.04em", color: hovered ? "#f5d87a" : "rgba(245,216,122,0.75)", whiteSpace: "nowrap" }}>
           {name}
@@ -543,7 +543,7 @@ export default function WhatsAppWidget() {
                   className="absolute inset-0 rounded-3xl pointer-events-none"
                   style={{ background: "radial-gradient(ellipse,rgba(200,146,42,0.2) 0%,transparent 70%)", filter: "blur(28px)", animation: "pulseGlow 3s ease-in-out infinite" }}
                 />
-                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd1.webp" alt="WhatsApp Chat Widget Preview" className="w-full rounded-2xl" />
+                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd1.webp" alt="WhatsApp Chat Widget Preview" className="w-full rounded-2xl"  loading="lazy" decoding="async" />
               </div>
             </Reveal>
           </div>
@@ -588,16 +588,16 @@ export default function WhatsAppWidget() {
 
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                   <HoverCard className="p-0 overflow-hidden">
-                    <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd2.webp" alt="General Template" className="w-full h-full object-cover" />
+                    <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd2.webp" alt="General Template" className="w-full h-full object-cover"  loading="lazy" decoding="async" />
                   </HoverCard>
                   <HoverCard className="p-0 overflow-hidden">
-                    <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd3.webp" alt="Support Template" className="w-full h-full object-cover" />
+                    <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd3.webp" alt="Support Template" className="w-full h-full object-cover"  loading="lazy" decoding="async" />
                   </HoverCard>
                   <HoverCard className="p-0 overflow-hidden">
-                    <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd4.webp" alt="Sales Template" className="w-full h-full object-cover" />
+                    <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd4.webp" alt="Sales Template" className="w-full h-full object-cover"  loading="lazy" decoding="async" />
                   </HoverCard>
                   <HoverCard className="p-0 overflow-hidden">
-                    <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd5.webp" alt="Feedback Template" className="w-full h-full object-cover" />
+                    <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd5.webp" alt="Feedback Template" className="w-full h-full object-cover"  loading="lazy" decoding="async" />
                   </HoverCard>
                 </div>
               </div>
@@ -691,7 +691,7 @@ export default function WhatsAppWidget() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Reveal direction="left" delay={0}>
                 <HoverCard className="p-6 flex flex-col gap-4 h-full">
-                  <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd9.webp" alt="WhatsApp Link Generator UI" className="w-full rounded-2xl" />
+                  <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd9.webp" alt="WhatsApp Link Generator UI" className="w-full rounded-2xl"  loading="lazy" decoding="async" />
                   <h3 className="section-h2">Free WhatsApp link generator</h3>
                   <p style={{ color: "rgba(255,248,231,0.52)", fontFamily: "'Inter',sans-serif", fontSize: "14px", lineHeight: 1.72 }}>
                     Create free WhatsApp chat links for your WhatsApp Business number and share them on your Instagram bio, Facebook and Twitter feeds, and Initiate conversations with customers to drive conversions.
@@ -701,7 +701,7 @@ export default function WhatsAppWidget() {
 
               <Reveal direction="right" delay={100}>
                 <HoverCard className="p-6 flex flex-col gap-4 h-full">
-                  <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd10.webp" alt="WhatsApp QR Code Generator UI" className="w-full rounded-2xl" />
+                  <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd10.webp" alt="WhatsApp QR Code Generator UI" className="w-full rounded-2xl"  loading="lazy" decoding="async" />
                   <h3 className="section-h2">Free WhatsApp QR code generator</h3>
                   <p style={{ color: "rgba(255,248,231,0.52)", fontFamily: "'Inter',sans-serif", fontSize: "14px", lineHeight: 1.72 }}>
                     Generate a free WhatsApp QR code for your WhatsApp Business number and use it on your social media images, sticker decks, websites, printed material or anywhere for your customers to scan and directly initiate a chat on WhatsApp.

@@ -265,7 +265,7 @@ function VideoSection({ src }) {
   if (isImage) return (
     <Reveal direction="up" delay={0}>
       <div className="relative w-full rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(200,146,42,0.25)", boxShadow: "0 20px 60px rgba(0,0,0,0.6)" }}>
-        <img src={src} alt="How it works" style={{ width: "100%", display: "block", objectFit: "cover" }} />
+        <img src={src} alt="How it works" style={{ width: "100%", display: "block", objectFit: "cover" }}  loading="lazy" decoding="async" />
       </div>
     </Reveal>
   );

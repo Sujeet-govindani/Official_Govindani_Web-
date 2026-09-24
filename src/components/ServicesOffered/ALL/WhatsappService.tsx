@@ -629,7 +629,7 @@ const WhatsAppServicesPage: React.FC = () => {
         
         {/* ✅ FIX: removed style={{ display: "none" }} */}
         <div className="wa-hero-img">
-          <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bannerint.webp" alt="WhatsApp Business Dashboard" />
+          <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bannerint.webp" alt="WhatsApp Business Dashboard"  loading="lazy" decoding="async" />
         </div>
       </section>
 
@@ -640,7 +640,7 @@ const WhatsAppServicesPage: React.FC = () => {
           <div className="wa-strip-partner">
             {/* ✅ FIX: removed style={{ display: "none" }} */}
             <div className="wa-strip-logo-img">
-              <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/interaktlogo.png" alt="Interakt" />
+              <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/interaktlogo.png" alt="Interakt"  loading="lazy" decoding="async" />
             </div>
             <span className="wa-strip-name">Interakt</span>
             <span className="wa-strip-tag">Official Partner</span>
@@ -649,7 +649,7 @@ const WhatsAppServicesPage: React.FC = () => {
           <div className="wa-strip-partner">
             {/* ✅ FIX: removed style={{ display: "none" }} */}
             <div className="wa-strip-logo-img">
-              <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/watilogo.png" alt="Wati" />
+              <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/watilogo.png" alt="Wati"  loading="lazy" decoding="async" />
             </div>
             <span className="wa-strip-name">Wati</span>
             <span className="wa-strip-tag">Official Partner</span>
@@ -692,7 +692,7 @@ const WhatsAppServicesPage: React.FC = () => {
               <div key={i} className="wa-svc-card">
                 {/* ✅ FIX: removed style={{ display: "none" }} */}
                 <div className="wa-svc-icon-img">
-                  <img src={`/images/icons/svc-icon-${i + 1}.png`} alt={s.title} />
+                  <img src={`/images/icons/svc-icon-${i + 1}.png`} alt={s.title}  loading="lazy" decoding="async" />
                 </div>
                 <div className="wa-svc-icon-emoji">{s.emoji}</div>
                 <h3>{s.title}</h3>
@@ -728,7 +728,7 @@ const WhatsAppServicesPage: React.FC = () => {
           </div>
           {/* ✅ FIX: removed style={{ display: "none" }} */}
           <div className="wa-pshow-visual">
-            <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/intmain.webp" alt="Interakt Platform" />
+            <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/intmain.webp" alt="Interakt Platform"  loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -758,7 +758,7 @@ const WhatsAppServicesPage: React.FC = () => {
           </div>
           {/* ✅ FIX: removed style={{ display: "none" }} */}
           <div className="wa-pshow-visual">
-            <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/watimain.webp" alt="Wati Platform" />
+            <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/watimain.webp" alt="Wati Platform"  loading="lazy" decoding="async" />
           </div>
         </div>
       </div>

@@ -293,7 +293,7 @@ function MobileCard({
       <div className="mob-img-outer">
         <div ref={scrollRef} className="mob-scroll-container" onTouchEnd={handleTap} onClick={handleTap}>
           <div className="mob-img-wrap">
-            <img src={project.image} alt={project.title} className="mob-img" draggable={false} />
+            <img src={project.image} alt={project.title} className="mob-img" draggable={false}  loading="lazy" decoding="async" />
           </div>
         </div>
         <div className={`mob-shine ${visible ? "mob-shine-run" : ""}`} />
@@ -396,7 +396,7 @@ function DesktopCard({
       <div ref={containerRef} className="card-outer" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onMouseMove={handleMouseMove} onClick={() => window.open(project.url, "_blank", "noopener,noreferrer")}>
         <div ref={scrollRef} className="card-inner-scroll" onScroll={handleScroll}>
           <div className="card-img-wrap">
-            <img src={project.image} alt={project.title} className="card-img" draggable={false} />
+            <img src={project.image} alt={project.title} className="card-img" draggable={false}  loading="lazy" decoding="async" />
           </div>
           <div className="card-grad-top" />
           <div className="card-grad-bot" />

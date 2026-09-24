@@ -496,7 +496,7 @@ export default function UsaLanding() {
       <footer className="gusa-foot">
         <div className="gusa-foot-in">
           <div className="gusa-foot-brand">
-            <img className="gusa-logo" src={`${R2}/govindanilogo-400w.webp`} alt="Govindani Infotech" />
+            <img className="gusa-logo" src={`${R2}/govindanilogo-400w.webp`} alt="Govindani Infotech"  loading="lazy" decoding="async" />
             <p>Websites, e-commerce &amp; social media for businesses and non-profits worldwide.</p>
           </div>
           <div className="gusa-foot-addr">
