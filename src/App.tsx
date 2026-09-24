@@ -4,7 +4,7 @@ import { HelmetProvider } from "react-helmet-async";
 // import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
+import { Routes, Route, BrowserRouter, useLocation, Navigate } from "react-router-dom";
 
 import { ScrollToTop } from "./components/ScrollToTop";
 import LangSync from "./i18n/LangSync";
@@ -187,6 +187,10 @@ const App = () => (
           <Suspense fallback={null}>
           <Routes>
             <Route path="/" element={<Index />} />
+            {/* Portfolio has no standalone page — tapping /portfolio lands on
+                home and auto-opens the Portfolio mega-menu (Header reads
+                ?menu=portfolio). */}
+            <Route path="/portfolio" element={<Navigate to="/?menu=portfolio" replace />} />
             <Route path="/about-us/about-founder" element={<AboutPage />} />
             <Route path="/portfolio/virtual-tour" element={<Virtualtour />} />
             <Route path="/portfolio/ecommerce" element={<EcommercePage />} />

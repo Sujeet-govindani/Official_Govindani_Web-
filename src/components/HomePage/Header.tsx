@@ -315,6 +315,26 @@ const Header: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState<string | null>(null);
   const [mobilePricingOpen, setMobilePricingOpen] = useState(false);
   const [mobileWebsitesOpen, setMobileWebsitesOpen] = useState(false);
+
+  // Deep-link: /portfolio redirects to /?menu=portfolio (see App routes). When
+  // we land here with that flag, auto-open the Portfolio mega-menu on the home
+  // page instead of showing a separate page. Re-runs when `screen` settles so
+  // the right surface opens (desktop dropdown vs mobile accordion).
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    if (params.get('menu') !== 'portfolio') return;
+    window.scrollTo({ top: 0 });
+    if (screen === 'mobile') {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setMenuOpen(true);
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setMobileOpen('Portfolio');
+    } else {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setActiveDropdown('Portfolio');
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.search, screen]);
   const [mobileWaSection, setMobileWaSection] = useState<string | null>(null);
   const [mobileWaChannel, setMobileWaChannel] = useState<string | null>(null);
 
