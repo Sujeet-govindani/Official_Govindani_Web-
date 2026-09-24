@@ -1,82 +1,45 @@
-
-import { useState } from "react";
+import { lazy, Suspense } from "react";
 import Header from "@/components/HomePage/Header";
 import HeroSection from "@/components/HomePage/HeroSection";
-import CredibilityBanners from "@/components/HomePage/CredibilityBanners";
-import LatestWork from "@/components/HomePage/LatestWork";
-import ServicesSection from '@/components/HomePage/ServicesSection';
-import TextServicesSection from "@/components/HomePage/TextServicesSection";
-import FunkyHinglishSection from "@/components/HomePage/WhatsappInteraktSection";
-import ClientTestimonialSection from "@/components/HomePage/Testimonialssection";
-import AboutUsSection from "@/components/HomePage/AboutUsSection";  
-import PortfolioSection from "@/components/HomePage/PortfolioSection";
-import PortfolioShowcase from "@/components/HomePage/Portfolioshowcase";
-import NGOdisplay from "@/components/HomePage/NGOdisplay";
-import ContactUsPage from "./ContactUsPage";
 
-//import Footer from "@/components/Footer";
-import NgoFooter from "@/components/NgoFooter";
-import ContentMarketing from "./ContentMarketing";
-import VideoSection from "@/components/HomePage/Section2Video";
-
+// Everything below the hero is code-split. The initial JS bundle is then just
+// the app shell + Header + HeroSection — which is what gates first paint and
+// LCP on mobile. These still prerender into the HTML (prerender.mjs waits for
+// networkidle0, so the lazy chunks resolve before capture, keeping SEO intact)
+// and hydrate as separate chunks after the hero, instead of bloating one 383 KB
+// bundle that the phone must parse before anything becomes interactive.
+const CredibilityBanners = lazy(() => import("@/components/HomePage/CredibilityBanners"));
+const VideoSection = lazy(() => import("@/components/HomePage/Section2Video"));
+const LatestWork = lazy(() => import("@/components/HomePage/LatestWork"));
+const ServicesSection = lazy(() => import("@/components/HomePage/ServicesSection"));
+const ClientTestimonialSection = lazy(() => import("@/components/HomePage/Testimonialssection"));
+const AboutUsSection = lazy(() => import("@/components/HomePage/AboutUsSection"));
+const TextServicesSection = lazy(() => import("@/components/HomePage/TextServicesSection"));
+const FunkyHinglishSection = lazy(() => import("@/components/HomePage/WhatsappInteraktSection"));
+const PortfolioSection = lazy(() => import("@/components/HomePage/PortfolioSection"));
+const PortfolioShowcase = lazy(() => import("@/components/HomePage/Portfolioshowcase"));
 
 const Index = () => {
-  const [currentLanguage, setCurrentLanguage] = useState("en");
-
-  const handleLanguageChange = (langCode: string) => {
-    console.log("Language changed to:", langCode);
-    setCurrentLanguage(langCode);
-    localStorage.setItem("preferredLanguage", langCode);
-  };
-
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main>
         <HeroSection />
-        <CredibilityBanners />
-        <VideoSection />
-        <LatestWork />
-        <ServicesSection />
-        <ClientTestimonialSection />
-        <AboutUsSection />
-        <TextServicesSection />
-        <FunkyHinglishSection/>
-        <PortfolioSection/>
-        <PortfolioShowcase/>
-        {/* NGOdisplay ("We build backbones" NGO-infrastructure section) hidden from home per request */}
-        {/* <NGOdisplay/> */}
-        {/* <ContactUsPage/> */}
-        {/* <NgoFooter/> */}
-        {/* <ContentMarketing/> */}
-      </main> 
-      {/* <Footer /> */}
+        <Suspense fallback={null}>
+          <CredibilityBanners />
+          <VideoSection />
+          <LatestWork />
+          <ServicesSection />
+          <ClientTestimonialSection />
+          <AboutUsSection />
+          <TextServicesSection />
+          <FunkyHinglishSection />
+          <PortfolioSection />
+          <PortfolioShowcase />
+        </Suspense>
+      </main>
     </div>
   );
 };
 
 export default Index;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
