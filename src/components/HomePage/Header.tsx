@@ -618,10 +618,13 @@ const Header: React.FC = () => {
                   {dropdownItems.includes(item) ? (
                     <span
                       onClick={() => {
-                        if (item === 'Give Setu') {
-                          setActiveDropdown(null); setShowWebsitesFlyout(false);
-                          navigate('/pricing/ngo-os');
-                        }
+                        // Tap/click opens this item's mega-menu inline on the
+                        // current page — never navigates to a separate page.
+                        // Hover already opens it on desktop; this makes tap work
+                        // on touch devices (where hover never fires) and lets a
+                        // click toggle it closed again.
+                        setFlyoutChannel(null); setFlyoutRect(null); setShowWebsitesFlyout(false);
+                        setActiveDropdown(activeDropdown === item ? null : item);
                       }}
                       className="nav-link" style={{ color: skin.ink, fontSize: '0.85rem', fontWeight: 500, opacity: skin.onLight ? 0.92 : 0.8, transition: '0.3s', whiteSpace: 'nowrap', padding: '0.5rem 0.8rem', borderRadius: '50px', display: 'inline-block', cursor: 'pointer', background: activeDropdown === item ? skin.wash : 'transparent' }}>{item}</span>
                   ) : (
