@@ -13,7 +13,13 @@ import datetime, pathlib, re
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 IDX = ROOT / "src" / "data" / "blogIndex.ts"
 DIST = ROOT / "dist"
-TODAY = datetime.date.today().isoformat()
+# India date, not the CI runner's UTC. A post's date is its intended IST publish
+# day, and prerender.mjs + isPublished() both use Asia/Kolkata. If this pruner
+# used UTC it deleted a post's blog-data JSON while prerender had already baked
+# its body — the client then fetched a 404 and wiped the article to an empty
+# shell (the "hollow blog" bug) for the ~5.5h the two dates disagreed.
+TODAY = (datetime.datetime.now(datetime.timezone.utc)
+         + datetime.timedelta(hours=5, minutes=30)).date().isoformat()
 
 recs = re.findall(r'^  \{ id: "([^"]+)".*?date: "([^"]*)" \},$', IDX.read_text(), re.M)
 held = sorted(slug for slug, d in recs if d and d > TODAY)
