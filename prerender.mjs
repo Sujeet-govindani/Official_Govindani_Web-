@@ -295,7 +295,14 @@ async function capture(browser, route, shellHead) {
   const page = await browser.newPage();
   const errors = [];
   try {
-    await page.setViewport({ width: 1440, height: 900 });
+    // Prerender at a MOBILE viewport (was 1440 desktop). Google indexes
+    // mobile-first, and — critically — the homepage hero renders a different
+    // DOM per device via JS: baking desktop meant every phone got the desktop
+    // hero first, then re-rendered to the mobile hero after hydration, pushing
+    // mobile LCP to ~9s. Baking mobile lets phones paint the correct hero at
+    // first paint. Desktop clients re-render from this on hydration (desktop is
+    // unthrottled, so the swap is instant).
+    await page.setViewport({ width: 412, height: 915, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
     await page.setRequestInterception(true);
     page.on('request', (r) => {
       const u = r.url();
