@@ -1,7 +1,7 @@
 // @ts-nocheck
 'use client';
 
-import React, { useRef, useState, useCallback } from 'react';
+import React, { useRef, useState, useCallback, useEffect } from 'react';
 
 const VideoSection: React.FC<{ videoUrl?: string; logoUrl?: string }> = ({
   videoUrl = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IntroVideo/intro2.mp4',
@@ -10,6 +10,26 @@ const VideoSection: React.FC<{ videoUrl?: string; logoUrl?: string }> = ({
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isMuted, setIsMuted] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
+
+  // The intro video is ~14 MB and autoplayed on load — 60% of the homepage's
+  // payload and the reason mobile LCP sat at 12s, even though this section is
+  // below the fold. Defer the download: only set the source (and autoplay) once
+  // the section scrolls near the viewport.
+  useEffect(() => {
+    const vid = videoRef.current;
+    if (!vid || vid.src) return;
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) {
+        if (!vid.src) {
+          vid.src = videoUrl;
+          vid.play().catch(() => {});
+        }
+        io.disconnect();
+      }
+    }, { rootMargin: '300px' });
+    io.observe(vid);
+    return () => io.disconnect();
+  }, [videoUrl]);
 
   const handleMuteToggle = useCallback(() => {
     const vid = videoRef.current;
@@ -228,8 +248,7 @@ const VideoSection: React.FC<{ videoUrl?: string; logoUrl?: string }> = ({
 
                     <video
                       ref={videoRef}
-                      src={videoUrl}
-                      autoPlay
+                      preload="none"
                       muted
                       loop
                       playsInline
