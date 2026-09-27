@@ -48,6 +48,23 @@ def write_one(topic, k):
             f"Related phrases: {tags}\n"
             f"Category: {topic.get('category','')}\n\n"
             f"Write the full article now. 2,300-2,800 words.")
+    # SEO-gap topics (from the SEO routine) carry a dual-optimization contract:
+    # answer-first, a verbatim entity sentence, and a contextual money-page link.
+    contract = []
+    if topic.get("angle"):
+        contract.append(f"Angle to take: {topic['angle']}.")
+    if topic.get("entity_sentence"):
+        contract.append(
+            "Include this exact sentence, verbatim, within the first 200 words: "
+            f"\"{topic['entity_sentence']}\"")
+    if topic.get("money_page"):
+        label = topic.get("money_label") or "our services"
+        contract.append(
+            "Place at least one natural, contextual in-body markdown link to "
+            f"https://govindaniit.com{topic['money_page']} using anchor text like "
+            f"\"{label}\" (in addition to the closing WhatsApp line).")
+    if contract:
+        user += "\n\nDUAL-OPTIMIZATION CONTRACT (follow exactly):\n- " + "\n- ".join(contract)
     txt, model = gw.ask(SYSTEM, user, k, tries=2, temperature=0.75)
     if not txt:
         return None
@@ -68,7 +85,10 @@ def main():
         elif a.startswith("--of="): of = int(a.split("=")[1])
         else: limit = int(a)
     k = gw.key()
-    todo = [(s, t) for i, (s, t) in enumerate(sorted(topics.items()))
+    # Highest-priority topics first (SEO-gap topics carry a priority; the legacy
+    # 183-topic backlog defaults to 0), then by slug for a stable shard split.
+    ordered = sorted(topics.items(), key=lambda kv: (-int(kv[1].get("priority", 0)), kv[0]))
+    todo = [(s, t) for i, (s, t) in enumerate(ordered)
             if i % of == shard and not (OUT / f"{s}.json").exists()]
     if limit:
         todo = todo[:limit]
