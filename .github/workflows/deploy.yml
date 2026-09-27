@@ -71,6 +71,23 @@ jobs:
           grep -q "RewriteRule" dist/.htaccess || { echo "::error::.htaccess has no rewrite rules"; exit 1; }
           echo "build verified"
 
+      # A post that is written but dated months out is invisible: no page, no
+      # body, no sitemap entry. That is silent by design, so say it out loud.
+      - name: Report the scheduled-post queue
+        continue-on-error: true
+        run: python3 tools/blog/compact_schedule.py --check
+
+      # The sitemap the server is serving RIGHT NOW is the baseline for
+      # "what is new in this deploy". Captured before the upload, compared
+      # after it, so IndexNow only ever hears about genuinely new URLs.
+      # A failure here is not fatal: no baseline simply means no submission.
+      - name: Capture the live sitemap (IndexNow baseline)
+        continue-on-error: true
+        run: |
+          curl -sf -m 30 -A "Mozilla/5.0" https://govindaniit.com/sitemap.xml \
+            -o /tmp/sitemap-before.xml || echo "no baseline available"
+          echo "baseline URLs: $(grep -c '<loc>' /tmp/sitemap-before.xml 2>/dev/null || echo 0)"
+
       # webfactory/ssh-agent fails with "error in libcrypto" when the secret
       # arrives without a trailing newline, and GitHub secret storage does not
       # reliably preserve one. Writing the file here with printf '%s\n'
@@ -142,6 +159,18 @@ jobs:
               -e "ssh -i ~/.ssh/deploy_key -p ${{ secrets.HOSTINGER_PORT }} -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" \
               "dist/$dir/" "${{ secrets.HOSTINGER_USER }}@${{ secrets.HOSTINGER_HOST }}:~/domains/govindaniit.com/public_html/$dir/"
           done
+
+      # Submit to IndexNow only here: after rsync, after the blog mirror, and
+      # only for URLs that return 200 on a live fetch. Four slugs were pushed
+      # to IndexNow at WRITE time on 2026-09-27 while their pages 404'd; this
+      # step is what makes that structurally impossible.
+      - name: Submit new URLs to IndexNow
+        continue-on-error: true
+        run: |
+          python3 tools/seo/indexnow_ping.py \
+            --before /tmp/sitemap-before.xml \
+            --after dist/sitemap.xml \
+            --submit
 
       - name: Verify production
         run: |
