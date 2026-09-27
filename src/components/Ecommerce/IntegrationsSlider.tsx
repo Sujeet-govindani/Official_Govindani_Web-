@@ -56,6 +56,8 @@ const IntegrationsSlider = () => {
                 <img
                   src={item.logo}
                   alt={item.name}
+                  loading="lazy"
+                  decoding="async"
                   className="h-12 w-auto object-contain filter brightness-90 group-hover:brightness-100 group-hover:scale-110 transition-all duration-300"
                 />
               </div>
