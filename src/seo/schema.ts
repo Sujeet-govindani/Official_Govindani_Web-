@@ -5,7 +5,7 @@ export const organizationSchema = {
   "name": "Govindani Infotech Pvt. Ltd.",
   "url": "https://govindaniit.com",
   "logo": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/LOGO.webp",
-  "description": "Govindani Infotech builds NGO donation platforms, websites, CRM systems and digital growth solutions for nonprofits and businesses across India. 900+ websites engineered, 550 of them for non-profits, ₹1100+ crore processed.",
+  "description": "Govindani Infotech builds NGO donation platforms, websites, CRM systems and digital growth solutions for nonprofits and businesses across India. 1000+ websites engineered, 550 of them for non-profits, ₹1100+ crore processed.",
   "foundingDate": "2018",
   "email": "sujeet@govindaniit.org",
   "telephone": "+91-9201958271",
@@ -193,7 +193,7 @@ export function schemaFor(pathname: string) {
       ...base,
       ...createServiceSchema({
         name,
-        description: `${name} services by Govindani Infotech — 900+ websites engineered from Pune, India.`,
+        description: `${name} services by Govindani Infotech — 1000+ websites engineered from Pune, India.`,
         url: 'https://govindaniit.com' + pathname,
       }),
     };

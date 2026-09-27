@@ -2,7 +2,7 @@ export const pageSEO = {
   // Home
   home: {
     title: "NGO Website Development India",
-    description: "Govindani Infotech builds NGO donation platforms, websites, CRM systems and digital growth solutions for nonprofits and businesses across India. 900+ websites engineered, 550 of them for non-profits, ₹1100+ crore processed securely.",
+    description: "Govindani Infotech builds NGO donation platforms, websites, CRM systems and digital growth solutions for nonprofits and businesses across India. 1000+ websites engineered, 550 of them for non-profits, ₹1100+ crore processed securely.",
     keywords: "NGO website development, donation platform India, WhatsApp Business API, social media marketing, Google Ads, SEO services, web development Pune",
   },
 
@@ -21,7 +21,7 @@ export const pageSEO = {
   // Services
   websiteCreation: {
     title: "Website Development Company in India",
-    description: "Govindani Infotech is India's leading website development company offering custom web design, React development, WordPress, and e-commerce solutions. 900+ websites built for NGOs and businesses, 550 of them for non-profits.",
+    description: "Govindani Infotech is India's leading website development company offering custom web design, React development, WordPress, and e-commerce solutions. 1000+ websites built for NGOs and businesses, 550 of them for non-profits.",
     keywords: "website development company India, custom web design, React development, WordPress development, e-commerce website, web development Pune",
   },
   metaAds: {

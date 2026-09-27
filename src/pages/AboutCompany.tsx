@@ -723,7 +723,7 @@ export default function AboutPage() {
             </div>
             <div className="ab-hero-pills-center">
               <div className="ab-pills">
-                {['Est. 2018', '5+ Years', '900+ Websites', 'India · USA'].map((b, i) => (
+                {['Est. 2018', '5+ Years', '1000+ Websites', 'India · USA'].map((b, i) => (
                   <span key={i} className="ab-pill">{b}</span>
                 ))}
               </div>

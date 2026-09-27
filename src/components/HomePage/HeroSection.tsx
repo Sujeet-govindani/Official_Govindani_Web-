@@ -906,7 +906,7 @@ const REBrandCarousel = ({ containerIndex, tab, mob }) => {
 };
 
 const ngoStatBoxes = [
-    { big: '900+', line1: 'Websites', line2: 'Engineered', desc: 'Digital platforms built for the motive of organizations, 550 of them for non-profits' },
+    { big: '1000+', line1: 'Websites', line2: 'Engineered', desc: 'Digital platforms built for the motive of organizations, 550 of them for non-profits' },
     { big: '1100+ Crore', line1: 'Secure, scalable', line2: 'Donation systems', desc: 'End-to-end donation flows that process crores securely' },
     { big: '300+', line1: 'Advanced ', line2: 'NGO Functions', desc: 'Automation, tracking and the  donor management' },
 ];

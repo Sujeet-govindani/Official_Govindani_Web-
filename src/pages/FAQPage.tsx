@@ -23,7 +23,7 @@ const allFAQs = [
   {
     category: "General",
     question: "What makes Govindani Infotech different from other agencies?",
-    answer: "We specialize in NGO digital transformation with 900+ websites engineered — 550 of them for non-profits — and ₹1100+ crore processed. Our key differentiators include built-in compliance (80G, FCRA, GST), end-to-end solutions, transparent pricing, and dedicated support. We don't just build websites — we build digital infrastructure."
+    answer: "We specialize in NGO digital transformation with 1000+ websites engineered — 550 of them for non-profits — and ₹1100+ crore processed. Our key differentiators include built-in compliance (80G, FCRA, GST), end-to-end solutions, transparent pricing, and dedicated support. We don't just build websites — we build digital infrastructure."
   },
 
   // NGO & Donation
