@@ -11,8 +11,10 @@ export const organizationSchema = {
   "telephone": "+91-9201958271",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "2nd Floor, Landmark Plaza, 206, Satara Road, Parvati Paytha",
     "addressLocality": "Pune",
     "addressRegion": "Maharashtra",
+    "postalCode": "411009",
     "addressCountry": "IN"
   },
   "sameAs": [
@@ -69,8 +71,10 @@ export const localBusinessSchema = {
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "2nd Floor, Landmark Plaza, 206, Satara Road, Parvati Paytha",
     "addressLocality": "Pune",
     "addressRegion": "Maharashtra",
+    "postalCode": "411009",
     "addressCountry": "IN"
   },
   "geo": {

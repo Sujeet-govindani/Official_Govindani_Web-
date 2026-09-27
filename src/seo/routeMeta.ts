@@ -35,8 +35,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-givesetu.jpg"
   },
   "/pages/ngopage": {
-    "title": "NGO Donation Website & Fundraising Platform",
-    "description": "“Every dollar raised here is proof of a system that works for NGOs that want predictable, sustainable funding.”",
+    "title": "NGO Website Development Company in Pune | Govindani Infotech",
+    "description": "NGO website development from Pune: donation-ready websites with online giving, 80G receipts and donor records, built by Govindani Infotech for 550+ NGOs.",
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-ngo.jpg"
   },
   "/pages/case-study": {
@@ -45,8 +45,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
   },
   "/": {
-    "title": "Best IT & Web Development Company in Pune | Govindani",
-    "description": "Govindani Infotech is a Pune-based IT & web development company: websites, e-commerce, mobile apps, WhatsApp API, SEO, digital marketing and NGO donation platforms for businesses across India.",
+    "title": "Website Development Company in Pune | Govindani Infotech",
+    "description": "Govindani Infotech is a website and software development company in Pune building business websites, e-commerce stores, CRMs and NGO donation platforms — 1000+ websites and 550+ NGOs delivered from Pune, India.",
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-home.jpg"
   },
   "/services/meta-ads": {
@@ -80,8 +80,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-social.jpg"
   },
   "/services/website-creation": {
-    "title": "Creating Your Online Presence | Govindani Infotech",
-    "description": "We specialize in crafting bespoke websites that cater to your unique business needs. Our web development services focus on building robust and user-friendl…",
+    "title": "Custom Website Development Company in Pune | Govindani",
+    "description": "Custom website development in Pune: responsive business websites, CMS and web apps built by Govindani Infotech, with 1000+ websites delivered across India.",
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-webdev.jpg"
   },
   "/services/social-media/plans": {
@@ -90,8 +90,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-social.jpg"
   },
   "/services/ecommerce": {
-    "title": "Stop Losing Money to Platform Fees | Govindani Infotech",
-    "description": "YOUR BUSINESS, YOUR WAY Stop Losing Money to Platform Fees Build your own e-commerce store. Keep 100% of your profits. No commissions, ever.",
+    "title": "Ecommerce Website Development in Pune | Govindani Infotech",
+    "description": "Ecommerce website development in Pune — your own store, your own checkout, no marketplace commission. Built and supported by Govindani Infotech.",
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-ecom.jpg"
   },
   "/services/social-media/live-profiles": {
@@ -174,8 +174,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
   },
   "/about-us/about-company": {
-    "title": "Empowering Brands Transforming Futures | Govindani Infotech",
-    "description": "Nagpur Rajasthan Gujrat Mumbai Pune Bihar Chattisgarh Tamilnadu India Operations Numbers That Define Us",
+    "title": "About Govindani Infotech | Web & Software Company, Pune",
+    "description": "Govindani Infotech Pvt. Ltd. is a website and software development company headquartered in Pune, Maharashtra, serving clients across India with 1000+ websites and 550+ NGOs delivered.",
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-about.jpg"
   },
   "/whatsapp/forms": {
@@ -304,8 +304,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
   },
   "/portfolio/virtual-tour": {
-    "title": "Real Estate Services | Govindani Infotech",
-    "description": "Step into the future of real estate with immersive 360° property tours and premium visual storytelling",
+    "title": "Real Estate Website Development in Pune | Govindani Infotech",
+    "description": "Real estate website development in Pune: project microsites, 360° virtual tours and lead-capture CRM for builders and brokers, by Govindani Infotech.",
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-vtour.jpg"
   },
   "/whatsapp/industries/b2b-sales": {
@@ -314,8 +314,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
   },
   "/real-estate": {
-    "title": "Real Estate Services | Govindani Infotech",
-    "description": "Step into the future of real estate with immersive 360° property tours and premium visual storytelling",
+    "title": "Real Estate Website Development in Pune | Govindani Infotech",
+    "description": "Real estate website development in Pune: project microsites, 360° virtual tours and lead-capture CRM for builders and brokers, by Govindani Infotech.",
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-vtour.jpg"
   },
   "/whatsapp/industries/spas-salons": {
@@ -387,8 +387,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "description": "Search for news, blogs, topics... News & Blogging Solutions Our News & Blogging Websites Stay Updated with Engaging and Informative Content"
   },
   "/services/ci-crm": {
-    "title": "CI CRM for Construction & Interiors | Govindani Infotech",
-    "description": "Lead, project and site management CRM built for construction and interior design firms.",
+    "title": "CRM Development Company in Pune | Govindani Infotech",
+    "description": "CRM development in Pune for construction, interiors and service businesses: lead capture, project and site management, built and hosted by Govindani Infotech.",
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
   },
   "/portfolio/hospitality": {
@@ -427,8 +427,8 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-givesetu.jpg"
   },
   "/contact-us": {
-    "title": "Contact the Govindani Infotech Team",
-    "description": "Get in touch about NGO donation platforms, websites, CRM or digital marketing. Offices in Pune with teams across India.",
+    "title": "Contact Govindani Infotech | Web Development Company, Pune",
+    "description": "Talk to Govindani Infotech in Pune about websites, e-commerce, CRM, WhatsApp API or an NGO donation platform. Office on Satara Road, Parvati, Pune 411009.",
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-contact.jpg"
   },
   "/explore-career": {
