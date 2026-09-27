@@ -418,7 +418,7 @@ const PremiumCarousel = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header with Golden & White Combination */}
         <div className={`text-center mb-8 md:mb-12 overflow-hidden transition-all duration-1000 ${headingVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl leading-tight relative">
+          <h2 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl leading-tight relative">
             <span className="inline-block mr-1 sm:mr-2">
               <span className="golden-text">Discover</span>
             </span>
@@ -428,7 +428,7 @@ const PremiumCarousel = () => {
             <span className="inline-block mr-1 sm:mr-2">
               <span className="golden-text">Features</span>
             </span>
-          </h1>
+          </h2>
           
           <div 
             className={`h-1 w-24 sm:w-32 md:w-48 mx-auto rounded-full mt-4 sm:mt-6 transition-all duration-1000 delay-500 ${headingVisible ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0'}`}

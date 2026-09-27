@@ -207,7 +207,7 @@ const NGOCarousel = () => {
 
           {/* ── Heading ── */}
           <div ref={headingContainerRef} className="text-center mb-10 md:mb-16 px-2">
-            <h1 className="font-bold text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl leading-tight">
+            <h2 className="font-bold text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl leading-tight">
               <span style={{ color: '#ffffff' }}>Stories That </span>
               <span style={{
                 background: 'linear-gradient(135deg, #d4af37, #f4e5b8, #c9a961)',
@@ -218,7 +218,7 @@ const NGOCarousel = () => {
               }}>
                 Move Communities Forward
               </span>
-            </h1>
+            </h2>
 
             {/* Gold divider */}
             <div className="flex items-center justify-center gap-3 mt-5 md:mt-6">

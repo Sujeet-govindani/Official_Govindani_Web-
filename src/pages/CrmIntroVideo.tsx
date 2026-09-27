@@ -206,7 +206,7 @@ const CrmIntroVideo: React.FC<{ videoUrl?: string; logoUrl?: string }> = ({
 
                     {/* Header */}
                     <div style={s.header} className="founder-header" >
-                        <h2 className="founder-shimmer-title" style={s.title}>Where Technology Mastery Meets Business Growth.</h2>
+                        <h1 className="founder-shimmer-title" style={s.title}>Where Technology Mastery Meets Business Growth.</h1>
                         <p style={s.subtitle}>built a legacy rooted in data, automation, and real results.</p>
                         <div style={s.ornament}>
                             <span style={s.ornLine} />

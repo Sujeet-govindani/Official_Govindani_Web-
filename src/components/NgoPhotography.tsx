@@ -364,12 +364,12 @@ const NgoPhotography: React.FC = () => {
           }}
         >
         
-           <h1 className="font-bold text-3xl md:text-3xl lg:text-3xl leading-tight">
+           <h2 className="font-bold text-3xl md:text-3xl lg:text-3xl leading-tight">
             
             <span className="bg-gradient-to-r from-[#d4af37] via-[#f4e5b8] to-[#d4af37] bg-clip-text text-transparent animate-gradient-x">
             Our Capture Moments
             </span>
-          </h1>
+          </h2>
         </div>
 
         <div style={{ position: "relative", zIndex: 2 }}>

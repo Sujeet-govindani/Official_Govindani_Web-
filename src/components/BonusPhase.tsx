@@ -74,12 +74,12 @@ const BonusPhase = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Single Line Heading with Subheading - WITH GRADIENT ANIMATION */}
         <div className="text-center mb-6 md:mb-10">
-          <h1 className="font-bold text-3xl md:text-3xl lg:text-3xl leading-tight">
+          <h2 className="font-bold text-3xl md:text-3xl lg:text-3xl leading-tight">
             <span className="text-white">Beyond Launch: </span>
             <span className="bg-gradient-to-r from-[#d4af37] via-[#f4e5b8] to-[#d4af37] bg-clip-text text-transparent animate-gradient-x">
               Continued Support & Maintenance
             </span>
-          </h1>
+          </h2>
           <p className="text-amber-100/70 mt-3 md:mt-4 max-w-2xl mx-auto text-sm md:text-base">
             Our commitment doesn't end at launch. We ensure your solution thrives with dedicated post-launch care.
           </p>
@@ -101,9 +101,9 @@ const BonusPhase = () => {
                     <bonusPhase.icon className="w-full h-full text-white" />
                   </div>
                   <div>
-                    <h1 className="text-2xl md:text-3xl font-bold text-white mb-3">
+                    <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
                       {bonusPhase.title}
-                    </h1>
+                    </h2>
                     <p className="text-amber-100/80">{bonusPhase.description}</p>
                   </div>
                 </div>

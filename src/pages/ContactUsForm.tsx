@@ -364,7 +364,7 @@ const ContactUsForm = ({ onSuccess, onClose, isModal = false }: { onSuccess?: ()
         {/* Header - Hidden if in modal */}
         {!isModal && (
           <section className="header-section">
-            <h1
+            <h2
               style={{
                 fontFamily: "'Baskerville','Libre Baskerville',Georgia,serif",
                 fontSize: "clamp(24px, 3vw, 38px)",
@@ -382,7 +382,7 @@ const ContactUsForm = ({ onSuccess, onClose, isModal = false }: { onSuccess?: ()
             >
               Seamless Communication<br />
               Global Impact
-            </h1>
+            </h2>
           </section>
         )}
 

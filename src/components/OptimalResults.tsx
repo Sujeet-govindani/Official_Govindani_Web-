@@ -773,7 +773,7 @@ const OptimalResults: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="mt-6 md:mt-8">
           <div ref={containerRef} className="text-center mb-8 px-2">
-            <h1 className="block md:hidden font-bold text-3xl leading-tight">
+            <h2 className="block md:hidden font-bold text-3xl leading-tight">
               <span className="block text-white mb-1">Our Process for</span>
               <span
                 className="block"
@@ -789,7 +789,7 @@ const OptimalResults: React.FC = () => {
               >
                 Optimal Results
               </span>
-            </h1>
+            </h2>
 
             <h2 className="hidden md:block font-bold text-3xl lg:text-3xl leading-tight">
               <span className="text-white mr-2">Streamlined</span>
