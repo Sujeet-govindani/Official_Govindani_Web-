@@ -1007,6 +1007,7 @@ const WebDevelopmentPage = () => {
               </h1>
               <p className="hero-sub">Bespoke Websites for Unique Businesses</p>
               <p className="hero-desc">
+                Govindani Infotech Pvt. Ltd. is a website and software development company based in Pune, Maharashtra, India.
                 We specialize in crafting bespoke websites that cater to your unique business needs.
                 Our web development services focus on building robust and user-friendly websites that
                 enhance your online presence and drive business growth.

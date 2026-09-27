@@ -738,6 +738,9 @@ export default function AboutPage() {
           <div className="ab-W">
             <div className="ab-hero-below-train">
               <p className="ab-hero-sub">
+                Govindani Infotech Pvt. Ltd. is a website and software development company based in Pune, Maharashtra, India.
+              </p>
+              <p className="ab-hero-sub">
                 At <strong>Govindani Infotech Pvt. Ltd.</strong>, we turn bold visions into measurable digital impact from Pune to the world.
               </p>
             </div>

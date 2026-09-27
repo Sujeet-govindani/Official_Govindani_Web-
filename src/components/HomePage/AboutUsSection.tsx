@@ -481,6 +481,7 @@ export default function AboutUsSection() {
                 and leads millions toward growth, impact, and real transformation.
               </p>
               <p className="about-body">
+                Govindani Infotech Pvt. Ltd. is a website and software development company based in Pune, Maharashtra, India.{" "}
                 Imagine a mind that sees possibilities when others see problems. A young architect
                 of ideas who didn't just write a book - he wrote{" "}
                 <strong style={{ color: "var(--white)" }}>101 Startup Ideas</strong> the world had
