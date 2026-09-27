@@ -1031,19 +1031,19 @@ const PortfolioShowcase: React.FC<PortfolioShowcaseProps> = ({
           {activeCategory === 'All' ? (
             <div className="all-panels">
               <div className="all-panel">
-                <img src={currentCatImgs?.[allCatIdx % (currentCatImgs?.length || 1)]} alt="" className={`all-panel-img ${allVisible ? 'visible' : 'hidden-up'}`} loading="lazy" decoding="async" />
+                <img src={currentCatImgs?.[allCatIdx % (currentCatImgs?.length || 1)]} alt="Featured portfolio project by Govindani Infotech" className={`all-panel-img ${allVisible ? 'visible' : 'hidden-up'}`} loading="lazy" decoding="async" />
               </div>
               <div className="all-panel">
-                <img src={currentCatImgs?.[(allCatIdx + 5) % (currentCatImgs?.length || 1)]} alt="" className={`all-panel-img ${allVisible ? 'visible' : 'hidden-down'}`} loading="lazy" decoding="async" />
+                <img src={currentCatImgs?.[(allCatIdx + 5) % (currentCatImgs?.length || 1)]} alt="Featured portfolio project by Govindani Infotech" className={`all-panel-img ${allVisible ? 'visible' : 'hidden-down'}`} loading="lazy" decoding="async" />
               </div>
             </div>
           ) : (
             <div className="all-panels">
               <div className="all-panel">
-                <img src={catLeftSrc} alt="" className={`all-panel-img ${catImgVisible ? 'visible' : 'hidden-up'}`} loading="lazy" decoding="async" />
+                <img src={catLeftSrc} alt={`${activeCategory} project by Govindani Infotech`} className={`all-panel-img ${catImgVisible ? 'visible' : 'hidden-up'}`} loading="lazy" decoding="async" />
               </div>
               <div className="all-panel">
-                <img src={catRightSrc} alt="" className={`all-panel-img ${catImgVisible ? 'visible' : 'hidden-down'}`} loading="lazy" decoding="async" />
+                <img src={catRightSrc} alt={`${activeCategory} project by Govindani Infotech`} className={`all-panel-img ${catImgVisible ? 'visible' : 'hidden-down'}`} loading="lazy" decoding="async" />
               </div>
             </div>
           )}
