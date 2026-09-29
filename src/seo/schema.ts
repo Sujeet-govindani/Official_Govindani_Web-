@@ -190,16 +190,27 @@ export function schemaFor(pathname: string) {
     };
   }
 
-  // Services
-  if (pathname.startsWith('/services/')) {
-    const name = pathname.replace('/services/', '').replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  // Services (listing + individual) — Service + BreadcrumbList
+  if (pathname === '/services' || pathname.startsWith('/services/')) {
+    const isChild = pathname.startsWith('/services/');
+    const name = isChild
+      ? pathname.replace('/services/', '').replace(/\/+$/, '').replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
+      : 'Services';
+    const crumbs = [
+      { name: 'Home', url: 'https://govindaniit.com/' },
+      { name: 'Services', url: 'https://govindaniit.com/services' },
+    ];
+    if (isChild) crumbs.push({ name, url: 'https://govindaniit.com' + pathname });
     return {
       ...base,
-      ...createServiceSchema({
-        name,
-        description: `${name} services by Govindani Infotech — 1000+ websites engineered from Pune, India.`,
-        url: 'https://govindaniit.com' + pathname,
-      }),
+      "@graph": [
+        createServiceSchema({
+          name,
+          description: `${name} services by Govindani Infotech — 1000+ websites engineered from Pune, India.`,
+          url: 'https://govindaniit.com' + pathname,
+        }),
+        createBreadcrumbSchema(crumbs),
+      ],
     };
   }
 
