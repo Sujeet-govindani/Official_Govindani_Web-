@@ -125,7 +125,7 @@ function MobileCard({ project, index }) {
     if (gap < 320 && gap > 0) {
       if (tapTimerRef.current) clearTimeout(tapTimerRef.current);
       cancelAnimationFrame(scrollAnimRef.current);
-      window.open(project.url, "_blank", "noopener,noreferrer");
+      if (!project.disabled && project.url) window.open(project.url, "_blank", "noopener,noreferrer");
     } else {
       if (tapTimerRef.current) clearTimeout(tapTimerRef.current);
       tapTimerRef.current = setTimeout(() => triggerScrollHint(), 200);
@@ -250,7 +250,7 @@ function DesktopCard({ project, index, isVisible }) {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onMouseMove={handleMouseMove}
-        onClick={() => window.open(project.url, "_blank", "noopener,noreferrer")}
+        onClick={() => { if (!project.disabled && project.url) window.open(project.url, "_blank", "noopener,noreferrer"); }}
       >
         <div ref={scrollRef} className="ec-card-inner-scroll">
           <div className="ec-card-img-wrap">
@@ -373,6 +373,7 @@ const EcommercePage = () => {
       image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Coding/Coding-Tarushpranna.webp",
     },
     {
+      disabled: true,   // live site temporarily down — shown, not clickable
       title: "Terra by Trishla",
       category: "e-commerce",
       badge: "WordPress",
@@ -381,6 +382,7 @@ const EcommercePage = () => {
       image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Terra-By-Trishla.webp",
     },
     {
+      disabled: true,   // live site temporarily down — shown, not clickable
       title: "Madhav Numerology",
       category: "e-commerce",
       badge: "WordPress",
@@ -397,6 +399,7 @@ const EcommercePage = () => {
       image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Gsd-Organics.webp",
     },
     {
+      disabled: true,   // live site temporarily down — shown, not clickable
       title: "MuktaShop",
       category: "e-commerce",
       badge: "Shopify",
@@ -413,6 +416,7 @@ const EcommercePage = () => {
       image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Shopify/Shopify-Gllora.webp",
     },
     {
+      disabled: true,   // live site temporarily down — shown, not clickable
       title: "Kryelet Studios",
       category: "e-commerce",
       badge: "Shopify",
@@ -441,6 +445,7 @@ const EcommercePage = () => {
     },
 
     {
+      disabled: true,   // live site temporarily down — shown, not clickable
       title: "Malini Charitable Trust",
       category: "e-commerce",
       badge: "WordPress",
@@ -460,11 +465,14 @@ const EcommercePage = () => {
   ];
 
   // ── Filter logic: category button + search query both apply ──
-  const filteredProjects = ecomProjects.filter((p) => {
-    const matchesFilter = activeFilter === "All" || p.filter === activeFilter;
-    const matchesSearch = p.title.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesFilter && matchesSearch;
-  });
+  const filteredProjects = ecomProjects
+    .filter((p) => {
+      const matchesFilter = activeFilter === "All" || p.filter === activeFilter;
+      const matchesSearch = p.title.toLowerCase().includes(searchQuery.toLowerCase());
+      return matchesFilter && matchesSearch;
+    })
+    // Down-site projects (disabled) stay visible but drop to the bottom (stable sort).
+    .sort((a, b) => (a.disabled ? 1 : 0) - (b.disabled ? 1 : 0));
 
   useEffect(() => {
     const observers = [
