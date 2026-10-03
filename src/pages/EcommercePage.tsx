@@ -373,6 +373,30 @@ const EcommercePage = () => {
       image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Coding/Coding-Tarushpranna.webp",
     },
     {
+      title: "Dentivaa",
+      category: "e-commerce",
+      badge: "WordPress",
+      filter: "WordPress",
+      url: "https://dentivaa.com/",
+      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Dentivaa.webp",
+    },
+    {
+      title: "Purvi Agro Industry",
+      category: "e-commerce",
+      badge: "WordPress",
+      filter: "WordPress",
+      url: "https://purviagro.com/",
+      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Purvi-Agro.webp",
+    },
+    {
+      title: "RB Neurozyme Medics",
+      category: "e-commerce",
+      badge: "WordPress",
+      filter: "WordPress",
+      url: "https://rbneurozyme.com/",
+      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Rb-Neurozyme.webp",
+    },
+    {
       disabled: true,   // live site temporarily down — shown, not clickable
       title: "Terra by Trishla",
       category: "e-commerce",
