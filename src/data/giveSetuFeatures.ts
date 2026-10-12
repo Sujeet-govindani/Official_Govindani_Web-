@@ -1,0 +1,55 @@
+// The complete Give Setu feature set shipped with an NGO website.
+// `n` is the number used in the proposal PDF so the page and the quote agree.
+export type Feature = { n: number; t: string; d: string };
+
+export const FEATURES: Feature[] = [
+  { n: 1, t: 'Flexible Donations', d: 'One-time as well as monthly or yearly donations can be made easily.' },
+  { n: 2, t: 'Automatic 80G Receipt', d: 'On every donation an 80G receipt is auto-generated and emailed as a PDF.' },
+  { n: 3, t: 'Donor Login Panel', d: 'Donors get a login panel to view all their donations and receipts.' },
+  { n: 4, t: 'Email Confirmation', d: 'A confirmation email is sent after every donation.' },
+  { n: 5, t: 'Campaign Donation Pages', d: 'A dedicated donation page can be created for every fundraising campaign.' },
+  { n: 6, t: 'Central Admin Reports', d: 'The admin panel shows complete information on all campaigns, donations and reports.' },
+  { n: 7, t: 'Bulk Receipt Download', d: 'Admin can download all receipts in PDF in bulk with one click.' },
+  { n: 8, t: 'Donation Limits', d: 'Minimum and maximum donation amounts can be set (₹100 – ₹10,000).' },
+  { n: 9, t: 'Donor Data Export', d: 'All donor details can be exported to Excel or CSV.' },
+  { n: 10, t: 'Offline Donation Entry', d: 'Cash and cheque donations can be entered and recorded in the system.' },
+  { n: 11, t: 'Tribute Option', d: 'Donors can donate in someone’s name — in memory, in honour, and more.' },
+  { n: 12, t: 'Fee Recovery', d: 'Donors can choose to bear the payment gateway charge themselves.' },
+  { n: 13, t: 'Custom Form Fields', d: 'Custom fields can be added to the donation form as needed, e.g. PAN or mobile.' },
+  { n: 14, t: 'Annual Receipt', d: 'Every year donors receive their annual donation summary by email, ready for tax filing.' },
+  { n: 15, t: 'Branded PDF Receipts', d: 'Receipts are professionally designed PDFs carrying your logo, downloadable from the donor dashboard.' },
+  { n: 16, t: 'Campaign Thank You Page', d: 'A separate thank-you page can be created per campaign.' },
+  { n: 17, t: 'Social Media Share', d: 'After donating, donors can share their contribution straight from the thank-you page.' },
+  { n: 18, t: 'Donation Box Anywhere', d: 'A donation box can be placed in any section of the website.' },
+  { n: 19, t: 'Supporter Wall', d: 'Donor names can be displayed on a public supporter wall.' },
+  { n: 20, t: 'Cause Selection', d: 'Donors can choose which cause their donation is used for.' },
+  { n: 21, t: 'Tracking Tools', d: 'Analytics and pixels can be added across the website.' },
+  { n: 22, t: 'Real-time Form Alerts', d: 'Contact and enquiry forms send real-time alerts to the admin.' },
+  { n: 23, t: 'Self-manageable Content', d: 'Events, blogs, gallery and social links are updated by your own team from the admin panel.' },
+  { n: 24, t: 'Transparency Section', d: 'A transparency section where you upload your legal documents.' },
+  { n: 25, t: 'CSR Page', d: 'A dedicated CSR page to showcase your partner companies.' },
+  { n: 26, t: 'Mobile Responsive', d: 'Verified on three reference screens: iPhone 15, a 14-inch laptop and a 13-inch tablet.' },
+  { n: 27, t: 'Full Ownership', d: 'Full ownership is handed to the NGO — no recurring licence fee.' },
+  { n: 28, t: '30 Days Free Support', d: 'Free bug-fix and minor support for the first 30 days.' },
+  { n: 29, t: 'Maintenance Plans', d: '6-month and 12-month maintenance plans are available.' },
+  { n: 30, t: 'Donor ID Card Generator', d: 'Donors fill a form and instantly download an ID card PDF, with no data stored.' },
+  { n: 31, t: 'Multi-Gateway Support', d: 'All major Indian and international gateways can be integrated (international subject to FCRA).' },
+  { n: 32, t: 'Gateway Auto-fill', d: 'Seamless gateway integration that auto-fills donor details.' },
+  { n: 33, t: 'Future-ready & Scalable', d: 'The system stays scalable as your organisation grows.' },
+  { n: 34, t: 'Flexible Recurring Intervals', d: 'Recurring donations can be set monthly, yearly or at your own interval.' },
+  { n: 35, t: 'Self-cancel Recurring', d: 'Donors can cancel their recurring donations themselves.' },
+  { n: 36, t: 'Language Switcher', d: 'A language switcher can be added for multilingual support.' },
+  { n: 37, t: 'Product / File Delivery', d: 'Physical products or digital files can be delivered along with a donation.' },
+  { n: 38, t: 'Anonymous Donation', d: 'Donors can hide their identity if they wish.' },
+  { n: 39, t: 'Custom Email Notifications', d: 'Every email notification can be customised in your own words.' },
+  { n: 40, t: 'Unique Transaction ID', d: 'A unique transaction ID is generated for every donor, for full transparency.' },
+  { n: 41, t: 'Goal Tracking', d: 'Campaign-wise success bar, goal tracking and live progress can be displayed.' },
+  { n: 42, t: 'Campaign Media', d: 'Campaign-specific images, banners and gallery can be added.' },
+  { n: 43, t: 'Manual Donor Emails', d: 'Admin can email donors directly from the admin panel.' },
+  { n: 44, t: 'Secure Admin Access', d: 'Authentication and role-based access prevent unauthorised admin logins.' },
+];
+
+// The twelve that get a live, self-running demo on the landing page. These are
+// the ones that answer a trustee's real objection ("who does the paperwork?",
+// "does the gateway eat my donation?"), so they are worth the pixels.
+export const DEMO_IDS = [1, 2, 3, 12, 11, 41, 10, 7, 14, 31, 9, 30] as const;

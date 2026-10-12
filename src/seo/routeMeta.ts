@@ -14,6 +14,11 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "description": "US-registered web partner: donation-ready NGO sites and global e-commerce stores from $1,000. Book a free 30-minute consultation.",
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-usa-v2.jpg"
   },
+  "/ngoindia": {
+    "title": "NGO Website with Donation System from \u20b940,000 | Govindani Infotech",
+    "description": "Donation-ready NGO websites for Indian trusts and societies from \u20b940,000. 80G receipts, recurring giving, zero commission. Book a free consultation.",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-usa-v2.jpg"
+  },
   "/blog": {
     "title": "Blog | Digital Growth Insights for NGOs & Businesses",
     "description": "Practical, current guides on websites, e-commerce, WhatsApp, SEO and digital marketing — India-first, by Govindani Infotech.",

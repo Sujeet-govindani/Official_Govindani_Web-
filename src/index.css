@@ -7,6 +7,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================================
+   HEADER CLEARANCE + HERO CAP  -  one source for the whole site
+   ------------------------------------------------------------
+   11 component files already reference these tokens. Without the
+   definitions every one of those declarations is invalid and the
+   browser drops it - which takes a page's whole top padding with
+   it and puts its first line of text back under the fixed header.
+
+   --header-bottom : where the header pill ends (nav top + pill height)
+   --header-clear  : breathing room between the pill and the first line
+   --header-offset : what a page's first section reserves as padding-top
+   --hero-max      : how far a 100vh hero may stretch past its content
+   ============================================================ */
+:root {
+  --header-bottom: 100px;                 /* 20 nav top + 80 pill */
+  --header-clear: 32px;
+  --header-offset: calc(var(--header-bottom) + var(--header-clear));
+  --hero-max: 780px;
+}
+@media (max-width: 1039px) {
+  :root {
+    --header-bottom: 80px;                /* 20 nav top + 60 pill */
+    --header-clear: 24px;
+  }
+}
+
+
 @layer base {
   /* ============================================================
      ✅ CRITICAL: ENABLE SCROLLING - HIGHEST PRIORITY

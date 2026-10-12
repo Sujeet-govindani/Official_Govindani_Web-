@@ -1,0 +1,377 @@
+/* ───────────────────────────────────────────────────────────────────────────
+   Give Setu live feature demos — namespaced .gsd-
+   Every demo is a small, self-running mock of the real product. Motion is CSS
+   keyframes on an infinite loop so ten of them cost nothing at runtime; they
+   stay paused until the card is actually on screen (.is-live is added by an
+   IntersectionObserver) and collapse to their finished frame when the visitor
+   has asked for reduced motion.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+.gsd {
+  --g: #b8860b;
+  --g-lt: #dca63a;
+  --ink: #1a1a22;
+  --muted: #6b6357;
+  --line: #ece3d3;
+  --cream: #faf6ee;
+  --ok: #1f7a46;
+  --ok-bg: #e6f4ec;
+  font-family: 'Sora', system-ui, sans-serif;
+  color: var(--ink);
+}
+.gsd * { box-sizing: border-box; }
+
+/* every animated element inside a demo waits until the card is on screen */
+.gsd-demo *,
+.gsd-stage * { animation-play-state: paused; }
+.gsd-demo.is-live *,
+.gsd-stage.is-live * { animation-play-state: running; }
+
+/* ── section shell ──────────────────────────────────────────────────────── */
+.gsd-wrap { padding: clamp(48px, 7vw, 92px) clamp(16px, 4vw, 44px); background: var(--cream); }
+.gsd-in { max-width: 1180px; margin: 0 auto; }
+.gsd-eyebrow {
+  font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--g); margin: 0 0 10px; text-align: center;
+}
+.gsd-h2 {
+  font-family: 'Libre Baskerville', Georgia, serif; font-weight: 700;
+  font-size: clamp(26px, 4vw, 42px); line-height: 1.18; margin: 0 0 12px; text-align: center;
+  text-wrap: balance;
+}
+.gsd-h2 em { font-style: italic; color: var(--g); }
+.gsd-sub {
+  text-align: center; color: var(--muted); max-width: 62ch; margin: 0 auto clamp(30px, 4vw, 48px);
+  font-size: clamp(14.5px, 1.6vw, 17px); line-height: 1.6;
+}
+
+/* ── hero: the full donate → receipt flow ───────────────────────────────── */
+.gsd-hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(22px, 3.5vw, 52px); align-items: center; }
+@media (max-width: 900px) { .gsd-hero { grid-template-columns: 1fr; } }
+
+.gsd-hero-copy h3 {
+  font-family: 'Libre Baskerville', Georgia, serif; font-size: clamp(21px, 2.6vw, 30px);
+  line-height: 1.25; margin: 0 0 14px;
+}
+.gsd-hero-copy p { color: var(--muted); line-height: 1.65; margin: 0 0 20px; font-size: clamp(14.5px, 1.6vw, 16.5px); }
+
+/* the running commentary — one line per step of the flow */
+.gsd-steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.gsd-step {
+  display: flex; gap: 11px; align-items: flex-start; font-size: 14.5px; line-height: 1.45;
+  color: var(--muted); opacity: .45; transition: opacity .35s ease, color .35s ease;
+}
+.gsd-step.on { opacity: 1; color: var(--ink); font-weight: 600; }
+.gsd-step-dot {
+  width: 20px; height: 20px; border-radius: 50%; flex: none; margin-top: 1px;
+  border: 2px solid var(--line); display: grid; place-items: center;
+  font-size: 10px; font-weight: 700; color: var(--muted);
+  transition: background .35s ease, border-color .35s ease, color .35s ease;
+}
+.gsd-step.on .gsd-step-dot { background: var(--g); border-color: var(--g); color: #fff; }
+.gsd-step.done .gsd-step-dot { background: var(--ok); border-color: var(--ok); color: #fff; }
+
+/* the phone-ish stage the mock donation form lives in */
+.gsd-stage {
+  background: #fff; border: 1px solid var(--line); border-radius: 20px;
+  box-shadow: 0 18px 50px rgba(26,26,34,.10), 0 2px 8px rgba(26,26,34,.05);
+  padding: clamp(16px, 2.4vw, 24px); position: relative; overflow: hidden; min-height: 420px;
+}
+.gsd-stage-bar { display: flex; align-items: center; gap: 7px; margin-bottom: 16px; }
+.gsd-stage-bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--line); display: block; }
+.gsd-stage-url {
+  margin-left: 6px; flex: 1; height: 24px; border-radius: 7px; background: var(--cream);
+  border: 1px solid var(--line); font-size: 11px; color: var(--muted);
+  display: flex; align-items: center; padding: 0 10px; font-family: ui-monospace, monospace;
+}
+.gsd-form-h { font-weight: 700; font-size: 16px; margin: 0 0 3px; }
+.gsd-form-s { font-size: 12.5px; color: var(--muted); margin: 0 0 16px; }
+
+.gsd-chips { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 14px; }
+.gsd-chip {
+  border: 1.5px solid var(--line); border-radius: 11px; padding: 11px 4px; text-align: center;
+  font-weight: 700; font-size: 14px; background: #fff; transition: all .3s cubic-bezier(.4,0,.2,1);
+}
+.gsd-chip.sel { border-color: var(--g); background: #fdf8ec; color: var(--g); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(184,134,11,.18); }
+
+.gsd-toggle { display: flex; background: var(--cream); border: 1px solid var(--line); border-radius: 11px; padding: 4px; gap: 4px; margin-bottom: 14px; }
+.gsd-toggle button {
+  flex: 1; border: 0; background: transparent; border-radius: 8px; padding: 9px 4px;
+  font: inherit; font-size: 13px; font-weight: 600; color: var(--muted); cursor: default;
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+}
+.gsd-toggle button.on { background: #fff; color: var(--ink); box-shadow: 0 2px 8px rgba(26,26,34,.10); }
+
+.gsd-note {
+  font-size: 12.5px; color: var(--g); background: #fdf8ec; border: 1px solid #f0e2c0;
+  border-radius: 9px; padding: 9px 12px; margin-bottom: 14px; font-weight: 600;
+  display: flex; align-items: center; gap: 7px;
+}
+.gsd-field { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-size: 13px; color: var(--muted); margin-bottom: 9px; background: #fff; }
+.gsd-field b { color: var(--ink); font-weight: 600; }
+
+.gsd-cta {
+  width: 100%; border: 0; border-radius: 12px; padding: 14px; font: inherit; font-weight: 700;
+  font-size: 15px; color: #3a2500; cursor: default;
+  background: linear-gradient(135deg, #c8a84b 0%, #f4e5b8 45%, #c8a84b 100%);
+  box-shadow: 0 8px 22px rgba(184,134,11,.28); transition: transform .18s ease, box-shadow .18s ease;
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+}
+.gsd-cta.press { transform: scale(.97); box-shadow: 0 3px 10px rgba(184,134,11,.3); }
+
+.gsd-spin { width: 17px; height: 17px; border: 2.5px solid rgba(58,37,0,.25); border-top-color: #3a2500; border-radius: 50%; animation: gsd-spin .7s linear infinite; }
+@keyframes gsd-spin { to { transform: rotate(360deg); } }
+
+/* success + receipt sheet */
+.gsd-done { text-align: center; padding: 16px 0 4px; }
+.gsd-tick {
+  width: 56px; height: 56px; border-radius: 50%; background: var(--ok-bg); color: var(--ok);
+  display: grid; place-items: center; margin: 0 auto 12px; font-size: 27px; font-weight: 700;
+  animation: gsd-pop .45s cubic-bezier(.34,1.56,.64,1) both;
+}
+@keyframes gsd-pop { from { transform: scale(.4); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.gsd-done-h { font-weight: 700; font-size: 16px; margin: 0 0 3px; }
+.gsd-done-s { font-size: 12.5px; color: var(--muted); margin: 0; }
+
+.gsd-receipt {
+  margin-top: 14px; border: 1px solid var(--line); border-radius: 13px; background: #fff;
+  padding: 14px; text-align: left; position: relative; overflow: hidden;
+  animation: gsd-rise .55s cubic-bezier(.22,1,.36,1) both;
+}
+@keyframes gsd-rise { from { transform: translateY(26px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.gsd-receipt-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
+.gsd-receipt-h { font-size: 13.5px; font-weight: 700; margin: 0; }
+.gsd-receipt-m { font-size: 11px; color: var(--muted); margin: 2px 0 0; font-family: ui-monospace, monospace; }
+.gsd-stamp {
+  flex: none; border: 2px solid var(--ok); color: var(--ok); border-radius: 8px;
+  padding: 5px 9px; font-size: 10.5px; font-weight: 800; letter-spacing: .06em; transform: rotate(-7deg);
+  animation: gsd-stamp .5s cubic-bezier(.34,1.56,.64,1) .35s both;
+}
+@keyframes gsd-stamp { from { transform: rotate(-7deg) scale(2.1); opacity: 0; } to { transform: rotate(-7deg) scale(1); opacity: 1; } }
+.gsd-receipt-rows { display: flex; flex-direction: column; gap: 5px; border-top: 1px dashed var(--line); padding-top: 9px; }
+.gsd-receipt-row { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); }
+.gsd-receipt-row b { color: var(--ink); font-weight: 600; }
+.gsd-dl {
+  margin-top: 11px; display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 600;
+  color: var(--g); background: #fdf8ec; border: 1px solid #f0e2c0; border-radius: 8px; padding: 8px 11px;
+}
+
+/* the little cursor that drives the hero demo */
+.gsd-cursor {
+  position: absolute; width: 19px; height: 19px; pointer-events: none; z-index: 6;
+  transition: transform .62s cubic-bezier(.4,0,.2,1); will-change: transform;
+}
+.gsd-cursor svg { filter: drop-shadow(0 2px 4px rgba(0,0,0,.3)); }
+.gsd-ripple {
+  position: absolute; inset: -9px; border-radius: 50%; border: 2px solid var(--g);
+  opacity: 0; transform: scale(.3);
+}
+.gsd-cursor.tap .gsd-ripple { animation: gsd-ripple .55s ease-out; }
+@keyframes gsd-ripple { 0% { opacity: .9; transform: scale(.3); } 100% { opacity: 0; transform: scale(2.3); } }
+
+/* ── mini demo grid ─────────────────────────────────────────────────────── */
+.gsd-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: clamp(14px, 2vw, 22px); margin-top: clamp(40px, 5vw, 64px);
+}
+.gsd-demo {
+  background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: hidden;
+  box-shadow: 0 2px 10px rgba(26,26,34,.05); display: flex; flex-direction: column;
+}
+.gsd-demo-vis {
+  height: 158px; background: linear-gradient(170deg, #fffdf8, var(--cream));
+  border-bottom: 1px solid var(--line); position: relative; overflow: hidden;
+  display: grid; place-items: center; padding: 14px;
+}
+.gsd-demo-txt { padding: 15px 17px 18px; }
+.gsd-demo-n {
+  font-size: 10.5px; font-weight: 800; letter-spacing: .1em; color: var(--g);
+  text-transform: uppercase; margin: 0 0 5px;
+}
+.gsd-demo-t { font-size: 15.5px; font-weight: 700; margin: 0 0 6px; line-height: 1.3; }
+.gsd-demo-d { font-size: 13px; color: var(--muted); line-height: 1.55; margin: 0; }
+
+/* shared mock furniture inside the mini visuals */
+.gsd-card { background: #fff; border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 4px 14px rgba(26,26,34,.07); }
+.gsd-bar { height: 7px; border-radius: 99px; background: var(--line); overflow: hidden; }
+.gsd-bar > i { display: block; height: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--g), var(--g-lt)); }
+.gsd-row { display: flex; align-items: center; gap: 7px; }
+.gsd-sk { height: 7px; border-radius: 99px; background: var(--line); }
+.gsd-pill { font-size: 10.5px; font-weight: 700; border-radius: 99px; padding: 4px 9px; }
+
+/* 1 — flexible donations: the frequency cycles on its own */
+.gsd-freq { display: flex; gap: 6px; }
+.gsd-freq span {
+  font-size: 11.5px; font-weight: 700; padding: 7px 12px; border-radius: 8px;
+  border: 1.5px solid var(--line); background: #fff; color: var(--muted);
+}
+.gsd-freq span:nth-child(1) { animation: gsd-freq 6s infinite; }
+.gsd-freq span:nth-child(2) { animation: gsd-freq 6s infinite -2s; }
+.gsd-freq span:nth-child(3) { animation: gsd-freq 6s infinite -4s; }
+@keyframes gsd-freq {
+  0%, 28% { border-color: var(--g); background: #fdf8ec; color: var(--g); transform: translateY(-2px); }
+  34%, 100% { border-color: var(--line); background: #fff; color: var(--muted); transform: none; }
+}
+
+/* 2 — 80G receipt slides out of the envelope, stamp lands */
+.gsd-pdf { width: 104px; height: 128px; padding: 11px; position: relative; animation: gsd-pdf-in 5s infinite; }
+@keyframes gsd-pdf-in { 0%, 8% { transform: translateY(34px) scale(.93); opacity: 0; } 24%, 92% { transform: none; opacity: 1; } 100% { transform: translateY(-12px); opacity: 0; } }
+.gsd-pdf .gsd-sk { margin-bottom: 6px; }
+.gsd-pdf-badge {
+  position: absolute; right: -12px; bottom: 16px; border: 2px solid var(--ok); color: var(--ok);
+  background: #fff; border-radius: 7px; padding: 4px 7px; font-size: 10px; font-weight: 800;
+  transform: rotate(-8deg); animation: gsd-badge 5s infinite;
+}
+@keyframes gsd-badge { 0%, 32% { opacity: 0; transform: rotate(-8deg) scale(1.9); } 44%, 92% { opacity: 1; transform: rotate(-8deg) scale(1); } 100% { opacity: 0; } }
+
+/* 3 — donor panel: their own donation history fills in */
+.gsd-panel { width: 100%; max-width: 212px; padding: 11px; }
+.gsd-panel-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 11px; }
+.gsd-panel-row:last-child { border-bottom: 0; }
+.gsd-panel-row:nth-child(2) { animation: gsd-fadeup 5s infinite .3s; }
+.gsd-panel-row:nth-child(3) { animation: gsd-fadeup 5s infinite .75s; }
+.gsd-panel-row:nth-child(4) { animation: gsd-fadeup 5s infinite 1.2s; }
+@keyframes gsd-fadeup { 0%, 10% { opacity: 0; transform: translateY(9px); } 26%, 92% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+
+/* 12 — fee recovery: the gateway cut is handed back to the NGO */
+.gsd-fee { width: 100%; max-width: 212px; padding: 12px; font-size: 11.5px; }
+.gsd-fee-row { display: flex; justify-content: space-between; padding: 4px 0; color: var(--muted); }
+.gsd-fee-row b { color: var(--ink); }
+.gsd-fee-check { display: flex; align-items: center; gap: 6px; margin: 7px 0; font-size: 10.5px; color: var(--g); font-weight: 600; }
+.gsd-fee-box {
+  width: 14px; height: 14px; border: 1.5px solid var(--g); border-radius: 4px; flex: none;
+  display: grid; place-items: center; color: #fff; font-size: 9px;
+  animation: gsd-check 5s infinite;
+}
+@keyframes gsd-check { 0%, 34% { background: #fff; } 42%, 100% { background: var(--g); } }
+.gsd-fee-net { border-top: 1px dashed var(--line); margin-top: 6px; padding-top: 7px; display: flex; justify-content: space-between; font-weight: 700; }
+.gsd-fee-net span:last-child { animation: gsd-netswap 5s infinite; }
+@keyframes gsd-netswap { 0%, 38% { color: #b3261e; } 46%, 100% { color: var(--ok); } }
+
+/* 11 — tribute: the dedication is typed in */
+.gsd-trib { width: 100%; max-width: 206px; padding: 13px; text-align: center; }
+.gsd-trib-k { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--g); font-weight: 700; margin-bottom: 7px; }
+.gsd-trib-n {
+  font-family: 'Libre Baskerville', Georgia, serif; font-size: 15px; white-space: nowrap;
+  overflow: hidden; border-right: 2px solid var(--g); width: 0;
+  margin: 0 auto; animation: gsd-type 5s infinite steps(14);
+}
+@keyframes gsd-type { 0%, 6% { width: 0; } 46%, 88% { width: 7.4em; } 100% { width: 0; } }
+
+/* 41 — goal tracking: the bar fills and the number counts with it */
+.gsd-goal { width: 100%; max-width: 212px; padding: 13px; }
+.gsd-goal-top { display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 8px; }
+.gsd-goal .gsd-bar { height: 9px; }
+.gsd-goal .gsd-bar > i { width: 0; animation: gsd-fill 5s infinite; }
+@keyframes gsd-fill { 0%, 6% { width: 4%; } 62%, 92% { width: 78%; } 100% { width: 4%; } }
+.gsd-goal-n { font-size: 17px; font-weight: 800; color: var(--g); margin-top: 9px; font-family: ui-monospace, monospace; }
+.gsd-goal-n > span { display: inline-block; animation: gsd-count 5s infinite; }
+@keyframes gsd-count { 0%, 6% { opacity: .35; } 62%, 100% { opacity: 1; } }
+
+/* 10 — offline entry: a cash donation drops into the ledger */
+.gsd-led { width: 100%; max-width: 212px; padding: 11px; }
+.gsd-led-row { display: flex; justify-content: space-between; font-size: 10.5px; padding: 5px 0; border-bottom: 1px solid var(--line); color: var(--muted); }
+.gsd-led-new {
+  background: #e6f4ec; border-radius: 6px; padding: 6px 7px; margin-top: 6px;
+  font-size: 10.5px; font-weight: 700; color: var(--ok); display: flex; justify-content: space-between;
+  animation: gsd-drop 5s infinite;
+}
+@keyframes gsd-drop { 0%, 24% { opacity: 0; transform: translateY(-13px) scale(.95); } 40%, 90% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+
+/* 7 — bulk download: a stack of receipts zips into one file */
+.gsd-stack { position: relative; width: 94px; height: 112px; }
+.gsd-stack i {
+  position: absolute; inset: 0; border-radius: 9px; background: #fff; border: 1px solid var(--line);
+  box-shadow: 0 3px 10px rgba(26,26,34,.07);
+  /* ruled lines so each sheet reads as a receipt, not a blank card */
+  background-image: repeating-linear-gradient(to bottom, transparent 0 13px, var(--line) 13px 15px);
+  background-position: 11px 16px; background-size: calc(100% - 22px) 74px; background-repeat: no-repeat;
+}
+.gsd-stack i:nth-child(1) { animation: gsd-st1 5s infinite; }
+.gsd-stack i:nth-child(2) { animation: gsd-st2 5s infinite; }
+.gsd-stack i:nth-child(3) { animation: gsd-st3 5s infinite; }
+@keyframes gsd-st1 { 0%, 18% { transform: none; } 56%, 100% { transform: translate(-13px, -9px) rotate(-7deg); } }
+@keyframes gsd-st2 { 0%, 18% { transform: none; } 56%, 100% { transform: translate(0, -4px); } }
+@keyframes gsd-st3 { 0%, 18% { transform: none; } 56%, 100% { transform: translate(13px, -9px) rotate(7deg); } }
+.gsd-stack-tag {
+  position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); white-space: nowrap;
+  background: var(--g); color: #fff; border-radius: 99px; padding: 4px 11px; font-size: 10.5px; font-weight: 700;
+  animation: gsd-tag 5s infinite;
+}
+@keyframes gsd-tag { 0%, 50% { opacity: 0; transform: translate(-50%, 9px); } 66%, 100% { opacity: 1; transform: translateX(-50%); } }
+
+/* 14 — annual receipt: the year closes and the summary goes out */
+.gsd-cal { width: 92px; text-align: center; padding: 0 0 10px; overflow: hidden; }
+.gsd-cal-m { background: var(--g); color: #fff; font-size: 10px; font-weight: 800; padding: 5px; letter-spacing: .08em; border-radius: 9px 9px 0 0; }
+.gsd-cal-d { font-size: 30px; font-weight: 800; padding: 7px 0 2px; animation: gsd-flip 5s infinite; }
+@keyframes gsd-flip { 0%, 30% { opacity: 0; transform: rotateX(80deg); } 44%, 100% { opacity: 1; transform: none; } }
+.gsd-cal-y { font-size: 10px; color: var(--muted); }
+.gsd-mail {
+  position: absolute; right: 16px; bottom: 16px; background: var(--ok-bg); color: var(--ok);
+  border-radius: 8px; padding: 6px 10px; font-size: 10.5px; font-weight: 700;
+  animation: gsd-mail 5s infinite;
+}
+@keyframes gsd-mail { 0%, 54% { opacity: 0; transform: translateY(11px); } 70%, 100% { opacity: 1; transform: none; } }
+
+/* 31 — gateways: the method cycles, then clears */
+.gsd-gw { display: flex; flex-direction: column; gap: 6px; width: 100%; max-width: 184px; }
+.gsd-gw-row { display: flex; align-items: center; gap: 8px; border: 1.5px solid var(--line); border-radius: 9px; padding: 8px 10px; font-size: 11.5px; font-weight: 600; background: #fff; }
+.gsd-gw-row:nth-child(1) { animation: gsd-gw 6s infinite; }
+.gsd-gw-row:nth-child(2) { animation: gsd-gw 6s infinite -2s; }
+.gsd-gw-row:nth-child(3) { animation: gsd-gw 6s infinite -4s; }
+@keyframes gsd-gw { 0%, 26% { border-color: var(--g); background: #fdf8ec; } 32%, 100% { border-color: var(--line); background: #fff; } }
+
+/* 9 — export: rows become a spreadsheet */
+.gsd-tbl { width: 100%; max-width: 196px; }
+.gsd-tbl-r { display: flex; gap: 5px; margin-bottom: 4px; }
+.gsd-tbl-r > i { flex: 1; height: 8px; border-radius: 3px; background: var(--line); display: block; }
+.gsd-tbl-r:nth-child(1) > i { background: #d9cdb4; }
+.gsd-xls {
+  margin-top: 9px; display: inline-flex; align-items: center; gap: 6px; background: var(--ok-bg);
+  color: var(--ok); border-radius: 7px; padding: 5px 10px; font-size: 10.5px; font-weight: 700;
+  animation: gsd-mail 5s infinite;
+}
+
+/* 30 — donor ID card flips in */
+.gsd-id { width: 148px; padding: 11px; animation: gsd-idflip 5s infinite; transform-style: preserve-3d; }
+@keyframes gsd-idflip { 0%, 10% { transform: rotateY(85deg); opacity: 0; } 30%, 90% { transform: none; opacity: 1; } 100% { transform: rotateY(-85deg); opacity: 0; } }
+.gsd-id-top { display: flex; align-items: center; gap: 7px; margin-bottom: 8px; }
+.gsd-id-av { width: 26px; height: 26px; border-radius: 50%; background: linear-gradient(135deg, var(--g), var(--g-lt)); flex: none; }
+.gsd-id-n { font-size: 11px; font-weight: 700; }
+.gsd-id-r { font-size: 9px; color: var(--muted); }
+
+/* ── the full 44 ────────────────────────────────────────────────────────── */
+.gsd-all { margin-top: clamp(44px, 5vw, 70px); }
+.gsd-all-h { text-align: center; font-family: 'Libre Baskerville', Georgia, serif; font-size: clamp(19px, 2.4vw, 26px); margin: 0 0 6px; }
+.gsd-all-s { text-align: center; color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+.gsd-all-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(258px, 1fr)); gap: 9px; }
+.gsd-feat {
+  display: flex; gap: 10px; align-items: flex-start; background: #fff; border: 1px solid var(--line);
+  border-radius: 11px; padding: 11px 13px;
+}
+.gsd-feat-n {
+  flex: none; width: 23px; height: 23px; border-radius: 7px; background: #fdf8ec; color: var(--g);
+  font-size: 10.5px; font-weight: 800; display: grid; place-items: center; font-family: ui-monospace, monospace;
+}
+.gsd-feat-t { font-size: 13px; font-weight: 700; margin: 0 0 2px; line-height: 1.3; }
+.gsd-feat-d { font-size: 11.5px; color: var(--muted); margin: 0; line-height: 1.45; }
+
+.gsd-foot { text-align: center; margin-top: clamp(32px, 4vw, 46px); }
+.gsd-foot p { color: var(--muted); font-size: 14.5px; margin: 0 0 16px; }
+
+/* ── motion off ─────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .gsd *, .gsd *::before, .gsd *::after {
+    animation: none !important; transition: none !important;
+  }
+  /* park every looping element on its finished frame so nothing reads as broken */
+  .gsd-pdf, .gsd-panel-row, .gsd-led-new, .gsd-id, .gsd-cal-d { opacity: 1; transform: none; }
+  .gsd-pdf-badge, .gsd-stack-tag, .gsd-mail, .gsd-xls { opacity: 1; transform: none; }
+  .gsd-pdf-badge { transform: rotate(-8deg); }
+  .gsd-stack-tag { transform: translateX(-50%); }
+  .gsd-goal .gsd-bar > i { width: 78%; }
+  .gsd-trib-n { width: 7.4em; border-right: 0; }
+  .gsd-fee-box { background: var(--g); }
+  .gsd-freq span:first-child, .gsd-gw-row:first-child { border-color: var(--g); background: #fdf8ec; color: var(--g); }
+  .gsd-cursor { display: none; }
+}
