@@ -65,13 +65,13 @@
 
 /* ── portfolio: two rows per carousel, denser ───────────────────────────── */
 .gni-two .gusa-track { display: grid !important; grid-auto-flow: column; grid-template-rows: 1fr 1fr; gap: 14px; }
-.gni-two .gusa-slide { width: clamp(188px, 23vw, 250px); }
-.gni-two .gusa-shot { height: clamp(116px, 14vw, 158px); }
+.gni-two .gusa-track .gusa-slide { width: clamp(188px, 23vw, 250px); }
+.gni-two .gusa-track .gusa-shot { height: clamp(116px, 14vw, 158px); }
 /* every screenshot travels its own page, on its own clock */
-.gni-two .gusa-shot img { animation: gni-scroll 15s ease-in-out infinite alternate; transition: none; }
-.gni-two .gusa-slide:nth-child(2n) .gusa-shot img { animation-duration: 19s; animation-delay: -4s; }
-.gni-two .gusa-slide:nth-child(3n) .gusa-shot img { animation-duration: 22s; animation-delay: -8s; }
-.gni-two .gusa-slide-name { margin-top: 7px; font-size: .8rem; }
+.gni-two .gusa-track .gusa-shot img { animation: gni-scroll 15s ease-in-out infinite alternate; transition: none; }
+.gni-two .gusa-track .gusa-slide:nth-child(2n) .gusa-shot img { animation-duration: 19s; animation-delay: -4s; }
+.gni-two .gusa-track .gusa-slide:nth-child(3n) .gusa-shot img { animation-duration: 22s; animation-delay: -8s; }
+.gni-two .gusa-track .gusa-slide-name { margin-top: 7px; font-size: .8rem; }
 
 @media (prefers-reduced-motion: reduce) {
   .gni-shot img, .gni-two .gusa-shot img { animation: none !important; object-position: center top; }
@@ -106,3 +106,82 @@
   font-size: 12.5px; font-weight: 600; color: #f5efe2; white-space: nowrap;
 }
 .gni-medal b { color: var(--gold-lt); font-weight: 800; }
+
+/* ── the library: two per row on phones, not one ────────────────────────── */
+/* .gusa-lib-grid auto-fills at a 240px minimum, which on a 390px screen can
+   only fit one. Scoped to .gni-two so /usa is untouched. */
+.gni-two .gusa-lib-grid .gusa-shot img { animation: gni-scroll 16s ease-in-out infinite alternate; transition: none; }
+.gni-two .gusa-lib-grid .gusa-slide:nth-child(2n) .gusa-shot img { animation-duration: 20s; animation-delay: -5s; }
+.gni-two .gusa-lib-grid .gusa-slide:nth-child(3n) .gusa-shot img { animation-duration: 24s; animation-delay: -9s; }
+
+@media (max-width: 719px) {
+  .gni-two .gusa-lib-grid { grid-template-columns: 1fr 1fr; gap: 11px; }
+  .gni-two .gusa-lib-grid .gusa-shot { height: 132px; }
+  .gni-two .gusa-lib-grid .gusa-slide-name { font-size: .76rem; margin-top: 6px; line-height: 1.3; }
+  .gni-two .gusa-lib-head { margin-bottom: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gni-two .gusa-lib-grid .gusa-shot img { animation: none !important; object-position: center top; }
+}
+
+/* The "double-tap to visit" hint is useful on a wide carousel card; stamped on
+   every tile of a two-up grid it covers the screenshot it is advertising.
+   Shrink it to a corner chip there. */
+@media (hover: none) and (max-width: 719px) {
+  .gni-two .gusa-lib-grid .gusa-taphint {
+    left: auto; right: 6px; bottom: 6px; transform: none;
+    font-size: .6rem; padding: 4px 8px; gap: 4px; animation: none; opacity: .82;
+  }
+  .gni-two .gusa-lib-grid .gusa-slide.gusa-tapped .gusa-taphint { opacity: 1; }
+}
+
+/* ── enquiry form (replaces the Calendly embed) ─────────────────────────── */
+.gnf { padding: clamp(44px, 6vw, 84px) clamp(16px, 5vw, 60px); background: var(--cream); }
+.gnf-in { max-width: 760px; margin: 0 auto; }
+.gnf-sub { text-align: center; color: var(--muted); font-size: clamp(14px, 1.6vw, 16px); line-height: 1.6; max-width: 56ch; margin: 0 auto clamp(26px, 3.5vw, 38px); }
+
+.gnf-form { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: clamp(18px, 3vw, 34px); box-shadow: 0 20px 50px -34px rgba(30,20,0,.5); }
+.gnf-q { border: 0; padding: 0; margin: 0 0 clamp(20px, 2.6vw, 28px); }
+.gnf-q:last-of-type { margin-bottom: 14px; }
+.gnf-q-h { display: flex; gap: 10px; align-items: flex-start; font-size: clamp(15px, 1.8vw, 17px); font-weight: 700; color: var(--navy); padding: 0; margin-bottom: 12px; line-height: 1.35; }
+.gnf-q-n { flex: none; width: 24px; height: 24px; border-radius: 8px; background: var(--gold); color: #fff; font-size: 12px; font-weight: 800; display: grid; place-items: center; margin-top: 1px; }
+.gnf-q-s { font-size: 13px; color: var(--muted); margin: -6px 0 13px 34px; }
+
+.gnf-opts { display: grid; gap: 9px; }
+@media (min-width: 620px) { .gnf-opts { grid-template-columns: 1fr 1fr; } }
+.gnf-opt {
+  display: flex; align-items: center; gap: 11px; border: 1.5px solid var(--line); border-radius: 12px;
+  padding: 13px 15px; font-size: 14px; cursor: pointer; background: #fff; line-height: 1.35;
+  transition: border-color .2s ease, background .2s ease, transform .2s ease;
+}
+.gnf-opt:hover { border-color: #d8c48c; }
+.gnf-opt.on { border-color: var(--gold); background: #fdf8ec; font-weight: 600; }
+.gnf-opt input { position: absolute; opacity: 0; width: 0; height: 0; }
+.gnf-opt:focus-within { outline: 2px solid var(--gold); outline-offset: 2px; }
+.gnf-dot { flex: none; width: 19px; height: 19px; border-radius: 50%; border: 2px solid #cfc3a8; position: relative; transition: border-color .2s ease; }
+.gnf-opt.on .gnf-dot { border-color: var(--gold); }
+.gnf-opt.on .gnf-dot::after { content: ''; position: absolute; inset: 3px; border-radius: 50%; background: var(--gold); }
+
+.gnf-fields { display: grid; gap: 12px; }
+@media (min-width: 620px) { .gnf-fields { grid-template-columns: 1fr 1fr; } }
+.gnf-f { display: flex; flex-direction: column; gap: 6px; }
+.gnf-f > span { font-size: 12.5px; font-weight: 600; color: var(--navy); }
+.gnf-f input {
+  border: 1.5px solid var(--line); border-radius: 11px; padding: 12px 14px; font: inherit; font-size: 14.5px;
+  background: #fff; color: var(--navy); width: 100%;
+}
+.gnf-f input:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(184,134,11,.14); }
+.gnf-f input::placeholder { color: #b6ad9c; }
+.gnf-f-wide { margin-top: 12px; }
+
+.gnf-same { display: flex; align-items: center; gap: 9px; margin-top: 13px; font-size: 13.5px; color: var(--muted); cursor: pointer; }
+.gnf-same input { width: 17px; height: 17px; accent-color: var(--gold); flex: none; }
+
+.gnf-err { color: #b3261e; background: #fdeceb; border: 1px solid #f3cfcc; border-radius: 10px; padding: 11px 14px; font-size: 13.5px; margin: 0 0 14px; }
+.gnf-send { width: 100%; justify-content: center; }
+.gnf-send[disabled] { opacity: .65; cursor: default; }
+.gnf-fine { font-size: 12.5px; color: var(--muted); text-align: center; margin: 14px 0 0; }
+.gnf-fine a { color: var(--gold); font-weight: 600; }
+
+.gnf-done { text-align: center; }
+.gnf-tick { width: 64px; height: 64px; border-radius: 50%; background: #e6f4ec; color: #1f7a46; display: grid; place-items: center; font-size: 31px; font-weight: 700; margin: 0 auto 16px; }

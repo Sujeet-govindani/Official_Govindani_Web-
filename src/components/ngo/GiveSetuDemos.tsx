@@ -324,7 +324,7 @@ export default function GiveSetuDemos({ onBook }: { onBook: () => void }) {
 
         <div className="gsd-foot">
           <p>All {FEATURES.length} features &middot; your own platform &middot; zero commission &mdash; from &#8377;40,000.</p>
-          <button type="button" className="gusa-btn" onClick={onBook}>Book a free walkthrough &rarr;</button>
+          <button type="button" className="gusa-btn" onClick={onBook}>Get a free consultation &rarr;</button>
         </div>
       </div>
     </section>

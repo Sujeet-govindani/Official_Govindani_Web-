@@ -3,6 +3,7 @@ import { NGO, type Work } from '@/data/usaWork';
 import '@/styles/usa.css';
 import '@/styles/ngo-india.css';
 import GiveSetuDemos from '@/components/ngo/GiveSetuDemos';
+import NgoLeadForm from '@/components/ngo/NgoLeadForm';
 
 /**
  * NGO landing page for the Indian market (/ngo).
@@ -13,11 +14,10 @@ import GiveSetuDemos from '@/components/ngo/GiveSetuDemos';
  * India registration.
  *
  * Standalone: the global bottom-nav and floating widgets are hidden on this
- * route. Every "Book" CTA opens the Calendly popup. Carousels auto-scroll;
+ * route. Every CTA drops to the enquiry form. Carousels auto-scroll;
  * "View all" opens the full NGO library.
  */
 
-const CALENDLY_URL = 'https://calendly.com/sujeet-govindaniit/30min';
 const WA = '919201958273';
 const R2 = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images';
 
@@ -44,11 +44,11 @@ function cardTap(e: React.MouseEvent<HTMLAnchorElement>) {
   }
 }
 
-// All "Book" CTAs open the Calendly popup (fast, no long scroll to a far-down form).
-function openCalendly() {
-  const C = (window as unknown as { Calendly?: { initPopupWidget: (o: { url: string }) => void } }).Calendly;
-  if (C) C.initPopupWidget({ url: CALENDLY_URL });
-  else window.open(CALENDLY_URL, '_blank', 'noopener,noreferrer');
+// Every CTA goes to the enquiry form. A trustee will not book a slot with a
+// stranger, but they will answer three questions.
+function goToForm() {
+  const el = document.getElementById('book');
+  if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
 }
 
 /* ---- auto-scrolling marquee carousel (pauses on hover) ---- */
@@ -169,21 +169,6 @@ export default function UsaLanding() {
     return () => io.disconnect();
   }, [viewAll, shown]);
 
-  useEffect(() => {
-    // Calendly popup assets
-    const css = document.createElement('link');
-    css.rel = 'stylesheet'; css.href = 'https://assets.calendly.com/assets/external/widget.css';
-    document.head.appendChild(css);
-    const s = document.createElement('script');
-    s.src = 'https://assets.calendly.com/assets/external/widget.js'; s.async = true;
-    document.body.appendChild(s);
-    return () => { css.remove(); s.remove(); };
-  }, []);
-
-
-
-
-
   return (
     <div className="gusa">
       {/* Title, description and social card (og:image = the designed /usa card)
@@ -202,7 +187,7 @@ export default function UsaLanding() {
             below reach millions &mdash; and they handed us their website.
           </p>
           <div className="gusa-hero-cta">
-            <button type="button" className="gusa-btn" onClick={openCalendly}>Book a free consultation &rarr;</button>
+            <button type="button" className="gusa-btn" onClick={goToForm}>Get a free consultation &rarr;</button>
             <a className="gusa-btn gusa-btn-ghost" href="#work">See our work</a>
           </div>
         </div>
@@ -262,7 +247,7 @@ export default function UsaLanding() {
           <p className="gusa-eyebrow gusa-meta-eyebrow">Officially recognised by Meta</p>
           <h2 className="gusa-h2"><em>Meta</em> approves a few. We made the cut.</h2>
           <p className="gusa-lead gusa-center">You don&rsquo;t take our word for it &mdash; you take Meta&rsquo;s. Govindani is a <strong>verified Meta Business Partner</strong>, vetted and badged by Meta itself to run your ads and growth.</p>
-          <button type="button" className="gusa-btn" onClick={openCalendly} style={{ marginTop: '20px' }}>Run ads with a Meta Partner &rarr;</button>
+          <button type="button" className="gusa-btn" onClick={goToForm} style={{ marginTop: '20px' }}>Run ads with a Meta Partner &rarr;</button>
         </div>
       </section>
 
@@ -298,7 +283,7 @@ export default function UsaLanding() {
         </div>
       </section>
 
-      <GiveSetuDemos onBook={openCalendly} />
+      <GiveSetuDemos onBook={goToForm} />
 
       {/* 6 — other projects (work carousels + library) */}
       <section className="gusa-work gni-two" id="work">
@@ -332,7 +317,7 @@ export default function UsaLanding() {
               <button type="button" className="gusa-btn gusa-btn-ghost" onClick={() => setShown((s) => Math.min(viewAll.items.length, s + STEP))}>Load more websites &darr;</button>
             </div>
           )}
-          <div className="gusa-all-cta"><button type="button" className="gusa-btn" onClick={openCalendly}>Get a website like these &rarr;</button></div>
+          <div className="gusa-all-cta"><button type="button" className="gusa-btn" onClick={goToForm}>Get a website like these &rarr;</button></div>
         </div>
       </section>
 
@@ -354,48 +339,16 @@ export default function UsaLanding() {
         </div>
       </section>
 
-      {/* legal / registration */}
-      <section className="gusa-legal">
-        <div className="gusa-legal-in">
-          <div className="gusa-legal-copy">
-            <p className="gusa-eyebrow">Registered &amp; accountable</p>
-            <h2 className="gusa-h2 gusa-h2-left">A registered company you can hold accountable</h2>
-            <p className="gusa-lead">Govindani Infotech Pvt. Ltd. is a company registered in India, with a US arm registered in Wyoming &mdash; so your trust contracts with a legally accountable company, not a freelancer who disappears after launch.</p>
-            <p className="gusa-addr">&#128205; 2nd Floor, Landmark Plaza, 206, Satara Rd, Pune, MH 411009</p>
-          </div>
-          <div className="gusa-legal-docs">
-            <figure className="gusa-doc">
-              <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/USA/wy-articles-of-organization.jpg" alt="Wyoming Articles of Organization — Govindani Infotech LLC" loading="lazy" />
-              <figcaption>Articles of Organization &middot; Wyoming Secretary of State<br /><span>Public filing ID 2025-001850382</span></figcaption>
-            </figure>
-            <div className="gusa-doc-badges">
-              <div className="gusa-badge-card"><span className="gusa-badge-ic">&#127482;&#127480;</span><div><h4>Registered US LLC</h4><p>Govindani Infotech LLC &middot; Wyoming, USA</p></div></div>
-              <div className="gusa-badge-card"><span className="gusa-badge-ic">&#127470;&#127475;</span><div><h4>Registered in India</h4><p>Govindani Infotech Pvt. Ltd. &middot; Pune, Maharashtra</p></div></div>
-              <div className="gusa-badge-card"><span className="gusa-badge-ic">&#128196;</span><div><h4>Full papers on request</h4><p>Operating agreement &amp; compliance docs shared during onboarding</p></div></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* thanks */}
       <section className="gusa-thanks">
         <h2 className="gusa-h2">Thank you for trusting us</h2>
         <p className="gusa-lead gusa-center">Every brand on this page put their vision in our hands &mdash; and we delivered. We&rsquo;d be honored to do the same for you.</p>
         <p className="gusa-usline gusa-usline-dark">&#127470;&#127475; Serving trusts, societies and foundations across India &middot; registered in Pune, Maharashtra</p>
-        <button type="button" className="gusa-btn" onClick={openCalendly} style={{ marginTop: '22px' }}>Book your free consultation &rarr;</button>
+        <button type="button" className="gusa-btn" onClick={goToForm} style={{ marginTop: '22px' }}>Start with three questions &rarr;</button>
       </section>
 
-      {/* inline booking — Calendly embedded directly in the page (no popup) */}
-      <section className="gusa-book" id="book">
-        <h2 className="gusa-h2">Book your free consultation</h2>
-        <p className="gusa-sub">Pick a time that works for you &mdash; it&rsquo;s booked instantly, right here.</p>
-        <p className="gusa-usline">&#127482;&#127480; Govindani Infotech LLC &middot; 30 N Gould St, Ste N, Sheridan, WY 82801 &middot; serving all 50 states</p>
-        <div className="gusa-book-frame">
-          <div className="calendly-inline-widget" data-url={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=fffdf8&primary_color=b8860b`} style={{ minWidth: '320px', height: '720px' }} />
-        </div>
-        <p className="gusa-book-fallback">Prefer to talk first? WhatsApp us at{' '}
-          <a href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer">+91 92019 58273</a>.</p>
-      </section>
+      {/* enquiry form — three qualifying questions, then contact details */}
+      <NgoLeadForm />
 
       {/* footer — one clean footer, both addresses */}
       <footer className="gusa-foot">
@@ -415,7 +368,7 @@ export default function UsaLanding() {
           <div className="gusa-foot-addr">
             <h5>Talk to us</h5>
             <p><a href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer">WhatsApp: +91 92019 58273</a><br />
-            <button type="button" className="gusa-foot-link" onClick={openCalendly}>Book a consultation</button></p>
+            <button type="button" className="gusa-foot-link" onClick={goToForm}>Talk to us</button></p>
           </div>
         </div>
         <p className="gusa-foot-sm">&copy; {new Date().getFullYear()} Govindani Infotech. All rights reserved.</p>
@@ -424,7 +377,7 @@ export default function UsaLanding() {
       {/* mobile sticky book bar */}
       <div className="gusa-sticky">
         <a className="gusa-sticky-wa" href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">&#128172;</a>
-        <button type="button" className="gusa-sticky-book" onClick={openCalendly}>Book a free consultation</button>
+        <button type="button" className="gusa-sticky-book" onClick={goToForm}>Get a free consultation</button>
       </div>
 
       {/* desktop floating book-a-call button (always visible) */}
@@ -432,9 +385,9 @@ export default function UsaLanding() {
         <a className="gusa-float-wa" href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us">
           <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2Zm5.8 14.09c-.24.68-1.42 1.32-1.95 1.37-.5.05-.96.23-3.23-.67-2.72-1.07-4.45-3.86-4.58-4.04-.13-.18-1.1-1.46-1.1-2.79s.7-1.98.95-2.25c.24-.27.53-.34.7-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.82 2 .89 2.14.07.14.12.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.27.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.79.86-1.07.18-.27.36-.22.59-.13.24.09 1.51.71 1.77.84.27.14.44.2.5.31.07.11.07.63-.17 1.31Z"/></svg>
         </a>
-        <button type="button" className="gusa-float-book" onClick={openCalendly}>
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-          Book a free call
+        <button type="button" className="gusa-float-book" onClick={goToForm}>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M4 5h16v12H7l-3 3z"/></svg>
+          Get a free consultation
         </button>
       </div>
 
