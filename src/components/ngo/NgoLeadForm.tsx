@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, useLayoutEffect } from 'react';
 import { createPortal } from 'react-dom';
 
 /**
@@ -16,7 +16,36 @@ import { createPortal } from 'react-dom';
  */
 
 const SHEET_URL =
-  'https://script.google.com/macros/s/AKfycbxaXavz15SJMeTef1SgZAvrAK4yZNkCVOuCInvCtns9vEgqzmYj1NWzaDs8t56TsoHp/exec';
+  'https://script.google.com/macros/s/AKfycbyCwHETPazQKcZvbKYif6hD_K3pN5bVDLRP01wJFeN8skkGUtix2cvYGHWJ5vpRVZuv5Q/exec';
+
+/**
+ * Leads alternate between the two telecallers. `sheet` is the tab the Apps
+ * Script writes the row into; `wa` is the number the lead is handed to on the
+ * thank-you screen, so they land in the right person's WhatsApp themselves.
+ */
+const AGENTS = [
+  { name: 'Lucky', sheet: 'Lucky', wa: '919201958271' },
+  { name: 'Sarita', sheet: 'Sarita', wa: '919201958274' },
+] as const;
+const TURN_KEY = 'gi.ngoindia.turn';
+
+/**
+ * Strict one-each alternation, remembered per browser. A global counter would
+ * need the round-robin to live in the Apps Script, which we cannot read back
+ * through a no-cors POST — so the first lead from each device starts on a
+ * random side and alternates from there, which evens out across volume.
+ */
+function nextAgent() {
+  let turn: number;
+  try {
+    const seen = window.localStorage.getItem(TURN_KEY);
+    turn = seen === null ? Math.floor(Math.random() * AGENTS.length) : (Number(seen) + 1) % AGENTS.length;
+    window.localStorage.setItem(TURN_KEY, String(turn));
+  } catch {
+    turn = Math.floor(Math.random() * AGENTS.length);   // private mode
+  }
+  return AGENTS[turn];
+}
 
 const QS = [
   {
@@ -47,7 +76,10 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
   const [err, setErr] = useState('');
   const [busy, setBusy] = useState(false);
   const [done, setDone] = useState(false);
+  const [agent, setAgent] = useState<(typeof AGENTS)[number]>(AGENTS[0]);
   const panelRef = useRef<HTMLDivElement>(null);
+  const railRef = useRef<HTMLDivElement>(null);
+  const [viewH, setViewH] = useState<number | undefined>(undefined);
 
   const set = (k: keyof typeof f) => (e: React.ChangeEvent<HTMLInputElement>) =>
     setF((p) => ({ ...p, [k]: e.target.value }));
@@ -60,6 +92,23 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
   };
 
   const close = useCallback(() => { onClose(); }, [onClose]);
+
+  // All four slides sit side by side, so a flex rail would make every one as
+  // tall as the tallest — leaving a lake of empty panel under a 4-option
+  // question. Measure the visible slide and let the panel follow it.
+  useLayoutEffect(() => {
+    if (!open) return;
+    const measure = () => {
+      const slide = railRef.current?.children[step] as HTMLElement | undefined;
+      if (slide) setViewH(slide.scrollHeight);
+    };
+    measure();
+    const ro = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(measure) : null;
+    const slide = railRef.current?.children[step] as HTMLElement | undefined;
+    if (slide && ro) ro.observe(slide);
+    window.addEventListener('resize', measure);
+    return () => { ro?.disconnect(); window.removeEventListener('resize', measure); };
+  }, [open, step, sameWa, err, busy]);
 
   useEffect(() => {
     if (!open) return;
@@ -90,6 +139,8 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
     if (!f.city.trim()) return setErr('Please enter your city.');
 
     const wa = (sameWa ? f.phone : f.whatsapp) || f.phone;
+    const who = nextAgent();
+    setAgent(who);
     setBusy(true);
     try {
       await fetch(SHEET_URL, {
@@ -107,10 +158,13 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
             `Budget (₹40,000): ${pick.budget}`,
             `WhatsApp: ${wa}`,
             `City: ${f.city}`,
+            `Assigned to: ${who.name}`,
           ].join('\n'),
           whatsapp: wa, city: f.city,
           requirement: pick.need, hasWebsite: pick.has, budget: pick.budget,
           source: '/ngoindia',
+          agent: who.name,          // who owns this lead
+          sheet: who.sheet,         // the tab the Apps Script should append to
         }),
       });
       setDone(true);
@@ -134,11 +188,17 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
             <div className="gnf-tick" aria-hidden="true">✓</div>
             <h3 className="gnf-done-h">Thank you, {f.name.split(' ')[0] || 'friend'}.</h3>
             <p className="gnf-done-s">
-              We have your details. Someone from our team will call you on <b>{f.phone}</b> within
-              one working day — usually much sooner.
+              We have your details. <b>{agent.name}</b> from our team will call you on{' '}
+              <b>{f.phone}</b> within one working day — usually much sooner.
             </p>
-            <a className="gnf-send" href="https://wa.me/919201958273" target="_blank" rel="noopener noreferrer">
-              Message us on WhatsApp now →
+            <a
+              className="gnf-send"
+              href={`https://wa.me/${agent.wa}?text=${encodeURIComponent(
+                `Hi ${agent.name}, I just filled the form on govindaniit.com for an NGO website. My name is ${f.name}, from ${f.city}.`,
+              )}`}
+              target="_blank" rel="noopener noreferrer"
+            >
+              Message {agent.name} on WhatsApp now →
             </a>
           </div>
         ) : (
@@ -152,8 +212,8 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
               <p className="gnf-count">Question {Math.min(step + 1, TOTAL)} of {TOTAL}</p>
             </div>
 
-            <div className="gnf-view">
-              <div className="gnf-rail" style={{ transform: `translateX(-${step * 100}%)` }}>
+            <div className="gnf-view" style={viewH ? { height: viewH } : undefined}>
+              <div className="gnf-rail" ref={railRef} style={{ transform: `translateX(-${step * 100}%)` }}>
                 {QS.map((Q) => (
                   <div className="gnf-slide" key={Q.k} aria-hidden={QS[step]?.k !== Q.k}>
                     <h3 className="gnf-q">{Q.q}</h3>
@@ -221,6 +281,10 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
                 Prefer WhatsApp?
               </a>
             </div>
+
+            {/* the price rides along the bottom of the panel — they are
+                answering questions, so the number has to stay in sight */}
+            <p className="gnf-price">Full NGO website at <b>₹40,000 only</b></p>
           </>
         )}
       </div>

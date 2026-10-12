@@ -36,7 +36,10 @@ const opt = (name, def) => {
 const PORT = +opt('port', 4180);
 const TIMEOUT = +opt('timeout', 45000);
 const CONCURRENCY = +opt('concurrency', 2);
-const ORIGIN = `http://127.0.0.1:${PORT}`;
+// Resolved after the server binds: if the requested port is taken — usually by
+// another project's dev server — we fall back to one the OS picks rather than
+// killing whatever is already listening.
+let ORIGIN = `http://127.0.0.1:${PORT}`;
 
 const MIME = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css',
@@ -124,7 +127,19 @@ function serve() {
         res.writeHead(500).end('error');
       }
     });
-    server.listen(PORT, '127.0.0.1', () => resolve(server));
+    server.once('error', (err) => {
+      if (err && err.code === 'EADDRINUSE') {
+        console.log(`  port ${PORT} is busy (another project is using it) — taking a free one`);
+        server.listen(0, '127.0.0.1');
+        return;
+      }
+      reject(err);
+    });
+    server.listen(PORT, '127.0.0.1');
+    server.once('listening', () => {
+      ORIGIN = `http://127.0.0.1:${server.address().port}`;
+      resolve(server);
+    });
   });
 }
 

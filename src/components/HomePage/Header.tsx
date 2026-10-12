@@ -582,7 +582,10 @@ const Header: React.FC = () => {
   // an industry and a platform before it would tell them anything, and we sell
   // one product to non-profits. E-commerce, WordPress and social pricing are no
   // longer offered from the menu at all.
-  const navItems = ['Home', 'About Us', 'Services', 'Portfolio', 'Whatsapp', 'Give Setu', 'Resources', 'Blog']
+  // Landing pages carry no nav: they are bought traffic with one job, and every
+  // menu item is a way to leave before the form is filled.
+  const bare = ['/ngoindia'].includes((location.pathname.replace(/\/+$/, '') || '/').toLowerCase());
+  const navItems = bare ? [] : ['Home', 'About Us', 'Services', 'Portfolio', 'Whatsapp', 'Give Setu', 'Resources', 'Blog']
     .filter((n) => n !== 'Give Setu' || showPricing);
   const dropdownItems = ['About Us', 'Services', 'Portfolio', 'Whatsapp', 'Resources'];
 
@@ -841,7 +844,7 @@ const Header: React.FC = () => {
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifySelf: 'end' }}>
             <LangToggle compact={screen === 'mobile'} ink={skin.ink} />
-            {screen !== 'mobile' ? (
+            {bare ? null : screen !== 'mobile' ? (
               <button className="get-quote-btn" onClick={() => navigate('/contact-us')} style={{ background: 'linear-gradient(135deg,#D4AF37,#B7950B)', color: '#0B1929', border: 'none', padding: '0.4rem 1rem', borderRadius: '50px', fontSize: '0.75rem', fontWeight: 700, cursor: 'pointer', transition: '0.3s', whiteSpace: 'nowrap' }}>Contact Us</button>
             ) : (
               <button

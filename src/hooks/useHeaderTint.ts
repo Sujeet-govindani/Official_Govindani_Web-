@@ -88,7 +88,7 @@ function skinFor(bg: RGB): HeaderSkin {
 }
 
 // Routes that always want a fixed dark-blue header, regardless of what's behind it.
-const FORCE_DARK = ['/usa', '/us'];
+const FORCE_DARK = ['/usa', '/us', '/ngoindia'];
 const isForceDark = () =>
   typeof window !== 'undefined' &&
   FORCE_DARK.includes((window.location.pathname.replace(/\/+$/, '') || '/').toLowerCase());
@@ -97,7 +97,9 @@ export function useHeaderSkin(): HeaderSkin {
   const [skin, setSkin] = useState<HeaderSkin>(() => skinFor(DEFAULT_BG));
 
   useEffect(() => {
-    // USA landing: pin the dark-blue header and skip colour sampling entirely.
+    // Landing pages: pin the dark-blue header and skip colour sampling. Their
+    // backgrounds are pale, so sampling turns the pill cream and the logo then
+    // needs its own dark plate — which reads as a broken, half-dark header.
     if (isForceDark()) { setSkin(skinFor(DEFAULT_BG)); return; }
     let frame = 0;
     const read = () => {

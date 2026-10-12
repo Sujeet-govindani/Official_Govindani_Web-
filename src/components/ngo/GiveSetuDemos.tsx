@@ -18,11 +18,11 @@ import '@/styles/ngo-demos.css';
  */
 
 const STAGE_STEPS = [
-  { k: 'amount', label: 'Donor picks an amount', ms: 1700 },
-  { k: 'monthly', label: 'Switches it to monthly', ms: 1900 },
-  { k: 'pay', label: 'Pays by UPI, card or net-banking', ms: 1800 },
+  { k: 'amount', label: 'Picks an amount', ms: 1700 },
+  { k: 'monthly', label: 'Makes it monthly', ms: 1900 },
+  { k: 'pay', label: 'Pays by UPI', ms: 1800 },
   { k: 'clear', label: 'Payment clears', ms: 1500 },
-  { k: 'receipt', label: '80G receipt is emailed as a PDF', ms: 3400 },
+  { k: 'receipt', label: '80G receipt emailed', ms: 3400 },
 ] as const;
 
 /** Adds `is-live` while the element is on screen, so CSS loops stay paused off-screen. */
@@ -94,12 +94,7 @@ function DonationStage() {
   return (
     <div className="gsd-hero" ref={wrapRef}>
       <div className="gsd-hero-copy">
-        <p className="gsd-eyebrow" style={{ textAlign: 'left' }}>Watch it work</p>
-        <h3>Your donor gives in four taps.<br />The 80G receipt writes itself.</h3>
-        <p>
-          No spreadsheet, no chasing your CA in March, nobody typing receipts by hand. This is the
-          actual flow on a Give Setu website &mdash; running by itself, right here.
-        </p>
+        <h3>Four taps. The 80G receipt<br />sends itself.</h3>
         <ol className="gsd-steps">
           {STAGE_STEPS.map((s, i) => (
             <li key={s.k} className={`gsd-step${i === step ? ' on' : ''}${i < step ? ' done' : ''}`}>
@@ -296,9 +291,7 @@ export default function GiveSetuDemos({ onBook }: { onBook: () => void }) {
   return (
     <section className="gsd gsd-wrap" id="how-it-works">
       <div className="gsd-in">
-        <p className="gsd-eyebrow">The platform, running</p>
         <h2 className="gsd-h2">Watch it work</h2>
-        <p className="gsd-sub">Live on this page &mdash; no video, no screenshots. Exactly what your donors and your admin team see.</p>
 
         <DonationStage />
 
@@ -324,7 +317,7 @@ export default function GiveSetuDemos({ onBook }: { onBook: () => void }) {
 
         <div className="gsd-foot">
           <p>All {FEATURES.length} features &middot; your own platform &middot; zero commission &mdash; from &#8377;40,000.</p>
-          <button type="button" className="gusa-btn" onClick={onBook}>Get a free consultation &rarr;</button>
+          <button type="button" className="gusa-btn" onClick={onBook}>Get quote &rarr;</button>
         </div>
       </div>
     </section>

@@ -174,24 +174,9 @@ export default function UsaLanding() {
 
       {/* header comes from the global site nav (full site, so visitors can explore everything) */}
 
-      {/* hero */}
-      <section className="gusa-hero">
-        <div className="gusa-hero-in">
-          <p className="gusa-eyebrow">Registered in India &middot; Pune, Maharashtra</p>
-          <h1 className="gusa-h1">500+ NGO websites built.<br /><em>Look who believed in us.</em></h1>
-          <p className="gusa-lead">
-            No other team in India has built donation platforms for this many causes. The trusts
-            below reach millions &mdash; and they handed us their website.
-          </p>
-          <div className="gusa-hero-cta">
-            <button type="button" className="gusa-btn" onClick={goToForm}>Get a free consultation &rarr;</button>
-            <a className="gusa-btn gusa-btn-ghost" href="#work">See our work</a>
-          </div>
-        </div>
-      </section>
-
-      {/* rotating trust strip */}
-      <div className="gusa-trustbar" aria-label="Why teams trust Govindani">
+      {/* rotating trust strip — now the opening element, so it carries the
+          header clearance the hero used to provide */}
+      <div className="gusa-trustbar gni-first" aria-label="Why teams trust Govindani">
         <div className="gusa-trusttrack" style={{ ['--tn' as string]: TRUST.length }}>
           {[...TRUST, ...TRUST].map((t, i) => (
             <span className="gusa-trustitem" key={`${t.t}-${i}`} aria-hidden={i >= TRUST.length}>
@@ -370,15 +355,23 @@ export default function UsaLanding() {
             <button type="button" className="gusa-foot-link" onClick={goToForm}>Talk to us</button></p>
           </div>
         </div>
+        <div className="gni-foot-price">
+          <p>Get your full NGO website at <b>&#8377;40,000 only</b></p>
+          <span>Donation-ready, 80G receipts, all 44 features &middot; zero commission, ever</span>
+          <button type="button" className="gni-foot-btn" onClick={goToForm}>Get quote &rarr;</button>
+        </div>
         <p className="gusa-foot-sm">&copy; {new Date().getFullYear()} Govindani Infotech. All rights reserved.</p>
       </footer>
 
       <NgoLeadForm open={formOpen} onClose={() => setFormOpen(false)} />
 
       {/* mobile sticky book bar */}
-      <div className="gusa-sticky">
-        <a className="gusa-sticky-wa" href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">&#128172;</a>
-        <button type="button" className="gusa-sticky-book" onClick={goToForm}>Get a free consultation</button>
+      <div className="gusa-sticky gni-sticky">
+        <p className="gni-sticky-price">Full NGO website at <b>&#8377;40,000 only</b></p>
+        <div className="gni-sticky-row">
+          <a className="gusa-sticky-wa" href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">&#128172;</a>
+          <button type="button" className="gusa-sticky-book" onClick={goToForm}>Get quote</button>
+        </div>
       </div>
 
       {/* desktop floating book-a-call button (always visible) */}
@@ -388,7 +381,7 @@ export default function UsaLanding() {
         </a>
         <button type="button" className="gusa-float-book" onClick={goToForm}>
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M4 5h16v12H7l-3 3z"/></svg>
-          Get a free consultation
+          Get quote
         </button>
       </div>
 
