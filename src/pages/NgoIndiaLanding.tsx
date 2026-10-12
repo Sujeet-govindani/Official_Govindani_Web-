@@ -1,6 +1,7 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
 import { NGO, type Work } from '@/data/usaWork';
 import '@/styles/usa.css';
+import '@/styles/ngo-india.css';
 import GiveSetuDemos from '@/components/ngo/GiveSetuDemos';
 
 /**
@@ -115,29 +116,22 @@ function Marquee({ items, onViewAll, label }: { items: Work[]; onViewAll: () => 
   );
 }
 
-// The advanced Give Setu plan — full power (no starter/growth comparison).
-const NGO_POWER: [string, string[]][] = [
-  ['Your own platform', ['A fully custom-coded website & donor platform — built for you, yours to own', 'Zero platform commission on donations, forever', 'Beautiful donor & member portals under your own brand']],
-  ['Donors & giving', ['Track unlimited donors — active, recurring and lapsed', 'One-time, recurring, tribute & anonymous giving', 'Recurring-donor self-service — donors manage their own gifts']],
-  ['Donation receipts & records', ['Automatic receipts emailed the moment a gift lands', 'Year-end donor statements and immutable records', '80G certificates issued automatically for your donors']],
-  ['Memberships & campaigns', ['Build membership tiers & plans for your community', 'Unlimited live cases & fundraising campaigns', 'Our team designs & builds fresh campaign cases for you every month']],
-  ['Marketing on autopilot', ['Create high-converting campaigns with AI in seconds', 'WhatsApp, email & SMS donor journeys — done for you', 'AI insights that tell you who to thank, nudge & re-engage']],
-  ['Compliance, built in', ['10BD / 10BE statements and 80G reporting, ready to file', 'Full contribution exports for your CA or trustees', 'Audit-ready trail on every transaction']],
-  ['Enterprise-grade & yours', ['Multiple payment gateways with automatic failover', 'Developer API & webhooks · generous media storage', 'Custom admin roles, priority support & a dedicated CA / auditor seat']],
-];
-// "On us" value props — the big reasons to say yes
-const NGO_INCLUDED = [
-  ['🎁', '100% custom-coded website', 'Yours for a lifetime, free — you only pay the subscription'],
-  ['🌐', 'Hosting is on us', 'Premium hosting handled for you, every year'],
-  ['🛠️', '1 full year of maintenance', 'Updates, fixes & support — on us'],
-  ['✉️', 'Marketing emails on us', 'Donor campaigns set up and sent for you'],
-  ['💬', 'Dedicated WhatsApp integration', 'Reach donors where they actually reply'],
-  ['🧾', 'Clean donor records', 'Exports, year-end statements and an audit-ready trail — built in'],
-];
 
 // Rotating trust strip items (icon + label). `meta` styles the ∞ in Meta blue.
+// The four we lead with. Ordered by Instagram reach, because the follower
+// count is the proof a trustee recognises before they read a word.
+const FLAGSHIPS = [
+  { n: 'Gau Seva Dham',          who: 'Devi Chitralekha',  f: '6.7M', u: 'https://gausevadham.org/',                      i: `${R2}/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Gau-Seva-Dham.webp`,                    p: `${R2}/devichitra.webp` },
+  { n: 'Popatbhai Foundation',   who: 'Popatbhai Trust',   f: '1.9M', u: 'https://popatbhaicharitablefoundation.org/',     i: `${R2}/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Popatbhai-Charitable-Trust.webp`,      p: `${R2}/Popat.webp` },
+  { n: 'Mahipatsinh Foundation', who: 'Mahipatsinh Chauhan', f: '1.3M', u: 'https://mahipatsinhfoundation.org/',          i: `${R2}/PortfolioSites/mahipatsinh.jpg`,                                                            p: `${R2}/founder-open.webp` },
+  { n: 'Harsh Chhikara Trust',   who: 'Harsh Chhikara',    f: '1.2M', u: 'https://harshchhikara.com/',                    i: `${R2}/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Harsh-Chhikkara-Jan-Seva-Trust.webp`,  p: `${R2}/harshi.webp` },
+];
+
 const TRUST: { ic: string; t: string; meta?: boolean }[] = [
   { ic: '🇮🇳', t: 'Registered in India · Pune' },
+  { ic: '📘', t: 'Founder authored 25+ books' },
+  { ic: '🏅', t: 'Guinness World Record holder' },
+  { ic: '▶️', t: 'YouTube Silver Button' },
   { ic: '∞', t: 'Meta Business Partner', meta: true },
   { ic: '✅', t: '8+ years, 1000+ sites delivered' },
   { ic: '🌐', t: '1000+ websites delivered' },
@@ -189,30 +183,6 @@ export default function UsaLanding() {
 
 
 
-  const NgoBlock = (
-    <section className="gusa-offer gusa-offer-ngo" key="ngo-offer">
-      <div className="gusa-offer-in">
-        <p className="gusa-eyebrow">For NGOs &amp; non-profits &middot; powered by Give Setu</p>
-        <h2 className="gusa-h2 gusa-h2-left">Your own donation-ready NGO website<br /><em>from just &#8377;40,000</em></h2>
-        <p className="gusa-lead">You get the <strong>complete advanced Give Setu plan</strong> &mdash; a full fundraising platform your trust owns outright. No crowdfunding commission, no listing pages, no cut of your donations.</p>
-        <div className="gusa-pwr-grid">
-          {NGO_POWER.map(([group, items]) => (
-            <div className="gusa-pwr" key={group}>
-              <h4 className="gusa-pwr-h">{group}</h4>
-              <ul className="gusa-ticks gusa-ticks-1">{items.map((f) => <li key={f}><span className="gusa-tick">&#10003;</span>{f}</li>)}</ul>
-            </div>
-          ))}
-        </div>
-        <p className="gusa-incl-head">Everything below is <em>on us</em> &mdash; you just run your cause</p>
-        <div className="gusa-incl">
-          {NGO_INCLUDED.map(([ic, t, d]) => (
-            <div className="gusa-incl-card" key={t}><span className="gusa-incl-ic">{ic}</span><div><h4>{t}</h4><p>{d}</p></div></div>
-          ))}
-        </div>
-        <button type="button" className="gusa-btn" onClick={openCalendly}>Get your NGO website &rarr;</button>
-      </div>
-    </section>
-  );
 
   return (
     <div className="gusa">
@@ -226,10 +196,10 @@ export default function UsaLanding() {
       <section className="gusa-hero">
         <div className="gusa-hero-in">
           <p className="gusa-eyebrow">Registered in India &middot; Pune, Maharashtra</p>
-          <h1 className="gusa-h1">Your own NGO website<br /><em>from just &#8377;40,000</em></h1>
+          <h1 className="gusa-h1">500+ NGO websites built.<br /><em>Look who believed in us.</em></h1>
           <p className="gusa-lead">
-            A donation-ready platform your trust owns outright &mdash; 80G receipts, recurring giving
-            and zero commission on every rupee you raise.
+            No other team in India has built donation platforms for this many causes. The trusts
+            below reach millions &mdash; and they handed us their website.
           </p>
           <div className="gusa-hero-cta">
             <button type="button" className="gusa-btn" onClick={openCalendly}>Book a free consultation &rarr;</button>
@@ -249,32 +219,39 @@ export default function UsaLanding() {
         </div>
       </div>
 
-      {/* featured top 3 */}
-      {(
-        <section className="gusa-usngo">
-          <div className="gusa-usngo-in">
-            <p className="gusa-eyebrow">&#11088; Top 3 &middot; Trusted by Indian non-profits</p>
-            <h2 className="gusa-h2">The best NGO websites we&rsquo;ve built</h2>
-            <p className="gusa-sub">Real donation-ready websites for registered trusts and societies, taking gifts from day one.</p>
-            <div className="gusa-usngo-grid">
-              {NGO.slice(0, 3).map((w) => (
-                <a key={w.n} className="gusa-usngo-card" href={w.u} onClick={cardTap} target="_blank" rel="noopener noreferrer">
-                  <div className="gusa-usngo-shot"><img src={w.i} alt={`${w.n} — NGO website by Govindani Infotech`} loading="lazy" /><span className="gusa-taphint" aria-hidden="true">👆 Double-tap to visit</span></div>
-                  <span className="gusa-usngo-name">{w.n} <em>&#8599;</em></span>
-                </a>
-              ))}
-            </div>
+      {/* the four flagships — follower count first, it is the proof they recognise */}
+      <section className="gni-flag">
+        <div className="gni-flag-in">
+          <p className="gusa-eyebrow" style={{ textAlign: 'center' }}>Who believed in us</p>
+          <h2 className="gusa-h2">The biggest names in Indian seva<br /><em>trusted us with their website</em></h2>
+          <p className="gusa-sub">Between them they reach over 11 million people. Every one of these sites takes donations, issues 80G receipts and is live right now.</p>
+          <div className="gni-grid">
+            {FLAGSHIPS.map((w, idx) => (
+              <a key={w.n} className="gni-card" href={w.u} onClick={cardTap} target="_blank" rel="noopener noreferrer">
+                <div className="gni-shot">
+                  <img src={w.i} alt={`${w.n} — NGO website built by Govindani Infotech`} loading="lazy" decoding="async" />
+                  <span className="gni-rank">{idx + 1}</span>
+                  <span className="gni-foll">
+                    <span className="gni-ig" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="#fff" stroke="none"/></svg>
+                    </span>
+                    <span>
+                      <span className="gni-foll-n">{w.f}+</span>
+                      <span className="gni-foll-l">followers</span>
+                    </span>
+                  </span>
+                </div>
+                <div className="gni-body">
+                  <img className="gni-face" src={w.p} alt={w.who} loading="lazy" decoding="async" onError={(e) => { (e.currentTarget as HTMLImageElement).style.visibility = 'hidden'; }} />
+                  <div>
+                    <p className="gni-name">{w.n}</p>
+                    <p className="gni-who">{w.who}</p>
+                  </div>
+                  <span className="gni-go">Visit &#8599;</span>
+                </div>
+              </a>
+            ))}
           </div>
-        </section>
-      )}
-
-      {/* 1000+ websites & counting (stat band) */}
-      <section className="gusa-stat">
-        <div className="gusa-stat-in">
-          <p className="gusa-stat-num">1000+</p>
-          <h2 className="gusa-h2">websites built &mdash; and counting</h2>
-          <p className="gusa-sub">Live, custom-built websites for trusts, societies and foundations across India.</p>
-          <button type="button" className="gusa-btn" onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>See our work &darr;</button>
         </div>
       </section>
 
@@ -289,14 +266,42 @@ export default function UsaLanding() {
         </div>
       </section>
 
-      {/* 5 — our functionalities (tailored offer blocks) */}
-      {/* the platform running by itself — demos sell this better than the list below */}
+      {/* the counter sits after the Meta badge: proof, then scale */}
+      <section className="gni-count">
+        <div className="gni-count-in">
+          <div className="gni-count-i"><div className="gni-count-n">500+</div><div className="gni-count-l">NGO websites built</div></div>
+          <div className="gni-count-i"><div className="gni-count-n">&#8377;1100 Cr+</div><div className="gni-count-l">donations processed</div></div>
+          <div className="gni-count-i"><div className="gni-count-n">8+ yrs</div><div className="gni-count-l">building for causes</div></div>
+          <div className="gni-count-i"><div className="gni-count-n">0%</div><div className="gni-count-l">commission, ever</div></div>
+        </div>
+      </section>
+
+      {/* cherry on top: they are not hiring an agency, they are hiring him */}
+      <section className="gni-founder">
+        <div className="gni-founder-in">
+          <img className="gni-founder-pic" src={`${R2}/Sujeetsir.webp`} alt="Sujeet Govindani, founder of Govindani Infotech" loading="lazy" decoding="async" />
+          <div>
+            <p className="gni-founder-k">And the person behind it</p>
+            <h2 className="gni-founder-h">You won&rsquo;t be handed to an account manager.<br /><em>You work with Sujeet Govindani.</em></h2>
+            <p className="gni-founder-p">
+              Founder of Govindani Infotech, author of 25+ books including <em>101 Startup Ideas</em>,
+              and the person who has personally overseen 500+ NGO websites. Your cause gets the
+              same attention his own work does.
+            </p>
+            <div className="gni-medals">
+              <span className="gni-medal">&#128216; <b>25+</b> books authored</span>
+              <span className="gni-medal">&#127941; Guinness World Record holder</span>
+              <span className="gni-medal">&#9654;&#65039; YouTube <b>Silver Button</b></span>
+              <span className="gni-medal">&#8734; Meta Business Partner</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <GiveSetuDemos onBook={openCalendly} />
 
-      {NgoBlock}
-
       {/* 6 — other projects (work carousels + library) */}
-      <section className="gusa-work" id="work">
+      <section className="gusa-work gni-two" id="work">
         <h2 className="gusa-h2">Explore more of our work</h2>
         <p className="gusa-sub">Every site is live and custom-built. Drag or swipe to browse &middot; tap &ldquo;View all&rdquo; for the full library.</p>
         <Marquee label="Non-profit & NGO websites" items={NGO.slice(0, 14)} onViewAll={() => openAll('Non-profit & NGO websites', NGO)} />

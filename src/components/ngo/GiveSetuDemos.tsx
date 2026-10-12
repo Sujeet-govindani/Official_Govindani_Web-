@@ -297,11 +297,8 @@ export default function GiveSetuDemos({ onBook }: { onBook: () => void }) {
     <section className="gsd gsd-wrap" id="how-it-works">
       <div className="gsd-in">
         <p className="gsd-eyebrow">The platform, running</p>
-        <h2 className="gsd-h2">Don&rsquo;t read the feature list.<br /><em>Watch it do the work.</em></h2>
-        <p className="gsd-sub">
-          Everything below is live on the page &mdash; no video, no screenshots. This is what your
-          donors and your admin team actually see.
-        </p>
+        <h2 className="gsd-h2">Watch it work</h2>
+        <p className="gsd-sub">Live on this page &mdash; no video, no screenshots. Exactly what your donors and your admin team see.</p>
 
         <DonationStage />
 
@@ -310,7 +307,7 @@ export default function GiveSetuDemos({ onBook }: { onBook: () => void }) {
         </div>
 
         <div className="gsd-all">
-          <h3 className="gsd-all-h">And the other {FEATURES.length - demos.length}. All of them. Included.</h3>
+          <h3 className="gsd-all-h">All {FEATURES.length} features. Every one included.</h3>
           <p className="gsd-all-s">Not add-ons, not an upgrade tier &mdash; this is the whole platform you own.</p>
           <div className="gsd-all-grid">
             {FEATURES.map((f) => (
@@ -326,7 +323,7 @@ export default function GiveSetuDemos({ onBook }: { onBook: () => void }) {
         </div>
 
         <div className="gsd-foot">
-          <p>All {FEATURES.length} features, your own platform, zero commission &mdash; from ₹40,000.</p>
+          <p>All {FEATURES.length} features &middot; your own platform &middot; zero commission &mdash; from &#8377;40,000.</p>
           <button type="button" className="gusa-btn" onClick={onBook}>Book a free walkthrough &rarr;</button>
         </div>
       </div>
