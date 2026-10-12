@@ -12,7 +12,8 @@
  * whole site's copy to read one page.
  */
 
-export type Lang = 'en' | 'hi';
+export type Lang = 'en' | 'hi' | 'mr';
+const TRANSLATED: Lang[] = ['hi', 'mr'];
 const KEY = 'gi.lang';
 const SKIP = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'CODE', 'PRE', 'TEXTAREA', 'SVG']);
 const ATTRS = ['alt', 'title', 'placeholder', 'aria-label'] as const;
@@ -31,7 +32,8 @@ const attrOriginals = new WeakMap<Element, Map<string, string>>();
 
 export function getLang(): Lang {
   if (typeof window === 'undefined') return 'en';
-  return window.localStorage.getItem(KEY) === 'hi' ? 'hi' : 'en';
+  const v = window.localStorage.getItem(KEY) as Lang | null;
+  return v && TRANSLATED.includes(v) ? v : 'en';
 }
 
 function pageSlug(): string {
@@ -39,11 +41,11 @@ function pageSlug(): string {
   return p ? p.replace(/[^a-z0-9]+/gi, '-').toLowerCase() : 'home';
 }
 
-async function loadDict(): Promise<void> {
+async function loadDict(lang: Lang): Promise<void> {
   const want = ['common', pageSlug()];
   const parts = await Promise.all(
     want.map((n) =>
-      fetch(`/i18n/hi/${n}.json`)
+      fetch(`/i18n/${lang}/${n}.json`)
         .then((r) => (r.ok ? r.json() : {}))
         .catch(() => ({})),
     ),
@@ -145,7 +147,17 @@ export async function setLang(lang: Lang, persist = true): Promise<void> {
     }
     return;
   }
-  await loadDict();
+  // Switching between two translated languages must pass through English
+  // first: the dictionaries are keyed on the ENGLISH source, so applying
+  // Marathi over Hindi text matches nothing and the page stays Hindi.
+  observer?.disconnect();
+  observer = null;
+  applying = true;
+  restore(document.body);
+  if (originalTitle !== null) { document.title = originalTitle; originalTitle = null; }
+  applying = false;
+
+  await loadDict(lang);
   applying = true;
   translateNode(document.body);
   const dt = dict[norm(document.title)];
@@ -159,9 +171,11 @@ export async function setLang(lang: Lang, persist = true): Promise<void> {
 
 /** Re-run after a client-side route change: a new page needs its own slice. */
 export async function refreshLang(): Promise<void> {
-  if (getLang() === 'hi') await setLang('hi');
+  const l = getLang();
+  if (l !== 'en') await setLang(l);
 }
 
 export async function initLang(): Promise<void> {
-  if (getLang() === 'hi') await setLang('hi');
+  const l = getLang();
+  if (l !== 'en') await setLang(l);
 }

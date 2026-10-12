@@ -44,12 +44,7 @@ function cardTap(e: React.MouseEvent<HTMLAnchorElement>) {
   }
 }
 
-// Every CTA goes to the enquiry form. A trustee will not book a slot with a
-// stranger, but they will answer three questions.
-function goToForm() {
-  const el = document.getElementById('book');
-  if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
-}
+
 
 /* ---- auto-scrolling marquee carousel (pauses on hover) ---- */
 function Marquee({ items, onViewAll, label }: { items: Work[]; onViewAll: () => void; label: string }) {
@@ -152,6 +147,8 @@ export default function UsaLanding() {
   // "View all" buttons just swap which set it shows.
   const [viewAll, setViewAll] = useState<{ label: string; items: Work[] }>({ label: 'Our NGO websites', items: NGO });
   const STEP = 15;
+  const [formOpen, setFormOpen] = useState(false);
+  const goToForm = useCallback(() => setFormOpen(true), []);
   const [shown, setShown] = useState(STEP);
   const feedRef = useRef<HTMLDivElement>(null);
   const openAll = useCallback((label: string, items: Work[]) => {
@@ -291,12 +288,17 @@ export default function UsaLanding() {
         <p className="gusa-sub">Every site is live and custom-built. Drag or swipe to browse &middot; tap &ldquo;View all&rdquo; for the full library.</p>
         <Marquee label="Non-profit & NGO websites" items={NGO.slice(0, 14)} onViewAll={() => openAll('Non-profit & NGO websites', NGO)} />
 
-        <div className="gusa-allbanner">
-          <div>
-            <h3>500+ NGO websites built &mdash; explore the library</h3>
-            <p>Donation-ready websites for trusts, societies and foundations across India.</p>
+        {/* Stays pinned while the portfolio scrolls past, so the number is in
+            view the whole way down instead of being a box they scroll past once. */}
+        <div className="gni-pin">
+          <div className="gni-pin-in">
+            <span className="gni-pin-n">500<i>+</i></span>
+            <span className="gni-pin-t">
+              <b>NGO websites built</b>
+              <em>&mdash; and you&rsquo;re looking at them</em>
+            </span>
+            <button type="button" className="gni-pin-btn" onClick={() => openAll('Our NGO work', NGO)}>Browse all &rarr;</button>
           </div>
-          <button type="button" className="gusa-btn" onClick={() => openAll('Our NGO work', NGO)}>Browse our work &rarr;</button>
         </div>
 
         {/* inline library — auto-feeds more as you scroll (no pages, no gaps) */}
@@ -347,9 +349,6 @@ export default function UsaLanding() {
         <button type="button" className="gusa-btn" onClick={goToForm} style={{ marginTop: '22px' }}>Start with three questions &rarr;</button>
       </section>
 
-      {/* enquiry form — three qualifying questions, then contact details */}
-      <NgoLeadForm />
-
       {/* footer — one clean footer, both addresses */}
       <footer className="gusa-foot">
         <div className="gusa-foot-in">
@@ -373,6 +372,8 @@ export default function UsaLanding() {
         </div>
         <p className="gusa-foot-sm">&copy; {new Date().getFullYear()} Govindani Infotech. All rights reserved.</p>
       </footer>
+
+      <NgoLeadForm open={formOpen} onClose={() => setFormOpen(false)} />
 
       {/* mobile sticky book bar */}
       <div className="gusa-sticky">

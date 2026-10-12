@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { getLang, setLang, type Lang } from './siteLang';
 import { LANG_LIVE, usePreviewVisible } from '../config/flags';
 
-/** EN / हिं pill. Sits beside the header CTA on desktop, in the menu on mobile. */
+/** EN / हिं / मरा pill. Sits beside the header CTA on desktop, in the menu on mobile. */
 export default function LangToggle(
   { compact = false, ink = '#ffffff' }: { compact?: boolean; ink?: string },
 ) {
@@ -26,7 +26,7 @@ export default function LangToggle(
       key={v}
       onClick={() => pick(v)}
       aria-pressed={lang === v}
-      aria-label={v === 'hi' ? 'Switch to Hindi' : 'Switch to English'}
+      aria-label={v === 'hi' ? 'Switch to Hindi' : v === 'mr' ? 'Switch to Marathi' : 'Switch to English'}
       style={{
         background: lang === v ? 'rgba(212,175,55,0.9)' : 'transparent',
         color: lang === v ? '#0B1929' : ink,
@@ -61,6 +61,7 @@ export default function LangToggle(
     >
       {btn('en', 'EN')}
       {btn('hi', 'हिं')}
+      {btn('mr', 'मरा')}
     </div>
   );
 }
