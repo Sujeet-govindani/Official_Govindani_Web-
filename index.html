@@ -109,6 +109,17 @@
           href="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Popat.webp"
           imagesrcset="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Popat-480w.webp 480w, https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Popat-800w.webp 800w, https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Popat.webp 1700w"
           imagesizes="(max-width: 640px) 60vw, (max-width: 1024px) 40vw, 30vw" />
+
+    <!-- Meta Pixel — ad attribution for the paid landing pages.
+         The Lead event listens on the capture phase so it catches every form
+         on the site, including the /ngoindia enquiry popup, which submits
+         a real form element rather than a click handler. -->
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init','1351631835898180'); fbq('track','PageView');
+      document.addEventListener('submit', function(){ fbq('track','Lead'); }, true);
+    </script>
+
   </head>
 
   <body>

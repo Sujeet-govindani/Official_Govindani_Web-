@@ -188,17 +188,17 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
             <div className="gnf-tick" aria-hidden="true">✓</div>
             <h3 className="gnf-done-h">Thank you, {f.name.split(' ')[0] || 'friend'}.</h3>
             <p className="gnf-done-s">
-              We have your details. <b>{agent.name}</b> from our team will call you on{' '}
+              We have your details. <b>Our team</b> will call you on{' '}
               <b>{f.phone}</b> within one working day — usually much sooner.
             </p>
             <a
               className="gnf-send"
               href={`https://wa.me/${agent.wa}?text=${encodeURIComponent(
-                `Hi ${agent.name}, I just filled the form on govindaniit.com for an NGO website. My name is ${f.name}, from ${f.city}.`,
+                'Hi, I want to get more details about the NGO website.',
               )}`}
               target="_blank" rel="noopener noreferrer"
             >
-              Message {agent.name} on WhatsApp now →
+              Message our team on WhatsApp now →
             </a>
           </div>
         ) : (
@@ -273,14 +273,11 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
               </div>
             </div>
 
-            <div className="gnf-foot">
-              {step > 0 ? (
+            {step > 0 && (
+              <div className="gnf-foot">
                 <button type="button" className="gnf-prev" onClick={() => { setErr(''); setStep((s) => s - 1); }}>← Back</button>
-              ) : <span />}
-              <a className="gnf-wa" href="https://wa.me/919201958273" target="_blank" rel="noopener noreferrer">
-                Prefer WhatsApp?
-              </a>
-            </div>
+              </div>
+            )}
 
             {/* the price rides along the bottom of the panel — they are
                 answering questions, so the number has to stay in sight */}
