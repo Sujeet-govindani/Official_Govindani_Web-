@@ -1,0 +1,149 @@
+/* ───────────────────────────────────────────────────────────────────────────
+   A single job opening, on our own domain — namespaced .gcr-
+   The advert reads as a page; the form sits beside it on a desktop and under
+   it on a phone, so the ask is always one scroll from the pitch.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+.gcr {
+  --navy: #0b1929;
+  --gold: #b8860b;
+  --gold-lt: #dca63a;
+  --ink: #1a1a22;
+  --muted: #6b6357;
+  --line: #ece3d3;
+  --cream: #faf6ee;
+  --wa: #25d366;
+  background: #fffdf8;
+  color: var(--ink);
+  font-family: 'Sora', system-ui, sans-serif;
+}
+.gcr *, .gcr *::before, .gcr *::after { box-sizing: border-box; }
+
+/* ── hero ───────────────────────────────────────────────────────────────── */
+/* The hero is the page's first <section>, and a global mobile rule zeroes the
+   top padding of that element — which slid the title up under the fixed header.
+   The clearance therefore lives on the inner wrapper, which no such rule names,
+   so the navy still starts at the top of the page. */
+.gcr-hero {
+  background: var(--navy); color: #f5efe2;
+  padding: 0 clamp(16px, 5vw, 60px) clamp(40px, 6vw, 72px);
+}
+.gcr-hero-in {
+  max-width: 920px; margin: 0 auto;
+  padding-top: calc(var(--header-offset, 132px) + clamp(8px, 2vw, 24px));
+}
+.gcr-kicker {
+  font-size: 11.5px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase;
+  color: var(--gold-lt); margin: 0 0 12px;
+}
+.gcr-h1 {
+  font-family: 'Libre Baskerville', Georgia, serif; font-weight: 700;
+  font-size: clamp(30px, 5.6vw, 54px); line-height: 1.12; margin: 0 0 10px; color: #fff;
+  text-wrap: balance;
+}
+.gcr-sub { font-size: clamp(14px, 1.7vw, 16px); color: rgba(245, 239, 226, .76); margin: 0 0 18px; }
+
+.gcr-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: clamp(20px, 3vw, 28px); }
+.gcr-chip {
+  display: inline-flex; align-items: center; background: rgba(255, 255, 255, .07);
+  border: 1px solid rgba(220, 166, 58, .34); border-radius: 99px; padding: 7px 15px;
+  font-size: 12.5px; font-weight: 600; color: #f5efe2; white-space: nowrap;
+}
+
+.gcr-hero-cta {
+  display: inline-block; border-radius: 99px; padding: 14px 30px; text-decoration: none;
+  font-weight: 700; font-size: 15px; color: #3a2500;
+  background: linear-gradient(135deg, #c8a84b 0%, #f4e5b8 45%, #c8a84b 100%);
+  box-shadow: 0 10px 26px rgba(184, 134, 11, .34);
+}
+.gcr-hero-note { font-size: 13.5px; color: rgba(245, 239, 226, .7); margin: 16px 0 0; }
+.gcr-hero-note b { color: var(--gold-lt); font-weight: 700; }
+
+/* ── two columns, advert and form ───────────────────────────────────────── */
+.gcr-body {
+  max-width: 1120px; margin: 0 auto;
+  padding: clamp(34px, 5vw, 64px) clamp(16px, 5vw, 60px) clamp(50px, 7vw, 90px);
+  display: grid; gap: clamp(26px, 4vw, 48px);
+  /* minmax(0,…) or the form column refuses to shrink and the page scrolls sideways */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
+  align-items: start;
+}
+@media (max-width: 899px) { .gcr-body { grid-template-columns: minmax(0, 1fr); } }
+
+.gcr-h2 {
+  font-family: 'Libre Baskerville', Georgia, serif; font-size: clamp(18px, 2.3vw, 23px);
+  color: var(--navy); margin: clamp(22px, 3vw, 32px) 0 10px; line-height: 1.3;
+}
+.gcr-main > .gcr-h2:first-child { margin-top: 0; }
+.gcr-p { font-size: clamp(14.5px, 1.6vw, 16px); line-height: 1.68; color: #413b33; margin: 0 0 6px; max-width: 62ch; }
+
+.gcr-list, .gcr-steps { margin: 6px 0 0; padding-left: 22px; max-width: 62ch; }
+/* the site's global reset strips list markers, and an unmarked list of skills
+   reads as loose sentences — put them back for this page only */
+.gcr-list { list-style: disc outside; }
+.gcr-steps { list-style: decimal outside; }
+.gcr-list li::marker, .gcr-steps li::marker { color: var(--gold); }
+.gcr-list li, .gcr-steps li { font-size: clamp(14px, 1.55vw, 15.5px); line-height: 1.62; color: #413b33; margin: 7px 0; }
+.gcr-list b, .gcr-steps b { color: var(--navy); }
+.gcr-steps { padding-left: 20px; }
+
+/* ── the form card ──────────────────────────────────────────────────────── */
+.gcr-apply {
+  background: #fff; border: 1px solid var(--line); border-radius: 20px;
+  padding: clamp(20px, 2.6vw, 28px);
+  box-shadow: 0 26px 60px -34px rgba(30, 20, 0, .45);
+  position: sticky; top: calc(var(--header-bottom, 100px) + 18px);
+}
+@media (max-width: 899px) { .gcr-apply { position: static; } }
+
+.gcr-apply-h { font-family: 'Libre Baskerville', Georgia, serif; font-size: 19px; color: var(--navy); margin: 0 0 6px; }
+.gcr-apply-s { font-size: 13px; color: var(--muted); line-height: 1.55; margin: 0 0 16px; }
+
+.gcr-fields { display: grid; gap: 11px; grid-template-columns: 1fr 1fr; }
+@media (max-width: 460px) { .gcr-fields { grid-template-columns: 1fr; } }
+.gcr-f { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+.gcr-f-wide { grid-column: 1 / -1; }
+.gcr-f > span { font-size: 12px; font-weight: 600; color: var(--navy); }
+.gcr-req { color: #b3261e; font-style: normal; }
+.gcr-f input {
+  width: 100%; border: 1.5px solid var(--line); border-radius: 11px; padding: 11px 13px;
+  font: inherit; font-size: 14.5px; background: #fff; color: var(--navy);
+}
+.gcr-f input:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(184, 134, 11, .14); }
+.gcr-f input::placeholder { color: #b6ad9c; }
+
+.gcr-trap { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+
+.gcr-err {
+  color: #b3261e; background: #fdeceb; border: 1px solid #f3cfcc; border-radius: 10px;
+  padding: 10px 13px; font-size: 13px; margin: 14px 0 0;
+}
+
+.gcr-send {
+  display: block; width: 100%; margin-top: 16px; border: 0; border-radius: 12px; padding: 14px;
+  font: inherit; font-weight: 700; font-size: 15px; color: #3a2500; cursor: pointer;
+  background: linear-gradient(135deg, #c8a84b 0%, #f4e5b8 45%, #c8a84b 100%);
+  box-shadow: 0 8px 22px rgba(184, 134, 11, .3);
+}
+.gcr-send[disabled] { opacity: .6; cursor: default; }
+.gcr-fine { font-size: 11.5px; color: var(--muted); line-height: 1.5; margin: 12px 0 0; text-align: center; }
+
+/* ── applied ────────────────────────────────────────────────────────────── */
+.gcr-done { text-align: center; padding: clamp(6px, 1.5vw, 14px) 0; }
+.gcr-tick {
+  width: 58px; height: 58px; border-radius: 50%; background: #e6f4ec; color: #1f7a46;
+  display: grid; place-items: center; font-size: 28px; font-weight: 700; margin: 0 auto 14px;
+}
+.gcr-done-h { font-family: 'Libre Baskerville', Georgia, serif; font-size: 21px; color: var(--navy); margin: 0 0 8px; }
+.gcr-done-p { font-size: 14px; color: var(--muted); line-height: 1.6; margin: 0 0 18px; }
+.gcr-done-p b { color: var(--navy); }
+.gcr-wa {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  background: var(--wa); color: #fff; text-decoration: none; font-weight: 700; font-size: 15.5px;
+  padding: 15px 20px; border-radius: 12px; box-shadow: 0 10px 26px -8px rgba(37, 211, 102, .6);
+}
+.gcr-done-s { font-size: 12px; color: var(--muted); line-height: 1.5; margin: 12px 0 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .gcr-hero-cta, .gcr-send, .gcr-wa { transition: none !important; }
+}

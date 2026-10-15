@@ -43,6 +43,7 @@ const NgoPage = lazy(() => import("./pages/NgoPage"));
 const ContactUsPage = lazy(() => import("./pages/ContactUsPage"));
 // Import Careers page
 const CareersPage = lazy(() => import("./pages/CareersPage"));
+const CareerSmmLanding = lazy(() => import("./pages/CareerSmmLanding"));
 // Import other pages as needed
 
 
@@ -245,6 +246,7 @@ const App = () => (
             <Route path="/services/seo" element={<SEOSection />} />
             <Route path="/tutorials/ngo-videos" element={<NGOVideos />} />
             <Route path="/careers" element={<CareersPage />} />
+            <Route path="/careers/social-media-marketer" element={<CareerSmmLanding />} />
 
             {/* social media pages */}
         <Route path="/services/social-media" element={<SocialMediaOverviewPage />} />

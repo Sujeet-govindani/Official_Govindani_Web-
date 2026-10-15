@@ -365,6 +365,11 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "description": "We craft premium digital experiences from bespoke web architectures to intelligent AI integrations for brands that refuse to settle for ordinary.",
     "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-givesetu.jpg"
   },
+  "/careers/social-media-marketer": {
+    "title": "Social Media Marketer Job in Pune | Govindani Infotech Careers",
+    "description": "We're hiring a Social Media Marketer in Pune \u2014 reels, design, content and Meta/Google ads. Apply in two minutes; the first interview round starts on WhatsApp.",
+    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-usa-v2.jpg"
+  },
   "/careers": {
     "title": "Innovate Create Transform the Digital Future",
     "description": "Join our passionate team shaping the future of digital marketing and IT solutions. Where innovation meets excellence."

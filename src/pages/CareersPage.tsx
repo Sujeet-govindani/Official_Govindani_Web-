@@ -242,6 +242,30 @@ const Career = () => {
         </motion.div>
       </motion.section>
 
+      {/* ── The opening that is actually live right now ───────────────────── */}
+      {/* The rest of this page sells the company; a candidate who is ready to
+          apply today needs the one role we are hiring for, not another scroll. */}
+      <section className="px-4 sm:px-6 md:px-12 lg:px-16 -mt-2 pb-2">
+        <a
+          href="/careers/social-media-marketer"
+          className="group relative z-10 mx-auto flex max-w-5xl flex-col gap-4 rounded-2xl border border-[#d4af37]/40 bg-gradient-to-r from-[#d4af37]/[0.12] to-[#d4af37]/[0.03] p-5 sm:p-6 no-underline transition-colors hover:border-[#d4af37]/80 sm:flex-row sm:items-center"
+        >
+          <span className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.15em] text-[#d4af37]">
+            <span className="h-2 w-2 rounded-full bg-[#d4af37]" />
+            Open position
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-lg font-bold text-white sm:text-xl">Social Media Marketer</span>
+            <span className="block text-sm text-white/60">
+              Pune, in-office &middot; full-time &middot; your first interview round starts on WhatsApp
+            </span>
+          </span>
+          <span className="flex-none rounded-full bg-gradient-to-r from-[#d4af37] to-[#f4e5b8] px-6 py-3 text-sm font-bold text-black transition-transform group-hover:scale-[1.03]">
+            View &amp; apply &rarr;
+          </span>
+        </a>
+      </section>
+
       {/* ── Carousel ─────────────────────────────────────────────────────── */}
       <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 lg:px-16 relative overflow-hidden bg-black">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-[#0a0a0a] to-black" />

@@ -190,6 +190,41 @@ export function schemaFor(pathname: string) {
     };
   }
 
+  // A live opening — JobPosting is what puts it in Google for Jobs. Dates and
+  // a stated location are given because Google demotes a posting without them,
+  // and validThrough stops a filled role lingering in results.
+  // Returned as ONE node, not a @graph: Seo.tsx puts every inner page's schema
+  // into its own @graph beside a breadcrumb, and a @graph nested in a @graph
+  // yields a typeless node that Google discards.
+  if (pathname === '/careers/social-media-marketer') {
+    return {
+      ...base,
+      "@type": "JobPosting",
+      "title": "Social Media Marketer",
+      "description":
+        "Own content, short-form video and reels, graphic design and paid ads (Meta and Google) for Govindani Infotech's brands. Plan and create content, run campaigns end to end, and use AI tools to move fast. Looking for hands-on video editing (Premiere Pro, CapCut or DaVinci), graphic design (Canva, Photoshop or Figma), strong social content writing, real paid-ads experience, and AI and automation savvy.",
+      "datePosted": "2026-10-15",
+      "validThrough": "2026-12-31",
+      "employmentType": "FULL_TIME",
+      "directApply": true,
+      "hiringOrganization": {
+        "@type": "Organization",
+        "name": "Govindani Infotech Pvt. Ltd.",
+        "sameAs": "https://govindaniit.com",
+      },
+      "jobLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Satara Road",
+          "addressLocality": "Pune",
+          "addressRegion": "MH",
+          "addressCountry": "IN",
+        },
+      },
+    };
+  }
+
   // Services (listing + individual) — Service + BreadcrumbList
   if (pathname === '/services' || pathname.startsWith('/services/')) {
     const isChild = pathname.startsWith('/services/');
