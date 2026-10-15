@@ -147,3 +147,35 @@
 @media (prefers-reduced-motion: reduce) {
   .gcr-hero-cta, .gcr-send, .gcr-wa { transition: none !important; }
 }
+
+/* ── sticky apply, above the site's bottom navigation ───────────────────── */
+/* That nav is fixed, 57px tall and mobile-only (md:hidden), at z-index
+   9999998 — so this sits on top of it in the stack but below it on screen,
+   and the page carries enough bottom padding that neither bar hides anything. */
+.gcr-sticky { display: none; }
+@media (max-width: 767px) {
+  .gcr-sticky {
+    position: fixed; left: 0; right: 0; bottom: 57px; z-index: 9999990;
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom, 0px));
+    background: rgba(255, 253, 248, .94);
+    backdrop-filter: blur(12px) saturate(1.3); -webkit-backdrop-filter: blur(12px) saturate(1.3);
+    border-top: 1px solid var(--line);
+    box-shadow: 0 -8px 24px -16px rgba(30, 20, 0, .5);
+  }
+  .gcr-sticky-t { font-size: 12.5px; font-weight: 600; color: var(--muted); white-space: nowrap; }
+  .gcr-sticky-btn {
+    margin-left: auto; flex: none; border-radius: 99px; padding: 12px 24px;
+    font-weight: 700; font-size: 14.5px; color: #3a2500; text-decoration: none;
+    background: linear-gradient(135deg, #c8a84b 0%, #f4e5b8 45%, #c8a84b 100%);
+    box-shadow: 0 8px 20px rgba(184, 134, 11, .32);
+  }
+  /* room for both bars, so the fine print at the end of the form stays readable */
+  .gcr-body { padding-bottom: 150px; }
+
+  /* The chat launcher floats at bottom:72px, which is exactly where this bar
+     now is — it was sitting on top of the Apply button. Lift it clear while
+     the bar exists; it drops back by itself once the application is in and
+     the bar unmounts. */
+  body:has(.gcr-sticky) .gsc-launch { bottom: 124px; }
+}

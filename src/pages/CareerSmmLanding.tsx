@@ -211,6 +211,16 @@ export default function CareerSmmLanding() {
           )}
         </aside>
       </div>
+
+      {/* On a phone the form is below a screenful of advert, and the site's own
+          bottom navigation already owns the last 57px — so the way back to the
+          form rides just above it, and leaves once the application is in. */}
+      {!waLink && (
+        <div className="gcr-sticky">
+          <span className="gcr-sticky-t">Pune &middot; full-time</span>
+          <a className="gcr-sticky-btn" href="#apply">Apply now &rarr;</a>
+        </div>
+      )}
     </div>
   );
 }

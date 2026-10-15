@@ -610,18 +610,21 @@ const Header: React.FC = () => {
           pointerEvents: 'none' }} />
         <div style={{ width: '100%', maxWidth: screen === 'mobile' ? '100%' : '1200px', height: `${PILL_H}px`, background: skin.pill, backdropFilter: 'blur(10px) saturate(1.25)', WebkitBackdropFilter: 'blur(10px) saturate(1.25)', borderRadius: '100px', border: skin.border, boxShadow: skin.shadow, display: 'grid', gridTemplateColumns: 'auto 1fr auto', alignItems: 'center', padding: screen === 'mobile' ? '0 1.2rem' : '0 2.5rem', position: 'relative', overflow: 'visible' }}>
           <div style={{ position: 'absolute', top: 0, left: '10%', right: '10%', height: '1px', background: 'linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent)' }} />
-          <Link to="/" style={{
-            display: 'flex', alignItems: 'center', flexShrink: 0,
-            // The logo is light artwork (measured at 150/255), so it disappears
-            // on a pale pill. A dark chip behind it keeps the lockup legible
-            // without recolouring the brand mark.
-            background: skin.onLight ? 'rgba(14,22,34,0.92)' : 'transparent',
-            borderRadius: skin.onLight ? '999px' : 0,
-            padding: skin.onLight ? '4px 14px 4px 10px' : 0,
-            transition: 'background .25s ease, padding .25s ease',
-          }}>
-            <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/govindanilogo-400w.webp" alt="Govindani Infotech"
-              width={400} height={202} fetchPriority="high" style={{ height: `${LOGO_H}px`, width: `${LOGO_W}px`, minWidth: `${LOGO_W}px`, flexShrink: 0, objectFit: 'contain', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.5))' }} loading="lazy" decoding="async" />
+          <Link to="/" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
+            {/* The company name in the lockup is white, so on a pale pill it used
+                to need a navy chip behind the whole thing — which read as a patch
+                stuck on the header. The pale-pill artwork instead carries that
+                name in the same navy; the gold mark and tagline are identical,
+                so it is one logo shown two ways, with nothing boxed around it. */}
+            <img
+              src={skin.onLight
+                ? 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/govindanilogo-ink-400w.webp'
+                : 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/govindanilogo-400w.webp'}
+              alt="Govindani Infotech"
+              width={400} height={202} fetchPriority="high"
+              style={{ height: `${LOGO_H}px`, width: `${LOGO_W}px`, minWidth: `${LOGO_W}px`, flexShrink: 0, objectFit: 'contain',
+                filter: skin.onLight ? 'none' : 'drop-shadow(0 2px 4px rgba(0,0,0,0.5))' }}
+              loading="lazy" decoding="async" />
           </Link>
 
           {/* ─── DESKTOP / TABLET NAV ─── */}
