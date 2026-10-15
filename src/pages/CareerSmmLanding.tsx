@@ -10,11 +10,12 @@ import '../styles/career-role.css';
  * round free to run. The page simply has to live somewhere a candidate will
  * trust, and an sslip.io address is not that.
  *
- * The apply POST goes to the same endpoint the VPS page uses, so there is one
- * applicant store and one screening queue, not two.
+ * The apply POST goes to the hiring system on our own domain
+ * (hirings.govindaniit.com/smm/apply), so there is one applicant store and one
+ * screening queue, not two — CORS is enabled there for this origin.
  */
 
-const APPLY_URL = 'https://careers.187-52-115-246.sslip.io/apply';
+const APPLY_URL = 'https://hirings.govindaniit.com/smm/apply';
 const WA_NUMBER = '919201958278';
 const ROLE = 'Social Media Marketer';
 
@@ -211,16 +212,6 @@ export default function CareerSmmLanding() {
           )}
         </aside>
       </div>
-
-      {/* On a phone the form is below a screenful of advert, and the site's own
-          bottom navigation already owns the last 57px — so the way back to the
-          form rides just above it, and leaves once the application is in. */}
-      {!waLink && (
-        <div className="gcr-sticky">
-          <span className="gcr-sticky-t">Pune &middot; full-time</span>
-          <a className="gcr-sticky-btn" href="#apply">Apply now &rarr;</a>
-        </div>
-      )}
     </div>
   );
 }
