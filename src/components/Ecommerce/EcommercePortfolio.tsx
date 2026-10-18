@@ -362,7 +362,7 @@ const EcommercePortfolio = () => {
       badge: "Coding",         // ← change badge label here
       filter: "Coding",        // ← change filter category here
       url: "https://babajikibuti.com/home",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Coding/Coding-Babajikibuti.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Coding/Coding-Babajikibuti.webp",
     },
     {
       title: "Tarushpranna",
@@ -370,7 +370,7 @@ const EcommercePortfolio = () => {
       badge: "Coding",         // ← change badge label here
       filter: "Coding",        // ← change filter category here
       url: "https://tarushpranaa.com/",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Coding/Coding-Tarushpranna.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Coding/Coding-Tarushpranna.webp",
     },
     {
       disabled: true,   // live site temporarily down — shown, not clickable
@@ -379,7 +379,7 @@ const EcommercePortfolio = () => {
       badge: "WordPress",
       filter: "WordPress",
       url: "https://terrabytrishla.com/",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Terra-By-Trishla.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Terra-By-Trishla.webp",
     },
     {
       disabled: true,   // live site temporarily down — shown, not clickable
@@ -388,7 +388,7 @@ const EcommercePortfolio = () => {
       badge: "WordPress",
       filter: "WordPress",
       url: "https://madhavnumerology.com/",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Madhav-Numerology.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Madhav-Numerology.webp",
     },
     {
       title: "GSD Organics",
@@ -396,7 +396,7 @@ const EcommercePortfolio = () => {
       badge: "WordPress",
       filter: "WordPress",
       url: "https://gsdorganics.com/",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Gsd-Organics.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Gsd-Organics.webp",
     },
     {
       disabled: true,   // live site temporarily down — shown, not clickable
@@ -405,7 +405,7 @@ const EcommercePortfolio = () => {
       badge: "Shopify",
       filter: "Shopify",
       url: "https://muktashop.com/",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Shopify/Shopify-Muktashop.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Shopify/Shopify-Muktashop.webp",
     },
     {
       title: "Gllora",
@@ -413,7 +413,7 @@ const EcommercePortfolio = () => {
       badge: "Shopify",
       filter: "Shopify",
       url: "https://gllora.com/",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Shopify/Shopify-Gllora.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Shopify/Shopify-Gllora.webp",
     },
     {
       disabled: true,   // live site temporarily down — shown, not clickable
@@ -422,7 +422,7 @@ const EcommercePortfolio = () => {
       badge: "Shopify",
       filter: "Shopify",
       url: "https://kryeletstudios.com/",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Shopify/Shopify-kryelet-studios.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Shopify/Shopify-kryelet-studios.webp",
     },
 
     // ── New 7 add your images to /Images/ and update the image paths below ──
@@ -432,7 +432,7 @@ const EcommercePortfolio = () => {
       badge: "WordPress",         // ← update badge/filter when you know
       filter: "WordPress",
       url: "https://gaumandirsatva.com/",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Gau-Mandir-Satva.webp",   // ← replace with your actual image file
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Gau-Mandir-Satva.webp",   // ← replace with your actual image file
     },
 
     {
@@ -441,7 +441,7 @@ const EcommercePortfolio = () => {
       badge: "WordPress",
       filter: "WordPress",
       url: "https://citybazaarstore.com/",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Home-City-Bazaar.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Home-City-Bazaar.webp",
     },
 
     {
@@ -451,7 +451,7 @@ const EcommercePortfolio = () => {
       badge: "WordPress",
       filter: "WordPress",
       url: "http://mctindia.org",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Malini-Charitable-Trust.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Malini-Charitable-Trust.webp",
     },
     {
       title: "Khambani Foods",
@@ -459,7 +459,7 @@ const EcommercePortfolio = () => {
       badge: "Shopify",
       filter: "Shopify",
       url: "https://www.khambani.com/",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Shopify/Shopify-Khambani-Foods.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Shopify/Shopify-Khambani-Foods.webp",
     },
 
   ];
@@ -881,7 +881,7 @@ const EcommercePortfolio = () => {
         }
         .ec-last-bg {
           position: absolute; inset: 0;
-          background-image: url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bgecomm.jfif');
+          background-image: url('https://gi-img-cdn.sujeet.workers.dev/Images/bgecomm.jfif');
           background-size: cover;
           background-position: center;
           opacity: 0.38;

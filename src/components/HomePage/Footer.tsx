@@ -441,7 +441,7 @@ export default function PremiumFooter() {
                     e.g. src="/assets/govindani-logo.png"
                   */}
                   <img
-                    src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/govindanilogomain.webp"
+                    src="https://gi-img-cdn.sujeet.workers.dev/Images/govindanilogomain.webp"
                     alt="Govindani Infotech"
                     style={{
                       height: "150px",

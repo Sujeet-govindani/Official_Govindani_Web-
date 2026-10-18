@@ -336,24 +336,24 @@ const TL_DATA = [
 ];
 
 const INT_R1 = [
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-1.png",        label:""},
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-2.webp",  label:""},
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-3.png",  label:""},
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-4.png",  label:""},
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-5.png",  label:""},
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-6.png",  label:""},
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-7.png",  label:""},
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-8.png",  label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-1.png",        label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-2.webp",  label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-3.png",  label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-4.png",  label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-5.png",  label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-6.png",  label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-7.png",  label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-8.png",  label:""},
 ];
 const INT_R2 = [
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-9.png",  label:""},
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-10.webp", label:""},
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-11.png", label:""},
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-12.png", label:""},
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-13.png", label:""},
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-14.png", label:""},
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-15.png", label:""},
-  {src:"https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-16.png", label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-9.png",  label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-10.webp", label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-11.png", label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-12.png", label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-13.png", label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-14.png", label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-15.png", label:""},
+  {src:"https://gi-img-cdn.sujeet.workers.dev/Images/1-16.png", label:""},
 ];
 
 /* ─── HELPERS ───────────────────────────────────────────────── */
@@ -426,7 +426,7 @@ export default function TravelTourismPage() {
               
             </div>
             <div className="col-i">
-              <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section1.webp" alt="Travel WhatsApp Hero"/>
+              <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section1.webp" alt="Travel WhatsApp Hero"/>
             </div>
           </div>
         </div>
@@ -482,7 +482,7 @@ export default function TravelTourismPage() {
               ]}/>
               
             </div>
-            <div className="col-i"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section3.webp" alt="Generate leads"/></div>
+            <div className="col-i"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section3.webp" alt="Generate leads"/></div>
           </div>
         </div>
       </section>
@@ -491,7 +491,7 @@ export default function TravelTourismPage() {
       <section className="tt-sec b2">
         <div className="inn">
           <div className="tc flip">
-            <div className="col-i"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section4.webp" alt="Qualify leads"/></div>
+            <div className="col-i"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section4.webp" alt="Qualify leads"/></div>
             <div className="col">
               <div className="gbar"/>
               <h2 className="hg">Qualify leads on WhatsApp for timely follow-ups based on their travel requirements</h2>
@@ -520,11 +520,11 @@ export default function TravelTourismPage() {
               ]}/>
               
             </div>
-            <div className="col-i"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section5.webp" alt="Reduce drop-offs"/></div>
+            <div className="col-i"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section5.webp" alt="Reduce drop-offs"/></div>
           </div>
           <div style={{height:1,background:"var(--bd)",margin:"0 0 60px"}}/>
           <div className="tc flip">
-            <div className="col-i"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section6.webp" alt="Proactive updates"/></div>
+            <div className="col-i"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section6.webp" alt="Proactive updates"/></div>
             <div className="col">
               <div className="gbar"/>
               <h2 className="hg">Send proactive updates for travel booking confirmation, & reminders</h2>
@@ -544,7 +544,7 @@ export default function TravelTourismPage() {
       <section className="tt-sec b1">
         <div className="inn">
           <div className="tc flip">
-            <div className="col-i"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section7.webp" alt="Customer experience"/></div>
+            <div className="col-i"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section7.webp" alt="Customer experience"/></div>
             <div className="col">
               <div className="gbar"/>
               <h2 className="hg">Use WhatsApp to go one step further & deliver a truly positive customer experience for travelers</h2>
@@ -573,7 +573,7 @@ export default function TravelTourismPage() {
               ]}/>
              
             </div>
-            <div className="col-i"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section8.webp" alt="Post-purchase support"/></div>
+            <div className="col-i"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section8.webp" alt="Post-purchase support"/></div>
           </div>
         </div>
       </section>
@@ -582,7 +582,7 @@ export default function TravelTourismPage() {
       <section className="tt-sec b3">
         <div className="inn">
           <div className="tc flip">
-            <div className="col-i"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section9.webp" alt="Repeat bookings"/></div>
+            <div className="col-i"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section9.webp" alt="Repeat bookings"/></div>
             <div className="col">
               <div className="gbar"/>
               <h2 className="hg">Keep customers engaged for repeat bookings & boost loyalty</h2>
@@ -623,7 +623,7 @@ export default function TravelTourismPage() {
                 "Reduce your sales cycle with proactive communication",
               ]}/>
             </div>
-            <div className="col-i"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section10.webp" alt="Why WhatsApp for travel"/></div>
+            <div className="col-i"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travel-Tourism-section10.webp" alt="Why WhatsApp for travel"/></div>
           </div>
         </div>
       </section>
@@ -654,7 +654,7 @@ export default function TravelTourismPage() {
                 </div>
               </div>
             </div>
-            <div className="col-i"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travels-Tourism-Section-11.webp" alt="WTFares success story"/></div>
+            <div className="col-i"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Travel-Tourism/Travels-Tourism-Section-11.webp" alt="WTFares success story"/></div>
           </div>
         </div>
       </section>

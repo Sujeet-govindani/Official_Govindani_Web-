@@ -132,7 +132,7 @@ function HeroVideo({ src }) {
 
 // ─── Integration Logo Strip (Hero) ───────────────────────────────────────────
 const integrationLogos = [
-  { name: "logo-1", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wcrm12.webp" },
+  { name: "logo-1", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wcrm12.webp" },
 ];
 
 function IntegrationLogoStrip() {
@@ -375,12 +375,12 @@ const globalStyle = `
 
 // ─── DATA ─────────────────────────────────────────────────────────────────────
 const crmFeatures = [
-  { icon: "🎯", title: "Effortless Lead Generation",                  desc: "Automatically capture leads from WhatsApp, web, and social. Qualify them instantly with AI-powered scoring and push them into the right pipeline stage without manual entry.",          image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wcc1.webp"  },
-  { icon: "📢", title: "Smarter Lead Qualification",                  desc: "Stop chasing cold leads. AI analyses every conversation and behaviour signal to surface your hottest prospects so your team focuses energy where it converts.",                       image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wcc34.webp"  },
-  { icon: "👥", title: "Unified Customer View",                       desc: "Every customer interaction, deal note, message, and activity in a single timeline. Zero context-switching your reps always know exactly where each deal stands.",                    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wcc2.webp"  },
-  { icon: "📡", title: "Broadcast Personalised Messages at Scale",    desc: "Send hyper-personalised WhatsApp campaigns to thousands of contacts in minutes. Dynamic variables, rich media, and smart scheduling for maximum open rates.",                      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wcc33.webp"  },
-  { icon: "🚀", title: "Faster Conversions & Closures",               desc: "Shorten your sales cycle with automated follow-ups, instant quote sharing, and one-tap payment links all inside WhatsApp where your customers already are.",                       image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wcc3.webp"  },
-  { icon: "📊", title: "Seamless Sales Pipeline Management",          desc: "Move deals faster with a visual sales pipeline, role-based access, and task management ensuring no lead is left behind.",                                                            image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wcc4.webp"  },
+  { icon: "🎯", title: "Effortless Lead Generation",                  desc: "Automatically capture leads from WhatsApp, web, and social. Qualify them instantly with AI-powered scoring and push them into the right pipeline stage without manual entry.",          image: "https://gi-img-cdn.sujeet.workers.dev/Images/wcc1.webp"  },
+  { icon: "📢", title: "Smarter Lead Qualification",                  desc: "Stop chasing cold leads. AI analyses every conversation and behaviour signal to surface your hottest prospects so your team focuses energy where it converts.",                       image: "https://gi-img-cdn.sujeet.workers.dev/Images/wcc34.webp"  },
+  { icon: "👥", title: "Unified Customer View",                       desc: "Every customer interaction, deal note, message, and activity in a single timeline. Zero context-switching your reps always know exactly where each deal stands.",                    image: "https://gi-img-cdn.sujeet.workers.dev/Images/wcc2.webp"  },
+  { icon: "📡", title: "Broadcast Personalised Messages at Scale",    desc: "Send hyper-personalised WhatsApp campaigns to thousands of contacts in minutes. Dynamic variables, rich media, and smart scheduling for maximum open rates.",                      image: "https://gi-img-cdn.sujeet.workers.dev/Images/wcc33.webp"  },
+  { icon: "🚀", title: "Faster Conversions & Closures",               desc: "Shorten your sales cycle with automated follow-ups, instant quote sharing, and one-tap payment links all inside WhatsApp where your customers already are.",                       image: "https://gi-img-cdn.sujeet.workers.dev/Images/wcc3.webp"  },
+  { icon: "📊", title: "Seamless Sales Pipeline Management",          desc: "Move deals faster with a visual sales pipeline, role-based access, and task management ensuring no lead is left behind.",                                                            image: "https://gi-img-cdn.sujeet.workers.dev/Images/wcc4.webp"  },
 ];
 
 const impactItems = [
@@ -416,46 +416,46 @@ const faqData = [
 
 // ─── MEDIA CONFIGURATION ─────────────────────────────────────────────────────
 const HERO_VIDEO_SRC        = "/Videos/wcrm1.webm";
-const DESKTOP_IMAGE_SRC     = "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wcc35.webp";
-const MOBILE_IMAGE_SRC      = "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wcc36.webp";
-const INTEGRATIONS_IMAGE_SRC = "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wcrm11.webp";
+const DESKTOP_IMAGE_SRC     = "https://gi-img-cdn.sujeet.workers.dev/Images/wcc35.webp";
+const MOBILE_IMAGE_SRC      = "https://gi-img-cdn.sujeet.workers.dev/Images/wcc36.webp";
+const INTEGRATIONS_IMAGE_SRC = "https://gi-img-cdn.sujeet.workers.dev/Images/wcrm11.webp";
 
 // ─── Testimonial Carousel Data ────────────────────────────────────────────────
 const testimonialSlides = [
   {
-    logoSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/L1.webp",
+    logoSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/L1.webp",
     logoAlt: "The Design Cart",
     quote: "30% higher retention rate in the last 6 months. 20% of business revenue is from WhatsApp alone. With Interakt, WhatsApp became more than just a chat platform — it turned into a powerful sales and retention channel, driving seamless customer engagement and business growth.",
-    avatarSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Circle-Avatar2.webp",
+    avatarSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/Circle-Avatar2.webp",
     avatarAlt: "Apaar Gupta",
     name: "Apaar Gupta",
     role: "Founder",
   },
   {
-    logoSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/L2.webp",
+    logoSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/L2.webp",
     logoAlt: "Bombay Sweet Shop",
     quote: "We were able to increase our revenue from the first Diwali to the second Diwali to approximately 4× of what we did and we couldn't have done this without the help of Interakt.",
-    avatarSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Circle-Avatar3.webp",
+    avatarSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/Circle-Avatar3.webp",
     avatarAlt: "Yash Bhanage",
     name: "Yash Bhanage",
     role: "Co-founder",
   },
   {
-    logoSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/L7.webp",
+    logoSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/L7.webp",
     logoAlt: "ISAK",
     logoText: "I S A K",
     quote: "42% boost in customer engagement. We are excited to continue scaling our operations with Interakt, leveraging their automation and other innovative features to further enhance our customer engagement.",
-    avatarSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Circle-Avatar.webp",
+    avatarSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/Circle-Avatar.webp",
     avatarAlt: "Vidushi Vijayvergiya",
     name: "Vidushi Vijayvergiya",
     role: "Founder & CEO",
   },
   {
-    logoSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/L4.webp",
+    logoSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/L4.webp",
     logoAlt: "OKHAI",
     logoText: "O K H A I",
     quote: "60% reduction in Cart Abandonment. 15% increase in sales month-over-month. Since Interakt our cart abandonment is almost nil. Every day we find orders in the abandoned carts, we hit at it and we get conversions. We get real-time sales from there.",
-    avatarSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Circle-Avatar4.webp",
+    avatarSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/Circle-Avatar4.webp",
     avatarAlt: "Manorath Dhillon",
     name: "Manorath Dhillon",
     role: "CEO",

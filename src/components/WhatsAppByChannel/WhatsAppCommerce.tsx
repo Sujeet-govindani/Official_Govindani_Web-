@@ -390,39 +390,39 @@ const faqData = [
 ];
 
 const brandData = [
-  { name: "wc1",  logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc1.webp"  },
-  { name: "wc2",  logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc2.webp"  },
-  { name: "wc3",  logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc3.webp"  },
-  { name: "wc4",  logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc4.webp"  },
-  { name: "wc5",  logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc5.webp"  },
-  { name: "wc6",  logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc6.webp"  },
-  { name: "wc7",  logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc7.webp"  },
-  { name: "wc8",  logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc8.webp"  },
-  { name: "wc9",  logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc9.webp"  },
-  { name: "wc10", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc10.webp" },
+  { name: "wc1",  logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc1.webp"  },
+  { name: "wc2",  logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc2.webp"  },
+  { name: "wc3",  logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc3.webp"  },
+  { name: "wc4",  logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc4.webp"  },
+  { name: "wc5",  logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc5.webp"  },
+  { name: "wc6",  logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc6.webp"  },
+  { name: "wc7",  logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc7.webp"  },
+  { name: "wc8",  logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc8.webp"  },
+  { name: "wc9",  logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc9.webp"  },
+  { name: "wc10", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc10.webp" },
 ];
 
 const campaignData = [
   {
     title: "Catalogs as part of One-time and ongoing Campaigns",
     desc: "You can send products and product catalogs as part of one time or ongoing campaigns from your 'Templates' section. You can even A/B test catalogues with your audience. Simply create or browse through the catalog in the templates menu.",
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc17.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/wc17.webp",
     delay: 0,
   },
   {
     title: "Add catalogs to auto-replies",
     desc: "You can also include products and catalogs as part of auto-replies to your customers. Use the auto-reply catalog feature to create automated catalog replies for every possible customer touchpoint. You can also create catalog auto-replies based on keywords and customer attributes.",
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc18.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/wc18.webp",
     delay: 120,
   },
 ];
 
 const carouselSlides = [
-  { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc19.webp", imageAlt: "Quick query resolution",           title: "Quick query resolution",           desc: "Enable customers to seek product details, from availability to sizes and colours, all within the convenience of WhatsApp. This facilitates rapid and direct communication for a seamless shopping experience." },
-  { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc20.webp", imageAlt: "Track Orders",                     title: "Track Orders",                     desc: "Facilitate customers in placing orders directly within WhatsApp, enabling them to specify product quantities and preferences with ease. Simplify the end-to-end shopping experience by eliminating the necessity to visit separate websites." },
-  { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc21.webp", imageAlt: "Collect Payment",                  title: "Collect Payment",                  desc: "Empower customers to purchase and complete transactions right in the WhatsApp chat window. Integrate payment gateways seamlessly, including WhatsApp Pay." },
-  { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc24.webp", imageAlt: "Share Order Updates",              title: "Share Order Updates",              desc: "Stay connected with your customers & offer instant order updates and shipping status notifications. Ensure a hassle-free ordering experience and round-the-clock query resolution with intelligent automation solutions." },
-  { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc23.webp", imageAlt: "Personalised Shopping Experience", title: "Personalised Shopping Experience", desc: "Optimise your communication strategy to deliver personalised customer interactions, including customised product recommendations based on past purchases and browsing habits to boost customer satisfaction & retention." },
+  { image: "https://gi-img-cdn.sujeet.workers.dev/Images/wc19.webp", imageAlt: "Quick query resolution",           title: "Quick query resolution",           desc: "Enable customers to seek product details, from availability to sizes and colours, all within the convenience of WhatsApp. This facilitates rapid and direct communication for a seamless shopping experience." },
+  { image: "https://gi-img-cdn.sujeet.workers.dev/Images/wc20.webp", imageAlt: "Track Orders",                     title: "Track Orders",                     desc: "Facilitate customers in placing orders directly within WhatsApp, enabling them to specify product quantities and preferences with ease. Simplify the end-to-end shopping experience by eliminating the necessity to visit separate websites." },
+  { image: "https://gi-img-cdn.sujeet.workers.dev/Images/wc21.webp", imageAlt: "Collect Payment",                  title: "Collect Payment",                  desc: "Empower customers to purchase and complete transactions right in the WhatsApp chat window. Integrate payment gateways seamlessly, including WhatsApp Pay." },
+  { image: "https://gi-img-cdn.sujeet.workers.dev/Images/wc24.webp", imageAlt: "Share Order Updates",              title: "Share Order Updates",              desc: "Stay connected with your customers & offer instant order updates and shipping status notifications. Ensure a hassle-free ordering experience and round-the-clock query resolution with intelligent automation solutions." },
+  { image: "https://gi-img-cdn.sujeet.workers.dev/Images/wc23.webp", imageAlt: "Personalised Shopping Experience", title: "Personalised Shopping Experience", desc: "Optimise your communication strategy to deliver personalised customer interactions, including customised product recommendations based on past purchases and browsing habits to boost customer satisfaction & retention." },
 ];
 
 // ─── Animated Section Wrapper ─────────────────────────────────────────────────
@@ -636,7 +636,7 @@ export default function WhatsAppCommerce() {
               <div className="relative w-full" style={{ animation: "floatUp 5s ease-in-out infinite" }}>
                 <div className="absolute inset-0 pointer-events-none"
                   style={{ background: "radial-gradient(ellipse,rgba(200,146,42,0.18) 0%,transparent 70%)", filter: "blur(28px)", animation: "pulseGlow 3s ease-in-out infinite" }} />
-                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Hero-image.gif" alt="Hero image" className="w-full rounded-2xl"
+                <img src="https://gi-img-cdn.sujeet.workers.dev/Images/Hero-image.gif" alt="Hero image" className="w-full rounded-2xl"
                   style={{ objectFit: "contain", display: "block" }} />
               </div>
             </Reveal>
@@ -666,7 +666,7 @@ export default function WhatsAppCommerce() {
           <div className="max-w-7xl mx-auto">
             <FeatureRow title="Accept Native Payments on WhatsApp"
               desc="Streamline the checkout experience. Receive payments directly inside WhatsApp — no redirects, no friction. Customers can browse products, add to cart, and complete payment without ever leaving the chat. Supports UPI, cards, net banking, and more."
-              image="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc11.webp" imageAlt="Native Payments on WhatsApp" reverse={false} delay={0} />
+              image="https://gi-img-cdn.sujeet.workers.dev/Images/wc11.webp" imageAlt="Native Payments on WhatsApp" reverse={false} delay={0} />
           </div>
         </AnimatedSection>
 
@@ -675,7 +675,7 @@ export default function WhatsAppCommerce() {
           <div className="max-w-7xl mx-auto">
             <FeatureRow title="Create Conversational Flows that Convert"
               desc="Create automated conversation flows to guide your customers from discovery to purchase. The no-code Flows builder helps you design interactive journeys that nurture leads and drive conversions — automatically, 24/7."
-              image="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc12.webp" imageAlt="Conversational Flows" reverse={true} delay={0} />
+              image="https://gi-img-cdn.sujeet.workers.dev/Images/wc12.webp" imageAlt="Conversational Flows" reverse={true} delay={0} />
           </div>
         </AnimatedSection>
 
@@ -684,7 +684,7 @@ export default function WhatsAppCommerce() {
           <div className="max-w-7xl mx-auto">
             <FeatureRow title="Set up Automated Workflows w/ Your WhatsApp Commerce Store"
               desc="Automate key e-commerce interactions on WhatsApp for shopping and checkout flows. Send payment confirmation, order status updates, and shipping updates directly to customers on WhatsApp."
-              image="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc13.webp" imageAlt="Automated Workflows" reverse={false} delay={0} />
+              image="https://gi-img-cdn.sujeet.workers.dev/Images/wc13.webp" imageAlt="Automated Workflows" reverse={false} delay={0} />
           </div>
         </AnimatedSection>
 
@@ -693,7 +693,7 @@ export default function WhatsAppCommerce() {
           <div className="max-w-7xl mx-auto">
             <FeatureRow title="Categorize Products into Collections"
               desc="Organise your products into neat WhatsApp catalogue collections or effectively your catalogue. Create collections to make purchasing smoother and make browsing products in your e-commerce easy."
-              image="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc14.webp" imageAlt="Product Collections" reverse={true} delay={0} />
+              image="https://gi-img-cdn.sujeet.workers.dev/Images/wc14.webp" imageAlt="Product Collections" reverse={true} delay={0} />
           </div>
         </AnimatedSection>
 
@@ -702,7 +702,7 @@ export default function WhatsAppCommerce() {
           <div className="max-w-7xl mx-auto">
             <FeatureRow title="Start WhatsApp Store Create Custom Catalogs"
               desc="With a WhatsApp store, you can be able to reach your target audience with time-relevant and personalised custom catalogs from the most comprehensive inbox tool in your business."
-              image="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc15.webp" imageAlt="Custom Catalogs" reverse={false} delay={0} />
+              image="https://gi-img-cdn.sujeet.workers.dev/Images/wc15.webp" imageAlt="Custom Catalogs" reverse={false} delay={0} />
           </div>
         </AnimatedSection>
 
@@ -711,7 +711,7 @@ export default function WhatsAppCommerce() {
           <div className="max-w-7xl mx-auto" style={{ marginTop: 150 }}>
             <FeatureRow title="Send catalogs as part of campaigns & auto-replies"
               desc="With Interakt, you can now send product catalogs directly from within your WhatsApp campaigns or auto-replies. This means now you can now seamlessly send product catalogs as part of your campaigns or auto replies."
-              image="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc16.webp" imageAlt="Send Catalogs in Campaigns" reverse={true} delay={0} />
+              image="https://gi-img-cdn.sujeet.workers.dev/Images/wc16.webp" imageAlt="Send Catalogs in Campaigns" reverse={true} delay={0} />
           </div>
         </AnimatedSection>
 

@@ -11,18 +11,18 @@ const isTouchDevice = () =>
 // ─────────────────────────────────────────────────────────────────────────────
 
 const ngoProjects = [
-  { title: "Popatbhai Charitable Trust",     url: "https://popatbhaicharitablefoundation.org/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Popatbhai-Charitable-Trust.webp" },
-  { title: "Harsh Chhikkara Jan Seva Trust", url: "https://harshchhikara.com/",                 image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Harsh-Chhikkara-Jan-Seva-Trust.webp" },
-  { title: "Mahipatsinh Foundation",         url: "https://mahipatsinhfoundation.org/",          image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Mahipatsinh-Foundation.webp" },
-  { title: "Gau Seva Dham",                  url: "https://gausevadham.org/",                    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Gau-Seva-Dham.webp" },
-  { title: "Mallakhamb Artist",              url: "https://mallakhambartist.org/",               image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Mallakhamb-Artist.webp" },
-  { title: "Nanhi Pari Foundation",                     url: "https://nanhiparifoundation.org/",             image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Nanhi-Pari-Foundationngo.webp" },
-  { title: "Palawi Foundation",              url: "https://palawi.org/",                          image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Palawingo.webp" },
-  { title: "Animals Matter to Me",           url: "https://amtmindia.org/",                       image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Animals-Matterto-Me.webp" },
-  { title: "Anekaa Care Foundation",         url: "https://anekaacarefoundation.org/",            image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Anekaa-Care-Foundation.webp" },
-  { title: "Little Heart Foundation",        url: "https://littleheartfoundation.org/",           image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Little-Heart-Foundation.png" },
-  { title: "Voice Of Slum",                  url: "https://voiceofslum.org/",                     image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Voice-Of-Slum.webp" },
-  { title: "Vishramgahr Foundation",         url: "https://vishramgharfoundation.in/",            image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Vishramgahr-Foundation.webp" },
+  { title: "Popatbhai Charitable Trust",     url: "https://popatbhaicharitablefoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Popatbhai-Charitable-Trust.webp" },
+  { title: "Harsh Chhikkara Jan Seva Trust", url: "https://harshchhikara.com/",                 image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Harsh-Chhikkara-Jan-Seva-Trust.webp" },
+  { title: "Mahipatsinh Foundation",         url: "https://mahipatsinhfoundation.org/",          image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Mahipatsinh-Foundation.webp" },
+  { title: "Gau Seva Dham",                  url: "https://gausevadham.org/",                    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Gau-Seva-Dham.webp" },
+  { title: "Mallakhamb Artist",              url: "https://mallakhambartist.org/",               image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Mallakhamb-Artist.webp" },
+  { title: "Nanhi Pari Foundation",                     url: "https://nanhiparifoundation.org/",             image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Nanhi-Pari-Foundationngo.webp" },
+  { title: "Palawi Foundation",              url: "https://palawi.org/",                          image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Palawingo.webp" },
+  { title: "Animals Matter to Me",           url: "https://amtmindia.org/",                       image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Animals-Matterto-Me.webp" },
+  { title: "Anekaa Care Foundation",         url: "https://anekaacarefoundation.org/",            image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Anekaa-Care-Foundation.webp" },
+  { title: "Little Heart Foundation",        url: "https://littleheartfoundation.org/",           image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Little-Heart-Foundation.png" },
+  { title: "Voice Of Slum",                  url: "https://voiceofslum.org/",                     image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Voice-Of-Slum.webp" },
+  { title: "Vishramgahr Foundation",         url: "https://vishramgharfoundation.in/",            image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Vishramgahr-Foundation.webp" },
 ];
 
 // Desktop NGO card (scroll-on-hover)
@@ -268,62 +268,62 @@ const PremiumCarousel = () => {
 
   const carouselData = [
     {
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/recurringdonation.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/recurringdonation.webp",
       title: "Recurring Donations",
       description: "Create flexible recurring donation forms with donor-selected or admin-defined frequencies, time periods, and amounts."
     },
     {
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Fee Recovery.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/Fee Recovery.webp",
       title: "Fee Recovery",
       description: "Customizable fee recovery at global, gateway, and form levels with donor opt-in options."
     },
     {
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/formmanager.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/formmanager.webp",
       title: "Form Field Manager",
       description: "Easily add and manage custom fields to meet specific donation form requirements."
     },
     {
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Funds and Designations.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/Funds and Designations.webp",
       title: "Funds and Designations",
       description: "Create unlimited funds, use multiple forms, and view reports by form and fund."
     },
     {
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tribute12.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/tribute12.webp",
       title: "Tributes",
       description: "Built to scale from startup to enterprise without compromising on speed or reliability."
     },
     { 
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PDF Receipt.webp", 
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PDF Receipt.webp", 
       title: "PDF Receipts",
       description: "Generate and send customizable PDF receipts to donors after each donation." 
     },
     {
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/peertopeer.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/peertopeer.webp",
       title: "Peer-to-Peer",
       description: "Empower your community with team or individual fundraising on your donation forms."
     },
     {
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/webhooks.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/webhooks.webp",
       title: "WebHooks",
       description: "Connect donation forms with any CRM system for automatic donor data synchronization."
     },
     {
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Blink Gateway.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/Blink Gateway.webp",
       title: "Blink Gateway",
       description: "UK nonprofits accept donations via cards and secure Open Banking with lower fees."
     },
     {
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/activecampn.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/activecampn.webp",
       title: "Active Campaign",
       description: "Segment donors using powerful lists and automate personalized communication workflows."
     },
     {
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Constant Contact.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/Constant Contact.webp",
       title: "Constant Contact",
       description: "Sync donors to targeted mailing lists and grow your organization's reach with opt-ins."
     },
     {
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/annualmain.png",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/annualmain.png",
       title: "Annual Receipts",
       description: "Donors download annual donation records for tax purposes through self-service portal."
     },

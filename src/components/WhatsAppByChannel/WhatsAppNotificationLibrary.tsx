@@ -109,15 +109,15 @@ const FaqRow = ({ item, idx }: { item: FaqItem; idx: number }) => {
 };
 
 const BRAND_ITEMS = [
-    { name: "Raheja Realty", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM31.webp", alt: "Raheja Realty logo" },
-    { name: "AJIO", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM32.webp", alt: "AJIO logo" },
-    { name: "Zoop", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM33.webp", alt: "Zoop logo" },
-    { name: "LAKMÉ", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM34.webp", alt: "Lakmé logo" },
-    { name: "Money Solution", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM35.webp", alt: "Money Solution logo" },
-    { name: "IIB", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM36.webp", alt: "IIB logo" },
-    { name: "FOAID", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM37.webp", alt: "FOAID logo" },
-    { name: "steelbazaar", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM38.webp", alt: "Steelbazaar logo" },
-    { name: "eatoes", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM39.webp", alt: "eatoes logo" },
+    { name: "Raheja Realty", img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM31.webp", alt: "Raheja Realty logo" },
+    { name: "AJIO", img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM32.webp", alt: "AJIO logo" },
+    { name: "Zoop", img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM33.webp", alt: "Zoop logo" },
+    { name: "LAKMÉ", img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM34.webp", alt: "Lakmé logo" },
+    { name: "Money Solution", img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM35.webp", alt: "Money Solution logo" },
+    { name: "IIB", img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM36.webp", alt: "IIB logo" },
+    { name: "FOAID", img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM37.webp", alt: "FOAID logo" },
+    { name: "steelbazaar", img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM38.webp", alt: "Steelbazaar logo" },
+    { name: "eatoes", img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM39.webp", alt: "eatoes logo" },
 ];
 
 const WHY_FEATURES: FeatureCard[] = [
@@ -204,32 +204,32 @@ const FAQS: FaqItem[] = [
 
 const SLIDER_CARDS = [
     { 
-        image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wm11.webp", 
+        image: "https://gi-img-cdn.sujeet.workers.dev/Images/wm11.webp", 
         title: "Leverage AI-powered Template Library", 
         desc: "Over 100+ proven WhatsApp templates created by AI. Categorized by goal: Sales, Engagement, Win-backs, Reminders, Offers & more. Templates that follow WhatsApp best practices." 
     },
     { 
-        image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wm12.webp", 
+        image: "https://gi-img-cdn.sujeet.workers.dev/Images/wm12.webp", 
         title: "Let AI Co-pilot create all your templates", 
         desc: "Inform the AI about your campaign's goal, target audience, and desired tone. Instantly generate tailored message templates. Edit, personalize, and approve faster than ever." 
     },
     { 
-        image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wm13.webp", 
+        image: "https://gi-img-cdn.sujeet.workers.dev/Images/wm13.webp", 
         title: "Reach millions - instantly and intelligently.", 
         desc: "Send promotions, product updates, and festive offers at scale. Schedule campaigns, personalize messages, and reach the right audience at the right time. Built for high delivery, high opens, and real conversions." 
     },
     { 
-        image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wm14.webp", 
+        image: "https://gi-img-cdn.sujeet.workers.dev/Images/wm14.webp", 
         title: "Engage customers 24/7 - without lifting a finger.", 
         desc: "Automate FAQs, order updates, lead collection, and support queries. Create smart chat flows that respond instantly and guide users forward. Reduce support load while improving customer experience." 
     },
     { 
-        image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wm15.webp", 
+        image: "https://gi-img-cdn.sujeet.workers.dev/Images/wm15.webp", 
         title: "Smart Campaign Retries", 
         desc: "Automatically retry sends to contacts who didn't open. Intelligent retry windows based on engagement patterns. Increase reach without manual follow-ups." 
     },
     { 
-        image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wm16.webp", 
+        image: "https://gi-img-cdn.sujeet.workers.dev/Images/wm16.webp", 
         title: "Reconnect at the moment that matters.", 
         desc: "Re-engage users who abandoned carts, viewed products, or showed intent. Send timely nudges with personalized messaging. Bring warm leads back into the conversation and closer to conversion." 
     },
@@ -428,7 +428,7 @@ const WhatsAppNotificationLibrary: React.FC = () => {
                         </div>
                         <div className="fs d2 mt-14 w-full max-w-5xl mx-auto rounded-2xl overflow-hidden"
                             style={{ border: "1px solid rgba(201,150,26,0.18)", background: "hsl(0,0%,5%)" }}>
-                            <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wn1.webp" alt="WhatsApp Chatbot dashboard"
+                            <img src="https://gi-img-cdn.sujeet.workers.dev/Images/wn1.webp" alt="WhatsApp Chatbot dashboard"
                                 className="w-full h-auto object-cover" style={{ display: "block" }} />
                         </div>
                     </div>
@@ -574,7 +574,7 @@ const WhatsAppNotificationLibrary: React.FC = () => {
                                 ))}
                             </div>
                             <div className="fs d2 flex justify-center items-center">
-                                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wmvideo.gif" alt="WhatsApp Chatbot Animation"
+                                <img src="https://gi-img-cdn.sujeet.workers.dev/Images/wmvideo.gif" alt="WhatsApp Chatbot Animation"
                                     className="w-full max-w-3xl rounded-lg shadow-2xl"
                                     style={{ border: "1px solid rgba(232,192,74,0.3)", boxShadow: "0 25px 50px -12px rgba(232,192,74,0.25)", transform: "scale(1.1)" }} />
                             </div>
@@ -612,7 +612,7 @@ const WhatsAppNotificationLibrary: React.FC = () => {
                                         <div className="tl-divider-v" />
                                         <div className="tl-divider-h" />
                                         <div className="tl-logo">
-                                            <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/eatoes-logo.webp" alt="eatoes"
+                                            <img src="https://gi-img-cdn.sujeet.workers.dev/Images/eatoes-logo.webp" alt="eatoes"
                                                 style={{ maxWidth: "130px", maxHeight: "65px", objectFit: "contain" }}
                                                 onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; const fb = e.currentTarget.nextElementSibling as HTMLElement; if (fb) fb.style.display = "flex"; }} />
                                             <div style={{ display: "none", alignItems: "center", justifyContent: "center", width: "130px", height: "65px", fontWeight: 800, fontSize: "26px", color: "#888", fontFamily: "Inter,sans-serif", letterSpacing: "-1px" }}>eatoes</div>
@@ -622,7 +622,7 @@ const WhatsAppNotificationLibrary: React.FC = () => {
                                 <div className="relative rounded-2xl overflow-hidden"
                                     style={{ background: "hsl(0,0%,7%)", border: "1px solid rgba(201,150,26,0.14)", padding: "28px 32px", display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
                                     <div>
-                                        <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/mm1.webp" alt="Prithu Homes"
+                                        <img src="https://gi-img-cdn.sujeet.workers.dev/Images/mm1.webp" alt="Prithu Homes"
                                             style={{ height: "52px", objectFit: "contain" }}
                                             onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; const fb = e.currentTarget.nextElementSibling as HTMLElement; if (fb) fb.style.display = "block"; }} />
                                         <span style={{ display: "none", fontWeight: 700, color: "#e8c04a", fontSize: "17px", fontFamily: "'Libre Baskerville',serif" }}>Prithu Homes</span>
@@ -638,7 +638,7 @@ const WhatsAppNotificationLibrary: React.FC = () => {
                                 <div className="relative rounded-2xl overflow-hidden"
                                     style={{ background: "hsl(0,0%,7%)", border: "1px solid rgba(201,150,26,0.14)", padding: "28px 28px", display: "flex", flexDirection: "column", justifyContent: "flex-start", minHeight: "200px" }}>
                                     <div>
-                                        <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/mm.webp" alt="A Square GoKarting"
+                                        <img src="https://gi-img-cdn.sujeet.workers.dev/Images/mm.webp" alt="A Square GoKarting"
                                             style={{ height: "48px", objectFit: "contain" }}
                                             onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; const fb = e.currentTarget.nextElementSibling as HTMLElement; if (fb) fb.style.display = "block"; }} />
                                         <span style={{ display: "none", fontWeight: 700, color: "#e8c04a", fontSize: "14px", fontFamily: "'Libre Baskerville',serif" }}>A Square GoKarting</span>
@@ -652,7 +652,7 @@ const WhatsAppNotificationLibrary: React.FC = () => {
                                     style={{ background: "hsl(0,0%,7%)", border: "1px solid rgba(201,150,26,0.14)" }}>
                                     <div className="br-inner">
                                         <div className="br-logo-cell">
-                                            <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/mm2.webp" alt="House of Chikankari"
+                                            <img src="https://gi-img-cdn.sujeet.workers.dev/Images/mm2.webp" alt="House of Chikankari"
                                                 style={{ maxWidth: "100%", maxHeight: "110px", objectFit: "contain", filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.4))" }}
                                                 onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; const fb = e.currentTarget.nextElementSibling as HTMLElement; if (fb) fb.style.display = "flex"; }} />
                                             <div style={{ display: "none", alignItems: "center", justifyContent: "center", textAlign: "center", fontWeight: 700, color: "#e8c04a", fontSize: "16px", fontFamily: "'Libre Baskerville',serif", lineHeight: "1.4" }}>

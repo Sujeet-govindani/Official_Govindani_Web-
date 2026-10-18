@@ -19,37 +19,37 @@ gsap.registerPlugin(ScrollTrigger);
 // ─── STATIC DATA ─────────────────────────────────────────────────────────────
 
 const services = [
-  { title: "Videography", description: "Cinematic property tours that captivate and sell", video: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Videos/videography.mp4", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Videography13.webp", link: "/services/videography" },
-  { title: "Lead Generation", description: "Strategic marketing to attract quality buyers", video: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Videos/lead-gen-back-BG.mp4", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/lead-generation12.webp", link: "/services/lead-generation" },
-  { title: "360° Virtual Tour", description: "Immersion remote property exploration experience", video: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Videos/360.mp4", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/virtualtour12.webp", link: "/services/virtual-tours" },
-  { title: "Website Design", description: "Custom platforms for your real estate brand", video: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Videos/web%20design.mp4", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop", link: "/services/website-creation" },
-  { title: "Photography", description: "Professional imagery that showcases excellence", video: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Videos/photography2.mp4", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/photographyreal.webp", link: "/services/photography" },
+  { title: "Videography", description: "Cinematic property tours that captivate and sell", video: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Videos/videography.mp4", image: "https://gi-img-cdn.sujeet.workers.dev/Images/Videography13.webp", link: "/services/videography" },
+  { title: "Lead Generation", description: "Strategic marketing to attract quality buyers", video: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Videos/lead-gen-back-BG.mp4", image: "https://gi-img-cdn.sujeet.workers.dev/Images/lead-generation12.webp", link: "/services/lead-generation" },
+  { title: "360° Virtual Tour", description: "Immersion remote property exploration experience", video: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Videos/360.mp4", image: "https://gi-img-cdn.sujeet.workers.dev/Images/virtualtour12.webp", link: "/services/virtual-tours" },
+  { title: "Website Design", description: "Custom platforms for your real estate brand", video: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Videos/web%20design.mp4", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop", link: "/services/website-creation" },
+  { title: "Photography", description: "Professional imagery that showcases excellence", video: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Videos/photography2.mp4", image: "https://gi-img-cdn.sujeet.workers.dev/Images/photographyreal.webp", link: "/services/photography" },
 ];
 
 const premiumServices = [
-  { title: "Videography", description: "Cinematic property tours that captivate and sell", link: "/services/social-media", color: "from-blue-500 to-cyan-400", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/VIDEOGRAPHYICON.webp" },
-  { title: "Lead Generation", description: "Strategic marketing to attract quality buyers", link: "/services/seo", color: "from-green-500 to-emerald-400", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/LGICON.png" },
-  { title: "360° Virtual Tour", description: "Immersion remote property exploration experience", link: "/services/meta-ads", color: "from-purple-500 to-pink-400", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/360VT.webp" },
-  { title: "Website Design", description: "Custom platforms for your real estate brand", link: "/services/linkedin-ads", color: "from-orange-500 to-yellow-400", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/WC.webp" },
-  { title: "Photography", description: "Professional imagery that showcases excellence", link: "/services/google-ads", color: "from-red-500 to-pink-400", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PGIICON.webp" },
-  { title: "Social Media Marketing", description: "300%+ sales growth tracked for real estate clients through structured social content and lead systems.", link: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/services/news-highlights", color: "from-indigo-500 to-purple-400", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/SMM.webp" },
+  { title: "Videography", description: "Cinematic property tours that captivate and sell", link: "/services/social-media", color: "from-blue-500 to-cyan-400", image: "https://gi-img-cdn.sujeet.workers.dev/Images/VIDEOGRAPHYICON.webp" },
+  { title: "Lead Generation", description: "Strategic marketing to attract quality buyers", link: "/services/seo", color: "from-green-500 to-emerald-400", image: "https://gi-img-cdn.sujeet.workers.dev/Images/LGICON.png" },
+  { title: "360° Virtual Tour", description: "Immersion remote property exploration experience", link: "/services/meta-ads", color: "from-purple-500 to-pink-400", image: "https://gi-img-cdn.sujeet.workers.dev/Images/360VT.webp" },
+  { title: "Website Design", description: "Custom platforms for your real estate brand", link: "/services/linkedin-ads", color: "from-orange-500 to-yellow-400", image: "https://gi-img-cdn.sujeet.workers.dev/Images/WC.webp" },
+  { title: "Photography", description: "Professional imagery that showcases excellence", link: "/services/google-ads", color: "from-red-500 to-pink-400", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PGIICON.webp" },
+  { title: "Social Media Marketing", description: "300%+ sales growth tracked for real estate clients through structured social content and lead systems.", link: "https://gi-img-cdn.sujeet.workers.dev/Images/services/news-highlights", color: "from-indigo-500 to-purple-400", image: "https://gi-img-cdn.sujeet.workers.dev/Images/SMM.webp" },
 ];
 
 const photoImages = [
-  "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img1.webp",
-  "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img2.webp",
-  "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img3.webp",
-  "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img4.webp",
-  "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img5.webp",
-  "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img6.webp",
-  "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img7.webp",
-  "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img8.webp",
-  "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img9.webp",
-  "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img10.webp",
-  "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img11.webp",
-  "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img12.webp",
-  "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img13.webp",
-  "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img14.webp",
+  "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img1.webp",
+  "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img2.webp",
+  "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img3.webp",
+  "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img4.webp",
+  "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img5.webp",
+  "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img6.webp",
+  "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img7.webp",
+  "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img8.webp",
+  "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img9.webp",
+  "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img10.webp",
+  "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img11.webp",
+  "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img12.webp",
+  "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img13.webp",
+  "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img14.webp",
 ];
 
 const leadServices = [
@@ -900,7 +900,7 @@ const Virtualtour = () => {
                     <video
                       className="vt2-video w-full h-full object-cover"
                       style={{ willChange: "transform, opacity, filter" }}
-                      src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Videos/360%20min%20virtual%20tour%20(1).mp4"
+                      src="https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Videos/360%20min%20virtual%20tour%20(1).mp4"
                       autoPlay
                       muted
                       loop

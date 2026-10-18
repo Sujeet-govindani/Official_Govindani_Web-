@@ -181,7 +181,7 @@ const AppsSection = () => {
       description: "Productivity app for seamless task management",
       category: "Astrology",
       platforms: ["ios", "android"],
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/astro.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/astro.webp",
       heading: "ASTROLOGY APP"
     },
     {
@@ -189,7 +189,7 @@ const AppsSection = () => {
       description: "Exclusive luxury township with impeccable planning and top amenities",
       category: "Luxury Living",
       platforms: ["ios", "android"],
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/crm.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/crm.webp",
       heading: "CRM"
     },
     {
@@ -197,7 +197,7 @@ const AppsSection = () => {
       description: "Manage political campaigns, profiles, and research with powerful tools",
       category: "Political Campaigns",
       platforms: ["ios", "android"],
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/barnstorm.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/barnstorm.webp",
       heading: "POLITICAL INSIGHTS"
     },
   ];

@@ -4,11 +4,11 @@
 import React, { useRef, useState, useCallback } from 'react';
 
 const NgoVideoIntroSection: React.FC<{ videoUrl?: string; logoUrl?: string; posterUrl?: string }> = ({
-  videoUrl = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IntroVideo/NGO2.mp4',
-  logoUrl = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Official-Logo.webp',
+  videoUrl = 'https://gi-img-cdn.sujeet.workers.dev/Images/IntroVideo/NGO2.mp4',
+  logoUrl = 'https://gi-img-cdn.sujeet.workers.dev/Images/Official-Logo.webp',
   // Lightweight above-fold poster so the LCP element is this ~KB WebP, not the heavy MP4.
   // The video keeps autoplaying over it; preload="none" stops the MP4 from racing first paint.
-  posterUrl = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/NGOimg2.webp'
+  posterUrl = 'https://gi-img-cdn.sujeet.workers.dev/Images/NGOimg2.webp'
 }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isMuted, setIsMuted] = useState(true);

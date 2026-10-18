@@ -331,7 +331,7 @@ const YoutubeShowcaseSection = () => {
               <div className="yt-corner bl" />
               <div className="yt-corner br" />
               {/* ── replace with your image path ── */}
-              <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/YoutubeSilverPlate.webp" alt="Sujeet Govindani YouTube Channel" loading="lazy" decoding="async" />
+              <img src="https://gi-img-cdn.sujeet.workers.dev/Images/YoutubeSilverPlate.webp" alt="Sujeet Govindani YouTube Channel" loading="lazy" decoding="async" />
             </div>
 
           </motion.div>
@@ -726,7 +726,7 @@ const IndianBookOfRecordsSection = () => {
                   {/* ── replace with your image path ── */}
                   <img
                     className="ibr-centre-img"
-                    src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Book12.webp"
+                    src="https://gi-img-cdn.sujeet.workers.dev/Images/Book12.webp"
                     alt="Indian Book of Records Sujeet Govindani"
                   />
                 </div>

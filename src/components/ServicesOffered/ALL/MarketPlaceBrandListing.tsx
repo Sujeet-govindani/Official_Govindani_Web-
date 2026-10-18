@@ -1183,12 +1183,12 @@ import ServiceSection from '@/components/HomePage/ServicesSection';
 import ContactUsForm from '@/pages/ContactUsForm';
 
 const platforms = [
-  { name: 'Myntra', logo: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/platforms/myntra.webp', desc: 'India\'s leading fashion destination' },
-  { name: 'JioMart', logo: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/platforms/jiomart.webp', desc: 'Reliance\'s marketplace powerhouse' },
-  { name: 'Amazon', logo: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/platforms/amazon.webp', desc: 'Global e commerce giant' },
-  { name: 'Flipkart', logo: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/platforms/flipkart.webp', desc: 'India\'s homegrown marketplace' },
-  { name: 'Meesho', logo: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/platforms/meesho.webp', desc: 'Social commerce revolution' },
-  { name: 'Ajio', logo: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/platforms/ajio.webp', desc: 'Premium fashion & lifestyle' },
+  { name: 'Myntra', logo: 'https://gi-img-cdn.sujeet.workers.dev/Images/platforms/myntra.webp', desc: 'India\'s leading fashion destination' },
+  { name: 'JioMart', logo: 'https://gi-img-cdn.sujeet.workers.dev/Images/platforms/jiomart.webp', desc: 'Reliance\'s marketplace powerhouse' },
+  { name: 'Amazon', logo: 'https://gi-img-cdn.sujeet.workers.dev/Images/platforms/amazon.webp', desc: 'Global e commerce giant' },
+  { name: 'Flipkart', logo: 'https://gi-img-cdn.sujeet.workers.dev/Images/platforms/flipkart.webp', desc: 'India\'s homegrown marketplace' },
+  { name: 'Meesho', logo: 'https://gi-img-cdn.sujeet.workers.dev/Images/platforms/meesho.webp', desc: 'Social commerce revolution' },
+  { name: 'Ajio', logo: 'https://gi-img-cdn.sujeet.workers.dev/Images/platforms/ajio.webp', desc: 'Premium fashion & lifestyle' },
 ];
 
 const stats = [
@@ -1237,7 +1237,7 @@ const PlatformListing: React.FC = () => {
           </div>
           <div className="w-full lg:w-1/2">
             <div className="image-container aspect-[4/3] rounded-2xl overflow-hidden">
-              <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/platform-listing/hero.webp" alt="E commerce platforms" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+              <img src="https://gi-img-cdn.sujeet.workers.dev/Images/platform-listing/hero.webp" alt="E commerce platforms" className="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>

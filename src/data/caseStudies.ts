@@ -36,7 +36,7 @@ export const caseStudies: CaseStudy[] = [
       "Full 80G compliance",
       "Zero data dependency on third parties",
     ],
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/MSmain.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/MSmain.webp",
   },
   {
     id: "amtm-india",
@@ -60,7 +60,7 @@ export const caseStudies: CaseStudy[] = [
       "Stronger trust-building",
       "Better program visibility",
     ],
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/GNmain.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/GNmain.webp",
   },
   {
     id: "malakhamb-artist",
@@ -84,7 +84,7 @@ export const caseStudies: CaseStudy[] = [
       "Global cultural visibility",
       "Streamlined sponsorship pipeline",
     ],
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/mallakham.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/mallakham.webp",
   },
   {
     id: "gau-seva-dham",
@@ -108,7 +108,7 @@ export const caseStudies: CaseStudy[] = [
       "Better service discoverability",
       "More authoritative positioning",
     ],
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/DCmain1.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/DCmain1.webp",
   },
   {
     id: "popatbhai-foundation",
@@ -132,7 +132,7 @@ export const caseStudies: CaseStudy[] = [
       "Clearer donation pathways",
       "Better mission alignment",
     ],
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PBmain.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PBmain.webp",
   },
   {
     id: "harsh-chhikara-jan-sewa-trust",
@@ -157,7 +157,7 @@ export const caseStudies: CaseStudy[] = [
       "Coverage citable in grant applications",
       "Urgent and partnership paths separated",
     ],
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Harsh-Chhikkara-Jan-Seva-Trust.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Harsh-Chhikkara-Jan-Seva-Trust.webp",
   },
   {
     id: "nanhi-pari-foundation",
@@ -182,7 +182,7 @@ export const caseStudies: CaseStudy[] = [
       "Scale legible in one screen",
       "Two urgencies, two paths",
     ],
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Nanhi-Pari-Foundationngo.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Nanhi-Pari-Foundationngo.webp",
   },
   {
     id: "ci-builders",
@@ -208,7 +208,7 @@ export const caseStudies: CaseStudy[] = [
       "Per-project campaign targeting",
       "Qualified enquiries",
     ],
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Real-Estate/Real-Estate-Ci-Builders.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Real-Estate/Real-Estate-Ci-Builders.webp",
   },
   {
     id: "janki-builders",
@@ -233,7 +233,7 @@ export const caseStudies: CaseStudy[] = [
       "Buyers self-qualify pre-enquiry",
       "Premium read from presentation",
     ],
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Real-Estate/Real-Estate-Jank-Builders.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Real-Estate/Real-Estate-Jank-Builders.webp",
   },
   {
     id: "mahaveer-eye-hospital",
@@ -259,7 +259,7 @@ export const caseStudies: CaseStudy[] = [
       "Credentials where doubt arises",
       "Testimony in context",
     ],
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Healthcare/Healthcare-mahaveer-eye-hospital.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Healthcare/Healthcare-mahaveer-eye-hospital.webp",
   },
 
   {
@@ -285,7 +285,7 @@ export const caseStudies: CaseStudy[] = [
       "No template constraints",
       "Doubt addressed at checkout",
     ],
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Coding-Babajikibuti.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Coding-Babajikibuti.webp",
   },
   {
     id: "terra-by-trishla",
@@ -310,7 +310,7 @@ export const caseStudies: CaseStudy[] = [
       "Built for social arrival",
       "Mobile-first",
     ],
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Terra-By-Trishla.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Terra-By-Trishla.webp",
   },
   {
     id: "madhav-numerology",
@@ -335,7 +335,7 @@ export const caseStudies: CaseStudy[] = [
       "Intangible made evaluable",
       "Buy without a call",
     ],
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Madhav-Numerology.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Madhav-Numerology.webp",
   },
   {
     id: "gsd-organics",
@@ -360,7 +360,7 @@ export const caseStudies: CaseStudy[] = [
       "Trial barrier lowered",
       "Farmer-framed positioning",
     ],
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Gsd-Organics.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Gsd-Organics.webp",
   },
   {
     id: "muktashop",
@@ -385,7 +385,7 @@ export const caseStudies: CaseStudy[] = [
       "Expectation gap closed",
       "Not a default theme",
     ],
-    image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Shopify/Shopify-Muktashop.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Shopify/Shopify-Muktashop.webp",
   },
 
 ];

@@ -3,7 +3,7 @@ import { useRef, useState } from 'react';
 
 const highlights = [
   {
-    icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wordrecord1.webp",
+    icon: "https://gi-img-cdn.sujeet.workers.dev/Images/wordrecord1.webp",
     number: "01",
     tag: "WORLD RECORD",
     title: "Record-Smashing Beginnings",
@@ -13,7 +13,7 @@ const highlights = [
     ],
   },
   {
-    icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Bookpublished1.webp",
+    icon: "https://gi-img-cdn.sujeet.workers.dev/Images/Bookpublished1.webp",
     number: "02",
     tag: "PUBLISHED WORKS",
     title: "Books That Shape Minds",
@@ -24,7 +24,7 @@ const highlights = [
     ],
   },
   {
-    icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/you1.webp",
+    icon: "https://gi-img-cdn.sujeet.workers.dev/Images/you1.webp",
     number: "03",
     tag: "DIGITAL REACH",
     title: "A Voice Heard by Millions",

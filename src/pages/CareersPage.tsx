@@ -42,22 +42,22 @@ const Career = () => {
     {
       title: "Students & Fresh Graduates",
       description: "Start your IT career journey",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/student.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/student.webp",
     },
     {
       title: "Early Career Professionals",
       description: "Grow your technical expertise",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/EarlyCareer.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/EarlyCareer.webp",
     },
     {
       title: "Experienced Professionals",
       description: "Lead innovative projects",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Experience.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/Experience.webp",
     },
     {
       title: "Career Switchers",
       description: "Transition to digital innovation",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/CareersSwitch.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/CareersSwitch.webp",
     },
   ];
 
@@ -65,7 +65,7 @@ const Career = () => {
   const careerCarouselSlides = [
     {
       id: 1,
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/DigitalMarketing.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/DigitalMarketing.webp",
       title: "Digital Marketing Excellence",
       description: "Join our dynamic team and work on cutting-edge digital marketing campaigns that drive real business results for our clients.",
       linkText: "Explore Opportunities",
@@ -73,7 +73,7 @@ const Career = () => {
     },
     {
       id: 2,
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Itsolution.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/Itsolution.webp",
       title: "IT Solutions & Innovation",
       description: "Be part of innovative IT projects leveraging the latest technologies in cloud, AI, and enterprise solutions.",
       linkText: "View Tech Roles",
@@ -81,7 +81,7 @@ const Career = () => {
     },
     {
       id: 3,
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/creativeteam.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/creativeteam.webp",
       title: "Creative Design Team",
       description: "Shape digital experiences with our creative team, designing stunning solutions that captivate and convert.",
       linkText: "Join Our Creative Team",
@@ -89,7 +89,7 @@ const Career = () => {
     },
     {
       id: 4,
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ContinuousLearning.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/ContinuousLearning.webp",
       title: "Continuous Learning",
       description: "Access training, certifications, and mentorship programs to stay ahead in the rapidly evolving tech landscape.",
       linkText: "Learn & Grow",
@@ -97,7 +97,7 @@ const Career = () => {
     },
     {
       id: 5,
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ShapeThe.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/ShapeThe.webp",
       title: "Shape the Digital Future",
       description: "Work on exciting projects that leverage the latest technologies in digital marketing and IT solutions.",
       linkText: "Start Your Journey",
@@ -132,21 +132,21 @@ const Career = () => {
   const belongData = [
 
     {
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ProfessionalGrowth.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/ProfessionalGrowth.webp",
       title: "Professional Growth",
       description: "Continuous learning opportunities through training, certifications, and hands-on projects",
       linkText: "Career development",
       position: "left",
     },
     {
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/CuttingEdge.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/CuttingEdge.webp",
       title: "Cutting-Edge Technology",
       description: "Work with the latest tools and technologies in digital marketing and IT solutions",
       linkText: "Our tech stack",
       position: "right",
     },
     {
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/creativeteam.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/creativeteam.webp",
       title: "Team Collaboration",
       description: "Join a passionate team that values collaboration, knowledge sharing, and mutual support",
       linkText: "Meet the team",

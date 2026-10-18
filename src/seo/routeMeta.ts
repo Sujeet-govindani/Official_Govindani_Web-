@@ -7,152 +7,152 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   "/usa": {
     "title": "US Web, E-commerce & NGO Sites from $1,000 | Govindani Infotech",
     "description": "US-registered web partner: donation-ready NGO sites and global e-commerce stores from $1,000. Book a free 30-minute consultation.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-usa-v2.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-usa-v2.jpg"
   },
   "/us": {
     "title": "US Web, E-commerce & NGO Sites from $1,000 | Govindani Infotech",
     "description": "US-registered web partner: donation-ready NGO sites and global e-commerce stores from $1,000. Book a free 30-minute consultation.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-usa-v2.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-usa-v2.jpg"
   },
   "/ngoindia": {
     "title": "NGO Website with Donation System from \u20b940,000 | Govindani Infotech",
     "description": "Donation-ready NGO websites for Indian trusts and societies from \u20b940,000. 80G receipts, recurring giving, zero commission. Book a free consultation.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-usa-v2.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-usa-v2.jpg"
   },
   "/blog": {
     "title": "Blog | Digital Growth Insights for NGOs & Businesses",
     "description": "Practical, current guides on websites, e-commerce, WhatsApp, SEO and digital marketing — India-first, by Govindani Infotech.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-blog.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-blog.jpg"
   },
   "/services": {
     "title": "Our Services | Web, E-commerce, WhatsApp & Growth",
     "description": "Web, e-commerce, mobile apps, WhatsApp API, ads, SEO, design and NGO donation platforms — one partner, end to end.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pricing/ngo-os": {
     "title": "Give Setu Pricing | NGO Donation Software ₹25,000",
     "description": "Give Setu pricing covers donations, 80G receipts, donors, members, cases, campaigns, compliance and website, with 0% commission on every rupee raised forever.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-givesetu.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-givesetu.jpg"
   },
   "/pricing/ngo-website": {
     "title": "NGO Website Pricing India | WordPress ₹35,000, Give Setu",
     "description": "Three ways to put your non-profit online: WordPress at ₹35,000, Give Setu at ₹25,000 with 80G receipts and 10BD filing, or custom coding quoted to scope.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-givesetu.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-givesetu.jpg"
   },
   "/pages/ngopage": {
     "title": "NGO Website Development Company in Pune | Govindani Infotech",
     "description": "NGO website development from Pune: donation-ready websites with online giving, 80G receipts and donor records, built by Govindani Infotech for 550+ NGOs.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-ngo.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-ngo.jpg"
   },
   "/pages/case-study": {
     "title": "Case Studies That Turn Purpose Into Performance",
     "description": "We partner with nonprofits, trusts, and mission-led organizations to build digital experiences that drive clarity, trust, and measurable impact.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/": {
     "title": "Website Development Company in Pune | Govindani Infotech",
     "description": "Govindani Infotech is a website and software development company in Pune building business websites, e-commerce stores, CRMs and NGO donation platforms — 1000+ websites and 550+ NGOs delivered from Pune, India.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-home.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-home.jpg"
   },
   "/services/meta-ads": {
     "title": "Targeted Meta Ads for Revenue Growth",
     "description": "Drive more leads and sales with our expertly managed Meta Ads services. Reach your ideal customers and boost your brand visibility with strategic social me…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-ads.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-ads.jpg"
   },
   "/services/google-ads": {
     "title": "Targeted Google Ads for Revenue Growth",
     "description": "Drive more leads and sales with our expertly managed Google Ads services. Reach your ideal customers and boost your brand visibility with strategic PPC cam…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-ads.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-ads.jpg"
   },
   "/services/whatsapp-flow": {
     "title": "Connect Convert Grow on WhatsApp | Govindani Infotech",
     "description": "We deliver enterprise-grade WhatsApp Business solutions powered by Interakt & Wati helping brands scale marketing, automate support and win more deals.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/whatsapp/crm": {
     "title": "Your Smartest WhatsApp Sales CRM Yet | Govindani Infotech",
     "description": "Capture, nurture, and close deals faster all inside WhatsApp. The CRM built for modern sales teams that want to meet customers where they already are.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/services/lead-generation": {
     "title": "Targeted Lead Generation for Business Growth",
     "description": "Whether you are in real estate, clothing, interior design, or franchising, our innovative strategies and data-driven approach ensure that you connect with…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-ads.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-ads.jpg"
   },
   "/services/social-media/personal-branding": {
     "title": "Social Media Marketing for Personal Brands & Founders",
     "description": "We package your expertise into a predictable content engine so your LinkedIn, Instagram and YouTube grow with the same discipline as your business.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-social.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-social.jpg"
   },
   "/services/website-creation": {
     "title": "Custom Website Development Company in Pune | Govindani",
     "description": "Custom website development in Pune: responsive business websites, CMS and web apps built by Govindani Infotech, with 1000+ websites delivered across India.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-webdev.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-webdev.jpg"
   },
   "/services/social-media/plans": {
     "title": "Social Media Management Plans & Pricing | Govindani Infotech",
     "description": "Transparent, structured pricing for every stage of growth from starter brands to established organisations.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-social.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-social.jpg"
   },
   "/services/ecommerce": {
     "title": "Ecommerce Website Development in Pune | Govindani Infotech",
     "description": "Ecommerce website development in Pune — your own store, your own checkout, no marketplace commission. Built and supported by Govindani Infotech.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-ecom.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-ecom.jpg"
   },
   "/services/social-media/live-profiles": {
     "title": "See Our Social Media Work Live | Govindani Infotech",
     "description": "Social media management in India showcases live profiles for NGOs, real estate, ecommerce, healthcare, and personal brands, with end-to-end campaigns.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-social.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-social.jpg"
   },
   "/whatsapp/commerce": {
     "title": "WhatsApp Commerce Setup | Start Your Online Store",
     "description": "Transform the way your customers shop. Build a WhatsApp store, showcase products with rich catalogues, automate checkout flows, and drive more revenue dire…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/services/social-media": {
     "title": "Social Media Marketing That Moves Numbers",
     "description": "From NGOs and real estate to ecommerce, hospitality and personal brands, we plan, design and manage your social channels to drive real donations, bookings…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-social.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-social.jpg"
   },
   "/services/videography": {
     "title": "Capturing Moments, Crafting Stories | Govindani Infotech",
     "description": "Professional videography services that transform your vision into compelling visual stories. Whether it's for corporate events, promotional videos, or crea…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/services/social-media/real-estate": {
     "title": "Social Media Marketing for Real Estate | Govindani Infotech",
     "description": "For developers, we use social media as a lead-engine: project launches, site updates, offers and credibility-building content all mapped to your CRM and sa…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-social.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-social.jpg"
   },
   "/services/social-media/ngo": {
     "title": "Social Media Marketing for NGOs | Govindani Infotech",
     "description": "We turn your mission into consistent, donor-friendly storytelling. Every post, reel and campaign is designed to build trust, show impact and drive recurrin…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-social.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-social.jpg"
   },
   "/services/social-media/ecommerce": {
     "title": "Social Media Marketing for Ecommerce Brands",
     "description": "We connect your product catalog, website and logistics with content that actually pushes orders. Creatives, reels and offers are mapped directly to product…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-social.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-social.jpg"
   },
   "/services/seo": {
     "title": "SEO That Turns Search Traffic Into Business",
     "description": "SEO services in India turn search traffic into business through strategic optimisation, helping brands reach donors, buyers, bookings, and serious inquiries.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-seo.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-seo.jpg"
   },
   "/services/social-media/hospitality": {
     "title": "Social Media Marketing for Hospitality, Hotels & Resorts",
     "description": "We capture the aesthetic, the warmth, and the premium vibe of your stay. The goal: stellar drone walkthroughs, direct booking growth, and guest brand loyalty.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-social.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-social.jpg"
   },
   "/services/linkedin-ads": {
     "title": "LinkedIn Marketing to Grow Your Business",
     "description": "Specialized LinkedIn Ads services to help businesses enhance their B2B marketing efforts. Our expert strategies ensure that your ads reach the right profes…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-ads.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-ads.jpg"
   },
   "/services/social-media/astrology": {
     "title": "Social Media Marketing That Drives Real Results",
     "description": "We create strategy-driven social media content that builds your brand, engages your audience and converts followers into paying customers.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-social.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-social.jpg"
   },
   "/instagram/automation": {
     "title": "Turn Instagram Comments into Conversions",
@@ -161,172 +161,172 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   "/whatsapp/industries/travel-tourism": {
     "title": "Generate More Leads for Your Travel Agency on WhatsApp",
     "description": "Add WhatsApp widget on website/place WA link on social handles to generate leads. Answer FAQs via custom auto-replies to help customers pick & choose trave…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/services/payment-gateway": {
     "title": "Seamless Payment Gateway Integration",
     "description": "Payment gateway integration in India connects your platform to leading payment networks with PCI DSS security, fraud intelligence and 24/7 support.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/whatsapp/industries/restaurants-food": {
     "title": "Grow Your Restaurant & Food Business with WhatsApp",
     "description": "Integrate Google & FB Leads form to obtain new foodies for your business. Solve queries via custom auto-replies and help customers in making quick & tasty…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/services/ai-automation": {
     "title": "Automate Your Business Unlock True Leverage",
     "description": "From CRM pipelines to WhatsApp flows, Shiprocket logistics to AI integrations we build the automation infrastructure your business deserves.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/about-us/about-company": {
     "title": "About Govindani Infotech | Web & Software Company, Pune",
     "description": "Govindani Infotech Pvt. Ltd. is a website and software development company headquartered in Pune, Maharashtra, serving clients across India with 1000+ websites and 550+ NGOs delivered.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-about.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-about.jpg"
   },
   "/whatsapp/forms": {
     "title": "Amplify Conversations to Conversion With WhatsApp Forms",
     "description": "Leverage WhatsApp Forms to create in-channel interactive forms that automate message sequences, and engage further with media CTA to drive conversions on W…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/whatsapp/industries/automotive": {
     "title": "Grow Your Automotive Business Using WhatsApp",
     "description": "Integrate your online store for capturing qualified leads & drive conversions. Run Ads that Click to WhatsApp on FB & Insta and acquire more customers.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/services/logistic-integration": {
     "title": "Logistics Made Effortlessly Powerful | Govindani Infotech",
     "description": "Shiprocket unifies 25+ courier partners into a single, intelligent platform giving your e-commerce business the logistics backbone it deserves.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/whatsapp/chat-widget": {
     "title": "Free WhatsApp Chat Widget for Your Website",
     "description": "The fastest way to connect with your website visitors and convert them into paying customers.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/whatsapp/industries/real-estate": {
     "title": "Scale Your Real Estate Business with WhatsApp Automations",
     "description": "Integrate Google & FB Leads form to obtain leads. Answer FAQs quickly via custom auto-replies and help clients in choosing the right home & book site visits.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/services/marketplace-brand-listing": {
     "title": "Get Your Brand on Every Major Marketplace",
     "description": "From Myntra to JioMart, Amazon to Flipkart we help brands onboard, list, and sell on India's and the world's biggest e commerce platforms. No delays, no re…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/services/checkout-system": {
     "title": "The Checkout Experience Your Customers Deserve",
     "description": "A fully custom, end to end checkout and order management system from the moment a customer clicks \"Buy Now\" to the delivery at their doorstep and beyond.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/services/graphic-designer": {
     "title": "Creativity that Speaks Volumes | Govindani Infotech",
     "description": "Top-tier graphic designing services that transform your ideas into visually stunning designs. From branding and marketing materials to digital graphics, we…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/whatsapp/business-api": {
     "title": "Transform Your Business with WhatsApp Business API",
     "description": "Send bulk messages on WhatsApp Get your team on WhatsApp Send fast automated notifications Setup automated WhatsApp chatbot Run powerful WhatsApp marketing…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/pricing/websites": {
     "title": "Predictable Pricing. No Surprises. | Govindani Infotech",
     "description": "Great value at affordable rates. No hidden costs, no frills. Choose the platform that powers your growth.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-givesetu.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-givesetu.jpg"
   },
   "/whatsapp/automation": {
     "title": "Boost Conversions with WhatsApp Automation",
     "description": "Optimize your ordering process with automated checkout flows. Share payment details, provide payment links, and collect payments for fast, seamless transac…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/services/video-editing": {
     "title": "Video Editing | Govindani Infotech",
     "description": "Explore our work and see how we can help you make a powerful impact through the art of video editing.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/services/logo-designing": {
     "title": "Logo Designing | Govindani Infotech",
     "description": "Logo designing in India by Govindani Infotech creates distinctive, memorable logos shaped by your brand, audience, and goals for digital, print, and signage.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/whatsapp/industries/home-decor": {
     "title": "Grow Your Home Decor and Furnishings Business Using WhatsApp",
     "description": "Integrate your online store for capturing qualified leads & drive conversions. Answer FAQs via custom auto-replies to solve queries quickly & efficiently.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/whatsapp/marketing": {
     "title": "Turn Conversations Into Conversions with AI",
     "description": "Create smarter campaigns, engage better, and convert more, with AI that helps you write messages, optimize sends, and drive results on autopilot.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/whatsapp/industries/edtech": {
     "title": "Enroll Students and Update Them on WhatsApp",
     "description": "Integrate Google & FB Leads form to enroll students. Answer FAQs using auto-reply flows on WhatsApp.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/services/virtual-tours": {
     "title": "360° Virtual Tours for Business | Govindani Infotech",
     "description": "Immersive 360° virtual tours for property, hospitality, education and retail spaces.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/whatsapp/industries/marketing-agency": {
     "title": "Add WhatsApp as a Sales Channel for Conversions",
     "description": "Leverage Ads that Click to WhatsApp to acquire new customers for your clients. Set up custom-replies on your clients' WhatsApp to solve customer queries qu…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/whatsapp/industries/beauty-cosmetics": {
     "title": "WhatsApp Business for Beauty Businesses",
     "description": "Integrate your website with WhatsApp Business Platform & streamline business operations. Answer FAQs via custom auto-replies and help customers in making t…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/whatsapp/industries/health-wellness": {
     "title": "Grow Your Health & Wellness Business with WhatsApp",
     "description": "Integrate your online store for capturing qualified leads & drive conversions. Answer FAQs quickly via custom auto-replies and help patients in making the…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/services/product-shoot": {
     "title": "Product Photography & Shoot Services | Govindani Infotech",
     "description": "Studio and on-location product photography for e-commerce, catalogues and campaigns.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/services/photography": {
     "title": "Photography | Govindani Infotech",
     "description": "Photography is more than a click of a shutter it is the art of freezing time , of finding beauty in the ordinary, and turning fleeting moments into timeles…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/whatsapp/industries/banking-finance": {
     "title": "Banking Finance | Govindani Infotech",
     "description": "Run click to WhatsApp ads to promote your BFSI products and services. Answer FAQs quickly via custom auto-replies and help customers with their queries.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/whatsapp/chatbot-builder": {
     "title": "WhatsApp Chatbot for Sales, Support & Engagement",
     "description": "Automate conversations, qualify leads, close sales, and offer instant support with Whats App Voice Calling. no-code WhatsApp Chatbot now smarter with AI-ge…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/whatsapp/notification-library": {
     "title": "AI WhatsApp Templates Personalized for Your Business",
     "description": "Just sign up.AI instantly generates 10+ personalized, ready-to-send WhatsApp templates, created using your website, industry, and business goals, so you ca…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/portfolio/virtual-tour": {
     "title": "Real Estate Website Development in Pune | Govindani Infotech",
     "description": "Real estate website development in Pune: project microsites, 360° virtual tours and lead-capture CRM for builders and brokers, by Govindani Infotech.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-vtour.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-port-vtour.jpg"
   },
   "/whatsapp/industries/b2b-sales": {
     "title": "Close B2B Sales Faster with WhatsApp",
     "description": "B2B SaaS market is set to hit $500B by 2026. Explore how WhatsApp Business API can supercharge your customer engagement!",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/real-estate": {
     "title": "Real Estate Website Development in Pune | Govindani Infotech",
     "description": "Real estate website development in Pune: project microsites, 360° virtual tours and lead-capture CRM for builders and brokers, by Govindani Infotech.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-vtour.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-port-vtour.jpg"
   },
   "/whatsapp/industries/spas-salons": {
     "title": "Get More Spa and Salon Appointments with WhatsApp",
     "description": "Add WhatsApp widget on website/place WA link on social handles to generate leads. Answer FAQs via custom auto-replies to help customers pick & choose the r…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/tech-roles": {
     "title": "Open Tech Roles | Govindani Infotech",
@@ -339,22 +339,22 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   "/whatsapp/click-to-whatsapp-ads": {
     "title": "Click-to-WhatsApp Ads for More Conversions",
     "description": "The fastest way to run high-converting Click-to-WhatsApp ads, without the complexity of Meta Ads Manager.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/tutorials/ngo-videos": {
     "title": "Informative Videos for NGOs and Businesses",
     "description": "Step-by-step guides, insights, and expert answers all in one place to help your NGO thrive digitally.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-ngo.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-ngo.jpg"
   },
   "/whatsapp/industries/freelancer-consultant": {
     "title": "Freelancer and Consultant Sales with WhatsApp",
     "description": "Integrate Google & FB Leads form to obtain new clients. Answer FAQs quickly via custom auto-replies and help clients with their queries and fast-track the…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/whatsapp/voice-calling": {
     "title": "WhatsApp Voice Calling for Business | Govindani Infotech",
     "description": "Add voice calling to your WhatsApp Business channel for sales and support conversations.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-whatsapp.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
   "/privacy-policy": {
     "title": "Privacy Policy | Govindani Infotech",
@@ -363,12 +363,12 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   "/pricing/social-media": {
     "title": "Grow Your Brand. Dominate Social. | Govindani Infotech",
     "description": "We craft premium digital experiences from bespoke web architectures to intelligent AI integrations for brands that refuse to settle for ordinary.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-givesetu.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-givesetu.jpg"
   },
   "/careers/social-media-marketer": {
     "title": "Social Media Marketer Job in Pune | Govindani Infotech Careers",
     "description": "We're hiring a Social Media Marketer in Pune \u2014 reels, design, content and Meta/Google ads. Apply in two minutes; the first interview round starts on WhatsApp.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-usa-v2.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-usa-v2.jpg"
   },
   "/careers": {
     "title": "Innovate Create Transform the Digital Future",
@@ -377,12 +377,12 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   "/services/car-wash-crm": {
     "title": "Car Wash CRM Software | Govindani Infotech",
     "description": "Booking, staff scheduling and customer management built for car wash and detailing businesses.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/services/hotel-crm": {
     "title": "Hotel CRM & Booking Management | Govindani Infotech",
     "description": "Reservations, guest records and follow-up automation for hotels and resorts.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/cookie-policy": {
     "title": "Cookie Policy | Govindani Infotech",
@@ -399,47 +399,47 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   "/services/ci-crm": {
     "title": "CRM Development Company in Pune | Govindani Infotech",
     "description": "CRM development in Pune for construction, interiors and service businesses: lead capture, project and site management, built and hosted by Govindani Infotech.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/portfolio/hospitality": {
     "title": "Our Restaurant & Resort Websites | Govindani Infotech",
     "description": "We craft visually stunning and conversion-focused websites for restaurants, cafes, and resorts. From elegant digital menus and online reservation systems t…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-hospitality.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-port-hospitality.jpg"
   },
   "/portfolio/healthcare": {
     "title": "Our Healthcare Websites | Govindani Infotech",
     "description": "We create dynamic healthcare websites designed to connect patients and providers seamlessly. From hospital portals to wellness platforms and telemedicine s…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-healthcare.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-port-healthcare.jpg"
   },
   "/portfolio/ngo": {
     "title": "Our NGO Projects | Govindani Infotech",
     "description": "Crafting impactful digital experiences for non-profit organisations websites that inspire action, build trust, and amplify every cause they stand for.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-ngo.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-ngo.jpg"
   },
   "/portfolio/ecommerce": {
     "title": "E-Commerce Website Portfolio | Govindani Infotech",
     "description": "Online stores we have built, from single-brand shops to multi-vendor marketplaces.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-ecom.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-port-ecom.jpg"
   },
   "/portfolio/builders": {
     "title": "Builder & Real Estate Website Portfolio | Govindani Infotech",
     "description": "Project websites, virtual tours and lead systems built for builders and developers.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-realestate.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-port-realestate.jpg"
   },
   "/portfolio/business": {
     "title": "Business Website Portfolio | Govindani Infotech",
     "description": "Websites we have built for businesses across manufacturing, services, healthcare and retail.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-port-business.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-port-business.jpg"
   },
   "/pricing/other-services": {
     "title": "All Services. One Agency. | Govindani Infotech",
     "description": "Combine multiple services, get a bundle discount, or have unique requirements? We'll craft a bespoke plan just for you.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-givesetu.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-givesetu.jpg"
   },
   "/contact-us": {
     "title": "Contact Govindani Infotech | Web Development Company, Pune",
     "description": "Talk to Govindani Infotech in Pune about websites, e-commerce, CRM, WhatsApp API or an NGO donation platform. Office on Satara Road, Parvati, Pune 411009.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-contact.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-contact.jpg"
   },
   "/explore-career": {
     "title": "Explore Career | Govindani Infotech",
@@ -456,87 +456,87 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   "/services/ai-product-shoot": {
     "title": "Ai Product Shoot | Govindani Infotech",
     "description": "We craft premium digital experiences from bespoke web architectures to intelligent AI integrations for brands that refuse to settle for ordinary.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pages/case-study/muktashop": {
     "title": "MuktaShop Case Study | Govindani Infotech",
     "description": "Jewellery and accessories sell on visual detail that a small product thumbnail destroys and returns in this category are expensive, driven almost entirely…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pages/case-study/gsd-organics": {
     "title": "GSD Organics Case Study | Govindani Infotech",
     "description": "GSD Organics sells organic compost and farming inputs to farmers among the most evidence-driven buyers in any category. Yield claims get tested against…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pages/case-study/madhav-numerology": {
     "title": "Madhav Numerology Case Study | Govindani Infotech",
     "description": "Numerology and tarot consultation almost always sells through direct messages and phone calls, which caps revenue at exactly one thing: how many…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pages/case-study/terra-by-trishla": {
     "title": "Terra by Trishla Case Study | Govindani Infotech",
     "description": "Creator Commerce Dies When the Store Strips Out the Voice. Terra by Trishla describes itself as \\",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pages/case-study/baba-ji-ki-buti": {
     "title": "Baba Ji Ki Buti Case Study | Govindani Infotech",
     "description": "Traditional wellness products are bought on trust in provenance and preparation, not on a photograph and a price. Every template storefront on the market…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pages/case-study/mahaveer-eye-hospital": {
     "title": "Mahaveer Eye Hospital Case Study | Govindani Infotech",
     "description": "Patients choosing eye surgery are frightened. They research for weeks, read every testimonial, and are persuaded almost entirely by surgeon credentials…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pages/case-study/janki-builders": {
     "title": "Janki Builders Case Study | Govindani Infotech",
     "description": "Janki Group markets premium residential property in Bhopal across both current and completed developments. The structural problem was that ongoing and…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pages/case-study/ci-builders": {
     "title": "CI Builders Case Study | Govindani Infotech",
     "description": "CI Group has built residential and commercial property across Madhya Pradesh for twenty years. But property buyers research online for weeks before they…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pages/case-study/nanhi-pari-foundation": {
     "title": "Nanhi Pari Foundation Case Study | Govindani Infotech",
     "description": "Institutional donors and CSR partners evaluate governance before they evaluate a cause. They want to see how an organisation is run, who runs it, and what…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pages/case-study/harsh-chhikara-jan-sewa-trust": {
     "title": "Harsh Chhikara Jan Sewa Trust Case Study",
     "description": "The trust does visible, photographable work on the ground every week feeding drives, medical camps, direct family support. But all of it lived on social…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pages/case-study/popatbhai-foundation": {
     "title": "Popatbhai Charitable Foundation Case Study",
     "description": "The foundation supports shelter, ration kits, women empowerment, orphan care, divyang support, medical aid, and animal welfare all under one umbrella.…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pages/case-study/gau-seva-dham": {
     "title": "Gau Seva Dham Case Study | Govindani Infotech",
     "description": "Gau Seva Dham operates a super-specialty gau hospital with free veterinary care, shelter, and rehabilitation a scale that demands authority. The existing…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pages/case-study/malakhamb-artist": {
     "title": "Malakhamb Artist Case Study | Govindani Infotech",
     "description": "Malakhamb Artist case study: a purpose-driven platform for athlete profiles, events, donations, sponsorships, and global cultural visibility online.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pages/case-study/amtm-india": {
     "title": "Animal Matters To me Case Study | Govindani Infotech",
     "description": "Animal Matters To me case study: a donation-first website improving trust, program visibility, and donation journeys for rescue, adoption, and fundraising.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/pages/case-study/mahipatsinh-foundation": {
     "title": "Mahipatsinh Foundation Case Study | Govindani Infotech",
     "description": "Mahipatsinh Chauhan a man whose story speaks for itself a lifetime spent helping thousands, building schools, and uplifting communities. People across…",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-services.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-services.jpg"
   },
   "/about-us/about-founder": {
     "title": "Sujeet Govindani, Founder | Govindani Infotech",
     "description": "At 22 he shattered conventions. Today he ignites founders, fuels CEOs, and leads millions toward growth, impact and real transformation.",
-    "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/og-about.jpg"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-about.jpg"
   },
 };
 

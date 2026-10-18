@@ -360,7 +360,7 @@ export default function HomeDecorPage() {
               <div className="br"></div>
             </div>
             <div className="coli">
-              <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section1.webp" alt="Home Decor WhatsApp hero" />
+              <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section1.webp" alt="Home Decor WhatsApp hero" />
             </div>
           </div>
         </div>
@@ -422,7 +422,7 @@ export default function HomeDecorPage() {
 
               </div>
               <div className="coli">
-                <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section3-img1.webp" alt="Promote new products" />
+                <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section3-img1.webp" alt="Promote new products" />
               </div>
             </div>
           </div>
@@ -431,7 +431,7 @@ export default function HomeDecorPage() {
           <div className="dblk">
             <div className="tc fl">
               <div className="coli">
-                <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-section3-img2.webp" alt="Turn interest into purchase" />
+                <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-section3-img2.webp" alt="Turn interest into purchase" />
               </div>
               <div className="col">
                 <div className="gb" />
@@ -469,7 +469,7 @@ export default function HomeDecorPage() {
 
             </div>
             <div className="coli">
-              <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section4.webp" alt="Post-purchase experience" />
+              <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section4.webp" alt="Post-purchase experience" />
             </div>
           </div>
         </div>
@@ -497,7 +497,7 @@ export default function HomeDecorPage() {
               </div>
             </div>
             <div className="coli">
-              <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section-5.webp" alt="Nestasia success story" />
+              <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section-5.webp" alt="Nestasia success story" />
             </div>
           </div>
         </div>
@@ -540,9 +540,9 @@ export default function HomeDecorPage() {
             {/* Card 1 Home Canvas */}
             <div className="ss-card">
               <div className="ss-img">
-                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section7-img1.webp" alt="Home Canvas background" loading="lazy" decoding="async" />
+                <img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section7-img1.webp" alt="Home Canvas background" loading="lazy" decoding="async" />
                 <div className="ss-logo-strip">
-                  <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section7-img2.webp" alt="Home Canvas logo" loading="lazy" decoding="async" />
+                  <img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section7-img2.webp" alt="Home Canvas logo" loading="lazy" decoding="async" />
                 </div>
               </div>
               <div className="ss-body">
@@ -559,9 +559,9 @@ export default function HomeDecorPage() {
             {/* Card 2 Nestasia */}
             <div className="ss-card">
               <div className="ss-img">
-                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section7-img3.webp" alt="Nestasia background" loading="lazy" decoding="async" />
+                <img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section7-img3.webp" alt="Nestasia background" loading="lazy" decoding="async" />
                 <div className="ss-logo-strip">
-                  <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section7-img4.webp" alt="Nestasia logo" loading="lazy" decoding="async" />
+                  <img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Home-Decor/Home-Decor-Section7-img4.webp" alt="Nestasia logo" loading="lazy" decoding="async" />
                 </div>
               </div>
               <div className="ss-body">

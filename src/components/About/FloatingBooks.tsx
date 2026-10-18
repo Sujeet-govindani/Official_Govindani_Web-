@@ -9,7 +9,7 @@ import React, { useState } from "react";
  ╚═══════════════════════════════════════════════════════════════╝
 */
 
-const KINDLE_ICON_PATH = "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/AK.png"; // ← change this to your local Kindle icon path
+const KINDLE_ICON_PATH = "https://gi-img-cdn.sujeet.workers.dev/Images/AK.png"; // ← change this to your local Kindle icon path
 
 const GOLD = "#d4af37";
 const GOLD_LIGHT = "#f4d03f";

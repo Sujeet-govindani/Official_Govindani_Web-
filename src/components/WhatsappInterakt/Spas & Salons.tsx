@@ -414,7 +414,7 @@ export default function SpasSalonsPage() {
 
             </div>
             <div className="coli">
-              <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Spas-Salons/Spas-Salons-section1.webp" alt="Spa & Salon WhatsApp hero" />
+              <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Spas-Salons/Spas-Salons-section1.webp" alt="Spa & Salon WhatsApp hero" />
             </div>
           </div>
         </div>
@@ -471,7 +471,7 @@ export default function SpasSalonsPage() {
 
             </div>
             <div className="coli">
-              <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Spas-Salons/Spas-Salons-section3.webp" alt="Reach more customers" />
+              <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Spas-Salons/Spas-Salons-section3.webp" alt="Reach more customers" />
             </div>
           </div>
         </div>
@@ -482,7 +482,7 @@ export default function SpasSalonsPage() {
         <div className="inn">
           <div className="tc fl">
             <div className="coli">
-              <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Spas-Salons/Spas-Salons-section4.webp" alt="Reduce appointment drop-offs" />
+              <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Spas-Salons/Spas-Salons-section4.webp" alt="Reduce appointment drop-offs" />
             </div>
             <div className="col">
               <div className="gb" />
@@ -519,7 +519,7 @@ export default function SpasSalonsPage() {
 
               </div>
               <div className="coli">
-                <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Spas-Salons/Spas-Salons-section5.webp" alt="Post-appointment sell more" />
+                <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Spas-Salons/Spas-Salons-section5.webp" alt="Post-appointment sell more" />
               </div>
             </div>
           </div>

@@ -148,24 +148,24 @@ const FeatImg = ({ src, alt, icon: Icon, className = "" }: {
    DATA
 ───────────────────────────────────────────── */
 const TRUST_BRANDS: { name: string; img: string; alt: string }[] = [
-  { name: "Jio",       img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W6.webp",  alt: "Jio" },
-  { name: "Disney+",   img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W7.webp",  alt: "Disney+" },
-  { name: "pepperfry", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W8.webp",  alt: "pepperfry" },
-  { name: "upstox",    img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W9.webp",  alt: "upstox" },
-  { name: "BBLUNT",    img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W5.webp",  alt: "BBLUNT" },
-  { name: "BLUE DART", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W3.webp",  alt: "BLUE DART" },
+  { name: "Jio",       img: "https://gi-img-cdn.sujeet.workers.dev/Images/W6.webp",  alt: "Jio" },
+  { name: "Disney+",   img: "https://gi-img-cdn.sujeet.workers.dev/Images/W7.webp",  alt: "Disney+" },
+  { name: "pepperfry", img: "https://gi-img-cdn.sujeet.workers.dev/Images/W8.webp",  alt: "pepperfry" },
+  { name: "upstox",    img: "https://gi-img-cdn.sujeet.workers.dev/Images/W9.webp",  alt: "upstox" },
+  { name: "BBLUNT",    img: "https://gi-img-cdn.sujeet.workers.dev/Images/W5.webp",  alt: "BBLUNT" },
+  { name: "BLUE DART", img: "https://gi-img-cdn.sujeet.workers.dev/Images/W3.webp",  alt: "BLUE DART" },
 ];
 
 const ROW1_CARDS = [
-  { icon: MessageSquare, title: "Send Bulk Messages with WhatsApp Business API",   desc: "Scale your business communication effortlessly. Send personalized bulk WhatsApp messages to drive customer engagement and conversions.", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W11.webp" },
-  { icon: TrendingUp,    title: "Drive Leads and Sales with WhatsApp API Ads",      desc: "Turn clicks into conversations with WhatsApp Ads. Connect directly with leads from Instagram & Facebook on WhatsApp and nurture them into loyal customers.", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W12.webp" },
-  { icon: CreditCard,    title: "Setup Payments with WhatsApp API Integration",     desc: "Simplify your payment process with WhatsApp. Enable customers to complete transactions securely while chatting with your brand.", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W13.webp" },
+  { icon: MessageSquare, title: "Send Bulk Messages with WhatsApp Business API",   desc: "Scale your business communication effortlessly. Send personalized bulk WhatsApp messages to drive customer engagement and conversions.", img: "https://gi-img-cdn.sujeet.workers.dev/Images/W11.webp" },
+  { icon: TrendingUp,    title: "Drive Leads and Sales with WhatsApp API Ads",      desc: "Turn clicks into conversations with WhatsApp Ads. Connect directly with leads from Instagram & Facebook on WhatsApp and nurture them into loyal customers.", img: "https://gi-img-cdn.sujeet.workers.dev/Images/W12.webp" },
+  { icon: CreditCard,    title: "Setup Payments with WhatsApp API Integration",     desc: "Simplify your payment process with WhatsApp. Enable customers to complete transactions securely while chatting with your brand.", img: "https://gi-img-cdn.sujeet.workers.dev/Images/W13.webp" },
 ];
 
 const ROW3_CARDS = [
-  { icon: RefreshCw,   title: "Automated Message Retries with WhatsApp Business API", desc: "Never miss a message delivery. Whats App Business's automated retries ensure important updates reach your customers without fail.", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W15.webp" },
-  { icon: ShoppingBag, title: "Seamless WhatsApp API Integration for Your Business",   desc: "Power up your business with seamless WhatsApp integrations. Sync your CRM, ecommerce, or support tools for a unified customer experience.", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W16.webp" },
-  { icon: BarChart3,   title: "WhatsApp Marketing Messages: Simplified",               desc: "No more living in the fear of frequency capping! Attain higher campaign delivery rates and better insights with Marketing Messages Lite.", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W17.webp" },
+  { icon: RefreshCw,   title: "Automated Message Retries with WhatsApp Business API", desc: "Never miss a message delivery. Whats App Business's automated retries ensure important updates reach your customers without fail.", img: "https://gi-img-cdn.sujeet.workers.dev/Images/W15.webp" },
+  { icon: ShoppingBag, title: "Seamless WhatsApp API Integration for Your Business",   desc: "Power up your business with seamless WhatsApp integrations. Sync your CRM, ecommerce, or support tools for a unified customer experience.", img: "https://gi-img-cdn.sujeet.workers.dev/Images/W16.webp" },
+  { icon: BarChart3,   title: "WhatsApp Marketing Messages: Simplified",               desc: "No more living in the fear of frequency capping! Attain higher campaign delivery rates and better insights with Marketing Messages Lite.", img: "https://gi-img-cdn.sujeet.workers.dev/Images/W17.webp" },
 ];
 
 const COMPARISON_ROWS = [
@@ -450,7 +450,7 @@ const WhatsAppBusinessAPIPage: React.FC = () => {
               {/* ── Image (desktop: col2 row1+2 / mobile: order 2) ── */}
               <div className="hero-img-col" style={{marginTop:100}}>
                 <img
-                  src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W1.webp"
+                  src="https://gi-img-cdn.sujeet.workers.dev/Images/W1.webp"
                   alt="WhatsApp Business API"
                   style={{ width: "100%", maxWidth: "560px", height: "auto", display: "block", objectFit: "contain",marginTop:"200" }}
                   onError={(e) => { (e.currentTarget as HTMLImageElement).style.opacity = "0.12"; }}
@@ -584,7 +584,7 @@ const WhatsAppBusinessAPIPage: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
                 <div className="relative overflow-hidden flex items-center justify-center"
                   style={{ background: "hsl(0,0%,5%)", borderRight: "1px solid rgba(201,150,26,0.12)", minHeight: "300px" }}>
-                  <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W20.webp" alt="Build Chatbots"
+                  <img src="https://gi-img-cdn.sujeet.workers.dev/Images/W20.webp" alt="Build Chatbots"
                     style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }}
                     onError={(e) => {
                       (e.currentTarget as HTMLImageElement).style.display = "none";
@@ -657,7 +657,7 @@ const WhatsAppBusinessAPIPage: React.FC = () => {
                 </div>
                 <div className="testi-image flex items-center justify-center overflow-hidden"
                   style={{ minHeight: "300px", background: "hsl(0,0%,7%)" }}>
-                  <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W18.webp" alt="Yash Banage"
+                  <img src="https://gi-img-cdn.sujeet.workers.dev/Images/W18.webp" alt="Yash Banage"
                     style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }}
                     onError={(e) => {
                       (e.currentTarget as HTMLImageElement).style.display = "none";

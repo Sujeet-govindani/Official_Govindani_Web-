@@ -92,7 +92,7 @@ const NGOCarousel = () => {
   const ngoStories = [
     {
       id: 1, name: "Popatbhai Charitable Trust", category: "Orphan care",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Popatbhaitrust.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/Popatbhaitrust.webp",
       description: "Educating children, empowering women, aiding differently abled, protecting animals",
       highlights: [
         { icon: Users, text: "Empowering 40,000+ families annually" },
@@ -103,7 +103,7 @@ const NGOCarousel = () => {
     },
     {
       id: 2, name: "Harsh chhikkara Jan Seva Trust", category: "Education",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Harsh1.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/Harsh1.webp",
       description: "Harsh Chhikara Jan Sewa Trust is not just a name; he is a movement, a force of change dedicated to transforming lives. A visionary leader, philanthropist, and social activist, he has committed his life to uplifting marginalized communities, ensuring access to education, healthcare, and self-sufficiency for those in need.",
       highlights: [
         { icon: Users, text: "Educating 30,000+ students annually" },
@@ -114,7 +114,7 @@ const NGOCarousel = () => {
     },
     {
       id: 3, name: "Animals Matter To Me", category: "Animal Welfare",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/animal.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/animal.webp",
       description: "Dedicated to protecting, rescuing, and improving the lives of animals through care, advocacy, and compassionate community action.",
       highlights: [
         { icon: Users, text: "Supporting 20,000+ animals annually" },
@@ -125,7 +125,7 @@ const NGOCarousel = () => {
     },
     {
       id: 4, name: "Gau Seva Dham", category: "Animal Welfare",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Gauseva.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/Gauseva.webp",
       description: "Gau Seva Dham by World Sankirtan Tour Trust is a sanctuary of love and care, dedicated to the protection and welfare of stray animals, especially cows. Founded by Pujya Devi Chitralekha Ji on 26th May 2013, this noble initiative operates under the aegis of World Sankirtan Tour Trust and is spread over 5 acres in Hodal, Haryana.",
       highlights: [
         { icon: Users, text: "Rescuing and caring for 18,000+ stray animals yearly" },
@@ -136,7 +136,7 @@ const NGOCarousel = () => {
     },
     {
       id: 5, name: "Mallakhamb Artist", category: "Community Welfare",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Mallkhamb.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/Mallkhamb.webp",
       description: "Abujhmad Mallakhamb and Sports Academy isn’t just a training ground it’s a movement, a home, and a hope born in the heart of Bastar. Founded in 2016, the academy empowers tribal children through the ancient Indian art of Mallakhambh ",
       highlights: [
         { icon: Users, text: "Engaging 50,000+ citizens in green initiatives" },
@@ -147,7 +147,7 @@ const NGOCarousel = () => {
     },
     {
       id: 6, name: "Nanhi Pari Foundation", category: "Social Justice & Community Empowerment",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/pari.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/pari.webp",
       description: "At Nanhi Pari Foundation, we work every day to ensure that underprivileged girls in India receive the education, healthcare, and support they deserve. Our impact is not just in numbers it is in the smiles of children who can now dream bigger, study harder, and live healthier.",
       highlights: [
         { icon: Users, text: "Representing and supporting 100,000+ slum residents" },
@@ -158,7 +158,7 @@ const NGOCarousel = () => {
     },
     {
       id: 7, name: "Palawi", category: "Child Education",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/palawi.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/palawi.webp",
       description: "At Palawi, under the guidance of Prabha Hira Pratisthan, we are dedicated to providing HIV-positive orphaned children with a nurturing environment where they can find hope, health, and education. ",
       highlights: [
         { icon: Users, text: "Educating and supporting 10,000+ children" },

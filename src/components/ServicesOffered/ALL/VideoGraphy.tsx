@@ -183,7 +183,7 @@ function FactorCard({ icon, title, points, delay = 0 }: { icon: string; title: s
 function YouTubeShortsIcon({ size = 32 }: { size?: number }) {
     return (
         <img 
-            src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/youtubeshort33.webp" 
+            src="https://gi-img-cdn.sujeet.workers.dev/Images/youtubeshort33.webp" 
             alt="YouTube Shorts"
             style={{ 
                 width: size, 
@@ -691,16 +691,16 @@ export default function VideographyPage() {
     });
 
     const videos: VideoItem[] = [
-        { id: "ci-grand",    title: "",  category: "", src: "/Videos/Video1.mp4",  poster: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/thumb1.avif",    youtubeUrl: "https://youtube.com/shorts/hMpvTUhHP8E?si=snNftdYetfhoVBuO" },
-        { id: "the-park",    title: "",  category: "", src: "/Videos/Video2.mp4",  poster: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/thumb2.avif",    youtubeUrl: "https://youtube.com/shorts/iPRuQtJe3jk?si=pVhI2b8OU6PcSQlV" },
-        { id: "corporate",   title: "",  category: "", src: "/Videos/Video3.mp4",  poster: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/thumb3.avif",   youtubeUrl: "https://youtube.com/shorts/CtKBFYfnMgg?si=LLGaPPoAd88PuIA4" },
-        { id: "product",     title: "",  category: "", src: "/Videos/Video4.mp4",  poster: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/thumb4.avif",     youtubeUrl: "https://youtube.com/shorts/13d_KJCztYU?si=uPnNYjjy520HNSZ8" },
-        { id: "event",       title: "",  category: "", src: "/Videos/Video5.mp4",  poster: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/thumb5.avif",       youtubeUrl: "https://youtube.com/shorts/0Gq506qP8cM?si=lUqG9qdJvPHza21_" },
-        { id: "promo",       title: "",  category: "", src: "/Videos/Video6.mp4",  poster: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/thumb6.avif",       youtubeUrl: "https://youtube.com/shorts/cqo7edWAiC4?si=2n13kY4owJSFVzvN" },
-        { id: "ad-campaign", title: "",  category: "", src: "/Videos/Video7.mp4",  poster: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/thumb7.avif", youtubeUrl: "https://youtube.com/shorts/Juzd0iPKf0k?si=ftBRWnqzSwNXRDKe" },
-        { id: "brand-story", title: "",  category: "", src: "/Videos/Video8.mp4",  poster: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/thumb8.avif", youtubeUrl: "https://youtube.com/shorts/v4khBqIWcqE?si=Zh6XBkCn7CDuIEWS" },
-        { id: "social-ad",   title: "",  category: "", src: "/Videos/Video9.mp4",  poster: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/thumb9.avif",   youtubeUrl: "https://youtube.com/shorts/lWf7c9S8Rbg?si=laehd1KdYUZLDFFZ" },
-        { id: "product-ad",  title: "",  category: "", src: "/Videos/Video10.mp4", poster: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/thumb10.avif",  youtubeUrl: "https://youtube.com/shorts/h59dYiyvgAA?si=sIheq_3qsAZrczw_" },
+        { id: "ci-grand",    title: "",  category: "", src: "/Videos/Video1.mp4",  poster: "https://gi-img-cdn.sujeet.workers.dev/Images/thumb1.avif",    youtubeUrl: "https://youtube.com/shorts/hMpvTUhHP8E?si=snNftdYetfhoVBuO" },
+        { id: "the-park",    title: "",  category: "", src: "/Videos/Video2.mp4",  poster: "https://gi-img-cdn.sujeet.workers.dev/Images/thumb2.avif",    youtubeUrl: "https://youtube.com/shorts/iPRuQtJe3jk?si=pVhI2b8OU6PcSQlV" },
+        { id: "corporate",   title: "",  category: "", src: "/Videos/Video3.mp4",  poster: "https://gi-img-cdn.sujeet.workers.dev/Images/thumb3.avif",   youtubeUrl: "https://youtube.com/shorts/CtKBFYfnMgg?si=LLGaPPoAd88PuIA4" },
+        { id: "product",     title: "",  category: "", src: "/Videos/Video4.mp4",  poster: "https://gi-img-cdn.sujeet.workers.dev/Images/thumb4.avif",     youtubeUrl: "https://youtube.com/shorts/13d_KJCztYU?si=uPnNYjjy520HNSZ8" },
+        { id: "event",       title: "",  category: "", src: "/Videos/Video5.mp4",  poster: "https://gi-img-cdn.sujeet.workers.dev/Images/thumb5.avif",       youtubeUrl: "https://youtube.com/shorts/0Gq506qP8cM?si=lUqG9qdJvPHza21_" },
+        { id: "promo",       title: "",  category: "", src: "/Videos/Video6.mp4",  poster: "https://gi-img-cdn.sujeet.workers.dev/Images/thumb6.avif",       youtubeUrl: "https://youtube.com/shorts/cqo7edWAiC4?si=2n13kY4owJSFVzvN" },
+        { id: "ad-campaign", title: "",  category: "", src: "/Videos/Video7.mp4",  poster: "https://gi-img-cdn.sujeet.workers.dev/Images/thumb7.avif", youtubeUrl: "https://youtube.com/shorts/Juzd0iPKf0k?si=ftBRWnqzSwNXRDKe" },
+        { id: "brand-story", title: "",  category: "", src: "/Videos/Video8.mp4",  poster: "https://gi-img-cdn.sujeet.workers.dev/Images/thumb8.avif", youtubeUrl: "https://youtube.com/shorts/v4khBqIWcqE?si=Zh6XBkCn7CDuIEWS" },
+        { id: "social-ad",   title: "",  category: "", src: "/Videos/Video9.mp4",  poster: "https://gi-img-cdn.sujeet.workers.dev/Images/thumb9.avif",   youtubeUrl: "https://youtube.com/shorts/lWf7c9S8Rbg?si=laehd1KdYUZLDFFZ" },
+        { id: "product-ad",  title: "",  category: "", src: "/Videos/Video10.mp4", poster: "https://gi-img-cdn.sujeet.workers.dev/Images/thumb10.avif",  youtubeUrl: "https://youtube.com/shorts/h59dYiyvgAA?si=sIheq_3qsAZrczw_" },
     ];
 
     const benefits = [
@@ -832,7 +832,7 @@ export default function VideographyPage() {
                         </div>
                         <Fade direction="right" delay={0.2}>
                             <div style={{ width: "100%", height: isMobile ? 280 : 460, borderRadius: isMobile ? 16 : "16px 0 0 16px", overflow: "hidden" }}>
-                                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/video2.webp" alt="Videography" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}  loading="lazy" decoding="async" />
+                                <img src="https://gi-img-cdn.sujeet.workers.dev/Images/video2.webp" alt="Videography" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}  loading="lazy" decoding="async" />
                             </div>
                         </Fade>
                     </div>
@@ -912,7 +912,7 @@ export default function VideographyPage() {
                         <div style={{
                             borderRadius: 20, overflow: "hidden",
                             border: "1.5px solid rgba(245,200,66,0.2)",
-                            background: "linear-gradient(135deg, rgba(0,0,0,0.92), rgba(0,0,0,0.95)), url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/videography1.webp')",
+                            background: "linear-gradient(135deg, rgba(0,0,0,0.92), rgba(0,0,0,0.95)), url('https://gi-img-cdn.sujeet.workers.dev/Images/videography1.webp')",
                             backgroundSize: "cover", backgroundPosition: "center",
                             backgroundBlendMode: "overlay",
                             padding: isMobile ? "32px 20px" : "48px 60px",
@@ -975,7 +975,7 @@ export default function VideographyPage() {
                     <Fade direction="up">
                         <div style={{
                             borderRadius: 20,
-                            background: "linear-gradient(135deg,rgba(0,0,0,0.88) 0%,rgba(0,0,0,0.92) 100%), url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/videography1.webp')",
+                            background: "linear-gradient(135deg,rgba(0,0,0,0.88) 0%,rgba(0,0,0,0.92) 100%), url('https://gi-img-cdn.sujeet.workers.dev/Images/videography1.webp')",
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                             backgroundBlendMode: "overlay",

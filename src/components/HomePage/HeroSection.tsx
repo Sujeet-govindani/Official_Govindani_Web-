@@ -49,12 +49,12 @@ const portfolioBtnStyle = (mob, tab) => ({
 });
 
 const SLIDES = [
-    { titleLine1: 'Turning Influence Into', titleLine2: 'Real-World Impact.', quote: "True influence is measured by the impact it creates beyond the screen.", founderName: 'HARSH CHHIKARA', founderTitle: 'HARSH CHHIKARA FOUNDATION', imageUrl: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/HCmain.webp', gifUrl: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/GIF1.webp', boxDescription: "Crafted a digital platform for Harsh Chhikara that reflects their vision, credibility, and growing brand presence.", buttons: [{ text: 'Portfolio', link: '/portfolio/babaji' }, { text: 'Book Demo', link: '/demo/babaji' }, { text: 'Contact', link: '/contact/babaji' }], socialCounts: { instagram: '1.1M+ Followers', youtube: '743K', facebook: '2.5M+' }, backgroundImage: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/HCimg.webp' },
-    { titleLine1: 'Building Visions', titleLine2: 'Into Living Spaces.', quote: "The future belongs to those embracing digital transformation.", founderName: 'VARUN MALIK', founderTitle: 'CI BUILDERS', imageUrl: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/VM.webp', gifUrl: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/GIF1.webp', boxDescription: "Developed CI Builders website to showcase Varun Malik's real estate expertise with strong digital presence.", buttons: [{ text: 'Projects', link: '/portfolio/cibuilders' }, { text: 'Get Quote', link: '/quote/cibuilders' }, { text: 'Sales', link: '/contact/cibuilders' }], socialCounts: { instagram: '1.1M+ Followers', youtube: '743K', facebook: '2.5M+' }, backgroundImage: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/VMimg.webp' },
-    { titleLine1: 'Hope, Dignity & Dreams', titleLine2: 'for Every Life.', quote: "A future built on care, dignity, and lasting support.", founderName: 'MAHIPATSINH CHAUHAN', founderTitle: 'Mahipatsinh Foundation', imageUrl: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/MSmain.webp', gifUrl: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/GIF1.webp', boxDescription: "Built Mahipatsinh Foundation's website to showcase their work in empowering vulnerable individuals.", buttons: [{ text: 'About Us', link: '/about/mahipatsinh' }, { text: 'Donate', link: '/donate/mahipatsinh' }, { text: 'Volunteer', link: '/volunteer/mahipatsinh' }], socialCounts: { instagram: '1.1M+ Followers', youtube: '343K', facebook: '20 Lakh+' }, backgroundImage: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/MSimg.webp' },
-    { titleLine1: 'Giving Every Voice', titleLine2: 'a Second Chance.', quote: "Compassion isn't selective it's for all beings.", founderName: 'GANESH NAYAK', founderTitle: 'Animals Matter To Me', imageUrl: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/GNmain.webp', gifUrl: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/GIF1.webp', boxDescription: "Designed Animals Matter To Me website to bring visibility to Ganesh Nayak's animal welfare mission.", buttons: [{ text: 'Support', link: '/support/amtm' }, { text: 'Adopt', link: '/adopt/amtm' }, { text: 'Help Out', link: '/volunteer/amtm' }], socialCounts: { instagram: '99.3K Followers', youtube: '22.8K', facebook: '244K' }, backgroundImage: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/AMTMimg.webp' },
-    { titleLine1: 'Compassion in Action:', titleLine2: 'Sanctuary for Every Life.', quote: "When care is driven by compassion, every action creates change.", founderName: 'DEVI CHHITRALEKHA', founderTitle: 'GAUSEVADHAM TRUST', imageUrl: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/DCmain1.webp', gifUrl: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/GIF1.webp', boxDescription: "Developed Gau Seva Dham to amplify Devi Chitralekha's mission of protecting animals with compassion.", buttons: [{ text: 'Visit', link: '/visit/gauseva' }, { text: 'Donate', link: '/donate/gauseva' }, { text: 'Partner', link: '/partner/gauseva' }], socialCounts: { instagram: '6.5M+ Followers', youtube: '4.58M', facebook: '5.1K+' }, backgroundImage: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/DCimg.webp' },
-    { titleLine1: 'Lifting Lives with', titleLine2: 'Dignity and Care.', quote: "Compassion isn't a gesture it's a lasting embrace.", founderName: 'POPATBHAI', founderTitle: 'Popatbhai Charitable Foundation', imageUrl: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PBmain.webp', gifUrl: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/GIF1.webp', boxDescription: "Created Popatbhai Charitable Foundation website reflecting dedication to uplifting underprivileged communities.", buttons: [{ text: 'Impact', link: '/impact/popatbhai' }, { text: 'Contribute', link: '/contribute/popatbhai' }, { text: 'Join', link: '/join/popatbhai' }], socialCounts: { instagram: '1.8M+ Followers', youtube: '2.41M', facebook: '1.9M+' }, backgroundImage: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PBimg.webp' },
+    { titleLine1: 'Turning Influence Into', titleLine2: 'Real-World Impact.', quote: "True influence is measured by the impact it creates beyond the screen.", founderName: 'HARSH CHHIKARA', founderTitle: 'HARSH CHHIKARA FOUNDATION', imageUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/HCmain.webp', gifUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GIF1.webp', boxDescription: "Crafted a digital platform for Harsh Chhikara that reflects their vision, credibility, and growing brand presence.", buttons: [{ text: 'Portfolio', link: '/portfolio/babaji' }, { text: 'Book Demo', link: '/demo/babaji' }, { text: 'Contact', link: '/contact/babaji' }], socialCounts: { instagram: '1.1M+ Followers', youtube: '743K', facebook: '2.5M+' }, backgroundImage: 'https://gi-img-cdn.sujeet.workers.dev/Images/HCimg.webp' },
+    { titleLine1: 'Building Visions', titleLine2: 'Into Living Spaces.', quote: "The future belongs to those embracing digital transformation.", founderName: 'VARUN MALIK', founderTitle: 'CI BUILDERS', imageUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/VM.webp', gifUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GIF1.webp', boxDescription: "Developed CI Builders website to showcase Varun Malik's real estate expertise with strong digital presence.", buttons: [{ text: 'Projects', link: '/portfolio/cibuilders' }, { text: 'Get Quote', link: '/quote/cibuilders' }, { text: 'Sales', link: '/contact/cibuilders' }], socialCounts: { instagram: '1.1M+ Followers', youtube: '743K', facebook: '2.5M+' }, backgroundImage: 'https://gi-img-cdn.sujeet.workers.dev/Images/VMimg.webp' },
+    { titleLine1: 'Hope, Dignity & Dreams', titleLine2: 'for Every Life.', quote: "A future built on care, dignity, and lasting support.", founderName: 'MAHIPATSINH CHAUHAN', founderTitle: 'Mahipatsinh Foundation', imageUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/MSmain.webp', gifUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GIF1.webp', boxDescription: "Built Mahipatsinh Foundation's website to showcase their work in empowering vulnerable individuals.", buttons: [{ text: 'About Us', link: '/about/mahipatsinh' }, { text: 'Donate', link: '/donate/mahipatsinh' }, { text: 'Volunteer', link: '/volunteer/mahipatsinh' }], socialCounts: { instagram: '1.1M+ Followers', youtube: '343K', facebook: '20 Lakh+' }, backgroundImage: 'https://gi-img-cdn.sujeet.workers.dev/Images/MSimg.webp' },
+    { titleLine1: 'Giving Every Voice', titleLine2: 'a Second Chance.', quote: "Compassion isn't selective it's for all beings.", founderName: 'GANESH NAYAK', founderTitle: 'Animals Matter To Me', imageUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GNmain.webp', gifUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GIF1.webp', boxDescription: "Designed Animals Matter To Me website to bring visibility to Ganesh Nayak's animal welfare mission.", buttons: [{ text: 'Support', link: '/support/amtm' }, { text: 'Adopt', link: '/adopt/amtm' }, { text: 'Help Out', link: '/volunteer/amtm' }], socialCounts: { instagram: '99.3K Followers', youtube: '22.8K', facebook: '244K' }, backgroundImage: 'https://gi-img-cdn.sujeet.workers.dev/Images/AMTMimg.webp' },
+    { titleLine1: 'Compassion in Action:', titleLine2: 'Sanctuary for Every Life.', quote: "When care is driven by compassion, every action creates change.", founderName: 'DEVI CHHITRALEKHA', founderTitle: 'GAUSEVADHAM TRUST', imageUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/DCmain1.webp', gifUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GIF1.webp', boxDescription: "Developed Gau Seva Dham to amplify Devi Chitralekha's mission of protecting animals with compassion.", buttons: [{ text: 'Visit', link: '/visit/gauseva' }, { text: 'Donate', link: '/donate/gauseva' }, { text: 'Partner', link: '/partner/gauseva' }], socialCounts: { instagram: '6.5M+ Followers', youtube: '4.58M', facebook: '5.1K+' }, backgroundImage: 'https://gi-img-cdn.sujeet.workers.dev/Images/DCimg.webp' },
+    { titleLine1: 'Lifting Lives with', titleLine2: 'Dignity and Care.', quote: "Compassion isn't a gesture it's a lasting embrace.", founderName: 'POPATBHAI', founderTitle: 'Popatbhai Charitable Foundation', imageUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/PBmain.webp', gifUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GIF1.webp', boxDescription: "Created Popatbhai Charitable Foundation website reflecting dedication to uplifting underprivileged communities.", buttons: [{ text: 'Impact', link: '/impact/popatbhai' }, { text: 'Contribute', link: '/contribute/popatbhai' }, { text: 'Join', link: '/join/popatbhai' }], socialCounts: { instagram: '1.8M+ Followers', youtube: '2.41M', facebook: '1.9M+' }, backgroundImage: 'https://gi-img-cdn.sujeet.workers.dev/Images/PBimg.webp' },
 ];
 
 const TOTAL_SLIDES = 4;
@@ -78,31 +78,31 @@ const SOCIAL_LINKS = [
 const BRAND_CONFIG = [
     {
         name: 'Mukta',
-        laptopImages: ['https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/slide2.webp', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/slide2.webp', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/slide2.webp'],
-        mobileImages: ['https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/slide2.webp', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/slide2.webp'],
+        laptopImages: ['https://gi-img-cdn.sujeet.workers.dev/Images/slide2.webp', 'https://gi-img-cdn.sujeet.workers.dev/Images/slide2.webp', 'https://gi-img-cdn.sujeet.workers.dev/Images/slide2.webp'],
+        mobileImages: ['https://gi-img-cdn.sujeet.workers.dev/Images/slide2.webp', 'https://gi-img-cdn.sujeet.workers.dev/Images/slide2.webp'],
     },
     {
         name: 'Khambani',
-        laptopImages: ['https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/slide1.webp', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/slide1.webp', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/slide1.webp'],
-        mobileImages: ['https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/slide1.webp', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/slide1.webp'],
+        laptopImages: ['https://gi-img-cdn.sujeet.workers.dev/Images/slide1.webp', 'https://gi-img-cdn.sujeet.workers.dev/Images/slide1.webp', 'https://gi-img-cdn.sujeet.workers.dev/Images/slide1.webp'],
+        mobileImages: ['https://gi-img-cdn.sujeet.workers.dev/Images/slide1.webp', 'https://gi-img-cdn.sujeet.workers.dev/Images/slide1.webp'],
     },
     {
         name: 'Terra',
-        laptopImages: ['https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Tarushlaptop.webp', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Tarushlaptop.webp', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Tarushlaptop.webp'],
-        mobileImages: ['https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Tarushlaptop.webp', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Tarushlaptop.webp'],
+        laptopImages: ['https://gi-img-cdn.sujeet.workers.dev/Images/Tarushlaptop.webp', 'https://gi-img-cdn.sujeet.workers.dev/Images/Tarushlaptop.webp', 'https://gi-img-cdn.sujeet.workers.dev/Images/Tarushlaptop.webp'],
+        mobileImages: ['https://gi-img-cdn.sujeet.workers.dev/Images/Tarushlaptop.webp', 'https://gi-img-cdn.sujeet.workers.dev/Images/Tarushlaptop.webp'],
     },
     {
         name: 'Baba Ji',
-        laptopImages: ['https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bjkb.webp', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tabe1.png'],
-        mobileImages: ['https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/mobbjkb.webp', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tabe2.png'],
+        laptopImages: ['https://gi-img-cdn.sujeet.workers.dev/Images/bjkb.webp', 'https://gi-img-cdn.sujeet.workers.dev/Images/tabe1.png'],
+        mobileImages: ['https://gi-img-cdn.sujeet.workers.dev/Images/mobbjkb.webp', 'https://gi-img-cdn.sujeet.workers.dev/Images/tabe2.png'],
     },
 ];
-const ECOM_LAPTOP_ALL = ['https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tabe1.png', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tabe2.png', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tabe3.webp', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bjkb.webp'];
-const ECOM_MOBILE_ALL = ['https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tabe1.png', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tabe2.png', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tabe3.webp', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/mobbjkb.webp'];
+const ECOM_LAPTOP_ALL = ['https://gi-img-cdn.sujeet.workers.dev/Images/tabe1.png', 'https://gi-img-cdn.sujeet.workers.dev/Images/tabe2.png', 'https://gi-img-cdn.sujeet.workers.dev/Images/tabe3.webp', 'https://gi-img-cdn.sujeet.workers.dev/Images/bjkb.webp'];
+const ECOM_MOBILE_ALL = ['https://gi-img-cdn.sujeet.workers.dev/Images/tabe1.png', 'https://gi-img-cdn.sujeet.workers.dev/Images/tabe2.png', 'https://gi-img-cdn.sujeet.workers.dev/Images/tabe3.webp', 'https://gi-img-cdn.sujeet.workers.dev/Images/mobbjkb.webp'];
 
-const RE_MONITOR_IMAGES = ['https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/re-1.png', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/re4.webp'];
-const RE_MOBILE1_IMAGES = ['https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/re-2.webp', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/re4.png'];
-const RE_MOBILE2_IMAGES = ['https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/re-2.webp', 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/re4.png'];
+const RE_MONITOR_IMAGES = ['https://gi-img-cdn.sujeet.workers.dev/Images/re-1.png', 'https://gi-img-cdn.sujeet.workers.dev/Images/re4.webp'];
+const RE_MOBILE1_IMAGES = ['https://gi-img-cdn.sujeet.workers.dev/Images/re-2.webp', 'https://gi-img-cdn.sujeet.workers.dev/Images/re4.png'];
+const RE_MOBILE2_IMAGES = ['https://gi-img-cdn.sujeet.workers.dev/Images/re-2.webp', 'https://gi-img-cdn.sujeet.workers.dev/Images/re4.png'];
 
 const NAV_H_MOB = 60;
 const NAV_H_TAB = 72;
@@ -541,10 +541,10 @@ const Callout = ({ uid, label, Icon, gradient, glow, pillDir, imageEdge, topPx, 
 // ─── FIXED BrandCards: 2x2 grid layout matching screenshot ───────────────────
 const BrandCards = ({ mob, tab, activeBrand, onBrandClick }) => {
     const brands = [
-        { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/mukta.webp', name: 'Mukta', sub: 'Jewelry & Accessories', dark: true, bi: 0 },
-        { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/8-1.png.webp', name: 'Khambani', sub: 'Food Products', dark: true, bi: 1 },
-        { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tarushlogo.png', name: 'TarushPranna', sub: 'E-commerce', dark: false, bi: 2 },
-        { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/9-1.png.webp', name: 'Baba Ji Ki Buti', sub: 'E-commerce', dark: false, bi: 3 },
+        { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/mukta.webp', name: 'Mukta', sub: 'Jewelry & Accessories', dark: true, bi: 0 },
+        { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/8-1.png.webp', name: 'Khambani', sub: 'Food Products', dark: true, bi: 1 },
+        { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/tarushlogo.png', name: 'TarushPranna', sub: 'E-commerce', dark: false, bi: 2 },
+        { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/9-1.png.webp', name: 'Baba Ji Ki Buti', sub: 'E-commerce', dark: false, bi: 3 },
     ];
 
     const cardH = mob ? 48 : tab ? 58 : 70;
@@ -606,40 +606,40 @@ const BrandCards = ({ mob, tab, activeBrand, onBrandClick }) => {
 };
 
 const MID_CAROUSEL_ITEMS = [
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/r16.webp', title: 'Razorpay' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/cashfreeLogo.webp', title: 'CashFree' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/unnamed.png', title: 'PayU' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ccavenueLogo.png', title: 'CCAvenue' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PhonePe-Logo.png', title: 'PhonePe' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/StripeLogo.png', title: 'Stripe' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/1-3.png', title: 'Instamojo' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PaytmLogo.webp', title: 'Paytm' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/AmazonPay.png', title: 'Amazon Pay' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/BilldeskLogo.webp', title: 'BillDesk' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/payglocalLogo.webp', title: 'PayGLocal' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/OpenLogo.png', title: 'Open' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/zoho.webp', title: 'Zoho' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/paykunLogo.png', title: 'Paykun' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ZaakpayLogo.webp', title: 'ZaakPay' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ESBLogo.png', title: 'ESB Gateway' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/r16.webp', title: 'Razorpay' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/cashfreeLogo.webp', title: 'CashFree' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/unnamed.png', title: 'PayU' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/ccavenueLogo.png', title: 'CCAvenue' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/PhonePe-Logo.png', title: 'PhonePe' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/StripeLogo.png', title: 'Stripe' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/1-3.png', title: 'Instamojo' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/PaytmLogo.webp', title: 'Paytm' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/AmazonPay.png', title: 'Amazon Pay' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/BilldeskLogo.webp', title: 'BillDesk' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/payglocalLogo.webp', title: 'PayGLocal' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/OpenLogo.png', title: 'Open' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/zoho.webp', title: 'Zoho' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/paykunLogo.png', title: 'Paykun' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/ZaakpayLogo.webp', title: 'ZaakPay' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/ESBLogo.png', title: 'ESB Gateway' },
 ];
 
 const LAST_CAROUSEL_ITEMS = [
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ClickpostLogo.webp', title: 'ClickPost' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ShipwayLogo.webp', title: 'Shipway' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PickrrLogo.png', title: 'Pickrr' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ShipyaariLogo.png', title: 'Shipyaari' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ShipdelightLogo.webp', title: 'ShipDelight' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/WareIQLogo.png', title: 'WareIQ' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/VamashipLogo.webp', title: 'VamaShip' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ShipkaroLogo.png', title: 'ShipKaro' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/AftershipLogo.png', title: 'AfterShip' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/EasyshipLogo.png', title: 'Easyship' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ShippoLogo.webp', title: 'Shippo' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ParcelPerformLogo.webp', title: 'Parcel Perform' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/NarvarLogo.webp', title: 'Narvar' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/shipstationlogo.webp', title: 'ShipStation' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/zippyLogo.jfif', title: 'Zippy' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/ClickpostLogo.webp', title: 'ClickPost' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/ShipwayLogo.webp', title: 'Shipway' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/PickrrLogo.png', title: 'Pickrr' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/ShipyaariLogo.png', title: 'Shipyaari' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/ShipdelightLogo.webp', title: 'ShipDelight' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/WareIQLogo.png', title: 'WareIQ' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/VamashipLogo.webp', title: 'VamaShip' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/ShipkaroLogo.png', title: 'ShipKaro' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/AftershipLogo.png', title: 'AfterShip' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/EasyshipLogo.png', title: 'Easyship' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/ShippoLogo.webp', title: 'Shippo' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/ParcelPerformLogo.webp', title: 'Parcel Perform' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/NarvarLogo.webp', title: 'Narvar' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/shipstationlogo.webp', title: 'ShipStation' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/zippyLogo.jfif', title: 'Zippy' },
 ];
 
 const MidCarousel = ({ tab, mob }) => {
@@ -833,10 +833,10 @@ const LastCarousel = ({ tab, mob }) => {
 };
 
 const RE_BRAND_ICONS = [
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/Social-Media/SocialMedia-Real-Estate/social-media-real-estate-CI%20Builders-img1.webp', name: 'CI BUILDERS', url: 'https://cibuilders.in/' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/mangalam.webp', name: 'MANGALAM LANDMARKS', url: 'https://mangalamlandmarks.in/' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Home-Page/Home-Page-Janki-Group-Logo.webp', name: 'JANKI BUILDERS', url: 'https://jankibuilders.com/projects/' },
-    { icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/fortune.png', name: 'FORTUNE BUILDERS', url: 'https://fortunebuilders.co/' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/Social-Media/SocialMedia-Real-Estate/social-media-real-estate-CI%20Builders-img1.webp', name: 'CI BUILDERS', url: 'https://cibuilders.in/' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/mangalam.webp', name: 'MANGALAM LANDMARKS', url: 'https://mangalamlandmarks.in/' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/Home-Page/Home-Page-Janki-Group-Logo.webp', name: 'JANKI BUILDERS', url: 'https://jankibuilders.com/projects/' },
+    { icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/fortune.png', name: 'FORTUNE BUILDERS', url: 'https://fortunebuilders.co/' },
 ];
 
 const REBrandCarousel = ({ containerIndex, tab, mob }) => {
@@ -935,7 +935,7 @@ const ngoPeople: NgoPerson[] = [
         name: 'Devi\nChitralekha',
         f: '6.7M+\nFollowers',
         url: 'https://gausevadham.org/',
-        image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/devichitra.webp',
+        image: 'https://gi-img-cdn.sujeet.workers.dev/Images/devichitra.webp',
         position: {
             left: '19%',
             bottom: '0%',
@@ -953,7 +953,7 @@ const ngoPeople: NgoPerson[] = [
         name: 'Harsh\nChikkara',
         f: '1.2M+\nFollowers',
         url: 'https://harshchhikara.com/',
-        image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/harshi.webp',
+        image: 'https://gi-img-cdn.sujeet.workers.dev/Images/harshi.webp',
         position: {
             left: '62%',
             bottom: '0%',
@@ -973,7 +973,7 @@ const ngoPeople: NgoPerson[] = [
         name: 'Popatbhai\nFoundation',
         f: '1.9M+\nFollowers',
         url: 'https://popatbhaicharitablefoundation.org/',
-        image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Popat.webp',
+        image: 'https://gi-img-cdn.sujeet.workers.dev/Images/Popat.webp',
         position: {
             left: '20%',
             bottom: '5%',
@@ -991,7 +991,7 @@ const ngoPeople: NgoPerson[] = [
         name: 'Mahipat\nSingh',
         f: '1.3M+\nFollowers',
         url: 'https://mahipatsinhfoundation.org/',
-        image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/founder-open.webp',
+        image: 'https://gi-img-cdn.sujeet.workers.dev/Images/founder-open.webp',
         position: {
             left: '40%',
             bottom: '20%',
@@ -1009,7 +1009,7 @@ const ngoPeople: NgoPerson[] = [
         name: 'Mallakhamb\nArtist',
         f: '500K+\nFollowers',
         url: 'https://mallakhambartist.org/',
-        image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/makkhammain.webp',
+        image: 'https://gi-img-cdn.sujeet.workers.dev/Images/makkhammain.webp',
         position: {
             left: '-4%',
             bottom: '0%',
@@ -1028,7 +1028,7 @@ const ngoPeople: NgoPerson[] = [
         name: 'Ganesh\nNayak',
         f: '1M+\nFollowers',
         url: 'https://amtmindia.org/',
-        image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Nayak.webp',
+        image: 'https://gi-img-cdn.sujeet.workers.dev/Images/Nayak.webp',
         position: {
             left: '38%',
             bottom: '0%',
@@ -1442,7 +1442,7 @@ const HeroCarousel = () => {
                 .ngo-cta-btn.mob{padding:0.52rem 1.8rem;font-size:0.82rem;}
                 .ngo-cta-btn.tab{padding:0.58rem 1.9rem;font-size:0.86rem;}
             `}</style>
-            <div style={{ position: 'absolute', inset: 0, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bg.webp')", backgroundSize: 'cover', backgroundPosition: 'center top', zIndex: 0 }} />
+            <div style={{ position: 'absolute', inset: 0, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/bg.webp')", backgroundSize: 'cover', backgroundPosition: 'center top', zIndex: 0 }} />
             <div style={{ position: 'absolute', inset: 0, background: 'rgba(238,212,148,0.22)', zIndex: 1 }} />
 
             {mob && (
@@ -1563,7 +1563,7 @@ const HeroCarousel = () => {
             { big: '225%+', label: 'Revenue Growth', sub: 'In 6 Months' },
             { big: '95+', label: 'E-Commerce Systems', sub: 'Shopify • WooCommerce • Custom' },
         ];
-        const r1 = [{ name: '', icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/r17.webp' }, { name: '', icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ship1.webp' }, { name: '', icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/shopify.svg' }, { name: '', icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/woo5.png' }, { name: '', icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/host3.webp' }, { name: '', icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/inter.webp' }, { name: '', icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/meta.webp' }];
+        const r1 = [{ name: '', icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/r17.webp' }, { name: '', icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/ship1.webp' }, { name: '', icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/shopify.svg' }, { name: '', icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/woo5.png' }, { name: '', icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/host3.webp' }, { name: '', icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/inter.webp' }, { name: '', icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/meta.webp' }];
         const lapMax = mob ? 230 : tab ? 380 : 500;
         const mobW = mob ? 72 : tab ? 120 : 150;
 
@@ -1582,7 +1582,7 @@ const HeroCarousel = () => {
                     .ec-vm-btn.mob{padding:0.44rem 1.4rem;font-size:0.78rem;}
                     .ec-vm-btn.tab{padding:0.48rem 1.55rem;font-size:0.82rem;}
                 `}</style>
-                <div style={{ position: 'absolute', inset: 0, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/slide2.webp')", backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0 }} />
+                <div style={{ position: 'absolute', inset: 0, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/slide2.webp')", backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0 }} />
                 <div style={{ position: 'absolute', inset: 0, background: 'rgba(10,4,1,0.54)', zIndex: 1 }} />
 
                 {/* ── MOBILE E-COMMERCE ── */}
@@ -1688,8 +1688,8 @@ const HeroCarousel = () => {
             { icon: '📊', title: 'Real Estate Growth Systems', items: ['CRM + Mobile Apps', '₹5Cr+ Ad Spend Managed', '110+ Homes Sold Annually', 'Lead Automation Architecture'] },
             { icon: '🛒', title: 'E-Commerce Ecosystem', items: ['100+ Stores Built', 'Shopify / WooCommerce / Custom', 'Logistics + Payment Automation', '225% Growth Observed'] },
         ];
-        const partners = [{ src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/razorpay.png', name: 'Razorpay' }, { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/shiprocket.webp', name: 'Shiprocket' }, { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/shopify.png', name: 'Shopify' }, { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/woocomm.png', name: 'WooCommerce' }, { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/interakt.png', name: 'Interakt' }];
-        const rightIcons = [{ src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/meta.jpg', label: 'Meta' }, { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/shopify.png', label: 'Shopify' }, { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/woocomm.png', label: 'WooCommerce' }, { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/interakt.png', label: 'Interakt' }];
+        const partners = [{ src: 'https://gi-img-cdn.sujeet.workers.dev/Images/razorpay.png', name: 'Razorpay' }, { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/shiprocket.webp', name: 'Shiprocket' }, { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/shopify.png', name: 'Shopify' }, { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/woocomm.png', name: 'WooCommerce' }, { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/interakt.png', name: 'Interakt' }];
+        const rightIcons = [{ src: 'https://gi-img-cdn.sujeet.workers.dev/Images/meta.jpg', label: 'Meta' }, { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/shopify.png', label: 'Shopify' }, { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/woocomm.png', label: 'WooCommerce' }, { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/interakt.png', label: 'Interakt' }];
         const lapMax = mob ? 280 : tab ? 380 : 500;
         const panelW = mob ? 0 : tab ? 138 : 176;
         const panelImgH = mob ? 0 : tab ? 110 : 140;
@@ -1707,7 +1707,7 @@ const HeroCarousel = () => {
                     .if-po::before{left:0;background:linear-gradient(to right,rgba(5,13,26,0.95),transparent);}
                     .if-po::after{right:0;background:linear-gradient(to left,rgba(5,13,26,0.95),transparent);}
                 `}</style>
-                <div style={{ position: 'absolute', inset: 0, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/slider3.webp')", backgroundSize: 'cover', backgroundPosition: 'center top', zIndex: 0 }} />
+                <div style={{ position: 'absolute', inset: 0, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/slider3.webp')", backgroundSize: 'cover', backgroundPosition: 'center top', zIndex: 0 }} />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg,rgba(5,13,26,0.55) 0%,rgba(5,13,26,0.28) 25%,rgba(5,13,26,0.58) 62%,rgba(5,13,26,0.97) 100%)', zIndex: 1 }} />
 
                 <div style={{ position: 'relative', zIndex: 2, width: '100%', minHeight: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', paddingTop: slidePad.top, paddingBottom: slidePad.bot, paddingLeft: slidePad.side, paddingRight: slidePad.side, gap: mob ? 10 : tab ? 12 : 14, boxSizing: 'border-box', overflowX: 'hidden', overflowY: desk ? 'hidden' : 'auto' }}>
@@ -1717,20 +1717,20 @@ const HeroCarousel = () => {
                     </div>
                     <div style={{ display: 'flex', flexDirection: mob ? 'column' : 'row', alignItems: 'center', justifyContent: 'center', gap: mob ? 10 : tab ? 12 : 16, width: '100%', flexShrink: 0, animation: 'ifIn .58s ease-out .07s both' }}>
                         {!mob && (<div style={{ flexShrink: 0, width: panelW, background: 'rgba(255,255,255,0.06)', border: '1.5px solid rgba(200,215,240,0.38)', borderRadius: 14, backdropFilter: 'blur(10px)', padding: tab ? '12px 10px' : '15px 13px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, zIndex: 1 }}>
-                            <div style={{ width: '100%', height: panelImgH, borderRadius: 9, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}><img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ngo.webp" alt="NGO" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} onError={e => e.target.style.display = 'none'} /></div>
+                            <div style={{ width: '100%', height: panelImgH, borderRadius: 9, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}><img src="https://gi-img-cdn.sujeet.workers.dev/Images/ngo.webp" alt="NGO" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} onError={e => e.target.style.display = 'none'} /></div>
                             <span style={{ fontFamily: "'Inter',sans-serif", fontSize: tab ? '0.7rem' : '0.76rem', fontWeight: 700, color: 'rgba(255,255,255,0.9)', textAlign: 'center', lineHeight: 1.4 }}>🤝 NGO Digital Systems</span>
                         </div>)}
                         {!mob && <div style={{ width: tab ? 12 : 18, height: 2, flexShrink: 0, background: 'linear-gradient(90deg,rgba(200,210,230,0.08),rgba(200,210,230,0.5),rgba(200,210,230,0.08))' }} />}
                         <div style={{ flex: mob ? undefined : 1, width: mob ? '100%' : undefined, maxWidth: lapMax, zIndex: 3 }}>
-                            <CSSLaptop screenImages={['https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/realestate.webp']} uid="infra" maxWidth={lapMax} />
+                            <CSSLaptop screenImages={['https://gi-img-cdn.sujeet.workers.dev/Images/realestate.webp']} uid="infra" maxWidth={lapMax} />
                         </div>
                         {!mob && <div style={{ width: tab ? 12 : 18, height: 2, flexShrink: 0, background: 'linear-gradient(90deg,rgba(200,210,230,0.08),rgba(200,210,230,0.5),rgba(200,210,230,0.08))' }} />}
                         {!mob && (<div style={{ flexShrink: 0, width: panelW, background: 'rgba(255,255,255,0.06)', border: '1.5px solid rgba(200,215,240,0.38)', borderRadius: 14, backdropFilter: 'blur(10px)', padding: tab ? '12px 10px' : '15px 13px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, zIndex: 1 }}>
-                            <div style={{ width: '100%', height: panelImgH, borderRadius: 9, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}><img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ecommbgnd.webp" alt="E-Commerce" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} onError={e => e.target.style.display = 'none'} /></div>
+                            <div style={{ width: '100%', height: panelImgH, borderRadius: 9, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}><img src="https://gi-img-cdn.sujeet.workers.dev/Images/ecommbgnd.webp" alt="E-Commerce" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} onError={e => e.target.style.display = 'none'} /></div>
                             <span style={{ fontFamily: "'Inter',sans-serif", fontSize: tab ? '0.7rem' : '0.76rem', fontWeight: 700, color: 'rgba(255,255,255,0.9)', textAlign: 'center', lineHeight: 1.4 }}>🛒 E-Commerce Ecosystem</span>
                         </div>)}
                         {mob && (<div style={{ display: 'flex', gap: 8, width: '100%' }}>
-                            {[{ src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ngo.webp', label: '🤝 NGO Digital Systems' }, { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ecommbgnd.webp', label: '🛒 E-Commerce Ecosystem' }].map((p, i) => (
+                            {[{ src: 'https://gi-img-cdn.sujeet.workers.dev/Images/ngo.webp', label: '🤝 NGO Digital Systems' }, { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/ecommbgnd.webp', label: '🛒 E-Commerce Ecosystem' }].map((p, i) => (
                                 <div key={`ifpanel-${i}`} style={{ flex: '1 1 0', background: 'rgba(255,255,255,0.06)', border: '1.5px solid rgba(200,215,240,0.38)', borderRadius: 10, padding: '8px 10px', display: 'flex', alignItems: 'center', gap: 8 }}>
                                     <div style={{ width: 44, height: 38, borderRadius: 7, overflow: 'hidden', flexShrink: 0 }}><img src={p.src} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} onError={e => e.target.style.display = 'none'} /></div>
                                     <span style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.63rem', fontWeight: 600, color: 'rgba(255,255,255,0.88)', lineHeight: 1.35 }}>{p.label}</span>
@@ -1782,21 +1782,21 @@ const HeroCarousel = () => {
     // ─── SLIDE 3 LOGISTICS ─────────────────────────────────────────────────
     const renderLogisticsSlide = () => {
         const processSteps = [
-            { img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/imgone.webp', title: 'Vendor /\nBrand Owner', sub: 'Upload Products' },
-            { img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/process2.webp', title: 'E-Commerce\nPlatform', sub: 'Orders Collected' },
-            { img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/trial3rd.webp', title: 'Payment\nGateway', sub: 'Payments Secured' },
-            { img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/van.webp', title: 'Shiprocket\nLogistics', sub: 'Auto Pickup & Dispatch' },
-            { img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/download.webp', title: 'Customer', sub: 'Delivered Successfully.' },
+            { img: 'https://gi-img-cdn.sujeet.workers.dev/Images/imgone.webp', title: 'Vendor /\nBrand Owner', sub: 'Upload Products' },
+            { img: 'https://gi-img-cdn.sujeet.workers.dev/Images/process2.webp', title: 'E-Commerce\nPlatform', sub: 'Orders Collected' },
+            { img: 'https://gi-img-cdn.sujeet.workers.dev/Images/trial3rd.webp', title: 'Payment\nGateway', sub: 'Payments Secured' },
+            { img: 'https://gi-img-cdn.sujeet.workers.dev/Images/van.webp', title: 'Shiprocket\nLogistics', sub: 'Auto Pickup & Dispatch' },
+            { img: 'https://gi-img-cdn.sujeet.workers.dev/Images/download.webp', title: 'Customer', sub: 'Delivered Successfully.' },
         ];
 
         const partnerIcons = [
-            { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/razorpay.webp', label: 'Razorpay' },
-            { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/shopify.svg', label: 'Shopify' },
-            { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/interakt.png', label: 'Interakt' },
-            { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/woocomm.png', label: 'WooCommerce' },
-            { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/shiprocket.webp', label: 'Shiprocket' },
-            { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/meta.jpg', label: 'Meta' },
-            { src: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/hostinger.png', label: 'Hostinger' },
+            { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/razorpay.webp', label: 'Razorpay' },
+            { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/shopify.svg', label: 'Shopify' },
+            { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/interakt.png', label: 'Interakt' },
+            { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/woocomm.png', label: 'WooCommerce' },
+            { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/shiprocket.webp', label: 'Shiprocket' },
+            { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/meta.jpg', label: 'Meta' },
+            { src: 'https://gi-img-cdn.sujeet.workers.dev/Images/hostinger.png', label: 'Hostinger' },
         ];
 
         const logisticsBtnStyle = (isMob, isTab) => ({
@@ -1847,7 +1847,7 @@ const HeroCarousel = () => {
                     .partner-bar-fade-right{display:none;}
                 `}</style>
 
-                <div style={{ position: 'absolute', inset: 0, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/logistics-bg.png')", backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0 }} />
+                <div style={{ position: 'absolute', inset: 0, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/logistics-bg.png')", backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0 }} />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg,rgba(5,10,25,0.62) 0%,rgba(5,10,25,0.4) 40%,rgba(5,10,25,0.75) 100%)', zIndex: 1 }} />
 
                 {/* ── MOBILE LOGISTICS ── */}
@@ -1930,7 +1930,7 @@ const HeroCarousel = () => {
                                 </div>
                             </div>
                             <div style={{ flexShrink: 0, width: '40%' }}>
-                                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/maingraph.webp" alt="Revenue graph" style={{ width: '100%', maxHeight: 85, objectFit: 'contain', objectPosition: 'right bottom', filter: 'drop-shadow(0 4px 20px rgba(80,200,255,0.5))', animation: 'log_glow 4s ease-in-out infinite', display: 'block' }} onError={e => e.target.style.display = 'none'}  loading="lazy" decoding="async" />
+                                <img src="https://gi-img-cdn.sujeet.workers.dev/Images/maingraph.webp" alt="Revenue graph" style={{ width: '100%', maxHeight: 85, objectFit: 'contain', objectPosition: 'right bottom', filter: 'drop-shadow(0 4px 20px rgba(80,200,255,0.5))', animation: 'log_glow 4s ease-in-out infinite', display: 'block' }} onError={e => e.target.style.display = 'none'}  loading="lazy" decoding="async" />
                             </div>
                         </div>
                         <div className="hero-cta-mob" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '8px', marginTop: 14, animation: 'log_in .56s ease-out .05s both' }}>
@@ -1990,7 +1990,7 @@ const HeroCarousel = () => {
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', justifyContent: 'flex-start', gap: tab ? 8 : 12, animation: 'log_in .52s ease-out .04s both', paddingRight: 0 }}>
                                     <div style={{ position: 'relative', width: tab ? '58%' : '56%', marginRight: tab ? 10 : 18 }}>
-                                        <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/maingraph.webp" alt="Revenue graph" style={{ width: '100%', maxHeight: tab ? 115 : 165, objectFit: 'contain', objectPosition: 'right top', filter: 'drop-shadow(0 6px 30px rgba(80,200,255,0.45))', animation: 'log_glow 4s ease-in-out infinite', display: 'block' }} onError={e => e.target.style.display = 'none'}  loading="lazy" decoding="async" />
+                                        <img src="https://gi-img-cdn.sujeet.workers.dev/Images/maingraph.webp" alt="Revenue graph" style={{ width: '100%', maxHeight: tab ? 115 : 165, objectFit: 'contain', objectPosition: 'right top', filter: 'drop-shadow(0 6px 30px rgba(80,200,255,0.45))', animation: 'log_glow 4s ease-in-out infinite', display: 'block' }} onError={e => e.target.style.display = 'none'}  loading="lazy" decoding="async" />
                                     </div>
                                     <div style={{ width: '100%', alignSelf: 'flex-start', display: 'flex', justifyContent: 'flex-end', animation: 'log_in .56s ease-out .06s both', paddingRight: tab ? 59 : 60 }}>
                                         <div className="partner-bar-wrap" style={{ width: tab ? '58%' : '55%' }}>
@@ -2168,7 +2168,7 @@ const HeroCarousel = () => {
                     @keyframes re_glow{0%,100%{box-shadow:0 4px 24px rgba(0,0,0,0.5),inset 0 1px 0 rgba(220,170,60,0.18);}50%{box-shadow:0 8px 36px rgba(180,120,40,0.35),inset 0 1px 0 rgba(220,170,60,0.35);}}
                     @keyframes re_border_pulse{0%,100%{border-color:rgba(180,120,40,0.45);}50%{border-color:rgba(220,160,50,0.75);}}
                 `}</style>
-                <div style={{ position: 'absolute', inset: 0, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/VMimg.webp')", backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0 }} />
+                <div style={{ position: 'absolute', inset: 0, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/VMimg.webp')", backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0 }} />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg,rgba(10,4,1,0.87) 0%,rgba(16,7,2,0.80) 40%,rgba(8,3,1,0.90) 100%)', zIndex: 1 }} />
 
                 {/* ── MOBILE REAL ESTATE ── */}

@@ -6,17 +6,17 @@ import { ArrowRight, X, Check, PhoneCall, PhoneIncoming, TrendingUp, Eye, Lock, 
 //  IMAGE CONFIGURATION
 // ─────────────────────────────────────────────────────────────────
 const IMAGES = {
-  hero: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Wp1.webp",
-  builtForTeams: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Wp2.webp",
-  pricing: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/WP3.webp",
+  hero: "https://gi-img-cdn.sujeet.workers.dev/Images/Wp1.webp",
+  builtForTeams: "https://gi-img-cdn.sujeet.workers.dev/Images/Wp2.webp",
+  pricing: "https://gi-img-cdn.sujeet.workers.dev/Images/WP3.webp",
 
-  bgHero: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bg-hero.webp",
-  bgWhy: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bg-why.webp",
-  bgComplete: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bg-complete.webp",
-  bgTeams: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bg-teams.webp",
-  bgTable: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bg-table.webp",
-  bgPricing: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bg-pricing.webp",
-  bgCta: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bg-cta.webp",
+  bgHero: "https://gi-img-cdn.sujeet.workers.dev/Images/bg-hero.webp",
+  bgWhy: "https://gi-img-cdn.sujeet.workers.dev/Images/bg-why.webp",
+  bgComplete: "https://gi-img-cdn.sujeet.workers.dev/Images/bg-complete.webp",
+  bgTeams: "https://gi-img-cdn.sujeet.workers.dev/Images/bg-teams.webp",
+  bgTable: "https://gi-img-cdn.sujeet.workers.dev/Images/bg-table.webp",
+  bgPricing: "https://gi-img-cdn.sujeet.workers.dev/Images/bg-pricing.webp",
+  bgCta: "https://gi-img-cdn.sujeet.workers.dev/Images/bg-cta.webp",
 
   cardPickup: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=60",
   cardQuality: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=60",

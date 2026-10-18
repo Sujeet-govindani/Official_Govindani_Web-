@@ -454,7 +454,7 @@ export default function AboutUsSection() {
               <div className="img-aspect" aria-hidden="true" />
               <div className="img-sizer">
                 <img loading="lazy" decoding="async"
-                  src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Sujeetsir.webp"
+                  src="https://gi-img-cdn.sujeet.workers.dev/Images/Sujeetsir.webp"
                   alt="Sujeet Govindani"
                 />
               </div>

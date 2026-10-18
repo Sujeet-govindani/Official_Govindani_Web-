@@ -84,7 +84,7 @@ const metrics = [
 const babajiGridItems = [
   {
     id: 1,
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Social-Media-Pages-Images/babajikibutisocialmedia1.png",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Social-Media-Pages-Images/babajikibutisocialmedia1.png",
     title: "Pure Herbal Wellness",
     likes: "1,248",
     comments: "84",
@@ -93,7 +93,7 @@ const babajiGridItems = [
   },
   {
     id: 2,
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Social-Media-Pages-Images/babajikibutisocialmedia2.png",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Social-Media-Pages-Images/babajikibutisocialmedia2.png",
     title: "Nourishing Wellness Tea",
     likes: "942",
     comments: "56",
@@ -102,7 +102,7 @@ const babajiGridItems = [
   },
   {
     id: 3,
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Social-Media-Pages-Images/babajikibutisocialmedia3.png",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Social-Media-Pages-Images/babajikibutisocialmedia3.png",
     title: "100% Organic Extracts",
     likes: "2,056",
     comments: "112",
@@ -111,7 +111,7 @@ const babajiGridItems = [
   },
   {
     id: 4,
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Social-Media-Pages-Images/babajikibutisocialmedia4.png",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Social-Media-Pages-Images/babajikibutisocialmedia4.png",
     title: "Natural Healing Power",
     likes: "1,580",
     comments: "95",

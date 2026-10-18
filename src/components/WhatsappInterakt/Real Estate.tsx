@@ -295,7 +295,7 @@ export default function RealEstatePage() {
 
             </div>
             <div className="coli">
-              <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-Section1.webp" alt="Real Estate WhatsApp hero" />
+              <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-Section1.webp" alt="Real Estate WhatsApp hero" />
             </div>
           </div>
         </div>
@@ -366,7 +366,7 @@ export default function RealEstatePage() {
 
               </div>
               <div className="coli">
-                <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-Section3-img1.webp" alt="Generate more real estate leads" />
+                <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-Section3-img1.webp" alt="Generate more real estate leads" />
               </div>
             </div>
           </div>
@@ -375,7 +375,7 @@ export default function RealEstatePage() {
           <div className="dblk">
             <div className="tc fl">
               <div className="coli">
-                <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-Section3-img2.webp" alt="Qualify potential buyers" />
+                <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-Section3-img2.webp" alt="Qualify potential buyers" />
               </div>
               <div className="col">
                 <div className="gb" />
@@ -417,7 +417,7 @@ export default function RealEstatePage() {
                 ]} />
               </div>
               <div className="coli">
-                <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-Section4-img1.webp" alt="Schedule site visits" />
+                <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-Section4-img1.webp" alt="Schedule site visits" />
               </div>
             </div>
           </div>
@@ -426,7 +426,7 @@ export default function RealEstatePage() {
           <div className="dblk">
             <div className="tc fl">
               <div className="coli">
-                <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-Section5-img1.webp" alt="Simplify document submission" />
+                <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-Section5-img1.webp" alt="Simplify document submission" />
               </div>
               <div className="col">
                 <div className="gb" />
@@ -454,7 +454,7 @@ export default function RealEstatePage() {
           <div className="dblk" style={{ marginTop: 0, paddingTop: 0, borderTop: "none" }}>
             <div className="tc fl">
               <div className="coli">
-                <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-Section6.webp" alt="Customer service and support" />
+                <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-Section6.webp" alt="Customer service and support" />
               </div>
               <div className="col">
                 <div className="gb" />
@@ -486,7 +486,7 @@ export default function RealEstatePage() {
 
               </div>
               <div className="coli">
-                <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-Section7.webp" alt="Property submission for sellers" />
+                <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-Section7.webp" alt="Property submission for sellers" />
               </div>
             </div>
           </div>
@@ -499,7 +499,7 @@ export default function RealEstatePage() {
         <div className="inn">
           <div className="tc fl">
             <div className="coli">
-              <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-section4-img2.webp" alt="Payment reminders" />
+              <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-section4-img2.webp" alt="Payment reminders" />
             </div>
             <div className="col">
               <div className="gb" />
@@ -541,7 +541,7 @@ export default function RealEstatePage() {
               ]} />
             </div>
             <div className="coli">
-              <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-section4-img2.webp" alt="Why WhatsApp for real estate" />
+              <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Real-Estate/Real-Estate-section4-img2.webp" alt="Why WhatsApp for real estate" />
             </div>
           </div>
         </div>

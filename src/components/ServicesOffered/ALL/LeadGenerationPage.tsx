@@ -308,7 +308,7 @@ export default function LeadGenerationPage() {
           }}
         >
           <img
-            src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Lead-Generation/Lead-Generation-Section1-Hero.webp"
+            src="https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Lead-Generation/Lead-Generation-Section1-Hero.webp"
             alt="Lead generation"
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
@@ -353,7 +353,7 @@ export default function LeadGenerationPage() {
         }}
       >
         <img
-          src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Lead-Generation/Lead-Generation-Section2-Background-Bg-1.webp"
+          src="https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Lead-Generation/Lead-Generation-Section2-Background-Bg-1.webp"
           alt=""
           style={{
             position: "absolute", inset: 0,
@@ -519,7 +519,7 @@ export default function LeadGenerationPage() {
         }}
       >
         <img
-          src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Lead-Generation/Lead-Generation-Section3-Background-Bg.webp"
+          src="https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Lead-Generation/Lead-Generation-Section3-Background-Bg.webp"
           alt=""
           style={{
             position: "absolute", inset: 0,
@@ -752,19 +752,19 @@ export default function LeadGenerationPage() {
               tag: "Real Estate",
               title: "Real Estate Leads",
               desc: "High-intent buyers and renters captured through targeted digital campaigns across platforms.",
-              img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Lead-Generation/Lead-Generation-Section6-img1.webp",
+              img: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Lead-Generation/Lead-Generation-Section6-img1.webp",
             },
             {
               tag: "Franchise",
               title: "Franchise Partner Leads",
               desc: "Qualified franchise inquiries from motivated business owners across India and beyond.",
-              img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Lead-Generation/Lead-Generation-Section6-img2.webp",
+              img: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Lead-Generation/Lead-Generation-Section6-img2.webp",
             },
             {
               tag: "Industry",
               title: "B2B & Industry Leads",
               desc: "Decision-maker contacts in clothing, interior design, and more high-value verticals.",
-              img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Lead-Generation/Lead-Generation-Section6-Img3.webp",
+              img: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Lead-Generation/Lead-Generation-Section6-Img3.webp",
             },
           ].map((card, i) => (
             <div

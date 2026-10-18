@@ -423,7 +423,7 @@ export default function RestaurantPage() {
 
             </div>
             <div className="coli">
-              <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section1.webp" alt="Restaurant WhatsApp hero" />
+              <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section1.webp" alt="Restaurant WhatsApp hero" />
             </div>
           </div>
         </div>
@@ -476,12 +476,12 @@ export default function RestaurantPage() {
                   "Get your new cuisines and collections noticed instantly!",
                 ]} />
               </div>
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section3-img1.webp" alt="Promote menu" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section3-img1.webp" alt="Promote menu" /></div>
             </div>
           </div>
           <div className="dblk">
             <div className="tc fl">
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section3-img-2.webp" alt="Table bookings" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section3-img-2.webp" alt="Table bookings" /></div>
               <div className="col">
                 <div className="gb" />
                 <h2 className="hg hg-sm">Take restaurant dine-in table bookings</h2>
@@ -508,7 +508,7 @@ export default function RestaurantPage() {
                 "Set up WhatsApp automation for FAQs to help customers place informed food orders and deliver a great experience!",
               ]} />
             </div>
-            <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section4.webp" alt="Address queries" /></div>
+            <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section4.webp" alt="Address queries" /></div>
           </div>
         </div>
       </section>
@@ -518,7 +518,7 @@ export default function RestaurantPage() {
         <div className="inn">
           <div className="dblk">
             <div className="tc fl">
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section5-img1.webp" alt="Take payments" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section5-img1.webp" alt="Take payments" /></div>
               <div className="col">
                 <div className="gb" />
                 <h2 className="hg hg-sm">Take payments on WhatsApp to process orders faster</h2>
@@ -540,7 +540,7 @@ export default function RestaurantPage() {
                 ]} />
 
               </div>
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section5-img2.webp" alt="Order tracking" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section5-img2.webp" alt="Order tracking" /></div>
             </div>
           </div>
         </div>
@@ -551,7 +551,7 @@ export default function RestaurantPage() {
         <div className="inn">
           <div className="dblk">
             <div className="tc fl">
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section6-img1.webp" alt="Repeat orders" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section6-img1.webp" alt="Repeat orders" /></div>
               <div className="col">
                 <div className="gb" />
                 <h2 className="hg hg-sm">Encourage repeat orders on food orders to boost customer loyalty</h2>
@@ -573,7 +573,7 @@ export default function RestaurantPage() {
                 ]} />
 
               </div>
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section6-img2.webp" alt="Returns and refunds" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section6-img2.webp" alt="Returns and refunds" /></div>
             </div>
           </div>
         </div>
@@ -584,7 +584,7 @@ export default function RestaurantPage() {
         <div className="inn">
           <div className="dblk">
             <div className="tc fl">
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section7-img1.webp" alt="Reviews" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section7-img1.webp" alt="Reviews" /></div>
               <div className="col">
                 <div className="gb" />
                 <h2 className="hg hg-sm">Request product reviews and customer feedback on orders</h2>
@@ -606,7 +606,7 @@ export default function RestaurantPage() {
                 ]} />
 
               </div>
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section7-img2.webp" alt="Curbside pickup" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section7-img2.webp" alt="Curbside pickup" /></div>
             </div>
           </div>
         </div>
@@ -640,7 +640,7 @@ export default function RestaurantPage() {
               </div>
             </div>
             <div className="coli">
-              <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section8.webp" alt="Bandar Mithai success story" />
+              <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Restaurants%20%26%20Food%20Businesses/Restaurants-Food-section8.webp" alt="Bandar Mithai success story" />
             </div>
           </div>
         </div>

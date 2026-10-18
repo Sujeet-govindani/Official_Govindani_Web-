@@ -31,7 +31,7 @@ const flowSteps: FlowStep[] = [
     step: '01',
     title: 'Customer Places Order',
     desc: 'Customer selects products, applies coupons, and proceeds to checkout on your website.',
-    icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Addtocart11.webp', // ✅ Correct public-folder path
+    icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/Addtocart11.webp', // ✅ Correct public-folder path
     iconType: 'image',               // ✅ Tells renderer to use <img>
     detail:
       'Our custom checkout captures all order details seamlessly product variants, quantities, delivery preferences, and payment method selection.',
@@ -40,7 +40,7 @@ const flowSteps: FlowStep[] = [
     step: '02',
     title: 'Smart Order Processing',
     desc: 'Orders are automatically validated, inventory checked, and routed to the fulfillment pipeline.',
-    icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/smartorder11.webp',
+    icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/smartorder11.webp',
     iconType: 'image',
     detail:
       'Real-time inventory sync prevents overselling. Automatic address validation reduces RTO. Fraud detection filters out suspicious orders.',
@@ -49,7 +49,7 @@ const flowSteps: FlowStep[] = [
     step: '03',
     title: 'Payment Gateway Integration',
     desc: 'Secure payment processing with multiple options UPI, cards, wallets, COD, and EMI.',
-    icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/atmcard11.webp',
+    icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/atmcard11.webp',
     iconType: 'image',
     detail:
       'Integrated with Razorpay, Cashfree, and PhonePe. Automatic retry on failed payments. Instant refund processing for cancellations.',
@@ -58,7 +58,7 @@ const flowSteps: FlowStep[] = [
     step: '04',
     title: 'Shiprocket / Custom Logistics',
     desc: 'Auto-assign shipping partner based on location, weight, and delivery speed.',
-    icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/shiprocket11.webp',
+    icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/shiprocket11.webp',
     iconType: 'image',
     detail:
       'Integration with Shiprocket, Delhivery, BlueDart, and 15+ carriers. Automated AWB generation. Rate comparison for lowest shipping cost.',
@@ -67,7 +67,7 @@ const flowSteps: FlowStep[] = [
     step: '05',
     title: 'Real Time Tracking & Notifications',
     desc: 'Customers receive WhatsApp & SMS updates at every milestone from order placed to delivered.',
-    icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/realtime11.webp',
+    icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/realtime11.webp',
     iconType: 'image',
     detail:
       'Branded tracking page. Automated notifications on dispatch, out-for-delivery, and delivery. NDR management for failed deliveries.',
@@ -76,7 +76,7 @@ const flowSteps: FlowStep[] = [
     step: '06',
     title: 'Post Delivery & Returns',
     desc: 'Automated review collection, return/exchange flow, and analytics dashboard.',
-    icon: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/postdelivery11.webp',
+    icon: 'https://gi-img-cdn.sujeet.workers.dev/Images/postdelivery11.webp',
     iconType: 'image',
     detail:
       'Easy return initiation. Reverse pickup scheduling. Refund tracking. Post purchase upselling and customer feedback loops.',
@@ -154,7 +154,7 @@ const CheckoutSystem: React.FC = () => {
         <div className="mt-12">
           <div className="image-container aspect-[21/9] rounded-2xl overflow-hidden max-w-5xl mx-auto">
             <img
-              src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ACS.webp"
+              src="https://gi-img-cdn.sujeet.workers.dev/Images/ACS.webp"
               alt="Advanced Checkout System"
               className="w-full h-full object-cover"
             />
@@ -288,7 +288,7 @@ const CheckoutSystem: React.FC = () => {
           <div className="w-full lg:w-1/2">
             <div className="image-container aspect-[4/3] rounded-2xl overflow-hidden">
               <img
-                src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ShiprocketIntegration.webp"
+                src="https://gi-img-cdn.sujeet.workers.dev/Images/ShiprocketIntegration.webp"
                 alt="Shiprocket Integration"
                 className="w-full h-full object-cover"
               />

@@ -81,8 +81,8 @@ const ciBuildersGridItems = [
   {
     id: 1,
     handle: "@cibuilders",
-    avatar: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/Social-Media/SocialMedia-Real-Estate/social-media-real-estate-CI Builders-img1.webp",
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img6.webp",
+    avatar: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/Social-Media/SocialMedia-Real-Estate/social-media-real-estate-CI Builders-img1.webp",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img6.webp",
     title: "Luxury High-Rise Launch",
     link: "https://www.instagram.com/ci.builders?igsh=MWkybmIwYzBuNmdieQ==",
     tag: "New Project"
@@ -90,8 +90,8 @@ const ciBuildersGridItems = [
   {
     id: 2,
     handle: "@cibuilders",
-    avatar: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/Social-Media/SocialMedia-Real-Estate/social-media-real-estate-CI Builders-img1.webp",
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img4.webp",
+    avatar: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/Social-Media/SocialMedia-Real-Estate/social-media-real-estate-CI Builders-img1.webp",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img4.webp",
     title: "Premium Amenities Showcase",
     link: "https://www.instagram.com/ci.builders?igsh=MWkybmIwYzBuNmdieQ==",
     tag: "Lifestyle"
@@ -99,8 +99,8 @@ const ciBuildersGridItems = [
   {
     id: 3,
     handle: "@cibuilders",
-    avatar: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/Social-Media/SocialMedia-Real-Estate/social-media-real-estate-CI Builders-img1.webp",
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img10.webp",
+    avatar: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/Social-Media/SocialMedia-Real-Estate/social-media-real-estate-CI Builders-img1.webp",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img10.webp",
     title: "Modern Architecture Spotlight",
     link: "https://www.instagram.com/ci.builders?igsh=MWkybmIwYzBuNmdieQ==",
     tag: "Design"
@@ -108,8 +108,8 @@ const ciBuildersGridItems = [
   {
     id: 4,
     handle: "@cibuilders",
-    avatar: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/Social-Media/SocialMedia-Real-Estate/social-media-real-estate-CI Builders-img1.webp",
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img14.webp",
+    avatar: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/Social-Media/SocialMedia-Real-Estate/social-media-real-estate-CI Builders-img1.webp",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img14.webp",
     title: "Construction Milestone Update",
     link: "https://www.instagram.com/ci.builders?igsh=MWkybmIwYzBuNmdieQ==",
     tag: "Milestone"
@@ -119,15 +119,15 @@ const ciBuildersGridItems = [
 const mangalamReels = [
   {
     id: "reel-1",
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Videos/updated%20mere%20guru%20kon%20reel.mp4",
-    poster: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Videos/mangalamposter.png",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Videos/updated%20mere%20guru%20kon%20reel.mp4",
+    poster: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Videos/mangalamposter.png",
     handle: "@mangalamlandmarks",
     instagramUrl: "https://www.instagram.com/mangalamlandmarks/"
   },
   {
     id: "reel-2",
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Videos/chalta%20hai%20updated%20(1).mp4",
-    poster: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Videos/mangalamposter2.png",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Videos/chalta%20hai%20updated%20(1).mp4",
+    poster: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Videos/mangalamposter2.png",
     handle: "@mangalamlandmarks",
     instagramUrl: "https://www.instagram.com/mangalamlandmarks/"
   }
@@ -694,7 +694,7 @@ export default function RealEstateSocialMediaPage() {
               gap: 12
             }}>
               <img
-                src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/Social-Media/SocialMedia-Real-Estate/social-media-real-estate-CI Builders-img1.webp"
+                src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/Social-Media/SocialMedia-Real-Estate/social-media-real-estate-CI Builders-img1.webp"
                 alt="CI Builders Logo"
                 style={{ width: 36, height: 36, borderRadius: "50%", objectFit: "cover", border: "1px solid rgba(201,168,76,0.3)" }}
               />
@@ -763,7 +763,7 @@ export default function RealEstateSocialMediaPage() {
               gap: 12
             }}>
               <img
-                src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/Social-Media/SocialMedia-Real-Estate/social-media-real-estate-Mangalam-img3.webp"
+                src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/Social-Media/SocialMedia-Real-Estate/social-media-real-estate-Mangalam-img3.webp"
                 alt="Mangalam Logo"
                 style={{ width: 36, height: 36, borderRadius: "50%", objectFit: "cover", border: "1px solid rgba(201,168,76,0.3)" }}
               />

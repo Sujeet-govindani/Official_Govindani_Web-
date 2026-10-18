@@ -15,7 +15,7 @@ import '@/styles/usa.css';
 
 const CALENDLY_URL = 'https://calendly.com/sujeet-govindaniit/30min';
 const WA = '919201958273';
-const R2 = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images';
+const R2 = 'https://gi-img-cdn.sujeet.workers.dev/Images';
 const INTEREST_KEY = 'gi_usa_interest';
 type Interest = 'ngo' | 'ecommerce' | 'both';
 
@@ -460,7 +460,7 @@ export default function UsaLanding() {
           </div>
           <div className="gusa-legal-docs">
             <figure className="gusa-doc">
-              <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/USA/wy-articles-of-organization.jpg" alt="Wyoming Articles of Organization — Govindani Infotech LLC" loading="lazy" />
+              <img src="https://gi-img-cdn.sujeet.workers.dev/Images/USA/wy-articles-of-organization.jpg" alt="Wyoming Articles of Organization — Govindani Infotech LLC" loading="lazy" />
               <figcaption>Articles of Organization &middot; Wyoming Secretary of State<br /><span>Public filing ID 2025-001850382</span></figcaption>
             </figure>
             <div className="gusa-doc-badges">

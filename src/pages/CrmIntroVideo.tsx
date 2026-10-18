@@ -4,8 +4,8 @@
 import React, { useRef, useState, useCallback } from 'react';
 
 const CrmIntroVideo: React.FC<{ videoUrl?: string; logoUrl?: string }> = ({
-    videoUrl = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IntroVideo/CRM%20system.mp4',
-    logoUrl = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Official-Logo.webp'
+    videoUrl = 'https://gi-img-cdn.sujeet.workers.dev/Images/IntroVideo/CRM%20system.mp4',
+    logoUrl = 'https://gi-img-cdn.sujeet.workers.dev/Images/Official-Logo.webp'
 }) => {
     const videoRef = useRef<HTMLVideoElement>(null);
     const [isMuted, setIsMuted] = useState(true);

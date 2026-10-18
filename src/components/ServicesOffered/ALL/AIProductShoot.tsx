@@ -35,7 +35,7 @@ const AIProductShoot: React.FC = () => {
           </div>
           <div className="w-full lg:w-1/2">
             <div className="image-container aspect-[4/3] rounded-2xl overflow-hidden">
-              <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ai-product-shoot/hero.webp" alt="AI Product Shoot" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+              <img src="https://gi-img-cdn.sujeet.workers.dev/Images/ai-product-shoot/hero.webp" alt="AI Product Shoot" className="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -53,30 +53,30 @@ const AIProductShoot: React.FC = () => {
         <div className="ai-image-grid">
           {/* Row 1: 3 images */}
           <div className="ai-image-row">
-            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ecomm.webp')" }} />
-            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic2.webp')" }} />
-            <div className="ai-image rounded-xl" style={{ flex: 2, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic3.webp')" }} />
+            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/ecomm.webp')" }} />
+            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/graphic2.webp')" }} />
+            <div className="ai-image rounded-xl" style={{ flex: 2, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/graphic3.webp')" }} />
           </div>
 
           {/* Row 2: 2 images */}
           <div className="ai-image-row">
-            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/im1.jpeg')" }} />
-            <div className="ai-image rounded-xl" style={{ flex: 2, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/im2.jpeg')" }} />
+            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/im1.jpeg')" }} />
+            <div className="ai-image rounded-xl" style={{ flex: 2, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/im2.jpeg')" }} />
           </div>
 
           {/* Row 3: 4 images */}
           <div className="ai-image-row">
-            <div className="ai-image rounded-xl" style={{ flex: 2, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/im3.jpeg')" }} />
-            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/im4.jpeg')" }} />
-            <div className="ai-image rounded-xl" style={{ flex: 3, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/im5.jpeg')" }} />
-            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/im6.jpeg')" }} />
+            <div className="ai-image rounded-xl" style={{ flex: 2, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/im3.jpeg')" }} />
+            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/im4.jpeg')" }} />
+            <div className="ai-image rounded-xl" style={{ flex: 3, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/im5.jpeg')" }} />
+            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/im6.jpeg')" }} />
           </div>
 
           {/* Row 4: 3 images */}
           <div className="ai-image-row">
-            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ai-product-shoot/ai-10.webp')" }} />
-            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ai-product-shoot/ai-11.webp')" }} />
-            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ai-product-shoot/ai-12.webp')" }} />
+            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/ai-product-shoot/ai-10.webp')" }} />
+            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/ai-product-shoot/ai-11.webp')" }} />
+            <div className="ai-image rounded-xl" style={{ flex: 1, backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/ai-product-shoot/ai-12.webp')" }} />
           </div>
         </div>
       </section>

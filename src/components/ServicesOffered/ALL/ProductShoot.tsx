@@ -6,39 +6,39 @@ import ContactUsForm from '@/pages/ContactUsForm';
 // ─── DIAMOND GRID ─────────────────────────────────────────────────────────────
 const diamondImages = [
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Product-Shoot/Product-Shoot-Img1.webp",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Product-Shoot/Product-Shoot-Img1.webp",
     alt: "Luxury Watch Product Shot",
   },
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Product-Shoot/productshoot19.webp",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Product-Shoot/productshoot19.webp",
     alt: "Perfume Bottle Product Shot",
   },
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Product-Shoot/productshoot18.webp",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Product-Shoot/productshoot18.webp",
     alt: "Sneakers Product Shot",
   },
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Product-Shoot/productshoot17.webp",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Product-Shoot/productshoot17.webp",
     alt: "Sunglasses Product Shot",
   },
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Product-Shoot/productshoot14.png",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Product-Shoot/productshoot14.png",
     alt: "Camera Product Shot",
   },
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Product-Shoot/product-Shoot-Img10.webp",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Product-Shoot/product-Shoot-Img10.webp",
     alt: "Red Sneaker Product Shot",
   },
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Product-Shoot/productshoot20.png",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Product-Shoot/productshoot20.png",
     alt: "Sports Shoes Product Shot",
   },
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Product-Shoot/productshoot12.JPG",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Product-Shoot/productshoot12.JPG",
     alt: "Cosmetics Product Shot",
   },
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Product-Shoot/productshoot13.JPG",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Product-Shoot/productshoot13.JPG",
     alt: "Handbag Product Shot",
   },
 ];
@@ -346,7 +346,7 @@ const ProductShoot: React.FC = () => {
           <div className="w-full lg:w-1/2">
             <div className="image-container aspect-[4/3] rounded-2xl overflow-hidden">
               <img
-                src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Product-Shoot/Services-Product-Shoot-Hero-img-Section1.webp"
+                src="https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Product-Shoot/Services-Product-Shoot-Hero-img-Section1.webp"
                 alt="Product Shoot"
                 className="w-full h-full object-cover"
               />

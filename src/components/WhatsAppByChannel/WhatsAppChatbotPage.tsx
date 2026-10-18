@@ -108,15 +108,15 @@ const FaqRow = ({ item, idx }: { item: FaqItem; idx: number }) => {
 };
 
 const BRAND_ITEMS = [
-    { name: "Raheja Realty", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM31.webp", alt: "Raheja Realty logo" },
-    { name: "AJIO",          img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM32.webp", alt: "AJIO logo" },
-    { name: "Zoop",          img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM33.webp", alt: "Zoop logo" },
-    { name: "LAKMÉ",         img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM34.webp", alt: "Lakmé logo" },
-    { name: "Money Solution",img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM35.webp", alt: "Money Solution logo" },
-    { name: "IIB",           img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM36.webp", alt: "IIB logo" },
-    { name: "FOAID",         img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM37.webp", alt: "FOAID logo" },
-    { name: "steelbazaar",   img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM38.webp", alt: "Steelbazaar logo" },
-    { name: "eatoes",        img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM39.webp", alt: "eatoes logo" },
+    { name: "Raheja Realty", img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM31.webp", alt: "Raheja Realty logo" },
+    { name: "AJIO",          img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM32.webp", alt: "AJIO logo" },
+    { name: "Zoop",          img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM33.webp", alt: "Zoop logo" },
+    { name: "LAKMÉ",         img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM34.webp", alt: "Lakmé logo" },
+    { name: "Money Solution",img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM35.webp", alt: "Money Solution logo" },
+    { name: "IIB",           img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM36.webp", alt: "IIB logo" },
+    { name: "FOAID",         img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM37.webp", alt: "FOAID logo" },
+    { name: "steelbazaar",   img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM38.webp", alt: "Steelbazaar logo" },
+    { name: "eatoes",        img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM39.webp", alt: "eatoes logo" },
 ];
 
 const WHY_FEATURES: FeatureCard[] = [
@@ -144,12 +144,12 @@ const FAQS: FaqItem[] = [
 ];
 
 const SLIDER_CARDS = [
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/chatbot1.webp",  title: "Instant Query Resolution",             desc: "Reply instantly to customers with automated, AI-assisted conversations." },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/F2.png",   title: "Offer a 24×7 personalised experience", desc: "AI-generated personalized workflows + commerce integrations help you deliver contextual conversations." },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/F3.webp",  title: "AI-Powered Scalable Conversations",    desc: "Handle thousands of chats simultaneously as AI routes, detects intent, and responds instantly." },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/F4.webp",  title: "Intuitive Interface",                  desc: "Let your chatbot handle routine questions, order updates, and lead qualification." },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/chatbot2.webp",  title: "Made for Business Teams",              desc: "From marketers to support agents, anyone can build this no-code Chatbot for WhatsApp." },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/chatbot3.webp",  title: "Improve conversions",                  desc: "AI-driven flows and intent detection ensure customers reach the right journey." },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/chatbot1.webp",  title: "Instant Query Resolution",             desc: "Reply instantly to customers with automated, AI-assisted conversations." },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/F2.png",   title: "Offer a 24×7 personalised experience", desc: "AI-generated personalized workflows + commerce integrations help you deliver contextual conversations." },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/F3.webp",  title: "AI-Powered Scalable Conversations",    desc: "Handle thousands of chats simultaneously as AI routes, detects intent, and responds instantly." },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/F4.webp",  title: "Intuitive Interface",                  desc: "Let your chatbot handle routine questions, order updates, and lead qualification." },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/chatbot2.webp",  title: "Made for Business Teams",              desc: "From marketers to support agents, anyone can build this no-code Chatbot for WhatsApp." },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/chatbot3.webp",  title: "Improve conversions",                  desc: "AI-driven flows and intent detection ensure customers reach the right journey." },
 ];
 
 const WhatsAppChatbotPage: React.FC = () => {
@@ -324,7 +324,7 @@ const WhatsAppChatbotPage: React.FC = () => {
                         </div>
                         <div className="fs d2 mt-14 w-full max-w-5xl mx-auto rounded-2xl overflow-hidden"
                             style={{ border: "1px solid rgba(201,150,26,0.18)", background: "hsl(0,0%,5%)" }}>
-                            <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Wp4.webp" alt="WhatsApp Chatbot dashboard"
+                            <img src="https://gi-img-cdn.sujeet.workers.dev/Images/Wp4.webp" alt="WhatsApp Chatbot dashboard"
                                 className="w-full h-auto object-cover" style={{ display: "block" }} />
                         </div>
                     </div>
@@ -389,7 +389,7 @@ const WhatsAppChatbotPage: React.FC = () => {
                                 </p>
                             </div>
                             <div className="fs d2 mt-10 w-full">
-                                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Wpgif.gif" alt="WhatsApp Chatbot interface"
+                                <img src="https://gi-img-cdn.sujeet.workers.dev/Images/Wpgif.gif" alt="WhatsApp Chatbot interface"
                                     className="w-full h-auto block" style={{ borderRadius: "0px" }} />
                             </div>
                         </div>
@@ -499,7 +499,7 @@ const WhatsAppChatbotPage: React.FC = () => {
                                 ))}
                             </div>
                             <div className="fs d2 flex justify-center items-center">
-                                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/chatbot.gif" alt="WhatsApp Chatbot Animation"
+                                <img src="https://gi-img-cdn.sujeet.workers.dev/Images/chatbot.gif" alt="WhatsApp Chatbot Animation"
                                     className="w-full max-w-3xl rounded-lg shadow-2xl"
                                     style={{ border: "1px solid rgba(232,192,74,0.3)", boxShadow: "0 25px 50px -12px rgba(232,192,74,0.25)", transform: "scale(1.1)" }} />
                             </div>
@@ -545,7 +545,7 @@ const WhatsAppChatbotPage: React.FC = () => {
                                         <div className="tl-divider-v" />
                                         <div className="tl-divider-h" />
                                         <div className="tl-logo">
-                                            <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/eatoes-logo.webp" alt="eatoes"
+                                            <img src="https://gi-img-cdn.sujeet.workers.dev/Images/eatoes-logo.webp" alt="eatoes"
                                                 style={{ maxWidth: "130px", maxHeight: "65px", objectFit: "contain" }}
                                                 onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; const fb = e.currentTarget.nextElementSibling as HTMLElement; if (fb) fb.style.display = "flex"; }} />
                                             <div style={{ display: "none", alignItems: "center", justifyContent: "center", width: "130px", height: "65px", fontWeight: 800, fontSize: "26px", color: "#888", fontFamily: "Inter,sans-serif", letterSpacing: "-1px" }}>eatoes</div>
@@ -557,7 +557,7 @@ const WhatsAppChatbotPage: React.FC = () => {
                                 <div className="relative rounded-2xl overflow-hidden"
                                     style={{ background: "hsl(0,0%,7%)", border: "1px solid rgba(201,150,26,0.14)", padding: "28px 32px", display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
                                     <div>
-                                        <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/mm1.webp" alt="Prithu Homes"
+                                        <img src="https://gi-img-cdn.sujeet.workers.dev/Images/mm1.webp" alt="Prithu Homes"
                                             style={{ height: "52px", objectFit: "contain" }}
                                             onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; const fb = e.currentTarget.nextElementSibling as HTMLElement; if (fb) fb.style.display = "block"; }} />
                                         <span style={{ display: "none", fontWeight: 700, color: "#e8c04a", fontSize: "17px", fontFamily: "'Libre Baskerville',serif" }}>Prithu Homes</span>
@@ -576,7 +576,7 @@ const WhatsAppChatbotPage: React.FC = () => {
                                 <div className="relative rounded-2xl overflow-hidden"
                                     style={{ background: "hsl(0,0%,7%)", border: "1px solid rgba(201,150,26,0.14)", padding: "28px 28px", display: "flex", flexDirection: "column", justifyContent: "flex-start", minHeight: "200px" }}>
                                     <div>
-                                        <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/mm.webp" alt="A Square GoKarting"
+                                        <img src="https://gi-img-cdn.sujeet.workers.dev/Images/mm.webp" alt="A Square GoKarting"
                                             style={{ height: "48px", objectFit: "contain" }}
                                             onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; const fb = e.currentTarget.nextElementSibling as HTMLElement; if (fb) fb.style.display = "block"; }} />
                                         <span style={{ display: "none", fontWeight: 700, color: "#e8c04a", fontSize: "14px", fontFamily: "'Libre Baskerville',serif" }}>A Square GoKarting</span>
@@ -592,7 +592,7 @@ const WhatsAppChatbotPage: React.FC = () => {
                                     style={{ background: "hsl(0,0%,7%)", border: "1px solid rgba(201,150,26,0.14)" }}>
                                     <div className="br-inner">
                                         <div className="br-logo-cell">
-                                            <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/mm2.webp" alt="House of Chikankari"
+                                            <img src="https://gi-img-cdn.sujeet.workers.dev/Images/mm2.webp" alt="House of Chikankari"
                                                 style={{ maxWidth: "100%", maxHeight: "110px", objectFit: "contain", filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.4))" }}
                                                 onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; const fb = e.currentTarget.nextElementSibling as HTMLElement; if (fb) fb.style.display = "flex"; }} />
                                             <div style={{ display: "none", alignItems: "center", justifyContent: "center", textAlign: "center", fontWeight: 700, color: "#e8c04a", fontSize: "16px", fontFamily: "'Libre Baskerville',serif", lineHeight: "1.4" }}>

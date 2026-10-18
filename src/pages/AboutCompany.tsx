@@ -242,7 +242,7 @@ function IndiaMap({ activeCities }: { activeCities: string[] }) {
   const [svgContent, setSvgContent] = useState<string>('');
 
   useEffect(() => {
-    fetch('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/india-map.svg')
+    fetch('https://gi-img-cdn.sujeet.workers.dev/Images/india-map.svg')
       .then(r => r.text())
       .then(text => {
         const gradientDef = `<defs><linearGradient id="indiaGoldGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#C8A415"/><stop offset="30%" stop-color="#D4AF37"/><stop offset="60%" stop-color="#F0C040"/><stop offset="100%" stop-color="#A07820"/></linearGradient></defs>`;
@@ -459,7 +459,7 @@ function DirectorsSection() {
 
             <div className="dir-card-inner">
               <div className="dir-img-frame">
-                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Sujeetsir.webp" alt="Sujeet Govindani" className="dir-photo"
+                <img src="https://gi-img-cdn.sujeet.workers.dev/Images/Sujeetsir.webp" alt="Sujeet Govindani" className="dir-photo"
                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
                 <div className="dir-img-placeholder"><span>SG</span></div>
                 <div className="dir-badge">Founder</div>
@@ -485,7 +485,7 @@ function DirectorsSection() {
           <div className="dir-card">
             <div className="dir-card-inner">
               <div className="dir-img-frame">
-                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/LuckySir55.webp" alt="Gajendra Govindani" className="dir-photo"
+                <img src="https://gi-img-cdn.sujeet.workers.dev/Images/LuckySir55.webp" alt="Gajendra Govindani" className="dir-photo"
                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
                 <div className="dir-img-placeholder"><span>GG</span></div>
                 <div className="dir-badge">Co-Founder</div>
@@ -538,18 +538,18 @@ function TeamStrengthSection() {
 
 /* ─── Single Team Photo Container ─── */
 const TEAM_MEMBERS = [
-  { name: 'Anjali', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Anjali.webp' },
-  { name: 'Atharva', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Atharva.webp' },
-  { name: 'Gaurav', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Gaurav.webp' },
-  { name: 'Ravina', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Sarita Mam.webp' },
-  { name: 'Shankar', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Shankar.webp' },
-  { name: 'Tejas', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Tejas.webp' },
-  { name: 'Yash', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Yash.webp' },
-  { name: 'Sakshi', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Sakshi.webp' },
-  { name: 'Valaksh', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/valaksh.webp' },
-  { name: 'Kartik', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Kartik.webp' },
-  { name: 'Sakshi S', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Sakshi S.webp' },
-  { name: 'Hitesh', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Hitesh.webp' },
+  { name: 'Anjali', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/Anjali.webp' },
+  { name: 'Atharva', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/Atharva.webp' },
+  { name: 'Gaurav', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/Gaurav.webp' },
+  { name: 'Ravina', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/Sarita Mam.webp' },
+  { name: 'Shankar', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/Shankar.webp' },
+  { name: 'Tejas', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/Tejas.webp' },
+  { name: 'Yash', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/Yash.webp' },
+  { name: 'Sakshi', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/Sakshi.webp' },
+  { name: 'Valaksh', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/valaksh.webp' },
+  { name: 'Kartik', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/Kartik.webp' },
+  { name: 'Sakshi S', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/Sakshi S.webp' },
+  { name: 'Hitesh', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/Hitesh.webp' },
 ];
 
 /* ─── Single Team Photo Container ─── */
@@ -594,7 +594,7 @@ function TeamPhotoGrid() {
                   src={m.img}
                   alt={m.name}
                   className="tm-img"
-                  onError={(e) => { (e.target as HTMLImageElement).src = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Circle-Avatar.webp'; }}
+                  onError={(e) => { (e.target as HTMLImageElement).src = 'https://gi-img-cdn.sujeet.workers.dev/Images/Circle-Avatar.webp'; }}
                 />
               </div>
               <p className="tm-name">{m.name}</p>
@@ -676,7 +676,7 @@ export default function AboutPage() {
     {
       name: 'Sujeet Govindani',
       role: 'Founder & CEO',
-      img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Sujeetsir.webp',
+      img: 'https://gi-img-cdn.sujeet.workers.dev/Images/Sujeetsir.webp',
       info: 'Guinness World Record holder, Global Startup Mentor & author of 25+ books rated 4.9/5 with 15M+ YouTube views and ₹130Cr+ revenue impact.',
       s: ['ig', 'fb', 'yt', 'x'],
       links: {
@@ -686,8 +686,8 @@ export default function AboutPage() {
         x: "https://x.com/sujeetgovindani?s=09"
       }
     },
-    { name: 'Gajendra Govindani', role: 'Co-Founder', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/LuckySir55.webp', info: 'Strategic visionary driving business growth across every vertical with clarity, innovation and unwavering conviction.', s: [] },
-    { name: 'Simranjeet Kaur', role: 'Chief Operations Manager', img: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/SimranMam12.webp', info: 'Operations excellence specialist ensuring seamless delivery, client satisfaction and peak team performance across all projects.', s: [] },
+    { name: 'Gajendra Govindani', role: 'Co-Founder', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/LuckySir55.webp', info: 'Strategic visionary driving business growth across every vertical with clarity, innovation and unwavering conviction.', s: [] },
+    { name: 'Simranjeet Kaur', role: 'Chief Operations Manager', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/SimranMam12.webp', info: 'Operations excellence specialist ensuring seamless delivery, client satisfaction and peak team performance across all projects.', s: [] },
   ];
 
   const startTimer = () => {

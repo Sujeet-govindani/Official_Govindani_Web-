@@ -344,7 +344,7 @@ export default function MarketingAgencyPage(){
              
             </div>
             <div className="coli">
-              <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-Section1.webp" alt="Marketing Agency WhatsApp hero"/>
+              <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-Section1.webp" alt="Marketing Agency WhatsApp hero"/>
             </div>
           </div>
         </div>
@@ -395,7 +395,7 @@ export default function MarketingAgencyPage(){
                 
               </div>
               <div className="coli">
-                <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-Section2-img1.webp" alt="Generate more leads"/>
+                <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-Section2-img1.webp" alt="Generate more leads"/>
               </div>
             </div>
           </div>
@@ -404,7 +404,7 @@ export default function MarketingAgencyPage(){
           <div className="dblk">
             <div className="tc fl">
               <div className="coli">
-                <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-Section2-img2.webp" alt="Qualify and nurture leads"/>
+                <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-Section2-img2.webp" alt="Qualify and nurture leads"/>
               </div>
               <div className="col">
                 <div className="gb"/>
@@ -436,14 +436,14 @@ export default function MarketingAgencyPage(){
               
               </div>
               <div className="coli">
-                <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-Section3-img1.webp" alt="Boost client sales"/>
+                <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-Section3-img1.webp" alt="Boost client sales"/>
               </div>
             </div>
           </div>
           <div className="dblk">
             <div className="tc fl">
               <div className="coli">
-                <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-section3-img2.webp" alt="Personalized experiences"/>
+                <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-section3-img2.webp" alt="Personalized experiences"/>
               </div>
               <div className="col">
                 <div className="gb"/>
@@ -473,14 +473,14 @@ export default function MarketingAgencyPage(){
                
               </div>
               <div className="coli">
-                <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-Section4-img1.webp" alt="Campaign dashboard"/>
+                <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-Section4-img1.webp" alt="Campaign dashboard"/>
               </div>
             </div>
           </div>
           <div className="dblk">
             <div className="tc fl">
               <div className="coli">
-                <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-Section4-img2.webp" alt="Grow revenue by partnering"/>
+                <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-Section4-img2.webp" alt="Grow revenue by partnering"/>
               </div>
               <div className="col">
                 <div className="gb"/>
@@ -525,7 +525,7 @@ export default function MarketingAgencyPage(){
               </div>
             </div>
             <div className="coli">
-              <Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-Section5.webp" alt="Socialee success story"/>
+              <Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Marketing-Agency/Marketing-Agency-Section5.webp" alt="Socialee success story"/>
             </div>
           </div>
         </div>

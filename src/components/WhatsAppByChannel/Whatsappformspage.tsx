@@ -134,18 +134,18 @@ function HeroVideo({ visible }: { visible: boolean }) {
 type LogoEntry = { imgSrc?: string; alt?: string; text?: string };
 
 const RAW_LOGOS: LogoEntry[] = [
-  { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M1.svg",  alt: "Logo 1" },
-  { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M2.svg",  alt: "Logo 2" },
-  { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M3.svg",  alt: "Logo 3" },
-  { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M4.svg",  alt: "Logo 4" },
-  { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M5.svg",  alt: "Logo 5" },
-  { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M6.svg",  alt: "Logo 6" },
-  { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M7.svg",  alt: "Logo 7" },
-  { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M8.svg",  alt: "Logo 8" },
-  { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M9.svg",  alt: "Logo 9" },
-  { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M10.svg", alt: "Logo 10" },
-  { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M11.svg", alt: "Logo 11" },
-  { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M12.svg", alt: "Logo 12" },
+  { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/M1.svg",  alt: "Logo 1" },
+  { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/M2.svg",  alt: "Logo 2" },
+  { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/M3.svg",  alt: "Logo 3" },
+  { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/M4.svg",  alt: "Logo 4" },
+  { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/M5.svg",  alt: "Logo 5" },
+  { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/M6.svg",  alt: "Logo 6" },
+  { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/M7.svg",  alt: "Logo 7" },
+  { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/M8.svg",  alt: "Logo 8" },
+  { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/M9.svg",  alt: "Logo 9" },
+  { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/M10.svg", alt: "Logo 10" },
+  { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/M11.svg", alt: "Logo 11" },
+  { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/M12.svg", alt: "Logo 12" },
 ];
 const MARQUEE_LOGOS: LogoEntry[] = [...RAW_LOGOS, ...RAW_LOGOS];
 
@@ -187,19 +187,19 @@ const MAXIMIZE_TABS = [
   {
     title: "Minimize User Drop-Offs",
     desc: "Scale engagement and task completion while reducing user drop-offs by collecting user details from within the chat interface.",
-    imageSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Maximize1.webp",
+    imageSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/Maximize1.webp",
     imageAlt: "Minimize Drop-Offs",
   },
   {
     title: "App-like Interface On WhatsApp",
     desc: "Forms on WhatsApp replace the need to create website or app for customer engagement. Forms streamline lead generation, appointment booking, registration, sign-up and sign-in, and drive customer service and feedback collection.",
-    imageSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Maximize2.webp",
+    imageSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/Maximize2.webp",
     imageAlt: "App-like Interface",
   },
   {
     title: "Track Success Metrics",
     desc: "WhatsApp Form power-packed analytics dashboard allows you to track and optimize KPIs such as clickthrough rates (CTR), conversion rates, and customer satisfaction scores.",
-    imageSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Maximize3.webp",
+    imageSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/Maximize3.webp",
     imageAlt: "Track Metrics",
   },
 ];
@@ -273,21 +273,21 @@ const ENGAGE_STEPS = [
     num: "1",
     label: "Forms For Appointment Booking",
     desc: "Let customers book appointments, select time slots, and confirm details all inside a WhatsApp conversation with zero friction.",
-    imageSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/user1.webp",
+    imageSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/user1.webp",
     imageAlt: "Appointment Booking",
   },
   {
     num: "2",
     label: "Forms For Lead Generation",
     desc: "Capture high-intent leads directly through WhatsApp with structured forms — name, contact details, business size, and more.",
-    imageSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/user2.webp",
+    imageSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/user2.webp",
     imageAlt: "Lead Generation",
   },
   {
     num: "3",
     label: "Forms For Upsell & Cross Sell",
     desc: "Recommend relevant products and services to existing customers through smart in-chat forms triggered by purchase history.",
-    imageSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/user3.webp",
+    imageSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/user3.webp",
     imageAlt: "Upsell & Cross-sell",
   },
 ];
@@ -399,23 +399,23 @@ const INDUSTRY_TABS = [
 
 const INDUSTRY_IMAGES: Record<number, { src: string; alt: string }[]> = {
   0: [
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/F1.webp",  alt: "Retail 1" },
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/F11.webp", alt: "Retail 2" },
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/F12.webp", alt: "Retail 3" },
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/F13.webp", alt: "Retail 4" },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/F1.webp",  alt: "Retail 1" },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/F11.webp", alt: "Retail 2" },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/F12.webp", alt: "Retail 3" },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/F13.webp", alt: "Retail 4" },
   ],
   1: [
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/fintek1.webp", alt: "Fintech 1" },
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/fintek2.webp", alt: "Fintech 2" },
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/fintek3.webp", alt: "Fintech 3" },
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/fintek4.webp", alt: "Fintech 4" },
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/fintek5.webp", alt: "Fintech 5" },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/fintek1.webp", alt: "Fintech 1" },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/fintek2.webp", alt: "Fintech 2" },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/fintek3.webp", alt: "Fintech 3" },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/fintek4.webp", alt: "Fintech 4" },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/fintek5.webp", alt: "Fintech 5" },
   ],
   2: [
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/hos1.webp", alt: "Hospitality 1" },
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/hos2.webp", alt: "Hospitality 2" },
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/hos3.webp", alt: "Hospitality 3" },
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/hos4.webp", alt: "Hospitality 4" },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/hos1.webp", alt: "Hospitality 1" },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/hos2.webp", alt: "Hospitality 2" },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/hos3.webp", alt: "Hospitality 3" },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/hos4.webp", alt: "Hospitality 4" },
   ],
 };
 
@@ -553,12 +553,12 @@ export default function WhatsAppFormsPage() {
   const cta      = useInView();
 
   const reasonCards = [
-    { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon11.png",  icon: "🔗", title: "Access to Meta's APIs",          desc: "Leverage official Meta/WhatsApp APIs to build robust, scalable Business API engagement." },
-    { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon12.webp", icon: "🏗️", title: "Scalable Infrastructure",        desc: "1000s of brands trust our enterprise-grade infrastructure for high customer support & engagement." },
-    { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon13.png",  icon: "⚡",  title: "Seamless Integrations",          desc: "600+ integrations include CRM, payment gateways, & marketing automations." },
-    { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon14.webp", icon: "🚀", title: "Smooth Onboarding & Easy Setup", desc: "Minimum configuration, an intuitive solution for your business from day one." },
-    { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon15.png",  icon: "💰", title: "Highly Competitive Pricing",     desc: "No hidden costs — transparent pricing. We show you campaign costs upfront so planning is stress-free." },
-    { imgSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon16.webp", icon: "🎯", title: "Industry Leading Support",       desc: "Premium customer support and a dedicated account administrator available 24/7." },
+    { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/icon11.png",  icon: "🔗", title: "Access to Meta's APIs",          desc: "Leverage official Meta/WhatsApp APIs to build robust, scalable Business API engagement." },
+    { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/icon12.webp", icon: "🏗️", title: "Scalable Infrastructure",        desc: "1000s of brands trust our enterprise-grade infrastructure for high customer support & engagement." },
+    { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/icon13.png",  icon: "⚡",  title: "Seamless Integrations",          desc: "600+ integrations include CRM, payment gateways, & marketing automations." },
+    { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/icon14.webp", icon: "🚀", title: "Smooth Onboarding & Easy Setup", desc: "Minimum configuration, an intuitive solution for your business from day one." },
+    { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/icon15.png",  icon: "💰", title: "Highly Competitive Pricing",     desc: "No hidden costs — transparent pricing. We show you campaign costs upfront so planning is stress-free." },
+    { imgSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/icon16.webp", icon: "🎯", title: "Industry Leading Support",       desc: "Premium customer support and a dedicated account administrator available 24/7." },
   ];
 
   const miniStats = [

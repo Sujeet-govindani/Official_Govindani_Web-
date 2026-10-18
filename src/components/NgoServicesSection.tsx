@@ -306,82 +306,82 @@ const NgoServicesSection = () => {
     {
       title: "Recurring Donation",
       description: "Enable donors to give automatically.\nMonthly or yearly plans supported.",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Recurring-Donations.png" alt="Recurring Donation" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/icon-Recurring-Donations.png" alt="Recurring Donation" className={iconClass} loading="lazy" decoding="async" />,
     },
     {
       title: "Fee Recovery",
       description: "Allow donors to optionally cover credit card processing fees so that 100% of their intended donation goes directly to your cause.",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Fee-Recovery.png" alt="Fee Recovery" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/icon-Fee-Recovery.png" alt="Fee Recovery" className={iconClass} loading="lazy" decoding="async" />,
     },
     {
       title: "Funds and Designations",
       description: "Set donation funds and designations to enhance your online fundraising structure",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Funds-Designations.webp" alt="Funds and Designations" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/icon-Funds-Designations.webp" alt="Funds and Designations" className={iconClass} loading="lazy" decoding="async" />,
     },
     {
       title: "Gift Aid",
       description: "Gift Aid is a program the UK government put in place to encourage donors to give more via a tax relief incentive.",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Gift-Aid.png" alt="Gift Aid" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/icon-Gift-Aid.png" alt="Gift Aid" className={iconClass} loading="lazy" decoding="async" />,
     },
     {
       title: "Webhooks",
       description: "Webhooks allow your website to communicate with other web applications in real-time by sending notifications.",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Webhooks2.webp" alt="Webhooks" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/icon-Webhooks2.webp" alt="Webhooks" className={iconClass} loading="lazy" decoding="async" />,
     },
     {
       title: "ActiveCampaign",
       description: "ActiveCampaign helps you boost fundraising by automating email campaigns and strengthening donor relationships through smart CRM tools.",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Active-Campaign.png" alt="ActiveCampaign" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/icon-Active-Campaign.png" alt="ActiveCampaign" className={iconClass} loading="lazy" decoding="async" />,
     },
     {
       title: "Mollie Payment Gateway",
       description: "Let donors give quickly and securely using iDEAL, credit cards, bank transfers, PayPal, Belfius Direct Net, and SOFORT.",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Mollie1.png" alt="Mollie Payment Gateway" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/Mollie1.png" alt="Mollie Payment Gateway" className={iconClass} loading="lazy" decoding="async" />,
     },
     {
       title: "PDF Receipts",
       description: "PDF Receipts lets donors easily download and print their tax-deductible donation receipts anytime.",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-PDF-Receipts.webp" alt="PDF Receipts" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/icon-PDF-Receipts.webp" alt="PDF Receipts" className={iconClass} loading="lazy" decoding="async" />,
     },
     {
       title: "Peer to peer Fundraising",
       description: "Let supporters create personal fundraising pages.\nTrack team goals and social sharing.",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/peer1.png" alt="Peer to Peer Fundraising" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/peer1.png" alt="Peer to Peer Fundraising" className={iconClass} loading="lazy" decoding="async" />,
     },
     {
       title: "Paytm Gateway",
       description: "Give members a private dashboard experience.\nView receipts, profile, and giving history.",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/paytm1.png" alt="Memberdash" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/paytm1.png" alt="Memberdash" className={iconClass} loading="lazy" decoding="async" />,
     },
     {
       title: "Annual Receipt",
       description: "Generate yearly donation receipts automatically.\nOne-click email and download options.",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Annual-Receipts.png" alt="Annual Receipt" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/icon-Annual-Receipts.png" alt="Annual Receipt" className={iconClass} loading="lazy" decoding="async" />,
     },
     {
       title: "Tributes",
       description: "Accept donations made in honor or memory of someone and automatically send tribute emails and acknowledgements.",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Tributes.png" alt="Tributes" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/icon-Tributes.png" alt="Tributes" className={iconClass} loading="lazy" decoding="async" />,
     },
     {
       title: "Currency Switcher",
       description: "Let donors choose their preferred currency.\nShow amounts correctly for global donors.",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Currency-Switcher.png" alt="Currency Switcher" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/icon-Currency-Switcher.png" alt="Currency Switcher" className={iconClass} loading="lazy" decoding="async" />,
     },
     {
       title: "Donation Upsells For WooCommerce",
       description: "Add donation prompts in checkout and cart.\nIncrease average donation per order.",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-woo3.png" alt="Donation Upsells" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/icon-woo3.png" alt="Donation Upsells" className={iconClass} loading="lazy" decoding="async" />,
     },
     {
       title: "Stripe Gateway",
       description: "Accept secure Stripe card payments easily.\nSupports one-time and recurring donations.",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/stripemain.png" alt="Stripe Gateway" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/stripemain.png" alt="Stripe Gateway" className={iconClass} loading="lazy" decoding="async" />,
     },
     {
       title: "JOVVIE",
       description: "Engage donors with smart automation tools.\nImprove retention and follow-up flows.",
-      icon: <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/jovvie-icon12.png" alt="JOVVIE" className={iconClass} loading="lazy" decoding="async" />,
+      icon: <img src="https://gi-img-cdn.sujeet.workers.dev/Images/jovvie-icon12.png" alt="JOVVIE" className={iconClass} loading="lazy" decoding="async" />,
     },
   ];
 

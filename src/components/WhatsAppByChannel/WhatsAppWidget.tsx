@@ -410,16 +410,16 @@ const globalStyle = `
 
 // ─── DATA ─────────────────────────────────────────────────────────────────────
 const brandData = [
-  { name: "paisabazaar", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc1.webp" },
-  { name: "JioMart",     logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc2.webp" },
-  { name: "Disney+ hotstar", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc3.webp" },
-  { name: "pepperfry",   logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc4.webp" },
-  { name: "upstox",      logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc5.webp" },
-  { name: "BLUE DART",   logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc6.webp" },
-  { name: "ZOOP",        logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc7.webp" },
-  { name: "INDmoney",    logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc8.webp" },
-  { name: "atomberg",    logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc9.webp" },
-  { name: "atomberg",    logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wc10.webp" },
+  { name: "paisabazaar", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc1.webp" },
+  { name: "JioMart",     logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc2.webp" },
+  { name: "Disney+ hotstar", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc3.webp" },
+  { name: "pepperfry",   logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc4.webp" },
+  { name: "upstox",      logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc5.webp" },
+  { name: "BLUE DART",   logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc6.webp" },
+  { name: "ZOOP",        logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc7.webp" },
+  { name: "INDmoney",    logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc8.webp" },
+  { name: "atomberg",    logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc9.webp" },
+  { name: "atomberg",    logo: "https://gi-img-cdn.sujeet.workers.dev/Images/wc10.webp" },
 ];
 
 const widgetTemplates = [
@@ -543,7 +543,7 @@ export default function WhatsAppWidget() {
                   className="absolute inset-0 rounded-3xl pointer-events-none"
                   style={{ background: "radial-gradient(ellipse,rgba(200,146,42,0.2) 0%,transparent 70%)", filter: "blur(28px)", animation: "pulseGlow 3s ease-in-out infinite" }}
                 />
-                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd1.webp" alt="WhatsApp Chat Widget Preview" className="w-full rounded-2xl"  loading="lazy" decoding="async" />
+                <img src="https://gi-img-cdn.sujeet.workers.dev/Images/wd1.webp" alt="WhatsApp Chat Widget Preview" className="w-full rounded-2xl"  loading="lazy" decoding="async" />
               </div>
             </Reveal>
           </div>
@@ -588,16 +588,16 @@ export default function WhatsAppWidget() {
 
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                   <HoverCard className="p-0 overflow-hidden">
-                    <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd2.webp" alt="General Template" className="w-full h-full object-cover"  loading="lazy" decoding="async" />
+                    <img src="https://gi-img-cdn.sujeet.workers.dev/Images/wd2.webp" alt="General Template" className="w-full h-full object-cover"  loading="lazy" decoding="async" />
                   </HoverCard>
                   <HoverCard className="p-0 overflow-hidden">
-                    <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd3.webp" alt="Support Template" className="w-full h-full object-cover"  loading="lazy" decoding="async" />
+                    <img src="https://gi-img-cdn.sujeet.workers.dev/Images/wd3.webp" alt="Support Template" className="w-full h-full object-cover"  loading="lazy" decoding="async" />
                   </HoverCard>
                   <HoverCard className="p-0 overflow-hidden">
-                    <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd4.webp" alt="Sales Template" className="w-full h-full object-cover"  loading="lazy" decoding="async" />
+                    <img src="https://gi-img-cdn.sujeet.workers.dev/Images/wd4.webp" alt="Sales Template" className="w-full h-full object-cover"  loading="lazy" decoding="async" />
                   </HoverCard>
                   <HoverCard className="p-0 overflow-hidden">
-                    <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd5.webp" alt="Feedback Template" className="w-full h-full object-cover"  loading="lazy" decoding="async" />
+                    <img src="https://gi-img-cdn.sujeet.workers.dev/Images/wd5.webp" alt="Feedback Template" className="w-full h-full object-cover"  loading="lazy" decoding="async" />
                   </HoverCard>
                 </div>
               </div>
@@ -632,9 +632,9 @@ export default function WhatsAppWidget() {
                 <div className="absolute inset-0 rounded-3xl pointer-events-none" style={{ background: "radial-gradient(ellipse,rgba(200,146,42,0.15) 0%,transparent 70%)", filter: "blur(24px)" }} />
                 <img
                   src={
-                    activeEngageTab === "Acquire" ? "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd6.webp" :
-                    activeEngageTab === "Engage"  ? "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd7.webp" :
-                    "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd8.webp"
+                    activeEngageTab === "Acquire" ? "https://gi-img-cdn.sujeet.workers.dev/Images/wd6.webp" :
+                    activeEngageTab === "Engage"  ? "https://gi-img-cdn.sujeet.workers.dev/Images/wd7.webp" :
+                    "https://gi-img-cdn.sujeet.workers.dev/Images/wd8.webp"
                   }
                   alt={`${activeEngageTab} Preview`}
                   className="w-full h-full object-cover rounded-2xl"
@@ -691,7 +691,7 @@ export default function WhatsAppWidget() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Reveal direction="left" delay={0}>
                 <HoverCard className="p-6 flex flex-col gap-4 h-full">
-                  <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd9.webp" alt="WhatsApp Link Generator UI" className="w-full rounded-2xl"  loading="lazy" decoding="async" />
+                  <img src="https://gi-img-cdn.sujeet.workers.dev/Images/wd9.webp" alt="WhatsApp Link Generator UI" className="w-full rounded-2xl"  loading="lazy" decoding="async" />
                   <h3 className="section-h2">Free WhatsApp link generator</h3>
                   <p style={{ color: "rgba(255,248,231,0.52)", fontFamily: "'Inter',sans-serif", fontSize: "14px", lineHeight: 1.72 }}>
                     Create free WhatsApp chat links for your WhatsApp Business number and share them on your Instagram bio, Facebook and Twitter feeds, and Initiate conversations with customers to drive conversions.
@@ -701,7 +701,7 @@ export default function WhatsAppWidget() {
 
               <Reveal direction="right" delay={100}>
                 <HoverCard className="p-6 flex flex-col gap-4 h-full">
-                  <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wd10.webp" alt="WhatsApp QR Code Generator UI" className="w-full rounded-2xl"  loading="lazy" decoding="async" />
+                  <img src="https://gi-img-cdn.sujeet.workers.dev/Images/wd10.webp" alt="WhatsApp QR Code Generator UI" className="w-full rounded-2xl"  loading="lazy" decoding="async" />
                   <h3 className="section-h2">Free WhatsApp QR code generator</h3>
                   <p style={{ color: "rgba(255,248,231,0.52)", fontFamily: "'Inter',sans-serif", fontSize: "14px", lineHeight: 1.72 }}>
                     Generate a free WhatsApp QR code for your WhatsApp Business number and use it on your social media images, sticker decks, websites, printed material or anywhere for your customers to scan and directly initiate a chat on WhatsApp.

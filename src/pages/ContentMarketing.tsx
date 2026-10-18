@@ -714,7 +714,7 @@ const ContentMarketing = () => {
             </video>
 
             <img
-              src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/app3-bg.jpg"
+              src="https://gi-img-cdn.sujeet.workers.dev/Images/app3-bg.jpg"
               alt=""
               className="absolute inset-0 w-full h-full object-cover z-0"
               style={{ opacity: 0.12 }}
@@ -1050,7 +1050,7 @@ const ContentMarketing = () => {
               className="absolute inset-0"
               style={{
                 backgroundImage:
-                  "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/img1.png')",
+                  "url('https://gi-img-cdn.sujeet.workers.dev/Images/img1.png')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 filter: "saturate(1.05) contrast(1.08)",
@@ -1106,7 +1106,7 @@ const ContentMarketing = () => {
                                  shadow-[0_0_22px_rgba(34,211,238,0.12)]"
                     >
                       <img
-                        src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/targeting.png"
+                        src="https://gi-img-cdn.sujeet.workers.dev/Images/targeting.png"
                         alt="Enhanced Targeting"
                         className="h-14 w-14 object-contain"
                       />
@@ -1148,7 +1148,7 @@ const ContentMarketing = () => {
                                  shadow-[0_0_22px_rgba(168,85,247,0.12)]"
                     >
                       <img
-                        src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/engagement.png"
+                        src="https://gi-img-cdn.sujeet.workers.dev/Images/engagement.png"
                         alt="Increased Engagement"
                         className="h-14 w-14 object-contain"
                       />

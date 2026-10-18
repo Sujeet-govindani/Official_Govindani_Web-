@@ -126,12 +126,12 @@ const StackCard = ({ icon: Icon, iconBg, iconColor, title, desc, imgSrc, imgAlt,
    DATA
 ───────────────────────────────────────────── */
 const TRUST_BRANDS = [
-  { name: "Zydus",      img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M1.svg" }, { name: "EuroKids",  img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M2.svg" },
-  { name: "Noise",      img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M3.svg" }, { name: "MyGlamm",   img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M4.svg" },
-  { name: "Chai Sutta", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M5.svg" }, { name: "PTAL",      img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M6.svg" },
-  { name: "Bisleri",    img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M7.svg" }, { name: "Brand8",    img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M8.svg" },
-  { name: "Brand9",     img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M9.svg" }, { name: "Brand10",   img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M10.svg" },
-  { name: "Brand11",    img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M11.svg"}, { name: "Brand12",   img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/M12.svg" },
+  { name: "Zydus",      img: "https://gi-img-cdn.sujeet.workers.dev/Images/M1.svg" }, { name: "EuroKids",  img: "https://gi-img-cdn.sujeet.workers.dev/Images/M2.svg" },
+  { name: "Noise",      img: "https://gi-img-cdn.sujeet.workers.dev/Images/M3.svg" }, { name: "MyGlamm",   img: "https://gi-img-cdn.sujeet.workers.dev/Images/M4.svg" },
+  { name: "Chai Sutta", img: "https://gi-img-cdn.sujeet.workers.dev/Images/M5.svg" }, { name: "PTAL",      img: "https://gi-img-cdn.sujeet.workers.dev/Images/M6.svg" },
+  { name: "Bisleri",    img: "https://gi-img-cdn.sujeet.workers.dev/Images/M7.svg" }, { name: "Brand8",    img: "https://gi-img-cdn.sujeet.workers.dev/Images/M8.svg" },
+  { name: "Brand9",     img: "https://gi-img-cdn.sujeet.workers.dev/Images/M9.svg" }, { name: "Brand10",   img: "https://gi-img-cdn.sujeet.workers.dev/Images/M10.svg" },
+  { name: "Brand11",    img: "https://gi-img-cdn.sujeet.workers.dev/Images/M11.svg"}, { name: "Brand12",   img: "https://gi-img-cdn.sujeet.workers.dev/Images/M12.svg" },
 ];
 
 const COMPARISON_ROWS = [
@@ -146,10 +146,10 @@ const COMPARISON_ROWS = [
 ];
 
 const USE_CASES = [
-  { id: "edtech",     icon: GraduationCap,   label: "Edtech",              heading: "Capture student attention with click to WhatsApp ads and get them enrolled with our automated flows",   img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Edutech.gif" },
-  { id: "d2c",        icon: ShoppingBag,     label: "D2C",                 heading: "Run click to WhatsApp Ads to capture prospect attention and acquire qualified leads",                    img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Consumer.gif" },
-  { id: "healthcare", icon: Heart,           label: "Healthcare",          heading: "Re-target your website visitors on Facebook & Instagram and nudge them towards booking an appointment", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Healthcare.gif" },
-  { id: "hotels",     icon: UtensilsCrossed, label: "Hotels / Restaurant", heading: "Be where your customers with click to WhatsApp ads on Facebook & Instagram and boost reservations",     img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Hotel.gif" },
+  { id: "edtech",     icon: GraduationCap,   label: "Edtech",              heading: "Capture student attention with click to WhatsApp ads and get them enrolled with our automated flows",   img: "https://gi-img-cdn.sujeet.workers.dev/Images/Edutech.gif" },
+  { id: "d2c",        icon: ShoppingBag,     label: "D2C",                 heading: "Run click to WhatsApp Ads to capture prospect attention and acquire qualified leads",                    img: "https://gi-img-cdn.sujeet.workers.dev/Images/Consumer.gif" },
+  { id: "healthcare", icon: Heart,           label: "Healthcare",          heading: "Re-target your website visitors on Facebook & Instagram and nudge them towards booking an appointment", img: "https://gi-img-cdn.sujeet.workers.dev/Images/Healthcare.gif" },
+  { id: "hotels",     icon: UtensilsCrossed, label: "Hotels / Restaurant", heading: "Be where your customers with click to WhatsApp ads on Facebook & Instagram and boost reservations",     img: "https://gi-img-cdn.sujeet.workers.dev/Images/Hotel.gif" },
 ];
 
 const TESTIMONIALS = [
@@ -158,21 +158,21 @@ const TESTIMONIALS = [
     quote: "CTWA helped us enrich customer conversations in profound ways and offer a seamless shopping experience.",
     name: "Jitendra Sharma",
     role: "Founder & CEO",
-    img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ad6.webp",
+    img: "https://gi-img-cdn.sujeet.workers.dev/Images/ad6.webp",
   },
   {
     metric: "2.4X ROAS surpassing the performance of all the campaigns by threefold",
     quote: "We witnessed a significant improvement in our return on ad spend, as well as an increase in orders with CTWA.",
     name: "Kushal Soni",
     role: "Co-founder, Creative Dukaan & Socialee",
-    img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ad7.webp",
+    img: "https://gi-img-cdn.sujeet.workers.dev/Images/ad7.webp",
   },
   {
     metric: "84% more conversions than other ad formats",
     quote: "With CTWA ads, we achieved record-breaking conversions within 2:15 minutes of Instagram discovery.",
     name: "Adil Khan",
     role: "Founder, BWT Experiences",
-    img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ad8.webp",
+    img: "https://gi-img-cdn.sujeet.workers.dev/Images/ad8.webp",
   },
 ];
 
@@ -340,7 +340,7 @@ const WhatsAppAdsPage: React.FC = () => {
 
               </div>
               <div className="hero-right" style={{ marginTop:150 }}>
-                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ad1.webp" alt="Hero"
+                <img src="https://gi-img-cdn.sujeet.workers.dev/Images/ad1.webp" alt="Hero"
                   style={{ width: "100%", maxWidth: "580px", height: "auto", objectFit: "contain", display: "block" }}
                   onError={(e) => { const el = e.currentTarget as HTMLImageElement; el.style.display = "none"; const fb = el.nextElementSibling as HTMLElement; if (fb) fb.style.display = "flex"; }} />
                 <div style={{ display: "none", alignItems: "center", justifyContent: "center", width: "100%", minHeight: "320px", background: "hsl(0,0%,8%)", borderRadius: "16px", border: "1px solid rgba(201,150,26,0.12)", color: "#444", fontSize: "13px", fontFamily: "Inter,sans-serif" }}>Hero Image</div>
@@ -379,22 +379,22 @@ const WhatsAppAdsPage: React.FC = () => {
                 <StackCard className="b-c1 d1" icon={Target} iconBg="rgba(0,184,148,0.12)" iconColor="#00b894"
                   title="Acquire New Customers"
                   desc="Run ads on Instagram & Facebook and acquire customer details once they click on your ads for future re-targeting campaigns."
-                  imgSrc="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ad2.webp" imgAlt="Acquire New Customers" imgPaddingTop="58%" />
+                  imgSrc="https://gi-img-cdn.sujeet.workers.dev/Images/ad2.webp" imgAlt="Acquire New Customers" imgPaddingTop="58%" />
                 <SplitCard className="b-c3 d3" icon={BarChart3} iconBg="rgba(201,150,26,0.1)" iconColor="#c9961a"
                   title="Powerful Dashboard"
                   desc="Save user information for re-targeting, track ROAS and more with Smart CTWA dashboard."
-                  imgSrc="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ad4.webp" imgAlt="Powerful Dashboard" />
+                  imgSrc="https://gi-img-cdn.sujeet.workers.dev/Images/ad4.webp" imgAlt="Powerful Dashboard" />
               </div>
               <div className="bento-right-col">
                 <SplitCard className="b-c2 d2" icon={Settings} iconBg="rgba(201,150,26,0.1)" iconColor="#c9961a"
                   title={<>No Meta Ads Manager?<br />No trouble!</>}
                   desc="Whats App Ads will automatically create a Meta Ads Manager Account for you in the background, saving time and avoiding errors during setup."
-                  imgSrc="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ad3.webp" imgAlt="No Meta Ads Manager" />
+                  imgSrc="https://gi-img-cdn.sujeet.workers.dev/Images/ad3.webp" imgAlt="No Meta Ads Manager" />
                 <div className="b-c4-wrap d4">
                   <StackCard className="b-c4" icon={Zap} iconBg="rgba(0,184,148,0.1)" iconColor="#00b894"
                     title="Take your CTWA Ads to the next level with Conversion API (CAPI)"
                     desc="Take your Click-to-WhatsApp Ads to the next level with Conversion API (CAPI) for more accurate tracking and better ad performance."
-                    imgSrc="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ad5.webp" imgAlt="Conversion API CAPI" imgPaddingTop="65%" />
+                    imgSrc="https://gi-img-cdn.sujeet.workers.dev/Images/ad5.webp" imgAlt="Conversion API CAPI" imgPaddingTop="65%" />
                 </div>
               </div>
             </div>

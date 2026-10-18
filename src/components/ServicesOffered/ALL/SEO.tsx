@@ -313,11 +313,11 @@ const SEOSection = () => {
 
   const proofScreenshots = [
     
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/seo3.webp", query: "ngos for children", rank: 1, client: "Nanhi Pari Foundation", highlightTop: 20 },
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/seo4.webp", query: "ngo for anath ashram", rank: 1, client: "Popatbhai Charitable Foundation", highlightTop: 22 },
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/seo5.webp", query: "ngo for cows", rank: 1, client: "Gau Seva Dham", highlightTop: 20 },
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/seo6.webp", query: "animal ngo in mumbai", rank: 1, client: "Animal Matter To Me (AMTM)", highlightTop: 38 },
-    { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/seo7.webp", query: "best digital marketing agency in pune", rank: 1, client: "Govindani Infotech Pvt. Ltd.", highlightTop: 26 },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/seo3.webp", query: "ngos for children", rank: 1, client: "Nanhi Pari Foundation", highlightTop: 20 },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/seo4.webp", query: "ngo for anath ashram", rank: 1, client: "Popatbhai Charitable Foundation", highlightTop: 22 },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/seo5.webp", query: "ngo for cows", rank: 1, client: "Gau Seva Dham", highlightTop: 20 },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/seo6.webp", query: "animal ngo in mumbai", rank: 1, client: "Animal Matter To Me (AMTM)", highlightTop: 38 },
+    { src: "https://gi-img-cdn.sujeet.workers.dev/Images/seo7.webp", query: "best digital marketing agency in pune", rank: 1, client: "Govindani Infotech Pvt. Ltd.", highlightTop: 26 },
   ];
 
   return (

@@ -21,8 +21,8 @@ const NGOSection = () => {
     { letter: "C", image: null },
     { letter: "K", image: null },
     { letter: "B", image: null },
-    { letter: "O", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ngo2.jpg" },
-    { letter: "N", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ngo1.webp" },
+    { letter: "O", image: "https://gi-img-cdn.sujeet.workers.dev/Images/ngo2.jpg" },
+    { letter: "N", image: "https://gi-img-cdn.sujeet.workers.dev/Images/ngo1.webp" },
     { letter: "E", image: null },
     { letter: "S", image: null },
   ];

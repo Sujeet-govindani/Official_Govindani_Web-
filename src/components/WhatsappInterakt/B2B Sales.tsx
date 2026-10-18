@@ -125,7 +125,7 @@ export default function B2BSalesPage(){
               <Bullets items={["Share product / service information via catalogs","Offer 24×7 technical support with WhatsApp automation","Set up auto payment reminders on WhatsApp for subscription renewals"]}/>
               <CTA/>
             </div>
-            <div className="col-img"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/WhatsAppB2BSales/WhatsAppB2B-Section1.webp" alt="WhatsApp B2B Hero"/></div>
+            <div className="col-img"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/WhatsAppB2BSales/WhatsAppB2B-Section1.webp" alt="WhatsApp B2B Hero"/></div>
           </div>
         </div>
       </section>
@@ -162,7 +162,7 @@ export default function B2BSalesPage(){
               <Bullets items={["Run click-to-WhatsApp ads for higher customer acquisition rates","Initiate conversations with website WhatsApp widget","Share WhatsApp links on social media to get discovered online"]}/>
               <CTA/>
             </div>
-            <div className="col-img"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/WhatsAppB2BSales/WhatsAppB2B-section2.webp" alt="Capture leads"/></div>
+            <div className="col-img"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/WhatsAppB2BSales/WhatsAppB2B-section2.webp" alt="Capture leads"/></div>
           </div>
         </div>
       </section>
@@ -170,7 +170,7 @@ export default function B2BSalesPage(){
       <section className="ps ps-dark2"> 
         <div className="inner">
           <div className="two-col flip-mob">
-            <div className="col-img"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/WhatsAppB2BSales/WhatsAppB2B-section3.webp" alt="Prevent drop-offs"/></div>
+            <div className="col-img"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/WhatsAppB2BSales/WhatsAppB2B-section3.webp" alt="Prevent drop-offs"/></div>
             <div className="col">
               <div className="gold-bar"/>
               <h2 className="h-gold">Prevent B2B leads from dropping off by setting up WhatsApp automations.</h2>
@@ -190,7 +190,7 @@ export default function B2BSalesPage(){
               <Bullets items={["Accept payments on WhatsApp using frictionless payment integration","Offer product/service onboarding through automated workflows","Schedule product/service set up to converted buyers"]}/>
               <CTA/>
             </div>
-            <div className="col-img"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/WhatsAppB2BSales/WhatsAppB2B-section4.webp" alt="Nudge leads"/></div>
+            <div className="col-img"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/WhatsAppB2BSales/WhatsAppB2B-section4.webp" alt="Nudge leads"/></div>
           </div>
         </div>
       </section>
@@ -198,7 +198,7 @@ export default function B2BSalesPage(){
       <section className="ps ps-dark">
         <div className="inner">
           <div className="two-col flip-mob">
-            <div className="col-img"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/WhatsAppB2BSales/WhatsAppB2B-section6.webp" alt="Keep engaged"/></div>
+            <div className="col-img"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/WhatsAppB2BSales/WhatsAppB2B-section6.webp" alt="Keep engaged"/></div>
             <div className="col">
               <div className="gold-bar"/>
               <h2 className="h-gold">Keep your customers engaged with frequent conversations using WhatsApp automations.</h2>
@@ -218,7 +218,7 @@ export default function B2BSalesPage(){
               <Bullets items={["Send product / service reports using media files","Follow up to offer more assistance to customers","Gather customer feedback and insights using interactive messages"]}/>
               <CTA/>
             </div>
-            <div className="col-img"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/WhatsAppB2BSales/WhatsAppB2B-section7.webp" alt="Delight customers"/></div>
+            <div className="col-img"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/WhatsAppB2BSales/WhatsAppB2B-section7.webp" alt="Delight customers"/></div>
           </div>
         </div>
       </section>
@@ -235,7 +235,7 @@ export default function B2BSalesPage(){
               <p className="s10-tags">14-day free trial · No credit card · No setup cost</p>
               <CTA/>
             </div>
-            <div className="col-img"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/WhatsAppB2BSales/WhatsAppB2B-section7.webp" alt="Get started"/></div>
+            <div className="col-img"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/WhatsAppB2BSales/WhatsAppB2B-section7.webp" alt="Get started"/></div>
           </div>
         </div>
       </section>

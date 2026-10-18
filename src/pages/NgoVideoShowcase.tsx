@@ -82,7 +82,7 @@ function SectionLabel({ text }: { text: string }) {
 function YouTubeShortsIcon({ size = 32 }: { size?: number }) {
     return (
         <img
-            src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Youtubeshort33.png"
+            src="https://gi-img-cdn.sujeet.workers.dev/Images/Youtubeshort33.png"
             alt="YouTube Shorts"
             style={{
                 width: size,
@@ -599,9 +599,9 @@ export default function NgoVideoShowcase() {
     }, []);
 
     const videos: VideoItem[] = [
-        { id: "", title: "", category: "", src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Videos/Ngo-Videography3.mp4", poster: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/thumbimg3.webp", youtubeUrl: "https://youtube.com/shorts/hMpvTUhHP8E?si=snNftdYetfhoVBuO" },
-        { id: "", title: "", category: "", src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Videos/Ngo-Videography2.mp4", poster: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/thumbimg2.webp", youtubeUrl: "https://youtube.com/shorts/iPRuQtJe3jk?si=pVhI2b8OU6PcSQlV" },
-        { id: "", title: "", category: "", src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Services-VideoGraphy/Video2.mp4", poster: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/thumbimg4.webp", youtubeUrl: "https://youtube.com/shorts/CtKBFYfnMgg?si=LLGaPPoAd88PuIA4" },
+        { id: "", title: "", category: "", src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Videos/Ngo-Videography3.mp4", poster: "https://gi-img-cdn.sujeet.workers.dev/Images/thumbimg3.webp", youtubeUrl: "https://youtube.com/shorts/hMpvTUhHP8E?si=snNftdYetfhoVBuO" },
+        { id: "", title: "", category: "", src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Videos/Ngo-Videography2.mp4", poster: "https://gi-img-cdn.sujeet.workers.dev/Images/thumbimg2.webp", youtubeUrl: "https://youtube.com/shorts/iPRuQtJe3jk?si=pVhI2b8OU6PcSQlV" },
+        { id: "", title: "", category: "", src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Services-VideoGraphy/Video2.mp4", poster: "https://gi-img-cdn.sujeet.workers.dev/Images/thumbimg4.webp", youtubeUrl: "https://youtube.com/shorts/CtKBFYfnMgg?si=LLGaPPoAd88PuIA4" },
     ];
 
     return (

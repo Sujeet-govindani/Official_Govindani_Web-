@@ -278,27 +278,27 @@ const socialCards: CardStackItem[] = [
   {
     id: 1,
     title: "Real-Estate-Capture-Moment",
-    mediaSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Videos/Real-Estate-Capture-1.webm",
+    mediaSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Videos/Real-Estate-Capture-1.webm",
   },
   {
     id: 2,
     title: "Product Reveal",
-    mediaSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Video-Editing/Video-Editing-Video3.mp4",
+    mediaSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Video-Editing/Video-Editing-Video3.mp4",
   },
   {
     id: 3,
     title: "Natuare Friendly",
-    mediaSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Video-Editing/Video-Editing-Video1.mp4",
+    mediaSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Video-Editing/Video-Editing-Video1.mp4",
   },
   {
     id: 4,
     title: "Real-Captures",
-    mediaSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Video-Editing/Video-Editing-Video2.mp4",
+    mediaSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Video-Editing/Video-Editing-Video2.mp4",
   },
   {
     id: 5,
     title: "Creativity",
-    mediaSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/All/Services-Video-Editing/Video-Editing-Creativity-Video4.mp4",
+    mediaSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Video-Editing/Video-Editing-Creativity-Video4.mp4",
   },
 ];
 
@@ -420,7 +420,7 @@ body { background: #0a0a0a; color: #f5f0e8; font-family: 'Inter', sans-serif; ov
       }}>
         <div style={{
           position: "absolute", inset: 0,
-          backgroundImage: "url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/video-editing-bg.webp')",
+          backgroundImage: "url('https://gi-img-cdn.sujeet.workers.dev/Images/video-editing-bg.webp')",
           backgroundSize: "cover", backgroundPosition: "center", opacity: 0.25, zIndex: 0,
         }} />
         <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)", zIndex: 1 }} />
@@ -474,7 +474,7 @@ body { background: #0a0a0a; color: #f5f0e8; font-family: 'Inter', sans-serif; ov
               border: "1px solid #D4AF3745", borderRadius: "4px", zIndex: 0,
             }} />
             <img
-              src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/VideoEditing.webp"
+              src="https://gi-img-cdn.sujeet.workers.dev/Images/VideoEditing.webp"
               alt="Video Editing"
               style={{
                 width: "100%", aspectRatio: "4/5", objectFit: "cover",

@@ -28,29 +28,29 @@ interface PortfolioShowcaseProps {
 
 const CATEGORY_IMAGES: Record<string, string[]> = {
   'Real Estate': [
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img1.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img2.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img3.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img4.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img5.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img6.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img7.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img8.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img9.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img10.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img1.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img2.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img3.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img4.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img5.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img6.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img7.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img8.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img9.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Photography-Images/Real-Estate-Photography-Section-img10.webp',
   ],
 
   'NGO & Social Impact': [
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img1.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img2.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img6.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img9.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img10.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img11.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img12.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img14.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img15.webp',
-    'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img2.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img1.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img2.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img6.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img9.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img10.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img11.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img12.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img14.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img15.webp',
+    'https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img2.webp',
   ],
 
 
@@ -155,15 +155,15 @@ const VIDEO_GROUPS_DATA = [
     label: "Real Estate",
     videos: [
       {
-        videoUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Videos/Real-Estate-Capture-1.webm",
+        videoUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Videos/Real-Estate-Capture-1.webm",
 
       },
       {
-        videoUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Videos/Real-Estate-Capture2.webm",
+        videoUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Videos/Real-Estate-Capture2.webm",
 
       },
       {
-        videoUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Videos/Real-Estate-Capture3.webm",
+        videoUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Videos/Real-Estate-Capture3.webm",
 
       },
     ],
@@ -172,15 +172,15 @@ const VIDEO_GROUPS_DATA = [
     label: "Branding & Social",
     videos: [
       {
-        videoUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Services-VideoGraphy/Video2.mp4",
+        videoUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Services-VideoGraphy/Video2.mp4",
 
       },
       {
-        videoUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Services-VideoGraphy/Video1.mp4",
+        videoUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Services-VideoGraphy/Video1.mp4",
 
       },
       {
-        videoUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Services-VideoGraphy/Video3.mp4",
+        videoUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Services-VideoGraphy/Video3.mp4",
 
       },
     ],
@@ -189,15 +189,15 @@ const VIDEO_GROUPS_DATA = [
     label: "NGO & Social Impact",
     videos: [
       {
-        videoUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Videos/Ngo-Videography2.mp4",
+        videoUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Videos/Ngo-Videography2.mp4",
 
       },
       {
-        videoUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Videos/Ngo-Videography3.mp4",
+        videoUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Videos/Ngo-Videography3.mp4",
 
       },
       {
-        videoUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Services-VideoGraphy/Video2.mp4",
+        videoUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Services-VideoGraphy/Video2.mp4",
 
       },
     ],

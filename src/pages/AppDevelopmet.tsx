@@ -347,7 +347,7 @@ const AppDevelopment = () => {
                         </video>
 
                         <img
-                            src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/app3-bg.jpg"
+                            src="https://gi-img-cdn.sujeet.workers.dev/Images/app3-bg.jpg"
                             alt=""
                             className="absolute inset-0 w-full h-full object-cover z-0"
                             style={{ opacity: 0.12 }}

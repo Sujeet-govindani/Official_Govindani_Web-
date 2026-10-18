@@ -287,8 +287,8 @@ const RealEstatePage = () => {
   const videoRef = useRef(null);
 
   const reProjects = [
-    { title: "CI BUILDERS", category: "real-estate", url: "https://cibuilders.in/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/RealEstate/Real-Estate-Ci-Builders.webp" },
-    { title: "JANKI BUILDERS", category: "real-estate", url: "https://jankibuilders.com/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/RealEstate/Real-Estate-Jank-Builders.webp" },
+    { title: "CI BUILDERS", category: "real-estate", url: "https://cibuilders.in/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/RealEstate/Real-Estate-Ci-Builders.webp" },
+    { title: "JANKI BUILDERS", category: "real-estate", url: "https://jankibuilders.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/RealEstate/Real-Estate-Jank-Builders.webp" },
 
   ];
 
@@ -450,7 +450,7 @@ const RealEstatePage = () => {
         .re-hero-card.visible { opacity: 1; transform: translateY(0) scale(1); }
         .re-hero-card-bg {
           position: absolute; inset: 0;
-          background-image: url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/builders.webp');
+          background-image: url('https://gi-img-cdn.sujeet.workers.dev/Images/builders.webp');
           background-size: cover; background-position: center;
           opacity: 0.70; z-index: 0; pointer-events: none;
         }
@@ -875,7 +875,7 @@ const RealEstatePage = () => {
         }
         .re-closing-bg {
           position: absolute; inset: 0;
-          background-image: url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bgbuilders.webp');
+          background-image: url('https://gi-img-cdn.sujeet.workers.dev/Images/bgbuilders.webp');
           background-size: cover; background-position: center;
           opacity: 0.60; z-index: 0;
         }

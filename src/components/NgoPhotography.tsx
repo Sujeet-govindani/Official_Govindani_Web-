@@ -6,42 +6,42 @@ import ContactUsForm from '@/pages/ContactUsForm';
 // ─── DIAMOND GRID ─────────────────────────────────────────────────────────────
 const diamondImages = [
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img12.webp",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img12.webp",
     alt: "Luxury Watch Product Shot",
   },
   
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/NgoPhotography-img8.webp",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/NgoPhotography-img8.webp",
     alt: "Luxury Watch Product Shot",
   },
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img11.webp",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img11.webp",
     alt: "Luxury Watch Product Shot",
   },
   
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img3.webp",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img3.webp",
     alt: "Sneakers Product Shot",
   },
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img4.webp",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img4.webp",
     alt: "Sunglasses Product Shot",
   },
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img5.webp",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img5.webp",
     alt: "Camera Product Shot",
   },
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img6.webp",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img6.webp",
     alt: "Red Sneaker Product Shot",
   },
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img7.webp",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img7.webp",
     alt: "Sports Shoes Product Shot",
   },
   
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Ngo-Images/Ngo-Photography-img10.webp",
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/Services/Ngo-Images/Ngo-Photography-img10.webp",
     alt: "Handbag Product Shot",
   },
 ];

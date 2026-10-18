@@ -2,25 +2,25 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const LOGO_STRIP_SRC = "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Logo1.png";
+const LOGO_STRIP_SRC = "https://gi-img-cdn.sujeet.workers.dev/Images/Logo1.png";
 const WHATSAPP_NUMBER = "919201958278"; // bot line → guided flow
 const WHATSAPP_MESSAGE = encodeURIComponent("Hi! I'd like to book a strategy call.");
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
 
 const BG_IMAGES = [
-  { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/demo1.webp", top: "6%", left: "2%", rotate: -14, scale: 1.05 },
-  { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/demo2.webp", top: "5%", right: "1%", rotate: 12, scale: 0.95 },
-  { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/demo3.webp", top: "38%", left: "-2%", rotate: -8, scale: 1.0 },
-  { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/demo4.webp", top: "40%", right: "-1%", rotate: 10, scale: 1.08 },
+  { src: "https://gi-img-cdn.sujeet.workers.dev/Images/demo1.webp", top: "6%", left: "2%", rotate: -14, scale: 1.05 },
+  { src: "https://gi-img-cdn.sujeet.workers.dev/Images/demo2.webp", top: "5%", right: "1%", rotate: 12, scale: 0.95 },
+  { src: "https://gi-img-cdn.sujeet.workers.dev/Images/demo3.webp", top: "38%", left: "-2%", rotate: -8, scale: 1.0 },
+  { src: "https://gi-img-cdn.sujeet.workers.dev/Images/demo4.webp", top: "40%", right: "-1%", rotate: 10, scale: 1.08 },
   {
-    src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/demo5.webp", top: "72%", left: "4%", rotate: -16, scale: 0.92
+    src: "https://gi-img-cdn.sujeet.workers.dev/Images/demo5.webp", top: "72%", left: "4%", rotate: -16, scale: 0.92
 
   },
-  { src: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wauto1.webp", top: "75%", right: "3%", rotate: 18, scale: 1.0 },
+  { src: "https://gi-img-cdn.sujeet.workers.dev/Images/wauto1.webp", top: "75%", right: "3%", rotate: 18, scale: 1.0 },
 ];
 
-const LAPTOP_CAROUSEL_IMAGES = ["https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wasap33.webp", "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wasapcimg13.webp"];
-const MOBILE_CAROUSEL_IMAGES = ["https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/was62.webp", "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wasapmbc2.webp"];
+const LAPTOP_CAROUSEL_IMAGES = ["https://gi-img-cdn.sujeet.workers.dev/Images/wasap33.webp", "https://gi-img-cdn.sujeet.workers.dev/Images/wasapcimg13.webp"];
+const MOBILE_CAROUSEL_IMAGES = ["https://gi-img-cdn.sujeet.workers.dev/Images/was62.webp", "https://gi-img-cdn.sujeet.workers.dev/Images/wasapmbc2.webp"];
 
 /* ══════════════════════════════════════════════════════════
    FLOATING BG IMAGES

@@ -219,15 +219,15 @@ const NewsAndBloggingPage = () => {
   const videoRef = useRef<HTMLDivElement>(null);
 
   const allProjects = [
-    { title: "THE DAILY PULSE",     category: "news",    url: "https://dailypulse.com",      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/News-1.png"    },
-    { title: "INSIGHT TRIBUNE",     category: "news",    url: "https://insighttribune.com",   image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/News-2.png"    },
-    { title: "GLOBE CHRONICLE",     category: "news",    url: "https://globechronicle.com",   image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/News-3.png"    },
-    { title: "VIVID NARRATIVES",    category: "blog",    url: "https://vividnarratives.com",  image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Blog-1.png"    },
-    { title: "THE THOUGHT VAULT",   category: "blog",    url: "https://thoughtvault.com",     image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Blog-2.png"    },
-    { title: "PIXEL STORIES",       category: "blog",    url: "https://pixelstories.com",     image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Blog-3.png"    },
-    { title: "METRO DIGEST",        category: "news",    url: "https://metrodigest.com",      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/News-4.png"    },
-    { title: "SPARK JOURNAL",       category: "blog",    url: "https://sparkjournal.com",     image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Blog-4.png"    },
-    { title: "ECHO PRESS",          category: "news",    url: "https://echopress.com",        image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/News-5.png"    },
+    { title: "THE DAILY PULSE",     category: "news",    url: "https://dailypulse.com",      image: "https://gi-img-cdn.sujeet.workers.dev/Images/News-1.png"    },
+    { title: "INSIGHT TRIBUNE",     category: "news",    url: "https://insighttribune.com",   image: "https://gi-img-cdn.sujeet.workers.dev/Images/News-2.png"    },
+    { title: "GLOBE CHRONICLE",     category: "news",    url: "https://globechronicle.com",   image: "https://gi-img-cdn.sujeet.workers.dev/Images/News-3.png"    },
+    { title: "VIVID NARRATIVES",    category: "blog",    url: "https://vividnarratives.com",  image: "https://gi-img-cdn.sujeet.workers.dev/Images/Blog-1.png"    },
+    { title: "THE THOUGHT VAULT",   category: "blog",    url: "https://thoughtvault.com",     image: "https://gi-img-cdn.sujeet.workers.dev/Images/Blog-2.png"    },
+    { title: "PIXEL STORIES",       category: "blog",    url: "https://pixelstories.com",     image: "https://gi-img-cdn.sujeet.workers.dev/Images/Blog-3.png"    },
+    { title: "METRO DIGEST",        category: "news",    url: "https://metrodigest.com",      image: "https://gi-img-cdn.sujeet.workers.dev/Images/News-4.png"    },
+    { title: "SPARK JOURNAL",       category: "blog",    url: "https://sparkjournal.com",     image: "https://gi-img-cdn.sujeet.workers.dev/Images/Blog-4.png"    },
+    { title: "ECHO PRESS",          category: "news",    url: "https://echopress.com",        image: "https://gi-img-cdn.sujeet.workers.dev/Images/News-5.png"    },
   ];
 
   const displayProjects = searchQuery
@@ -372,7 +372,7 @@ const NewsAndBloggingPage = () => {
         .nb-hero-card.visible { opacity:1; transform:translateY(0) scale(1); }
         .nb-hero-card-bg {
           position:absolute; inset:0;
-          background-image:url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/news1.jfif');
+          background-image:url('https://gi-img-cdn.sujeet.workers.dev/Images/news1.jfif');
           background-size:cover; background-position:center;
           opacity:0.40; z-index:0; pointer-events:none;
         }
@@ -548,7 +548,7 @@ const NewsAndBloggingPage = () => {
            SECTION 4 CLOSING
         ════════════════════════════ */
         .nb-closing-section { position:relative;min-height:580px;display:flex;align-items:center;padding:80px 28px;overflow:hidden;background:#000; }
-        .nb-closing-bg { position:absolute;inset:0;background-image:url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/news2.jfif');background-size:cover;background-position:center;opacity:0.45;z-index:0; }
+        .nb-closing-bg { position:absolute;inset:0;background-image:url('https://gi-img-cdn.sujeet.workers.dev/Images/news2.jfif');background-size:cover;background-position:center;opacity:0.45;z-index:0; }
         .nb-closing-overlay { position:absolute;inset:0;background:linear-gradient(to left,rgba(0,0,0,.72) 0%,rgba(0,0,0,.28) 55%,rgba(0,0,0,.65) 100%);z-index:1; }
         .nb-closing-particles { position:absolute;inset:0;pointer-events:none;z-index:1; }
         .nb-cp { position:absolute;width:2px;height:2px;border-radius:50%;background:rgba(212,175,55,.5);animation:nbFloatY var(--dur,4s) ease-in-out var(--delay,0s) infinite; }

@@ -19,7 +19,7 @@ import NgoLeadForm from '@/components/ngo/NgoLeadForm';
  */
 
 const WA = '919201958273';
-const R2 = 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images';
+const R2 = 'https://gi-img-cdn.sujeet.workers.dev/Images';
 
 
 // On touch devices a single tap just "interacts" (no navigation); a double tap

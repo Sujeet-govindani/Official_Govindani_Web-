@@ -251,13 +251,13 @@ const HealthcarePage = () => {
 
   const allProjects = [
     // >>> latest-captured portfolio sites (auto-added, review before deploy)
-    { title: "Dentivaa (Femdent Care)", category: "healthcare", url: "https://dentivaa.com", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioSites/dentivaa.jpg" },
+    { title: "Dentivaa (Femdent Care)", category: "healthcare", url: "https://dentivaa.com", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioSites/dentivaa.jpg" },
     // <<< latest-captured
     {
       title: "OUR HEALTHCARE WEBSITE",
       category: "healthcare",
       url: "https://mahaveereyehospital.com/",
-      image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Healthcare/Healthcare-mahaveer-eye-hospital.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Healthcare/Healthcare-mahaveer-eye-hospital.webp",
     },
   ];
 
@@ -324,7 +324,7 @@ const HealthcarePage = () => {
 
         .nb-hero-card { position:relative;z-index:2;width:96%;max-width:1260px;padding:62px 68px;border-radius:22px;overflow:hidden;background:rgba(255,255,255,.04);backdrop-filter:blur(10px) saturate(1.5);-webkit-backdrop-filter:blur(10px) saturate(1.5);border:1px solid rgba(212,175,55,.16);animation:nbBorderGlow 4.5s ease-in-out infinite;opacity:0;transform:translateY(36px) scale(.98);transition:opacity .9s ease,transform .9s ease; }
         .nb-hero-card.visible { opacity:1;transform:translateY(0) scale(1); }
-        .nb-hero-card-bg { position:absolute;inset:0;background-image:url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bghealthcare1.webp');background-size:cover;background-position:center;opacity:0.35;z-index:0;pointer-events:none; }
+        .nb-hero-card-bg { position:absolute;inset:0;background-image:url('https://gi-img-cdn.sujeet.workers.dev/Images/bghealthcare1.webp');background-size:cover;background-position:center;opacity:0.35;z-index:0;pointer-events:none; }
         .nb-hero-card-overlay { position:absolute;inset:0;background:radial-gradient(ellipse at 50% 110%,rgba(0,0,0,.65) 0%,transparent 65%),radial-gradient(ellipse at 50% -10%,rgba(0,0,0,.5) 0%,transparent 60%),linear-gradient(to right,rgba(0,0,0,.25) 0%,transparent 40%,rgba(0,0,0,.15) 100%);z-index:0;pointer-events:none; }
         .nb-hero-card-content { position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center; }
         @media(max-width:900px){ .nb-hero-card-content{grid-template-columns:1fr;gap:36px;} .nb-hero-card{padding:40px 28px;} }
@@ -440,7 +440,7 @@ const HealthcarePage = () => {
 
         /* ══ SECTION 4 ══ */
         .nb-closing-section { position:relative;min-height:580px;display:flex;align-items:center;padding:80px 28px;overflow:hidden;background:#000; }
-        .nb-closing-bg { position:absolute;inset:0;background-image:url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bghealthcare2.jpg');background-size:cover;background-position:center;opacity:0.45;z-index:0; }
+        .nb-closing-bg { position:absolute;inset:0;background-image:url('https://gi-img-cdn.sujeet.workers.dev/Images/bghealthcare2.jpg');background-size:cover;background-position:center;opacity:0.45;z-index:0; }
         .nb-closing-overlay { position:absolute;inset:0;background:linear-gradient(to left,rgba(0,0,0,.72) 0%,rgba(0,0,0,.28) 55%,rgba(0,0,0,.65) 100%);z-index:1; }
         .nb-closing-particles { position:absolute;inset:0;pointer-events:none;z-index:1; }
         .nb-cp { position:absolute;width:2px;height:2px;border-radius:50%;background:rgba(212,175,55,.5);animation:nbFloatY var(--dur,4s) ease-in-out var(--delay,0s) infinite; }

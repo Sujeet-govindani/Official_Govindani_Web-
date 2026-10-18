@@ -228,9 +228,9 @@ const HospitalityPage = () => {
   }, []);
 
   const allProjects = [
-    { title: "99 Tasty Hub", category: "restaurant", url: "https://99tastyhub.com/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Hospitality/Hospitality-99-Tasty-Hub.webp" },
-    { title: "JUNGLE BROOKE", category: "resort", url: "https://junglebrooke.com/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Hospitality/Hospitality-Jungle-Brooke.webp" },
-    { title: "CAFÉ NOURIS", category: "cafe", url: "https://cafenouris.com/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Hospitality/Hospitality-Cafe-Nouris.png" },
+    { title: "99 Tasty Hub", category: "restaurant", url: "https://99tastyhub.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Hospitality/Hospitality-99-Tasty-Hub.webp" },
+    { title: "JUNGLE BROOKE", category: "resort", url: "https://junglebrooke.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Hospitality/Hospitality-Jungle-Brooke.webp" },
+    { title: "CAFÉ NOURIS", category: "cafe", url: "https://cafenouris.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Hospitality/Hospitality-Cafe-Nouris.png" },
   ];
 
   const displayProjects = searchQuery
@@ -384,7 +384,7 @@ const HospitalityPage = () => {
         .nb-hero-card.visible { opacity:1; transform:translateY(0) scale(1); }
         .nb-hero-card-bg {
           position:absolute; inset:0;
-          background-image:url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bgrestaurant.jpg');
+          background-image:url('https://gi-img-cdn.sujeet.workers.dev/Images/bgrestaurant.jpg');
           background-size:cover; background-position:center;
           opacity:0.35; z-index:0; pointer-events:none;
         }
@@ -568,7 +568,7 @@ const HospitalityPage = () => {
            SECTION 4 CLOSING
         ════════════════════════════ */
         .nb-closing-section { position:relative;min-height:580px;display:flex;align-items:center;padding:80px 28px;overflow:hidden;background:#000; }
-        .nb-closing-bg { position:absolute;inset:0;background-image:url('https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/bgrestaurant.jpg');background-size:cover;background-position:center;opacity:0.50;z-index:0; }
+        .nb-closing-bg { position:absolute;inset:0;background-image:url('https://gi-img-cdn.sujeet.workers.dev/Images/bgrestaurant.jpg');background-size:cover;background-position:center;opacity:0.50;z-index:0; }
         .nb-closing-overlay { position:absolute;inset:0;background:linear-gradient(to left,rgba(0,0,0,.72) 0%,rgba(0,0,0,.28) 55%,rgba(0,0,0,.65) 100%);z-index:1; }
         .nb-closing-particles { position:absolute;inset:0;pointer-events:none;z-index:1; }
         .nb-cp { position:absolute;width:2px;height:2px;border-radius:50%;background:rgba(212,175,55,.5);animation:nbFloatY var(--dur,4s) ease-in-out var(--delay,0s) infinite; }

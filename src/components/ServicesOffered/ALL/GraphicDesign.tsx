@@ -23,27 +23,27 @@ const GraphicDesigner: React.FC = () => {
   ];
 
   const graphicImages = [
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-1.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-2.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-3.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-4.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-5.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-6.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-22.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-8.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-9.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-10.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-11.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-12.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-13.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-14.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-15.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-16.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-17.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-18.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-19.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-20.webp" },
-    { image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphic-21.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-1.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-2.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-3.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-4.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-5.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-6.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-22.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-8.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-9.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-10.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-11.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-12.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-13.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-14.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-15.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-16.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-17.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-18.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-19.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-20.webp" },
+    { image: "https://gi-img-cdn.sujeet.workers.dev/Images/graphic-21.webp" },
 
   ];
 
@@ -114,7 +114,7 @@ const GraphicDesigner: React.FC = () => {
             <div className="w-full lg:w-1/2">
               <div className="image-container aspect-[4/3] rounded-2xl overflow-hidden">
                 <img
-                  src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/graphicdesign.webp"
+                  src="https://gi-img-cdn.sujeet.workers.dev/Images/graphicdesign.webp"
                   alt="Graphic Designing"
                   className="w-full h-full object-cover"
                 />

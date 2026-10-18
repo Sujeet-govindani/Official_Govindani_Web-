@@ -48,28 +48,28 @@ const stats = [
 const hospitalityGridItems = [
   {
     id: 1,
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Social-Media-Pages-Images/Healthcaresocialmedia1.png",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Social-Media-Pages-Images/Healthcaresocialmedia1.png",
     title: "Cinematic Resort Sunrise",
     link: "https://www.instagram.com/aadevinternationalllc?igsh=MXIxZ2dxM2xsbnY5Zg==",
     tag: "Resort Stay"
   },
   {
     id: 2,
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Social-Media-Pages-Images/Healthcaresocialmedia2.png",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Social-Media-Pages-Images/Healthcaresocialmedia2.png",
     title: "Luxury Suite Walkthrough",
     link: "https://www.instagram.com/aadevinternationalllc?igsh=MXIxZ2dxM2xsbnY5Zg==",
     tag: "Room Tour"
   },
   {
     id: 3,
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Social-Media-Pages-Images/Healthcaresocialmedia3.png",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Social-Media-Pages-Images/Healthcaresocialmedia3.png",
     title: "Fine Dining Culinary Showcase",
     link: "https://www.instagram.com/aadevinternationalllc?igsh=MXIxZ2dxM2xsbnY5Zg==",
     tag: "Gastronomy"
   },
   {
     id: 4,
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Social-Media-Pages-Images/Healthcaresocialmedia4.png",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Social-Media-Pages-Images/Healthcaresocialmedia4.png",
     title: "Infinity Pool Experience",
     link: "https://www.instagram.com/aadevinternationalllc?igsh=MXIxZ2dxM2xsbnY5Zg==",
     tag: "Vibe Check"

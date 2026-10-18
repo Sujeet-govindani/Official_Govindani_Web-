@@ -110,15 +110,15 @@ const FaqRow = ({ item, idx }: { item: FaqItem; idx: number }) => {
 };
 
 const BRAND_ITEMS = [
-    { name: "Raheja Realty", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM31.webp", alt: "Raheja Realty logo" },
-    { name: "AJIO",          img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM32.webp", alt: "AJIO logo" },
-    { name: "Zoop",          img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM33.webp", alt: "Zoop logo" },
-    { name: "LAKMÉ",         img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM34.webp", alt: "Lakmé logo" },
-    { name: "Money Solution",img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM35.webp", alt: "Money Solution logo" },
-    { name: "IIB",           img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM36.webp", alt: "IIB logo" },
-    { name: "FOAID",         img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM37.webp", alt: "FOAID logo" },
-    { name: "steelbazaar",   img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM38.webp", alt: "Steelbazaar logo" },
-    { name: "eatoes",        img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/IM39.webp", alt: "eatoes logo" },
+    { name: "Raheja Realty", img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM31.webp", alt: "Raheja Realty logo" },
+    { name: "AJIO",          img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM32.webp", alt: "AJIO logo" },
+    { name: "Zoop",          img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM33.webp", alt: "Zoop logo" },
+    { name: "LAKMÉ",         img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM34.webp", alt: "Lakmé logo" },
+    { name: "Money Solution",img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM35.webp", alt: "Money Solution logo" },
+    { name: "IIB",           img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM36.webp", alt: "IIB logo" },
+    { name: "FOAID",         img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM37.webp", alt: "FOAID logo" },
+    { name: "steelbazaar",   img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM38.webp", alt: "Steelbazaar logo" },
+    { name: "eatoes",        img: "https://gi-img-cdn.sujeet.workers.dev/Images/IM39.webp", alt: "eatoes logo" },
 ];
 
 const WHY_FEATURES: FeatureCard[] = [
@@ -149,19 +149,19 @@ const RCS_TABS = [
     {
         label: "Basic RCS",
         desc: "Branded transactional messages with verified sender identity, delivery, and read receipts. Ideal for OTPs, payment alerts, order updates, and critical notifications.",
-        imageSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RCS3.webp",
+        imageSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/RCS3.webp",
         imageAlt: "Basic RCS Preview",
     },
     {
         label: "Rich RCS",
         desc: "Interactive messages with images, carousels, videos, and clear action buttons. Perfect for promotions, product discovery, and driving higher engagement than SMS.",
-        imageSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RCS4.webp",
+        imageSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/RCS4.webp",
         imageAlt: "Rich RCS Preview",
     },
     {
         label: "Conversational RCS",
         desc: "Automated two-way conversations with bot flows and seamless agent handover. Enable support, lead qualification, and guided journeys inside the native messaging app.",
-        imageSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RCS5.webp",
+        imageSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/RCS5.webp",
         imageAlt: "Conversational RCS Preview",
     },
 ];
@@ -171,28 +171,28 @@ const JOURNEY_ITEMS = [
         label: "Full Branding, Zero Setup Pain",
         subtitle: "Your brand identity, fully brought to life",
         desc: "Deliver messages that look and feel like your app, without any development work.",
-        imageSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RCS6.webp",
+        imageSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/RCS6.webp",
         imageAlt: "Full Branding RCS Preview",
     },
     {
         label: "Long-Form Messaging, Without Limits",
         subtitle: "Communicate more clearly in one seamless thread",
         desc: "RCS removes the restrictions of SMS, making space for complete and contextual communication.",
-        imageSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RCS7.webp",
+        imageSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/RCS7.webp",
         imageAlt: "Long-Form Messaging Preview",
     },
     {
         label: "Carousels Designed for Product Discovery",
         subtitle: "Showcase multiple offerings in an interactive format",
         desc: "Highlight different products or services through RCS carousels that users can swipe through effortlessly.",
-        imageSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RCS8.webp",
+        imageSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/RCS8.webp",
         imageAlt: "Carousel RCS Preview",
     },
     {
         label: "Secure, High-Speed OTP Delivery",
         subtitle: "Frictionless verification inside the messaging inbox",
         desc: "RCS ensures OTPs reach users instantly and reliably, powering fast verification flows for logins, transactions, and account access.",
-        imageSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RCS9.webp",
+        imageSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/RCS9.webp",
         imageAlt: "OTP Delivery Preview",
     },
 ];
@@ -460,7 +460,7 @@ const WhatsAppRcs: React.FC = () => {
                             </p>
                         </div>
                         <div className="fs d2 mt-14 w-full max-w-5xl mx-auto">
-                            <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RCS1.webp" alt="WhatsApp Chatbot dashboard"
+                            <img src="https://gi-img-cdn.sujeet.workers.dev/Images/RCS1.webp" alt="WhatsApp Chatbot dashboard"
                                 className="w-full h-auto rounded-2xl" style={{ display: "block" }} />
                         </div>
                     </div>
@@ -601,7 +601,7 @@ const WhatsAppRcs: React.FC = () => {
                             </p>
                         </div>
                         <div className="fs d2 mt-6 w-full max-w-5xl mx-auto">
-                            <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RCS2.webp" alt="Channel Fallbacks"
+                            <img src="https://gi-img-cdn.sujeet.workers.dev/Images/RCS2.webp" alt="Channel Fallbacks"
                                 className="w-full h-auto rounded-2xl" style={{ display: "block" }} />
                         </div>
                     </div>
@@ -934,7 +934,7 @@ const WhatsAppRcs: React.FC = () => {
                         >
                             <div>
                                 <img
-                                    src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RCS9.webp"
+                                    src="https://gi-img-cdn.sujeet.workers.dev/Images/RCS9.webp"
                                     alt="Google RCS Innovation Award"
                                     style={{
                                         width: "100%",
@@ -964,7 +964,7 @@ const WhatsAppRcs: React.FC = () => {
                                 justifyContent: "center",
                             }}>
                                 <img
-                                    src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RCS11.webp"
+                                    src="https://gi-img-cdn.sujeet.workers.dev/Images/RCS11.webp"
                                     alt="Google Badge"
                                     style={{
                                         width: "100%",
@@ -988,7 +988,7 @@ const WhatsAppRcs: React.FC = () => {
                                     Google RCS Partner
                                 </p>
                                 <img
-                                    src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RCS10.webp"
+                                    src="https://gi-img-cdn.sujeet.workers.dev/Images/RCS10.webp"
                                     alt="Google RCS Partner"
                                     style={{
                                         width: "100%",

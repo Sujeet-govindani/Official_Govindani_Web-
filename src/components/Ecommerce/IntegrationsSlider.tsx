@@ -1,20 +1,20 @@
 import { useEffect, useRef } from "react";
 
 const integrations = [
-  { name: "Stripe", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/StripeLogo.png" },
-  { name: "PayPal", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PayPalLogo.png" },
-  { name: "Razorpay", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Razorpay-logo.png" },
-  { name: "Square", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ShipdelightLogo.webp" },
-  { name: "Adyen", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ShipwayLogo.webp" },
-  { name: "Klarna", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/signzy-logo.png" },
-  { name: "Authorize", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/woocomm.png" },
-  { name: "WorldPay", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/zoho.webp" },
-  { name: "Checkout", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/QuickBookLogo.png" },
-  { name: "2Checkout", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PhonePe-Logo.png" },
-  { name: "2Checkout", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/nimbusLogo.webp" },
-  { name: "2Checkout", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Bluedart-logo.png" },
-  { name: "2Checkout", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Cashfree-logo.png" },
-  { name: "2Checkout", logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Hubspot-logo.png" },
+  { name: "Stripe", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/StripeLogo.png" },
+  { name: "PayPal", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/PayPalLogo.png" },
+  { name: "Razorpay", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/Razorpay-logo.png" },
+  { name: "Square", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/ShipdelightLogo.webp" },
+  { name: "Adyen", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/ShipwayLogo.webp" },
+  { name: "Klarna", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/signzy-logo.png" },
+  { name: "Authorize", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/woocomm.png" },
+  { name: "WorldPay", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/zoho.webp" },
+  { name: "Checkout", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/QuickBookLogo.png" },
+  { name: "2Checkout", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/PhonePe-Logo.png" },
+  { name: "2Checkout", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/nimbusLogo.webp" },
+  { name: "2Checkout", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/Bluedart-logo.png" },
+  { name: "2Checkout", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/Cashfree-logo.png" },
+  { name: "2Checkout", logo: "https://gi-img-cdn.sujeet.workers.dev/Images/Hubspot-logo.png" },
 ];
 
 const IntegrationsSlider = () => {

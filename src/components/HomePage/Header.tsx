@@ -16,32 +16,32 @@ const colors = {
 };
 
 const allServicesMap: Record<string, { title: string; image: string; link: string }> = {
-  'WhatsApp Flow': { title: 'WhatsApp Flow', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/WAICON.webp', link: '/services/whatsapp-flow' },
-  'Google Ads': { title: 'Google Ads', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/GADSICON.webp', link: '/services/google-ads' },
-  'Social Media Marketing': { title: 'Social Media Marketing', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/SMMICON.webp', link: '/services/social-media' },
-  'Logo Designing': { title: 'Logo Designing', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/LDICON.png', link: '/services/logo-designing' },
-  'Lead Generation': { title: 'Lead Generation', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/LGICON.png', link: '/services/lead-generation' },
-  'Videography': { title: 'Videography', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/VIDEOGRAPHYICON.webp', link: '/services/videography' },
-  '360° Virtual Tour': { title: '360° Virtual Tour', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/360VT.webp', link: '/services/virtual-tours' },
-  'Ecommerce Platform Listing': { title: 'Ecommerce Platform Listing', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/EPLICON.png', link: '/services/platform-listing' },
-  'Product Shoot': { title: 'Product Shoot', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PSICON.webp', link: '/services/product-shoot' },
-  'Website Creation': { title: 'Website Creation', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/WCICON.webp', link: '/services/website-creation' },
-  'SEO': { title: 'SEO', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/SEOICON.webp', link: '/services/seo' },
-  'Graphic Designer': { title: 'Graphic Designer', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/GRAPHICICON.webp', link: '/services/graphic-designer' },
+  'WhatsApp Flow': { title: 'WhatsApp Flow', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/WAICON.webp', link: '/services/whatsapp-flow' },
+  'Google Ads': { title: 'Google Ads', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/GADSICON.webp', link: '/services/google-ads' },
+  'Social Media Marketing': { title: 'Social Media Marketing', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/SMMICON.webp', link: '/services/social-media' },
+  'Logo Designing': { title: 'Logo Designing', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/LDICON.png', link: '/services/logo-designing' },
+  'Lead Generation': { title: 'Lead Generation', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/LGICON.png', link: '/services/lead-generation' },
+  'Videography': { title: 'Videography', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/VIDEOGRAPHYICON.webp', link: '/services/videography' },
+  '360° Virtual Tour': { title: '360° Virtual Tour', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/360VT.webp', link: '/services/virtual-tours' },
+  'Ecommerce Platform Listing': { title: 'Ecommerce Platform Listing', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/EPLICON.png', link: '/services/platform-listing' },
+  'Product Shoot': { title: 'Product Shoot', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/PSICON.webp', link: '/services/product-shoot' },
+  'Website Creation': { title: 'Website Creation', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/WCICON.webp', link: '/services/website-creation' },
+  'SEO': { title: 'SEO', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/SEOICON.webp', link: '/services/seo' },
+  'Graphic Designer': { title: 'Graphic Designer', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/GRAPHICICON.webp', link: '/services/graphic-designer' },
 
-  'Advanced Checkout System': { title: 'Advanced Checkout System', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ACSicon.webp', link: '/services/checkout-system' },
+  'Advanced Checkout System': { title: 'Advanced Checkout System', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/ACSicon.webp', link: '/services/checkout-system' },
   // ── Newly added services ──
-  'Meta Ads': { title: 'Meta Ads', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/MADSICON.png', link: '/services/meta-ads' },
-  'Logistic Integration': { title: 'Logistic Integration', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/LIICON.webp', link: '/services/logistic-integration' },
-  'Payment Gateway': { title: 'Payment Gateway', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PGIICON.webp', link: '/services/payment-gateway' },
-  'AI Automation': { title: 'AI Automation', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/AAICON.webp', link: '/services/ai-automation' },
-  'Video Editing': { title: 'Video Editing', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/VEICON.webp', link: '/services/video-editing' },
+  'Meta Ads': { title: 'Meta Ads', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/MADSICON.png', link: '/services/meta-ads' },
+  'Logistic Integration': { title: 'Logistic Integration', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/LIICON.webp', link: '/services/logistic-integration' },
+  'Payment Gateway': { title: 'Payment Gateway', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/PGIICON.webp', link: '/services/payment-gateway' },
+  'AI Automation': { title: 'AI Automation', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/AAICON.webp', link: '/services/ai-automation' },
+  'Video Editing': { title: 'Video Editing', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/VEICON.webp', link: '/services/video-editing' },
 };
 
 const categoryFirstCards: Record<string, { title: string; image: string; link: string }> = {
-  'NGO': { title: 'NGO', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ngoicon.webp', link: '/pages/NgoPage' },
-  'Real Estate': { title: 'Real Estate', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/REICON.webp', link: '/portfolio/virtual-tour' },
-  'Ecommerce': { title: 'E-Commerce', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ECOMMERCEICON.webp', link: '/services/ecommerce' },
+  'NGO': { title: 'NGO', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/ngoicon.webp', link: '/pages/NgoPage' },
+  'Real Estate': { title: 'Real Estate', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/REICON.webp', link: '/portfolio/virtual-tour' },
+  'Ecommerce': { title: 'E-Commerce', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/ECOMMERCEICON.webp', link: '/services/ecommerce' },
 };
 
 const categoryHighlights: Record<string, string[]> = {
@@ -74,11 +74,11 @@ const getOrderedServices = (category: string) => {
 };
 
 const socialMediaPages = [
-  { title: 'NGO', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ngoicon.webp', link: '/services/social-media/ngo' },
-  { title: 'Real Estate', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/REICON.webp', link: '/services/social-media/real-estate' },
-  { title: 'Ecommerce', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ECOMMERCEICON.webp', link: '/services/social-media/ecommerce' },
-  { title: 'Hospitality', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RESTOICON.webp', link: '/services/social-media/hospitality' },
-  { title: 'Astrology & Spiritual', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ANSICON.webp', link: '/services/social-media/astrology' },
+  { title: 'NGO', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/ngoicon.webp', link: '/services/social-media/ngo' },
+  { title: 'Real Estate', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/REICON.webp', link: '/services/social-media/real-estate' },
+  { title: 'Ecommerce', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/ECOMMERCEICON.webp', link: '/services/social-media/ecommerce' },
+  { title: 'Hospitality', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/RESTOICON.webp', link: '/services/social-media/hospitality' },
+  { title: 'Astrology & Spiritual', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/ANSICON.webp', link: '/services/social-media/astrology' },
 ];
 
 const resourcesData = [
@@ -88,66 +88,66 @@ const resourcesData = [
 ];
 
 const portfolioData = [
-  { title: 'NGO', icon: '📲', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ngoicon.webp', link: '/portfolio/ngo' },
-  { title: 'Real Estate', icon: '✨', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/REICON.webp', link: '/portfolio/builders' },
-  { title: 'E-Commerce', icon: '🛍️', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ECOMMERCEICON.webp', link: '/portfolio/ecommerce' },
-  { title: 'Healthcare', icon: '🏥', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/HEALTHCAREICON.webp', link: '/portfolio/healthcare' },
-  { title: 'Business Websites', icon: '🌐', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/BWICON.webp', link: '/portfolio/business' },
-  { title: 'Hospitality', icon: '🏨', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RESTOICON.webp', link: '/portfolio/hospitality' },
+  { title: 'NGO', icon: '📲', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/ngoicon.webp', link: '/portfolio/ngo' },
+  { title: 'Real Estate', icon: '✨', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/REICON.webp', link: '/portfolio/builders' },
+  { title: 'E-Commerce', icon: '🛍️', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/ECOMMERCEICON.webp', link: '/portfolio/ecommerce' },
+  { title: 'Healthcare', icon: '🏥', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/HEALTHCAREICON.webp', link: '/portfolio/healthcare' },
+  { title: 'Business Websites', icon: '🌐', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/BWICON.webp', link: '/portfolio/business' },
+  { title: 'Hospitality', icon: '🏨', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/RESTOICON.webp', link: '/portfolio/hospitality' },
 ];
 
 const seoPortfolioData = [
-  { title: 'NGO SEO', icon: '🤝', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/SEOICON.webp', link: '/services/seo' },
-  { title: 'Hospitality SEO', icon: '🏨', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/SEOICON.webp', link: '/services/seo' },
-  { title: 'Real Estate SEO', icon: '🏢', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/SEOICON.webp', link: '/services/seo' },
-  { title: 'Ecommerce SEO', icon: '🛍️', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/SEOICON.webp', link: '/services/seo' },
+  { title: 'NGO SEO', icon: '🤝', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/SEOICON.webp', link: '/services/seo' },
+  { title: 'Hospitality SEO', icon: '🏨', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/SEOICON.webp', link: '/services/seo' },
+  { title: 'Real Estate SEO', icon: '🏢', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/SEOICON.webp', link: '/services/seo' },
+  { title: 'Ecommerce SEO', icon: '🛍️', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/SEOICON.webp', link: '/services/seo' },
 ];
 
 const socialMediaPortfolioData = [
-  { title: 'NGO', icon: '🤝', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ngoicon.webp', link: '/services/social-media/ngo' },
-  { title: 'Real Estate', icon: '🏢', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/REICON.webp', link: '/services/social-media/real-estate' },
-  { title: 'Ecommerce', icon: '🛍️', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ECOMMERCEICON.webp', link: '/services/social-media/ecommerce' },
-  { title: 'Hospitality', icon: '🏨', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RESTOICON.webp', link: '/services/social-media/hospitality' },
-  { title: 'Astrology & Spiritual', icon: '🔮', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ANSICON.webp', link: '/services/social-media/astrology' },
+  { title: 'NGO', icon: '🤝', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/ngoicon.webp', link: '/services/social-media/ngo' },
+  { title: 'Real Estate', icon: '🏢', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/REICON.webp', link: '/services/social-media/real-estate' },
+  { title: 'Ecommerce', icon: '🛍️', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/ECOMMERCEICON.webp', link: '/services/social-media/ecommerce' },
+  { title: 'Hospitality', icon: '🏨', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/RESTOICON.webp', link: '/services/social-media/hospitality' },
+  { title: 'Astrology & Spiritual', icon: '🔮', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/ANSICON.webp', link: '/services/social-media/astrology' },
 ];
 
 const applicationsPortfolioData = [
-  { title: 'CI Builder CRM', icon: '', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/CRMICON.webp', link: '/services/ci-crm' },
-  { title: 'Hotelfolio CRM', icon: '', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/CRMICON.webp', link: '/services/hotel-crm' },
-  { title: 'Car Washing CRM', icon: '', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/CRMICON.webp', link: '/services/car-wash-crm' },
+  { title: 'CI Builder CRM', icon: '', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/CRMICON.webp', link: '/services/ci-crm' },
+  { title: 'Hotelfolio CRM', icon: '', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/CRMICON.webp', link: '/services/hotel-crm' },
+  { title: 'Car Washing CRM', icon: '', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/CRMICON.webp', link: '/services/car-wash-crm' },
 ];
 
 const saasPortfolioData = [
-  { title: 'CI Builder CRM', icon: '', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/CRMICON.webp', link: '/services/ci-crm' },
-  { title: 'Hotelfolio CRM', icon: '', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/CRMICON.webp', link: '/services/hotel-crm' },
-  { title: 'Car Washing CRM', icon: '', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/CRMICON.webp', link: '/services/car-wash-crm' },
+  { title: 'CI Builder CRM', icon: '', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/CRMICON.webp', link: '/services/ci-crm' },
+  { title: 'Hotelfolio CRM', icon: '', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/CRMICON.webp', link: '/services/hotel-crm' },
+  { title: 'Car Washing CRM', icon: '', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/CRMICON.webp', link: '/services/car-wash-crm' },
 ];
 
 const portfolioFilters = ['Websites', 'Whatsapp Interakt', 'Social Media', 'SEO', 'Applications', 'SaaS'];
 
 const whatsappIndustries = [
-  { name: 'B2B Sales', icon: '💼', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wasapi1.webp', link: '/WhatsappInterakt/b2b-sales' },
-  { name: 'Travel and Tourism', icon: '✈️', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wasapi2.webp', link: '/whatsapp/industries/travel-tourism' },
-  { name: 'Restaurants & Food Business', icon: '🍽️', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wasapi3.webp', link: '/whatsapp/industries/restaurants-food' },
-  { name: 'Spas and Salons', icon: '💆', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wasapi4.webp', link: '/whatsapp/industries/spas-salons' },
-  { name: 'Health & Wellness Brands', icon: '💚', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wasapi5.webp', link: '/whatsapp/industries/health-wellness' },
-  { name: 'Beauty & Cosmetic Brands', icon: '💄', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wasapi6.webp', link: '/whatsapp/industries/beauty-cosmetics' },
-  { name: 'Automotive Industry', icon: '🎓', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wasapi7.webp', link: '/whatsapp/industries/automotive' },
-  { name: 'Home Decor & Furnishing', icon: '🚗', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wasapi8.webp', link: '/whatsapp/industries/home-decor' },
-  { name: 'Marketing Agency', icon: '🏠', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wasapi9.webp', link: '/whatsapp/industries/marketing-agency' },
-  { name: 'Banking and Finance', icon: '📢', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wasapi10.webp', link: '/whatsapp/industries/banking-finance' },
-  { name: 'Real Estate', icon: '🏢', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wasapi11.webp', link: '/whatsapp/industries/real-estate' },
-  { name: 'Freelancer and Consultant Sales', icon: '👤', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wasapi12.webp', link: '/whatsapp/industries/freelancer-consultant' },
+  { name: 'B2B Sales', icon: '💼', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/wasapi1.webp', link: '/WhatsappInterakt/b2b-sales' },
+  { name: 'Travel and Tourism', icon: '✈️', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/wasapi2.webp', link: '/whatsapp/industries/travel-tourism' },
+  { name: 'Restaurants & Food Business', icon: '🍽️', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/wasapi3.webp', link: '/whatsapp/industries/restaurants-food' },
+  { name: 'Spas and Salons', icon: '💆', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/wasapi4.webp', link: '/whatsapp/industries/spas-salons' },
+  { name: 'Health & Wellness Brands', icon: '💚', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/wasapi5.webp', link: '/whatsapp/industries/health-wellness' },
+  { name: 'Beauty & Cosmetic Brands', icon: '💄', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/wasapi6.webp', link: '/whatsapp/industries/beauty-cosmetics' },
+  { name: 'Automotive Industry', icon: '🎓', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/wasapi7.webp', link: '/whatsapp/industries/automotive' },
+  { name: 'Home Decor & Furnishing', icon: '🚗', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/wasapi8.webp', link: '/whatsapp/industries/home-decor' },
+  { name: 'Marketing Agency', icon: '🏠', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/wasapi9.webp', link: '/whatsapp/industries/marketing-agency' },
+  { name: 'Banking and Finance', icon: '📢', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/wasapi10.webp', link: '/whatsapp/industries/banking-finance' },
+  { name: 'Real Estate', icon: '🏢', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/wasapi11.webp', link: '/whatsapp/industries/real-estate' },
+  { name: 'Freelancer and Consultant Sales', icon: '👤', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/wasapi12.webp', link: '/whatsapp/industries/freelancer-consultant' },
 ];
 
 const aboutData = [
-  { title: 'About Founder', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Sujeetsir.webp', description: 'Visionary leader behind our creative journey.', Route: '/about-us/about-founder' },
-  { title: 'About Company', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/govindanilogomain.webp', description: 'Building brands that inspire and connect.', Route: '/about-us/about-company' },
+  { title: 'About Founder', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/Sujeetsir.webp', description: 'Visionary leader behind our creative journey.', Route: '/about-us/about-founder' },
+  { title: 'About Company', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/govindanilogomain.webp', description: 'Building brands that inspire and connect.', Route: '/about-us/about-company' },
 ];
 
 const whatsappChannels = [
   {
-    name: 'WhatsApp', icon: '', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wpicon.webp', isNew: false,
+    name: 'WhatsApp', icon: '', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/wpicon.webp', isNew: false,
     subItems: [
       { title: 'WhatsApp Voice Calling', link: '/whatsapp/voice-calling', isNew: false },
       { title: 'No Code Chatbot Builder', link: '/whatsapp/chatbot-builder', isNew: true },
@@ -163,18 +163,18 @@ const whatsappChannels = [
     ],
   },
   {
-    name: 'Instagram', icon: '', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Instagram_icon.webp', isNew: false,
+    name: 'Instagram', icon: '', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/Instagram_icon.webp', isNew: false,
     subItems: [{ title: 'Instagram Automation', link: '/instagram/automation', isNew: false }],
   },
   {
-    name: 'RCS Fallback', icon: '💬', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icons/rcs-fallback.png', isNew: true,
+    name: 'RCS Fallback', icon: '💬', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/icons/rcs-fallback.png', isNew: true,
     subItems: [{ title: 'RCS Fallback', link: '/rcs/fallback', isNew: false }],
   },
 ];
 
 const websiteSubItems = [
-  { title: 'WordPress', icon: '🔷', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Wordpress55.webp', desc: 'NGO ₹35,000 · e-commerce ₹48,000', sectionId: 'website-tracks' },
-  { title: 'Shopify', icon: '🟢', image: 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ShopifyHeaderLogo.png', desc: 'Online stores — from ₹75,000', sectionId: 'website-tracks' },
+  { title: 'WordPress', icon: '🔷', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/Wordpress55.webp', desc: 'NGO ₹35,000 · e-commerce ₹48,000', sectionId: 'website-tracks' },
+  { title: 'Shopify', icon: '🟢', image: 'https://gi-img-cdn.sujeet.workers.dev/Images/ShopifyHeaderLogo.png', desc: 'Online stores — from ₹75,000', sectionId: 'website-tracks' },
   { title: 'Custom Coding', icon: '⚡', image: '', desc: 'Bespoke web applications', sectionId: 'custom-coding' },
 ];
 
@@ -618,8 +618,8 @@ const Header: React.FC = () => {
                 so it is one logo shown two ways, with nothing boxed around it. */}
             <img
               src={skin.onLight
-                ? 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/govindanilogo-ink-400w.webp'
-                : 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/govindanilogo-400w.webp'}
+                ? 'https://gi-img-cdn.sujeet.workers.dev/Images/govindanilogo-ink-400w.webp'
+                : 'https://gi-img-cdn.sujeet.workers.dev/Images/govindanilogo-400w.webp'}
               alt="Govindani Infotech"
               width={400} height={202} fetchPriority="high"
               style={{ height: 'var(--logo-h)', width: 'var(--logo-w)', minWidth: 'var(--logo-w)', flexShrink: 0, objectFit: 'contain',

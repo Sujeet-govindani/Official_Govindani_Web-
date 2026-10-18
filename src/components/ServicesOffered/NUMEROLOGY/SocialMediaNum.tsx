@@ -44,28 +44,28 @@ const heroStats = [
 const numerologyGridItems = [
   {
     id: 1,
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Social-Media-Pages-Images/Tarushpranasocialmedia1.png",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Social-Media-Pages-Images/Tarushpranasocialmedia1.png",
     title: "Vedic Numerology Analysis",
     link: "https://www.instagram.com/tarushpranaa?igsh=MXV5M3VpNHZmOTl0Zg==",
     tag: "Astro Feature"
   },
   {
     id: 2,
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Social-Media-Pages-Images/Tarushpranasocialmedia2.jpg",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Social-Media-Pages-Images/Tarushpranasocialmedia2.jpg",
     title: "Destiny Number Secrets",
     link: "https://www.instagram.com/tarushpranaa?igsh=MXV5M3VpNHZmOTl0Zg==",
     tag: "Knowledge"
   },
   {
     id: 3,
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Social-Media-Pages-Images/Tarushpranasocialmedia3.png",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Social-Media-Pages-Images/Tarushpranasocialmedia3.png",
     title: "Daily Horoscope Rituals",
     link: "https://www.instagram.com/tarushpranaa?igsh=MXV5M3VpNHZmOTl0Zg==",
     tag: "Daily Astro"
   },
   {
     id: 4,
-    imgUrl: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Social-Media-Pages-Images/Tarushprana7.png",
+    imgUrl: "https://gi-img-cdn.sujeet.workers.dev/Images/Social-Media-Pages-Images/Tarushprana7.png",
     title: "Success & Spiritual Guide",
     link: "https://www.instagram.com/tarushpranaa?igsh=MXV5M3VpNHZmOTl0Zg==",
     tag: "Life Coach"

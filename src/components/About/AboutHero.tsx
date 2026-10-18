@@ -400,9 +400,9 @@ const CertCardFace: React.FC<{ cert: CertCard; isCenter?: boolean }> = ({ cert, 
 
 const CertificatesSection: React.FC = () => {
   const certs: CertCard[] = [
-    { title: "Incorporation Certificate", badge: "", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Coi-1.webp" },
-    { title: "USA Certificate", badge: "", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Usa-certificate.webp" },
-    { title: "GST Registered", badge: "", img: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/gst-main.webp" },
+    { title: "Incorporation Certificate", badge: "", img: "https://gi-img-cdn.sujeet.workers.dev/Images/Coi-1.webp" },
+    { title: "USA Certificate", badge: "", img: "https://gi-img-cdn.sujeet.workers.dev/Images/Usa-certificate.webp" },
+    { title: "GST Registered", badge: "", img: "https://gi-img-cdn.sujeet.workers.dev/Images/gst-main.webp" },
   ];
 
   /* ── 3D Carousel state ── */

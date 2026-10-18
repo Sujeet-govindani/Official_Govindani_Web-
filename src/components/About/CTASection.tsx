@@ -67,7 +67,7 @@ const CTASection = () => {
                     <div className="relative border-l-[6px] border-t-[6px] border-b-[6px] border-amber-500 rounded-2xl p-6 lg:p-8 bg-gradient-to-br from-amber-500/5 to-transparent h-full flex flex-col justify-center">
                       <div className="w-52 h-52 mx-auto mb-5 rounded-full overflow-hidden border-4 border-white/20 shadow-xl shadow-amber-500/20">
                         <img
-                          src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/sg.webp"
+                          src="https://gi-img-cdn.sujeet.workers.dev/Images/sg.webp"
                           alt="Sujeet Govindani"
                           className="w-full h-full object-cover object-center scale-110"
                         />

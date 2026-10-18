@@ -502,27 +502,27 @@ const WebDevelopmentPage = () => {
   const handleHealthcarePortfolio = () => { window.location.href = "/portfolio/NGO#/portfolio/healthcare"; };
 
   const ngoProjects = [
-    { title: "Popatbhai Charitable Trust", category: "ngo", url: "https://popatbhaicharitablefoundation.org/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PCF.webp" },
-    { title: "Harsh Chhikkara Jan Seva Trust", category: "ngo", url: "https://harshchhikara.com/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/np1.webp" },
-    { title: "Mahipatsinh Foundation", category: "ngo", url: "https://mahipatsinhfoundation.org/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/MP.webp" },
+    { title: "Popatbhai Charitable Trust", category: "ngo", url: "https://popatbhaicharitablefoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PCF.webp" },
+    { title: "Harsh Chhikkara Jan Seva Trust", category: "ngo", url: "https://harshchhikara.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/np1.webp" },
+    { title: "Mahipatsinh Foundation", category: "ngo", url: "https://mahipatsinhfoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/MP.webp" },
   ];
   const realEstateProjects = [
-    { title: "CI BUILDERS", category: "real-estate", url: "https://cibuilders.in/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RE2.webp" },
-    { title: "JANKI BUILDERS", category: "real-estate", url: "https://jankibuilders.com/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RE1.webp" },
+    { title: "CI BUILDERS", category: "real-estate", url: "https://cibuilders.in/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/RE2.webp" },
+    { title: "JANKI BUILDERS", category: "real-estate", url: "https://jankibuilders.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/RE1.webp" },
   ];
   const ecommProjects = [
-    { title: "Baba Ji Ki Buti", category: "e-commerce", url: "https://babajikibuti.com/home", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/BJKB2.webp" },
-    { title: "Terra by Trishla", category: "e-commerce", url: "https://terrabytrishla.com/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ecomm2.webp" },
-    { title: "Madhav Numerology", category: "e-commerce", url: "https://madhavnumerology.com/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ecomm3.webp" },
+    { title: "Baba Ji Ki Buti", category: "e-commerce", url: "https://babajikibuti.com/home", image: "https://gi-img-cdn.sujeet.workers.dev/Images/BJKB2.webp" },
+    { title: "Terra by Trishla", category: "e-commerce", url: "https://terrabytrishla.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/ecomm2.webp" },
+    { title: "Madhav Numerology", category: "e-commerce", url: "https://madhavnumerology.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/ecomm3.webp" },
   ];
   const newsProjects = [
-    { title: "Anekaa Care Foundation", category: "blog", url: "https://anekaacarefoundation.org/our-blogs/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Anekaa-Care-Foundation.webp" },
-    { title: "GSD Organics", category: "blog", url: "https://gsdorganics.com/our-blogs/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Gsd-Organics.webp" },
-    { title: "Voice Of Slum", category: "news", url: "https://voiceofslum.org/blog/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Voice-Of-Slum.webp" },
-    { title: "Dr. C.K. Reddy Group", category: "blog", url: "https://drckreddygroup.com/our-blogs/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/PortFolioWebsites/BusinessWebsites/Business-Website-Dr-C-K-Reddy-Group.webp" },
+    { title: "Anekaa Care Foundation", category: "blog", url: "https://anekaacarefoundation.org/our-blogs/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Anekaa-Care-Foundation.webp" },
+    { title: "GSD Organics", category: "blog", url: "https://gsdorganics.com/our-blogs/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Wordpress/Wordpress-Gsd-Organics.webp" },
+    { title: "Voice Of Slum", category: "news", url: "https://voiceofslum.org/blog/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Voice-Of-Slum.webp" },
+    { title: "Dr. C.K. Reddy Group", category: "blog", url: "https://drckreddygroup.com/our-blogs/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/BusinessWebsites/Business-Website-Dr-C-K-Reddy-Group.webp" },
   ];
   const healthcareProjects = [
-    { title: "MAHAVEER EYE HOSPITAL", category: "healthcare", url: "https://mahaveereyehospital.com/", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/hospital.webp" },
+    { title: "MAHAVEER EYE HOSPITAL", category: "healthcare", url: "https://mahaveereyehospital.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/hospital.webp" },
   ];
 
   const features = [
@@ -1023,7 +1023,7 @@ const WebDevelopmentPage = () => {
             <div className={`hero-right fade-right ${hero.inView ? "visible" : ""}`} style={{ transitionDelay: "0.15s" }}>
               <div className="hero-img-frame" style={{ overflow: "hidden", background: "#0a0a0a" }}>
                 <img
-                  src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/web-hero.webp"
+                  src="https://gi-img-cdn.sujeet.workers.dev/Images/web-hero.webp"
                   alt="Web Development"
                   style={{ width: "100%", height: "auto", display: "block" }}
                   onError={(e) => {

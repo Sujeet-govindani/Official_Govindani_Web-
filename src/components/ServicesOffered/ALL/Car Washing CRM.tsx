@@ -189,7 +189,7 @@ export default function CarWashingCRM() {
           >
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: `linear-gradient(to right, transparent, ${GOLD}, transparent)` }} />
             <img
-              src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/Social-Media/Application%26Saas/Crm-Car-Washing-Crm.webp"
+              src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/Social-Media/Application%26Saas/Crm-Car-Washing-Crm.webp"
               alt="Car Washing CRM Dashboard"
               style={{
                 width: "100%",

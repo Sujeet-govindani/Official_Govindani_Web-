@@ -366,9 +366,9 @@ const faqData = [
 ];
 
 const testimonialSlides = [
-  { avatarSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ins6.webp", avatarAlt: "Lakshit Sethiya", headline: "80+ new leads acquired in one single day!", body: "In just one day we have never seen such results with any marketing strategy.", name: "Lakshit Sethiya", role: "Founder, Social Seller Academy", rating: 5 },
-  { avatarSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ins7.webp", avatarAlt: "Coding Stella", headline: "12K Followers increase in Just One Month!", body: "If you're struggling with handling Instagram DMs and comments, automate as much as possible.", name: "Coding Stella", role: "Founder", rating: 5 },
-  { avatarSrc: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ins8.webp", avatarAlt: "Deepak Badariya", headline: "Grew Instagram followers to 300K with Instagram Automation.", body: "We were able to increase our followers to 300K with the Giveaway automation.", name: "Deepak Badariya", role: "Founder, Jeevan Handicrafts", rating: 5 },
+  { avatarSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/ins6.webp", avatarAlt: "Lakshit Sethiya", headline: "80+ new leads acquired in one single day!", body: "In just one day we have never seen such results with any marketing strategy.", name: "Lakshit Sethiya", role: "Founder, Social Seller Academy", rating: 5 },
+  { avatarSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/ins7.webp", avatarAlt: "Coding Stella", headline: "12K Followers increase in Just One Month!", body: "If you're struggling with handling Instagram DMs and comments, automate as much as possible.", name: "Coding Stella", role: "Founder", rating: 5 },
+  { avatarSrc: "https://gi-img-cdn.sujeet.workers.dev/Images/ins8.webp", avatarAlt: "Deepak Badariya", headline: "Grew Instagram followers to 300K with Instagram Automation.", body: "We were able to increase our followers to 300K with the Giveaway automation.", name: "Deepak Badariya", role: "Founder, Jeevan Handicrafts", rating: 5 },
 ];
 
 // ─── Testimonial Carousel ─────────────────────────────────────────────────────
@@ -420,7 +420,7 @@ function TestimonialCarousel({ onActiveChange }: { onActiveChange?: (i: number) 
   );
 }
 
-const LOGO_STRIP_SRC = "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Logo-Strip-2048x98.webp";
+const LOGO_STRIP_SRC = "https://gi-img-cdn.sujeet.workers.dev/Images/Logo-Strip-2048x98.webp";
 
 const videoTutorials = [
   { title: "How to Automate Your Comment Replies",           youtubeSrc: "https://youtu.be/7LcbnNO1FkI", thumbnailSrc: "" },
@@ -645,7 +645,7 @@ export default function InstagramAutomation() {
                   background: "radial-gradient(ellipse,rgba(200,146,42,0.16) 0%,transparent 70%)",
                   filter: "blur(24px)", animation: "pulseGlow 3s ease-in-out infinite",
                 }} />
-                <img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ins1.webp" alt="Instagram Automation Hero"
+                <img src="https://gi-img-cdn.sujeet.workers.dev/Images/ins1.webp" alt="Instagram Automation Hero"
                   className="w-full rounded-2xl" style={{ display: "block", objectFit: "cover", minHeight: "300px" }} />
               </div>
             </Reveal>
@@ -661,10 +661,10 @@ export default function InstagramAutomation() {
             </SubText>
           </Reveal>
           <div className="max-w-6xl mx-auto mt-8 grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <FeatureCard icon="⚡" imageSrc="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ins2.webp" delay={80} title="Engage, Automate, Convert." desc="Whether it's a 'How much is it?' on your post or a story reply,Instagram automation responds to customers automatically, making it easier for you to generate leads." />
-            <FeatureCard icon="❓" imageSrc="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ins3.webp" delay={160} title="Overwhelmed by FAQs in your DMs?" desc="Let Instagram Automation handle repetitive questions, freeing up your team to focus on actual relationship-building with customers." />
-            <FeatureCard icon="📥" imageSrc="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ins4.webp" delay={240} title="Omnichannel Inbox to offer support across Instagram & WhatsApp" desc="Omnichannel Inbox unifies your customer conversations across Instagram comments, story reactions, and DMs, making it easier for your team to respond to them from a common platform!" />
-            <FeatureCard icon="🎁" imageSrc="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ins5.webp" delay={320} title="Grow Followers & Capture Leads with Giveaways" desc="helps you to automatically engage your followers, capture data from comments and DM interactions, directly build contact records for follow-up, boosting your campaigns, and more." />
+            <FeatureCard icon="⚡" imageSrc="https://gi-img-cdn.sujeet.workers.dev/Images/ins2.webp" delay={80} title="Engage, Automate, Convert." desc="Whether it's a 'How much is it?' on your post or a story reply,Instagram automation responds to customers automatically, making it easier for you to generate leads." />
+            <FeatureCard icon="❓" imageSrc="https://gi-img-cdn.sujeet.workers.dev/Images/ins3.webp" delay={160} title="Overwhelmed by FAQs in your DMs?" desc="Let Instagram Automation handle repetitive questions, freeing up your team to focus on actual relationship-building with customers." />
+            <FeatureCard icon="📥" imageSrc="https://gi-img-cdn.sujeet.workers.dev/Images/ins4.webp" delay={240} title="Omnichannel Inbox to offer support across Instagram & WhatsApp" desc="Omnichannel Inbox unifies your customer conversations across Instagram comments, story reactions, and DMs, making it easier for your team to respond to them from a common platform!" />
+            <FeatureCard icon="🎁" imageSrc="https://gi-img-cdn.sujeet.workers.dev/Images/ins5.webp" delay={320} title="Grow Followers & Capture Leads with Giveaways" desc="helps you to automatically engage your followers, capture data from comments and DM interactions, directly build contact records for follow-up, boosting your campaigns, and more." />
           </div>
         </Section>
 

@@ -204,7 +204,7 @@ const VirtualTourSections = () => {
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-transparent opacity-50 z-10" />
                     <video
                       className="vt2-video w-full h-full object-cover will-change-transform"
-                      src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Services/Real-Estate-Videos/360%20min%20virtual%20tour%20(1).mp4"
+                      src="https://gi-img-cdn.sujeet.workers.dev/Images/Services/Real-Estate-Videos/360%20min%20virtual%20tour%20(1).mp4"
                       autoPlay muted loop playsInline
                     />
                     <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.06)_0%,rgba(0,0,0,0.35)_74%,rgba(0,0,0,0.62)_100%)] z-10" />

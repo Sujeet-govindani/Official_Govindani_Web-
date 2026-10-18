@@ -192,7 +192,7 @@ export default function AutomotivePage() {
               <Bullets items={["Promote your offering with WhatsApp broadcast", "Support your customers 24×7 at scale", "Showcase your products on WhatsApp storefront"]} />
               <CTA />
             </div>
-            <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-section1.webp" alt="Automotive WhatsApp hero" /></div>
+            <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-section1.webp" alt="Automotive WhatsApp hero" /></div>
           </div>
         </div>
       </section>
@@ -227,12 +227,12 @@ export default function AutomotivePage() {
                 <p className="sub-p">Integrate Whatsapp with your CRM or Google Excel sheet to save prospect information in a streamlined manner for timely follow-ups.</p>
                 <CTA />
               </div>
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-section3-img1.webp" alt="Generate more leads" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-section3-img1.webp" alt="Generate more leads" /></div>
             </div>
           </div>
           <div className="dblk">
             <div className="tc fl">
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-section3-img2.webp" alt="Promote new vehicles" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-section3-img2.webp" alt="Promote new vehicles" /></div>
               <div className="col">
                 <div className="gb" />
                 <h2 className="hg hg-sm">Promote the sale of new vehicles</h2>
@@ -256,12 +256,12 @@ export default function AutomotivePage() {
                 <p className="sub-p">Get an opportunity to explain the various features and benefits a new model has to offer, and sell through experiences on test drives!</p>
                 <CTA />
               </div>
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-section4-img1.webp" alt="Schedule test drives" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-section4-img1.webp" alt="Schedule test drives" /></div>
             </div>
           </div>
           <div className="dblk">
             <div className="tc fl">
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-section4-img2.webp" alt="Take service bookings" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-section4-img2.webp" alt="Take service bookings" /></div>
               <div className="col">
                 <div className="gb" />
                 <h2 className="hg hg-sm">Take bookings for services</h2>
@@ -285,12 +285,12 @@ export default function AutomotivePage() {
                 <p className="sub-p">Let customers know they can sell their used vehicles through you. Collect information, make an offer and schedule picks all on chat!</p>
                 <CTA />
               </div>
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-Section-5-img1.webp" alt="Invite used cars" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-Section-5-img1.webp" alt="Invite used cars" /></div>
             </div>
           </div>
           <div className="dblk">
             <div className="tc fl">
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-Section5-img2.webp" alt="Mechanical consultation" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-Section5-img2.webp" alt="Mechanical consultation" /></div>
               <div className="col">
                 <div className="gb" />
                 <h2 className="hg hg-sm">Provide mechanical consultation</h2>
@@ -314,12 +314,12 @@ export default function AutomotivePage() {
                 <p className="sub-p">Get reviews for your Google My Business account, Facebook page or even your website!</p>
                 <CTA />
               </div>
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-Section6-img1.webp" alt="Request reviews" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-Section6-img1.webp" alt="Request reviews" /></div>
             </div>
           </div>
           <div className="dblk">
             <div className="tc fl">
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-Section6-img2.webp" alt="Announce new launches" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-Section6-img2.webp" alt="Announce new launches" /></div>
               <div className="col">
                 <div className="gb" />
                 <h2 className="hg hg-sm">Announce new launches, events and more</h2>
@@ -343,12 +343,12 @@ export default function AutomotivePage() {
                 <p className="sub-p">From identification proof, driving license, insurance, bills and more, collect and share documents easily on WhatsApp.</p>
                 <CTA />
               </div>
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-Section7-img1.webp" alt="Collect documents" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-Section7-img1.webp" alt="Collect documents" /></div>
             </div>
           </div>
           <div className="dblk">
             <div className="tc fl">
-              <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-Section7-img2.webp" alt="Educate customers" /></div>
+              <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-Section7-img2.webp" alt="Educate customers" /></div>
               <div className="col">
                 <div className="gb" />
                 <h2 className="hg hg-sm">Educate your customers and prospects</h2>
@@ -374,7 +374,7 @@ export default function AutomotivePage() {
                 {STATS.map((s, i) => (<div className="glass-card" key={i}><div className="gc-num">{s.num}</div><div className="gc-lbl">{s.lbl}</div></div>))}
               </div>
             </div>
-            <div className="coli"><Img src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-Section8.webp" alt="Gear Guard success story" /></div>
+            <div className="coli"><Img src="https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/WhatsAppInterakt-By-Industry/Automotive%20Industry/Automotive-Industry-Section8.webp" alt="Gear Guard success story" /></div>
           </div>
         </div>
       </section>

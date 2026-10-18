@@ -280,15 +280,15 @@ function MovingMarquee() {
   }, []);
 
   const brands = [
-    { logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W2.webp" },
-    { logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W3.webp" },
-    { logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W4.webp" },
-    { logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W5.webp" },
-    { logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W6.webp" },
-    { logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W7.webp" },
-    { logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W8.webp" },
-    { logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W9.webp" },
-    { logo: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/W10.webp" },
+    { logo: "https://gi-img-cdn.sujeet.workers.dev/Images/W2.webp" },
+    { logo: "https://gi-img-cdn.sujeet.workers.dev/Images/W3.webp" },
+    { logo: "https://gi-img-cdn.sujeet.workers.dev/Images/W4.webp" },
+    { logo: "https://gi-img-cdn.sujeet.workers.dev/Images/W5.webp" },
+    { logo: "https://gi-img-cdn.sujeet.workers.dev/Images/W6.webp" },
+    { logo: "https://gi-img-cdn.sujeet.workers.dev/Images/W7.webp" },
+    { logo: "https://gi-img-cdn.sujeet.workers.dev/Images/W8.webp" },
+    { logo: "https://gi-img-cdn.sujeet.workers.dev/Images/W9.webp" },
+    { logo: "https://gi-img-cdn.sujeet.workers.dev/Images/W10.webp" },
   ];
 
   return (
@@ -405,7 +405,7 @@ function MarketingFullWidthCard() {
             }}
           >
             <img
-              src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tab1.webp"
+              src="https://gi-img-cdn.sujeet.workers.dev/Images/tab1.webp"
               alt="Automated Checkout Workflows"
               className="w-full h-auto object-cover"
               style={{ display: "block", borderRadius: "14px" }}
@@ -439,7 +439,7 @@ function MarketingFullWidthCard() {
 function MarketingImageLeftCard() {
   return (
     <ImageTopCard
-      imageSrc="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tab2.webp"
+      imageSrc="https://gi-img-cdn.sujeet.workers.dev/Images/tab2.webp"
       imageAlt="Automated Order Tracking"
       title="Improve Customer Satisfaction with Automated Order Tracking"
       description="No more sending order updates manually to every customer let Interakt do it for you. Just integrate our platform with your."
@@ -450,7 +450,7 @@ function MarketingImageLeftCard() {
 function MarketingImageTopCard() {
   return (
     <ImageTopCard
-      imageSrc="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tab3.webp"
+      imageSrc="https://gi-img-cdn.sujeet.workers.dev/Images/tab3.webp"
       imageAlt="Drive Shopify Sales with WhatsApp Automation"
       title="Drive Shopify Sales with WhatsApp Automation"
       description="Put your Shopify sales on auto-pilot with Interakt. From acquisition, and conversion to support, our full-stack WhatsApp Business Platform does it all for you!"
@@ -463,7 +463,7 @@ function MarketingImageTopCard() {
 function CommerceImageTopCard1() {
   return (
     <ImageTopCard
-      imageSrc="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tab4.webp"
+      imageSrc="https://gi-img-cdn.sujeet.workers.dev/Images/tab4.webp"
       imageAlt="WhatsApp Broadcast Campaigns"
       title="Automate Bulk Messages with WhatsApp Broadcast"
       description="Turn conversations into conversions with WhatsApp Broadcasts. Engage customers with personalised alerts and rich media campaigns."
@@ -474,7 +474,7 @@ function CommerceImageTopCard1() {
 function CommerceImageTopCard2() {
   return (
     <ImageTopCard
-      imageSrc="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tab5.webp"
+      imageSrc="https://gi-img-cdn.sujeet.workers.dev/Images/tab5.webp"
       imageAlt="No-Code Chatbot Builder"
       title="Build Chatbots Without Coding"
       description="Effortless Automation with Interakt's No-Code Chatbot Builder. Streamline your customer support."
@@ -513,7 +513,7 @@ function CommerceFullWidthCard() {
             }}
           >
             <img
-              src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tab6.webp"
+              src="https://gi-img-cdn.sujeet.workers.dev/Images/tab6.webp"
               alt="AnswerBot AI Support"
               className="w-full h-auto object-cover"
               style={{ display: "block", borderRadius: "14px" }}
@@ -540,7 +540,7 @@ function SupportFullWidthCard() {
             }}
           >
             <img
-              src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tab8.webp"
+              src="https://gi-img-cdn.sujeet.workers.dev/Images/tab8.webp"
               alt="Auto-Chat Assignment"
               className="w-full h-auto object-cover"
               style={{ display: "block", borderRadius: "14px" }}
@@ -573,7 +573,7 @@ function SupportFullWidthCard() {
 function SupportImageLeftCard() {
   return (
     <ImageTopCard
-      imageSrc="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tab9.webp"
+      imageSrc="https://gi-img-cdn.sujeet.workers.dev/Images/tab9.webp"
       imageAlt="WhatsApp Answer Bot"
       title="Respond Faster with WhatsApp Answer Bot"
       description="Automate FAQs and resolve queries instantly with our AI-powered AnswerBot for a seamless customer experience, with easy agent hand-off for extra complex queries."
@@ -584,7 +584,7 @@ function SupportImageLeftCard() {
 function SupportImageTopCard() {
   return (
     <ImageTopCard
-      imageSrc="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tab10.webp"
+      imageSrc="https://gi-img-cdn.sujeet.workers.dev/Images/tab10.webp"
       imageAlt="Auto-Chat Assignment Dashboard"
       title="Optimize Team Productivity with Auto-Chat Assignment"
       description="Ensure timely support by automating chat assignments on Interakt, and directing queries to the right agents instantly."
@@ -815,7 +815,7 @@ export default function WhatsAppAutomation() {
                         }}
                       />
                       <img
-                        src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wauto1.webp"
+                        src="https://gi-img-cdn.sujeet.workers.dev/Images/wauto1.webp"
                         alt="WhatsApp automation flow builder showing an automated customer conversation"
                         className="w-full h-auto object-cover rounded-2xl scale-105 hover:scale-110 transition-transform duration-500"
                         style={{ opacity: 0.95 }}
@@ -900,7 +900,7 @@ export default function WhatsAppAutomation() {
                     }}
                   />
                   <img
-                    src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/wauto1.webp"
+                    src="https://gi-img-cdn.sujeet.workers.dev/Images/wauto1.webp"
                     className="w-full h-auto object-cover rounded-2xl scale-105 hover:scale-110 transition-transform duration-500"
                     style={{ opacity: 0.95 }}
                   />
@@ -1047,7 +1047,7 @@ export default function WhatsAppAutomation() {
                     }}
                   />
                   <img
-                    src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tab7.webp"
+                    src="https://gi-img-cdn.sujeet.workers.dev/Images/tab7.webp"
                     alt="Gyanberry Testimonial"
                     className="w-full h-auto object-cover"
                     style={{
@@ -1068,7 +1068,7 @@ export default function WhatsAppAutomation() {
                             <span style="font-size:36px;">🖼️</span>
                           </div>
                           <p style="color:rgba(245,216,122,0.6);font-size:14px;font-family:Inter,sans-serif;">Add your testimonial image</p>
-                          <p style="color:rgba(255,248,231,0.3);font-size:11px;font-family:Inter,sans-serif;margin-top:6px;">src="https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/tab7.webp"</p>`;
+                          <p style="color:rgba(255,248,231,0.3);font-size:11px;font-family:Inter,sans-serif;margin-top:6px;">src="https://gi-img-cdn.sujeet.workers.dev/Images/tab7.webp"</p>`;
                         parent.appendChild(fb);
                       }
                     }}

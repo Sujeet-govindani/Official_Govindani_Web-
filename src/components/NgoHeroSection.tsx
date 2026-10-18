@@ -43,36 +43,36 @@ type CarouselItem = { icon: string; title: string; image: string };
 type AnimationType = "slide" | "fade" | "scale" | "pulse" | "driftX" | "heartbeat" | "parallax";
 
 const mustHaveData: CarouselItem[] = [
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Recurring-Donations.png", title: "Recurring Donations", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/RDimg1.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Fee-Recovery.png", title: "Fee Recovery", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/NGOimg2.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Form-Field-Manager.png", title: "Form Field Manager", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ngoimg3.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Funds-Designations.webp", title: "Funds and Designations", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/funds.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Tributes.png", title: "Tributes", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ngoimg5.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-PDF-Receipts.webp", title: "Pdf Receipts", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ngoimg6.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-Recurring-Donations.png", title: "Recurring Donations", image: "https://gi-img-cdn.sujeet.workers.dev/Images/RDimg1.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-Fee-Recovery.png", title: "Fee Recovery", image: "https://gi-img-cdn.sujeet.workers.dev/Images/NGOimg2.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-Form-Field-Manager.png", title: "Form Field Manager", image: "https://gi-img-cdn.sujeet.workers.dev/Images/ngoimg3.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-Funds-Designations.webp", title: "Funds and Designations", image: "https://gi-img-cdn.sujeet.workers.dev/Images/funds.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-Tributes.png", title: "Tributes", image: "https://gi-img-cdn.sujeet.workers.dev/Images/ngoimg5.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-PDF-Receipts.webp", title: "Pdf Receipts", image: "https://gi-img-cdn.sujeet.workers.dev/Images/ngoimg6.webp" },
 ];
 const toolsData: CarouselItem[] = [
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-woocommerce.png", title: "Donation Upsells For WooCommerce", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/NGOimg2.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Google-Analytics-Donation-Tracking.png", title: "Google Analytics Donation", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ngoimg3.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Annual-Receipts.png", title: "Annual Receipts", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ngoimg3.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-divi.png", title: "Donation Modules For Divi", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/funds.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Currency-Switcher.png", title: "Currency Switcher", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/currency switcher.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Gift-Aid.png", title: "Gift Aid", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/gift-aid.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-woocommerce.png", title: "Donation Upsells For WooCommerce", image: "https://gi-img-cdn.sujeet.workers.dev/Images/NGOimg2.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-Google-Analytics-Donation-Tracking.png", title: "Google Analytics Donation", image: "https://gi-img-cdn.sujeet.workers.dev/Images/ngoimg3.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-Annual-Receipts.png", title: "Annual Receipts", image: "https://gi-img-cdn.sujeet.workers.dev/Images/ngoimg3.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-divi.png", title: "Donation Modules For Divi", image: "https://gi-img-cdn.sujeet.workers.dev/Images/funds.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-Currency-Switcher.png", title: "Currency Switcher", image: "https://gi-img-cdn.sujeet.workers.dev/Images/currency switcher.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-Gift-Aid.png", title: "Gift Aid", image: "https://gi-img-cdn.sujeet.workers.dev/Images/gift-aid.webp" },
 ];
 const paymentData: CarouselItem[] = [
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Bitpay.webp", title: "Bitpay Donations", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/stripemain.png" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Americloud-Payments.webp", title: "American Cloud", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ACloud.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Braintree-Gateway.png", title: "Braintree Gateway", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/molliemain.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/Payumain.jfif", title: "PayU Money Gateway", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/payU.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-iats-Payment.webp", title: "iATS Payments", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/iAts.png" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-paytm-gateway.webp", title: "Paytm Gateway", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/paytm.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-Bitpay.webp", title: "Bitpay Donations", image: "https://gi-img-cdn.sujeet.workers.dev/Images/stripemain.png" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-Americloud-Payments.webp", title: "American Cloud", image: "https://gi-img-cdn.sujeet.workers.dev/Images/ACloud.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-Braintree-Gateway.png", title: "Braintree Gateway", image: "https://gi-img-cdn.sujeet.workers.dev/Images/molliemain.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/Payumain.jfif", title: "PayU Money Gateway", image: "https://gi-img-cdn.sujeet.workers.dev/Images/payU.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-iats-Payment.webp", title: "iATS Payments", image: "https://gi-img-cdn.sujeet.workers.dev/Images/iAts.png" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-paytm-gateway.webp", title: "Paytm Gateway", image: "https://gi-img-cdn.sujeet.workers.dev/Images/paytm.webp" },
 ];
 const marketingData: CarouselItem[] = [
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/peer1.png", title: "Peer-to-Peer", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/peer1.png" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Active-Campaign.png", title: "Active Campaign", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/activecampn.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/salesforce-icon.png", title: "Salesforce", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/salesforce.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Mailchimp.png", title: "MailChimp", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/mailchimp.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-Fee-Recovery.png", title: "Fee Recovery", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/NGOimg2.webp" },
-    { icon: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/icon-AWeber.png", title: "AWeber", image: "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/ngoimg6.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/peer1.png", title: "Peer-to-Peer", image: "https://gi-img-cdn.sujeet.workers.dev/Images/peer1.png" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-Active-Campaign.png", title: "Active Campaign", image: "https://gi-img-cdn.sujeet.workers.dev/Images/activecampn.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/salesforce-icon.png", title: "Salesforce", image: "https://gi-img-cdn.sujeet.workers.dev/Images/salesforce.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-Mailchimp.png", title: "MailChimp", image: "https://gi-img-cdn.sujeet.workers.dev/Images/mailchimp.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-Fee-Recovery.png", title: "Fee Recovery", image: "https://gi-img-cdn.sujeet.workers.dev/Images/NGOimg2.webp" },
+    { icon: "https://gi-img-cdn.sujeet.workers.dev/Images/icon-AWeber.png", title: "AWeber", image: "https://gi-img-cdn.sujeet.workers.dev/Images/ngoimg6.webp" },
 ];
 
 // ── Radial Nav Menu ───────────────────────────────────────────────────────────
