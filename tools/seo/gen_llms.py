@@ -14,7 +14,7 @@ N = 30
 recs = re.findall(r'\{ id: "([^"]+)", title: "((?:[^"\\]|\\.)*)".*?date: "([^"]*)" \}', IDX.read_text())
 pub = [(s, t.replace('\\"', '"'), d) for s, t, d in recs if d and d <= TODAY]
 pub.sort(key=lambda x: x[2], reverse=True)
-bullets = "\n".join(f"- {t}: https://govindaniit.com/blog/{s}" for s, t, d in pub[:N])
+bullets = "\n".join(f"- [{t}](https://govindaniit.com/blog/{s})" for s, t, d in pub[:N])
 
 txt = LLMS.read_text()
 # replace everything between "Recent guides include:" and the next "## " section

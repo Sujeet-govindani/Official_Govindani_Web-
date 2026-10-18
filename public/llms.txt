@@ -16,6 +16,18 @@ Govindani Infotech Pvt. Ltd. is a website design and development company based i
 - **AI Automation**: Chatbots, workflow automation, and AI-powered tools
 - **Virtual Tours**: 360° virtual tours for real estate, hospitality, and tourism
 
+## Key Pages
+- [Home](https://govindaniit.com/): Digital systems for NGOs and businesses
+- [Services](https://govindaniit.com/services): Full list of what we build
+- [NGO Website & Donation Platforms](https://govindaniit.com/pages/ngopage): 80G/FCRA-compliant donation websites
+- [E-commerce Development](https://govindaniit.com/services/ecommerce): Shopify, WooCommerce and custom stores
+- [WhatsApp Business API](https://govindaniit.com/whatsapp/business-api): Chatbots, automation and commerce
+- [Portfolio](https://govindaniit.com/portfolio): Websites and platforms we have built
+- [NGO Portfolio](https://govindaniit.com/portfolio/ngo): Non-profit projects
+- [About the Company](https://govindaniit.com/about-us/about-company): Who we are
+- [Blog](https://govindaniit.com/blog): In-depth guides
+- [Contact](https://govindaniit.com/contact-us): Get in touch
+
 ## Key Statistics
 - 900+ websites engineered, 550 of them for non-profits
 - ₹1100+ crore processed securely
@@ -23,13 +35,12 @@ Govindani Infotech Pvt. Ltd. is a website design and development company based i
 - Clients across India, USA, UK, and UAE
 
 ## Contact
-- Website: https://govindaniit.com
+- [Website](https://govindaniit.com)
 - Email: sujeet@govindaniit.org
 - Phone: +91-9201958274
 - Address: 2nd Floor, Landmark Plaza, 206 Satara Road, Parvati Paytha, Pune, Maharashtra 411009, India
-- LinkedIn: https://www.linkedin.com/company/govindani-infotech
-- Instagram: https://www.instagram.com/govindani_infotech_pvt_ltd/
-
+- [LinkedIn](https://www.linkedin.com/company/govindani-infotech)
+- [Instagram](https://www.instagram.com/govindani_infotech_pvt_ltd/)
 ## Target Audience
 - NGOs and non-profit organizations
 - E-commerce businesses
@@ -46,35 +57,35 @@ We don't just build websites — we build digital infrastructure that helps orga
 We publish in-depth guides at https://govindaniit.com/blog covering website
 design and development, ecommerce, WhatsApp Business API, CRM, digital
 marketing and NGO technology in India. Recent guides include:
-- Choosing a Website Designing Company in Pune: https://govindaniit.com/blog/website-designing-company-in-pune
-- Choosing a Software Development Company in Pune: What You Should Weigh Before Deciding: https://govindaniit.com/blog/software-development-company-in-pune
-- Choosing an NGO Website Development Company in Pune: https://govindaniit.com/blog/ngo-website-development-company-in-pune
-- Ecommerce Website Development for Pune Businesses: The Practical Blueprint: https://govindaniit.com/blog/ecommerce-website-development-pune
-- WhatsApp Lead Routing Automation for Indian Sales Teams: https://govindaniit.com/blog/whatsapp-lead-routing-automation
-- WhatsApp Chatbot Multilingual Support for India: https://govindaniit.com/blog/whatsapp-multilingual-chatbot-india
-- WhatsApp Opt-In Compliance Checklist for Indian Businesses: https://govindaniit.com/blog/whatsapp-opt-in-compliance-checklist
-- WhatsApp Order Updates: API Setup for Indian E-commerce: https://govindaniit.com/blog/whatsapp-order-updates-api-india
-- Why WhatsApp Templates Get Rejected in India: https://govindaniit.com/blog/whatsapp-template-rejection-fixes-india
-- WhatsApp Utility vs Marketing Templates in India: https://govindaniit.com/blog/whatsapp-utility-vs-marketing-templates
-- Setting Up Cash on Delivery on a WooCommerce Store: How to Choose a COD Plugin, Configure the Rules and Test It Before Launch: https://govindaniit.com/blog/woocommerce-cod-plugins-india
-- WhatsApp Catalog Setup: Requirements for D2C Brands: https://govindaniit.com/blog/whatsapp-catalog-setup-d2c
-- WhatsApp Chatbot Development Cost in India: https://govindaniit.com/blog/whatsapp-chatbot-development-cost-india
-- WhatsApp Chatbot Human Handoff Workflow: https://govindaniit.com/blog/whatsapp-chatbot-human-handoff
-- WhatsApp Chatbot vs Live Agent: What Should You Choose?: https://govindaniit.com/blog/whatsapp-chatbot-vs-live-agent
-- WhatsApp CRM Integration: Features to Check Before Hiring: https://govindaniit.com/blog/whatsapp-crm-integration-requirements
-- WhatsApp Donation Receipts for NGOs: Automation Guide: https://govindaniit.com/blog/whatsapp-donation-receipts-ngos
-- WhatsApp Interactive Messages: Buttons, Lists and Flows: https://govindaniit.com/blog/whatsapp-interactive-messages-buttons-lists
-- WhatsApp 24-Hour Messaging Window Explained: https://govindaniit.com/blog/whatsapp-24-hour-messaging-window
-- WhatsApp Abandoned Cart Automation: India Setup Guide: https://govindaniit.com/blog/whatsapp-abandoned-cart-automation-india
-- WhatsApp API Analytics: KPIs and Reports: https://govindaniit.com/blog/whatsapp-api-analytics-kpis-reports
-- WhatsApp Business API Onboarding Documents in India: https://govindaniit.com/blog/whatsapp-api-onboarding-documents-india
-- WhatsApp API Webhook Integration Requirements: https://govindaniit.com/blog/whatsapp-api-webhook-integration-requirements
-- WhatsApp Appointment Reminder Automation for Clinics: https://govindaniit.com/blog/whatsapp-appointment-reminders-clinics
-- WhatsApp Broadcast Segmentation for Customer Updates: https://govindaniit.com/blog/whatsapp-broadcast-segmentation-updates
-- Website Lead Capture CRM Integration: What to Check: https://govindaniit.com/blog/website-lead-capture-crm-integration
-- How to Migrate a Website Without Losing SEO Rankings: https://govindaniit.com/blog/website-migration-without-seo-loss
-- Website Redesign Brief: What to Give Your Developer: https://govindaniit.com/blog/website-redesign-brief-developer
-- Website Security Audit for Indian Small Businesses: https://govindaniit.com/blog/website-security-audit-indian-smb
-- Website Speed Optimization for Indian Mobile Users: https://govindaniit.com/blog/website-speed-optimization-india-business
+- [Quick Answer: Agency vs Freelance Cost for an NGO Website in 2026](https://govindaniit.com/blog/cost-comparison-pune-web-development-agency-vs-freelance-for-ngo-website-2026-2026)
+- [Step-by-step process to integrate GST-compliant e-invoice generation on a Pune e-commerce site](https://govindaniit.com/blog/step-by-step-process-to-integrate-gst-compliant-e-invoice-generation-on-a-pune-e-commerce)
+- [Comparison of No-code Website Builders vs Hiring a Pune Development Agency for Small Retailers](https://govindaniit.com/blog/comparison-of-no-code-website-builders-vs-hiring-a-pune-development-agency-for-small-retai)
+- [How to Choose the Best CRM Development Company in Pune](https://govindaniit.com/blog/best-crm-development-company-in-pune-2026)
+- [Best Digital Marketing Agency in Pune (2026 Guide)](https://govindaniit.com/blog/best-digital-marketing-agency-in-pune-2026)
+- [What makes a software development company the best in Pune?](https://govindaniit.com/blog/best-software-development-company-in-pune-2026)
+- [What makes a website development company “top” in Pune?](https://govindaniit.com/blog/top-website-development-company-in-pune-2026)
+- [Who are the best NGO website developers in India?](https://govindaniit.com/blog/best-ngo-website-developers-in-india-2026)
+- [WordPress Core Web Vitals Optimization for Indian Businesses](https://govindaniit.com/blog/wordpress-core-web-vitals-optimization)
+- [WordPress Host Migration Checklist for Business Websites](https://govindaniit.com/blog/wordpress-host-migration-checklist)
+- [WordPress Hosting in India: Shared, Cloud or Managed?](https://govindaniit.com/blog/wordpress-hosting-shared-cloud-managed)
+- [WordPress Malware Removal or Website Rebuild?](https://govindaniit.com/blog/wordpress-malware-removal-or-rebuild)
+- [WordPress PHP Upgrade Compatibility Guide for Businesses](https://govindaniit.com/blog/wordpress-php-upgrade-compatibility-guide)
+- [WordPress Plugin Audit: What Should You Remove?](https://govindaniit.com/blog/wordpress-plugin-audit-before-development)
+- [WordPress Plugin Conflict Fix: Developer or Rebuild?](https://govindaniit.com/blog/wordpress-plugin-conflict-fix)
+- [Web Development Company in Pune: What AI Browser Agents Mean for Your Website in 2026](https://govindaniit.com/blog/web-development-company-pune-ai-browser-agents-2026)
+- [Digital Marketing Agency in Pune: What Meta's Advantage+ Becoming the Default for Lead Generation Means for Your Campaigns in 2026](https://govindaniit.com/blog/digital-marketing-agency-pune-meta-advantage-plus-leads-2026)
+- [Ecommerce Website Development in Pune: What Agentic Commerce (AP2 and Instant Checkout) Means for Your Product Pages in 2026](https://govindaniit.com/blog/ecommerce-website-development-pune-agentic-commerce-ap2-2026)
+- [Choosing a Website Designing Company in Pune](https://govindaniit.com/blog/website-designing-company-in-pune)
+- [Choosing a Software Development Company in Pune: What You Should Weigh Before Deciding](https://govindaniit.com/blog/software-development-company-in-pune)
+- [Choosing an NGO Website Development Company in Pune](https://govindaniit.com/blog/ngo-website-development-company-in-pune)
+- [Ecommerce Website Development for Pune Businesses: The Practical Blueprint](https://govindaniit.com/blog/ecommerce-website-development-pune)
+- [WhatsApp Lead Routing Automation for Indian Sales Teams](https://govindaniit.com/blog/whatsapp-lead-routing-automation)
+- [WhatsApp Chatbot Multilingual Support for India](https://govindaniit.com/blog/whatsapp-multilingual-chatbot-india)
+- [WhatsApp Opt-In Compliance Checklist for Indian Businesses](https://govindaniit.com/blog/whatsapp-opt-in-compliance-checklist)
+- [WhatsApp Order Updates: API Setup for Indian E-commerce](https://govindaniit.com/blog/whatsapp-order-updates-api-india)
+- [Why WhatsApp Templates Get Rejected in India](https://govindaniit.com/blog/whatsapp-template-rejection-fixes-india)
+- [WhatsApp Utility vs Marketing Templates in India](https://govindaniit.com/blog/whatsapp-utility-vs-marketing-templates)
+- [Setting Up Cash on Delivery on a WooCommerce Store: How to Choose a COD Plugin, Configure the Rules and Test It Before Launch](https://govindaniit.com/blog/woocommerce-cod-plugins-india)
+- [WhatsApp Catalog Setup: Requirements for D2C Brands](https://govindaniit.com/blog/whatsapp-catalog-setup-d2c)
 ## Service Area
 Primary: Pune, Maharashtra. We serve clients across India and internationally.
