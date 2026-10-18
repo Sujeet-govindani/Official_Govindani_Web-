@@ -1433,6 +1433,6 @@ element.style {
    CSS-driven (not the JS screen state) → correct at first paint, no hydration jump.
    Breakpoints match the hero: desktop ≥1024, tablet 768–1023, mobile <768. */
 :root { --hero-h: 810px; }
-@media (max-width: 1023px) { :root { --hero-h: 1100px; } }
+@media (max-width: 1023px) { :root { --hero-h: 930px; } }
 @media (max-width: 767px)  { :root { --hero-h: 890px; } }
 

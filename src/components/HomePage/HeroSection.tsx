@@ -1486,7 +1486,7 @@ const HeroCarousel = () => {
             )}
 
             {!mob && (
-                <div style={{ position: 'relative', zIndex: 2, width: '100%', height: '100%', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', padding: `${slidePad.top + 30}px ${slidePad.side}px ${slidePad.bot}px`, boxSizing: 'border-box', marginTop: "60px" }}>
+                <div style={{ position: 'relative', zIndex: 2, width: '100%', height: '100%', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', padding: `${(tab ? slidePad.top : slidePad.top + 30)}px ${slidePad.side}px ${slidePad.bot}px`, boxSizing: 'border-box', marginTop: tab ? "12px" : "60px" }}>
                     <div style={{
                         width: '100%', maxWidth: 1400, display: 'grid',
                         /* Two fixes here.
@@ -1503,7 +1503,7 @@ const HeroCarousel = () => {
                            collage sits clearly further right, away from the
                            headline (was minmax(0,1fr) minmax(0,1.8fr) / 40px). */
                         gridTemplateColumns: tab ? '1fr' : 'minmax(0, 1.1fr) minmax(0, 1.5fr)',
-                        gap: tab ? '20px' : '56px', alignItems: 'start',
+                        gap: tab ? '14px' : '56px', alignItems: 'start',
                       }}>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: tab ? '14px' : '20px' }}>
                             <h1
@@ -1535,7 +1535,7 @@ const HeroCarousel = () => {
                             </div>
                         </div>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: tab ? '11px' : '14px', alignItems: 'stretch', animation: 'ngo_in .65s ease-out .05s both' }}>
-                            <NGOPersonCollage height={tab ? 380 : 430} radius={16} />
+                            <NGOPersonCollage height={tab ? 290 : 430} radius={16} />
                             <PeopleBoxes />
                         </div>
                     </div>
