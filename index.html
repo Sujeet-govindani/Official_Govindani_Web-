@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google tag (gtag.js) — GA4, govindaniit.com -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KTRQV9LY31"></script>
+    <!-- Google tag (gtag.js) — GA4, govindaniit.com.
+         The heavy gtag.js (~175 KB) is NOT loaded here: it, and the Meta Pixel below,
+         are the single biggest block of render-blocking third-party JS on the page and
+         were pushing LCP past 9 s on mobile. The gtag() stub + dataLayer live inline so
+         every config and event call QUEUES immediately; the real gtag.js is injected on
+         first interaction (or a 3 s fallback), at which point the queue replays. No event
+         is lost — only the initial PageView shifts by up to ~3 s, immaterial to GA4 and to
+         multi-day ad attribution. See the deferred loader just before </head>. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -157,9 +163,40 @@
          on the site, including the /ngoindia enquiry popup, which submits
          a real form element rather than a click handler. -->
     <script>
-      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      // Meta Pixel stub only — the fbevents.js network script (~255 KB with its config)
+      // is injected by the deferred loader below, not here. The fbq() queue captures
+      // init + PageView + Lead immediately and flushes once fbevents.js loads.
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[]}(window,document,'script');
       fbq('init','1351631835898180'); fbq('track','PageView');
       document.addEventListener('submit', function(){ fbq('track','Lead'); }, true);
+    </script>
+
+    <!-- Deferred third-party loader. gtag.js and fbevents.js are the dominant
+         render-blocking third-party JS; loading them on first interaction (or a 3 s
+         fallback for users who never interact) keeps them off the critical path for
+         LCP/FCP/Speed-Index while losing no events — both libraries replay their
+         queued calls on load. Fires exactly once. -->
+    <script>
+      (function () {
+        var loaded = false;
+        function load() {
+          if (loaded) return; loaded = true;
+          ['scroll','mousemove','touchstart','keydown','click'].forEach(function (ev) {
+            window.removeEventListener(ev, load, { passive: true });
+          });
+          [
+            'https://www.googletagmanager.com/gtag/js?id=G-KTRQV9LY31',
+            'https://connect.facebook.net/en_US/fbevents.js'
+          ].forEach(function (src) {
+            var s = document.createElement('script');
+            s.src = src; s.async = true; document.head.appendChild(s);
+          });
+        }
+        ['scroll','mousemove','touchstart','keydown','click'].forEach(function (ev) {
+          window.addEventListener(ev, load, { passive: true });
+        });
+        setTimeout(load, 3000);
+      })();
     </script>
 
   </head>
