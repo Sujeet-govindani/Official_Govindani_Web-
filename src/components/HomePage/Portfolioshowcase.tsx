@@ -258,16 +258,33 @@ function PhoneItem({
   const isLeft = position === 'left';
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  // Play/pause based on whether this phone is the center one
+  // Defer the (multi-MB) showcase videos until this phone scrolls near the viewport.
+  // Without this, every carousel item sets its src on mount — even though the whole
+  // section is far below the fold — so the homepage eagerly downloaded ~54 MB of video,
+  // saturating the mobile link and wrecking FCP/LCP. Now the src is only attached once
+  // the section is approached; Lighthouse (which does not scroll here) never fetches them.
+  const [near, setNear] = useState(false);
   useEffect(() => {
     const el = videoRef.current;
-    if (!el) return;
+    if (!el || near) return;
+    const io = new IntersectionObserver(
+      (entries) => { if (entries.some((e) => e.isIntersecting)) { setNear(true); io.disconnect(); } },
+      { rootMargin: '400px' }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [near]);
+
+  // Play/pause based on whether this phone is the center one (once its src is attached)
+  useEffect(() => {
+    const el = videoRef.current;
+    if (!el || !near) return;
     if (isCenter) {
       el.play().catch(() => {/* autoplay may be blocked */ });
     } else {
       el.pause();
     }
-  }, [isCenter]);
+  }, [isCenter, near]);
 
   const w = isCenter ? dims.centerW : dims.sideW;
   const h = isCenter ? dims.centerH : dims.sideH;
@@ -349,11 +366,12 @@ function PhoneItem({
       <div style={{ position: 'absolute', inset: 0, zIndex: 3 }}>
         <video
           ref={videoRef}
-          src={video.videoUrl}
+          src={near ? video.videoUrl : undefined}
+          preload="none"
           muted
           loop
           playsInline
-          autoPlay={isCenter}
+          autoPlay={isCenter && near}
           style={{
             width: '100%',
             height: '100%',
