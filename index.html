@@ -12,6 +12,39 @@
       gtag('js', new Date());
       gtag('config', 'G-KTRQV9LY31');
     </script>
+
+    <!-- Conversion tracking: one delegated listener for the whole site, so every
+         WhatsApp / phone / map click and every form submit becomes a GA4 event
+         without touching individual components. Mark these as Key Events in GA4. -->
+    <script>
+      (function () {
+        function ev(name, params) {
+          try { window.gtag && window.gtag('event', name, params || {}); } catch (e) {}
+        }
+        document.addEventListener('click', function (e) {
+          var a = e.target && e.target.closest && e.target.closest('a');
+          if (!a || !a.href) return;
+          var h = a.href.toLowerCase();
+          if (h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1 || h.indexOf('api.whatsapp') > -1)
+            ev('whatsapp_click', { link_url: a.href });
+          else if (h.indexOf('tel:') === 0) ev('phone_click', { link_url: a.href });
+          else if (h.indexOf('mailto:') === 0) ev('email_click', { link_url: a.href });
+          else if (h.indexOf('maps.google') > -1 || h.indexOf('goo.gl/maps') > -1 || h.indexOf('/maps') > -1)
+            ev('map_click', { link_url: a.href });
+          else if (h.indexOf('/smm') > -1 || h.indexOf('hirings.govindaniit.com') > -1)
+            ev('apply_click', { link_url: a.href });
+        }, true);
+        document.addEventListener('submit', function (e) {
+          var f = e.target;
+          var cls = (f && f.className && f.className.toString()) || '';
+          var label = /gcr-form/.test(cls) ? 'apply'
+                    : /ngo|lead/i.test(cls + ' ' + (f.id || '')) ? 'ngo_lead'
+                    : 'contact';
+          ev('form_submit', { form_type: label });
+          ev('generate_lead', { form_type: label });
+        }, true);
+      })();
+    </script>
     <title>Govindani Infotech | Your Path To Digital Excellence</title>
     <meta name="description" content="Govindani Infotech transforms your digital vision into reality with cutting-edge web development, mobile apps, and innovative digital solutions that drive business growth." />
     <meta name="author" content="Govindani Infotech" />
