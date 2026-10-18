@@ -18,16 +18,6 @@ export default defineConfig(({ mode }) => ({
     // lets the browser fetch them in parallel and cache them independently of
     // application code — a content change no longer invalidates the libraries.
     chunkSizeWarningLimit: 1200,
-    // Vite speculatively <link rel=modulepreload>s the vendor deps of the homepage's
-    // below-the-fold lazy sections (framer-motion ~200 KB, recharts ~138 KB, three).
-    // That front-loads ~340 KB during first paint, starving the hero's bandwidth and
-    // pushing out LCP/FCP on throttled mobile. These sections are cv-defer + Suspense
-    // deferred, so let their heavy vendors load when the section actually mounts, not
-    // at initial load. vendor-react / vendor-ui (the shell) stay preloaded.
-    modulepreload: {
-      resolveDependencies: (_url: string, deps: string[]) =>
-        deps.filter((d) => !/vendor-(motion|charts|three)/.test(d)),
-    },
     rollupOptions: {
       output: {
         manualChunks: {
@@ -46,7 +36,25 @@ server: {
     host: "localhost",
     port: 8080,
   },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  plugins: [
+    react(),
+    mode === "development" && componentTagger(),
+    // Strip speculative <link rel="modulepreload"> for the heavy below-the-fold vendors
+    // (framer-motion ~200 KB, recharts ~138 KB, three). Vite preloads them because the
+    // homepage's lazy sections depend on them, but those sections are cv-defer + Suspense
+    // deferred — preloading ~340 KB at first paint only starves the hero's bandwidth and
+    // pushes out FCP/LCP on throttled mobile. They still load (lower priority) when their
+    // section mounts. vendor-react / vendor-ui (the app shell) stay preloaded.
+    {
+      name: "strip-heavy-vendor-preload",
+      transformIndexHtml(html: string) {
+        return html.replace(
+          /\s*<link[^>]*rel="modulepreload"[^>]*href="[^"]*vendor-(?:motion|charts|three)[^"]*"[^>]*>/g,
+          ""
+        );
+      },
+    },
+  ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
