@@ -11,7 +11,7 @@
          every config and event call QUEUES immediately; the real gtag.js is injected on
          first interaction (or a 3 s fallback), at which point the queue replays. No event
          is lost — only the initial PageView shifts by up to ~3 s, immaterial to GA4 and to
-         multi-day ad attribution. See the deferred loader just before </head>. -->
+         multi-day ad attribution. See the deferred loader at the end of the head. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
