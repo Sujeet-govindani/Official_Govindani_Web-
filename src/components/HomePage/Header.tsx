@@ -608,7 +608,7 @@ const Header: React.FC = () => {
           maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 58%, rgba(0,0,0,0) 100%)',
           WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 58%, rgba(0,0,0,0) 100%)',
           pointerEvents: 'none' }} />
-        <div style={{ width: '100%', maxWidth: screen === 'mobile' ? '100%' : '1200px', height: `${PILL_H}px`, background: skin.pill, backdropFilter: 'blur(10px) saturate(1.25)', WebkitBackdropFilter: 'blur(10px) saturate(1.25)', borderRadius: '100px', border: skin.border, boxShadow: skin.shadow, display: 'grid', gridTemplateColumns: 'auto 1fr auto', alignItems: 'center', padding: screen === 'mobile' ? '0 1.2rem' : '0 2.5rem', position: 'relative', overflow: 'visible' }}>
+        <div style={{ width: '100%', maxWidth: screen === 'mobile' ? '100%' : '1200px', height: 'var(--pill-h)', background: skin.pill, backdropFilter: 'blur(10px) saturate(1.25)', WebkitBackdropFilter: 'blur(10px) saturate(1.25)', borderRadius: '100px', border: skin.border, boxShadow: skin.shadow, display: 'grid', gridTemplateColumns: 'auto 1fr auto', alignItems: 'center', padding: screen === 'mobile' ? '0 1.2rem' : '0 2.5rem', position: 'relative', overflow: 'visible' }}>
           <div style={{ position: 'absolute', top: 0, left: '10%', right: '10%', height: '1px', background: 'linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent)' }} />
           <Link to="/" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
             {/* The company name in the lockup is white, so on a pale pill it used
@@ -622,7 +622,7 @@ const Header: React.FC = () => {
                 : 'https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/govindanilogo-400w.webp'}
               alt="Govindani Infotech"
               width={400} height={202} fetchPriority="high"
-              style={{ height: `${LOGO_H}px`, width: `${LOGO_W}px`, minWidth: `${LOGO_W}px`, flexShrink: 0, objectFit: 'contain',
+              style={{ height: 'var(--logo-h)', width: 'var(--logo-w)', minWidth: 'var(--logo-w)', flexShrink: 0, objectFit: 'contain',
                 filter: skin.onLight ? 'none' : 'drop-shadow(0 2px 4px rgba(0,0,0,0.5))' }}
               loading="lazy" decoding="async" />
           </Link>

@@ -1419,3 +1419,14 @@ element.style {
   contain-intrinsic-size: auto 800px;
 }
 
+/* Header pill + logo sizing, driven by CSS media queries (not JS screen state).
+   The header used a JS `screen` state that initialises to 'desktop' (pill 80 / logo
+   68px) and only corrects to mobile (pill 60 / logo 48px) in a mount effect — so on
+   phones the logo shrank 68→48 after load, collapsing the header and shifting the hero
+   (a large chunk of the field CLS). As CSS variables the correct size is applied at
+   first paint for every viewport, with no post-mount resize and no hydration mismatch. */
+:root { --pill-h: 80px; --logo-h: 68px; --logo-w: 135px; }
+@media (max-width: 1039px) {
+  :root { --pill-h: 60px; --logo-h: 48px; --logo-w: 95px; }
+}
+
