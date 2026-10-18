@@ -1270,7 +1270,7 @@ const HeroCarousel = () => {
                             background: isSelected ? '#3D2B1F' : ngo.peopleBg,
                             border: isSelected ? '2px solid #3D2B1F' : ngo.peopleBorder,
                             borderRadius: mob ? 8 : 10,
-                            padding: mob ? '7px 4px' : tab ? '9px 6px' : '11px 8px',
+                            padding: mob ? '7px 3px' : tab ? '9px 5px' : '11px 6px',
                             textAlign: 'center',
                             display: 'flex',
                             flexDirection: 'column',
@@ -1285,12 +1285,20 @@ const HeroCarousel = () => {
                         <span
                             style={{
                                 display: 'block',
-                                fontSize: mob ? '0.54rem' : tab ? '0.75rem' : '0.82rem',
+                                width: '100%',
+                                fontSize: mob ? '0.52rem' : tab ? '0.62rem' : '0.68rem',
                                 fontWeight: 700,
                                 color: isSelected ? '#fff' : ngo.dark,
                                 fontFamily: "'Libre Baskerville',serif",
                                 lineHeight: 1.18,
+                                letterSpacing: '-0.01em',
                                 whiteSpace: 'pre-line',
+                                // The cards are only ~90px wide; long single words (Chitralekha,
+                                // Mallakhamb, Foundation) previously bled past the card edge. Keep
+                                // the font small enough to fit and let anything longer wrap/hyphenate
+                                // inside the card instead of overflowing into its neighbours.
+                                overflowWrap: 'break-word',
+                                hyphens: 'auto',
                             }}
                         >
                             {p.name}
