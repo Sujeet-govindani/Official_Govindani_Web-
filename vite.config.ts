@@ -21,8 +21,11 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks: {
-          "vendor-three": ["three"],
-          "vendor-charts": ["recharts"],
+          // NOTE: do NOT list `three` or `recharts` here. Naming a bare package in
+          // manualChunks FORCE-INCLUDES it even when nothing imports it — recharts
+          // (~139 KB) was being force-bundled and executed ~840 ms on the homepage
+          // although ui/chart.tsx (its only importer) is itself imported nowhere.
+          // Leaving them out lets Rollup tree-shake both away entirely.
           "vendor-motion": ["framer-motion", "gsap"],
           "vendor-react": ["react", "react-dom", "react-router-dom"],
           "vendor-ui": ["lucide-react", "embla-carousel-react", "styled-components"],
