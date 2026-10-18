@@ -13,6 +13,7 @@ const VideoSection = lazy(() => import("@/components/HomePage/Section2Video"));
 const LatestWork = lazy(() => import("@/components/HomePage/LatestWork"));
 const ServicesSection = lazy(() => import("@/components/HomePage/ServicesSection"));
 const ClientTestimonialSection = lazy(() => import("@/components/HomePage/Testimonialssection"));
+const GoogleReviews = lazy(() => import("@/components/HomePage/GoogleReviews"));
 const AboutUsSection = lazy(() => import("@/components/HomePage/AboutUsSection"));
 const TextServicesSection = lazy(() => import("@/components/HomePage/TextServicesSection"));
 const FunkyHinglishSection = lazy(() => import("@/components/HomePage/WhatsappInteraktSection"));
@@ -35,6 +36,7 @@ const Index = () => {
           <div className="cv-defer"><LatestWork /></div>
           <div className="cv-defer"><ServicesSection /></div>
           <div className="cv-defer"><ClientTestimonialSection /></div>
+          <div className="cv-defer"><GoogleReviews /></div>
           <div className="cv-defer"><AboutUsSection /></div>
           <div className="cv-defer"><TextServicesSection /></div>
           <div className="cv-defer"><FunkyHinglishSection /></div>
