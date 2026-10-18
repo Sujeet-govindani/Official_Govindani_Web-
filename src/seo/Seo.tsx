@@ -1,9 +1,17 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { ROUTE_META, DEFAULT_META, CANONICAL_OVERRIDES } from './routeMeta';
-import { BLOG_META } from './blogMeta';
-import { BLOG_FAQ_SCHEMA } from './blogFaq';
 import { schemaFor } from './schema';
+
+// BLOG_META (~150 KB) and BLOG_FAQ_SCHEMA (~800 KB) are needed ONLY on /blog/<slug>
+// routes. Statically importing them here forced every page — the homepage included —
+// to download ~950 KB of article data in the entry chunk. They are now dynamically
+// imported inside the effect, only when the path is a blog post, so non-blog pages
+// never fetch them. prerender.mjs waits for networkidle0, so the dynamic chunk still
+// resolves and the FAQ/Article schema is captured into each blog page's static HTML.
+type BlogMeta = Record<string, { seoTitle: string; title: string; description: string; date: string }>;
+type BlogFaq = Record<string, unknown>;
+const BLOG_RE = /^\/blog\/([^/]+)\/?$/;
 
 const SITE = 'https://govindaniit.com';
 
@@ -74,16 +82,16 @@ function setCanonical(href: string) {
  * Their own title and excerpt are far better signals, and BLOG_META carries
  * just those two fields so the 931 KB article file stays out of this bundle.
  */
-function blogLookup(pathname: string) {
-  const m = pathname.match(/^\/blog\/([^/]+)\/?$/);
-  if (!m) return null;
-  const post = BLOG_META[m[1]];
+function blogLookup(pathname: string, blogMeta: BlogMeta | null) {
+  const m = pathname.match(BLOG_RE);
+  if (!m || !blogMeta) return null;
+  const post = blogMeta[m[1]];
   return post ? { title: post.seoTitle, description: post.description } : null;
 }
 
 /** Trailing slashes and casing both produce duplicate URLs — normalise before lookup. */
-function lookup(pathname: string) {
-  const post = blogLookup(pathname);
+function lookup(pathname: string, blogMeta: BlogMeta | null) {
+  const post = blogLookup(pathname, blogMeta);
   if (post) return post;
   const exact = ROUTE_META[pathname];
   if (exact) return exact;
@@ -139,7 +147,21 @@ export default function Seo() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    const meta = lookup(pathname);
+    let cancelled = false;
+    (async () => {
+    // Only blog posts need the heavy article data; load it on demand for them.
+    let blogMeta: BlogMeta | null = null;
+    let blogFaq: BlogFaq | null = null;
+    if (BLOG_RE.test(pathname)) {
+      const [mm, ff] = await Promise.all([
+        import('./blogMeta'),
+        import('./blogFaq'),
+      ]);
+      if (cancelled) return;
+      blogMeta = mm.BLOG_META as BlogMeta;
+      blogFaq = ff.BLOG_FAQ_SCHEMA as BlogFaq;
+    }
+    const meta = lookup(pathname, blogMeta);
     const clean = pathname === '/' ? '' : pathname.replace(/\/+$/, '');
     // A duplicate route points at its preferred URL so signals consolidate.
     const preferred = CANONICAL_OVERRIDES[clean] ?? clean;
@@ -188,8 +210,8 @@ export default function Seo() {
     setMeta('name', 'twitter:image', ogImage);
 
     // An article deserves Article schema, with its own dates.
-    const blog = pathname.match(/^\/blog\/([^/]+)\/?$/);
-    const post = blog ? BLOG_META[blog[1]] : undefined;
+    const blog = pathname.match(BLOG_RE);
+    const post = blog && blogMeta ? blogMeta[blog[1]] : undefined;
     if (post) {
       setMeta('property', 'article:published_time', post.date);
       // Mirror the visible "Frequently Asked Questions" section as FAQPage
@@ -197,7 +219,7 @@ export default function Seo() {
       // via react-helmet in BlogPost) because only setPageSchema is captured by
       // prerender.mjs, so this is the copy Google actually receives. @context is
       // stripped because the node lives inside the page's @graph.
-      const faq = BLOG_FAQ_SCHEMA[blog![1]];
+      const faq = blogFaq ? blogFaq[blog![1]] : undefined;
       setPageSchema({
         '@context': 'https://schema.org',
         '@graph': [
@@ -229,6 +251,8 @@ export default function Seo() {
       // Homepage: Organization + WebSite + LocalBusiness, no breadcrumb needed.
       setPageSchema(schemaFor(pathname));
     }
+    })();
+    return () => { cancelled = true; };
   }, [pathname]);
 
   return null;

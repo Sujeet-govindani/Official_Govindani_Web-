@@ -17,7 +17,11 @@ import Header from "./components/HomePage/Header";
 import WhatsAppFloating from "./components/WhatsAppFloating";
 import GetQuoteFloating from "./components/GetQuoteFloating";
 import ChatWidget from "./components/ChatWidget";
-import BottomNav from "./components/BottomNav/BottomNav";
+// BottomNav is the only app-shell component that pulls framer-motion (~200 KB,
+// vendor-motion). It is a below-the-fold mobile dock, never the LCP, so loading it
+// lazily keeps framer-motion off the homepage's critical path — it hydrates in after
+// first paint instead of blocking it.
+const BottomNav = lazy(() => import("./components/BottomNav/BottomNav"));
 const AllServices = lazy(() => import("./pages/AllServices"));
 const UsaLanding = lazy(() => import("./pages/UsaLanding"));
 const NgoIndiaLanding = lazy(() => import("./pages/NgoIndiaLanding"));
@@ -66,11 +70,13 @@ const Ecommerce = lazy(() => import("./pages/Ecommerce"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const Virtualtour = lazy(() => import("./pages/Virtualtour"));
 const EcommercePage = lazy(() => import("./pages/EcommercePage"));
-import Ngoportfolio from "./pages/NGOportfolio";
+const Ngoportfolio = lazy(() => import("./pages/NGOportfolio"));
 const RealEstatePage = lazy(() => import("./pages/RealEstate"));
 const BusinessWebsitesPage = lazy(() => import("./pages/Business"));
 const EducationPage = lazy(() => import("./pages/Hospitality"));
-import HealthcarePage from "./pages/Healthcare";
+// (HealthcarePage was a dead eager import — the /portfolio/healthcare route uses the
+// lazy `Healthcare` below. Removing it keeps the whole Healthcare page tree, and the
+// framer-motion it pulls, out of the entry chunk loaded on every page.)
 const CIBuilderCRM = lazy(() => import("@/components/ServicesOffered/ALL/CI CRM"));
 const HotelFolioCRM = lazy(() => import("@/components/ServicesOffered/ALL/Hotel CRM"));
 const CarWashCRM = lazy(() => import("@/components/ServicesOffered/ALL/Car Washing CRM"));
@@ -123,7 +129,8 @@ const WhatsAppCrm = lazy(() => import("./components/WhatsAppByChannel/WhatsAppCr
 const WhatsAppWidget = lazy(() => import("./components/WhatsAppByChannel/WhatsAppWidget"));
 const InstagramAutomation = lazy(() => import("./components/WhatsAppByChannel/InstagramAutomation"));
 const WhatsAppRcs = lazy(() => import("./components/WhatsAppByChannel/WhatsAppRcs"));
-import CardStack from "./components/CardStack";
+// (CardStack was a dead eager import — unused in JSX yet it pulled framer-motion into
+// the entry chunk. Removed.)
 const MetaAds = lazy(() => import("@/components/ServicesOffered/ALL/MetaAds"));
 const VideoEditingPage = lazy(() => import("@/components/ServicesOffered/ALL/VideoEditing"));
 const PhotographyPage = lazy(() => import("@/components/ServicesOffered/ALL/Photography"));
@@ -133,8 +140,8 @@ const LogisticIntegration = lazy(() => import("@/components/ServicesOffered/ALL/
 const MarketPlaceBrandListing = lazy(() => import("@/components/ServicesOffered/ALL/MarketPlaceBrandListing"));
 const AIAutomation = lazy(() => import("./pages/AIAutomation"));
 const ExploreCareer = lazy(() => import("./pages/ExploreCareer"));
-import TechRoles from "./pages/TechRoles"; // ← NEW
-import NGOVideoIntro from "./components/HomePage/NGOVideoIntro";
+const TechRoles = lazy(() => import("./pages/TechRoles"));
+// (NGOVideoIntro was a dead eager import — unused in App. Removed.)
 import Footer from "./components/HomePage/Footer";
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
@@ -155,7 +162,7 @@ const isCleanRoute = (p: string) => CLEAN_ROUTES.includes((p.replace(/\/+$/, '')
 // site), but drops the footer, bottom dock and floating widgets — it has its own
 // clean footer + a single sticky Book/WhatsApp bar.
 function SiteHeader() { return <Header />; }
-function SiteBottomNav() { const { pathname } = useLocation(); return isCleanRoute(pathname) ? null : <BottomNav />; }
+function SiteBottomNav() { const { pathname } = useLocation(); return isCleanRoute(pathname) ? null : <Suspense fallback={null}><BottomNav /></Suspense>; }
 function SiteFooter() { const { pathname } = useLocation(); return isCleanRoute(pathname) ? null : <Footer />; }
 function SiteFloats() {
   const { pathname } = useLocation();

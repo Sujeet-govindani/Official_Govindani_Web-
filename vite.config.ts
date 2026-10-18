@@ -18,6 +18,16 @@ export default defineConfig(({ mode }) => ({
     // lets the browser fetch them in parallel and cache them independently of
     // application code — a content change no longer invalidates the libraries.
     chunkSizeWarningLimit: 1200,
+    // Vite speculatively <link rel=modulepreload>s the vendor deps of the homepage's
+    // below-the-fold lazy sections (framer-motion ~200 KB, recharts ~138 KB, three).
+    // That front-loads ~340 KB during first paint, starving the hero's bandwidth and
+    // pushing out LCP/FCP on throttled mobile. These sections are cv-defer + Suspense
+    // deferred, so let their heavy vendors load when the section actually mounts, not
+    // at initial load. vendor-react / vendor-ui (the shell) stay preloaded.
+    modulepreload: {
+      resolveDependencies: (_url: string, deps: string[]) =>
+        deps.filter((d) => !/vendor-(motion|charts|three)/.test(d)),
+    },
     rollupOptions: {
       output: {
         manualChunks: {
@@ -26,6 +36,7 @@ export default defineConfig(({ mode }) => ({
           "vendor-motion": ["framer-motion", "gsap"],
           "vendor-react": ["react", "react-dom", "react-router-dom"],
           "vendor-ui": ["lucide-react", "embla-carousel-react", "styled-components"],
+          "vendor-icons": ["react-icons"],
         },
       },
     },
