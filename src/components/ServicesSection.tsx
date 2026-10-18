@@ -592,8 +592,6 @@ const ServiceSection = () => {
       </div>
 
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
         .font-baskerville { font-family:'Libre Baskerville',serif; }
         .font-inter       { font-family:'Inter',sans-serif!important; }
