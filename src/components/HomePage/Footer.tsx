@@ -307,7 +307,7 @@ const CAREERS = [
 ];
 
 const CONTACT = [
-  { label: "92019 58271", href: "tel:+919201958271" },
+  { label: "92019 58274", href: "tel:+919201958274" },
   { label: "support@govindaniit.org", href: "mailto:support@govindaniit.org" },
   {
     label: "India: 2nd Floor, Landmark plaza, 206, Satara Rd, Pune, MH 411009",

@@ -115,7 +115,7 @@ const PrivacyPolicy = () => {
         <br />
         <strong>Email:</strong> support@govindaniit.org
         <br />
-        <strong>Phone:</strong> +91 92019 58271
+        <strong>Phone:</strong> +91 92019 58274
       </p>
     </LegalLayout>
   );

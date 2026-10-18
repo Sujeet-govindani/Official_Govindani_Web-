@@ -266,7 +266,7 @@ export const pageSEO = {
   // Contact
   contactUs: {
     title: "Contact Us | Free Consultation",
-    description: "Contact Govindani Infotech for NGO website development, WhatsApp API, digital marketing, and web development services. Free consultation available. Call +91-9201958271.",
+    description: "Contact Govindani Infotech for NGO website development, WhatsApp API, digital marketing, and web development services. Free consultation available. Call +91-9201958274.",
     keywords: "contact Govindani Infotech, free consultation, digital agency Pune, NGO website inquiry, WhatsApp API inquiry",
   },
 

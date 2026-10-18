@@ -18,7 +18,7 @@ const allFAQs = [
   {
     category: "General",
     question: "How can I contact Govindani Infotech?",
-    answer: "You can contact us via phone at +91-9201958271, email at sujeet@govindaniit.org, or through our website contact form. We also offer WhatsApp support for quick inquiries."
+    answer: "You can contact us via phone at +91-9201958274, email at sujeet@govindaniit.org, or through our website contact form. We also offer WhatsApp support for quick inquiries."
   },
   {
     category: "General",
@@ -138,7 +138,7 @@ const allFAQs = [
   {
     category: "Pricing & Process",
     question: "How do I get started?",
-    answer: "Contact us for a free consultation. We'll discuss your requirements, provide a detailed proposal, and once approved, start your project. Call +91-9201958271 or email sujeet@govindaniit.org."
+    answer: "Contact us for a free consultation. We'll discuss your requirements, provide a detailed proposal, and once approved, start your project. Call +91-9201958274 or email sujeet@govindaniit.org."
   },
   {
     category: "Pricing & Process",

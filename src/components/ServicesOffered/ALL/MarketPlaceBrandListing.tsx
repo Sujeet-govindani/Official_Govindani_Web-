@@ -78,7 +78,7 @@
 // const INQUIRY_FIELDS = [
 //   { label: "Full Name", type: "text", placeholder: "Your full name" },
 //   { label: "Business Email", type: "email", placeholder: "you@business.com" },
-//   { label: "Phone Number", type: "tel", placeholder: "+91 92019 58271" },
+//   { label: "Phone Number", type: "tel", placeholder: "+91 92019 58274" },
 //   { label: "Business Name", type: "text", placeholder: "Your company or store name" },
 // ];
 

@@ -8,7 +8,7 @@ export const organizationSchema = {
   "description": "Govindani Infotech builds NGO donation platforms, websites, CRM systems and digital growth solutions for nonprofits and businesses across India. 1000+ websites engineered, 550 of them for non-profits, ₹1100+ crore processed.",
   "foundingDate": "2018",
   "email": "sujeet@govindaniit.org",
-  "telephone": "+91-9201958271",
+  "telephone": "+91-9201958274",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "2nd Floor, Landmark Plaza, 206, Satara Road, Parvati Paytha",
@@ -67,7 +67,7 @@ export const localBusinessSchema = {
   "name": "Govindani Infotech Pvt. Ltd.",
   "image": "https://pub-8d8c06eb82144fca803dab6ccecd7b41.r2.dev/Images/LOGO.webp",
   "url": "https://govindaniit.com",
-  "telephone": "+91-9201958271",
+  "telephone": "+91-9201958274",
   "email": "sujeet@govindaniit.org",
   "priceRange": "$$",
   "address": {

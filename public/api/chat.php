@@ -626,7 +626,7 @@ if (!$isWhatsApp && $gaveJunkNumber && !$refusedOnce) {
         . "complete or correct, and ask once for a working 10-digit mobile. Stay "
         . "warm — people mistype, and some are testing you. If they give you "
         . "nonsense a second time they do not want to share it: drop the subject, "
-        . "give them WhatsApp +91 92019 58271 or +91 92019 58274 and carry on helping. Same language "
+        . "give them WhatsApp +91 92019 58274 or +91 92019 58274 and carry on helping. Same language "
         . "and script as their message.";
 } elseif (!$isWhatsApp && $userTurns >= 3 && !$hasNumber && !$refusedOnce) {
     $leadNudge =
@@ -720,17 +720,17 @@ if ($verdict === 'block') {
         'ಕನ್ನಡ'    => 'ನಾನು Govindani Infotech ಮಾಡುವ ಕೆಲಸದ ಬಗ್ಗೆ ಮಾತ್ರ ಹೇಳಬಲ್ಲೆ — ವೆಬ್‌ಸೈಟ್, ಮೊಬೈಲ್ ಆ್ಯಪ್, e-commerce ಮತ್ತು NGO ಗಾಗಿ Give Setu. ನಿಮಗೆ ಏನು ಬೇಕು?',
     ];
     $stop = [
-        'हिन्दी'   => 'मैं यहीं रुकता हूँ। अगर आपको वेबसाइट, ऐप या Give Setu के बारे में कुछ पूछना है, तो WhatsApp कीजिए +91 92019 58271 or +91 92019 58274.',
-        'मराठी'    => 'मी येथेच थांबतो. वेबसाइट, ॲप किंवा Give Setu बद्दल विचारायचं असेल तर WhatsApp करा +91 92019 58271 or +91 92019 58274.',
-        'ગુજરાતી'  => 'હું અહીં અટકું છું. વેબસાઇટ, એપ કે Give Setu વિશે પૂછવું હોય તો WhatsApp કરો +91 92019 58271 or +91 92019 58274.',
-        'বাংলা'    => 'আমি এখানেই থামছি। ওয়েবসাইট, অ্যাপ বা Give Setu নিয়ে জানতে চাইলে WhatsApp করুন +91 92019 58271 or +91 92019 58274।',
-        'தமிழ்'    => 'நான் இங்கே நிற்கிறேன். இணையதளம், ஆப் அல்லது Give Setu பற்றி கேட்க வேண்டுமானால் WhatsApp செய்யுங்கள் +91 92019 58271 or +91 92019 58274.',
-        'తెలుగు'   => 'నేను ఇక్కడే ఆగుతాను. వెబ్‌సైట్, యాప్ లేదా Give Setu గురించి అడగాలంటే WhatsApp చేయండి +91 92019 58271 or +91 92019 58274.',
-        'ಕನ್ನಡ'    => 'ನಾನು ಇಲ್ಲಿಗೇ ನಿಲ್ಲಿಸುತ್ತೇನೆ. ವೆಬ್‌ಸೈಟ್, ಆ್ಯಪ್ ಅಥವಾ Give Setu ಬಗ್ಗೆ ಕೇಳಬೇಕಿದ್ದರೆ WhatsApp ಮಾಡಿ +91 92019 58271 or +91 92019 58274.',
+        'हिन्दी'   => 'मैं यहीं रुकता हूँ। अगर आपको वेबसाइट, ऐप या Give Setu के बारे में कुछ पूछना है, तो WhatsApp कीजिए +91 92019 58274 or +91 92019 58274.',
+        'मराठी'    => 'मी येथेच थांबतो. वेबसाइट, ॲप किंवा Give Setu बद्दल विचारायचं असेल तर WhatsApp करा +91 92019 58274 or +91 92019 58274.',
+        'ગુજરાતી'  => 'હું અહીં અટકું છું. વેબસાઇટ, એપ કે Give Setu વિશે પૂછવું હોય તો WhatsApp કરો +91 92019 58274 or +91 92019 58274.',
+        'বাংলা'    => 'আমি এখানেই থামছি। ওয়েবসাইট, অ্যাপ বা Give Setu নিয়ে জানতে চাইলে WhatsApp করুন +91 92019 58274 or +91 92019 58274।',
+        'தமிழ்'    => 'நான் இங்கே நிற்கிறேன். இணையதளம், ஆப் அல்லது Give Setu பற்றி கேட்க வேண்டுமானால் WhatsApp செய்யுங்கள் +91 92019 58274 or +91 92019 58274.',
+        'తెలుగు'   => 'నేను ఇక్కడే ఆగుతాను. వెబ్‌సైట్, యాప్ లేదా Give Setu గురించి అడగాలంటే WhatsApp చేయండి +91 92019 58274 or +91 92019 58274.',
+        'ಕನ್ನಡ'    => 'ನಾನು ಇಲ್ಲಿಗೇ ನಿಲ್ಲಿಸುತ್ತೇನೆ. ವೆಬ್‌ಸೈಟ್, ಆ್ಯಪ್ ಅಥವಾ Give Setu ಬಗ್ಗೆ ಕೇಳಬೇಕಿದ್ದರೆ WhatsApp ಮಾಡಿ +91 92019 58274 or +91 92019 58274.',
     ];
     echo json_encode([
         'reply' => $over
-            ? pick($stop, $lang, 'I am going to stop here. If you have a question about a website, an app or Give Setu for your non-profit, WhatsApp us on +91 92019 58271 or +91 92019 58274.')
+            ? pick($stop, $lang, 'I am going to stop here. If you have a question about a website, an app or Give Setu for your non-profit, WhatsApp us on +91 92019 58274 or +91 92019 58274.')
             : pick($offtopic, $lang, 'I can only help with what Govindani Infotech builds — websites, mobile apps, e-commerce and Give Setu for non-profits. Tell me which of those you need and I will take it from there.'),
         'offtopic' => true,
     ], JSON_UNESCAPED_UNICODE);
@@ -744,18 +744,18 @@ $slotFile = "$stateDir/inflight.json";
 $slot = claimSlot($slotFile, MAX_IN_FLIGHT);
 if ($slot === null) {
     $busy = [
-        'हिन्दी'   => 'अभी बहुत लोग सवाल पूछ रहे हैं। एक मिनट में दोबारा भेजिए, या सीधे WhatsApp कीजिए +91 92019 58271 or +91 92019 58274.',
-        'मराठी'    => 'सध्या बरेच लोक विचारत आहेत. एका मिनिटात पुन्हा पाठवा, किंवा थेट WhatsApp करा +91 92019 58271 or +91 92019 58274.',
-        'ગુજરાતી'  => 'હાલ ઘણા લોકો પૂછી રહ્યા છે. એક મિનિટમાં ફરી મોકલો, અથવા સીધા WhatsApp કરો +91 92019 58271 or +91 92019 58274.',
-        'বাংলা'    => 'এখন অনেকে প্রশ্ন করছেন। এক মিনিট পরে আবার পাঠান, বা সরাসরি WhatsApp করুন +91 92019 58271 or +91 92019 58274।',
-        'தமிழ்'    => 'இப்போது நிறைய பேர் கேட்கிறார்கள். ஒரு நிமிடத்தில் மீண்டும் அனுப்புங்கள், அல்லது நேரடியாக WhatsApp செய்யுங்கள் +91 92019 58271 or +91 92019 58274.',
-        'తెలుగు'   => 'ఇప్పుడు చాలా మంది అడుగుతున్నారు. ఒక నిమిషంలో మళ్లీ పంపండి, లేదా నేరుగా WhatsApp చేయండి +91 92019 58271 or +91 92019 58274.',
-        'ಕನ್ನಡ'    => 'ಈಗ ಬಹಳ ಜನ ಕೇಳುತ್ತಿದ್ದಾರೆ. ಒಂದು ನಿಮಿಷದಲ್ಲಿ ಮತ್ತೆ ಕಳುಹಿಸಿ, ಅಥವಾ ನೇರವಾಗಿ WhatsApp ಮಾಡಿ +91 92019 58271 or +91 92019 58274.',
+        'हिन्दी'   => 'अभी बहुत लोग सवाल पूछ रहे हैं। एक मिनट में दोबारा भेजिए, या सीधे WhatsApp कीजिए +91 92019 58274 or +91 92019 58274.',
+        'मराठी'    => 'सध्या बरेच लोक विचारत आहेत. एका मिनिटात पुन्हा पाठवा, किंवा थेट WhatsApp करा +91 92019 58274 or +91 92019 58274.',
+        'ગુજરાતી'  => 'હાલ ઘણા લોકો પૂછી રહ્યા છે. એક મિનિટમાં ફરી મોકલો, અથવા સીધા WhatsApp કરો +91 92019 58274 or +91 92019 58274.',
+        'বাংলা'    => 'এখন অনেকে প্রশ্ন করছেন। এক মিনিট পরে আবার পাঠান, বা সরাসরি WhatsApp করুন +91 92019 58274 or +91 92019 58274।',
+        'தமிழ்'    => 'இப்போது நிறைய பேர் கேட்கிறார்கள். ஒரு நிமிடத்தில் மீண்டும் அனுப்புங்கள், அல்லது நேரடியாக WhatsApp செய்யுங்கள் +91 92019 58274 or +91 92019 58274.',
+        'తెలుగు'   => 'ఇప్పుడు చాలా మంది అడుగుతున్నారు. ఒక నిమిషంలో మళ్లీ పంపండి, లేదా నేరుగా WhatsApp చేయండి +91 92019 58274 or +91 92019 58274.',
+        'ಕನ್ನಡ'    => 'ಈಗ ಬಹಳ ಜನ ಕೇಳುತ್ತಿದ್ದಾರೆ. ಒಂದು ನಿಮಿಷದಲ್ಲಿ ಮತ್ತೆ ಕಳುಹಿಸಿ, ಅಥವಾ ನೇರವಾಗಿ WhatsApp ಮಾಡಿ +91 92019 58274 or +91 92019 58274.',
     ];
     http_response_code(503);
     header('Retry-After: 20');
     echo json_encode([
-        'reply' => pick($busy, $lang, 'A lot of people are asking at once. Send that again in a minute, or reach us directly on WhatsApp +91 92019 58271 or +91 92019 58274.'),
+        'reply' => pick($busy, $lang, 'A lot of people are asking at once. Send that again in a minute, or reach us directly on WhatsApp +91 92019 58274 or +91 92019 58274.'),
         'busy' => true,
     ], JSON_UNESCAPED_UNICODE);
     exit;
@@ -914,7 +914,7 @@ function stripMoney(string $t): string {
     $kept = [];
     foreach ($parts as $sentence) {
         // the WhatsApp number is a phone number, not a price
-        $probe = str_replace(['+91 92019 58271 or +91 92019 58274', '919201958271', '92019 58271'], '', $sentence);
+        $probe = str_replace(['+91 92019 58274 or +91 92019 58274', '919201958274', '92019 58274'], '', $sentence);
         if (!preg_match($money, $probe)) {
             $kept[] = $sentence;
         }
@@ -922,7 +922,7 @@ function stripMoney(string $t): string {
     $out = trim(implode(' ', $kept));
     if ($out === '' || mb_strlen($out) < 40) {
         return 'Pricing is confirmed by our team directly, because it depends on what you '
-             . 'actually need rather than a generic figure. WhatsApp us on +91 92019 58271 or +91 92019 58274 '
+             . 'actually need rather than a generic figure. WhatsApp us on +91 92019 58274 or +91 92019 58274 '
              . 'and someone will give you the right number, or leave your name and mobile '
              . 'here and we will call you.';
     }
@@ -3511,7 +3511,7 @@ UPI
 9826654706@yespay
 Please share the payment confirmation screenshot in your project group after every payment.
 
-Govindani Infotech Pvt. Ltd. · Satara Road, Pune, Maharashtra · govindaniit.com · +91 92019 58271 or +91 92019 58274, 92019 58274
+Govindani Infotech Pvt. Ltd. · Satara Road, Pune, Maharashtra · govindaniit.com · +91 92019 58274 or +91 92019 58274, 92019 58274
 This document is for the client named above. All prices are exclusive of GST at 18% unless stated. Valid 15 days from date of issue.
 Best Regards, Gajendra Govindani — Govindani Infotech Pvt. Ltd.
 
@@ -3521,7 +3521,7 @@ Best Regards, Gajendra Govindani — Govindani Infotech Pvt. Ltd.
 These are not in the quotation because the quotation is a pricing document. They
 are nonetheless true and must not be treated as invented.
 
-- The team is reached on WhatsApp at +91 92019 58271 or +91 92019 58274 (https://wa.me/919201958271)
+- The team is reached on WhatsApp at +91 92019 58274 or +91 92019 58274 (https://wa.me/919201958274)
   and on +91 92019 58274. Both numbers are printed on the quotation letterhead.
 - There is a contact form on the website at /contact-us.
 - Pages on our own site the assistant may link to: /pricing/ngo-os (Give Setu),
@@ -3684,7 +3684,7 @@ QUOTATION. Read them as the ones you are most likely to get wrong.
     and is not ours to say.
 
 19. ALWAYS GIVE BOTH SALES NUMBERS. Whenever you point somebody at WhatsApp or
-    a phone call, give both: +91 92019 58271 and +91 92019 58274. Two people
+    a phone call, give both: +91 92019 58274 and +91 92019 58274. Two people
     answer, and a prospect who tries one number and gets no reply is a prospect
     lost — there is no reason to route everyone at a single handset. Never give
     only one, and never invent a third.
@@ -3874,7 +3874,7 @@ Work you can point people at
 
 The company
 - Govindani Infotech Pvt. Ltd., 2nd Floor, Landmark Plaza, 206 Satara Road,
-  Parvati Paytha, Pune 411009. +91 92019 58271 or +91 92019 58274. govindaniit.com
+  Parvati Paytha, Pune 411009. +91 92019 58274 or +91 92019 58274. govindaniit.com
 - About the company /about-us/about-company · the founder, Sujeet Govindani,
   /about-us/about-founder · careers /careers · contact /contact-us
 - Data is held in India. Funds settle from the gateway straight to the client's
@@ -3996,7 +3996,7 @@ something. Vary the wording, never the shape: give first, then ask.
 Read the room. Someone three questions deep into overage arithmetic is
 evaluating, and asking is welcome. Someone who has asked one thing is not, and
 asking makes you a nuisance. If they say no, or ignore it, do not ask again —
-give them WhatsApp +91 92019 58271 or +91 92019 58274 and the contact form and carry on helping.
+give them WhatsApp +91 92019 58274 or +91 92019 58274 and the contact form and carry on helping.
 
 THE MOMENT you have a name AND a mobile number, end your reply with this exact
 line, on its own, after your normal text:
@@ -4005,7 +4005,7 @@ Write that line only when you genuinely have both. It is removed before the
 visitor sees your reply — it is how a human gets told to call them.
 
 If they refuse to share a number, do not ask twice. Give them
-WhatsApp +91 92019 58271 or +91 92019 58274 and the contact form and leave it there.
+WhatsApp +91 92019 58274 or +91 92019 58274 and the contact form and leave it there.
 
 OFFERING CHOICES INSTEAD OF QUESTIONS.
 People answer buttons faster than they answer questions. When a question would

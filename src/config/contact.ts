@@ -8,13 +8,13 @@
  */
 
 /** WhatsApp business line, international format, no '+' or spaces. */
-export const WHATSAPP_NUMBER = "919201958271";
+export const WHATSAPP_NUMBER = "919201958274";
 
 /** Voice line, in the format tel: expects. */
-export const PHONE_TEL = "+919201958271";
+export const PHONE_TEL = "+919201958274";
 
 /** Voice line, formatted for display. */
-export const PHONE_DISPLAY = "+91 92019 58271";
+export const PHONE_DISPLAY = "+91 92019 58274";
 
 /**
  * WhatsApp BOT line (+91 92019 58278) — the number wired to our automated
