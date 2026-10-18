@@ -1424,3 +1424,15 @@ element.style {
   :root { --pill-h: 60px; --logo-h: 48px; --logo-w: 95px; }
 }
 
+/* Hero (#home) fixed height — kills the page "drag"/jump when the hero rotates
+   between its themed slides. The slides have very different natural heights
+   (desktop 701–774, tablet 573–1067, mobile 800–862), and the section used
+   min-height:auto on desktop/tablet, so the whole page shifted every rotation.
+   Each value below is that breakpoint's TALLEST slide + a small buffer, so no
+   slide ever exceeds it and the container height is constant for all three.
+   CSS-driven (not the JS screen state) → correct at first paint, no hydration jump.
+   Breakpoints match the hero: desktop ≥1024, tablet 768–1023, mobile <768. */
+:root { --hero-h: 810px; }
+@media (max-width: 1023px) { :root { --hero-h: 1100px; } }
+@media (max-width: 767px)  { :root { --hero-h: 890px; } }
+
