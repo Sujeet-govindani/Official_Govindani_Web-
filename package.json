@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "python3 tools/seo/gen_blog_faq.py",
+    "prebuild": "python3 tools/seo/gen_blog_faq.py && python3 tools/seo/gen_llms.py",
     "build": "vite build",
     "postbuild": "node prerender.mjs --timeout 90000 && python3 tools/blog/prune_scheduled.py && python3 tools/seo/gen_sitemap.py && { python3 tools/blog/compact_schedule.py --check || true; }",
     "blog:compact": "python3 tools/blog/compact_schedule.py --apply",
