@@ -42,7 +42,7 @@ IDX = ROOT / "src" / "data" / "blogIndex.ts"
 
 # Slots per weekday. This MUST be >= the writer's output rate or the queue can
 # only grow. The writer currently emits ~33 posts/week; 5 weekdays x 7 = 35.
-PER_DAY = 7
+PER_DAY = 10
 # Anything scheduled further out than this is a runaway queue, not scheduling.
 MAX_LEAD_DAYS = 45
 
