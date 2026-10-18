@@ -1543,7 +1543,11 @@ const HeroCarousel = () => {
                             </div>
                         </div>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: tab ? '11px' : '14px', alignItems: 'stretch', animation: 'ngo_in .65s ease-out .05s both' }}>
-                            <NGOPersonCollage height={tab ? 290 : 430} radius={16} />
+                            {/* Aspect-ratio (not a fixed height) so the collage scales with its
+                                column width and keeps the SAME desktop proportion down through
+                                tablet — the figures never get cropped (a fixed short height was
+                                clipping faces on tablet). 0.572 = the desktop collage's own ratio. */}
+                            <NGOPersonCollage height={430} radius={16} ratio={0.572} />
                             <PeopleBoxes />
                         </div>
                     </div>

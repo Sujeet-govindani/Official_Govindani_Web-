@@ -1438,6 +1438,6 @@ element.style {
    native app hero) with a content floor so short phones never clip. Applied as
    min-height only (never a hard height) so it can only ever grow, never crop. */
 :root { --hero-h: 990px; }                                   /* desktop ≥1024 (narrow-edge 978) */
-@media (max-width: 1023px) { :root { --hero-h: 950px; } }     /* tablet 768–1023 (narrow-edge 933) */
+@media (max-width: 1023px) { :root { --hero-h: 1080px; } }    /* tablet 768–1023 (narrow-edge 1054, uncropped collage) */
 @media (max-width: 767px)  { :root { --hero-h: max(calc(100svh - 57px), 900px); } } /* mobile: fill screen, floor 900 */
 
