@@ -21,7 +21,8 @@ export const organizationSchema = {
     "https://www.linkedin.com/company/govindani-infotech",
     "https://www.instagram.com/govindani_infotech_pvt_ltd/",
     "https://www.facebook.com/people/Govindani-Infotech/100089453446845/",
-    "https://www.youtube.com/channel/UCMPVJv_auCr-TAQiPFX1KZg"
+    "https://www.youtube.com/channel/UCMPVJv_auCr-TAQiPFX1KZg",
+    "https://www.google.com/maps?cid=14843749412335270204"
   ],
   "areaServed": {
     "@type": "Country",
