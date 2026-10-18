@@ -30,18 +30,24 @@ const Index = () => {
             paint for each below-the-fold section until it's scrolled near — the
             single biggest cut to the mobile Style & Layout / Rendering cost on
             this long, animation-heavy page. */}
+        {/* content-visibility:auto reserves contain-intrinsic-size until a section is
+            scrolled near. A blanket 800px was wildly off (real heights 530–2840px),
+            so each section jumped when revealed — the main cause of the field CLS
+            (desktop CrUX was SLOW at 0.80 while lab read 0.002, because Lighthouse
+            never scrolls). Each reserve below is that section's measured height; the
+            `auto` keyword still lets the browser store the exact size after first paint. */}
         <Suspense fallback={null}>
-          <div className="cv-defer"><CredibilityBanners /></div>
-          <div className="cv-defer"><VideoSection /></div>
-          <div className="cv-defer"><LatestWork /></div>
-          <div className="cv-defer"><ServicesSection /></div>
-          <div className="cv-defer"><ClientTestimonialSection /></div>
-          <div className="cv-defer"><GoogleReviews /></div>
-          <div className="cv-defer"><AboutUsSection /></div>
-          <div className="cv-defer"><TextServicesSection /></div>
-          <div className="cv-defer"><FunkyHinglishSection /></div>
-          <div className="cv-defer"><PortfolioSection /></div>
-          <div className="cv-defer"><PortfolioShowcase /></div>
+          <div className="cv-defer" style={{ containIntrinsicSize: 'auto 560px' }}><CredibilityBanners /></div>
+          <div className="cv-defer" style={{ containIntrinsicSize: 'auto 640px' }}><VideoSection /></div>
+          <div className="cv-defer" style={{ containIntrinsicSize: 'auto 1200px' }}><LatestWork /></div>
+          <div className="cv-defer" style={{ containIntrinsicSize: 'auto 2840px' }}><ServicesSection /></div>
+          <div className="cv-defer" style={{ containIntrinsicSize: 'auto 560px' }}><ClientTestimonialSection /></div>
+          <div className="cv-defer" style={{ containIntrinsicSize: 'auto 1050px' }}><GoogleReviews /></div>
+          <div className="cv-defer" style={{ containIntrinsicSize: 'auto 1280px' }}><AboutUsSection /></div>
+          <div className="cv-defer" style={{ containIntrinsicSize: 'auto 840px' }}><TextServicesSection /></div>
+          <div className="cv-defer" style={{ containIntrinsicSize: 'auto 540px' }}><FunkyHinglishSection /></div>
+          <div className="cv-defer" style={{ containIntrinsicSize: 'auto 1800px' }}><PortfolioSection /></div>
+          <div className="cv-defer" style={{ containIntrinsicSize: 'auto 1920px' }}><PortfolioShowcase /></div>
         </Suspense>
       </main>
     </div>
