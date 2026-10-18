@@ -1432,7 +1432,12 @@ element.style {
    slide ever exceeds it and the container height is constant for all three.
    CSS-driven (not the JS screen state) → correct at first paint, no hydration jump.
    Breakpoints match the hero: desktop ≥1024, tablet 768–1023, mobile <768. */
-:root { --hero-h: 810px; }
-@media (max-width: 1023px) { :root { --hero-h: 930px; } }
-@media (max-width: 767px)  { :root { --hero-h: 890px; } }
+/* Each value = the TALLEST slide at that breakpoint's NARROWEST width (content wraps
+   taller as the viewport narrows), so the hero never clips anywhere in the range and
+   stays constant across slides (no rotation jump). Mobile fills the viewport (like a
+   native app hero) with a content floor so short phones never clip. Applied as
+   min-height only (never a hard height) so it can only ever grow, never crop. */
+:root { --hero-h: 990px; }                                   /* desktop ≥1024 (narrow-edge 978) */
+@media (max-width: 1023px) { :root { --hero-h: 950px; } }     /* tablet 768–1023 (narrow-edge 933) */
+@media (max-width: 767px)  { :root { --hero-h: max(calc(100svh - 57px), 900px); } } /* mobile: fill screen, floor 900 */
 
