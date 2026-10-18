@@ -182,6 +182,10 @@
          untracked. Fires exactly once. -->
     <script>
       (function () {
+        // Never run during pre-rendering: headless Chrome reports the page as hidden and
+        // fires pagehide on close, which would trigger the loader and BAKE gtag/fbevents
+        // into the captured static HTML as eager scripts (defeating the whole defer).
+        if (navigator.userAgent.indexOf('HeadlessChrome') > -1) return;
         var loaded = false;
         var EVENTS = ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'];
         function load() {
