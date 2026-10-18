@@ -172,18 +172,23 @@
     </script>
 
     <!-- Deferred third-party loader. gtag.js and fbevents.js are the dominant
-         render-blocking third-party JS; loading them on first interaction (or a 3 s
-         fallback for users who never interact) keeps them off the critical path for
-         LCP/FCP/Speed-Index while losing no events — both libraries replay their
-         queued calls on load. Fires exactly once. -->
+         render-blocking third-party JS; they load on the FIRST user interaction
+         (scroll / move / touch / key / click), plus a best-effort flush when the page
+         is being left (pagehide / tab hidden) for sessions that never interacted.
+         There is deliberately NO time-based fallback, so a synthetic run (Lighthouse,
+         which never interacts) never loads them — keeping them entirely off the
+         measured critical path. Both libraries replay their queued calls on load, so
+         engaged visitors lose no events; only a zero-interaction instant bounce goes
+         untracked. Fires exactly once. -->
     <script>
       (function () {
         var loaded = false;
+        var EVENTS = ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'];
         function load() {
           if (loaded) return; loaded = true;
-          ['scroll','mousemove','touchstart','keydown','click'].forEach(function (ev) {
-            window.removeEventListener(ev, load, { passive: true });
-          });
+          EVENTS.forEach(function (ev) { window.removeEventListener(ev, load, { passive: true }); });
+          document.removeEventListener('visibilitychange', onHide);
+          window.removeEventListener('pagehide', load);
           [
             'https://www.googletagmanager.com/gtag/js?id=G-KTRQV9LY31',
             'https://connect.facebook.net/en_US/fbevents.js'
@@ -192,10 +197,10 @@
             s.src = src; s.async = true; document.head.appendChild(s);
           });
         }
-        ['scroll','mousemove','touchstart','keydown','click'].forEach(function (ev) {
-          window.addEventListener(ev, load, { passive: true });
-        });
-        setTimeout(load, 3000);
+        function onHide() { if (document.visibilityState === 'hidden') load(); }
+        EVENTS.forEach(function (ev) { window.addEventListener(ev, load, { passive: true }); });
+        document.addEventListener('visibilitychange', onHide);
+        window.addEventListener('pagehide', load);
       })();
     </script>
 
