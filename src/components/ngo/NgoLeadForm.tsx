@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback, useLayoutEffect } from 'react';
 import { createPortal } from 'react-dom';
+import { submitWebsiteIntake } from '@/api/websiteIntake';
 
 /**
  * Enquiry popup for /ngoindia — one question per screen.
@@ -143,30 +144,42 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
     setAgent(who);
     setBusy(true);
     try {
-      await fetch(SHEET_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        body: JSON.stringify({
-          name: f.name,
-          phone: f.phone,
-          email: f.email,
-          experience: f.city,
-          subject: `NGO website enquiry — ${pick.need}`,
-          message: [
-            `Requirement: ${pick.need}`,
-            `Existing website: ${pick.has}`,
-            `Budget (₹40,000): ${pick.budget}`,
-            `WhatsApp: ${wa}`,
-            `City: ${f.city}`,
-            `Assigned to: ${who.name}`,
-          ].join('\n'),
-          whatsapp: wa, city: f.city,
-          requirement: pick.need, hasWebsite: pick.has, budget: pick.budget,
-          source: '/ngoindia',
-          agent: who.name,          // who owns this lead
-          sheet: who.sheet,         // the tab the Apps Script should append to
-        }),
-      });
+      const message = [
+        `Requirement: ${pick.need}`,
+        `Existing website: ${pick.has}`,
+        `Budget (₹40,000): ${pick.budget}`,
+        `WhatsApp: ${wa}`,
+        `City: ${f.city}`,
+        `Assigned to: ${who.name}`,
+      ].join('\n');
+      // Primary: CRM Website Intake API — creates/updates a real lead, round-robin
+      // assignment and a 24h initial-call task. Falls back to the Google Apps Script
+      // sheet if the endpoint is unavailable, so a lead is never lost.
+      try {
+        await submitWebsiteIntake({
+          name: f.name, phone: f.phone, whatsapp: wa, email: f.email, city: f.city,
+          requirement: pick.need, has_website: pick.has, budget: pick.budget,
+          message,
+          source: 'NGO Portfolio India (/ngoindia)',
+          sheet: 'NGO Lead Form',
+          assigned_to: who.sheet,   // Lucky / Sarita (round-robin picked above)
+        });
+      } catch {
+        await fetch(SHEET_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          body: JSON.stringify({
+            name: f.name, phone: f.phone, email: f.email, experience: f.city,
+            subject: `NGO website enquiry — ${pick.need}`,
+            message,
+            whatsapp: wa, city: f.city,
+            requirement: pick.need, hasWebsite: pick.has, budget: pick.budget,
+            source: '/ngoindia',
+            agent: who.name,
+            sheet: who.sheet,
+          }),
+        });
+      }
       setDone(true);
     } catch {
       setErr('Could not send just now. Please WhatsApp us on +91 92019 58273.');
