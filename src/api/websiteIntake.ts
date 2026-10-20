@@ -3,7 +3,7 @@
 // enquiry against an existing one (200). No credentials are sent — the endpoint is
 // public and rate-limited server-side. Base URL comes from VITE_BASE_URL, with the
 // production CRM host as the default so the build works without an env file.
-const BASE = (import.meta.env.VITE_BASE_URL || 'https://api.govindaniit.org').replace(/\/+$/, '');
+const BASE = (import.meta.env.VITE_BASE_URL || 'https://crm.hisabit.tech').replace(/\/+$/, '');
 
 export interface WebsiteIntakePayload {
   name: string;
