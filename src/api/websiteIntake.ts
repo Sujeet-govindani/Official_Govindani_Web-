@@ -18,6 +18,23 @@ export interface WebsiteIntakePayload {
   source?: string;
   sheet?: string;
   assigned_to?: 'Lucky' | 'Gajendra' | 'Sarita' | string;
+  visitor_id?: string;   // gi_vid — lets the CRM stitch the visitor's journey onto this lead
+  // Meta attribution context (all optional). The CRM stores these on the lead and uses them for the
+  // server-side Lead event, every later CRM-stage event, and per-ad reporting.
+  meta_event_id?: string;
+  meta_fbp?: string;
+  meta_fbc?: string;
+  meta_fbclid?: string;
+  meta_user_agent?: string;
+  meta_page_url?: string;
+  meta_ad_id?: string;
+  meta_adset_id?: string;
+  meta_campaign_id?: string;
+  meta_ad_name?: string;
+  meta_utm_source?: string;
+  meta_utm_medium?: string;
+  meta_utm_campaign?: string;
+  meta_utm_content?: string;
 }
 
 export interface WebsiteIntakeResult {

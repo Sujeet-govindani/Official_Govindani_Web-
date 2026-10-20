@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef, useCallback, useLayoutEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { submitWebsiteIntake } from '@/api/websiteIntake';
+import { track, getVisitorId } from '@/lib/track';
+import { metaContext, trackLead, normalisePhoneIN } from '@/lib/metaTracking';
 
 /**
  * Enquiry popup for /ngoindia — one question per screen.
@@ -111,6 +113,10 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
     return () => { ro?.disconnect(); window.removeEventListener('resize', measure); };
   }, [open, step, sameWa, err, busy]);
 
+  // Analytics: form opened (a quote-intent CTA) and per-step progress / drop-off.
+  useEffect(() => { if (open) track('cta_click', { cta: 'get_quote' }); }, [open]);
+  useEffect(() => { if (open) track('form_step', { step: step + 1 }); }, [open, step]);
+
   useEffect(() => {
     if (!open) return;
     const prev = document.body.style.overflow;
@@ -135,11 +141,13 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
     e.preventDefault();
     setErr('');
     if (f.name.trim().length < 2) return setErr('Please enter your full name.');
-    if (f.phone.replace(/\D/g, '').length < 10) return setErr('Please enter a valid phone number.');
+    const phone = normalisePhoneIN(f.phone);
+    if (!phone) return setErr('Please enter a valid 10-digit mobile number.');
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email)) return setErr('Please enter a valid email address.');
     if (!f.city.trim()) return setErr('Please enter your city.');
 
-    const wa = (sameWa ? f.phone : f.whatsapp) || f.phone;
+    const wa = normalisePhoneIN(sameWa ? f.phone : f.whatsapp) || phone;
+    const meta = metaContext();   // event id + fbp/fbc + ad ids, shared by the browser and CRM Lead events
     const who = nextAgent();
     setAgent(who);
     setBusy(true);
@@ -155,21 +163,25 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
       // Primary: CRM Website Intake API — creates/updates a real lead, round-robin
       // assignment and a 24h initial-call task. Falls back to the Google Apps Script
       // sheet if the endpoint is unavailable, so a lead is never lost.
+      let created = true;
       try {
-        await submitWebsiteIntake({
-          name: f.name, phone: f.phone, whatsapp: wa, email: f.email, city: f.city,
+        const res = await submitWebsiteIntake({
+          name: f.name, phone, whatsapp: wa, email: f.email, city: f.city,
           requirement: pick.need, has_website: pick.has, budget: pick.budget,
           message,
           source: 'NGO India Website',   // CRM funnel label (per CRM intake contract)
           sheet: 'ngoindia-quote',       // form identifier the auto-dialer keys on
           assigned_to: who.sheet,   // Lucky / Sarita (round-robin picked above)
+          visitor_id: getVisitorId(),  // stitch this lead to the visitor's tracked journey
+          ...meta,
         });
+        created = res.data.created !== false;   // 200 {created:false} = repeat enquiry, not a new Lead
       } catch {
         await fetch(SHEET_URL, {
           method: 'POST',
           mode: 'no-cors',
           body: JSON.stringify({
-            name: f.name, phone: f.phone, email: f.email, experience: f.city,
+            name: f.name, phone, email: f.email, experience: f.city,
             subject: `NGO website enquiry — ${pick.need}`,
             message,
             whatsapp: wa, city: f.city,
@@ -180,6 +192,8 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
           }),
         });
       }
+      track('lead_submit', { requirement: pick.need, has_website: pick.has, budget: pick.budget });
+      if (created) trackLead(meta.meta_event_id);   // fires only after the lead really went through
       setDone(true);
     } catch {
       setErr('Could not send just now. Please WhatsApp us on +91 92019 58274.');

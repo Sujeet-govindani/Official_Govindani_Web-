@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { HelmetProvider } from "react-helmet-async";
 // import { Toaster } from "@/components/ui/toaster";
 // import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Routes, Route, BrowserRouter, useLocation, Navigate } from "react-router-dom";
 
 import { ScrollToTop } from "./components/ScrollToTop";
+import { initTracking, trackPageView } from "./lib/track";
 import LangSync from "./i18n/LangSync";
 import Seo from "./seo/Seo";
 import LazyVideos from "./perf/LazyVideos";
@@ -178,10 +179,19 @@ function SiteFloats() {
   );
 }
 
+// First-party analytics: init once, send a page_view on every SPA route change.
+function RouteTracker() {
+  const loc = useLocation();
+  useEffect(() => { initTracking(); }, []);
+  useEffect(() => { trackPageView(); }, [loc.pathname]);
+  return null;
+}
+
 const App = () => (
   <HelmetProvider>
   <QueryClientProvider client={queryClient}>
     <BrowserRouter>
+      <RouteTracker />
       <Seo />
       <LazyVideos />
       <TooltipProvider>

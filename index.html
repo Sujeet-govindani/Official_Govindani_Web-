@@ -159,16 +159,15 @@
           imagesizes="(max-width: 640px) 60vw, (max-width: 1024px) 40vw, 30vw" />
 
     <!-- Meta Pixel — ad attribution for the paid landing pages.
-         The Lead event listens on the capture phase so it catches every form
-         on the site, including the /ngoindia enquiry popup, which submits
-         a real form element rather than a click handler. -->
+         The Lead event is NOT fired here: a catch-all submit listener also counted
+         rejected/invalid attempts. NgoLeadForm calls trackLead() after the lead is
+         accepted, with an eventID that matches the CRM's server-side Lead event. -->
     <script>
       // Meta Pixel stub only — the fbevents.js network script (~255 KB with its config)
       // is injected by the deferred loader below, not here. The fbq() queue captures
       // init + PageView + Lead immediately and flushes once fbevents.js loads.
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[]}(window,document,'script');
       fbq('init','1351631835898180'); fbq('track','PageView');
-      document.addEventListener('submit', function(){ fbq('track','Lead'); }, true);
     </script>
 
     <!-- Deferred third-party loader. gtag.js and fbevents.js are the dominant
