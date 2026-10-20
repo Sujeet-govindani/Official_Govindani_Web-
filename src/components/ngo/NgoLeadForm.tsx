@@ -160,8 +160,8 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
           name: f.name, phone: f.phone, whatsapp: wa, email: f.email, city: f.city,
           requirement: pick.need, has_website: pick.has, budget: pick.budget,
           message,
-          source: 'NGO Portfolio India (/ngoindia)',
-          sheet: 'NGO Lead Form',
+          source: 'NGO India Website',   // CRM funnel label (per CRM intake contract)
+          sheet: 'ngoindia-quote',       // form identifier the auto-dialer keys on
           assigned_to: who.sheet,   // Lucky / Sarita (round-robin picked above)
         });
       } catch {
@@ -182,7 +182,7 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
       }
       setDone(true);
     } catch {
-      setErr('Could not send just now. Please WhatsApp us on +91 92019 58273.');
+      setErr('Could not send just now. Please WhatsApp us on +91 92019 58274.');
     } finally {
       setBusy(false);
     }
