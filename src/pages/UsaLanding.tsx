@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
-import { NGO, ECOM, HEALTH, BUSINESS, OTHERS, ALL, US_NGO, type Work } from '@/data/usaWork';
+import { NGO, ECOM, HEALTH, BUSINESS, OTHERS, US_NGO, type Work } from '@/data/usaWork';
 import UsaLeadForm from '@/components/usa/UsaLeadForm';
 import '@/styles/usa.css';
 
@@ -164,9 +164,9 @@ const TRUST: { ic: string; t: string; meta?: boolean }[] = [
 
 export default function UsaLanding() {
   const interest: Interest = 'ngo';   // /usa is NGO-only — no interest popup / toggle
-  // Library is permanent (never closes) — defaults to the full ALL list; category
+  // Library is permanent (never closes) — defaults to the NGO list; category
   // "View all" buttons just swap which set it shows.
-  const [viewAll, setViewAll] = useState<{ label: string; items: Work[] }>({ label: 'All our websites', items: ALL });
+  const [viewAll, setViewAll] = useState<{ label: string; items: Work[] }>({ label: 'Our NGO websites', items: NGO });
   const STEP = 15;
   const [shown, setShown] = useState(STEP);
   const [formOpen, setFormOpen] = useState(false);
@@ -359,7 +359,7 @@ export default function UsaLanding() {
             <h3>1000+ websites built &mdash; explore the library</h3>
             <p>NGOs, online stores, clinics, real estate, corporates &amp; more &mdash; a sample of what we&rsquo;ve delivered.</p>
           </div>
-          <button type="button" className="gusa-btn" onClick={() => openAll(`Our work`, ALL)}>Browse our work &rarr;</button>
+          <button type="button" className="gusa-btn" onClick={() => openAll('Our NGO websites', NGO)}>Browse our NGO work &rarr;</button>
         </div>
 
         {/* inline library — auto-feeds more as you scroll (no pages, no gaps) */}
