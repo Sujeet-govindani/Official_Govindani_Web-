@@ -80,6 +80,7 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
   const [busy, setBusy] = useState(false);
   const [done, setDone] = useState(false);
   const [agent, setAgent] = useState<(typeof AGENTS)[number]>(AGENTS[0]);
+  const [waText, setWaText] = useState('');   // prefilled WhatsApp message with the lead's own details
   const panelRef = useRef<HTMLDivElement>(null);
   const railRef = useRef<HTMLDivElement>(null);
   const [viewH, setViewH] = useState<number | undefined>(undefined);
@@ -150,6 +151,13 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
     const meta = metaContext();   // event id + fbp/fbc + ad ids, shared by the browser and CRM Lead events
     const who = nextAgent();
     setAgent(who);
+    // Pre-fill the WhatsApp message with everything the lead entered, so one tap sends
+    // their full details to the assigned (round-robin) agent.
+    setWaText(
+      `Hi! I just filled your NGO website enquiry. My details —\n` +
+      `Name: ${f.name}\nPhone: ${phone}\nEmail: ${f.email}\nCity: ${f.city}\n` +
+      `Requirement: ${pick.need}\nExisting website: ${pick.has}\nBudget (₹40,000): ${pick.budget}`,
+    );
     setBusy(true);
     try {
       const message = [
@@ -220,12 +228,10 @@ export default function NgoLeadForm({ open, onClose }: { open: boolean; onClose:
             </p>
             <a
               className="gnf-send"
-              href={`https://wa.me/${agent.wa}?text=${encodeURIComponent(
-                'Hi, I want to get more details about the NGO website.',
-              )}`}
+              href={`https://wa.me/${agent.wa}?text=${encodeURIComponent(waText)}`}
               target="_blank" rel="noopener noreferrer"
             >
-              Message our team on WhatsApp now →
+              Send my details on WhatsApp now →
             </a>
           </div>
         ) : (
