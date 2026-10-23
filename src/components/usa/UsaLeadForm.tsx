@@ -186,6 +186,18 @@ export default function UsaLeadForm({ open, onClose }: { open: boolean; onClose:
     const meetNice = meetDate && meetTime
       ? `${new Date(meetDate + 'T00:00').toLocaleDateString(undefined, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })} · ${meetTime}`
       : 'Not specified';
+    // Machine-readable slot in the CUSTOMER's local time + their IANA timezone, so the CRM converts
+    // the meeting to the agent's IST exactly (never guesses). e.g. "2026-10-30T14:30" + "America/New_York".
+    const slotTo24 = (slot: string): string => {
+      const m = slot.trim().match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+      if (!m) return '';
+      let h = parseInt(m[1], 10);
+      if (/pm/i.test(m[3]) && h !== 12) h += 12;
+      if (/am/i.test(m[3]) && h === 12) h = 0;
+      return `${String(h).padStart(2, '0')}:${m[2]}`;
+    };
+    const meetingLocal = meetDate && meetTime && slotTo24(meetTime) ? `${meetDate}T${slotTo24(meetTime)}` : '';
+    const meetingTz = (() => { try { return Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch { return ''; } })();
     const fnStr = funcs.length ? funcs.join(', ') : 'Not specified';
     setWaText(
       `Hi! I just filled your NGO website enquiry. My details —\n` +
@@ -217,6 +229,8 @@ export default function UsaLeadForm({ open, onClose }: { open: boolean; onClose:
           sheet: 'usa-quote',
           assigned_to: who.sheet,
           visitor_id: getVisitorId(),
+          meeting_local: meetingLocal,
+          meeting_tz: meetingTz,
           ...meta,
         });
         created = res.data.created !== false;

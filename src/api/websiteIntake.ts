@@ -35,6 +35,11 @@ export interface WebsiteIntakePayload {
   meta_utm_medium?: string;
   meta_utm_campaign?: string;
   meta_utm_content?: string;
+  // USA funnel: the customer picks a meeting slot in THEIR local time. Send it machine-readable
+  // (wall-clock, no offset) plus the browser's IANA timezone so the CRM converts it to the agent's
+  // IST correctly. e.g. meeting_local "2026-10-30T14:30", meeting_tz "America/New_York".
+  meeting_local?: string;
+  meeting_tz?: string;
 }
 
 export interface WebsiteIntakeResult {
