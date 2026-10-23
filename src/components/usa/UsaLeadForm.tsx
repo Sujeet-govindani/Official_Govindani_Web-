@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { submitWebsiteIntake } from '@/api/websiteIntake';
 import { track, getVisitorId } from '@/lib/track';
 import { metaContext, trackLead } from '@/lib/metaTracking';
+import '@/styles/ngo-india.css';   // the gnf-* modal styles live here (shared with the NGO India form)
 
 /**
  * Enquiry popup for /usa (US & international clients) — same proven flow as the
