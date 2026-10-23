@@ -1,6 +1,7 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { NGO, ECOM, HEALTH, BUSINESS, OTHERS, ALL, US_NGO, type Work } from '@/data/usaWork';
+import UsaLeadForm from '@/components/usa/UsaLeadForm';
 import '@/styles/usa.css';
 
 /**
@@ -178,6 +179,8 @@ export default function UsaLanding() {
   const [viewAll, setViewAll] = useState<{ label: string; items: Work[] }>({ label: 'All our websites', items: ALL });
   const STEP = 15;
   const [shown, setShown] = useState(STEP);
+  const [formOpen, setFormOpen] = useState(false);
+  const openForm = useCallback(() => setFormOpen(true), []);
   const feedRef = useRef<HTMLDivElement>(null);
   const openAll = useCallback((label: string, items: Work[]) => {
     setViewAll({ label, items }); setShown(STEP);
@@ -249,7 +252,7 @@ export default function UsaLanding() {
             <div className="gusa-incl-card" key={t}><span className="gusa-incl-ic">{ic}</span><div><h4>{t}</h4><p>{d}</p></div></div>
           ))}
         </div>
-        <button type="button" className="gusa-btn" onClick={openCalendly}>Get your NGO website &rarr;</button>
+        <button type="button" className="gusa-btn" onClick={openForm}>Get your NGO website &rarr;</button>
       </div>
     </section>
   );
@@ -276,7 +279,7 @@ export default function UsaLanding() {
             <div className="gusa-incl-card" key={t}><span className="gusa-incl-ic">{ic}</span><div><h4>{t}</h4><p>{d}</p></div></div>
           ))}
         </div>
-        <button type="button" className="gusa-btn" onClick={openCalendly}>Build my store &rarr;</button>
+        <button type="button" className="gusa-btn" onClick={openForm}>Build my store &rarr;</button>
       </div>
     </section>
   );
@@ -427,7 +430,7 @@ export default function UsaLanding() {
               <button type="button" className="gusa-btn gusa-btn-ghost" onClick={() => setShown((s) => Math.min(viewAll.items.length, s + STEP))}>Load more websites &darr;</button>
             </div>
           )}
-          <div className="gusa-all-cta"><button type="button" className="gusa-btn" onClick={openCalendly}>Get a website like these &rarr;</button></div>
+          <div className="gusa-all-cta"><button type="button" className="gusa-btn" onClick={openForm}>Get a website like these &rarr;</button></div>
         </div>
       </section>
 
@@ -551,6 +554,7 @@ export default function UsaLanding() {
         document.body,
       )}
 
+      <UsaLeadForm open={formOpen} onClose={() => setFormOpen(false)} />
     </div>
   );
 }
