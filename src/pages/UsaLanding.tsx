@@ -505,7 +505,7 @@ export default function UsaLanding() {
       {/* mobile sticky book bar */}
       <div className="gusa-sticky">
         <a className="gusa-sticky-wa" href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">&#128172;</a>
-        <button type="button" className="gusa-sticky-book" onClick={openForm}>Get a free quote</button>
+        <button type="button" className="gusa-sticky-book" onClick={openForm}>Get NGO website for just $1,000</button>
       </div>
 
       {/* desktop floating book-a-call button (always visible) */}
