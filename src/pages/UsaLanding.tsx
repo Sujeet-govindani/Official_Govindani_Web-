@@ -9,12 +9,11 @@ import '@/styles/usa.css';
  * Standalone: the global site header/bottom-nav are hidden on this route.
  *
  * Flow: an interest popup on arrival (NGO / E-commerce / Both) tailors which
- * offer blocks + work carousels lead. Every "Book" CTA opens the Calendly
- * popup (no cheap inline widget). Carousels auto-scroll; "View all" opens a
+ * offer blocks + work carousels lead. Every CTA opens the CRM lead form
+ * (UsaLeadForm, same flow as NGO India). Carousels auto-scroll; "View all" opens a
  * full grid per category.
  */
 
-const CALENDLY_URL = 'https://calendly.com/sujeet-govindaniit/30min';
 const WA = '919201958273';
 const R2 = 'https://gi-img-cdn.sujeet.workers.dev/Images';
 const INTEREST_KEY = 'gi_usa_interest';
@@ -42,12 +41,6 @@ function cardTap(e: React.MouseEvent<HTMLAnchorElement>) {
   }
 }
 
-// All "Book" CTAs open the Calendly popup (fast, no long scroll to a far-down form).
-function openCalendly() {
-  const C = (window as unknown as { Calendly?: { initPopupWidget: (o: { url: string }) => void } }).Calendly;
-  if (C) C.initPopupWidget({ url: CALENDLY_URL });
-  else window.open(CALENDLY_URL, '_blank', 'noopener,noreferrer');
-}
 
 /* ---- auto-scrolling marquee carousel (pauses on hover) ---- */
 function Marquee({ items, onViewAll, label }: { items: Work[]; onViewAll: () => void; label: string }) {
@@ -198,13 +191,6 @@ export default function UsaLanding() {
   }, [viewAll, shown]);
 
   useEffect(() => {
-    // Calendly popup assets
-    const css = document.createElement('link');
-    css.rel = 'stylesheet'; css.href = 'https://assets.calendly.com/assets/external/widget.css';
-    document.head.appendChild(css);
-    const s = document.createElement('script');
-    s.src = 'https://assets.calendly.com/assets/external/widget.js'; s.async = true;
-    document.body.appendChild(s);
     // remembered interest, else ask — but never during prerender (headless =
     // navigator.webdriver), so the popup is not baked into the static HTML as a
     // dead, non-interactive overlay. Real visitors get it client-side.
@@ -213,7 +199,6 @@ export default function UsaLanding() {
     const isPrerender = typeof navigator !== 'undefined' && navigator.webdriver;
     if (saved === 'ngo' || saved === 'ecommerce' || saved === 'both') setInterest(saved);
     else if (!isPrerender) setAskInterest(true);
-    return () => { css.remove(); s.remove(); };
   }, []);
 
   const chooseInterest = useCallback((v: Interest) => {
@@ -302,7 +287,7 @@ export default function UsaLanding() {
             by a US-registered team you can hold accountable.
           </p>
           <div className="gusa-hero-cta">
-            <button type="button" className="gusa-btn" onClick={openCalendly}>Book a free consultation &rarr;</button>
+            <button type="button" className="gusa-btn" onClick={openForm}>Get your free quote &rarr;</button>
             <a className="gusa-btn gusa-btn-ghost" href="#work">See our work</a>
           </div>
         </div>
@@ -382,7 +367,7 @@ export default function UsaLanding() {
           <p className="gusa-eyebrow gusa-meta-eyebrow">Officially recognised by Meta</p>
           <h2 className="gusa-h2"><em>Meta</em> approves a few. We made the cut.</h2>
           <p className="gusa-lead gusa-center">You don&rsquo;t take our word for it &mdash; you take Meta&rsquo;s. Govindani is a <strong>verified Meta Business Partner</strong>, vetted and badged by Meta itself to run your ads and growth.</p>
-          <button type="button" className="gusa-btn" onClick={openCalendly} style={{ marginTop: '20px' }}>Run ads with a Meta Partner &rarr;</button>
+          <button type="button" className="gusa-btn" onClick={openForm} style={{ marginTop: "20px" }}>Run ads with a Meta Partner &rarr;</button>
         </div>
       </section>
 
@@ -480,17 +465,15 @@ export default function UsaLanding() {
         <h2 className="gusa-h2">Thank you for trusting us</h2>
         <p className="gusa-lead gusa-center">Every brand on this page put their vision in our hands &mdash; and we delivered. We&rsquo;d be honored to do the same for you.</p>
         <p className="gusa-usline gusa-usline-dark">&#127482;&#127480; A US-registered company &middot; Sheridan, Wyoming &middot; serving businesses & non-profits across America</p>
-        <button type="button" className="gusa-btn" onClick={openCalendly} style={{ marginTop: '22px' }}>Book your free consultation &rarr;</button>
+        <button type="button" className="gusa-btn" onClick={openForm} style={{ marginTop: "22px" }}>Get your free quote &rarr;</button>
       </section>
 
-      {/* inline booking — Calendly embedded directly in the page (no popup) */}
+      {/* get a quote — opens the lead form (same flow as NGO India) */}
       <section className="gusa-book" id="book">
-        <h2 className="gusa-h2">Book your free consultation</h2>
-        <p className="gusa-sub">Pick a time that works for you &mdash; it&rsquo;s booked instantly, right here.</p>
+        <h2 className="gusa-h2">Get your free website quote</h2>
+        <p className="gusa-sub">Tell us what you need &mdash; our team gets back to you within one business day.</p>
         <p className="gusa-usline">&#127482;&#127480; Govindani Infotech LLC &middot; 30 N Gould St, Ste N, Sheridan, WY 82801 &middot; serving all 50 states</p>
-        <div className="gusa-book-frame">
-          <div className="calendly-inline-widget" data-url={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=fffdf8&primary_color=b8860b`} style={{ minWidth: '320px', height: '720px' }} />
-        </div>
+        <button type="button" className="gusa-btn" onClick={openForm} style={{ marginTop: '18px' }}>Get your free quote &rarr;</button>
         <p className="gusa-book-fallback">Prefer to talk first? WhatsApp us at{' '}
           <a href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer">+91 92019 58273</a>.</p>
       </section>
@@ -513,7 +496,7 @@ export default function UsaLanding() {
           <div className="gusa-foot-addr">
             <h5>Talk to us</h5>
             <p><a href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer">WhatsApp: +91 92019 58273</a><br />
-            <button type="button" className="gusa-foot-link" onClick={openCalendly}>Book a consultation</button></p>
+            <button type="button" className="gusa-foot-link" onClick={openForm}>Get a free quote</button></p>
           </div>
         </div>
         <p className="gusa-foot-sm">&copy; {new Date().getFullYear()} Govindani Infotech. All rights reserved.</p>
@@ -522,7 +505,7 @@ export default function UsaLanding() {
       {/* mobile sticky book bar */}
       <div className="gusa-sticky">
         <a className="gusa-sticky-wa" href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">&#128172;</a>
-        <button type="button" className="gusa-sticky-book" onClick={openCalendly}>Book a free consultation</button>
+        <button type="button" className="gusa-sticky-book" onClick={openForm}>Get a free quote</button>
       </div>
 
       {/* desktop floating book-a-call button (always visible) */}
@@ -530,9 +513,9 @@ export default function UsaLanding() {
         <a className="gusa-float-wa" href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us">
           <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2Zm5.8 14.09c-.24.68-1.42 1.32-1.95 1.37-.5.05-.96.23-3.23-.67-2.72-1.07-4.45-3.86-4.58-4.04-.13-.18-1.1-1.46-1.1-2.79s.7-1.98.95-2.25c.24-.27.53-.34.7-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.82 2 .89 2.14.07.14.12.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.27.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.79.86-1.07.18-.27.36-.22.59-.13.24.09 1.51.71 1.77.84.27.14.44.2.5.31.07.11.07.63-.17 1.31Z"/></svg>
         </a>
-        <button type="button" className="gusa-float-book" onClick={openCalendly}>
+        <button type="button" className="gusa-float-book" onClick={openForm}>
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-          Book a free call
+          Get a free quote
         </button>
       </div>
 
