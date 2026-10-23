@@ -73,6 +73,7 @@ export default function UsaLeadForm({ open, onClose }: { open: boolean; onClose:
   const [busy, setBusy] = useState(false);
   const [done, setDone] = useState(false);
   const [agent, setAgent] = useState<(typeof AGENTS)[number]>(AGENTS[0]);
+  const [waText, setWaText] = useState('');   // prefilled WhatsApp message with the lead's own details
   const panelRef = useRef<HTMLDivElement>(null);
   const railRef = useRef<HTMLDivElement>(null);
   const [viewH, setViewH] = useState<number | undefined>(undefined);
@@ -137,6 +138,13 @@ export default function UsaLeadForm({ open, onClose }: { open: boolean; onClose:
     const meta = metaContext();
     const who = nextAgent();
     setAgent(who);
+    // Pre-fill the WhatsApp message with everything the lead just entered, so one tap
+    // sends their full details to the assigned (round-robin) agent.
+    setWaText(
+      `Hi! I just filled your enquiry form. My details —\n` +
+      `Name: ${f.name}\nPhone: ${phone}\nEmail: ${f.email}\nLocation: ${f.city}\n` +
+      `Looking for: ${pick.need}\nType: ${pick.has}\nReadiness: ${pick.budget}`,
+    );
     setBusy(true);
     try {
       const message = [
@@ -204,12 +212,10 @@ export default function UsaLeadForm({ open, onClose }: { open: boolean; onClose:
             </p>
             <a
               className="gnf-send"
-              href={`https://wa.me/${agent.wa}?text=${encodeURIComponent(
-                'Hi, I want more details about building my website.',
-              )}`}
+              href={`https://wa.me/${agent.wa}?text=${encodeURIComponent(waText)}`}
               target="_blank" rel="noopener noreferrer"
             >
-              Message our team on WhatsApp now →
+              Send my details on WhatsApp now →
             </a>
           </div>
         ) : (

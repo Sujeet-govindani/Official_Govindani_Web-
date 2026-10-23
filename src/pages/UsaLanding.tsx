@@ -502,17 +502,13 @@ export default function UsaLanding() {
         <p className="gusa-foot-sm">&copy; {new Date().getFullYear()} Govindani Infotech. All rights reserved.</p>
       </footer>
 
-      {/* mobile sticky book bar */}
+      {/* mobile sticky quote bar */}
       <div className="gusa-sticky">
-        <a className="gusa-sticky-wa" href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">&#128172;</a>
         <button type="button" className="gusa-sticky-book" onClick={openForm}>Get NGO website for just $1,000</button>
       </div>
 
-      {/* desktop floating book-a-call button (always visible) */}
+      {/* desktop floating quote button (always visible) */}
       <div className="gusa-float">
-        <a className="gusa-float-wa" href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us">
-          <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2Zm5.8 14.09c-.24.68-1.42 1.32-1.95 1.37-.5.05-.96.23-3.23-.67-2.72-1.07-4.45-3.86-4.58-4.04-.13-.18-1.1-1.46-1.1-2.79s.7-1.98.95-2.25c.24-.27.53-.34.7-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.82 2 .89 2.14.07.14.12.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.27.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.79.86-1.07.18-.27.36-.22.59-.13.24.09 1.51.71 1.77.84.27.14.44.2.5.31.07.11.07.63-.17 1.31Z"/></svg>
-        </a>
         <button type="button" className="gusa-float-book" onClick={openForm}>
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
           Get a free quote
