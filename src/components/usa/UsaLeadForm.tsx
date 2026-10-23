@@ -84,7 +84,9 @@ export default function UsaLeadForm({ open, onClose }: { open: boolean; onClose:
   const [pick, setPick] = useState<Record<string, string>>({});
   const [funcs, setFuncs] = useState<string[]>([]);
   const [country, setCountry] = useState('');
-  const [meet, setMeet] = useState('');
+  const [geo, setGeo] = useState(false);   // true once the country was auto-filled from the visitor's location
+  const [meetDate, setMeetDate] = useState('');   // ISO yyyy-mm-dd
+  const [meetTime, setMeetTime] = useState('');   // slot label
   const [f, setF] = useState({ name: '', phone: '', whatsapp: '', email: '' });
   const [sameWa, setSameWa] = useState(true);
   const [err, setErr] = useState('');
@@ -123,7 +125,26 @@ export default function UsaLeadForm({ open, onClose }: { open: boolean; onClose:
     if (slide && ro) ro.observe(slide);
     window.addEventListener('resize', measure);
     return () => { ro?.disconnect(); window.removeEventListener('resize', measure); };
-  }, [open, step, sameWa, err, busy, funcs, country, meet, pick]);
+  }, [open, step, sameWa, err, busy, funcs, country, meetDate, meetTime, pick]);
+
+  // Auto-detect the visitor's country (IP geo) to pre-fill the dropdown — they can still change it.
+  useEffect(() => {
+    if (!open || country) return;
+    if (typeof navigator !== 'undefined' && (navigator.webdriver || navigator.userAgent.indexOf('HeadlessChrome') > -1)) return;
+    let cancelled = false;
+    (async () => {
+      try {
+        const r = await fetch('https://ipwho.is/?fields=country,success');
+        const d = await r.json();
+        if (cancelled || !d || d.success === false || !d.country) return;
+        const name = String(d.country);
+        const match = COUNTRIES.find((c) => c.toLowerCase() === name.toLowerCase());
+        setCountry(match || name);
+        setGeo(true);
+      } catch { /* geo is optional */ }
+    })();
+    return () => { cancelled = true; };
+  }, [open, country]);
 
   useEffect(() => { if (open) track('cta_click', { cta: 'get_quote', page: 'usa' }); }, [open]);
   useEffect(() => { if (open) track('form_step', { step: step + 1, page: 'usa' }); }, [open, step]);
@@ -142,8 +163,8 @@ export default function UsaLeadForm({ open, onClose }: { open: boolean; onClose:
     if (open) return;
     const t = window.setTimeout(() => {
       if (done) {
-        setDone(false); setStep(0); setPick({}); setFuncs([]); setCountry(''); setMeet('');
-        setF({ name: '', phone: '', whatsapp: '', email: '' });
+        setDone(false); setStep(0); setPick({}); setFuncs([]); setCountry(''); setGeo(false);
+        setMeetDate(''); setMeetTime(''); setF({ name: '', phone: '', whatsapp: '', email: '' });
       }
       setErr('');
     }, 350);
@@ -162,7 +183,9 @@ export default function UsaLeadForm({ open, onClose }: { open: boolean; onClose:
     const meta = metaContext();
     const who = nextAgent();
     setAgent(who);
-    const meetNice = meet ? new Date(meet).toLocaleString() : 'Not specified';
+    const meetNice = meetDate && meetTime
+      ? `${new Date(meetDate + 'T00:00').toLocaleDateString(undefined, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })} · ${meetTime}`
+      : 'Not specified';
     const fnStr = funcs.length ? funcs.join(', ') : 'Not specified';
     setWaText(
       `Hi! I just filled your NGO website enquiry. My details —\n` +
@@ -221,8 +244,13 @@ export default function UsaLeadForm({ open, onClose }: { open: boolean; onClose:
 
   if (!open || typeof document === 'undefined') return null;
 
-  // local datetime min = now (so they can't pick a past slot)
-  const nowLocal = (() => { const d = new Date(Date.now() - new Date().getTimezoneOffset() * 60000); return d.toISOString().slice(0, 16); })();
+  // On-brand meeting picker: next 12 days (from tomorrow) + a few friendly time slots.
+  const days = Array.from({ length: 12 }, (_, i) => { const d = new Date(); d.setDate(d.getDate() + i + 1); return d; });
+  const SLOTS = ['10:00 AM', '11:30 AM', '1:00 PM', '2:30 PM', '4:00 PM', '5:30 PM', '7:00 PM'];
+  const iso = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  const meetLabel = meetDate && meetTime
+    ? `${new Date(meetDate + 'T00:00').toLocaleDateString(undefined, { weekday: 'short', day: 'numeric', month: 'short' })} · ${meetTime}`
+    : '';
 
   return createPortal(
     <div className="gnf-modal" role="dialog" aria-modal="true" aria-label="NGO website enquiry">
@@ -235,7 +263,7 @@ export default function UsaLeadForm({ open, onClose }: { open: boolean; onClose:
             <div className="gnf-tick" aria-hidden="true">✓</div>
             <h3 className="gnf-done-h">Thank you, {f.name.split(' ')[0] || 'friend'}.</h3>
             <p className="gnf-done-s">
-              We have your details{meet ? <> and your preferred time (<b>{new Date(meet).toLocaleString()}</b>)</> : ''}.
+              We have your details{meetLabel ? <> and your preferred time (<b>{meetLabel}</b>)</> : ''}.
               {' '}<b>Our team</b> will confirm your Google Meet / Zoom and reach out within one business day.
             </p>
             <a
@@ -295,16 +323,16 @@ export default function UsaLeadForm({ open, onClose }: { open: boolean; onClose:
                     {S.t === 'country' && (
                       <>
                         <h3 className="gnf-q">{S.q}</h3>
+                        {geo && country && <p className="gnf-geo">📍 Detected <b>{country}</b> from your location — change if needed.</p>}
                         <label className="gnf-f gnf-f-wide">
                           <span>Country</span>
-                          <select value={country} onChange={(e) => setCountry(e.target.value)}
-                            style={{ width: '100%', padding: '12px 14px', borderRadius: 12, border: '1px solid #d9cfc0', background: '#fff', fontSize: '1rem' }}>
+                          <select className="gnf-select" value={country} onChange={(e) => { setCountry(e.target.value); setGeo(false); }}>
                             <option value="">Select a country…</option>
+                            {country && !COUNTRIES.includes(country) && <option value={country}>{country}</option>}
                             {COUNTRIES.map((c) => (<option key={c} value={c}>{c}</option>))}
                           </select>
                         </label>
-                        <button type="button" className="gnf-send" style={{ marginTop: 14 }}
-                          disabled={!country} onClick={advance}>Continue →</button>
+                        <button type="button" className="gnf-send" style={{ marginTop: 14 }} disabled={!country} onClick={advance}>Continue →</button>
                       </>
                     )}
 
@@ -332,15 +360,27 @@ export default function UsaLeadForm({ open, onClose }: { open: boolean; onClose:
                     {S.t === 'datetime' && (
                       <>
                         <h3 className="gnf-q">{S.q}</h3>
-                        <p className="gnf-q-s">Pick a time that suits you — we&rsquo;ll confirm the meeting link.</p>
-                        <label className="gnf-f gnf-f-wide">
-                          <span>Preferred date &amp; time</span>
-                          <input type="datetime-local" value={meet} min={nowLocal}
-                            onChange={(e) => setMeet(e.target.value)}
-                            style={{ width: '100%', padding: '12px 14px', borderRadius: 12, border: '1px solid #d9cfc0', background: '#fff', fontSize: '1rem' }} />
-                        </label>
-                        <button type="button" className="gnf-send" style={{ marginTop: 14 }}
-                          disabled={!meet} onClick={advance}>Continue →</button>
+                        <p className="gnf-q-s">Pick a day and a time — we&rsquo;ll confirm your Google Meet / Zoom link.</p>
+                        <p className="gnf-pick-lbl">Choose a day</p>
+                        <div className="gnf-days">
+                          {days.map((d) => {
+                            const v = iso(d);
+                            return (
+                              <button type="button" key={v} className={`gnf-day${meetDate === v ? ' on' : ''}`} onClick={() => setMeetDate(v)}>
+                                <span className="gnf-day-dow">{d.toLocaleDateString(undefined, { weekday: 'short' })}</span>
+                                <span className="gnf-day-num">{d.getDate()}</span>
+                                <span className="gnf-day-mon">{d.toLocaleDateString(undefined, { month: 'short' })}</span>
+                              </button>
+                            );
+                          })}
+                        </div>
+                        <p className="gnf-pick-lbl">Choose a time</p>
+                        <div className="gnf-slots">
+                          {SLOTS.map((t) => (
+                            <button type="button" key={t} className={`gnf-slot${meetTime === t ? ' on' : ''}`} onClick={() => setMeetTime(t)}>{t}</button>
+                          ))}
+                        </div>
+                        <button type="button" className="gnf-send" style={{ marginTop: 16 }} disabled={!meetDate || !meetTime} onClick={advance}>Continue →</button>
                       </>
                     )}
 
