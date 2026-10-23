@@ -1,5 +1,4 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
-import { createPortal } from 'react-dom';
 import { NGO, ECOM, HEALTH, BUSINESS, OTHERS, ALL, US_NGO, type Work } from '@/data/usaWork';
 import UsaLeadForm from '@/components/usa/UsaLeadForm';
 import '@/styles/usa.css';
@@ -16,7 +15,6 @@ import '@/styles/usa.css';
 
 const WA = '919201958273';
 const R2 = 'https://gi-img-cdn.sujeet.workers.dev/Images';
-const INTEREST_KEY = 'gi_usa_interest';
 type Interest = 'ngo' | 'ecommerce' | 'both';
 
 // On touch devices a single tap just "interacts" (no navigation); a double tap
@@ -165,8 +163,7 @@ const TRUST: { ic: string; t: string; meta?: boolean }[] = [
 ];
 
 export default function UsaLanding() {
-  const [interest, setInterest] = useState<Interest | null>(null);
-  const [askInterest, setAskInterest] = useState(false);
+  const interest: Interest = 'ngo';   // /usa is NGO-only — no interest popup / toggle
   // Library is permanent (never closes) — defaults to the full ALL list; category
   // "View all" buttons just swap which set it shows.
   const [viewAll, setViewAll] = useState<{ label: string; items: Work[] }>({ label: 'All our websites', items: ALL });
@@ -190,31 +187,8 @@ export default function UsaLanding() {
     return () => io.disconnect();
   }, [viewAll, shown]);
 
-  useEffect(() => {
-    // remembered interest, else ask — but never during prerender (headless =
-    // navigator.webdriver), so the popup is not baked into the static HTML as a
-    // dead, non-interactive overlay. Real visitors get it client-side.
-    let saved: string | null = null;
-    try { saved = sessionStorage.getItem(INTEREST_KEY); } catch { /* private */ }
-    const isPrerender = typeof navigator !== 'undefined' && navigator.webdriver;
-    if (saved === 'ngo' || saved === 'ecommerce' || saved === 'both') setInterest(saved);
-    else if (!isPrerender) setAskInterest(true);
-  }, []);
-
-  const chooseInterest = useCallback((v: Interest) => {
-    setInterest(v); setAskInterest(false);
-    try { sessionStorage.setItem(INTEREST_KEY, v); } catch { /* private */ }
-  }, []);
-
-  useEffect(() => {
-    // Only the interest popup locks scroll; the library is inline, not a modal.
-    if (!askInterest) return;
-    const prev = document.body.style.overflow; document.body.style.overflow = 'hidden';
-    return () => { document.body.style.overflow = prev; };
-  }, [askInterest]);
-
-  const showNGO = interest === 'ngo' || interest === 'both' || interest === null;
-  const showEcom = interest === 'ecommerce' || interest === 'both' || interest === null;
+  const showNGO = true;    // NGO-only page
+  const showEcom = false;
   const ngoFirst = interest !== 'ecommerce';
 
   const NgoBlock = (
@@ -304,15 +278,6 @@ export default function UsaLanding() {
         </div>
       </div>
 
-      {/* interest switch — one-click toggle between tailored experiences */}
-      <div className="gusa-switch">
-        <span className="gusa-switch-label">I&rsquo;m here for:</span>
-        <div className="gusa-switch-btns">
-          <button type="button" className={interest === 'ngo' ? 'on' : ''} onClick={() => chooseInterest('ngo')}>NGO / Non-profit</button>
-          <button type="button" className={interest === 'ecommerce' ? 'on' : ''} onClick={() => chooseInterest('ecommerce')}>E-commerce</button>
-          <button type="button" className={interest === 'both' || interest === null ? 'on' : ''} onClick={() => chooseInterest('both')}>Explore both</button>
-        </div>
-      </div>
 
       {/* featured top 3 — tailored to interest */}
       {showNGO && (
@@ -515,23 +480,6 @@ export default function UsaLanding() {
         </button>
       </div>
 
-      {/* interest popup */}
-      {askInterest && typeof document !== 'undefined' && createPortal(
-        <div className="gusa-modal" role="dialog" aria-modal="true" aria-label="What are you interested in">
-          <div className="gusa-modal-back"></div>
-          <div className="gusa-modal-panel gusa-interest">
-            <p className="gusa-eyebrow">Welcome &#128075;</p>
-            <h3 className="gusa-modal-h">What can we build for you?</h3>
-            <p className="gusa-modal-note">Pick one so we show you the most relevant work &amp; pricing.</p>
-            <div className="gusa-interest-grid">
-              <button type="button" onClick={() => chooseInterest('ngo')}><span>&#127757;</span>NGO / Non-profit website</button>
-              <button type="button" onClick={() => chooseInterest('ecommerce')}><span>&#128722;</span>E-commerce / Online store</button>
-              <button type="button" onClick={() => chooseInterest('both')}><span>&#10024;</span>Both / Just exploring</button>
-            </div>
-          </div>
-        </div>,
-        document.body,
-      )}
 
       <UsaLeadForm open={formOpen} onClose={() => setFormOpen(false)} />
     </div>
