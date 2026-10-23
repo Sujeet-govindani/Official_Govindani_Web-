@@ -16,7 +16,7 @@ const SHEET_URL =
   'https://script.google.com/macros/s/AKfycbyCwHETPazQKcZvbKYif6hD_K3pN5bVDLRP01wJFeN8skkGUtix2cvYGHWJ5vpRVZuv5Q/exec';
 
 const AGENTS = [
-  { name: 'Lucky', sheet: 'Lucky', wa: '919201958274' },
+  { name: 'Lucky', sheet: 'Lucky', wa: '919201958271' },
   { name: 'Sarita', sheet: 'Sarita', wa: '919201958274' },
 ] as const;
 const TURN_KEY = 'gi.usa.turn';

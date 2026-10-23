@@ -27,7 +27,7 @@ const SHEET_URL =
  * thank-you screen, so they land in the right person's WhatsApp themselves.
  */
 const AGENTS = [
-  { name: 'Lucky', sheet: 'Lucky', wa: '919201958274' },
+  { name: 'Lucky', sheet: 'Lucky', wa: '919201958271' },
   { name: 'Sarita', sheet: 'Sarita', wa: '919201958274' },
 ] as const;
 const TURN_KEY = 'gi.ngoindia.turn';
