@@ -26,6 +26,8 @@ const BottomNav = lazy(() => import("./components/BottomNav/BottomNav"));
 const AllServices = lazy(() => import("./pages/AllServices"));
 const UsaLanding = lazy(() => import("./pages/UsaLanding"));
 const NgoIndiaLanding = lazy(() => import("./pages/NgoIndiaLanding"));
+const ProLanding = lazy(() => import("./pages/ProLanding"));
+const ProUsaLanding = lazy(() => import("./pages/ProUsaLanding"));
 const VideoSection = lazy(() => import("./components/HomePage/Section2Video"));
 
 
@@ -156,7 +158,7 @@ const FAQPage = lazy(() => import("./pages/FAQPage"));
 
 const queryClient = new QueryClient();
 
-const CLEAN_ROUTES = ["/usa", "/us", "/ngoindia"];
+const CLEAN_ROUTES = ["/usa", "/us", "/ngoindia", "/pro", "/prousa"];
 // normalize so "/usa/", "/USA" etc. also count as clean (standalone) routes
 const isCleanRoute = (p: string) => CLEAN_ROUTES.includes((p.replace(/\/+$/, '') || '/').toLowerCase());
 // The USA landing keeps the FULL site header (so visitors can explore the whole
@@ -217,6 +219,8 @@ const App = () => (
             <Route path="/usa" element={<UsaLanding/>} />
             <Route path="/us" element={<UsaLanding/>} />
             <Route path="/ngoindia" element={<NgoIndiaLanding/>} />
+            <Route path="/pro" element={<ProLanding/>} />
+            <Route path="/prousa" element={<ProUsaLanding/>} />
             <Route path="/portfolio/builders" element={<RealEstatePage/>} /> 
             <Route path="/portfolio/business" element={<BusinessWebsitesPage />} /> 
             <Route path="/services/ci-crm" element={<CIBuilderCRM />} />

@@ -19,6 +19,16 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "description": "Donation-ready NGO websites for Indian trusts and societies from \u20b940,000. 80G receipts, recurring giving, zero commission. Book a free consultation.",
     "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-usa-v2.jpg"
   },
+  "/pro": {
+    "title": "Websites for Every Industry from \u20b940,000 | Govindani Infotech",
+    "description": "The team behind 1000+ websites \u2014 NGO, school, e-commerce, real estate, hotel, hospital & more. Custom-built from \u20b940,000. Meta Business Partner. Get a free quote.",
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-usa-v2.jpg"
+  },
+  "/prousa": {
+    "title": "Websites for Every Industry from $1,000 | Govindani Infotech",
+    "description": "The team behind 1000+ websites \u2014 NGO, school, e-commerce, real estate, hotel, hospital & more. Custom-built for the US & worldwide from $1,000. Meta Business Partner. Get a free quote.",
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-usa-v2.jpg"
+  },
   "/blog": {
     "title": "Blog | Digital Growth Insights for NGOs & Businesses",
     "description": "Practical, current guides on websites, e-commerce, WhatsApp, SEO and digital marketing — India-first, by Govindani Infotech.",
