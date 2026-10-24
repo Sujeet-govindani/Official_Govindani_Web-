@@ -49,19 +49,44 @@ export interface WebsiteIntakeResult {
 
 /** Submit a public website enquiry. Resolves with { data, status } on 2xx, throws an
  *  axios-shaped error ({ response: { status, data } }) on any non-2xx so callers can
- *  read error.response.data.detail. */
+ *  read error.response.data.detail.
+ *
+ *  Retries TRANSIENT failures — a network blip, a request timeout, or a 5xx/proxy error
+ *  (e.g. the backend briefly restarting) — up to 4 attempts with backoff, so a momentary
+ *  outage never drops a lead. A 4xx (genuine bad payload) is thrown immediately and NOT
+ *  retried. If every attempt fails the error propagates, and the caller's Google-Sheet
+ *  fallback still captures the lead. */
 export async function submitWebsiteIntake(payload: WebsiteIntakePayload): Promise<WebsiteIntakeResult> {
-  const res = await fetch(`${BASE}/social/website-intake/`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
-  });
-  let data: WebsiteIntakeResult['data'] = { created: false };
-  try { data = await res.json(); } catch { /* non-JSON body */ }
-  if (!res.ok) {
-    const err = new Error(`website-intake ${res.status}`) as Error & { response?: unknown };
-    err.response = { status: res.status, data };
-    throw err;
+  const url = `${BASE}/social/website-intake/`;
+  const body = JSON.stringify(payload);
+  const delays = [0, 1500, 4000, 9000]; // 4 attempts over ~15s
+  const isClientErr = (s?: number) => typeof s === 'number' && s >= 400 && s < 500;
+  let lastErr: unknown;
+
+  for (let i = 0; i < delays.length; i++) {
+    if (delays[i]) await new Promise((r) => setTimeout(r, delays[i]));
+    const ctrl = new AbortController();
+    const to = setTimeout(() => ctrl.abort(), 12000);
+    try {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body,
+        signal: ctrl.signal,
+      });
+      clearTimeout(to);
+      let data: WebsiteIntakeResult['data'] = { created: false };
+      try { data = await res.json(); } catch { /* non-JSON body */ }
+      if (res.ok) return { data, status: res.status };
+      const err = new Error(`website-intake ${res.status}`) as Error & { response?: unknown };
+      err.response = { status: res.status, data };
+      if (isClientErr(res.status)) throw err;  // 4xx: bad payload — do not retry
+      lastErr = err;                            // 5xx: transient — retry
+    } catch (e) {
+      clearTimeout(to);
+      if (isClientErr((e as { response?: { status?: number } })?.response?.status)) throw e;
+      lastErr = e;                              // network error / timeout / 5xx — retry
+    }
   }
-  return { data, status: res.status };
+  throw lastErr ?? new Error('website-intake failed after retries');
 }
