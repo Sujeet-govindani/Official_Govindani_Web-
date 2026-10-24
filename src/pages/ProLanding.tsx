@@ -111,40 +111,23 @@ const INDUSTRIES: [string, string, string][] = [
   ['✨', '…and any industry', 'Whatever you do, we have built it before — and we build it better. Just ask.'],
 ];
 
-// The advanced NGO plan — full power, kept as proof of how deep we build.
-const NGO_POWER: [string, string[]][] = [
-  ['Your own platform', ['A fully custom-coded website & donor platform — built for you, yours to own', 'Zero platform commission on donations, forever', 'Beautiful donor & member portals under your own brand']],
-  ['Donors & giving', ['Track unlimited donors — active, recurring and lapsed', 'One-time, recurring, tribute & anonymous giving', 'Recurring-donor self-service — donors manage their own gifts']],
-  ['Tax receipts — India & US', ['Automatic 80G certificates for your Indian donors', 'IRS tax-deductible receipts for your US donors', 'Instant PDFs, year-end statements & immutable records']],
-  ['Memberships & campaigns', ['Build membership tiers & plans for your community', 'Unlimited live cases & fundraising campaigns', 'Our team designs & builds fresh campaign cases for you every month']],
-  ['Marketing on autopilot', ['Create high-converting campaigns with AI in seconds', 'WhatsApp, email & SMS donor journeys — done for you', 'AI insights that tell you who to thank, nudge & re-engage']],
-  ['Enterprise-grade & yours', ['Multiple payment gateways with automatic failover', 'Developer API & webhooks · generous media storage', 'Custom admin roles, priority support & a dedicated seat']],
+// Industry-neutral proof of depth — the functionality we pack into any build.
+const GENERIC_POWER: [string, string[]][] = [
+  ['Built for your goal', ['Custom-coded to your exact workflow — never a template', 'Payments, donations, bookings or enquiries — whatever you need', 'Your own branded customer / member / donor portal']],
+  ['Dashboards & control', ['A full admin panel to manage content, orders & enquiries', 'Role-based access for your whole team', 'Reports & insights that show what’s working']],
+  ['Capture & convert', ['Lead capture, enquiry forms & smart routing', 'SEO + Google-ranking foundations on every page', 'Speed-optimised, mobile-first, conversion-focused']],
+  ['Automation on autopilot', ['WhatsApp, email & SMS journeys — done for you', 'Automatic receipts, confirmations & follow-ups', 'AI-assisted content & campaigns in seconds']],
+  ['Payments, done right', ['UPI, cards, net-banking & wallets for India', 'PayPal / Stripe / Apple Pay for the world', 'Multiple gateways with automatic failover']],
+  ['Enterprise-grade & yours', ['SSL security, backups & generous media storage', 'Developer API & webhooks when you need them', '100% ownership — your site, your data, no lock-in']],
 ];
-// Complete e-commerce functionality set, grouped — proof of depth for stores.
-const ECOM_POWER: [string, string[]][] = [
-  ['🛒 Store & catalogue', ['Catalogue with categories, filters, search & sorting', 'Product pages — images, variants, stock status, reviews', 'Inventory & stock management with low-stock email alerts', 'Auto out-of-stock badges']],
-  ['💳 Checkout & payments', ['Razorpay / Cashfree / Stripe / PayPal — UPI, cards, net-banking, wallets', 'Partial COD with configurable ratio per product/category', 'Cart with coupons, quantity update & order review', 'Order confirmation / thank-you screen']],
-  ['📦 Order management', ['Admin order dashboard — view, filter, process, hold, cancel', 'Real-time tracking: Confirmed → Packed → Shipped → Out for delivery → Delivered', 'Return & refund management with gateway refunds', 'Full audit trail on every order']],
-  ['📧 Email automation', ['9 automated emails — placed, paid, processed, shipped, out-for-delivery, delivered, cancelled, refund initiated & completed', 'Professional SMTP (not server mail)']],
-  ['🎟️ Coupons & marketing', ['Unlimited coupons — %, flat, free-shipping, product/cart/first-order/user-specific', 'Flash sales · BOGO · referral codes · loyalty points', 'Sales analytics — revenue, top products, coupon performance']],
-  ['⚙️ Admin & technical', ['Product, order, inventory & customer management + bulk update', 'Mobile responsive · SSL · speed-optimised (lazy load, caching)', 'SEO — meta, Open Graph, sitemap · Google Analytics · WhatsApp widget']],
-];
-// "On us" value props.
-const NGO_INCLUDED = [
-  ['🎁', '100% custom-coded website', 'Yours for a lifetime — never a template'],
+// "On us" value props — industry-neutral.
+const GENERIC_INCLUDED = [
+  ['🎁', '100% custom-coded website', 'Built for you — never a template'],
   ['🌐', 'Hosting handled for you', 'Premium hosting, set up and managed'],
   ['🛠️', '1 full year of maintenance', 'Updates, fixes & support — on us'],
-  ['✉️', 'Marketing emails on us', 'Donor / customer campaigns set up and sent'],
+  ['✉️', 'Marketing emails on us', 'Campaigns set up and sent for you'],
   ['💬', 'Dedicated WhatsApp integration', 'Reach people where they actually reply'],
-  ['🧾', 'India + US tax compliance', '80G / 10BD-10BE for India · IRS-ready for the US'],
-];
-const ECOM_INCLUDED = [
-  ['🧾', 'WhatsApp receipts to customers', 'Every order confirmed instantly on WhatsApp'],
-  ['📸', 'Professional product shoots', 'We shoot & retouch your catalog'],
-  ['🎨', 'Design, layouts & USP', 'Store design, sections and positioning done for you'],
-  ['📈', 'Marketing & performance ads', 'We drive traffic that converts — Meta Business Partner'],
-  ['🛒', 'Custom-coded or Shopify', 'Baba Ji Ki Buti & Tarush (custom) · Gllora (Shopify)'],
-  ['🔑', '100% the website is yours', 'Full ownership, full data, no lock-in'],
+  ['🔑', '100% yours', 'Full ownership, full data, no lock-in'],
 ];
 
 // Rotating trust strip items (icon + label). `meta` styles the ∞ in Meta blue.
@@ -311,14 +294,14 @@ export default function ProLanding() {
         </div>
       </section>
 
-      {/* how deep every build goes — NGO + e-commerce as proof */}
+      {/* how deep every build goes — industry-neutral proof */}
       <section className="gusa-offer gusa-offer-ngo">
         <div className="gusa-offer-in">
-          <p className="gusa-eyebrow">This is the depth behind every build</p>
-          <h2 className="gusa-h2 gusa-h2-left">Take an NGO site &mdash; <em>a full fundraising platform, yours to own</em></h2>
-          <p className="gusa-lead">We don&rsquo;t ship brochure pages. Here&rsquo;s the kind of functionality we pack into a single build &mdash; and we go this deep for every industry.</p>
+          <p className="gusa-eyebrow">The depth behind every build</p>
+          <h2 className="gusa-h2 gusa-h2-left">We don&rsquo;t ship brochure pages &mdash; <em>we build platforms you own</em></h2>
+          <p className="gusa-lead">Whatever your industry, here&rsquo;s the kind of functionality we pack into a single build &mdash; and we go this deep every time.</p>
           <div className="gusa-pwr-grid">
-            {NGO_POWER.map(([group, items]) => (
+            {GENERIC_POWER.map(([group, items]) => (
               <div className="gusa-pwr" key={group}>
                 <h4 className="gusa-pwr-h">{group}</h4>
                 <ul className="gusa-ticks gusa-ticks-1">{items.map((f) => <li key={f}><span className="gusa-tick">&#10003;</span>{f}</li>)}</ul>
@@ -327,37 +310,11 @@ export default function ProLanding() {
           </div>
           <p className="gusa-incl-head">And a lot of it is <em>on us</em></p>
           <div className="gusa-incl">
-            {NGO_INCLUDED.map(([ic, t, d]) => (
+            {GENERIC_INCLUDED.map(([ic, t, d]) => (
               <div className="gusa-incl-card" key={t}><span className="gusa-incl-ic">{ic}</span><div><h4>{t}</h4><p>{d}</p></div></div>
             ))}
           </div>
           <button type="button" className="gusa-btn" onClick={openForm}>Get a site built this deep &rarr;</button>
-        </div>
-      </section>
-
-      <section className="gusa-offer gusa-offer-ecom">
-        <div className="gusa-offer-in">
-          <p className="gusa-eyebrow">Or an online store</p>
-          <h2 className="gusa-h2 gusa-h2-left">A store built to sell &mdash; <em>India &amp; worldwide</em></h2>
-          <p className="gusa-lead">Custom e-commerce with the payments your customers expect &mdash; UPI for India, cards &amp; wallets, PayPal / Stripe for the world.</p>
-          <div className="gusa-pay">
-            <span>UPI</span><span>Razorpay</span><span>Stripe</span><span>PayPal</span><span>Visa</span><span>Mastercard</span>
-          </div>
-          <div className="gusa-pwr-grid">
-            {ECOM_POWER.map(([group, items]) => (
-              <div className="gusa-pwr" key={group}>
-                <h4 className="gusa-pwr-h">{group}</h4>
-                <ul className="gusa-ticks gusa-ticks-1">{items.map((f) => <li key={f}><span className="gusa-tick">&#10003;</span>{f}</li>)}</ul>
-              </div>
-            ))}
-          </div>
-          <p className="gusa-incl-head">Done-for-you, end to end &mdash; <em>we handle all of it</em></p>
-          <div className="gusa-incl">
-            {ECOM_INCLUDED.map(([ic, t, d]) => (
-              <div className="gusa-incl-card" key={t}><span className="gusa-incl-ic">{ic}</span><div><h4>{t}</h4><p>{d}</p></div></div>
-            ))}
-          </div>
-          <button type="button" className="gusa-btn" onClick={openForm}>Build my store &rarr;</button>
         </div>
       </section>
 
