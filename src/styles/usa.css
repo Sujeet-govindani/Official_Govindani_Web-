@@ -93,6 +93,8 @@
 .gusa-usngo-shot { height: 340px; overflow: hidden; border-radius: 18px; border: 1px solid var(--line); background: #fff; box-shadow: 0 26px 64px -30px rgba(30,20,0,.5); }
 .gusa-usngo-shot img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: object-position 5.5s ease; }
 .gusa-usngo-card:hover .gusa-usngo-shot img { object-position: center bottom; }
+.gusa-usngo-tag { display: block; margin-top: 12px; font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+.gusa-usngo-tag + .gusa-usngo-name { margin-top: 4px; }
 .gusa-usngo-name { display: block; margin-top: 12px; font-weight: 700; font-size: 1rem; color: var(--navy); }
 .gusa-usngo-name em { font-style: normal; color: var(--gold); }
 @media (max-width: 860px) { .gusa-usngo-grid { grid-template-columns: 1fr; } }

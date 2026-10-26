@@ -149,7 +149,16 @@ const TRUST: { ic: string; t: string; meta?: boolean }[] = [
 ];
 
 // flagship cross-industry trio for the "proof" strip
-const FLAGSHIP: Work[] = [US_NGO[0], ECOM[0], OTHERS[0]].filter(Boolean) as Work[];
+// Flagship trio-of-industries for the "top websites" strip — one standout build per
+// industry, each labelled, to prove we deliver across every sector (hard proof).
+const FLAGSHIP: { n: string; u: string; i: string; tag: string }[] = [
+  { tag: 'School & Education', n: 'Birla Open Minds', u: 'https://birlaopenmindsbhopal.com', i: `${R2}/PortfolioProjects/PortFolioWebsites/School/School-Birla-Open-Minds.webp` },
+  { tag: 'NGO / Non-profit', n: US_NGO[0].n, u: US_NGO[0].u, i: US_NGO[0].i },
+  { tag: 'E-commerce', n: 'Tarush Pranaa', u: 'https://tarushpranaa.com/', i: `${R2}/PortfolioProjects/PortFolioWebsites/E-Commerce/Coding/Coding-Tarushpranna.webp` },
+  { tag: 'Real estate', n: 'CI Builders', u: OTHERS[0].u, i: OTHERS[0].i },
+  { tag: 'Healthcare', n: 'Mahaveer Eye Hospital', u: 'https://mahaveereyehospital.com/', i: HEALTH[1].i },
+  { tag: 'Hospitality', n: 'Café Nouris', u: 'https://cafenouris.com/', i: OTHERS[4].i },
+];
 
 export default function ProLanding() {
   // Library defaults to the full cross-industry set; "View all" swaps the shown list.
@@ -222,16 +231,17 @@ export default function ProLanding() {
       </section>
 
       {/* flagship cross-industry proof */}
-      {FLAGSHIP.length === 3 && (
+      {FLAGSHIP.length > 0 && (
         <section className="gusa-usngo">
           <div className="gusa-usngo-in">
-            <p className="gusa-eyebrow">A few of our favourites</p>
-            <h2 className="gusa-h2">Flagship builds across industries</h2>
-            <p className="gusa-sub">A non-profit, an online store and a real-estate brand &mdash; all live, all custom-built.</p>
+            <p className="gusa-eyebrow">One standout build per industry</p>
+            <h2 className="gusa-h2">Proof across every industry</h2>
+            <p className="gusa-sub">A school, a non-profit, an online store, a real-estate brand, a hospital and a restaurant &mdash; all live, all custom-built by us.</p>
             <div className="gusa-usngo-grid">
               {FLAGSHIP.map((w) => (
                 <a key={w.n} className="gusa-usngo-card" href={w.u !== '#' ? w.u : undefined} onClick={cardTap} target={w.u !== '#' ? '_blank' : undefined} rel="noopener noreferrer">
-                  <div className="gusa-usngo-shot"><img src={w.i} alt={`${w.n} — website by Govindani Infotech`} loading="lazy" /><span className="gusa-taphint" aria-hidden="true">👆 Double-tap to visit</span></div>
+                  <div className="gusa-usngo-shot"><img src={w.i} alt={`${w.n} — ${w.tag} website by Govindani Infotech`} loading="lazy" /><span className="gusa-taphint" aria-hidden="true">👆 Double-tap to visit</span></div>
+                  <span className="gusa-usngo-tag">{w.tag}</span>
                   <span className="gusa-usngo-name">{w.n}{w.u !== '#' && <em> &#8599;</em>}</span>
                 </a>
               ))}
