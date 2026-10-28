@@ -131,7 +131,7 @@ jobs:
         run: |
           rsync -rlz --partial --stats --exclude '.DS_Store' \
             -e "ssh -i ~/.ssh/deploy_key -p ${{ secrets.HOSTINGER_PORT }} -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" \
-            dist/ ${{ secrets.HOSTINGER_USER }}@${{ secrets.HOSTINGER_HOST }}:~/domains/govindaniit.com/public_html/
+            dist/ ${{ secrets.HOSTINGER_USER }}@${{ secrets.HOSTINGER_HOST }}:/var/www/govindaniit.com/public_html/
 
       # The two blog trees are MIRRORED, unlike the rest of the site.
       #
@@ -157,7 +157,7 @@ jobs:
           for dir in blog blog-data; do
             rsync -rlz --delete --partial --exclude '.DS_Store' \
               -e "ssh -i ~/.ssh/deploy_key -p ${{ secrets.HOSTINGER_PORT }} -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" \
-              "dist/$dir/" "${{ secrets.HOSTINGER_USER }}@${{ secrets.HOSTINGER_HOST }}:~/domains/govindaniit.com/public_html/$dir/"
+              "dist/$dir/" "${{ secrets.HOSTINGER_USER }}@${{ secrets.HOSTINGER_HOST }}:/var/www/govindaniit.com/public_html/$dir/"
           done
 
       # Submit to IndexNow only here: after rsync, after the blog mirror, and
