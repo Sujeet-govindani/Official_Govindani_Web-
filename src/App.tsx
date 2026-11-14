@@ -148,6 +148,8 @@ const TechRoles = lazy(() => import("./pages/TechRoles"));
 import Footer from "./components/HomePage/Footer";
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
+const GiveSetuPrivacyPolicy = lazy(() => import("./pages/GiveSetuPrivacyPolicy"));
+const GiveSetuTermsOfService = lazy(() => import("./pages/GiveSetuTermsOfService"));
 const CookiePolicy = lazy(() => import("./pages/CookiePolicy"));
 const Sitemap = lazy(() => import("./pages/Sitemap"));
 const BlogListing = lazy(() => import("./pages/BlogListing"));
@@ -320,6 +322,8 @@ const App = () => (
             <Route path="/real-estate" element={<Virtualtour />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/givesetu/privacy-policy" element={<GiveSetuPrivacyPolicy />} />
+            <Route path="/givesetu/terms-of-service" element={<GiveSetuTermsOfService />} />
             <Route path="/cookie-policy" element={<CookiePolicy />} />
             <Route path="/sitemap" element={<Sitemap />} />
             <Route path="/services" element={<AllServices />} />

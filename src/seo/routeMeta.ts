@@ -366,6 +366,14 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "description": "Add voice calling to your WhatsApp Business channel for sales and support conversations.",
     "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
+  "/givesetu/privacy-policy": {
+    "title": "GiveSetu Privacy Policy | Govindani Infotech",
+    "description": "How GiveSetu handles nonprofit and donor data: the fiduciary and processor split, what the WordPress plugin sends, processors, retention, your rights and grievance contact."
+  },
+  "/givesetu/terms-of-service": {
+    "title": "GiveSetu Terms of Service | Govindani Infotech",
+    "description": "Terms for the GiveSetu donation platform and the NGO OS Embed WordPress plugin: accounts, plans and trial, fees, donations and money, acceptable use, termination and liability."
+  },
   "/privacy-policy": {
     "title": "Privacy Policy | Govindani Infotech",
     "description": "At Govindani Infotech Pvt. Ltd., we respect your privacy and are committed to protecting it through our compliance with this policy. This policy describes…"
