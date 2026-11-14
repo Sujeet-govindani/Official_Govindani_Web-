@@ -366,6 +366,10 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "description": "Add voice calling to your WhatsApp Business channel for sales and support conversations.",
     "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-whatsapp.jpg"
   },
+  "/developers/wordpress-plugin": {
+    "title": "NGO OS Embed WordPress Plugin \u2014 Documentation | Govindani Infotech",
+    "description": "Install, connect, shortcodes and blocks, webhooks, the donor portal, every error message explained, and the wp-config constants for the NGO OS Embed WordPress plugin."
+  },
   "/givesetu/privacy-policy": {
     "title": "GiveSetu Privacy Policy | Govindani Infotech",
     "description": "How GiveSetu handles nonprofit and donor data: the fiduciary and processor split, what the WordPress plugin sends, processors, retention, your rights and grievance contact."
