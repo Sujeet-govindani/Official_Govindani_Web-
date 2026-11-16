@@ -139,7 +139,7 @@ export default function GoogleAiPanel({
             </div>
           </div>
 
-          <div style={{ display: 'flex', gap: 8, justifyContent: 'center', margin: hero ? '9px 0 10px' : '12px 0 13px' }}>
+          <div className="giai-lucky" style={{ display: 'flex', gap: 8, justifyContent: 'center', margin: hero ? '9px 0 10px' : '12px 0 13px' }}>
             {['Google Search', "I'm Feeling Lucky"].map((l) => (
               <a key={l} href={AI_SEARCH_URL} target="_blank" rel="noopener noreferrer"
                  style={{ background: '#f8f9fa', border: '1px solid #f8f9fa', borderRadius: 4, padding: hero ? '6px 13px' : '8px 16px', fontSize: hero ? 11.5 : 13, color: '#3c4043', fontFamily: F, textDecoration: 'none' }}>{l}</a>
@@ -166,6 +166,7 @@ export default function GoogleAiPanel({
               <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
                 {PICKS.map((p, i) => (
                   <li key={p.name}
+                      className="giai-pick"
                       style={{
                         marginBottom: hero ? 7 : 10,
                         padding: p.us ? (hero ? '8px 10px' : '10px 12px') : '2px 12px',
@@ -224,7 +225,7 @@ export default function GoogleAiPanel({
       </div>
 
       {/* AI answers move, so the claim is dated and the check is invited. */}
-      <p style={{ margin: hero ? '9px 0 0' : '14px 0 0', textAlign: 'center', fontSize: hero ? 11 : 12, lineHeight: 1.55, color: 'rgba(245,240,232,0.42)', fontFamily: "'Inter',sans-serif" }}>
+      <p className="giai-note" style={{ margin: hero ? '9px 0 0' : '14px 0 0', textAlign: 'center', fontSize: hero ? 11 : 12, lineHeight: 1.55, color: 'rgba(245,240,232,0.42)', fontFamily: "'Inter',sans-serif" }}>
         Google AI Overview, captured {CAPTURED}. AI answers are personalised and change &mdash; go and check.{' '}
         <a href={ARTICLE_URL} style={{ color: '#C9A84C', textDecoration: 'none', borderBottom: '1px solid rgba(201,168,76,0.4)' }}>
           It is citing our research
@@ -236,6 +237,17 @@ export default function GoogleAiPanel({
         @keyframes giaiTwinkle { 0%,100%{transform:scale(1);opacity:.85} 50%{transform:scale(1.15);opacity:1} }
         @media (prefers-reduced-motion: reduce) { [style*="giaiBlink"],[style*="giaiTwinkle"] { animation: none !important } }
         @media (max-width: 560px) { .giai-chip:not(.giai-chip-us) { display: none !important } }
+        /* On a phone the panel ran 90px past the bottom of the screen: the CTA
+           sat level with the tab dock and the dated note was 73px underneath
+           it, invisible. These three reclaim that height without dropping
+           anything that carries meaning. The "Google Search / I'm Feeling
+           Lucky" pair is the one purely decorative row, so it is the one that
+           goes; the blurred rivals and the dated note stay, just tighter. */
+        @media (max-width: 560px) {
+          .giai-lucky { display: none !important }
+          .giai-pick  { margin-bottom: 5px !important }
+          .giai-note  { font-size: 10px !important; line-height: 1.4 !important; margin-top: 6px !important }
+        }
         .giai-run { display:inline-flex; align-items:center; justify-content:center; gap:9px;
           border-radius:999px; text-decoration:none; font-family:'Inter',sans-serif; font-weight:700;
           color:#3a2500; background:linear-gradient(135deg,#c8a84b 0%,#f4e5b8 45%,#c8a84b 100%);

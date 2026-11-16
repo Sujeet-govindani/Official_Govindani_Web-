@@ -1100,6 +1100,14 @@ const HeroCarousel = () => {
     const shortVh = winH <= 740;
     const veryShortVh = winH <= 660;
 
+    /* How tall the founder panel stands on a phone. At a fixed 226px the slide
+       finished 122px above the bottom of the hero, so a third of the screen was
+       empty background under the CTAs. Everything else on the slide measures
+       407px, so the panel takes whatever the hero has left, less 20px of air.
+       Clamped so it can neither collapse on a short phone nor tower on a tall
+       one, and it is still the CTA that ends the slide, never the panel. */
+    const ngoSpotlightH = Math.min(400, Math.max(210, Math.max(winH - 57, 740) - 427));
+
     const origSlide = SLIDE_ORDER[slide];
     const isFounderSlide = origSlide in SLIDE_TO_FOUNDER;
     const cur = isFounderSlide ? SLIDES[SLIDE_TO_FOUNDER[origSlide]] : SLIDES[0];
@@ -1598,12 +1606,18 @@ const HeroCarousel = () => {
     const NgoFounderStats = () => {
         const rec = founderOf(cur2);
         if (!rec) return <StatCards />;
+        /* The value is sized against the ROW, not the viewport. These stats are
+           per-founder copy, so a word like "Education" lands beside a short one
+           like "25+" and no card can be hand-tuned. cqw makes each value fit the
+           card it is in, at every width. Without it the mobile branch fell
+           through to the desktop 1.45rem and "Education" ran 29px under its
+           neighbour at 430px. */
         return (
-            <div style={{ display: 'flex', gap: tab ? '8px' : '12px', width: '100%' }}>
+            <div style={{ display: 'flex', gap: (mob || tab) ? '8px' : '12px', width: '100%', containerType: 'inline-size' }}>
                 {rec.heroStats.map((st) => (
-                    <div key={st.k} style={{ flex: '1 1 0', minWidth: 0, background: ngo.cardBg, border: ngo.cardBorder, borderRadius: 12, padding: tab ? '10px 8px' : '14px 12px', textAlign: 'center', boxShadow: '0 2px 12px rgba(100,70,20,0.12)' }}>
-                        <div style={{ fontFamily: "'Libre Baskerville',serif", fontSize: tab ? '1.1rem' : '1.45rem', fontWeight: 800, color: ngo.dark, lineHeight: 1.1 }}>{st.v}</div>
-                        <div style={{ fontFamily: "'Inter',sans-serif", fontSize: tab ? '0.6rem' : '0.68rem', fontWeight: 600, color: ngo.mid, marginTop: 4, lineHeight: 1.3 }}>{st.k}</div>
+                    <div key={st.k} style={{ flex: '1 1 0', minWidth: 0, overflow: 'hidden', background: ngo.cardBg, border: ngo.cardBorder, borderRadius: 12, padding: (mob || tab) ? '10px 8px' : '14px 12px', textAlign: 'center', boxShadow: '0 2px 12px rgba(100,70,20,0.12)' }}>
+                        <div style={{ fontFamily: "'Libre Baskerville',serif", fontSize: 'clamp(0.8rem, 4.1cqw, 1.45rem)', fontWeight: 800, color: ngo.dark, lineHeight: 1.15, whiteSpace: 'nowrap' }}>{st.v}</div>
+                        <div style={{ fontFamily: "'Inter',sans-serif", fontSize: (mob || tab) ? '0.6rem' : '0.68rem', fontWeight: 600, color: ngo.mid, marginTop: 4, lineHeight: 1.3 }}>{st.k}</div>
                     </div>
                 ))}
             </div>
@@ -1662,7 +1676,7 @@ const HeroCarousel = () => {
                     {/* 320px pushed the CTAs to 899px in an 812px viewport, so nobody could
     tap them without scrolling. 225px brings the whole slide inside the
     fold while keeping the collage substantial. */}
-                    <FounderSpotlight />
+                    <FounderSpotlight h={ngoSpotlightH} />
                     <div className="ngo-pr" style={{ display: 'flex', flexDirection: 'row', gap: '6px', width: '100%', overflowX: 'auto', paddingBottom: '2px' }}>
                         {ngoPeople.map((p, i) => {
                             const isSel = selectedNgoPersonIndex === i;
@@ -2174,7 +2188,7 @@ const HeroCarousel = () => {
                                 /* roughly twice the old pace - at 46s+ it read as static */
                                 animation: `${i % 2 ? 'giw_down' : 'giw_up'} ${20 + i * 4}s linear infinite`,
                                 filter: `blur(${(edge * 3.2).toFixed(1)}px)`,
-                                opacity: 0.95 - edge * 0.34,
+                                opacity: (mob ? 0.8 : 0.95) - edge * 0.34,
                                 transform: `scale(${1 - edge * 0.05})`,
                             }}>
                                 {/* Each capture is cropped to a card rather than shown at
@@ -2194,7 +2208,13 @@ const HeroCarousel = () => {
                     })}
                 </div>
 
-                <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(ellipse at 50% 50%, ${tint}0.42) 0%, ${tint}0.72) 48%, ${tint}0.92) 82%)` }} />
+                {/* A phone shows 3 columns instead of 6, so each card is twice
+                    the size and the headline lands on top of one bright capture
+                    rather than a fine mosaic. At the desktop 0.42 centre the
+                    e-commerce headline was unreadable over a wall card, so the
+                    scrim runs much denser on mobile - the wall still reads as
+                    depth, the copy stays the thing you see. */}
+                <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(ellipse at 50% 50%, ${tint}${mob ? 0.74 : 0.42}) 0%, ${tint}${mob ? 0.87 : 0.72}) 48%, ${tint}${mob ? 0.96 : 0.92}) 82%)` }} />
                 <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(180deg, ${tint}1) 0%, transparent 16%, transparent 84%, ${tint}1) 100%)` }} />
             </div>
         );
