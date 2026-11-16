@@ -83,6 +83,18 @@ already claimed this was done. All 15 fixed; the script now reports none.
 
 | E4 | `/portfolio/ngo`: dead space above "Our NGO Projects" | ✅ | Gap **128px → 46px** |
 | E5 | Hero founder cards show the verified numbers | ✅ | Read from `ngoFounders`, not copy |
+| E6 | NGO hero slide must fit one screen, no scrolling | ✅ | CTAs clear the dock by 11px |
+| E7 | Founder on the right, their power on the left | ✅ | `FounderSpotlight`, two columns |
+
+**E6/E7:** the founder portrait ran the full width of the slide, so one figure
+stood 300px tall and pushed the name rail and both CTAs below the fold — on the
+slide whose entire job is to get someone into the NGO funnel. Measured: CTAs
+ended at y=786 against a dock top of 755, i.e. **31px underneath it**.
+
+The portrait now takes the right 44% and the freed left half — which was empty
+background — carries the argument: name, organisation link, reach with its
+scope, the IGT trophy where there is one, and a line on what they do. Spotlight
+height 268 → 226px to buy the last 31px back.
 
 **E4:** the page hero carried `padding-top: 156/168/180px`, guessed high to clear
 the fixed header. Measured: the header's bottom edge is at y=80 while the title

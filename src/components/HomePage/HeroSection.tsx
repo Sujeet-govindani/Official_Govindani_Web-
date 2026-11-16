@@ -1482,6 +1482,74 @@ const HeroCarousel = () => {
         );
     };
 
+    /**
+     * The selected founder, on a phone: their standing on the left, their
+     * portrait on the right.
+     *
+     * The portrait used to run the full width of the slide, which made one
+     * figure 300px tall and pushed the name rail and both CTAs below the fold —
+     * on the slide whose whole job is to get someone into the NGO funnel. Half
+     * the width is plenty for a face, and the half it frees was empty anyway.
+     * It now carries the thing that actually argues for us: who they are, what
+     * they run, how far they reach, and the trophy where there is one.
+     */
+    const FounderSpotlight = () => {
+        const p = ngoPeople[selectedNgoPersonIndex] ?? ngoPeople[0];
+        const rec = ngoFounders.find((x) => x.id === p.founderId);
+        const name = p.name.replace('\n', ' ');
+
+        return (
+            <div style={{ display: 'flex', alignItems: 'flex-end', gap: 10, width: '100%', height: 226, minHeight: 226 }}>
+                <div style={{ flex: '1 1 0', minWidth: 0, paddingBottom: 6, animation: 'ngo_in .45s ease-out both' }}>
+                    <h2 style={{ fontFamily: "'Libre Baskerville',serif", fontSize: '1.12rem', fontWeight: 700, color: ngo.dark, margin: '0 0 2px', lineHeight: 1.18 }}>
+                        {name}
+                    </h2>
+                    {rec && (
+                        <a href={rec.orgUrl} target="_blank" rel="noopener noreferrer"
+                           style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.64rem', fontWeight: 600, color: ngo.mid, textDecoration: 'none', borderBottom: '1px solid rgba(160,120,60,0.45)' }}>
+                            {rec.org} &#8599;
+                        </a>
+                    )}
+
+                    <div style={{ marginTop: 10 }}>
+                        <div style={{ fontFamily: "'Libre Baskerville',serif", fontSize: '1.42rem', fontWeight: 800, color: '#8B6914', lineHeight: 1 }}>
+                            {rec ? rec.followers : p.f.split('\n')[0]}
+                        </div>
+                        <div style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.56rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: ngo.mid, marginTop: 2 }}>
+                            {rec?.scope === 'all-platforms' ? 'Across all platforms' : 'Followers'}
+                        </div>
+                    </div>
+
+                    {rec?.badge && (
+                        <div style={{ display: 'inline-block', marginTop: 9, background: 'rgba(197,160,40,0.18)', border: '1px solid rgba(139,105,20,0.5)', borderRadius: 5, padding: '3px 8px', fontFamily: "'Inter',sans-serif", fontSize: '0.56rem', fontWeight: 700, color: '#6B4F0B' }}>
+                            &#127942; IGT S10 Winners
+                        </div>
+                    )}
+
+                    {rec && (
+                        <p style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.63rem', lineHeight: 1.5, color: ngo.mid, margin: '9px 0 0' }}>
+                            {rec.claim}
+                        </p>
+                    )}
+                </div>
+
+                <div style={{ flex: '0 0 44%', height: '100%', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', minWidth: 0 }}>
+                    <img
+                        key={`spot-${selectedNgoPersonIndex}`}
+                        src={p.image}
+                        srcSet={[`${p.image.replace(/\.webp$/, '-480w.webp')} 480w`, `${p.image.replace(/\.webp$/, '-800w.webp')} 800w`, `${p.image} 1700w`].join(', ')}
+                        sizes="44vw"
+                        alt={name}
+                        loading="eager"
+                        fetchPriority="high"
+                        decoding="async"
+                        style={{ height: '100%', width: 'auto', maxWidth: 'none', objectFit: 'contain', objectPosition: 'bottom center', display: 'block', filter: 'drop-shadow(0 10px 22px rgba(61,43,31,0.34))', animation: 'ngo_face 460ms ease-out' }}
+                    />
+                </div>
+            </div>
+        );
+    };
+
     const renderNGOSlide = () => (
         <>
             <style>{`
@@ -1521,7 +1589,7 @@ const HeroCarousel = () => {
                     {/* 320px pushed the CTAs to 899px in an 812px viewport, so nobody could
     tap them without scrolling. 225px brings the whole slide inside the
     fold while keeping the collage substantial. */}
-                      <NGOPersonCollage height={280} radius={12} ratio={0.66} />
+                    <FounderSpotlight />
                     <div className="ngo-pr" style={{ display: 'flex', flexDirection: 'row', gap: '6px', width: '100%', overflowX: 'auto', paddingBottom: '2px' }}>
                         {ngoPeople.map((p, i) => {
                             const isSel = selectedNgoPersonIndex === i;
