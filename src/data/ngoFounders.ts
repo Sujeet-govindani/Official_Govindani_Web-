@@ -69,7 +69,7 @@ export const ngoFounders: NgoFounder[] = [
     claim: 'Manav seva hi prabhu seva — service documented daily to an audience of millions.',
     portrait: `${IMG}/Popat.webp`,
     feed: `${IG}/popatbhai.webp`,
-    site: 'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Popatbhai-Charitable-Trust.webp',
+    site: 'https://gi-img-cdn.sujeet.workers.dev/Images/sites/popatbhai.webp',
   },
   {
     id: 'mahipatsinh',
@@ -97,7 +97,7 @@ export const ngoFounders: NgoFounder[] = [
     claim: 'Relief work in Sonipat, documented to a following built across YouTube, Facebook and Instagram.',
     portrait: `${IMG}/harshi.webp`,
     feed: `${IG}/harsh.webp`,
-    site: 'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Harsh-Chhikkara-Jan-Seva-Trust.webp',
+    site: 'https://gi-img-cdn.sujeet.workers.dev/Images/sites/harsh.webp',
   },
   {
     id: 'mallakhamb',
@@ -112,7 +112,7 @@ export const ngoFounders: NgoFounder[] = [
     badge: "Winners · India's Got Talent S10",
     portrait: `${IMG}/makkhammain.webp`,
     feed: `${IG}/mallakhamb.webp`,
-    site: 'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Mallakhamb-Artist.webp',
+    site: 'https://gi-img-cdn.sujeet.workers.dev/Images/sites/mallakhamb.webp',
   },
 ];
 

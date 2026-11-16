@@ -157,7 +157,7 @@ export const caseStudies: CaseStudy[] = [
       "Coverage citable in grant applications",
       "Urgent and partnership paths separated",
     ],
-    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Harsh-Chhikkara-Jan-Seva-Trust.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/harsh.webp",
   },
   {
     id: "nanhi-pari-foundation",

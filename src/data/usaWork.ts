@@ -4,11 +4,11 @@
 export type Work = { n: string; u: string; i: string };
 
 export const NGO: Work[] = [
-  {n:'Popatbhai Charitable Trust',u:'https://popatbhaicharitablefoundation.org/',i:'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Popatbhai-Charitable-Trust.webp'},
-  {n:'Harsh Chhikkara Jan Seva Trust',u:'https://harshchhikara.com/',i:'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Harsh-Chhikkara-Jan-Seva-Trust.webp'},
+  {n:'Popatbhai Charitable Trust',u:'https://popatbhaicharitablefoundation.org/',i:'https://gi-img-cdn.sujeet.workers.dev/Images/sites/popatbhai.webp'},
+  {n:'Harsh Chhikkara Jan Seva Trust',u:'https://harshchhikara.com/',i:'https://gi-img-cdn.sujeet.workers.dev/Images/sites/harsh.webp'},
   {n:'Mahipatsinh Foundation',u:'https://mahipatsinhfoundation.org/',i:'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioSites/mahipatsinh.jpg'},
   {n:'Gau Seva Dham',u:'https://gausevadham.org/',i:'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Gau-Seva-Dham.webp'},
-  {n:'Community Welfare',u:'https://mallakhambartist.org/',i:'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Mallakhamb-Artist.webp'},
+  {n:'Community Welfare',u:'https://mallakhambartist.org/',i:'https://gi-img-cdn.sujeet.workers.dev/Images/sites/mallakhamb.webp'},
   {n:'Nanhi Pari Foundation',u:'https://nanhiparifoundation.org/',i:'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Nanhi-Pari-Foundationngo.webp'},
   {n:'Palawi',u:'https://palawi.org/',i:'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Palawingo.webp'},
   {n:'Animals Matter to Me',u:'https://amtmindia.org/',i:'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Animals-Matterto-Me.webp'},
