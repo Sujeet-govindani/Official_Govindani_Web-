@@ -13,9 +13,9 @@ import '@/styles/latest-work.css';
 const R2 = 'https://gi-img-cdn.sujeet.workers.dev/Images';
 
 const WORKS = [
-  { name: 'Baba Ji Ki Buti', category: 'E-Commerce', url: 'https://babajikibuti.com/home', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/work/babajikibuti.webp' },
-  { name: 'Tarush Pranaa', category: 'Business Website', url: 'https://tarushpranaa.com', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/work/tarushpranaa.webp' },
-  { name: 'Mahipatsinh Foundation', category: 'NGO & Donations', url: 'https://mahipatsinhfoundation.org', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/work/mahipatsinh.webp' },
+  { name: 'Baba Ji Ki Buti', category: 'E-Commerce', url: 'https://babajikibuti.com/home', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/work/babajikibuti.webp?v=1440' },
+  { name: 'Tarush Pranaa', category: 'Business Website', url: 'https://tarushpranaa.com', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/work/tarushpranaa.webp?v=1440' },
+  { name: 'Mahipatsinh Foundation', category: 'NGO & Donations', url: 'https://mahipatsinhfoundation.org', img: 'https://gi-img-cdn.sujeet.workers.dev/Images/work/mahipatsinh.webp?v=1440' },
 ];
 
 const CATEGORIES = [

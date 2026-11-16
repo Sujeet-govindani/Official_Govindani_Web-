@@ -36,7 +36,7 @@ export const caseStudies: CaseStudy[] = [
       "Full 80G compliance",
       "Zero data dependency on third parties",
     ],
-    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/mahipatsinh.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/mahipatsinh.webp?v=1440",
   },
   {
     id: "amtm-india",
@@ -108,7 +108,7 @@ export const caseStudies: CaseStudy[] = [
       "Better service discoverability",
       "More authoritative positioning",
     ],
-    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/gausevadham.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/gausevadham.webp?v=1440",
   },
   {
     id: "popatbhai-foundation",
@@ -285,7 +285,7 @@ export const caseStudies: CaseStudy[] = [
       "No template constraints",
       "Doubt addressed at checkout",
     ],
-    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/babajikibuti.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/babajikibuti.webp?v=1440",
   },
   {
     id: "terra-by-trishla",
@@ -408,7 +408,7 @@ export const caseStudies: CaseStudy[] = [
       "Dual path: CSR/partnership enquiry alongside public donation",
     ],
     stats: ["2.9M+ people served", "55,000+ girls vaccinated", "50+ corporate partners", "11 states reached"],
-    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/jivika.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/jivika.webp?v=1440",
   },
   {
     id: "vivedam-agro",
@@ -431,7 +431,7 @@ export const caseStudies: CaseStudy[] = [
       "Mobile-app shell for phone-first farmer traffic",
     ],
     stats: ["800+ products", "29+ crops covered", "150+ verified farmers", "Live mandi price feed"],
-    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/vivedamagro.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/vivedamagro.webp?v=1440",
   },
   {
     id: "tarushpranaa",
@@ -453,6 +453,6 @@ export const caseStudies: CaseStudy[] = [
       "Single dark-and-gold identity holding three revenue lines together",
     ],
     stats: ["3 revenue lines, 1 site", "Course enrolment flow", "Expert directory", "Integrated store"],
-    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/tarushpranaa.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/tarushpranaa.webp?v=1440",
   },
 ];

@@ -105,4 +105,4 @@ const SITES: Omit<SupremeSite, 'image'>[] = [
   },
 ];
 
-export const supremeWork: SupremeSite[] = SITES.map((s) => ({ ...s, image: `${IMG}/${s.id}.webp` }));
+export const supremeWork: SupremeSite[] = SITES.map((s) => ({ ...s, image: `${IMG}/${s.id}.webp?v=1440` }));

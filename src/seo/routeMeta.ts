@@ -483,17 +483,17 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   "/pages/case-study/jivika-foundation": {
     "title": "Jivika Foundation Case Study | Govindani Infotech",
     "description": "Jivika raises from corporates, PSUs and governments \u2014 an audience that reads a website the way it reads a due-diligence pack. Built as an institutional case\u2026",
-    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/work/jivika.webp"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/work/jivika.webp?v=1440"
   },
   "/pages/case-study/vivedam-agro": {
     "title": "Vivedam Agro Case Study | Govindani Infotech",
     "description": "A farmer does not shop by brand and SKU \u2014 he shops by crop, by growth stage and by what has gone wrong in the field. A multi-vendor marketplace built that way\u2026",
-    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/work/vivedamagro.webp"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/work/vivedamagro.webp?v=1440"
   },
   "/pages/case-study/tarushpranaa": {
     "title": "Tarushpranaa Case Study | Govindani Infotech",
     "description": "Tarushpranaa earns three ways at once \u2014 courses, practitioner bookings and a product store. One site carries all three without the seams showing\u2026",
-    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/work/tarushpranaa.webp"
+    "image": "https://gi-img-cdn.sujeet.workers.dev/Images/work/tarushpranaa.webp?v=1440"
   },
   "/pages/case-study/muktashop": {
     "title": "MuktaShop Case Study | Govindani Infotech",
