@@ -2801,10 +2801,14 @@ const HeroCarousel = () => {
                 @media(max-width:767px){.hc{-webkit-overflow-scrolling:touch;}.hc .sec{contain:layout style;}}
             `}</style>
 
-            {/* The mobile header already has a hamburger, so this floating menu was
-    duplicate navigation there — and it sat on top of the stat cards.
-    Desktop keeps it, where the extra shortcut does no harm. */}
-              <RadialNavMenu mob={mob} isFirstSlide={origSlide === 0} />
+            {/* Desktop only, and the comment below used to say so without the code
+                enforcing it. On a phone this rail pinned itself 60px wide at the
+                left edge, above the content, and followed the scroll - so it sat
+                on top of "Visit Gau Seva Dham", "Read the case study" and "See it
+                live", and a tap on their left edge opened the menu instead of the
+                link. The header hamburger and the bottom dock already cover
+                navigation there; this was only costing taps. */}
+            {!mob && <RadialNavMenu mob={mob} isFirstSlide={origSlide === 0} />}
 
             <div ref={wrapperRef} style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', margin: 0, padding: 0, overflowX: 'hidden', top: 0 }}>
                 <div style={{ position: 'relative', overflowX: 'clip', overflowY: 'visible', margin: 0, width: '100%' }}>
