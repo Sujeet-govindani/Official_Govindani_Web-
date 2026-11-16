@@ -100,3 +100,4 @@ GOVCRM_COMPLETE_HANDOFF.md
 
 # CRM task backups — internal, never ship with the website
 .crm-backups/
+.ig/

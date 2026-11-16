@@ -11,11 +11,11 @@ const isTouchDevice = () =>
 // ─────────────────────────────────────────────────────────────────────────────
 
 const ngoProjects = [
-  { title: "Popatbhai Charitable Trust",     url: "https://popatbhaicharitablefoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/popatbhai.webp" },
-  { title: "Harsh Chhikkara Jan Seva Trust", url: "https://harshchhikara.com/",                 image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/harsh.webp" },
-  { title: "Mahipatsinh Foundation",         url: "https://mahipatsinhfoundation.org/",          image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/mahipatsinh.webp" },
-  { title: "Gau Seva Dham",                  url: "https://gausevadham.org/",                    image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/gausevadham.webp" },
-  { title: "Mallakhamb Artist",              url: "https://mallakhambartist.org/",               image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/mallakhamb.webp" },
+  { title: "Popatbhai Charitable Trust",     url: "https://popatbhaicharitablefoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/popatbhai.webp?v=1440" },
+  { title: "Harsh Chhikkara Jan Seva Trust", url: "https://harshchhikara.com/",                 image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/harsh.webp?v=1440" },
+  { title: "Mahipatsinh Foundation",         url: "https://mahipatsinhfoundation.org/",          image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/mahipatsinh.webp?v=1440" },
+  { title: "Gau Seva Dham",                  url: "https://gausevadham.org/",                    image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/gausevadham.webp?v=1440" },
+  { title: "Mallakhamb Artist",              url: "https://mallakhambartist.org/",               image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/mallakhamb.webp?v=1440" },
   { title: "Nanhi Pari Foundation",                     url: "https://nanhiparifoundation.org/",             image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Nanhi-Pari-Foundationngo.webp" },
   { title: "Palawi Foundation",              url: "https://palawi.org/",                          image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Palawingo.webp" },
   { title: "Animals Matter to Me",           url: "https://amtmindia.org/",                       image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Animals-Matterto-Me.webp" },

@@ -325,11 +325,11 @@ const PortfolioSection = () => {
   ];
 
   const projects = [
-    { title: "Popatbhai Charitable Trust",      category: "ngo", url: "https://popatbhaicharitablefoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/popatbhai.webp" },
-    { title: "Harsh Chhikkara Jan Seva Trust",  category: "ngo", url: "https://harshchhikara.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/harsh.webp" },
-    { title: "Mahipatsinh Foundation",          category: "ngo", url: "https://mahipatsinhfoundation.org/",         image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/mahipatsinh.webp" },                
-    { title: "Gau Seva Dham",                   category: "ngo", url: "https://gausevadham.org/",                    image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/gausevadham.webp" },
-    { title: "Mallakhamb Artist",               category: "ngo", url: "https://mallakhambartist.org/",               image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/mallakhamb.webp" },
+    { title: "Popatbhai Charitable Trust",      category: "ngo", url: "https://popatbhaicharitablefoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/popatbhai.webp?v=1440" },
+    { title: "Harsh Chhikkara Jan Seva Trust",  category: "ngo", url: "https://harshchhikara.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/harsh.webp?v=1440" },
+    { title: "Mahipatsinh Foundation",          category: "ngo", url: "https://mahipatsinhfoundation.org/",         image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/mahipatsinh.webp?v=1440" },                
+    { title: "Gau Seva Dham",                   category: "ngo", url: "https://gausevadham.org/",                    image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/gausevadham.webp?v=1440" },
+    { title: "Mallakhamb Artist",               category: "ngo", url: "https://mallakhambartist.org/",               image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/mallakhamb.webp?v=1440" },
     { title: "Nanhi Pari Foundation",                      category: "ngo", url: "https://nanhiparifoundation.org/",           image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Nanhi-Pari-Foundationngo.webp" },
     { title: "CI BUILDERS",                     category: "real-estate", url: "https://cibuilders.in/",              image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/RealEstate/Real-Estate-Ci-Builders.webp" },
     { title: "JANKI BUILDERS",                  category: "real-estate", url: "https://jankibuilders.com/",          image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/RealEstate/Real-Estate-Jank-Builders.webp" },
