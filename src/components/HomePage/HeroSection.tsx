@@ -5,6 +5,7 @@ import { Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import GoogleAiPanel from './GoogleAiPanel';
 import { supremeWork } from '@/data/supremeWork';
+import { ngoFounders } from '@/data/ngoFounders';
 
 const colors = {
     metallicGold: '#C5A028',
@@ -934,6 +935,7 @@ type NgoPerson = {
 const ngoPeople: NgoPerson[] = [
     {
         name: 'Devi\nChitralekha',
+        founderId: 'chitralekha',
         f: '6.7M+\nFollowers',
         url: 'https://gausevadham.org/',
         image: 'https://gi-img-cdn.sujeet.workers.dev/Images/devichitra.webp',
@@ -952,6 +954,7 @@ const ngoPeople: NgoPerson[] = [
     },
     {
         name: 'Harsh\nChikkara',
+        founderId: 'harsh',
         f: '1.2M+\nFollowers',
         url: 'https://harshchhikara.com/',
         image: 'https://gi-img-cdn.sujeet.workers.dev/Images/harshi.webp',
@@ -972,6 +975,7 @@ const ngoPeople: NgoPerson[] = [
     },
     {
         name: 'Popatbhai\nFoundation',
+        founderId: 'popatbhai',
         f: '1.9M+\nFollowers',
         url: 'https://popatbhaicharitablefoundation.org/',
         image: 'https://gi-img-cdn.sujeet.workers.dev/Images/Popat.webp',
@@ -990,6 +994,7 @@ const ngoPeople: NgoPerson[] = [
     },
     {
         name: 'Mahipat\nSingh',
+        founderId: 'mahipatsinh',
         f: '1.3M+\nFollowers',
         url: 'https://mahipatsinhfoundation.org/',
         image: 'https://gi-img-cdn.sujeet.workers.dev/Images/founder-open.webp',
@@ -1008,6 +1013,7 @@ const ngoPeople: NgoPerson[] = [
     },
     {
         name: 'Mallakhamb\nArtist',
+        founderId: 'mallakhamb',
         f: '500K+\nFollowers',
         url: 'https://mallakhambartist.org/',
         image: 'https://gi-img-cdn.sujeet.workers.dev/Images/makkhammain.webp',
@@ -1026,6 +1032,25 @@ const ngoPeople: NgoPerson[] = [
         },
     },
 ];
+
+/**
+ * The follower line for a hero founder card.
+ *
+ * These numbers used to live as copy inside ngoPeople and drifted badly: three
+ * were UNDERSTATED against the real verified profiles and one was overstated.
+ * They now read from the same record the NGO portfolio uses, so correcting a
+ * figure in one place corrects it everywhere. A cross-platform total is
+ * labelled as one rather than passing as an Instagram count.
+ */
+const founderLine = (p: { founderId?: string; f: string }) => {
+    const rec = ngoFounders.find((x) => x.id === p.founderId);
+    if (!rec) return p.f;
+    return `${rec.followers}\n${rec.scope === 'all-platforms' ? 'All platforms' : 'Followers'}`;
+};
+
+/** A credential that outranks a follower count, shown under the name. */
+const founderBadge = (p: { founderId?: string }) =>
+    ngoFounders.find((x) => x.id === p.founderId)?.badge;
 
 const HeroCarousel = () => {
     const navigate = useNavigate();
@@ -1321,6 +1346,12 @@ const HeroCarousel = () => {
                             {p.name}
                         </span>
 
+                        {/* A trophy outranks a follower count, so it sits with the name. */}
+                        {founderBadge(p) && (
+                            <span style={{ display: 'block', fontSize: mob ? '0.44rem' : tab ? '0.5rem' : '0.54rem', fontWeight: 700, lineHeight: 1.2, color: isSelected ? '#FFE9A8' : '#8B6914', fontFamily: "'Inter',sans-serif" }}>
+                                &#127942; IGT S10 Winners
+                            </span>
+                        )}
                         <div style={{ width: '50%', height: '1px', background: isSelected ? 'rgba(255,255,255,0.5)' : 'rgba(160,120,60,0.32)' }} />
 
                         <span
@@ -1334,7 +1365,7 @@ const HeroCarousel = () => {
                                 whiteSpace: 'pre-line',
                             }}
                         >
-                            {p.f}
+                            {founderLine(p)}
                         </span>
                     </div>
                 );
@@ -1518,8 +1549,13 @@ const HeroCarousel = () => {
                                     }}
                                 >
                                     <span style={{ display: 'block', fontSize: '0.54rem', fontWeight: 700, color: isSel ? '#2B1A00' : ngo.dark, fontFamily: "'Libre Baskerville',serif", lineHeight: 1.18, whiteSpace: 'pre-line' }}>{p.name}</span>
+                                    {founderBadge(p) && (
+                                        <span style={{ display: 'block', fontSize: '0.42rem', fontWeight: 700, lineHeight: 1.15, color: isSel ? '#FFE9A8' : '#8B6914', fontFamily: "'Inter',sans-serif" }}>
+                                            &#127942; IGT S10
+                                        </span>
+                                    )}
                                     <div style={{ width: '50%', height: '1px', background: isSel ? 'rgba(43,26,0,0.45)' : 'rgba(160,120,60,0.32)' }} />
-                                    <span style={{ display: 'block', fontSize: '0.52rem', color: isSel ? '#3B2404' : ngo.mid, fontFamily: "'Inter',sans-serif", fontWeight: 600, lineHeight: 1.3, whiteSpace: 'pre-line' }}>{p.f}</span>
+                                    <span style={{ display: 'block', fontSize: '0.52rem', color: isSel ? '#3B2404' : ngo.mid, fontFamily: "'Inter',sans-serif", fontWeight: 600, lineHeight: 1.3, whiteSpace: 'pre-line' }}>{founderLine(p)}</span>
                                 </div>
                             );
                         })}

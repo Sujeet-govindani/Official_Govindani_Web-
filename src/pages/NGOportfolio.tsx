@@ -757,14 +757,18 @@ const NgoPortfolio = () => {
           overflow: hidden;
           width: 100%;
         }
-        /* Header clearance. The fixed floating header is about 80px tall on
-           desktop and taller on phones. A global section:first-of-type reset in
-           index.css, plus a former inline paddingTop of 0, kept this hero flush
-           to the top and hid the title behind the header. Double class plus
-           important beats both, and is stepped up on smaller screens. */
-        .ngo-hero-section.ngo-hero-section { padding-top: 156px !important; }
-        @media (max-width: 900px) { .ngo-hero-section.ngo-hero-section { padding-top: 168px !important; } }
-        @media (max-width: 600px) { .ngo-hero-section.ngo-hero-section { padding-top: 180px !important; } }
+        /* Header clearance. A global section:first-of-type reset in index.css,
+           plus a former inline paddingTop of 0, kept this hero flush to the top
+           and hid the title behind the fixed header - hence the double class
+           and !important, which beat both.
+           The figures were guessed high and left a hole. Measured on this page:
+           the floating header's bottom edge sits at y=80, while the title was
+           starting at y=208 - 128px of empty black. 110px still left a 78px
+           hole, so these clear the header's y=80 bottom edge by roughly 45px,
+           which reads as breathing room rather than a gap. */
+        .ngo-hero-section.ngo-hero-section { padding-top: 78px !important; }
+        @media (max-width: 900px) { .ngo-hero-section.ngo-hero-section { padding-top: 86px !important; } }
+        @media (max-width: 600px) { .ngo-hero-section.ngo-hero-section { padding-top: 94px !important; } }
         .ngo-hero-section::before {
           content:'';
           position: absolute; inset: 0;

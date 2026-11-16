@@ -81,6 +81,18 @@ already claimed this was done. All 15 fixed; the script now reports none.
 | Tablet 834×1112 | 1104px | 666px | **0** (8px spare) |
 | Mobile 375×812 | 800px | 743px | **0**, clears the dock by 13px |
 
+| E4 | `/portfolio/ngo`: dead space above "Our NGO Projects" | ✅ | Gap **128px → 46px** |
+| E5 | Hero founder cards show the verified numbers | ✅ | Read from `ngoFounders`, not copy |
+
+**E4:** the page hero carried `padding-top: 156/168/180px`, guessed high to clear
+the fixed header. Measured: the header's bottom edge is at y=80 while the title
+started at y=208 — **128px of empty black**. Now 78/86/94px, a 46px gap.
+
+**E5:** the hero founder strip still printed the old figures (6.7M+, 1.9M+,
+1.3M+, 500K+). It now reads from `ngoFounders`, so a number corrected once is
+corrected everywhere. Harsh prints **"All platforms"**; Mallakhamb carries
+**🏆 IGT S10** above the count.
+
 **Root cause found:** `--hero-h` was a fixed height that ignored the viewport —
 `990px` desktop, `1080px` tablet, and `max(100svh - 57px, 900px)` on mobile. On a
 375×812 phone the hero claimed 900px — 88px taller than the screen, plus a 57px
