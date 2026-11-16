@@ -59,8 +59,8 @@ const SLIDES = [
     { titleLine1: 'Lifting Lives with', titleLine2: 'Dignity and Care.', quote: "Compassion isn't a gesture it's a lasting embrace.", founderName: 'POPATBHAI', founderTitle: 'Popatbhai Charitable Foundation', imageUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/PBmain.webp', gifUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GIF1.webp', boxDescription: "Created Popatbhai Charitable Foundation website reflecting dedication to uplifting underprivileged communities.", buttons: [{ text: 'Impact', link: '/impact/popatbhai' }, { text: 'Contribute', link: '/contribute/popatbhai' }, { text: 'Join', link: '/join/popatbhai' }], socialCounts: { instagram: '1.8M+ Followers', youtube: '2.41M', facebook: '1.9M+' }, backgroundImage: 'https://gi-img-cdn.sujeet.workers.dev/Images/PBimg.webp' },
 ];
 
-const TOTAL_SLIDES = 5;
-const SLIDE_ORDER = [0, 1, 9, 7, 8];
+const TOTAL_SLIDES = 4;
+const SLIDE_ORDER = [0, 1, 9, 7];
 const SLIDE_TO_FOUNDER = { 10: 0, 11: 1, 12: 2, 13: 3, 14: 4 };
 
 const SERVICES = [

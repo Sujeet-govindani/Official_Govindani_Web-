@@ -35,6 +35,19 @@ Legend: ✅ done + verified · 🟡 partial · ❌ not started · ⛔ blocked
 | B6 | Drop the real estate slide from rotation | ✅ | `SLIDE_ORDER = [0, 1, 9, 7, 8]` — `6` not in it |
 | B7 | Dedicated e-commerce carousel slide | ✅ | Slide `9` — Babaji, Tarushpranaa, Vivedam Agro |
 | B8 | Remove Ganesh Nayak | ✅ | 0 occurrences in `HeroSection.tsx` |
+| B9 | No website shown twice in the hero | ✅ | Slide `8` dropped; rotation `[0, 1, 9, 7]` |
+
+**B9:** slide 8 showed all six builds, but five were already in the hero — Gau
+Seva Dham and Mahipatsinh stand beside their founder's face on slide 0, and the
+e-commerce three have slide 9. A site shown twice is the weaker showing
+competing with the better one, so the duplicate left the rotation. Walked the
+carousel to confirm: NGO founders → e-commerce brands → e-commerce websites →
+Ask AI → loop, no repeats.
+
+> ⚠️ **Consequence:** Jivika was the one site on slide 8 with no other hero
+> presence, so it is now absent from the hero. It still leads `/portfolio/ngo`,
+> appears in Recently Shipped and has its own case study. Say if it should have
+> a hero slot of its own.
 
 ## C. The work showcase
 
