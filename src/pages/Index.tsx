@@ -11,7 +11,6 @@ import HeroSection from "@/components/HomePage/HeroSection";
 const SupremeWork = lazy(() => import("@/components/HomePage/SupremeWork"));
 const CredibilityBanners = lazy(() => import("@/components/HomePage/CredibilityBanners"));
 const VideoSection = lazy(() => import("@/components/HomePage/Section2Video"));
-const LatestWork = lazy(() => import("@/components/HomePage/LatestWork"));
 const ServicesSection = lazy(() => import("@/components/HomePage/ServicesSection"));
 const ClientTestimonialSection = lazy(() => import("@/components/HomePage/Testimonialssection"));
 const GoogleReviews = lazy(() => import("@/components/HomePage/GoogleReviews"));
@@ -41,7 +40,6 @@ const Index = () => {
           <div className="cv-defer" style={{ containIntrinsicSize: 'auto 980px' }}><SupremeWork /></div>
           <div className="cv-defer" style={{ containIntrinsicSize: 'auto 560px' }}><CredibilityBanners /></div>
           <div className="cv-defer" style={{ containIntrinsicSize: 'auto 640px' }}><VideoSection /></div>
-          <div className="cv-defer" style={{ containIntrinsicSize: 'auto 1200px' }}><LatestWork /></div>
           <div className="cv-defer" style={{ containIntrinsicSize: 'auto 2840px' }}><ServicesSection /></div>
           <div className="cv-defer" style={{ containIntrinsicSize: 'auto 560px' }}><ClientTestimonialSection /></div>
           <div className="cv-defer" style={{ containIntrinsicSize: 'auto 1050px' }}><GoogleReviews /></div>

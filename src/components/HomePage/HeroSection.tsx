@@ -4,6 +4,7 @@ import { useScrolledPastHero } from "../../hooks/useScrolledPastHero";
 import { Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import GoogleAiPanel from './GoogleAiPanel';
+import { supremeWork } from '@/data/supremeWork';
 
 const colors = {
     metallicGold: '#C5A028',
@@ -58,8 +59,8 @@ const SLIDES = [
     { titleLine1: 'Lifting Lives with', titleLine2: 'Dignity and Care.', quote: "Compassion isn't a gesture it's a lasting embrace.", founderName: 'POPATBHAI', founderTitle: 'Popatbhai Charitable Foundation', imageUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/PBmain.webp', gifUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GIF1.webp', boxDescription: "Created Popatbhai Charitable Foundation website reflecting dedication to uplifting underprivileged communities.", buttons: [{ text: 'Impact', link: '/impact/popatbhai' }, { text: 'Contribute', link: '/contribute/popatbhai' }, { text: 'Join', link: '/join/popatbhai' }], socialCounts: { instagram: '1.8M+ Followers', youtube: '2.41M', facebook: '1.9M+' }, backgroundImage: 'https://gi-img-cdn.sujeet.workers.dev/Images/PBimg.webp' },
 ];
 
-const TOTAL_SLIDES = 4;
-const SLIDE_ORDER = [0, 1, 6, 7];
+const TOTAL_SLIDES = 5;
+const SLIDE_ORDER = [0, 1, 6, 7, 8];
 const SLIDE_TO_FOUNDER = { 10: 0, 11: 1, 12: 2, 13: 3, 14: 4, 15: 5 };
 
 const SERVICES = [
@@ -1058,11 +1059,15 @@ const HeroCarousel = () => {
     const [activeBrand, setActiveBrand] = useState(0);
     const [brandKey, setBrandKey] = useState(0);
     const [selectedNgoPersonIndex, setSelectedNgoPersonIndex] = useState<number>(0);
+    // which of the six sites the work slide is showing
+    const [workIndex, setWorkIndex] = useState<number>(0);
 
     const wrapperRef = useRef(null);
     const manualNav = useRef(false);
     const brandTimer = useRef(null);
     const ngoTimer = useRef(null);
+    const workTimer = useRef(null);
+    const manualWork = useRef(false);
     // ─── touch refs for swipe ───────────────────────────────────────────────
     const touchStartX = useRef(0);
     const touchStartY = useRef(0);
@@ -1110,11 +1115,36 @@ const HeroCarousel = () => {
         return () => document.removeEventListener('visibilitychange', f);
     }, []);
 
+    /* Eight seconds suits a slide with one thing to say. The work slide holds
+       six sites rotating every 3.4s, so on a shared clock a visitor saw two of
+       them and the rest never appeared at all — the slide is given long enough
+       to show its whole set instead. A timeout keyed on the slide, rather than
+       one interval for all of them, is what lets the dwell differ. */
+    const SLIDE_MS = 8000;
+    const WORK_SLIDE_MS = 21000;
+
     useEffect(() => {
         if (!autoPlay || !visible) return;
-        const t = setInterval(() => setSlide(p => (p + 1) % TOTAL_SLIDES), 8000);
-        return () => clearInterval(t);
-    }, [autoPlay, visible]);
+        const dwell = origSlide === 8 ? WORK_SLIDE_MS : SLIDE_MS;
+        const t = setTimeout(() => setSlide(p => (p + 1) % TOTAL_SLIDES), dwell);
+        return () => clearTimeout(t);
+    }, [autoPlay, visible, slide, origSlide]);
+
+    /* The work slide holds six sites in one slot, so it advances on its own
+       clock while it is the slide on screen — and starts from the first site
+       each time it comes round, rather than resuming wherever it left off.
+       A tap on one of the name buttons stops the rotation for that visit, so
+       the slide does not move off whatever the visitor chose to look at. */
+    useEffect(() => {
+        clearInterval(workTimer.current);
+        if (origSlide !== 8) { manualWork.current = false; setWorkIndex(0); return; }
+        if (!autoPlay || !visible) return;
+        workTimer.current = setInterval(() => {
+            if (manualWork.current) return;
+            setWorkIndex(p => (p + 1) % supremeWork.length);
+        }, 3400);
+        return () => clearInterval(workTimer.current);
+    }, [origSlide, autoPlay, visible]);
 
     useEffect(() => {
         if (mob) return;
@@ -1830,6 +1860,78 @@ const HeroCarousel = () => {
         </div>
     );
 
+    /**
+     * Slide 5 — the work itself, one site at a time.
+     *
+     * The homepage already carries this as a section further down; up here it
+     * earns its place because a visitor who never scrolls still sees a real
+     * build. Six separate carousel slides would have pushed the loop past a
+     * minute, so the six share one slot and rotate inside it — each still gets
+     * a full banner of its own, which is the point.
+     */
+    const renderWorkSlide = () => {
+        const w = supremeWork[workIndex] ?? supremeWork[0];
+        return (
+            <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: 'linear-gradient(180deg,#0b0906 0%,#15110a 55%,#0f0c07 100%)', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', overflow: 'hidden' }}>
+                <div style={{ position: 'relative', zIndex: 2, width: '100%', maxWidth: 1180, padding: `${slidePad.top}px ${slidePad.side}px ${slidePad.bot}px`, boxSizing: 'border-box' }}>
+
+                    <div style={{ textAlign: 'center', marginBottom: mob ? 10 : 14 }}>
+                        <span style={{ fontSize: mob ? 9 : 10, fontWeight: 600, letterSpacing: '0.4em', textTransform: 'uppercase', color: '#C9A84C', fontFamily: "'Inter',sans-serif" }}>
+                            Recently shipped
+                        </span>
+                        <h1 style={{ fontFamily: "'Libre Baskerville',serif", fontSize: mob ? '1.24rem' : tab ? '1.55rem' : '2rem', fontWeight: 700, color: '#F5F0E8', margin: '7px 0 0', lineHeight: 1.22 }}>
+                            We could describe the work.{mob ? ' ' : <br />}
+                            <span style={{ color: '#C9A84C' }}>Easier to just open it.</span>
+                        </h1>
+                    </div>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: mob ? 'minmax(0,1fr)' : 'minmax(0,1.25fr) minmax(0,1fr)', gap: mob ? 12 : 26, alignItems: 'center' }}>
+                        <a href={w.url} target="_blank" rel="noopener noreferrer" key={`shot-${w.id}`}
+                           style={{ display: 'block', borderRadius: 13, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.12)', boxShadow: '0 26px 60px -28px rgba(0,0,0,0.95)', animation: 'ngo_in .5s ease-out both' }}>
+                            <img src={w.image} alt={`The ${w.name} website`} width="800" height="500" loading="eager" decoding="async"
+                                 style={{ width: '100%', height: 'auto', display: 'block' }} />
+                        </a>
+
+                        <div key={`copy-${w.id}`} style={{ animation: 'ngo_in .5s ease-out .06s both', minWidth: 0 }}>
+                            <p style={{ margin: 0, fontFamily: "'Inter',sans-serif", fontSize: mob ? 9.5 : 10.5, fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C9A84C' }}>{w.sector}</p>
+                            <h2 style={{ fontFamily: "'Libre Baskerville',serif", fontSize: mob ? '1.12rem' : tab ? '1.3rem' : '1.6rem', fontWeight: 700, color: '#F5F0E8', margin: '5px 0 4px', lineHeight: 1.2 }}>{w.name}</h2>
+                            <p style={{ fontFamily: "'Libre Baskerville',serif", fontStyle: 'italic', fontSize: mob ? '0.82rem' : '0.95rem', color: '#E6C35C', margin: '0 0 9px', lineHeight: 1.4 }}>{w.headline}</p>
+
+                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 11 }}>
+                                {w.stats.map((st) => (
+                                    <div key={st.k} style={{ flex: '1 1 76px', background: 'rgba(201,168,76,0.09)', border: '1px solid rgba(201,168,76,0.26)', borderRadius: 9, padding: mob ? '6px 7px' : '8px 10px', minWidth: 0 }}>
+                                        <div style={{ fontFamily: "'Libre Baskerville',serif", fontSize: mob ? '0.8rem' : '0.95rem', color: '#E6C35C', lineHeight: 1.1 }}>{st.v}</div>
+                                        <div style={{ fontFamily: "'Inter',sans-serif", fontSize: mob ? 8.5 : 9.5, fontWeight: 600, color: 'rgba(245,240,232,0.6)', lineHeight: 1.25 }}>{st.k}</div>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <a href={w.url} target="_blank" rel="noopener noreferrer" className="ngo-cta-btn" style={{ fontSize: mob ? '0.8rem' : '0.88rem', padding: mob ? '0.5rem 1.5rem' : '0.6rem 1.9rem' }}>
+                                Visit {w.name} &#8599;
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* the other five, to jump straight to */}
+                    <div style={{ display: 'flex', gap: 7, justifyContent: 'center', marginTop: mob ? 11 : 16, flexWrap: 'wrap' }}>
+                        {supremeWork.map((s2, i) => (
+                            <button key={s2.id} onClick={() => { setWorkIndex(i); manualWork.current = true; }}
+                                    aria-label={`Show ${s2.name}`}
+                                    style={{ cursor: 'pointer', borderRadius: 7, padding: mob ? '5px 9px' : '6px 13px',
+                                             fontFamily: "'Inter',sans-serif", fontSize: mob ? 9.5 : 11, fontWeight: 600,
+                                             color: i === workIndex ? '#3a2500' : 'rgba(245,240,232,0.66)',
+                                             background: i === workIndex ? 'linear-gradient(135deg,#c8a84b,#f4e5b8 45%,#c8a84b)' : 'rgba(255,255,255,0.055)',
+                                             border: i === workIndex ? '1px solid rgba(201,168,76,0.8)' : '1px solid rgba(255,255,255,0.1)',
+                                             transition: 'background 200ms ease, color 200ms ease' }}>
+                                {s2.name}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        );
+    };
+
     const renderLogisticsSlide = () => {
         const processSteps = [
             { img: 'https://gi-img-cdn.sujeet.workers.dev/Images/imgone.webp', title: 'Vendor /\nBrand Owner', sub: 'Upload Products' },
@@ -2448,6 +2550,7 @@ const HeroCarousel = () => {
                         {origSlide === 1 && renderEcomSlide()}
                         {origSlide === 2 && renderInfraSlide()}
                         {origSlide === 7 && renderAiSlide()}
+                        {origSlide === 8 && renderWorkSlide()}
                         {origSlide === 6 && renderRealEstateSlide()}
                         {isFounderSlide && renderFounderSlide()}
                     </section>
