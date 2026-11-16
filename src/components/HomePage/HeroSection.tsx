@@ -1499,51 +1499,79 @@ const HeroCarousel = () => {
         const name = p.name.replace('\n', ' ');
 
         return (
-            <div style={{ display: 'flex', alignItems: 'flex-end', gap: 10, width: '100%', height: 226, minHeight: 226 }}>
-                <div style={{ flex: '1 1 0', minWidth: 0, paddingBottom: 6, animation: 'ngo_in .45s ease-out both' }}>
-                    <h2 style={{ fontFamily: "'Libre Baskerville',serif", fontSize: '1.12rem', fontWeight: 700, color: ngo.dark, margin: '0 0 2px', lineHeight: 1.18 }}>
+            <div style={{ position: 'relative', display: 'flex', alignItems: 'flex-end', width: '100%', height: 226, minHeight: 226 }}>
+
+                {/* A warm glow behind the figure, so the cut-out sits on the
+                    slide instead of floating on a busy sepia photograph. */}
+                <div aria-hidden="true" style={{ position: 'absolute', right: '-4%', bottom: 0, width: '62%', height: '92%', background: 'radial-gradient(ellipse at 60% 70%, rgba(255,236,186,0.75) 0%, rgba(255,236,186,0.28) 42%, transparent 72%)', pointerEvents: 'none', zIndex: 0 }} />
+
+                {/* The panel. The copy used to sit directly on the photograph —
+                    dark brown on a busy cream field, which is why it read as
+                    faint. A frosted plate gives it its own surface, lifts the
+                    contrast and lets the gold actually look like gold. */}
+                <div style={{
+                    position: 'relative', zIndex: 2, flex: '1 1 0', minWidth: 0,
+                    background: 'linear-gradient(135deg, rgba(42,26,8,0.90) 0%, rgba(61,43,31,0.84) 55%, rgba(42,26,8,0.90) 100%)',
+                    WebkitBackdropFilter: 'blur(10px) saturate(1.25)',
+                    backdropFilter: 'blur(10px) saturate(1.25)',
+                    border: '1px solid rgba(201,168,76,0.45)',
+                    borderRadius: 14,
+                    boxShadow: '0 18px 44px -20px rgba(30,18,2,0.75), inset 0 1px 0 rgba(255,235,180,0.16)',
+                    padding: '13px 14px 14px',
+                    animation: 'ngo_in .45s ease-out both',
+                }}>
+                    <p style={{ margin: 0, fontFamily: "'Inter',sans-serif", fontSize: '0.5rem', fontWeight: 700, letterSpacing: '0.26em', textTransform: 'uppercase', color: 'rgba(230,195,92,0.9)' }}>
+                        Trusted by
+                    </p>
+
+                    <h2 style={{ fontFamily: "'Libre Baskerville',serif", fontSize: '1.16rem', fontWeight: 700, color: '#FFF6E2', margin: '5px 0 2px', lineHeight: 1.16 }}>
                         {name}
                     </h2>
+
                     {rec && (
                         <a href={rec.orgUrl} target="_blank" rel="noopener noreferrer"
-                           style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.64rem', fontWeight: 600, color: ngo.mid, textDecoration: 'none', borderBottom: '1px solid rgba(160,120,60,0.45)' }}>
+                           style={{ display: 'inline-block', fontFamily: "'Inter',sans-serif", fontSize: '0.62rem', fontWeight: 600, color: 'rgba(245,235,205,0.72)', textDecoration: 'none', borderBottom: '1px solid rgba(201,168,76,0.5)', paddingBottom: 1 }}>
                             {rec.org} &#8599;
                         </a>
                     )}
 
-                    <div style={{ marginTop: 10 }}>
-                        <div style={{ fontFamily: "'Libre Baskerville',serif", fontSize: '1.42rem', fontWeight: 800, color: '#8B6914', lineHeight: 1 }}>
+                    <div style={{ height: 1, background: 'linear-gradient(90deg, rgba(201,168,76,0.55), rgba(201,168,76,0))', margin: '11px 0 9px' }} />
+
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: 7 }}>
+                        <span style={{ fontFamily: "'Libre Baskerville',serif", fontSize: '1.72rem', fontWeight: 800, lineHeight: 1, color: '#F2D98C', textShadow: '0 2px 14px rgba(201,168,76,0.45)' }}>
                             {rec ? rec.followers : p.f.split('\n')[0]}
-                        </div>
-                        <div style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.56rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: ngo.mid, marginTop: 2 }}>
-                            {rec?.scope === 'all-platforms' ? 'Across all platforms' : 'Followers'}
-                        </div>
+                        </span>
+                        <span style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.52rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(245,235,205,0.62)' }}>
+                            {rec?.scope === 'all-platforms' ? 'Across all\nplatforms' : 'Followers'}
+                        </span>
                     </div>
 
                     {rec?.badge && (
-                        <div style={{ display: 'inline-block', marginTop: 9, background: 'rgba(197,160,40,0.18)', border: '1px solid rgba(139,105,20,0.5)', borderRadius: 5, padding: '3px 8px', fontFamily: "'Inter',sans-serif", fontSize: '0.56rem', fontWeight: 700, color: '#6B4F0B' }}>
+                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 5, marginTop: 10, background: 'linear-gradient(135deg, rgba(201,168,76,0.3), rgba(201,168,76,0.14))', border: '1px solid rgba(230,195,92,0.7)', borderRadius: 999, padding: '4px 11px', fontFamily: "'Inter',sans-serif", fontSize: '0.54rem', fontWeight: 700, letterSpacing: '0.02em', color: '#FFE9A8' }}>
                             &#127942; IGT S10 Winners
                         </div>
                     )}
 
-                    {rec && (
-                        <p style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.63rem', lineHeight: 1.5, color: ngo.mid, margin: '9px 0 0' }}>
+                    {rec && !rec.badge && (
+                        <p style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.6rem', lineHeight: 1.48, color: 'rgba(245,235,205,0.66)', margin: '10px 0 0' }}>
                             {rec.claim}
                         </p>
                     )}
                 </div>
 
-                <div style={{ flex: '0 0 44%', height: '100%', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', minWidth: 0 }}>
+                {/* The figure, overlapping the plate's edge so the two read as
+                    one object rather than a card beside a photo. */}
+                <div style={{ position: 'relative', zIndex: 3, flex: '0 0 46%', height: '100%', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', minWidth: 0, marginLeft: -14 }}>
                     <img
                         key={`spot-${selectedNgoPersonIndex}`}
                         src={p.image}
                         srcSet={[`${p.image.replace(/\.webp$/, '-480w.webp')} 480w`, `${p.image.replace(/\.webp$/, '-800w.webp')} 800w`, `${p.image} 1700w`].join(', ')}
-                        sizes="44vw"
+                        sizes="46vw"
                         alt={name}
                         loading="eager"
                         fetchPriority="high"
                         decoding="async"
-                        style={{ height: '100%', width: 'auto', maxWidth: 'none', objectFit: 'contain', objectPosition: 'bottom center', display: 'block', filter: 'drop-shadow(0 10px 22px rgba(61,43,31,0.34))', animation: 'ngo_face 460ms ease-out' }}
+                        style={{ height: '100%', width: 'auto', maxWidth: 'none', objectFit: 'contain', objectPosition: 'bottom center', display: 'block', filter: 'drop-shadow(-6px 12px 22px rgba(44,28,6,0.45))', animation: 'ngo_face 460ms ease-out' }}
                     />
                 </div>
             </div>
