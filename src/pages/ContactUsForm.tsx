@@ -207,6 +207,24 @@ const ContactUsForm = ({ onSuccess, onClose, isModal = false }: { onSuccess?: ()
           message: formData.message,
         }),
       });
+      // Also capture into the WhatsApp CRM + lead log via the same-origin bridge.
+      // Fire-and-forget: a bridge error must never break the form's success UX.
+      try {
+        const params = new URLSearchParams(window.location.search);
+        void fetch("/api/lead.php", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: formData.name,
+            phone: formData.phone,
+            email: formData.email,
+            subject: finalSubject,
+            message: formData.message,
+            source: params.get("utm_source") || "contact-form",
+            campaign: params.get("utm_campaign") || "",
+          }),
+        }).catch(() => {});
+      } catch { /* no-op */ }
       setShowSuccessModal(true);
       if (onSuccess) onSuccess();
       setFormData({ name: "", email: "", phone: "", experience: "", subject: "", message: "" });

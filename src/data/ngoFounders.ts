@@ -55,7 +55,7 @@ export const ngoFounders: NgoFounder[] = [
     claim: 'A spiritual preacher whose katha fills grounds — and whose audience funds a hospital for rescued animals.',
     portrait: `${IMG}/devichitra.webp`,
     feed: `${IG}/chitralekha.webp`,
-    site: 'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Gau-Seva-Dham.webp',
+    site: 'https://gi-img-cdn.sujeet.workers.dev/Images/sites/gausevadham.webp',
   },
   {
     id: 'popatbhai',
@@ -83,7 +83,7 @@ export const ngoFounders: NgoFounder[] = [
     claim: 'Food, shelter and schooling for thousands — and 11,000+ posts showing every day of it.',
     portrait: `${IMG}/founder-open.webp`,
     feed: `${IG}/mahipatsinh.webp`,
-    site: 'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Mahipatsinh-Foundation.webp',
+    site: 'https://gi-img-cdn.sujeet.workers.dev/Images/sites/mahipatsinh.webp',
   },
   {
     id: 'harsh',

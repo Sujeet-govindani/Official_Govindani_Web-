@@ -352,8 +352,8 @@ const NgoPortfolio = () => {
   const allProjects = [
     /* The three flagship recent builds lead the list: custom-coded, and the
        work a visitor to this page should see first. The rest follow. */
-    { title: "Mahipatsinh Foundation", category: "ngo", url: "https://mahipatsinhfoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioSites/mahipatsinh.jpg" },
-    { title: "Gau Seva Dham", category: "ngo", url: "https://gausevadham.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Gau-Seva-Dham.webp" },
+    { title: "Mahipatsinh Foundation", category: "ngo", url: "https://mahipatsinhfoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/mahipatsinh.webp" },
+    { title: "Gau Seva Dham", category: "ngo", url: "https://gausevadham.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/gausevadham.webp" },
     { title: "Jivika Foundation", category: "ngo", url: "https://jivika.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/sites/jivika.webp" },
     { title: "Popatbhai Charitable Trust", category: "ngo", url: "https://popatbhaicharitablefoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Popatbhai-Charitable-Trust.webp" },
     { title: "Harsh Chhikkara Jan Seva Trust", category: "ngo", url: "https://harshchhikara.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Harsh-Chhikkara-Jan-Seva-Trust.webp" },

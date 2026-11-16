@@ -363,3 +363,19 @@
    The mobile header pill is noticeably taller than desktop, so give it more room. */
 .gusa section.gusa-hero { padding-top: clamp(116px, 13vw, 148px) !important; }
 @media (max-width: 760px) { .gusa section.gusa-hero { padding-top: 168px !important; } }
+
+/* ---- FAQ (accessible <details> accordion) ---- */
+.gusa-faq { padding: clamp(44px,6vw,80px) clamp(20px,5vw,60px); background: #fff; }
+.gusa-faq-list { max-width: 820px; margin: clamp(22px,3vw,34px) auto 0; display: flex; flex-direction: column; gap: 12px; }
+.gusa-faq-item { border: 1px solid var(--line); border-radius: 14px; background: var(--cream); overflow: hidden; transition: border-color .2s ease, box-shadow .2s ease; }
+.gusa-faq-item[open] { border-color: rgba(184,134,11,.45); box-shadow: 0 18px 44px -30px rgba(90,60,10,.5); }
+.gusa-faq-q { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 22px; font-weight: 700; color: var(--navy); font-size: 1.02rem; }
+.gusa-faq-q::-webkit-details-marker { display: none; }
+.gusa-faq-plus { position: relative; flex: 0 0 auto; width: 20px; height: 20px; }
+.gusa-faq-plus::before, .gusa-faq-plus::after { content: ""; position: absolute; background: var(--gold); border-radius: 2px; transition: opacity .2s ease, transform .2s ease; }
+.gusa-faq-plus::before { left: 2px; right: 2px; top: 9px; height: 2px; }
+.gusa-faq-plus::after { top: 2px; bottom: 2px; left: 9px; width: 2px; }
+.gusa-faq-item[open] .gusa-faq-plus::after { opacity: 0; transform: rotate(90deg); }
+.gusa-faq-a { padding: 0 22px 20px; color: var(--muted); }
+.gusa-faq-a p { margin: 0; line-height: 1.62; }
+.gusa-faq-cta { text-align: center; margin-top: clamp(24px,3vw,34px); }

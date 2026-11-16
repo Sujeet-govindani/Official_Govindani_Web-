@@ -1346,12 +1346,13 @@ const HeroCarousel = () => {
                             {p.name}
                         </span>
 
-                        {/* A trophy outranks a follower count, so it sits with the name. */}
-                        {founderBadge(p) && (
-                            <span style={{ display: 'block', fontSize: mob ? '0.44rem' : tab ? '0.5rem' : '0.54rem', fontWeight: 700, lineHeight: 1.2, color: isSelected ? '#FFE9A8' : '#8B6914', fontFamily: "'Inter',sans-serif" }}>
-                                &#127942; IGT S10 Winners
-                            </span>
-                        )}
+                        {/* A trophy outranks a follower count, so it sits with the
+                            name. The line is rendered on every card and hidden where
+                            there is no badge: when only one card carried it, that card
+                            grew and the whole row shifted as the selection reached it. */}
+                        <span aria-hidden={!founderBadge(p)} style={{ display: 'block', fontSize: mob ? '0.44rem' : tab ? '0.5rem' : '0.54rem', fontWeight: 700, lineHeight: 1.2, color: isSelected ? '#FFE9A8' : '#8B6914', fontFamily: "'Inter',sans-serif", visibility: founderBadge(p) ? 'visible' : 'hidden' }}>
+                            {founderBadge(p) ? '\u{1F3C6} IGT S10' : '\u00A0'}
+                        </span>
                         <div style={{ width: '50%', height: '1px', background: isSelected ? 'rgba(255,255,255,0.5)' : 'rgba(160,120,60,0.32)' }} />
 
                         <span
@@ -1540,7 +1541,7 @@ const HeroCarousel = () => {
                             alt={`The ${rec?.org ?? name} website, built by Govindani Infotech`}
                             loading="eager"
                             decoding="async"
-                            style={{ width: '155%', marginLeft: '-27.5%', height: 'auto', display: 'block', animation: 'ngo_sitescroll 30s linear infinite alternate' }}
+                            style={{ width: '100%', height: 'auto', display: 'block', animation: 'ngo_sitescroll 30s linear infinite alternate' }}
                         />
                     </div>
 
@@ -1655,11 +1656,9 @@ const HeroCarousel = () => {
                                     }}
                                 >
                                     <span style={{ display: 'block', fontSize: '0.54rem', fontWeight: 700, color: isSel ? '#2B1A00' : ngo.dark, fontFamily: "'Libre Baskerville',serif", lineHeight: 1.18, whiteSpace: 'pre-line' }}>{p.name}</span>
-                                    {founderBadge(p) && (
-                                        <span style={{ display: 'block', fontSize: '0.42rem', fontWeight: 700, lineHeight: 1.15, color: isSel ? '#FFE9A8' : '#8B6914', fontFamily: "'Inter',sans-serif" }}>
-                                            &#127942; IGT S10
-                                        </span>
-                                    )}
+                                    <span aria-hidden={!founderBadge(p)} style={{ display: 'block', fontSize: '0.42rem', fontWeight: 700, lineHeight: 1.15, color: isSel ? '#FFE9A8' : '#8B6914', fontFamily: "'Inter',sans-serif", visibility: founderBadge(p) ? 'visible' : 'hidden' }}>
+                                        {founderBadge(p) ? '\u{1F3C6} IGT S10' : '\u00A0'}
+                                    </span>
                                     <div style={{ width: '50%', height: '1px', background: isSel ? 'rgba(43,26,0,0.45)' : 'rgba(160,120,60,0.32)' }} />
                                     <span style={{ display: 'block', fontSize: '0.52rem', color: isSel ? '#3B2404' : ngo.mid, fontFamily: "'Inter',sans-serif", fontWeight: 600, lineHeight: 1.3, whiteSpace: 'pre-line' }}>{founderLine(p)}</span>
                                 </div>

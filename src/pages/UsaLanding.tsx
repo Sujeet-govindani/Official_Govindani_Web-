@@ -162,6 +162,27 @@ const TRUST: { ic: string; t: string; meta?: boolean }[] = [
   { ic: '💬', t: 'WhatsApp support that replies' },
 ];
 
+// Frequently asked questions — answers only restate claims already on this page
+// (ownership, pricing, US registration, payments, compliance, support).
+const FAQ: [string, string][] = [
+  ['How much does a website cost?',
+   'Projects start from $1,000. You own the website outright — a simple subscription then covers premium hosting, your first year of maintenance and ongoing support, so nothing breaks and you are never left on your own.'],
+  ['Do I actually own my website?',
+   'Yes — 100%. The site is custom-coded for you and it is yours: full ownership, full data, no lock-in, and zero platform commission on your donations, ever.'],
+  ['How do donors and customers pay?',
+   'The way US supporters expect — PayPal, Stripe, Apple Pay and all major cards. For Indian donors we also wire up UPI, net-banking and wallets. Recurring and one-time giving are both built in.'],
+  ['You work from India — how does that go across time zones?',
+   'You deal with a US-registered company (Govindani Infotech LLC, Wyoming) and a dedicated project manager who keeps US-friendly hours. Updates come over WhatsApp and email, and we actually reply — most clients hear back the same day.'],
+  ['Are you a real, registered US company?',
+   'Yes. Govindani Infotech LLC is registered with the Wyoming Secretary of State (filing ID 2025-001850382) and holds a US federal EIN, so you have a legally accountable partner for contracts, invoicing and support — based at 30 N Gould St, Ste N, Sheridan, WY 82801.'],
+  ['Will my non-profit be tax-compliant in the US?',
+   'Built in. Your donors get automatic IRS tax-deductible receipts and written acknowledgments, and you get Form 990 export, Schedule B and an audit-ready trail — plus 80G and 10BD/10BE for any Indian donors.'],
+  ['How long until my site is live?',
+   'We commit to a clear timeline before we start and deliver on it — most sites go live within a few weeks. Your dedicated manager keeps you updated at every step.'],
+  ['Can you also run our ads and marketing?',
+   'Yes — we run the whole growth engine. As a verified Meta Business Partner we handle performance ads, social media, donor email and WhatsApp journeys, logo and design, and product shoots, so your website actually brings in supporters.'],
+];
+
 export default function UsaLanding() {
   const interest: Interest = 'ngo';   // /usa is NGO-only — no interest popup / toggle
   // Library is permanent (never closes) — defaults to the NGO list; category
@@ -423,6 +444,21 @@ export default function UsaLanding() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* FAQ — answers US-buyer objections right before the final CTA */}
+      <section className="gusa-faq">
+        <h2 className="gusa-h2">Questions US clients ask us</h2>
+        <p className="gusa-sub">Straight answers before you reach out — no fine print.</p>
+        <div className="gusa-faq-list">
+          {FAQ.map(([q, a], i) => (
+            <details className="gusa-faq-item" key={q} open={i === 0}>
+              <summary className="gusa-faq-q"><span>{q}</span><span className="gusa-faq-plus" aria-hidden="true" /></summary>
+              <div className="gusa-faq-a"><p>{a}</p></div>
+            </details>
+          ))}
+        </div>
+        <div className="gusa-faq-cta"><button type="button" className="gusa-btn" onClick={openForm}>Still have a question? Ask us &rarr;</button></div>
       </section>
 
       {/* thanks */}
