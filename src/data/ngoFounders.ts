@@ -43,6 +43,8 @@ export interface NgoFounder {
       17 Nov 2026. Where a client publishes no numbers, these are the focus
       areas their site names — never a metric invented to fill the slot. */
   heroStats: { v: string; k: string }[];
+  /** what we actually built them — the part the figures leave out */
+  built: string[];
 }
 
 const IG = 'https://gi-img-cdn.sujeet.workers.dev/Images/ig';
@@ -64,6 +66,7 @@ export const ngoFounders: NgoFounder[] = [
     site: 'https://gi-img-cdn.sujeet.workers.dev/Images/sites/gausevadham.webp',
     lead: "A free hospital for the animals nobody else will treat.",
     heroStats: [{ v: '80,000+', k: 'Animals treated' }, { v: '400-500', k: 'In care daily' }, { v: '13+', k: 'Years of seva' }],
+    built: ['Donation infrastructure', '80G receipts', 'Campaign microsite'],
   },
   {
     id: 'popatbhai',
@@ -80,6 +83,7 @@ export const ngoFounders: NgoFounder[] = [
     site: 'https://gi-img-cdn.sujeet.workers.dev/Images/sites/popatbhai.webp',
     lead: "Rescue, shelter and dignity, right across Gujarat.",
     heroStats: [{ v: '2,000+', k: 'Families fed' }, { v: '900+', k: 'Women empowered' }, { v: '150+', k: 'Tricycles given' }],
+    built: ['Campaign pages', 'Live fundraising bars', 'Facebook donation flow'],
   },
   {
     id: 'mahipatsinh',
@@ -96,6 +100,7 @@ export const ngoFounders: NgoFounder[] = [
     site: 'https://gi-img-cdn.sujeet.workers.dev/Images/sites/mahipatsinh.webp',
     lead: "Shelter, schooling and care, every day since 2020.",
     heroStats: [{ v: '10K+', k: 'Lives reached' }, { v: '1K+', k: 'Children cared for' }, { v: '25+', k: 'Communities' }],
+    built: ['Recurring donations', 'Auto 80G receipts', 'Client-owned donor data'],
   },
   {
     id: 'harsh',
@@ -112,6 +117,7 @@ export const ngoFounders: NgoFounder[] = [
     site: 'https://gi-img-cdn.sujeet.workers.dev/Images/sites/harsh.webp',
     lead: "Relief that arrives before the headlines do.",
     heroStats: [{ v: 'Disaster', k: 'Flood & quake relief' }, { v: 'Education', k: 'For every child' }, { v: 'Medical', k: 'Free health camps' }],
+    built: ['Multi-cause donation', 'Tax-benefit flow', 'Relief campaign pages'],
   },
   {
     id: 'mallakhamb',
@@ -129,6 +135,7 @@ export const ngoFounders: NgoFounder[] = [
     site: 'https://gi-img-cdn.sujeet.workers.dev/Images/sites/mallakhamb.webp',
     lead: "India's first tribal Mallakhamb team to win a national stage.",
     heroStats: [{ v: '15 Cr', k: 'Public votes' }, { v: '50+', k: 'Shows a year' }, { v: '50', k: 'Tribal students' }],
+    built: ['Academy site', 'Media & press wall', 'Supporter funnel'],
   },
 ];
 

@@ -3,6 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import { caseStudies } from '@/data/caseStudies';
 import Header from '@/components/HomePage/Header';
 import Footer from '@/components/HomePage/Footer';
+import SEO from '@/components/SEO';
+import { createBreadcrumbSchema } from '@/seo/schema';
 
 /**
  * One case study, rendered from src/data/caseStudies.ts.
@@ -37,8 +39,41 @@ export default function CaseStudyDetail() {
 
   const related = caseStudies.filter(c => c.id !== cs.id).slice(0, 3);
 
+  const canonical = `https://govindaniit.com/pages/case-study/${cs.id}`;
+  const metaDesc = (cs.tagline || cs.impact || '').slice(0, 155);
+  const schema = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: `${cs.client}: ${cs.tagline}`.slice(0, 110),
+      articleSection: cs.category,
+      about: cs.client,
+      url: canonical,
+      mainEntityOfPage: canonical,
+      image: cs.image,
+      author: { '@type': 'Organization', name: 'Govindani Infotech' },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Govindani Infotech',
+        url: 'https://govindaniit.com',
+      },
+    },
+    createBreadcrumbSchema([
+      { name: 'Home', url: 'https://govindaniit.com' },
+      { name: 'Case Studies', url: 'https://govindaniit.com/pages/case-study' },
+      { name: cs.client, url: canonical },
+    ]),
+  ];
+
   return (
     <div style={{ background: '#0a0a0a', minHeight: '100vh' }}>
+      <SEO
+        title={`${cs.client} Case Study`}
+        description={metaDesc}
+        canonical={canonical}
+        keywords={`${cs.client}, ${cs.category}, case study, Govindani Infotech`}
+        schema={schema}
+      />
       <Header />
 
       <style>{`

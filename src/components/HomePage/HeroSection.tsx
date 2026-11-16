@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import GoogleAiPanel from './GoogleAiPanel';
 import { supremeWork } from '@/data/supremeWork';
 import { ngoFounders } from '@/data/ngoFounders';
+import { websiteWall } from '@/data/websiteWall';
 
 const colors = {
     metallicGold: '#C5A028',
@@ -60,7 +61,7 @@ const SLIDES = [
 ];
 
 const TOTAL_SLIDES = 4;
-const SLIDE_ORDER = [0, 1, 9, 7];
+const SLIDE_ORDER = [7, 0, 9, 10];
 const SLIDE_TO_FOUNDER = { 10: 0, 11: 1, 12: 2, 13: 3, 14: 4 };
 
 const SERVICES = [
@@ -1133,10 +1134,13 @@ const HeroCarousel = () => {
        one interval for all of them, is what lets the dwell differ. */
     const SLIDE_MS = 8000;
     const WORK_SLIDE_MS = 21000;
+    const NGO_SLIDE_MS = 16500;   // five founders at 3s, plus a beat
 
     useEffect(() => {
         if (!autoPlay || !visible) return;
-        const dwell = (origSlide === 8 || origSlide === 9) ? WORK_SLIDE_MS : SLIDE_MS;
+        const dwell = (origSlide === 8 || origSlide === 9) ? WORK_SLIDE_MS
+                    : origSlide === 0 ? NGO_SLIDE_MS
+                    : SLIDE_MS;
         const t = setTimeout(() => setSlide(p => (p + 1) % TOTAL_SLIDES), dwell);
         return () => clearTimeout(t);
     }, [autoPlay, visible, slide, origSlide]);
@@ -1208,8 +1212,12 @@ const HeroCarousel = () => {
         };
     }, [origSlide]);
 
+    /* The founder cycle begins at Devi Chitralekha every time the slide comes
+       round, rather than resuming wherever it stopped, so the sequence always
+       reads first-to-last. The slide's own dwell is long enough for all five
+       at 3s each - on the shared 8s clock it moved on after two. */
     useEffect(() => {
-        if (origSlide === 0 && autoPlay && visible) { startNgoTimer(); }
+        if (origSlide === 0 && autoPlay && visible) { setSelectedNgoPersonIndex(0); startNgoTimer(); }
         else { clearInterval(ngoTimer.current); }
         return () => clearInterval(ngoTimer.current);
     }, [origSlide, autoPlay, visible, startNgoTimer]);
@@ -1565,7 +1573,10 @@ const HeroCarousel = () => {
                     </div>
                 </a>
 
-                <div style={{ position: 'relative', zIndex: 3, flex: '0 0 40%', height: '100%', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', minWidth: 0, marginLeft: -10 }}>
+                {/* The figure overlaps the frame and stands a little taller than it.
+                    Side by side the two read as a card next to a photo; stepping in
+                    front and rising above the top edge is what gives the depth. */}
+                <div style={{ position: 'relative', zIndex: 4, flex: `0 0 ${big ? 38 : 40}%`, height: `${big ? 112 : 108}%`, display: 'flex', alignItems: 'flex-end', justifyContent: 'center', minWidth: 0, marginLeft: big ? -64 : -26 }}>
                     <img
                         key={`spot-${selectedNgoPersonIndex}`}
                         src={p.image}
@@ -1709,10 +1720,10 @@ const HeroCarousel = () => {
                         /* Text column widened and the gap increased so the people
                            collage sits clearly further right, away from the
                            headline (was minmax(0,1fr) minmax(0,1.8fr) / 40px). */
-                        gridTemplateColumns: tab ? '1fr' : 'minmax(0, 1.1fr) minmax(0, 1.5fr)',
-                        gap: tab ? '14px' : '56px', alignItems: 'start',
+                        gridTemplateColumns: tab ? '1fr' : 'minmax(0, 1fr) minmax(0, 1.18fr)',
+                        gap: tab ? '14px' : '44px', alignItems: 'center', justifyContent: 'center', margin: '0 auto',
                       }}>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: tab ? '14px' : '20px' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: tab ? '14px' : '18px', justifyContent: 'center' }}>
                             <h1
                                 style={{
                                     fontFamily: "'Libre Baskerville',serif",
@@ -1746,7 +1757,15 @@ const HeroCarousel = () => {
                                     </span>
                                 )}
                             </p>
-                            <div style={{ display: 'flex', justifyContent: 'flex-start', gap: '12px', flexWrap: 'wrap', animation: 'ngo_in .75s ease-out .2s both' }}>
+                            {/* What we actually built them. The column was running short
+                                against the panel opposite, and this is the part of the
+                                story the figures and the quote leave out. */}
+                            <div key={`built-${selectedNgoPersonIndex}`} style={{ display: 'flex', flexWrap: 'wrap', gap: '7px', animation: 'ngo_in .7s ease-out .2s both' }}>
+                                {(founderOf(cur2)?.built ?? ['Donation infrastructure', '80G receipts', 'Donor database']).map((t) => (
+                                    <span key={t} style={{ fontFamily: "'Inter',sans-serif", fontSize: tab ? '0.62rem' : '0.68rem', fontWeight: 600, color: ngo.mid, background: 'rgba(245,232,195,0.72)', border: '1px solid rgba(160,120,60,0.4)', borderRadius: 99, padding: '5px 12px' }}>{t}</span>
+                                ))}
+                            </div>
+                            <div style={{ display: 'flex', justifyContent: 'flex-start', gap: '12px', flexWrap: 'wrap', animation: 'ngo_in .75s ease-out .24s both' }}>
                                 <Link to="/pages/NgoPage" className={`ngo-cta-btn${tab ? ' tab' : ''}`}>Explore NGO Ecosystem →</Link>
                                 <Link to="/portfolio/ngo" className={`ngo-cta-btn${tab ? ' tab' : ''}`}>View Portfolio</Link>
                             </div>
@@ -2113,6 +2132,80 @@ const HeroCarousel = () => {
                 </div>
             </div>
             </>
+        );
+    };
+
+    /**
+     * The wall — every site we have built, moving.
+     *
+     * A number ("1000+ websites") is a claim; a wall of real captures scrolling
+     * past is the same statement made with evidence. These are the identical
+     * full-page captures the portfolio cards use, so nothing here is a mock-up.
+     *
+     * Six columns drift at different speeds and in alternating directions, which
+     * stops the eye finding a repeat. The outer columns are blurred and dimmed
+     * and the centre is sharp, so it reads as depth rather than a flat grid, and
+     * the headline stays legible over the top of it.
+     */
+    const renderWallSlide = () => {
+        const COLS = mob ? 3 : 6;
+        const per = Math.ceil(websiteWall.length / COLS);
+        const columns = Array.from({ length: COLS }, (_, i) => websiteWall.slice(i * per, (i + 1) * per));
+
+        return (
+            <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: '#07060a', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <style>{`
+                    @keyframes giw_up   { from { transform: translateY(0) }      to { transform: translateY(-50%) } }
+                    @keyframes giw_down { from { transform: translateY(-50%) }   to { transform: translateY(0) } }
+                    @media (prefers-reduced-motion: reduce) {
+                        .giw-col { animation: none !important }
+                    }
+                `}</style>
+
+                {/* the moving wall */}
+                <div aria-hidden="true" style={{ position: 'absolute', inset: '-6%', display: 'flex', gap: mob ? 8 : 14, zIndex: 0 }}>
+                    {columns.map((col, i) => {
+                        const mid = (COLS - 1) / 2;
+                        const edge = Math.abs(i - mid) / mid;          // 0 centre, 1 outermost
+                        return (
+                            <div key={i} className="giw-col" style={{
+                                flex: '1 1 0', minWidth: 0,
+                                animation: `${i % 2 ? 'giw_down' : 'giw_up'} ${46 + i * 9}s linear infinite`,
+                                filter: `blur(${(edge * 3.4).toFixed(1)}px)`,
+                                opacity: 0.9 - edge * 0.45,
+                                transform: `scale(${1 - edge * 0.06})`,
+                            }}>
+                                {/* listed twice so the loop has no seam */}
+                                {[...col, ...col].map((src, j) => (
+                                    <img key={j} src={src} alt="" loading="lazy" decoding="async"
+                                         style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 8, marginBottom: mob ? 8 : 14, border: '1px solid rgba(255,255,255,0.07)' }} />
+                                ))}
+                            </div>
+                        );
+                    })}
+                </div>
+
+                {/* darkness, so the words sit on something and the wall reads as depth */}
+                <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'radial-gradient(ellipse at 50% 50%, rgba(7,6,10,0.72) 0%, rgba(7,6,10,0.9) 46%, rgba(7,6,10,0.98) 78%)' }} />
+                <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg, #07060a 0%, transparent 18%, transparent 82%, #07060a 100%)' }} />
+
+                <div style={{ position: 'relative', zIndex: 2, textAlign: 'center', padding: `0 ${slidePad.side}px`, maxWidth: 900 }}>
+                    <span style={{ fontFamily: "'Inter',sans-serif", fontSize: mob ? 9 : 10, fontWeight: 600, letterSpacing: '0.4em', textTransform: 'uppercase', color: '#C9A84C' }}>
+                        Every one of these is ours
+                    </span>
+                    <h1 style={{ fontFamily: "'Libre Baskerville',serif", fontSize: mob ? '1.5rem' : tab ? '2.1rem' : '2.9rem', fontWeight: 700, color: '#F5F0E8', margin: '12px 0 0', lineHeight: 1.2 }}>
+                        A thousand websites later,<br />
+                        <span style={{ color: '#C9A84C' }}>we still build them one at a time.</span>
+                    </h1>
+                    <p style={{ fontFamily: "'Inter',sans-serif", fontSize: mob ? '0.82rem' : '0.95rem', color: 'rgba(245,240,232,0.6)', lineHeight: 1.7, margin: '14px auto 0', maxWidth: '54ch' }}>
+                        NGOs, stores, hospitals, builders and academies &mdash; {websiteWall.length} of the
+                        builds behind that number are scrolling past right now.
+                    </p>
+                    <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap', marginTop: 20 }}>
+                        <Link to="/portfolio/ngo" className="giw-visit">See the portfolio</Link>
+                    </div>
+                </div>
+            </div>
         );
     };
 
@@ -2735,6 +2828,7 @@ const HeroCarousel = () => {
                         {origSlide === 2 && renderInfraSlide()}
                         {origSlide === 7 && renderAiSlide()}
                         {origSlide === 8 && renderWorkSlide()}
+                        {origSlide === 10 && renderWallSlide()}
                         {origSlide === 9 && renderWorkSlide({
                             only: ['babajikibuti', 'tarushpranaa', 'vivedamagro'],
                             eyebrow: 'E-commerce we built',
