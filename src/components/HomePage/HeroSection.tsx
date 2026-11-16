@@ -1501,72 +1501,75 @@ const HeroCarousel = () => {
         return (
             <div style={{ position: 'relative', display: 'flex', alignItems: 'flex-end', width: '100%', height: 226, minHeight: 226 }}>
 
-                {/* A warm glow behind the figure, so the cut-out sits on the
-                    slide instead of floating on a busy sepia photograph. */}
-                <div aria-hidden="true" style={{ position: 'absolute', right: '-4%', bottom: 0, width: '62%', height: '92%', background: 'radial-gradient(ellipse at 60% 70%, rgba(255,236,186,0.75) 0%, rgba(255,236,186,0.28) 42%, transparent 72%)', pointerEvents: 'none', zIndex: 0 }} />
+                {/* A warm glow behind the figure so the cut-out sits on the
+                    slide rather than floating on a busy sepia photograph. */}
+                <div aria-hidden="true" style={{ position: 'absolute', right: '-4%', bottom: 0, width: '60%', height: '92%', background: 'radial-gradient(ellipse at 60% 70%, rgba(255,236,186,0.72) 0%, rgba(255,236,186,0.26) 42%, transparent 72%)', pointerEvents: 'none', zIndex: 0 }} />
 
-                {/* The panel. The copy used to sit directly on the photograph —
-                    dark brown on a busy cream field, which is why it read as
-                    faint. A frosted plate gives it its own surface, lifts the
-                    contrast and lets the gold actually look like gold. */}
-                <div style={{
-                    position: 'relative', zIndex: 2, flex: '1 1 0', minWidth: 0,
-                    background: 'linear-gradient(135deg, rgba(42,26,8,0.90) 0%, rgba(61,43,31,0.84) 55%, rgba(42,26,8,0.90) 100%)',
-                    WebkitBackdropFilter: 'blur(10px) saturate(1.25)',
-                    backdropFilter: 'blur(10px) saturate(1.25)',
-                    border: '1px solid rgba(201,168,76,0.45)',
-                    borderRadius: 14,
-                    boxShadow: '0 18px 44px -20px rgba(30,18,2,0.75), inset 0 1px 0 rgba(255,235,180,0.16)',
-                    padding: '13px 14px 14px',
-                    animation: 'ngo_in .45s ease-out both',
-                }}>
-                    <p style={{ margin: 0, fontFamily: "'Inter',sans-serif", fontSize: '0.5rem', fontWeight: 700, letterSpacing: '0.26em', textTransform: 'uppercase', color: 'rgba(230,195,92,0.9)' }}>
-                        Trusted by
-                    </p>
+                {/* The site we built them, scrolling itself.
+                    This panel used to be a stack of figures about the founder.
+                    The stronger proof was sitting unused: the website. A full
+                    page capture scrolls slowly inside a browser frame, so the
+                    thing we are actually selling is the thing on screen - and
+                    one glance carries more than four lines of statistics. */}
+                <a href={rec?.orgUrl ?? '#'} target="_blank" rel="noopener noreferrer"
+                   aria-label={`Open the ${rec?.org ?? name} website`}
+                   style={{
+                       position: 'relative', zIndex: 2, flex: '1 1 0', minWidth: 0, height: '100%',
+                       display: 'block', textDecoration: 'none',
+                       borderRadius: 13, overflow: 'hidden',
+                       border: '1px solid rgba(201,168,76,0.5)',
+                       boxShadow: '0 18px 44px -20px rgba(30,18,2,0.78), inset 0 1px 0 rgba(255,235,180,0.14)',
+                       background: '#1d1407',
+                       animation: 'ngo_in .45s ease-out both',
+                   }}>
 
-                    <h2 style={{ fontFamily: "'Libre Baskerville',serif", fontSize: '1.16rem', fontWeight: 700, color: '#FFF6E2', margin: '5px 0 2px', lineHeight: 1.16 }}>
-                        {name}
-                    </h2>
-
-                    {rec && (
-                        <a href={rec.orgUrl} target="_blank" rel="noopener noreferrer"
-                           style={{ display: 'inline-block', fontFamily: "'Inter',sans-serif", fontSize: '0.62rem', fontWeight: 600, color: 'rgba(245,235,205,0.72)', textDecoration: 'none', borderBottom: '1px solid rgba(201,168,76,0.5)', paddingBottom: 1 }}>
-                            {rec.org} &#8599;
-                        </a>
-                    )}
-
-                    <div style={{ height: 1, background: 'linear-gradient(90deg, rgba(201,168,76,0.55), rgba(201,168,76,0))', margin: '11px 0 9px' }} />
-
-                    <div style={{ display: 'flex', alignItems: 'baseline', gap: 7 }}>
-                        <span style={{ fontFamily: "'Libre Baskerville',serif", fontSize: '1.72rem', fontWeight: 800, lineHeight: 1, color: '#F2D98C', textShadow: '0 2px 14px rgba(201,168,76,0.45)' }}>
-                            {rec ? rec.followers : p.f.split('\n')[0]}
-                        </span>
-                        <span style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.52rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(245,235,205,0.62)' }}>
-                            {rec?.scope === 'all-platforms' ? 'Across all\nplatforms' : 'Followers'}
+                    {/* browser chrome, so it reads as a site and not a poster */}
+                    <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 20, background: 'linear-gradient(180deg,#2b1f0d,#221809)', borderBottom: '1px solid rgba(201,168,76,0.28)', display: 'flex', alignItems: 'center', gap: 4, padding: '0 7px', zIndex: 3 }}>
+                        {['#d8695f', '#d8a84f', '#6fb06a'].map((c) => (
+                            <span key={c} style={{ width: 5, height: 5, borderRadius: '50%', background: c, opacity: 0.85 }} />
+                        ))}
+                        <span style={{ marginLeft: 4, fontFamily: "'Inter',sans-serif", fontSize: '0.42rem', color: 'rgba(245,235,205,0.5)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                            {(rec?.orgUrl ?? '').replace(/^https?:\/\//, '').replace(/\/$/, '')}
                         </span>
                     </div>
 
-                    {rec?.badge && (
-                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 5, marginTop: 10, background: 'linear-gradient(135deg, rgba(201,168,76,0.3), rgba(201,168,76,0.14))', border: '1px solid rgba(230,195,92,0.7)', borderRadius: 999, padding: '4px 11px', fontFamily: "'Inter',sans-serif", fontSize: '0.54rem', fontWeight: 700, letterSpacing: '0.02em', color: '#FFE9A8' }}>
-                            &#127942; IGT S10 Winners
+                    <div style={{ position: 'absolute', inset: '20px 0 0', overflow: 'hidden' }}>
+                        <img
+                            key={`site-${selectedNgoPersonIndex}`}
+                            src={rec?.site}
+                            alt={`The ${rec?.org ?? name} website, built by Govindani Infotech`}
+                            loading="eager"
+                            decoding="async"
+                            style={{ width: '155%', marginLeft: '-27.5%', height: 'auto', display: 'block', animation: 'ngo_sitescroll 30s linear infinite alternate' }}
+                        />
+                    </div>
+
+                    {/* the founder's name rides the foot of the frame, so the
+                        panel still says whose site this is */}
+                    <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 3, padding: '16px 10px 8px', background: 'linear-gradient(180deg, rgba(20,13,3,0) 0%, rgba(20,13,3,0.86) 55%, rgba(20,13,3,0.95) 100%)' }}>
+                        <div style={{ fontFamily: "'Libre Baskerville',serif", fontSize: '0.78rem', fontWeight: 700, color: '#FFF6E2', lineHeight: 1.15 }}>{name}</div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 2 }}>
+                            <span style={{ fontFamily: "'Libre Baskerville',serif", fontSize: '0.84rem', fontWeight: 800, color: '#F2D98C', lineHeight: 1 }}>
+                                {rec ? rec.followers : p.f.split('\n')[0]}
+                            </span>
+                            <span style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.44rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(245,235,205,0.6)' }}>
+                                {rec?.scope === 'all-platforms' ? 'All platforms' : 'Followers'}
+                            </span>
+                            {rec?.badge && (
+                                <span style={{ marginLeft: 'auto', fontFamily: "'Inter',sans-serif", fontSize: '0.44rem', fontWeight: 700, color: '#FFE9A8', whiteSpace: 'nowrap' }}>
+                                    &#127942; IGT S10
+                                </span>
+                            )}
                         </div>
-                    )}
+                    </div>
+                </a>
 
-                    {rec && !rec.badge && (
-                        <p style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.6rem', lineHeight: 1.48, color: 'rgba(245,235,205,0.66)', margin: '10px 0 0' }}>
-                            {rec.claim}
-                        </p>
-                    )}
-                </div>
-
-                {/* The figure, overlapping the plate's edge so the two read as
-                    one object rather than a card beside a photo. */}
-                <div style={{ position: 'relative', zIndex: 3, flex: '0 0 46%', height: '100%', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', minWidth: 0, marginLeft: -14 }}>
+                <div style={{ position: 'relative', zIndex: 3, flex: '0 0 40%', height: '100%', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', minWidth: 0, marginLeft: -10 }}>
                     <img
                         key={`spot-${selectedNgoPersonIndex}`}
                         src={p.image}
                         srcSet={[`${p.image.replace(/\.webp$/, '-480w.webp')} 480w`, `${p.image.replace(/\.webp$/, '-800w.webp')} 800w`, `${p.image} 1700w`].join(', ')}
-                        sizes="46vw"
+                        sizes="44vw"
                         alt={name}
                         loading="eager"
                         fetchPriority="high"
@@ -1582,6 +1585,13 @@ const HeroCarousel = () => {
         <>
             <style>{`
                 @keyframes ngo_in{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+                /* The capture is about 5x taller than the frame. translateY is
+                   composited, so this costs nothing per frame, and alternate
+                   walks back up instead of snapping to the top.
+                   No backticks in here - this block is inside a JSX template
+                   literal and one would close it. */
+                @keyframes ngo_sitescroll{from{transform:translateY(0);}to{transform:translateY(calc(-100% + 206px));}}
+                @media (prefers-reduced-motion:reduce){[style*="ngo_sitescroll"]{animation:none !important;}}
                 @keyframes ngo_pulse{0%,100%{box-shadow:0 2px 16px rgba(109,66,38,0.2),inset 0 1px 0 rgba(255,255,255,0.55);}50%{box-shadow:0 4px 26px rgba(109,66,38,0.35),inset 0 1px 0 rgba(255,255,255,0.8);}}
                 .ngo-pr::-webkit-scrollbar{display:none;} .ngo-pr{-ms-overflow-style:none;scrollbar-width:none;}
                 /* The floating GI Assistant and WhatsApp launchers are fixed to

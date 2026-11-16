@@ -504,14 +504,14 @@ const WebDevelopmentPage = () => {
   const ngoProjects = [
     { title: "Popatbhai Charitable Trust", category: "ngo", url: "https://popatbhaicharitablefoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PCF.webp" },
     { title: "Harsh Chhikkara Jan Seva Trust", category: "ngo", url: "https://harshchhikara.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/np1.webp" },
-    { title: "Mahipatsinh Foundation", category: "ngo", url: "https://mahipatsinhfoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/mahipatsinh.webp" },
+    { title: "Mahipatsinh Foundation", category: "ngo", url: "https://mahipatsinhfoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/MP.webp" },
   ];
   const realEstateProjects = [
     { title: "CI BUILDERS", category: "real-estate", url: "https://cibuilders.in/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/RE2.webp" },
     { title: "JANKI BUILDERS", category: "real-estate", url: "https://jankibuilders.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/RE1.webp" },
   ];
   const ecommProjects = [
-    { title: "Baba Ji Ki Buti", category: "e-commerce", url: "https://babajikibuti.com/home", image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/babajikibuti.webp" },
+    { title: "Baba Ji Ki Buti", category: "e-commerce", url: "https://babajikibuti.com/home", image: "https://gi-img-cdn.sujeet.workers.dev/Images/BJKB2.webp" },
     { title: "Terra by Trishla", category: "e-commerce", url: "https://terrabytrishla.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/ecomm2.webp" },
     { title: "Madhav Numerology", category: "e-commerce", url: "https://madhavnumerology.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/ecomm3.webp" },
   ];
