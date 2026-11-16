@@ -2,6 +2,7 @@
 // NGO Portfolio Page
 import { useState, useEffect, useRef, useCallback } from "react";
 import PortfolioSection from "@/components/HomePage/PortfolioSection";
+import NgoFounders from "@/components/HomePage/NgoFounders";
 import ContactUsForm from "./ContactUsForm";
 
 // ─── Detect touch device ───────────────────────────────────────────────────────
@@ -1198,6 +1199,10 @@ const NgoPortfolio = () => {
               action, build trust, and amplify every cause they stand for.
             </p>
           </div>
+
+          {/* The founders come before the grid. The grid says what we made;
+              these four say who trusted us with it. */}
+          <NgoFounders />
 
           {/* ── Search Bar ── */}
           <SearchBar

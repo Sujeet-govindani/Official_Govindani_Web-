@@ -1,0 +1,101 @@
+/* ============================================================
+   "Who trusts us" — founders above the NGO portfolio grid. Namespaced .gnf-.
+   Dark, so the Instagram grids read as lit panels. Two columns on a desktop,
+   one on a phone; the feed strip keeps its 3:1 shape at every width.
+   ============================================================ */
+
+.gnf {
+  background: linear-gradient(180deg,#0b0906 0%,#15110a 52%,#0f0c07 100%);
+  padding: clamp(40px,5vw,78px) clamp(14px,4vw,48px) clamp(44px,5vw,84px);
+  color: #F5F0E8;
+}
+.gnf *, .gnf *::before, .gnf *::after { box-sizing: border-box; }
+.gnf-wrap { max-width: 1180px; margin: 0 auto; }
+
+.gnf-head { text-align: center; margin-bottom: clamp(22px,2.8vw,36px); }
+.gnf-eyebrow {
+  font-family: 'Inter',sans-serif; font-size: 10px; font-weight: 600;
+  letter-spacing: .4em; text-transform: uppercase; color: #C9A84C; margin: 0 0 10px;
+}
+.gnf-h {
+  font-family: 'Libre Baskerville',serif; font-weight: 700;
+  font-size: clamp(1.4rem,2.9vw,2.35rem); line-height: 1.26; margin: 0; text-wrap: balance;
+}
+.gnf-h em { font-style: italic; color: #C9A84C; }
+
+.gnf-grid {
+  display: grid; gap: clamp(14px,2vw,22px);
+  grid-template-columns: repeat(2, minmax(0,1fr));
+}
+@media (max-width: 860px) { .gnf-grid { grid-template-columns: minmax(0,1fr); } }
+
+.gnf-card {
+  background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.09);
+  border-radius: 16px; padding: clamp(14px,1.8vw,20px); min-width: 0;
+}
+
+.gnf-top { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.gnf-face {
+  width: 56px; height: 56px; border-radius: 50%; object-fit: cover;
+  object-position: top center; flex: none;
+  border: 2px solid rgba(201,168,76,.5); background: #1a150d;
+}
+.gnf-id { min-width: 0; flex: 1; }
+.gnf-name {
+  font-family: 'Libre Baskerville',serif; font-size: clamp(1rem,1.5vw,1.14rem);
+  font-weight: 700; margin: 0 0 2px; line-height: 1.2;
+}
+.gnf-org {
+  font-family: 'Inter',sans-serif; font-size: 12px; color: rgba(245,240,232,.6);
+  text-decoration: none; border-bottom: 1px solid rgba(201,168,76,.3);
+}
+.gnf-org:hover { color: #E6C35C; }
+
+.gnf-reach { text-align: right; flex: none; }
+.gnf-reach b {
+  display: block; font-family: 'Libre Baskerville',serif;
+  font-size: clamp(1.05rem,1.7vw,1.32rem); color: #E6C35C; line-height: 1.1;
+}
+.gnf-reach span {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-family: 'Inter',sans-serif; font-size: 10px; font-weight: 600;
+  color: rgba(245,240,232,.5);
+}
+.gnf-tick { width: 12px; height: 12px; flex: none; }
+
+.gnf-badge {
+  display: inline-block; margin: 0 0 9px;
+  background: rgba(201,168,76,.15); border: 1px solid rgba(201,168,76,.55);
+  border-radius: 6px; padding: 4px 11px;
+  font-family: 'Inter',sans-serif; font-size: 11.5px; font-weight: 700;
+  color: #E6C35C; letter-spacing: .01em;
+}
+
+.gnf-claim {
+  font-family: 'Inter',sans-serif; font-size: clamp(.84rem,1.3vw,.92rem);
+  line-height: 1.62; color: rgba(245,240,232,.68); margin: 0 0 13px;
+}
+
+.gnf-feed {
+  position: relative; display: block; border-radius: 11px; overflow: hidden;
+  border: 1px solid rgba(255,255,255,.1); text-decoration: none;
+  box-shadow: 0 18px 40px -22px rgba(0,0,0,.9);
+}
+.gnf-feed img { width: 100%; height: auto; display: block; }
+.gnf-handle {
+  position: absolute; left: 10px; bottom: 10px;
+  background: rgba(10,8,5,.82); border: 1px solid rgba(201,168,76,.45);
+  color: #F5F0E8; font-family: 'Inter',sans-serif; font-size: 11.5px; font-weight: 600;
+  padding: 5px 12px; border-radius: 99px; backdrop-filter: blur(6px);
+}
+.gnf-feed:hover .gnf-handle { background: rgba(201,168,76,.9); color: #2b1d05; }
+
+.gnf-foot {
+  text-align: center; margin: clamp(18px,2.4vw,26px) auto 0; max-width: 60ch;
+  font-family: 'Inter',sans-serif; font-size: 11.5px; line-height: 1.6;
+  color: rgba(245,240,232,.38);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gnf-org, .gnf-handle { transition: none; }
+}

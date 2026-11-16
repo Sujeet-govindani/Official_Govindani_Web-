@@ -107,10 +107,35 @@ floor. It is `min-height` only, so a taller slide still grows and can never crop
 
 | # | Change | State | Note |
 |---|---|---|---|
-| G1 | NGO portfolio: embed founders' Instagram feeds | ❌ | Needs a decision — see below |
-| G2 | Mallakhamb Artist: India's Got Talent showcase, image left panel | ❌ | Not begun |
-| G3 | Redesign the NGO portfolio architecture so it "says we are the best" | ❌ | Not begun |
-| G4 | Daily automated case studies (research → verify live → write → publish → SEO) | ❌ | Not begun; the biggest item here |
+| G1 | NGO portfolio: founders' Instagram feeds, via screenshot | ✅ | `NgoFounders` on `/portfolio/ngo`, verified in browser |
+| G2 | Mallakhamb Artist: India's Got Talent showcase | ✅ | Badge on their card, taken from their own bio |
+| G3 | Redesign the NGO portfolio so it "says we are the best" | ✅ | Founders lead the page; grid follows |
+| G4 | Daily automated case studies | ⬜ | **Dropped on request** |
+| G5 | Jivika: no Instagram feed | ✅ | Excluded on request; 259 followers would have weakened them |
+
+### What the Instagram check found
+
+Read from the live verified profiles in Sujeet's own Chrome, 17 Nov:
+
+| Founder | Handle | Real | Site claimed | Outcome |
+|---|---|---|---|---|
+| Devi Chitralekha | `chitralekhaji` ✅ | **6.5M** | 6.7M+ | accurate — featured |
+| Popatbhai Ahir | `popatbhai_ahir` ✅ | **2.1M** | 1.9M+ | we **understated** — featured |
+| Mahipatsinh Chauhan | `mahipatsinh_chauhan_official` ✅ | **1.8M** | 1.3M+ | we **understated** — featured |
+| Abujhmad Mallakhamb | `abujhmadmallakhamb_` ✅ | 122K | 500K+ | overstated on IG — **led with the IGT win instead** |
+| Harsh Chhikara | `harshchhikaraofficial` | **4,956** | **1.2M+** | 🔴 **not featured** |
+
+Three of four were being *understated*. The section now carries the real,
+verified numbers and a dated line saying when they were read.
+
+> 🔴 **Still open, needs Sujeet's answer.** The hero still publishes "Harsh
+> Chikkara 1.2M+" against a real 4,956 on his official account. Either that
+> figure is a cross-platform total and should say so, or it needs correcting.
+> He is deliberately left out of the founders section until then — an unchecked
+> number does not belong beside checked ones.
+
+Strips are cropped to the post grid only — no personal Chrome UI, no message
+popups, no notification badges. Served from R2 at `Images/ig/`.
 
 **G1 constraint, so it isn't discovered late:** a genuinely live Instagram feed
 needs per-client API access — the client authorises our app per account. There
