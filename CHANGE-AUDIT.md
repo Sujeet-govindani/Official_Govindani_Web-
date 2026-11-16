@@ -123,16 +123,18 @@ Read from the live verified profiles in Sujeet's own Chrome, 17 Nov:
 | Popatbhai Ahir | `popatbhai_ahir` ✅ | **2.1M** | 1.9M+ | we **understated** — featured |
 | Mahipatsinh Chauhan | `mahipatsinh_chauhan_official` ✅ | **1.8M** | 1.3M+ | we **understated** — featured |
 | Abujhmad Mallakhamb | `abujhmadmallakhamb_` ✅ | 122K | 500K+ | overstated on IG — **led with the IGT win instead** |
-| Harsh Chhikara | `harshchhikaraofficial` | **4,956** | **1.2M+** | 🔴 **not featured** |
+| Harsh Chhikara | `harshchhikaraofficial` | IG 4,956 | 1.2M+ | ✅ **confirmed a cross-platform total — featured, labelled as such** |
 
-Three of four were being *understated*. The section now carries the real,
-verified numbers and a dated line saying when they were read.
+Three of the four Instagram counts were being *understated*. The section carries
+the real figures and a dated line saying when they were read.
 
-> 🔴 **Still open, needs Sujeet's answer.** The hero still publishes "Harsh
-> Chikkara 1.2M+" against a real 4,956 on his official account. Either that
-> figure is a cross-platform total and should say so, or it needs correcting.
-> He is deliberately left out of the founders section until then — an unchecked
-> number does not belong beside checked ones.
+**Two kinds of number, never blurred.** Four cards show verified Instagram
+counts and print "followers". Harsh's 1.2M is a combined YouTube + Facebook +
+Instagram total (confirmed by Sujeet), so his card prints **"across platforms"**
+and carries no Instagram tick — his Instagram grid sits right beside the figure,
+and the same shape of number meaning two different things is how a page quietly
+starts lying. `scope` is a required field on the type, so a future entry cannot
+omit it. Combined reach: **over 11 million**.
 
 Strips are cropped to the post grid only — no personal Chrome UI, no message
 popups, no notification badges. Served from R2 at `Images/ig/`.

@@ -9,12 +9,12 @@ import '@/styles/ngo-founders.css';
  * million people between them, and that is the argument: organisations with
  * that kind of audience chose us.
  *
- * Every number is read off the live verified profile rather than inherited from
- * old copy — three of the four were being UNDERSTATED. Mallakhamb leads with
+ * Every number is read off the live profile rather than inherited from old copy
+ * — three of the Instagram counts were being UNDERSTATED. Mallakhamb leads with
  * their India's Got Talent win instead, because a trophy outranks a follower
- * count. Harsh Chhikara is not here: his official account shows 4,956 against
- * the 1.2M the hero claims, and an unchecked number does not belong beside
- * checked ones.
+ * count. Harsh Chhikara's figure is a combined total across platforms, so his
+ * card says "across platforms" and carries no Instagram tick: the same shape of
+ * number meaning two different things is how a page quietly starts lying.
  */
 export default function NgoFounders() {
   return (
@@ -44,7 +44,9 @@ export default function NgoFounders() {
                 <div className="gnf-reach">
                   <b>{f.followers}</b>
                   <span>
-                    followers
+                    {/* An Instagram count and a combined total are different
+                        claims; the label says which, right under the figure. */}
+                    {f.scope === 'all-platforms' ? 'across platforms' : 'followers'}
                     {f.verified && (
                       <svg className="gnf-tick" viewBox="0 0 24 24" aria-label="Verified account" role="img">
                         <path d="M12 2l2.4 1.8 3-.2.9 2.9 2.5 1.6-1.2 2.8 1.2 2.8-2.5 1.6-.9 2.9-3-.2L12 22l-2.4-1.8-3 .2-.9-2.9-2.5-1.6L4.4 13 3.2 10.2l2.5-1.6.9-2.9 3 .2z" fill="#3797f0" />
