@@ -24,7 +24,7 @@ const ClientTestimonialSection: React.FC = () => {
 
   const row2: ClientData[] = [
     { image: 'https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Logo-Designing/Logos/KhambaniFoods.webp', name: 'Khambani' },
-    { image: 'https://gi-img-cdn.sujeet.workers.dev/Images/work/babajikibuti.webp', name: 'Babaji Ki Buti' },
+    { image: 'https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Logo-Designing/Logos/BabajikiButiLogo.webp', name: 'Babaji Ki Buti' },
     { image: 'https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Logo-Designing/Logos/Nanhi-Pari-Foundation.webp', name: 'Nanhi Pari' },
     { image: 'https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Logo-Designing/Logos/ThePerfumeByGoldy.webp', name: 'GP The Perfume' },
     { image: 'https://gi-img-cdn.sujeet.workers.dev/Images/Services/All/Services-Logo-Designing/Logos/GSD-Organics.webp', name: 'GSD Organics' },

@@ -1437,8 +1437,14 @@ element.style {
    stays constant across slides (no rotation jump). Mobile fills the viewport (like a
    native app hero) with a content floor so short phones never clip. Applied as
    min-height only (never a hard height) so it can only ever grow, never crop. */
-:root { --hero-h: 990px; }                                   /* desktop ≥1024 (narrow-edge 978) */
-@media (max-width: 1023px) { :root { --hero-h: 1080px; } }    /* tablet 768–1023 (narrow-edge 1054, uncropped collage) */
+:root { --hero-h: max(calc(100svh - 8px), 820px); }          /* desktop ≥1024 */
+/* Desktop and tablet were fixed heights (990px / 1080px) that ignored the
+   viewport. On a 1000x845 laptop the hero still claimed 990px, so the bottom
+   of every slide - the project rail, the View More buttons - sat below the fold
+   and looked cut off. Both now track the viewport with a floor, exactly as
+   mobile does. All three are min-height only, so a slide needing more still
+   grows; it can never crop. */
+@media (max-width: 1023px) { :root { --hero-h: max(calc(100svh - 8px), 900px); } }  /* tablet 768–1023 */
 /* mobile: fill the screen above the fixed 57px bottom dock.
    The floor used to be 900px, which on an 812px handset made the hero 900px -
    88px taller than the screen, on top of the dock. Measured on a 375x812

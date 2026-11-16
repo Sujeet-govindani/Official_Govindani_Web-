@@ -54,14 +54,13 @@ const SLIDES = [
     { titleLine1: 'Turning Influence Into', titleLine2: 'Real-World Impact.', quote: "True influence is measured by the impact it creates beyond the screen.", founderName: 'HARSH CHHIKARA', founderTitle: 'HARSH CHHIKARA FOUNDATION', imageUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/HCmain.webp', gifUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GIF1.webp', boxDescription: "Crafted a digital platform for Harsh Chhikara that reflects their vision, credibility, and growing brand presence.", buttons: [{ text: 'Portfolio', link: '/portfolio/babaji' }, { text: 'Book Demo', link: '/demo/babaji' }, { text: 'Contact', link: '/contact/babaji' }], socialCounts: { instagram: '1.1M+ Followers', youtube: '743K', facebook: '2.5M+' }, backgroundImage: 'https://gi-img-cdn.sujeet.workers.dev/Images/HCimg.webp' },
     { titleLine1: 'Building Visions', titleLine2: 'Into Living Spaces.', quote: "The future belongs to those embracing digital transformation.", founderName: 'VARUN MALIK', founderTitle: 'CI BUILDERS', imageUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/VM.webp', gifUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GIF1.webp', boxDescription: "Developed CI Builders website to showcase Varun Malik's real estate expertise with strong digital presence.", buttons: [{ text: 'Projects', link: '/portfolio/cibuilders' }, { text: 'Get Quote', link: '/quote/cibuilders' }, { text: 'Sales', link: '/contact/cibuilders' }], socialCounts: { instagram: '1.1M+ Followers', youtube: '743K', facebook: '2.5M+' }, backgroundImage: 'https://gi-img-cdn.sujeet.workers.dev/Images/VMimg.webp' },
     { titleLine1: 'Hope, Dignity & Dreams', titleLine2: 'for Every Life.', quote: "A future built on care, dignity, and lasting support.", founderName: 'MAHIPATSINH CHAUHAN', founderTitle: 'Mahipatsinh Foundation', imageUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/MSmain.webp', gifUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GIF1.webp', boxDescription: "Built Mahipatsinh Foundation's website to showcase their work in empowering vulnerable individuals.", buttons: [{ text: 'About Us', link: '/about/mahipatsinh' }, { text: 'Donate', link: '/donate/mahipatsinh' }, { text: 'Volunteer', link: '/volunteer/mahipatsinh' }], socialCounts: { instagram: '1.1M+ Followers', youtube: '343K', facebook: '20 Lakh+' }, backgroundImage: 'https://gi-img-cdn.sujeet.workers.dev/Images/MSimg.webp' },
-    { titleLine1: 'Giving Every Voice', titleLine2: 'a Second Chance.', quote: "Compassion isn't selective it's for all beings.", founderName: 'GANESH NAYAK', founderTitle: 'Animals Matter To Me', imageUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GNmain.webp', gifUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GIF1.webp', boxDescription: "Designed Animals Matter To Me website to bring visibility to Ganesh Nayak's animal welfare mission.", buttons: [{ text: 'Support', link: '/support/amtm' }, { text: 'Adopt', link: '/adopt/amtm' }, { text: 'Help Out', link: '/volunteer/amtm' }], socialCounts: { instagram: '99.3K Followers', youtube: '22.8K', facebook: '244K' }, backgroundImage: 'https://gi-img-cdn.sujeet.workers.dev/Images/AMTMimg.webp' },
     { titleLine1: 'Compassion in Action:', titleLine2: 'Sanctuary for Every Life.', quote: "When care is driven by compassion, every action creates change.", founderName: 'DEVI CHHITRALEKHA', founderTitle: 'GAUSEVADHAM TRUST', imageUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/DCmain1.webp', gifUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GIF1.webp', boxDescription: "Developed Gau Seva Dham to amplify Devi Chitralekha's mission of protecting animals with compassion.", buttons: [{ text: 'Visit', link: '/visit/gauseva' }, { text: 'Donate', link: '/donate/gauseva' }, { text: 'Partner', link: '/partner/gauseva' }], socialCounts: { instagram: '6.5M+ Followers', youtube: '4.58M', facebook: '5.1K+' }, backgroundImage: 'https://gi-img-cdn.sujeet.workers.dev/Images/DCimg.webp' },
     { titleLine1: 'Lifting Lives with', titleLine2: 'Dignity and Care.', quote: "Compassion isn't a gesture it's a lasting embrace.", founderName: 'POPATBHAI', founderTitle: 'Popatbhai Charitable Foundation', imageUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/PBmain.webp', gifUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GIF1.webp', boxDescription: "Created Popatbhai Charitable Foundation website reflecting dedication to uplifting underprivileged communities.", buttons: [{ text: 'Impact', link: '/impact/popatbhai' }, { text: 'Contribute', link: '/contribute/popatbhai' }, { text: 'Join', link: '/join/popatbhai' }], socialCounts: { instagram: '1.8M+ Followers', youtube: '2.41M', facebook: '1.9M+' }, backgroundImage: 'https://gi-img-cdn.sujeet.workers.dev/Images/PBimg.webp' },
 ];
 
 const TOTAL_SLIDES = 5;
-const SLIDE_ORDER = [0, 1, 6, 7, 8];
-const SLIDE_TO_FOUNDER = { 10: 0, 11: 1, 12: 2, 13: 3, 14: 4, 15: 5 };
+const SLIDE_ORDER = [0, 1, 9, 7, 8];
+const SLIDE_TO_FOUNDER = { 10: 0, 11: 1, 12: 2, 13: 3, 14: 4 };
 
 const SERVICES = [
     { name: 'Custom CRM', route: '/crm' },
@@ -1026,12 +1025,6 @@ const ngoPeople: NgoPerson[] = [
             width: '40%',
         },
     },
-        mobilePosition: {
-            left: '65%',
-            bottom: '0%',
-            width: '35%',
-        },
-    },
 ];
 
 const HeroCarousel = () => {
@@ -1113,7 +1106,7 @@ const HeroCarousel = () => {
 
     useEffect(() => {
         if (!autoPlay || !visible) return;
-        const dwell = origSlide === 8 ? WORK_SLIDE_MS : SLIDE_MS;
+        const dwell = (origSlide === 8 || origSlide === 9) ? WORK_SLIDE_MS : SLIDE_MS;
         const t = setTimeout(() => setSlide(p => (p + 1) % TOTAL_SLIDES), dwell);
         return () => clearTimeout(t);
     }, [autoPlay, visible, slide, origSlide]);
@@ -1125,11 +1118,11 @@ const HeroCarousel = () => {
        the slide does not move off whatever the visitor chose to look at. */
     useEffect(() => {
         clearInterval(workTimer.current);
-        if (origSlide !== 8) { manualWork.current = false; setWorkIndex(0); return; }
+        if (origSlide !== 8 && origSlide !== 9) { manualWork.current = false; setWorkIndex(0); return; }
         if (!autoPlay || !visible) return;
         workTimer.current = setInterval(() => {
             if (manualWork.current) return;
-            setWorkIndex(p => (p + 1) % supremeWork.length);
+            setWorkIndex(p => p + 1);   // the slide mods this by its own set size
         }, 3400);
         return () => clearInterval(workTimer.current);
     }, [origSlide, autoPlay, visible]);
@@ -1857,8 +1850,11 @@ const HeroCarousel = () => {
      * minute, so the six share one slot and rotate inside it — each still gets
      * a full banner of its own, which is the point.
      */
-    const renderWorkSlide = () => {
-        const w = supremeWork[workIndex] ?? supremeWork[0];
+    const renderWorkSlide = (opts?: { only?: string[]; eyebrow?: string; line1?: string; line2?: string }) => {
+        const set = opts?.only?.length
+            ? supremeWork.filter((x) => opts.only!.includes(x.id))
+            : supremeWork;
+        const w = set[workIndex % set.length] ?? set[0];
         return (
             <>
             {/* These rules have to live here. .ngo-cta-btn and @keyframes ngo_in
@@ -1884,11 +1880,11 @@ const HeroCarousel = () => {
 
                     <div style={{ textAlign: 'center', marginBottom: mob ? 10 : 14 }}>
                         <span style={{ fontSize: mob ? 9 : 10, fontWeight: 600, letterSpacing: '0.4em', textTransform: 'uppercase', color: '#C9A84C', fontFamily: "'Inter',sans-serif" }}>
-                            Recently shipped
+                            {opts?.eyebrow ?? 'Recently shipped'}
                         </span>
                         <h1 style={{ fontFamily: "'Libre Baskerville',serif", fontSize: mob ? '1.24rem' : tab ? '1.55rem' : '2rem', fontWeight: 700, color: '#F5F0E8', margin: '7px 0 0', lineHeight: 1.22 }}>
-                            We could describe the work.{mob ? ' ' : <br />}
-                            <span style={{ color: '#C9A84C' }}>Easier to just open it.</span>
+                            {opts?.line1 ?? 'We could describe the work.'}{mob ? ' ' : <br />}
+                            <span style={{ color: '#C9A84C' }}>{opts?.line2 ?? 'Easier to just open it.'}</span>
                         </h1>
                     </div>
 
@@ -1928,7 +1924,7 @@ const HeroCarousel = () => {
 
                     {/* the other five, to jump straight to */}
                     <div style={{ display: 'flex', gap: 7, justifyContent: 'center', marginTop: mob ? 11 : 16, flexWrap: 'wrap' }}>
-                        {supremeWork.map((s2, i) => (
+                        {set.map((s2, i) => (
                             <button key={s2.id} onClick={() => { setWorkIndex(i); manualWork.current = true; }}
                                     aria-label={`Show ${s2.name}`}
                                     style={{ cursor: 'pointer', borderRadius: 7, padding: mob ? '5px 9px' : '6px 13px',
@@ -2566,6 +2562,12 @@ const HeroCarousel = () => {
                         {origSlide === 2 && renderInfraSlide()}
                         {origSlide === 7 && renderAiSlide()}
                         {origSlide === 8 && renderWorkSlide()}
+                        {origSlide === 9 && renderWorkSlide({
+                            only: ['babajikibuti', 'tarushpranaa', 'vivedamagro'],
+                            eyebrow: 'E-commerce we built',
+                            line1: 'Stores that actually sell.',
+                            line2: 'Open one and see.',
+                        })}
                         {origSlide === 6 && renderRealEstateSlide()}
                         {isFounderSlide && renderFounderSlide()}
                     </section>
