@@ -1494,13 +1494,13 @@ const HeroCarousel = () => {
      * It now carries the thing that actually argues for us: who they are, what
      * they run, how far they reach, and the trophy where there is one.
      */
-    const FounderSpotlight = () => {
+    const FounderSpotlight = ({ h = 226, big = false }: { h?: number; big?: boolean } = {}) => {
         const p = ngoPeople[selectedNgoPersonIndex] ?? ngoPeople[0];
         const rec = ngoFounders.find((x) => x.id === p.founderId);
         const name = p.name.replace('\n', ' ');
 
         return (
-            <div style={{ position: 'relative', display: 'flex', alignItems: 'flex-end', width: '100%', height: 226, minHeight: 226 }}>
+            <div style={{ position: 'relative', display: 'flex', alignItems: 'flex-end', width: '100%', height: h, minHeight: h }}>
 
                 {/* A warm glow behind the figure so the cut-out sits on the
                     slide rather than floating on a busy sepia photograph. */}
@@ -1525,16 +1525,16 @@ const HeroCarousel = () => {
                    }}>
 
                     {/* browser chrome, so it reads as a site and not a poster */}
-                    <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 20, background: 'linear-gradient(180deg,#2b1f0d,#221809)', borderBottom: '1px solid rgba(201,168,76,0.28)', display: 'flex', alignItems: 'center', gap: 4, padding: '0 7px', zIndex: 3 }}>
+                    <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: big ? 30 : 20, background: 'linear-gradient(180deg,#2b1f0d,#221809)', borderBottom: '1px solid rgba(201,168,76,0.28)', display: 'flex', alignItems: 'center', gap: 4, padding: '0 7px', zIndex: 3 }}>
                         {['#d8695f', '#d8a84f', '#6fb06a'].map((c) => (
                             <span key={c} style={{ width: 5, height: 5, borderRadius: '50%', background: c, opacity: 0.85 }} />
                         ))}
-                        <span style={{ marginLeft: 4, fontFamily: "'Inter',sans-serif", fontSize: '0.42rem', color: 'rgba(245,235,205,0.5)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                        <span style={{ marginLeft: 4, fontFamily: "'Inter',sans-serif", fontSize: big ? '0.62rem' : '0.42rem', color: 'rgba(245,235,205,0.5)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                             {(rec?.orgUrl ?? '').replace(/^https?:\/\//, '').replace(/\/$/, '')}
                         </span>
                     </div>
 
-                    <div style={{ position: 'absolute', inset: '20px 0 0', overflow: 'hidden' }}>
+                    <div style={{ position: 'absolute', inset: `${big ? 30 : 20}px 0 0`, overflow: 'hidden', ['--ngo-frame' as any]: `${h - (big ? 30 : 20)}px` }}>
                         <img
                             key={`site-${selectedNgoPersonIndex}`}
                             src={rec?.site}
@@ -1547,17 +1547,17 @@ const HeroCarousel = () => {
 
                     {/* the founder's name rides the foot of the frame, so the
                         panel still says whose site this is */}
-                    <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 3, padding: '16px 10px 8px', background: 'linear-gradient(180deg, rgba(20,13,3,0) 0%, rgba(20,13,3,0.86) 55%, rgba(20,13,3,0.95) 100%)' }}>
-                        <div style={{ fontFamily: "'Libre Baskerville',serif", fontSize: '0.78rem', fontWeight: 700, color: '#FFF6E2', lineHeight: 1.15 }}>{name}</div>
+                    <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 3, padding: big ? '26px 16px 14px' : '16px 10px 8px', background: 'linear-gradient(180deg, rgba(20,13,3,0) 0%, rgba(20,13,3,0.86) 55%, rgba(20,13,3,0.95) 100%)' }}>
+                        <div style={{ fontFamily: "'Libre Baskerville',serif", fontSize: big ? '1.22rem' : '0.78rem', fontWeight: 700, color: '#FFF6E2', lineHeight: 1.15 }}>{name}</div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 2 }}>
-                            <span style={{ fontFamily: "'Libre Baskerville',serif", fontSize: '0.84rem', fontWeight: 800, color: '#F2D98C', lineHeight: 1 }}>
+                            <span style={{ fontFamily: "'Libre Baskerville',serif", fontSize: big ? '1.4rem' : '0.84rem', fontWeight: 800, color: '#F2D98C', lineHeight: 1 }}>
                                 {rec ? rec.followers : p.f.split('\n')[0]}
                             </span>
-                            <span style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.44rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(245,235,205,0.6)' }}>
+                            <span style={{ fontFamily: "'Inter',sans-serif", fontSize: big ? '0.66rem' : '0.44rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(245,235,205,0.6)' }}>
                                 {rec?.scope === 'all-platforms' ? 'All platforms' : 'Followers'}
                             </span>
                             {rec?.badge && (
-                                <span style={{ marginLeft: 'auto', fontFamily: "'Inter',sans-serif", fontSize: '0.44rem', fontWeight: 700, color: '#FFE9A8', whiteSpace: 'nowrap' }}>
+                                <span style={{ marginLeft: 'auto', fontFamily: "'Inter',sans-serif", fontSize: big ? '0.66rem' : '0.44rem', fontWeight: 700, color: '#FFE9A8', whiteSpace: 'nowrap' }}>
                                     &#127942; IGT S10
                                 </span>
                             )}
@@ -1591,7 +1591,7 @@ const HeroCarousel = () => {
                    walks back up instead of snapping to the top.
                    No backticks in here - this block is inside a JSX template
                    literal and one would close it. */
-                @keyframes ngo_sitescroll{from{transform:translateY(0);}to{transform:translateY(calc(-100% + 206px));}}
+                @keyframes ngo_sitescroll{from{transform:translateY(0);}to{transform:translateY(calc(-100% + var(--ngo-frame, 206px)));}}
                 @media (prefers-reduced-motion:reduce){[style*="ngo_sitescroll"]{animation:none !important;}}
                 @keyframes ngo_pulse{0%,100%{box-shadow:0 2px 16px rgba(109,66,38,0.2),inset 0 1px 0 rgba(255,255,255,0.55);}50%{box-shadow:0 4px 26px rgba(109,66,38,0.35),inset 0 1px 0 rgba(255,255,255,0.8);}}
                 .ngo-pr::-webkit-scrollbar{display:none;} .ngo-pr{-ms-overflow-style:none;scrollbar-width:none;}
@@ -1726,7 +1726,9 @@ const HeroCarousel = () => {
                                 column width and keeps the SAME desktop proportion down through
                                 tablet — the figures never get cropped (a fixed short height was
                                 clipping faces on tablet). 0.572 = the desktop collage's own ratio. */}
-                            <NGOPersonCollage height={430} radius={16} ratio={0.62} />
+                            {/* Desktop had the founder alone; the site we built them
+                                was only ever on the phone layout. Same panel, bigger. */}
+                            <FounderSpotlight h={tab ? 330 : 400} big />
                             <PeopleBoxes />
                         </div>
                     </div>
