@@ -362,7 +362,7 @@ const EcommercePortfolio = () => {
       badge: "Coding",         // ← change badge label here
       filter: "Coding",        // ← change filter category here
       url: "https://babajikibuti.com/home",
-      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Coding/Coding-Babajikibuti.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/babajikibuti.webp",
     },
     {
       title: "Tarushpranna",

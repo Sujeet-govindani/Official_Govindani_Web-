@@ -15,6 +15,7 @@ import NgoVideoIntroSection from "./NgoVideoIntroSection";
 
 // Below the fold — loaded on demand so three.js/recharts/gsap stay out of first paint.
 const NgoServicesSection = lazy(() => import("@/components/NgoServicesSection"));
+const SupremeWork = lazy(() => import("@/components/HomePage/SupremeWork"));
 const OptimalResults = lazy(() => import("@/components/OptimalResults"));
 const BonusPhase = lazy(() => import("@/components/BonusPhase"));
 const NgoPhotography = lazy(() => import("@/components/NgoPhotography"));
@@ -45,6 +46,12 @@ const NgoPage = () => {
       <PremiumCarousel />
 
       <Suspense fallback={null}>
+        {/* The flagship NGO builds, high on the page: someone who clicked the
+            NGO service wants to see NGO work, not scroll past everything first. */}
+        <div className="cv-defer" style={{ containIntrinsicSize: 'auto 900px' }}>
+          <SupremeWork only={['gausevadham', 'jivika', 'mahipatsinh']}
+                       heading="Recent NGO platforms we built." />
+        </div>
         <div className="cv-defer"><NgoServicesSection /></div>
         <div className="cv-defer"><OptimalResults /></div>
         <div className="cv-defer"><BonusPhase /></div>

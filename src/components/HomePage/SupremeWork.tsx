@@ -15,9 +15,12 @@ import '@/styles/supreme-work.css';
  * One banner is open at a time. The rest stay as a rail of covers, so six
  * projects cost one screen rather than six.
  */
-export default function SupremeWork() {
+export default function SupremeWork({ only, heading, sub }: { only?: string[]; heading?: string; sub?: string } = {}) {
+  // `only` narrows the set to a few ids, so the NGO service page can show the
+  // NGO builds without the e-commerce ones, from this one source of truth.
+  const sites = only?.length ? supremeWork.filter((s) => only.includes(s.id)) : supremeWork;
   const [active, setActive] = useState(0);
-  const site = supremeWork[active];
+  const site = sites[Math.min(active, sites.length - 1)];
 
   return (
     <section className="gsw" aria-label="Recent websites we have built">
@@ -26,14 +29,14 @@ export default function SupremeWork() {
         <header className="gsw-head">
           <p className="gsw-eyebrow">Recently shipped</p>
           <h2 className="gsw-h">
-            We could describe the work.<br />
-            <em>Easier to just open it.</em>
+            {heading ?? 'We could describe the work.'}<br />
+            <em>{sub ?? 'Easier to just open it.'}</em>
           </h2>
         </header>
 
         {/* the rail of covers — tap one to open its banner */}
         <div className="gsw-rail" role="tablist" aria-label="Choose a project">
-          {supremeWork.map((s, i) => (
+          {sites.map((s, i) => (
             <button
               key={s.id}
               role="tab"

@@ -1026,18 +1026,6 @@ const ngoPeople: NgoPerson[] = [
             width: '40%',
         },
     },
-    {
-        name: 'Ganesh\nNayak',
-        f: '1M+\nFollowers',
-        url: 'https://amtmindia.org/',
-        image: 'https://gi-img-cdn.sujeet.workers.dev/Images/Nayak.webp',
-        position: {
-            left: '38%',
-            bottom: '0%',
-            width: '30%',
-            zIndex: 12,
-            rotate: '0deg',
-        },
         mobilePosition: {
             left: '65%',
             bottom: '0%',
@@ -1844,7 +1832,7 @@ const HeroCarousel = () => {
      * is what makes it read as a live search rather than a screenshot.
      */
     const renderAiSlide = () => (
-        <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: 'linear-gradient(180deg,#0b1220 0%,#121a2b 55%,#0d1b2a 100%)', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', overflow: 'hidden' }}>
+        <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: 'linear-gradient(180deg,#0b1220 0%,#121a2b 55%,#0d1b2a 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
             <div style={{ position: 'relative', zIndex: 2, width: '100%', maxWidth: 1000, padding: `${slidePad.top}px ${slidePad.side}px ${slidePad.bot}px`, boxSizing: 'border-box' }}>
                 <div style={{ textAlign: 'center', marginBottom: mob ? 10 : 16 }}>
                     <span style={{ fontSize: mob ? 9 : 10, fontWeight: 600, letterSpacing: '0.4em', textTransform: 'uppercase', color: '#C9A84C', fontFamily: "'Inter',sans-serif" }}>
@@ -1872,7 +1860,26 @@ const HeroCarousel = () => {
     const renderWorkSlide = () => {
         const w = supremeWork[workIndex] ?? supremeWork[0];
         return (
-            <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: 'linear-gradient(180deg,#0b0906 0%,#15110a 55%,#0f0c07 100%)', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', overflow: 'hidden' }}>
+            <>
+            {/* These rules have to live here. .ngo-cta-btn and @keyframes ngo_in
+                are declared inside renderNGOSlide's own <style>, so they exist
+                only while THAT slide is mounted - borrowing them here left the
+                Visit link as unstyled text. */}
+            <style>{`
+                @keyframes giw_in{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
+                .giw-visit{display:inline-flex;align-items:center;gap:8px;border-radius:999px;
+                  padding:0.72rem 1.7rem;text-decoration:none;font-family:'Inter',sans-serif;
+                  font-weight:700;font-size:0.88rem;letter-spacing:.01em;color:#3a2500;
+                  background:linear-gradient(135deg,#c8a84b 0%,#f4e5b8 45%,#c8a84b 100%);
+                  box-shadow:0 12px 26px -12px rgba(184,134,11,.75);
+                  transition:transform .2s ease, box-shadow .2s ease;}
+                .giw-visit:hover{transform:translateY(-2px);box-shadow:0 16px 32px -12px rgba(184,134,11,.9);}
+                .giw-visit .giw-ar{transition:transform .2s ease;}
+                .giw-visit:hover .giw-ar{transform:translate(2px,-2px);}
+                @media (max-width:767px){.giw-visit{width:100%;justify-content:center;padding:0.72rem 1.2rem;font-size:0.85rem;}}
+                @media (prefers-reduced-motion:reduce){.giw-visit,.giw-visit .giw-ar{transition:none;}}
+            `}</style>
+            <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: 'linear-gradient(180deg,#0b0906 0%,#15110a 55%,#0f0c07 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
                 <div style={{ position: 'relative', zIndex: 2, width: '100%', maxWidth: 1180, padding: `${slidePad.top}px ${slidePad.side}px ${slidePad.bot}px`, boxSizing: 'border-box' }}>
 
                     <div style={{ textAlign: 'center', marginBottom: mob ? 10 : 14 }}>
@@ -1887,12 +1894,12 @@ const HeroCarousel = () => {
 
                     <div style={{ display: 'grid', gridTemplateColumns: mob ? 'minmax(0,1fr)' : 'minmax(0,1.25fr) minmax(0,1fr)', gap: mob ? 12 : 26, alignItems: 'center' }}>
                         <a href={w.url} target="_blank" rel="noopener noreferrer" key={`shot-${w.id}`}
-                           style={{ display: 'block', borderRadius: 13, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.12)', boxShadow: '0 26px 60px -28px rgba(0,0,0,0.95)', animation: 'ngo_in .5s ease-out both' }}>
+                           style={{ display: 'block', borderRadius: 13, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.12)', boxShadow: '0 26px 60px -28px rgba(0,0,0,0.95)', animation: 'giw_in .5s ease-out both' }}>
                             <img src={w.image} alt={`The ${w.name} website`} width="800" height="500" loading="eager" decoding="async"
                                  style={{ width: '100%', height: 'auto', display: 'block' }} />
                         </a>
 
-                        <div key={`copy-${w.id}`} style={{ animation: 'ngo_in .5s ease-out .06s both', minWidth: 0 }}>
+                        <div key={`copy-${w.id}`} style={{ animation: 'giw_in .5s ease-out .06s both', minWidth: 0 }}>
                             <p style={{ margin: 0, fontFamily: "'Inter',sans-serif", fontSize: mob ? 9.5 : 10.5, fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C9A84C' }}>{w.sector}</p>
                             <h2 style={{ fontFamily: "'Libre Baskerville',serif", fontSize: mob ? '1.12rem' : tab ? '1.3rem' : '1.6rem', fontWeight: 700, color: '#F5F0E8', margin: '5px 0 4px', lineHeight: 1.2 }}>{w.name}</h2>
                             <p style={{ fontFamily: "'Libre Baskerville',serif", fontStyle: 'italic', fontSize: mob ? '0.82rem' : '0.95rem', color: '#E6C35C', margin: '0 0 9px', lineHeight: 1.4 }}>{w.headline}</p>
@@ -1906,8 +1913,15 @@ const HeroCarousel = () => {
                                 ))}
                             </div>
 
-                            <a href={w.url} target="_blank" rel="noopener noreferrer" className="ngo-cta-btn" style={{ fontSize: mob ? '0.8rem' : '0.88rem', padding: mob ? '0.5rem 1.5rem' : '0.6rem 1.9rem' }}>
-                                Visit {w.name} &#8599;
+                            {/* The visible label stays short; the accessible name still
+                                says which site, since "Visit website" alone is
+                                meaningless out of context in a screen-reader link list. */}
+                            <a href={w.url} target="_blank" rel="noopener noreferrer" className="giw-visit"
+                               aria-label={`Visit the ${w.name} website (opens in a new tab)`}>
+                                Visit website
+                                <svg className="giw-ar" width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -1929,6 +1943,7 @@ const HeroCarousel = () => {
                     </div>
                 </div>
             </div>
+            </>
         );
     };
 

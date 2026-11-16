@@ -174,6 +174,10 @@ export default function GoogleAiPanel({
                         outline: p.us ? '1.5px solid rgba(201,168,76,0.55)' : 'none',
                         opacity: shown ? 1 : 0, transform: shown ? 'none' : 'translateY(8px)',
                         transition: `opacity .45s ease ${i * 0.13 + 0.15}s, transform .45s ease ${i * 0.13 + 0.15}s`,
+                        /* The other names keep the list honest - a list carrying only
+                           our own name reads as something we wrote. They are blurred
+                           because it is not our job to advertise them. */
+                        ...(p.us ? {} : { filter: 'blur(4.5px)', userSelect: 'none' as const, pointerEvents: 'none' as const }),
                       }}>
                     {p.us && (
                       <div style={{ display: 'inline-flex', alignItems: 'center', gap: 5, background: 'rgba(201,168,76,0.18)', border: '1px solid rgba(201,168,76,0.6)', borderRadius: 4, padding: '2px 9px', fontSize: 11, fontWeight: 600, color: '#b8860b', fontFamily: "'Inter',sans-serif", letterSpacing: '0.04em', marginBottom: 5 }}>
@@ -186,7 +190,12 @@ export default function GoogleAiPanel({
                       {p.desc ? `: ${p.desc}` : ''}
                       <span className={p.us ? 'giai-chip giai-chip-us' : 'giai-chip'}
                             style={{ display: 'inline-flex', alignItems: 'center', gap: 5, verticalAlign: 'middle', marginLeft: 7, padding: '2px 9px 2px 3px', background: '#f1f3f4', borderRadius: 99, fontSize: 11, color: '#5f6368', whiteSpace: 'nowrap' }}>
-                        <span aria-hidden="true" style={{ width: 15, height: 15, borderRadius: '50%', display: 'grid', placeItems: 'center', background: 'linear-gradient(135deg,#3D2B1F,#6B4226)', color: '#E6C35C', fontSize: 9, fontWeight: 700, fontFamily: "'Cormorant Garamond',Georgia,serif" }}>G</span>
+                        {/* Our own favicon - which is what a source chip actually
+                            shows. The full logo lockup was illegible squeezed into
+                            15px; this is the square mark, drawn for this size. */}
+                        <img src="/favicon-96x96.png"
+                             alt="" aria-hidden="true" width="15" height="15" loading="lazy" decoding="async"
+                             style={{ width: 15, height: 15, borderRadius: '50%', objectFit: 'cover', display: 'block', flex: 'none' }} />
                         Govindani Infotech
                       </span>
                     </p>
@@ -195,13 +204,20 @@ export default function GoogleAiPanel({
               </ul>
             </div>
 
+            {/* This was a grey strip that read as a footnote. It is the whole
+                argument of the panel - go and check it - so it is a button. */}
             <a href={AI_SEARCH_URL} target="_blank" rel="noopener noreferrer"
-               style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: hero ? 9 : 14, padding: hero ? '7px 12px' : '10px 14px', background: '#f8f9fa', borderRadius: 8, border: '1px solid #dadce0', textDecoration: 'none' }}>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
-                <circle cx="11" cy="11" r="7" stroke="#4285F4" strokeWidth="2" />
-                <path d="M20 20L16.5 16.5" stroke="#4285F4" strokeWidth="2" strokeLinecap="round" />
+               className="giai-run"
+               aria-label="Open this search on Google in a new tab"
+               style={{ marginTop: hero ? 10 : 15, padding: hero ? '10px 20px' : '12px 24px', fontSize: hero ? 12.5 : 13.5 }}>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="2.2" />
+                <path d="M20 20L16.5 16.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
               </svg>
-              <span style={{ fontSize: hero ? 12 : 13, color: '#1a73e8', fontFamily: F, fontWeight: 500 }}>Run this search yourself &rarr;</span>
+              See it on Google yourself
+              <svg className="giai-run-ar" width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </a>
           </div>
         </div>
@@ -220,6 +236,16 @@ export default function GoogleAiPanel({
         @keyframes giaiTwinkle { 0%,100%{transform:scale(1);opacity:.85} 50%{transform:scale(1.15);opacity:1} }
         @media (prefers-reduced-motion: reduce) { [style*="giaiBlink"],[style*="giaiTwinkle"] { animation: none !important } }
         @media (max-width: 560px) { .giai-chip:not(.giai-chip-us) { display: none !important } }
+        .giai-run { display:inline-flex; align-items:center; justify-content:center; gap:9px;
+          border-radius:999px; text-decoration:none; font-family:'Inter',sans-serif; font-weight:700;
+          color:#3a2500; background:linear-gradient(135deg,#c8a84b 0%,#f4e5b8 45%,#c8a84b 100%);
+          box-shadow:0 12px 26px -12px rgba(184,134,11,.75);
+          transition:transform .2s ease, box-shadow .2s ease; }
+        .giai-run:hover { transform:translateY(-2px); box-shadow:0 16px 32px -12px rgba(184,134,11,.9); }
+        .giai-run-ar { transition:transform .2s ease; }
+        .giai-run:hover .giai-run-ar { transform:translate(2px,-2px); }
+        @media (max-width:560px){ .giai-run{ width:100%; } }
+        @media (prefers-reduced-motion:reduce){ .giai-run,.giai-run-ar{ transition:none } }
       `}</style>
     </div>
   );

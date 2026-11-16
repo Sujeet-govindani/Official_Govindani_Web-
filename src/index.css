@@ -1439,5 +1439,13 @@ element.style {
    min-height only (never a hard height) so it can only ever grow, never crop. */
 :root { --hero-h: 990px; }                                   /* desktop ≥1024 (narrow-edge 978) */
 @media (max-width: 1023px) { :root { --hero-h: 1080px; } }    /* tablet 768–1023 (narrow-edge 1054, uncropped collage) */
-@media (max-width: 767px)  { :root { --hero-h: max(calc(100svh - 57px), 900px); } } /* mobile: fill screen, floor 900 */
+/* mobile: fill the screen above the fixed 57px bottom dock.
+   The floor used to be 900px, which on an 812px handset made the hero 900px -
+   88px taller than the screen, on top of the dock. Measured on a 375x812
+   viewport: every slide's content ends by 727px, yet the hero reserved 900px,
+   so each slide carried up to 216px of dead space at its foot AND its lowest
+   buttons (View More / View Portfolio) sat under the dock, unreachable.
+   740px keeps a sane minimum for very short handsets while letting a normal
+   phone get exactly the screen it has. */
+@media (max-width: 767px)  { :root { --hero-h: max(calc(100svh - 57px), 740px); } }
 

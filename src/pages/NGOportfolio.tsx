@@ -349,10 +349,13 @@ const NgoPortfolio = () => {
   }, []);
 
   const allProjects = [
+    /* The three flagship recent builds lead the list: custom-coded, and the
+       work a visitor to this page should see first. The rest follow. */
+    { title: "Mahipatsinh Foundation", category: "ngo", url: "https://mahipatsinhfoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/mahipatsinh.webp" },
+    { title: "Gau Seva Dham", category: "ngo", url: "https://gausevadham.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/gausevadham.webp" },
+    { title: "Jivika Foundation", category: "ngo", url: "https://jivika.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/jivika.webp" },
     { title: "Popatbhai Charitable Trust", category: "ngo", url: "https://popatbhaicharitablefoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Popatbhai-Charitable-Trust.webp" },
     { title: "Harsh Chhikkara Jan Seva Trust", category: "ngo", url: "https://harshchhikara.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Harsh-Chhikkara-Jan-Seva-Trust.webp" },
-    { title: "Mahipatsinh Foundation", category: "ngo", url: "https://mahipatsinhfoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioSites/mahipatsinh.jpg" },
-    { title: "Gau Seva Dham", category: "ngo", url: "https://gausevadham.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Gau-Seva-Dham.webp" },
     { title: "Community Welfare", category: "ngo", url: "https://mallakhambartist.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Mallakhamb-Artist.webp" },
     { title: "Nanhi Pari Foundation", category: "ngo", url: "https://nanhiparifoundation.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Nanhi-Pari-Foundationngo.webp" },
     { title: "Palawi", category: "ngo", url: "https://palawi.org/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Ngo-Projects/Ngo-Palawingo.webp" },
