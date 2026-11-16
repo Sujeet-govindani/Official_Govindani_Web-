@@ -60,8 +60,8 @@ const SLIDES = [
     { titleLine1: 'Lifting Lives with', titleLine2: 'Dignity and Care.', quote: "Compassion isn't a gesture it's a lasting embrace.", founderName: 'POPATBHAI', founderTitle: 'Popatbhai Charitable Foundation', imageUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/PBmain.webp', gifUrl: 'https://gi-img-cdn.sujeet.workers.dev/Images/GIF1.webp', boxDescription: "Created Popatbhai Charitable Foundation website reflecting dedication to uplifting underprivileged communities.", buttons: [{ text: 'Impact', link: '/impact/popatbhai' }, { text: 'Contribute', link: '/contribute/popatbhai' }, { text: 'Join', link: '/join/popatbhai' }], socialCounts: { instagram: '1.8M+ Followers', youtube: '2.41M', facebook: '1.9M+' }, backgroundImage: 'https://gi-img-cdn.sujeet.workers.dev/Images/PBimg.webp' },
 ];
 
-const TOTAL_SLIDES = 4;
-const SLIDE_ORDER = [7, 0, 9, 10];
+const TOTAL_SLIDES = 3;
+const SLIDE_ORDER = [7, 0, 9];
 const SLIDE_TO_FOUNDER = { 10: 0, 11: 1, 12: 2, 13: 3, 14: 4 };
 
 const SERVICES = [
@@ -2017,7 +2017,8 @@ const HeroCarousel = () => {
      * is what makes it read as a live search rather than a screenshot.
      */
     const renderAiSlide = () => (
-        <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: 'linear-gradient(180deg,#0b1220 0%,#121a2b 55%,#0d1b2a 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+        <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: '#0a0f1a', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                <WallBackdrop tint="rgba(10,15,26," />
             <div style={{ position: 'relative', zIndex: 2, width: '100%', maxWidth: 1000, padding: `${slidePad.top}px ${slidePad.side}px ${slidePad.bot}px`, boxSizing: 'border-box' }}>
                 <div style={{ textAlign: 'center', marginBottom: mob ? 10 : 16 }}>
                     <span style={{ fontSize: mob ? 9 : 10, fontWeight: 600, letterSpacing: '0.4em', textTransform: 'uppercase', color: '#C9A84C', fontFamily: "'Inter',sans-serif" }}>
@@ -2067,7 +2068,8 @@ const HeroCarousel = () => {
                 @media (max-width:767px){.giw-visit{width:100%;justify-content:center;padding:0.72rem 1.2rem;font-size:0.85rem;}}
                 @media (prefers-reduced-motion:reduce){.giw-visit,.giw-visit .giw-ar{transition:none;}}
             `}</style>
-            <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: 'linear-gradient(180deg,#0b0906 0%,#15110a 55%,#0f0c07 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+            <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: '#0b0906', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                <WallBackdrop tint="rgba(11,9,6," />
                 <div style={{ position: 'relative', zIndex: 2, width: '100%', maxWidth: 1180, padding: `${slidePad.top}px ${slidePad.side}px ${slidePad.bot}px`, boxSizing: 'border-box' }}>
 
                     <div style={{ textAlign: 'center', marginBottom: mob ? 10 : 14 }}>
@@ -2136,75 +2138,64 @@ const HeroCarousel = () => {
     };
 
     /**
-     * The wall — every site we have built, moving.
+     * The wall of work, as a backdrop.
      *
-     * A number ("1000+ websites") is a claim; a wall of real captures scrolling
-     * past is the same statement made with evidence. These are the identical
-     * full-page captures the portfolio cards use, so nothing here is a mock-up.
+     * This began as a slide of its own with a headline over it. The headline was
+     * the weakest part — a claim sitting on top of the evidence — so the words
+     * are gone and the wall now does its job behind the panels that need a
+     * background: the Google answer and the e-commerce showcase. Both were flat
+     * fields of colour; now there is a hundred-odd real builds moving behind
+     * them, which says more than the colour ever did.
      *
-     * Six columns drift at different speeds and in alternating directions, which
-     * stops the eye finding a repeat. The outer columns are blurred and dimmed
-     * and the centre is sharp, so it reads as depth rather than a flat grid, and
-     * the headline stays legible over the top of it.
+     * Six columns drift at different speeds in alternating directions so the eye
+     * never finds a repeat. Outer columns are blurred and dimmed, the centre
+     * sharp, and a scrim over the top keeps whatever sits on it legible.
      */
-    const renderWallSlide = () => {
+    const WallBackdrop = ({ tint = 'rgba(7,6,10,' }: { tint?: string }) => {
         const COLS = mob ? 3 : 6;
         const per = Math.ceil(websiteWall.length / COLS);
         const columns = Array.from({ length: COLS }, (_, i) => websiteWall.slice(i * per, (i + 1) * per));
 
         return (
-            <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: '#07060a', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden', pointerEvents: 'none' }}>
                 <style>{`
-                    @keyframes giw_up   { from { transform: translateY(0) }      to { transform: translateY(-50%) } }
-                    @keyframes giw_down { from { transform: translateY(-50%) }   to { transform: translateY(0) } }
-                    @media (prefers-reduced-motion: reduce) {
-                        .giw-col { animation: none !important }
-                    }
+                    @keyframes giw_up   { from { transform: translateY(0) }    to { transform: translateY(-50%) } }
+                    @keyframes giw_down { from { transform: translateY(-50%) } to { transform: translateY(0) } }
+                    @media (prefers-reduced-motion: reduce) { .giw-col { animation: none !important } }
                 `}</style>
 
-                {/* the moving wall */}
-                <div aria-hidden="true" style={{ position: 'absolute', inset: '-6%', display: 'flex', gap: mob ? 8 : 14, zIndex: 0 }}>
+                <div style={{ position: 'absolute', inset: '-8%', display: 'flex', gap: mob ? 8 : 14 }}>
                     {columns.map((col, i) => {
                         const mid = (COLS - 1) / 2;
-                        const edge = Math.abs(i - mid) / mid;          // 0 centre, 1 outermost
+                        const edge = Math.abs(i - mid) / mid;
                         return (
                             <div key={i} className="giw-col" style={{
                                 flex: '1 1 0', minWidth: 0,
-                                animation: `${i % 2 ? 'giw_down' : 'giw_up'} ${46 + i * 9}s linear infinite`,
-                                filter: `blur(${(edge * 3.4).toFixed(1)}px)`,
-                                opacity: 0.9 - edge * 0.45,
-                                transform: `scale(${1 - edge * 0.06})`,
+                                /* roughly twice the old pace - at 46s+ it read as static */
+                                animation: `${i % 2 ? 'giw_down' : 'giw_up'} ${20 + i * 4}s linear infinite`,
+                                filter: `blur(${(edge * 3.2).toFixed(1)}px)`,
+                                opacity: 0.95 - edge * 0.34,
+                                transform: `scale(${1 - edge * 0.05})`,
                             }}>
-                                {/* listed twice so the loop has no seam */}
+                                {/* Each capture is cropped to a card rather than shown at
+                                    its full 4,000px height. Left whole, a column was one
+                                    enormous page creeping past and read as a single slow
+                                    screenshot; cropped to the top of each site, the same
+                                    column carries twenty-odd distinct builds and the wall
+                                    finally looks like the volume of work it is. */}
                                 {[...col, ...col].map((src, j) => (
-                                    <img key={j} src={src} alt="" loading="lazy" decoding="async"
-                                         style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 8, marginBottom: mob ? 8 : 14, border: '1px solid rgba(255,255,255,0.07)' }} />
+                                    <div key={j} style={{ width: '100%', aspectRatio: '4 / 3', overflow: 'hidden', borderRadius: 8, marginBottom: mob ? 8 : 12, border: '1px solid rgba(255,255,255,0.08)', background: '#11100e' }}>
+                                        <img src={src} alt="" loading="lazy" decoding="async"
+                                             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center', display: 'block' }} />
+                                    </div>
                                 ))}
                             </div>
                         );
                     })}
                 </div>
 
-                {/* darkness, so the words sit on something and the wall reads as depth */}
-                <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'radial-gradient(ellipse at 50% 50%, rgba(7,6,10,0.72) 0%, rgba(7,6,10,0.9) 46%, rgba(7,6,10,0.98) 78%)' }} />
-                <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg, #07060a 0%, transparent 18%, transparent 82%, #07060a 100%)' }} />
-
-                <div style={{ position: 'relative', zIndex: 2, textAlign: 'center', padding: `0 ${slidePad.side}px`, maxWidth: 900 }}>
-                    <span style={{ fontFamily: "'Inter',sans-serif", fontSize: mob ? 9 : 10, fontWeight: 600, letterSpacing: '0.4em', textTransform: 'uppercase', color: '#C9A84C' }}>
-                        Every one of these is ours
-                    </span>
-                    <h1 style={{ fontFamily: "'Libre Baskerville',serif", fontSize: mob ? '1.5rem' : tab ? '2.1rem' : '2.9rem', fontWeight: 700, color: '#F5F0E8', margin: '12px 0 0', lineHeight: 1.2 }}>
-                        A thousand websites later,<br />
-                        <span style={{ color: '#C9A84C' }}>we still build them one at a time.</span>
-                    </h1>
-                    <p style={{ fontFamily: "'Inter',sans-serif", fontSize: mob ? '0.82rem' : '0.95rem', color: 'rgba(245,240,232,0.6)', lineHeight: 1.7, margin: '14px auto 0', maxWidth: '54ch' }}>
-                        NGOs, stores, hospitals, builders and academies &mdash; {websiteWall.length} of the
-                        builds behind that number are scrolling past right now.
-                    </p>
-                    <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap', marginTop: 20 }}>
-                        <Link to="/portfolio/ngo" className="giw-visit">See the portfolio</Link>
-                    </div>
-                </div>
+                <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(ellipse at 50% 50%, ${tint}0.42) 0%, ${tint}0.72) 48%, ${tint}0.92) 82%)` }} />
+                <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(180deg, ${tint}1) 0%, transparent 16%, transparent 84%, ${tint}1) 100%)` }} />
             </div>
         );
     };
@@ -2828,7 +2819,6 @@ const HeroCarousel = () => {
                         {origSlide === 2 && renderInfraSlide()}
                         {origSlide === 7 && renderAiSlide()}
                         {origSlide === 8 && renderWorkSlide()}
-                        {origSlide === 10 && renderWallSlide()}
                         {origSlide === 9 && renderWorkSlide({
                             only: ['babajikibuti', 'tarushpranaa', 'vivedamagro'],
                             eyebrow: 'E-commerce we built',
