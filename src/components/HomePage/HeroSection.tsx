@@ -1287,7 +1287,6 @@ const HeroCarousel = () => {
                             style={{
                                 display: 'block',
                                 width: '100%',
-                                fontSize: mob ? '0.52rem' : tab ? '0.62rem' : '0.68rem',
                                 fontWeight: 700,
                                 color: isSelected ? '#fff' : ngo.dark,
                                 fontFamily: "'Libre Baskerville',serif",
@@ -1298,8 +1297,14 @@ const HeroCarousel = () => {
                                 // Mallakhamb, Foundation) previously bled past the card edge. Keep
                                 // the font small enough to fit and let anything longer wrap/hyphenate
                                 // inside the card instead of overflowing into its neighbours.
-                                overflowWrap: 'break-word',
-                                hyphens: 'auto',
+                                // break-word split "Mallakhamb" as "Mallakham / b", which reads
+                                // worse than a smaller word does. Every name is set one step
+                                // down instead, so the longest ones fit on a line and all six
+                                // cards share a type size rather than each finding its own.
+                                overflowWrap: 'normal',
+                                wordBreak: 'keep-all',
+                                hyphens: 'none',
+                                fontSize: mob ? '0.47rem' : tab ? '0.55rem' : '0.6rem',
                             }}
                         >
                             {p.name}
@@ -1333,87 +1338,108 @@ const HeroCarousel = () => {
     // grows with the container's width - on a 430px phone the tallest figure came
     // out 247px inside a 225px box and lost his head to overflow:hidden. Tying
     // height to width keeps the same headroom on every screen.
-    const NGOPersonCollage = ({ height, radius, ratio }: { height: number; radius: number; ratio?: number }) => (
-        <div
-            style={{
-                width: '100%',
-                ...(ratio ? { height: 'auto', aspectRatio: `1 / ${ratio}` } : { height }),
-                position: 'relative',
-                overflow: 'hidden',
-                borderRadius: radius,
-                background: 'transparent',
-                border: 'none',
-                boxShadow: 'none',
-                isolation: 'isolate',
-            }}
-        >
-            {ngoPeople.map((person, index) => {
-                const responsivePosition = mob
-                    ? person.mobilePosition
-                    : tab
-                        ? person.tabPosition
-                        : undefined;
+    /**
+     * The founders, stood in a line rather than scattered.
+     *
+     * This used to position every cut-out absolutely by percentage — left, bottom
+     * and a width — and then scale the lot by 1.35. Because each source image has
+     * its own aspect ratio, an identical `width: 40%` produced wildly different
+     * heights, so the group read as six people photographed from six distances.
+     * Two of them also shared left:65%, one hung off the edge at -5%, the bottom
+     * values ranged 0%-20% so nobody shared a floor, and a single -1deg tilt on
+     * one figure made the whole row look knocked askew.
+     *
+     * So: one flex row, every figure given the same height and its width left to
+     * follow, all stood on the same baseline. Even flex-basis means the gap
+     * between any two faces is identical by construction rather than by nudging
+     * percentages, and the images overflow their slots to overlap, which keeps it
+     * a group photograph instead of a row of stamps. No rotation anywhere.
+     */
+    /**
+     * The founders.
+     *
+     * This used to place every cut-out absolutely by percentage and then scale
+     * the lot by 1.35. Each source image has its own aspect ratio, so an equal
+     * `width: 40%` produced wildly different heights and the group read as six
+     * people photographed from six distances. Two shared left:65%, one hung off
+     * the edge at -5%, the bottom values ranged 0%-20% so nobody shared a floor,
+     * and a lone -1deg tilt made the row look knocked askew.
+     *
+     * Measuring the real thing settled the layout. The cut-outs are SQUARE
+     * (168x168), not tall portraits, so at the band's full height each one is as
+     * wide as it is tall. Six of those need ~1,836px to stand side by side and
+     * the widest cell this sits in is 696px, so a line-up buried four of the six
+     * at every breakpoint. One founder at a time, centred and properly sized,
+     * swapped by the timer that already drives the name cards underneath.
+     */
+    const NGOPersonCollage = ({ height, radius, ratio }: { height: number; radius: number; ratio?: number }) => {
+        const frame = {
+            width: '100%',
+            ...(ratio ? { height: 'auto', aspectRatio: `1 / ${ratio}` } : { height }),
+            position: 'relative' as const,
+            overflow: 'hidden',
+            borderRadius: radius,
+            background: 'transparent',
+            isolation: 'isolate' as const,
+            display: 'flex',
+            alignItems: 'flex-end' as const,
+            justifyContent: 'center' as const,
+        };
 
-                const pos = {
-                    ...person.position,
-                    ...responsivePosition,
-                };
+        /* Responsive sources. The originals are 1700px wide and were once served
+           whole to 390px phones — a measured 7,120ms LCP on throttled mobile.
+           480w/800w variants sit beside each original on R2. */
+        const srcSetFor = (img: string) => [
+            `${img.replace(/\.webp$/, '-480w.webp')} 480w`,
+            `${img.replace(/\.webp$/, '-800w.webp')} 800w`,
+            `${img} 1700w`,
+        ].join(', ');
 
-                const isSelected = selectedNgoPersonIndex === index;
+        const figure = {
+            height: '100%',
+            width: 'auto',
+            maxWidth: 'none',
+            objectFit: 'contain' as const,
+            objectPosition: 'bottom center',
+            display: 'block',
+            pointerEvents: 'none' as const,
+            userSelect: 'none' as const,
+            WebkitBackfaceVisibility: 'hidden' as const,
+            backfaceVisibility: 'hidden' as const,
+        };
 
-                return (
-                    <img
-                        key={`ngo-person-img-${person.name}`}
-                        src={person.image}
-                        // Responsive sources. The originals are 1700px wide and were
-                        // being served whole to 390px phones — measured as a 7,120ms
-                        // LCP on throttled mobile. 480w/800w variants exist alongside
-                        // each original on R2; the browser now picks by viewport.
-                        srcSet={[
-                            `${person.image.replace(/\.webp$/, '-480w.webp')} 480w`,
-                            `${person.image.replace(/\.webp$/, '-800w.webp')} 800w`,
-                            `${person.image} 1700w`,
-                        ].join(', ')}
-                        sizes="(max-width: 640px) 60vw, (max-width: 1024px) 40vw, 30vw"
-                        alt={person.name.replace('\n', ' ')}
-                        loading="eager"
-                        fetchPriority="high"
-                        decoding="async"
-                        style={{
-                            position: 'absolute',
-                            left: pos.left,
-                            top: pos.top,
-                            bottom: pos.bottom ?? '0%',
-                            width: pos.width,
-                            maxHeight: 'none',
-                            height: 'auto',
-                            objectFit: 'contain',
-                            objectPosition: 'bottom center',
-                            display: 'block',
-                            pointerEvents: 'none',
-                            userSelect: 'none',
-                            zIndex: pos.zIndex,
-                            opacity: 1,
-                            filter: isSelected
-                                ? 'drop-shadow(0 0 14px rgba(230,195,92,0.95)) drop-shadow(0 0 14px rgba(230,195,92,0.55))'
-                                : 'none',
-                            // Measured, not guessed. At 901px the frame was 255px tall while the
-                            // tallest cut-out rendered 400px at scale 1.55 — 145px of head
-                            // clipped by overflow:hidden. Unscaled that figure is already
-                            // 258px, so the frame was the real problem; both were adjusted
-                            // together. 1.2 leaves every figure inside its taller frame with
-                            // room to spare at every breakpoint.
-                            transform: `rotate(${pos.rotate ?? '0deg'}) scale(1.35)`,
-                            transformOrigin: 'bottom center',
-                            transition: 'filter 220ms ease',
-                            WebkitBackfaceVisibility: 'hidden',
-                            backfaceVisibility: 'hidden',
-                        }}
-                    />
-                );
-            })}
-        </div>
-    );
+        // One founder at a time, centred, swapped by the same timer that moves
+        // the highlight along the name cards underneath. Measured at 1340px the
+        // collage cell is 696px wide while six square cut-outs need ~1,836px to
+        // stand side by side — so a line-up buried four of the six at every
+        // breakpoint, whatever the z-order. The cards below already name all six;
+        // the picture only has to show one of them properly.
+        const person = ngoPeople[selectedNgoPersonIndex] ?? ngoPeople[0];
+        return (
+            <div style={frame}>
+                {/* The movement is decorative; the image must never depend on it.
+                    Gating opacity here left an invisible hero whenever the
+                    animation did not run. */}
+                <style>{`@keyframes ngo_face{from{transform:translateY(10px) scale(.97);}to{transform:none;}}`}</style>
+                <img
+                    key={`ngo-solo-${selectedNgoPersonIndex}`}
+                    src={person.image}
+                    srcSet={srcSetFor(person.image)}
+                    sizes="(max-width: 640px) 70vw, (max-width: 1024px) 42vw, 32vw"
+                    alt={person.name.replace('\n', ' ')}
+                    loading="eager"
+                    fetchPriority="high"
+                    decoding="async"
+                    style={{
+                        ...figure,
+                        animation: 'ngo_face 460ms ease-out',
+                        filter: 'drop-shadow(0 14px 30px rgba(61,43,31,0.36))',
+                    }}
+                />
+            </div>
+        );
+    };
+
     const renderNGOSlide = () => (
         <>
             <style>{`
@@ -1453,7 +1479,7 @@ const HeroCarousel = () => {
                     {/* 320px pushed the CTAs to 899px in an 812px viewport, so nobody could
     tap them without scrolling. 225px brings the whole slide inside the
     fold while keeping the collage substantial. */}
-                      <NGOPersonCollage height={280} radius={12} ratio={0.82} />
+                      <NGOPersonCollage height={280} radius={12} ratio={0.66} />
                     <div className="ngo-pr" style={{ display: 'flex', flexDirection: 'row', gap: '6px', width: '100%', overflowX: 'auto', paddingBottom: '2px' }}>
                         {ngoPeople.map((p, i) => {
                             const isSel = selectedNgoPersonIndex === i;
@@ -1548,7 +1574,7 @@ const HeroCarousel = () => {
                                 column width and keeps the SAME desktop proportion down through
                                 tablet — the figures never get cropped (a fixed short height was
                                 clipping faces on tablet). 0.572 = the desktop collage's own ratio. */}
-                            <NGOPersonCollage height={430} radius={16} ratio={0.572} />
+                            <NGOPersonCollage height={430} radius={16} ratio={0.62} />
                             <PeopleBoxes />
                         </div>
                     </div>

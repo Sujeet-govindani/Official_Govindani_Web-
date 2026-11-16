@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { CHAT_LIVE, usePreviewVisible } from '@/config/flags';
+import { useScrolledPastHero } from '@/hooks/useScrolledPastHero';
 
 /**
  * Sales manager assistant.
@@ -95,6 +96,11 @@ function saveHistory(msgs: Msg[]) {
 }
 
 export default function ChatWidget() {
+  // The other two floating buttons (WhatsApp, Get Quote) already wait for the
+  // hero to be scrolled past; this one did not, so on a phone it sat on top of
+  // the hero's own "Portfolio" call to action and swallowed the tap. Same rule
+  // for all three now. An open conversation stays open regardless of scroll.
+  const pastHero = useScrolledPastHero();
   const visible = usePreviewVisible(CHAT_LIVE);
   const [open, setOpen] = useState(false);
   const [msgs, setMsgs] = useState<Msg[]>([]);
@@ -328,7 +334,7 @@ export default function ChatWidget() {
     <>
       <style>{CSS}</style>
 
-      <button className={`gsc-launch${open ? ' hidden' : ''}`} onClick={() => setOpen(true)}
+      <button className={`gsc-launch${open || !pastHero ? ' hidden' : ''}`} onClick={() => setOpen(true)}
         aria-label="Open GI Assistant">
         <svg className="gsc-ic" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
