@@ -1048,9 +1048,14 @@ const founderLine = (p: { founderId?: string; f: string }) => {
     return `${rec.followers}\n${rec.scope === 'all-platforms' ? 'All platforms' : 'Followers'}`;
 };
 
-/** A credential that outranks a follower count, shown under the name. */
+/** A credential that outranks a follower count. Shown in the hero copy, not on
+ *  the cards — one card carrying an extra line made the whole row uneven. */
 const founderBadge = (p: { founderId?: string }) =>
     ngoFounders.find((x) => x.id === p.founderId)?.badge;
+
+/** The founder the NGO slide is currently showing. */
+const founderOf = (p: { founderId?: string }) =>
+    ngoFounders.find((x) => x.id === p.founderId);
 
 const HeroCarousel = () => {
     const navigate = useNavigate();
@@ -1346,13 +1351,6 @@ const HeroCarousel = () => {
                             {p.name}
                         </span>
 
-                        {/* A trophy outranks a follower count, so it sits with the
-                            name. The line is rendered on every card and hidden where
-                            there is no badge: when only one card carried it, that card
-                            grew and the whole row shifted as the selection reached it. */}
-                        <span aria-hidden={!founderBadge(p)} style={{ display: 'block', fontSize: mob ? '0.44rem' : tab ? '0.5rem' : '0.54rem', fontWeight: 700, lineHeight: 1.2, color: isSelected ? '#FFE9A8' : '#8B6914', fontFamily: "'Inter',sans-serif", visibility: founderBadge(p) ? 'visible' : 'hidden' }}>
-                            {founderBadge(p) ? '\u{1F3C6} IGT S10' : '\u00A0'}
-                        </span>
                         <div style={{ width: '50%', height: '1px', background: isSelected ? 'rgba(255,255,255,0.5)' : 'rgba(160,120,60,0.32)' }} />
 
                         <span
@@ -1494,6 +1492,8 @@ const HeroCarousel = () => {
      * It now carries the thing that actually argues for us: who they are, what
      * they run, how far they reach, and the trophy where there is one.
      */
+    const cur2 = ngoPeople[selectedNgoPersonIndex] ?? ngoPeople[0];
+
     const FounderSpotlight = ({ h = 226, big = false }: { h?: number; big?: boolean } = {}) => {
         const p = ngoPeople[selectedNgoPersonIndex] ?? ngoPeople[0];
         const rec = ngoFounders.find((x) => x.id === p.founderId);
@@ -1582,6 +1582,23 @@ const HeroCarousel = () => {
         );
     };
 
+    /** The three figures for whoever is selected, in place of the fixed
+     *  company stats. Each one is published by that client on their own site. */
+    const NgoFounderStats = () => {
+        const rec = founderOf(cur2);
+        if (!rec) return <StatCards />;
+        return (
+            <div style={{ display: 'flex', gap: tab ? '8px' : '12px', width: '100%' }}>
+                {rec.heroStats.map((st) => (
+                    <div key={st.k} style={{ flex: '1 1 0', minWidth: 0, background: ngo.cardBg, border: ngo.cardBorder, borderRadius: 12, padding: tab ? '10px 8px' : '14px 12px', textAlign: 'center', boxShadow: '0 2px 12px rgba(100,70,20,0.12)' }}>
+                        <div style={{ fontFamily: "'Libre Baskerville',serif", fontSize: tab ? '1.1rem' : '1.45rem', fontWeight: 800, color: ngo.dark, lineHeight: 1.1 }}>{st.v}</div>
+                        <div style={{ fontFamily: "'Inter',sans-serif", fontSize: tab ? '0.6rem' : '0.68rem', fontWeight: 600, color: ngo.mid, marginTop: 4, lineHeight: 1.3 }}>{st.k}</div>
+                    </div>
+                ))}
+            </div>
+        );
+    };
+
     const renderNGOSlide = () => (
         <>
             <style>{`
@@ -1623,8 +1640,14 @@ const HeroCarousel = () => {
 
             {mob && (
                 <div style={{ position: 'relative', zIndex: 2, width: '100%', padding: `${slidePad.top}px ${slidePad.side}px ${slidePad.bot}px`, display: 'flex', flexDirection: 'column', gap: '12px', boxSizing: 'border-box' }}>
-                    <h1 style={{ fontFamily: "'Libre Baskerville',serif", color: ngo.dark, fontSize: '1.52rem', fontWeight: 700, lineHeight: 1.22, margin: 0, textAlign: 'center', textShadow: '0 1px 8px rgba(255,255,255,0.4)' }}>We Build Digital Systems.<br />That Help NGO's<br /> Raise Crores.</h1>
-                    <StatCards />
+                    {/* Same rule as desktop: the copy follows the founder on screen,
+                        keyed so each change remounts and replays its entrance. */}
+                    <h1 key={`mlead-${selectedNgoPersonIndex}`} style={{ fontFamily: "'Libre Baskerville',serif", color: ngo.dark, fontSize: '1.34rem', fontWeight: 700, lineHeight: 1.24, margin: 0, textAlign: 'center', textShadow: '0 1px 8px rgba(255,255,255,0.4)', animation: 'ngo_in .55s ease-out both' }}>
+                        {founderOf(cur2)?.lead ?? "We Build Digital Systems. That Help NGO's Raise Crores."}
+                    </h1>
+                    <div key={`mstats-${selectedNgoPersonIndex}`} style={{ animation: 'ngo_in .6s ease-out .08s both' }}>
+                        <NgoFounderStats />
+                    </div>
                     {/* 320px pushed the CTAs to 899px in an 812px viewport, so nobody could
     tap them without scrolling. 225px brings the whole slide inside the
     fold while keeping the collage substantial. */}
@@ -1656,9 +1679,6 @@ const HeroCarousel = () => {
                                     }}
                                 >
                                     <span style={{ display: 'block', fontSize: '0.54rem', fontWeight: 700, color: isSel ? '#2B1A00' : ngo.dark, fontFamily: "'Libre Baskerville',serif", lineHeight: 1.18, whiteSpace: 'pre-line' }}>{p.name}</span>
-                                    <span aria-hidden={!founderBadge(p)} style={{ display: 'block', fontSize: '0.42rem', fontWeight: 700, lineHeight: 1.15, color: isSel ? '#FFE9A8' : '#8B6914', fontFamily: "'Inter',sans-serif", visibility: founderBadge(p) ? 'visible' : 'hidden' }}>
-                                        {founderBadge(p) ? '\u{1F3C6} IGT S10' : '\u00A0'}
-                                    </span>
                                     <div style={{ width: '50%', height: '1px', background: isSel ? 'rgba(43,26,0,0.45)' : 'rgba(160,120,60,0.32)' }} />
                                     <span style={{ display: 'block', fontSize: '0.52rem', color: isSel ? '#3B2404' : ngo.mid, fontFamily: "'Inter',sans-serif", fontWeight: 600, lineHeight: 1.3, whiteSpace: 'pre-line' }}>{founderLine(p)}</span>
                                 </div>
@@ -1705,17 +1725,27 @@ const HeroCarousel = () => {
                                     animation: 'ngo_in .6s ease-out both',
                                 }}
                             >
-                                We Build Digital Systems.
-                                <br />
-                                {/* Was whiteSpace:nowrap on desktop, which forced this line onto
-                                    one row that overflowed the text column and ran under the people
-                                    collage. Letting it wrap keeps it inside its own column. */}
-                                <span style={{ whiteSpace: 'normal' }}>
-                                    That Help NGO's Raise Crores.
+                                {/* The copy follows the selected founder. It used to be one
+                                    fixed pitch about us, standing beside a portrait that
+                                    changed every few seconds — so the words never matched the
+                                    face. Each block is keyed on the founder, which remounts it
+                                    and replays the entrance, giving the change its own motion
+                                    rather than a cross-fade of unrelated text. */}
+                                <span key={`lead-${selectedNgoPersonIndex}`} style={{ display: 'block', animation: 'ngo_in .55s ease-out both' }}>
+                                    {founderOf(cur2)?.lead ?? "We Build Digital Systems. That Help NGO's Raise Crores."}
                                 </span>
                             </h1>
-                            <div style={{ animation: 'ngo_in .65s ease-out .08s both' }}><StatCards /></div>
-                            <p style={{ fontFamily: "'Inter',sans-serif", fontSize: tab ? '0.83rem' : '0.9rem', color: ngo.mid, lineHeight: 1.7, margin: 0, maxWidth: '52ch', textWrap: 'pretty', animation: 'ngo_in .7s ease-out .16s both' }}>From donation automation to structured compliance and scalable platforms. We build the infrastructure that connects their mission to millions.</p>
+                            <div key={`stats-${selectedNgoPersonIndex}`} style={{ animation: 'ngo_in .6s ease-out .08s both' }}>
+                                <NgoFounderStats />
+                            </div>
+                            <p key={`claim-${selectedNgoPersonIndex}`} style={{ fontFamily: "'Inter',sans-serif", fontSize: tab ? '0.83rem' : '0.9rem', color: ngo.mid, lineHeight: 1.7, margin: 0, maxWidth: '52ch', textWrap: 'pretty', animation: 'ngo_in .65s ease-out .16s both' }}>
+                                {founderOf(cur2)?.claim ?? 'From donation automation to structured compliance and scalable platforms. We build the infrastructure that connects their mission to millions.'}
+                                {founderBadge(cur2) && (
+                                    <span style={{ display: 'inline-block', marginLeft: 8, background: 'rgba(197,160,40,0.2)', border: '1px solid rgba(139,105,20,0.55)', borderRadius: 5, padding: '2px 9px', fontSize: '0.72em', fontWeight: 700, color: '#6B4F0B', whiteSpace: 'nowrap' }}>
+                                        &#127942; {founderBadge(cur2)}
+                                    </span>
+                                )}
+                            </p>
                             <div style={{ display: 'flex', justifyContent: 'flex-start', gap: '12px', flexWrap: 'wrap', animation: 'ngo_in .75s ease-out .2s both' }}>
                                 <Link to="/pages/NgoPage" className={`ngo-cta-btn${tab ? ' tab' : ''}`}>Explore NGO Ecosystem →</Link>
                                 <Link to="/portfolio/ngo" className={`ngo-cta-btn${tab ? ' tab' : ''}`}>View Portfolio</Link>
