@@ -66,6 +66,25 @@ export default function BlogPost() {
 
   const htmlContent = body ? (marked.parse(body) as string) : '';
 
+  // Contextual, source-tagged CTA: the WhatsApp prefill carries the article ref
+  // so the lead lands in the CRM already attributed to this post (and the bot can
+  // route by service); the consultation link carries the same ref as UTM so the
+  // contact form knows which blog drove it. Attribution + routing in one edit.
+  const SERVICE_BY_CATEGORY: Record<string, string> = {
+    'Web Development': 'a website / web development',
+    'Digital Marketing': 'digital marketing and ads',
+    'E-Commerce': 'an ecommerce store',
+    'Ecommerce': 'an ecommerce store',
+    'NGO': 'an NGO website and donations',
+  };
+  const ctaService = SERVICE_BY_CATEGORY[blog.category] ?? 'digital solutions';
+  const waText = encodeURIComponent(
+    `Hi Govindani! I just read your article "${blog.title}" (ref: ${blog.id}). ` +
+    `I need help with ${ctaService}.`
+  );
+  const waHref = `https://wa.me/919201958278?text=${waText}`;
+  const consultHref = `/contact-us?utm_source=blog&utm_medium=cta&utm_campaign=${blog.id}`;
+
   return (
     <>
       {/* seoTitle, not title: an article headline reads well on the page but is
@@ -147,10 +166,10 @@ export default function BlogPost() {
               Contact us for a free consultation.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/contact-us" className="px-8 py-3 bg-yellow-500 text-black rounded-full font-bold hover:bg-yellow-400 transition">
+              <Link to={consultHref} className="px-8 py-3 bg-yellow-500 text-black rounded-full font-bold hover:bg-yellow-400 transition">
                 Get Free Consultation
               </Link>
-              <a href="https://wa.me/919201958278?text=Hi!%20I%20need%20help%20with%20digital%20solutions" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-green-600 text-white rounded-full font-bold hover:bg-green-500 transition">
+              <a href={waHref} target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-green-600 text-white rounded-full font-bold hover:bg-green-500 transition">
                 WhatsApp Us
               </a>
             </div>
