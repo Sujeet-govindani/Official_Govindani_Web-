@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useScrolledPastHero } from "../../hooks/useScrolledPastHero";
 import { Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
+import GoogleAiPanel from './GoogleAiPanel';
 
 const colors = {
     metallicGold: '#C5A028',
@@ -58,7 +59,7 @@ const SLIDES = [
 ];
 
 const TOTAL_SLIDES = 4;
-const SLIDE_ORDER = [0, 1, 6, 3];
+const SLIDE_ORDER = [0, 1, 6, 7];
 const SLIDE_TO_FOUNDER = { 10: 0, 11: 1, 12: 2, 13: 3, 14: 4, 15: 5 };
 
 const SERVICES = [
@@ -1780,6 +1781,29 @@ const HeroCarousel = () => {
     };
 
     // ─── SLIDE 3 LOGISTICS ─────────────────────────────────────────────────
+    /**
+     * Slide 4 — the proof slide. Buyers increasingly ask an AI rather than
+     * scroll a results page, so the hero shows what that AI says back. The
+     * panel re-types itself every time the slide comes round (resetKey), which
+     * is what makes it read as a live search rather than a screenshot.
+     */
+    const renderAiSlide = () => (
+        <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: 'linear-gradient(180deg,#0b1220 0%,#121a2b 55%,#0d1b2a 100%)', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', overflow: 'hidden' }}>
+            <div style={{ position: 'relative', zIndex: 2, width: '100%', maxWidth: 1000, padding: `${slidePad.top}px ${slidePad.side}px ${slidePad.bot}px`, boxSizing: 'border-box' }}>
+                <div style={{ textAlign: 'center', marginBottom: mob ? 10 : 16 }}>
+                    <span style={{ fontSize: mob ? 9 : 10, fontWeight: 600, letterSpacing: '0.4em', textTransform: 'uppercase', color: '#C9A84C', fontFamily: "'Inter',sans-serif" }}>
+                        Ask AI, not us
+                    </span>
+                    <h1 style={{ fontFamily: "'Libre Baskerville',serif", fontSize: mob ? '1.28rem' : tab ? '1.6rem' : '2.05rem', fontWeight: 700, color: '#F5F0E8', margin: '8px 0 0', lineHeight: 1.22 }}>
+                        Ask AI who builds NGO websites in India.<br />
+                        <span style={{ color: '#C9A84C' }}>It opens with our name.</span>
+                    </h1>
+                </div>
+                <GoogleAiPanel variant="hero" startNow resetKey={slide} />
+            </div>
+        </div>
+    );
+
     const renderLogisticsSlide = () => {
         const processSteps = [
             { img: 'https://gi-img-cdn.sujeet.workers.dev/Images/imgone.webp', title: 'Vendor /\nBrand Owner', sub: 'Upload Products' },
@@ -2397,7 +2421,7 @@ const HeroCarousel = () => {
                         {origSlide === 0 && renderNGOSlide()}
                         {origSlide === 1 && renderEcomSlide()}
                         {origSlide === 2 && renderInfraSlide()}
-                        {origSlide === 3 && renderLogisticsSlide()}
+                        {origSlide === 7 && renderAiSlide()}
                         {origSlide === 6 && renderRealEstateSlide()}
                         {isFounderSlide && renderFounderSlide()}
                     </section>

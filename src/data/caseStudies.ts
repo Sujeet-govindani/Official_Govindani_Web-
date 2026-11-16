@@ -36,7 +36,7 @@ export const caseStudies: CaseStudy[] = [
       "Full 80G compliance",
       "Zero data dependency on third parties",
     ],
-    image: "https://gi-img-cdn.sujeet.workers.dev/Images/MSmain.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/mahipatsinh.webp",
   },
   {
     id: "amtm-india",
@@ -108,7 +108,7 @@ export const caseStudies: CaseStudy[] = [
       "Better service discoverability",
       "More authoritative positioning",
     ],
-    image: "https://gi-img-cdn.sujeet.workers.dev/Images/DCmain1.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/gausevadham.webp",
   },
   {
     id: "popatbhai-foundation",
@@ -285,7 +285,7 @@ export const caseStudies: CaseStudy[] = [
       "No template constraints",
       "Doubt addressed at checkout",
     ],
-    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Coding-Babajikibuti.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/babajikibuti.webp",
   },
   {
     id: "terra-by-trishla",
@@ -388,4 +388,71 @@ export const caseStudies: CaseStudy[] = [
     image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/E-Commerce/Shopify/Shopify-Muktashop.webp",
   },
 
+  {
+    id: "jivika-foundation",
+    client: "Jivika Foundation",
+    category: "NGO · CSR · PSU Partnerships",
+    tagline: "Built for the Boardroom That Signs the Cheque.",
+    url: "https://jivika.org/",
+    challenge:
+      "Jivika does not raise from retail donors. Its money comes from corporates, PSUs and government programmes, and those buyers read a website the way they read a due-diligence pack: what is the programme architecture, who has already partnered, what was measured, and can any of it be verified. Most NGO sites are built for the opposite reader \u2014 emotional appeal first, a donate button everywhere, and evidence buried three clicks down. That design actively loses a CSR head who needs to defend the allocation internally.",
+    delivered:
+      "We built the site as an institutional case rather than an appeal. Six areas of work are each given their own structure \u2014 health, education, rural development, climate, sport and public infrastructure \u2014 so a partner can find the one that matches their CSR mandate without wading through the rest. The five-step delivery method (understand, design, partner, implement, measure) is stated openly, because a process a partner can audit is itself a trust signal. Impact numbers sit above the fold and repeat at the close, field stories carry named people and places rather than stock imagery, and partner logos and CSR testimonials appear as evidence rather than decoration. The donation ask is present but deliberately quiet, so it never undercuts the institutional register.",
+    impact:
+      "The site now carries the organisation's own numbers at the front \u2014 2.9 million people served, 25,000+ medical camps, 55,000+ girls vaccinated against HPV across 11 states and 100+ towns \u2014 and backs them with 50+ corporate and 9 PSU partnerships. A CSR team landing on it can assess fit, scale and credibility without a single email.",
+    highlights: [
+      "Programme-led information architecture across six verticals",
+      "Published five-step delivery method \u2014 auditable by a partner",
+      "Impact metrics above the fold and at the close",
+      "Named field stories and CSR partner testimonials as evidence",
+      "Dual path: CSR/partnership enquiry alongside public donation",
+    ],
+    stats: ["2.9M+ people served", "55,000+ girls vaccinated", "50+ corporate partners", "11 states reached"],
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/jivika.webp",
+  },
+  {
+    id: "vivedam-agro",
+    client: "Vivedam Agro",
+    category: "Multi-Vendor Marketplace · AgriTech",
+    tagline: "A Marketplace That Tells a Farmer What His Crop Is Worth Today.",
+    url: "https://vivedamagro.com/",
+    challenge:
+      "A farmer buying crop inputs is not shopping the way a city consumer shops. He does not know the brand name of the fungicide he needs \u2014 he knows which crop he is growing, which stage it is at, and what has gone wrong in the field. A conventional e-commerce catalogue organised by brand and SKU is unusable to him. On top of that, he sells his produce without knowing the day's mandi rate, which is where margin quietly leaks. And he reads Marathi, not English.",
+    delivered:
+      "We built a multi-vendor marketplace organised the way a farmer actually thinks. Products are browsable by crop and by growth stage as well as by category, across twenty input categories from seeds and bio-fungicides to nursery material and irrigation. The whole interface runs in Marathi and English, switchable in one tap. Live mandi prices are pulled from the government's Agmarknet feed on data.gov.in and surfaced on the home page, so a farmer checks the going rate before he sells rather than after. A knowledge hub carries crop guidance and product know-how, an agri calculator and crop-agronomy tools sit in the main navigation, and the whole thing is wrapped in a mobile app shell with a bottom dock \u2014 because this traffic is almost entirely phone traffic.",
+    impact:
+      "Vivedam Agro now runs as a genuine marketplace rather than a store: 800+ products across 29+ crops from 150+ verified farmers and 12+ agricultural brands, with buying journeys built around crop and stage, and a live government price feed that gives a farmer a reason to open the site on a day he is not buying anything.",
+    highlights: [
+      "Multi-vendor marketplace engine, 20 input categories",
+      "Shop by crop and by growth stage, not by SKU",
+      "Live mandi rates from the data.gov.in / Agmarknet feed",
+      "Full Marathi and English interface",
+      "Agri calculator, crop agronomy tools and knowledge hub",
+      "Mobile-app shell for phone-first farmer traffic",
+    ],
+    stats: ["800+ products", "29+ crops covered", "150+ verified farmers", "Live mandi price feed"],
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/vivedamagro.webp",
+  },
+  {
+    id: "tarushpranaa",
+    client: "Tarushpranaa",
+    category: "Courses · Commerce · Spiritual Wellness",
+    tagline: "A School and a Store, Under One Identity.",
+    url: "https://tarushpranaa.com/",
+    challenge:
+      "Tarushpranaa earns in three different ways at once \u2014 it teaches tarot and healing courses, it connects people to practising experts, and it sells products. Most brands in this position end up with three disconnected properties: a course platform on one tool, a booking page on another, a store on a third. The brand fragments, the visitor loses the thread, and every handoff drops people.",
+    delivered:
+      "We built one site that carries all three without the seams showing. Courses have a real enrolment path with levels from beginner to advanced. A practitioner directory lets visitors find and approach an expert directly. A product store runs alongside both, and a blog feeds the whole thing with search traffic. Holding it together is a single deliberate identity \u2014 deep night tones against gold, imagery that treats the subject with seriousness rather than kitsch \u2014 so a visitor who arrives for a course and leaves with a product never feels handed off to a different company.",
+    impact:
+      "One property now carries teaching, practitioner discovery and commerce under a single unmistakable identity, so every visitor who arrives for one of the three can be led to the other two.",
+    highlights: [
+      "Course catalogue with enrolment, beginner to advanced",
+      "Practitioner directory for direct expert discovery",
+      "Product store sharing one brand with the course platform",
+      "Blog as the content and search layer",
+      "Single dark-and-gold identity holding three revenue lines together",
+    ],
+    stats: ["3 revenue lines, 1 site", "Course enrolment flow", "Expert directory", "Integrated store"],
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/work/tarushpranaa.webp",
+  },
 ];

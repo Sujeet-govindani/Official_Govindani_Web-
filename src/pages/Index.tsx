@@ -8,6 +8,7 @@ import HeroSection from "@/components/HomePage/HeroSection";
 // networkidle0, so the lazy chunks resolve before capture, keeping SEO intact)
 // and hydrate as separate chunks after the hero, instead of bloating one 383 KB
 // bundle that the phone must parse before anything becomes interactive.
+const SupremeWork = lazy(() => import("@/components/HomePage/SupremeWork"));
 const CredibilityBanners = lazy(() => import("@/components/HomePage/CredibilityBanners"));
 const VideoSection = lazy(() => import("@/components/HomePage/Section2Video"));
 const LatestWork = lazy(() => import("@/components/HomePage/LatestWork"));
@@ -37,6 +38,7 @@ const Index = () => {
             never scrolls). Each reserve below is that section's measured height; the
             `auto` keyword still lets the browser store the exact size after first paint. */}
         <Suspense fallback={null}>
+          <div className="cv-defer" style={{ containIntrinsicSize: 'auto 980px' }}><SupremeWork /></div>
           <div className="cv-defer" style={{ containIntrinsicSize: 'auto 560px' }}><CredibilityBanners /></div>
           <div className="cv-defer" style={{ containIntrinsicSize: 'auto 640px' }}><VideoSection /></div>
           <div className="cv-defer" style={{ containIntrinsicSize: 'auto 1200px' }}><LatestWork /></div>

@@ -1,0 +1,142 @@
+/* ============================================================
+   Recently shipped — the work shown as the work. Namespaced .gsw-.
+   A rail of real screenshots; one opens into a banner. Dark, so the client
+   sites (which are mostly light) read as lit objects on a shelf.
+   ============================================================ */
+
+.gsw {
+  background: linear-gradient(180deg,#0b0906 0%,#15110a 50%,#0f0c07 100%);
+  padding: clamp(40px,5vw,78px) clamp(14px,4vw,48px) clamp(44px,5vw,84px);
+  color: #F5F0E8;
+}
+.gsw *, .gsw *::before, .gsw *::after { box-sizing: border-box; }
+.gsw-wrap { max-width: 1180px; margin: 0 auto; }
+
+.gsw-head { text-align: center; margin-bottom: clamp(20px,2.6vw,32px); }
+.gsw-eyebrow {
+  font-family: 'Inter',sans-serif; font-size: 10px; font-weight: 600;
+  letter-spacing: .4em; text-transform: uppercase; color: #C9A84C; margin: 0 0 10px;
+}
+.gsw-h {
+  font-family: 'Libre Baskerville',serif; font-weight: 700;
+  font-size: clamp(1.45rem,2.9vw,2.4rem); line-height: 1.24; margin: 0; text-wrap: balance;
+}
+.gsw-h em { font-style: italic; color: #C9A84C; }
+
+/* ---- the rail ---- */
+.gsw-rail {
+  display: flex; gap: 10px; overflow-x: auto; padding: 4px 2px 12px;
+  scrollbar-width: thin; scroll-snap-type: x proximity;
+}
+.gsw-rail::-webkit-scrollbar { height: 5px; }
+.gsw-rail::-webkit-scrollbar-thumb { background: rgba(201,168,76,.35); border-radius: 9px; }
+
+.gsw-tab {
+  flex: 0 0 auto; width: clamp(118px,15vw,168px); scroll-snap-align: start;
+  background: rgba(255,255,255,.03); border: 1.5px solid rgba(255,255,255,.09);
+  border-radius: 11px; padding: 0; overflow: hidden; cursor: pointer;
+  display: flex; flex-direction: column; text-align: left;
+  transition: border-color .25s, transform .25s, background .25s;
+}
+.gsw-tab img { width: 100%; height: auto; aspect-ratio: 8/5; object-fit: cover; object-position: top center; display: block; opacity: .55; transition: opacity .25s; }
+.gsw-tab span {
+  font-family: 'Inter',sans-serif; font-size: 11.5px; font-weight: 600;
+  color: rgba(245,240,232,.62); padding: 8px 10px; transition: color .25s;
+}
+.gsw-tab:hover { transform: translateY(-2px); border-color: rgba(201,168,76,.45); }
+.gsw-tab.is-on { border-color: var(--accent,#C9A84C); background: rgba(201,168,76,.08); }
+.gsw-tab.is-on img { opacity: 1; }
+.gsw-tab.is-on span { color: #F5F0E8; }
+
+/* ---- the open banner ---- */
+.gsw-banner {
+  display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,1fr);
+  gap: clamp(18px,2.6vw,36px); align-items: center;
+  background: rgba(255,255,255,.028); border: 1px solid rgba(255,255,255,.08);
+  border-radius: 18px; padding: clamp(14px,2vw,24px);
+  margin-top: clamp(12px,1.8vw,20px);
+  animation: gsw-in .45s ease both;
+}
+@media (max-width: 899px) { .gsw-banner { grid-template-columns: minmax(0,1fr); } }
+
+.gsw-shot {
+  position: relative; display: block; border-radius: 13px; overflow: hidden;
+  border: 1px solid rgba(255,255,255,.1); text-decoration: none;
+  box-shadow: 0 26px 60px -30px rgba(0,0,0,.9);
+}
+.gsw-shot img { width: 100%; height: auto; display: block; }
+.gsw-open {
+  position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%) translateY(6px);
+  background: rgba(10,8,5,.86); border: 1px solid var(--accent,#C9A84C); color: #F5F0E8;
+  font-family: 'Inter',sans-serif; font-size: 12.5px; font-weight: 600;
+  padding: 8px 18px; border-radius: 99px; white-space: nowrap;
+  opacity: 0; transition: opacity .25s, transform .25s;
+}
+.gsw-shot:hover .gsw-open, .gsw-shot:focus-visible .gsw-open { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+.gsw-sector {
+  font-family: 'Inter',sans-serif; font-size: 10.5px; font-weight: 600;
+  letter-spacing: .16em; text-transform: uppercase; color: #C9A84C; margin: 0 0 8px;
+}
+.gsw-name {
+  font-family: 'Libre Baskerville',serif; font-size: clamp(1.2rem,2.1vw,1.72rem);
+  font-weight: 700; margin: 0 0 6px; line-height: 1.2;
+}
+.gsw-headline {
+  font-family: 'Libre Baskerville',serif; font-style: italic;
+  font-size: clamp(.95rem,1.5vw,1.08rem); color: #E6C35C; margin: 0 0 10px; line-height: 1.45;
+}
+.gsw-blurb {
+  font-family: 'Inter',sans-serif; font-size: clamp(.84rem,1.3vw,.93rem);
+  line-height: 1.66; color: rgba(245,240,232,.68); margin: 0 0 14px; max-width: 54ch;
+}
+
+.gsw-stats { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0 0 12px; padding: 0; }
+.gsw-stats li {
+  flex: 1 1 86px; background: rgba(201,168,76,.08);
+  border: 1px solid rgba(201,168,76,.25); border-radius: 10px;
+  padding: 9px 10px; display: flex; flex-direction: column; gap: 2px; min-width: 0;
+}
+.gsw-stats b {
+  font-family: 'Libre Baskerville',serif; font-size: clamp(.92rem,1.5vw,1.05rem);
+  color: #E6C35C; line-height: 1.1;
+}
+.gsw-stats span {
+  font-family: 'Inter',sans-serif; font-size: 10px; font-weight: 600;
+  color: rgba(245,240,232,.6); line-height: 1.3;
+}
+
+.gsw-tech { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 0 0 16px; padding: 0; }
+.gsw-tech li {
+  font-family: 'Inter',sans-serif; font-size: 10.5px; font-weight: 600;
+  color: rgba(245,240,232,.66); background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.1); border-radius: 99px; padding: 4px 11px;
+}
+
+.gsw-cta { display: flex; flex-wrap: wrap; gap: 9px; }
+.gsw-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: 'Inter',sans-serif; font-weight: 700; font-size: .84rem;
+  text-decoration: none; border-radius: 99px; padding: 11px 21px;
+  color: #3a2500; background: linear-gradient(135deg,#c8a84b 0%,#f4e5b8 45%,#c8a84b 100%);
+  box-shadow: 0 10px 22px -12px rgba(184,134,11,.7); transition: transform .2s;
+}
+.gsw-btn-ghost {
+  background: transparent; color: rgba(245,240,232,.84);
+  border: 1.5px solid rgba(255,255,255,.18); box-shadow: none;
+}
+.gsw-btn:hover { transform: translateY(-1px); }
+
+.gsw-foot {
+  text-align: center; margin: clamp(18px,2.4vw,28px) auto 0; max-width: 62ch;
+  font-family: 'Inter',sans-serif; font-size: .8rem; line-height: 1.6;
+  color: rgba(245,240,232,.42);
+}
+.gsw-foot a { color: #C9A84C; text-decoration: none; border-bottom: 1px solid rgba(201,168,76,.4); }
+
+@keyframes gsw-in { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
+@media (prefers-reduced-motion: reduce) {
+  .gsw-banner { animation: none; }
+  .gsw-tab:hover, .gsw-btn:hover { transform: none; }
+  .gsw-open { transition: none; }
+}
