@@ -243,9 +243,16 @@ export default function Seo() {
       });
     } else if (clean) {
       // Every inner page gets its section schema PLUS a breadcrumb trail.
+      const pageNode = schemaFor(pathname);
       setPageSchema({
         '@context': 'https://schema.org',
-        '@graph': [stripContext(schemaFor(pathname)), breadcrumb(clean, fitted)],
+        /* schemaFor returns null for a route with no section schema of its
+           own. Drop it rather than letting stripContext turn null into an
+           empty, typeless node sitting in the graph. */
+        '@graph': [
+          ...(pageNode ? [stripContext(pageNode)] : []),
+          breadcrumb(clean, fitted),
+        ],
       });
     } else {
       // Homepage: Organization + WebSite + LocalBusiness, no breadcrumb needed.

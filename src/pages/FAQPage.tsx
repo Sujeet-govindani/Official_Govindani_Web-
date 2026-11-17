@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '@/components/SEO';
-import { organizationSchema, createFAQSchema } from '@/seo/schema';
+import { createFAQSchema } from '@/seo/schema';
 
 const allFAQs = [
   // General
@@ -179,12 +179,15 @@ export default function FAQPage() {
 
   return (
     <>
+      {/* schema is the FAQ node only. Organization is emitted by the static
+          shell on every route, so passing it here too put a second copy of the
+          same @id on this page. */}
       <SEO
         title="Frequently Asked Questions | Govindani Infotech"
         description="Find answers to common questions about NGO website development, WhatsApp Business API, digital marketing, pricing, and process at Govindani Infotech."
         canonical="https://govindaniit.com/faq"
         keywords="FAQ, frequently asked questions, NGO website cost, WhatsApp API pricing, digital marketing cost, web development FAQ"
-        schema={[organizationSchema, faqSchema]}
+        schema={faqSchema}
       />
 
       <div className="min-h-screen bg-[#060b13] text-white pt-24 pb-16">

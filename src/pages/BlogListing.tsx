@@ -3,7 +3,6 @@ import { formatBlogDate, isoDate } from '@/lib/blogDate';
 import { Link } from 'react-router-dom';
 import SEO from '@/components/SEO';
 import { blogs, BlogPost } from '@/data/blogIndex';
-import { organizationSchema } from '@/seo/schema';
 
 const categories = [...new Set(blogs.map(b => b.category))];
 
@@ -44,12 +43,14 @@ export default function BlogListing() {
 
   return (
     <>
+      {/* No schema prop: Organization is emitted by the static shell on every
+          route, so passing it again here put a second copy of the same @id on
+          this page. */}
       <SEO
         title="Blog | Digital Marketing, Web Development & NGO Solutions Guide"
         description="Expert insights on NGO website development, WhatsApp marketing, social media strategy, Google Ads, SEO, and digital transformation. Govindani Infotech blog - India's leading digital agency."
         canonical="https://govindaniit.com/blog"
         keywords="digital marketing blog, NGO website guide, WhatsApp marketing tips, SEO India, web development blog, social media marketing guide"
-        schema={organizationSchema}
       />
 
       <div className="min-h-screen bg-[#060b13] text-white pt-24 pb-16">

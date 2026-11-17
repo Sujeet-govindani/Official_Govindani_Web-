@@ -193,11 +193,17 @@ export function schemaFor(pathname: string) {
     "url": "https://govindaniit.com" + pathname,
   };
 
-  // Homepage
+  // Homepage. Only LocalBusiness: Organization and WebSite are emitted by the
+  // static shell in index.html on every route, so returning them here put two
+  // copies of the same @id on this one page - and they disagreed (areaServed
+  // City/Pune in the shell vs Country/India here, plus description, sameAs and
+  // streetAddress). The shell now carries the merged, richer version.
+  // LocalBusiness stays: nothing else emits it, and it is the record local
+  // search reads.
   if (pathname === '/') {
     return {
       ...base,
-      "@graph": [organizationSchema, websiteSchema, localBusinessSchema],
+      "@graph": [localBusinessSchema],
     };
   }
 
@@ -273,6 +279,11 @@ export function schemaFor(pathname: string) {
     };
   }
 
-  // Default: Organization
-  return { ...base, ...organizationSchema };
+  // Default: nothing. This used to return organizationSchema, which is how
+  // every route with no branch of its own - /faq and /blog among them - ended
+  // up with a SECOND Organization under the same @id, on top of the one the
+  // static shell already puts on all 749 pages. The shell is the single source
+  // of site identity now, so an unmatched route contributes no page schema and
+  // Seo.tsx drops the null from the graph.
+  return null;
 }
