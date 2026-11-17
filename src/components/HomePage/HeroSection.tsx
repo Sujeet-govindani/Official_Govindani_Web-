@@ -1058,6 +1058,88 @@ const founderBadge = (p: { founderId?: string }) =>
 const founderOf = (p: { founderId?: string }) =>
     ngoFounders.find((x) => x.id === p.founderId);
 
+/**
+ * The wall of site thumbnails behind the hero.
+ *
+ * Module scope and memoised, both on purpose. Declared INSIDE HeroCarousel it
+ * was a new function identity on every render, so React treated it as a
+ * different component type and threw away all 212 <img> elements and restarted
+ * their animations - on every founder rotation, every slide change, and
+ * formerly on every single mousemove. React.memo keeps it still through the
+ * parent's re-renders; it only re-renders when tint or mob actually change.
+ */
+const WallBackdrop = React.memo(function WallBackdrop(
+    { tint = 'rgba(7,6,10,', mob = false }: { tint?: string; mob?: boolean },
+) {
+    const COLS = mob ? 3 : 6;
+    const per = Math.ceil(websiteWall.length / COLS);
+    const columns = Array.from({ length: COLS }, (_, i) => websiteWall.slice(i * per, (i + 1) * per));
+
+    return (
+        <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden', pointerEvents: 'none' }}>
+            <style>{`
+                @keyframes giw_up   { from { transform: translateY(0) }    to { transform: translateY(-50%) } }
+                @keyframes giw_down { from { transform: translateY(-50%) } to { transform: translateY(0) } }
+                @media (prefers-reduced-motion: reduce) { .giw-col { animation: none !important } }
+            `}</style>
+
+            <div style={{ position: 'absolute', inset: '-8%', display: 'flex', gap: mob ? 8 : 14 }}>
+                {columns.map((col, i) => {
+                    const mid = (COLS - 1) / 2;
+                    const edge = Math.abs(i - mid) / mid;
+                    return (
+                        <div key={i} className="giw-col" style={{
+                            flex: '1 1 0', minWidth: 0,
+                            /* roughly twice the old pace - at 46s+ it read as static */
+                            animation: `${i % 2 ? 'giw_down' : 'giw_up'} ${20 + i * 4}s linear infinite`,
+                            /* NO filter here, deliberately. The softness is
+                               baked into the thumbnails by
+                               scripts/wall-thumbs.py. A CSS blur on these
+                               columns is the single most expensive thing
+                               that can go on this page: they translate
+                               every frame, so the browser re-rasterises
+                               the blurred output continuously instead of
+                               just moving a finished layer. Baked, the
+                               column is a plain bitmap the compositor
+                               slides for free - and the files got SMALLER,
+                               2.7 KB against 11 KB, because blurred pixels
+                               compress almost to nothing.
+
+                               Depth now comes from opacity and scale,
+                               which are compositor-only properties too. */
+                            opacity: (mob ? 0.78 : 0.86) - edge * 0.26,
+                            transform: `scale(${1 - edge * 0.05}) translateZ(0)`,
+                            willChange: 'transform',
+                        }}>
+                            {/* Each capture is cropped to a card rather than shown at
+                                its full 4,000px height. Left whole, a column was one
+                                enormous page creeping past and read as a single slow
+                                screenshot; cropped to the top of each site, the same
+                                column carries twenty-odd distinct builds and the wall
+                                finally looks like the volume of work it is. */}
+                            {[...col, ...col].map((src, j) => (
+                                <div key={j} style={{ width: '100%', aspectRatio: '4 / 3', overflow: 'hidden', borderRadius: 8, marginBottom: mob ? 8 : 12, border: '1px solid rgba(255,255,255,0.08)', background: '#11100e' }}>
+                                    <img src={src} alt="" loading="lazy" decoding="async"
+                                         style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center', display: 'block' }} />
+                                </div>
+                            ))}
+                        </div>
+                    );
+                })}
+            </div>
+
+            {/* A phone shows 3 columns instead of 6, so each card is twice
+                the size and the headline lands on top of one bright capture
+                rather than a fine mosaic. At the desktop 0.42 centre the
+                e-commerce headline was unreadable over a wall card, so the
+                scrim runs much denser on mobile - the wall still reads as
+                depth, the copy stays the thing you see. */}
+            <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(ellipse at 50% 50%, ${tint}${mob ? 0.74 : 0.42}) 0%, ${tint}${mob ? 0.87 : 0.72}) 48%, ${tint}${mob ? 0.96 : 0.92}) 82%)` }} />
+            <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(180deg, ${tint}1) 0%, transparent 16%, transparent 84%, ${tint}1) 100%)` }} />
+        </div>
+    );
+});
+
 const HeroCarousel = () => {
     const navigate = useNavigate();
 
@@ -1169,12 +1251,21 @@ const HeroCarousel = () => {
         return () => clearInterval(workTimer.current);
     }, [origSlide, autoPlay, visible]);
 
+    /* Only listen while a slide that actually USES the parallax is on screen.
+       This fired on every mousemove and called setMouse, re-rendering all 2,900
+       lines of this component continuously - which remounted the wall's 212
+       <img> elements and restarted their animations, so the background visibly
+       stuttered and jumped whenever the pointer moved. `mouse` is read by
+       renderFounderSlide alone, and that slide is gated on SLIDE_TO_FOUNDER
+       (10-14) while SLIDE_ORDER is [7, 0, 9] - so it never renders, and every
+       one of those re-renders was being paid for nothing at all. The guard
+       keeps the parallax working if those slides return. */
     useEffect(() => {
-        if (mob) return;
+        if (mob || !isFounderSlide) return;
         const mv = e => setMouse({ x: (e.clientX / window.innerWidth - 0.5) * 15, y: (e.clientY / window.innerHeight - 0.5) * 15 });
         window.addEventListener('mousemove', mv, { passive: true });
         return () => window.removeEventListener('mousemove', mv);
-    }, [mob]);
+    }, [mob, isFounderSlide]);
 
     useEffect(() => {
         if (!manualNav.current) return;
@@ -2169,69 +2260,6 @@ const HeroCarousel = () => {
      * never finds a repeat. Outer columns are blurred and dimmed, the centre
      * sharp, and a scrim over the top keeps whatever sits on it legible.
      */
-    const WallBackdrop = ({ tint = 'rgba(7,6,10,' }: { tint?: string }) => {
-        const COLS = mob ? 3 : 6;
-        const per = Math.ceil(websiteWall.length / COLS);
-        const columns = Array.from({ length: COLS }, (_, i) => websiteWall.slice(i * per, (i + 1) * per));
-
-        return (
-            <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden', pointerEvents: 'none' }}>
-                <style>{`
-                    @keyframes giw_up   { from { transform: translateY(0) }    to { transform: translateY(-50%) } }
-                    @keyframes giw_down { from { transform: translateY(-50%) } to { transform: translateY(0) } }
-                    @media (prefers-reduced-motion: reduce) { .giw-col { animation: none !important } }
-                `}</style>
-
-                <div style={{ position: 'absolute', inset: '-8%', display: 'flex', gap: mob ? 8 : 14 }}>
-                    {columns.map((col, i) => {
-                        const mid = (COLS - 1) / 2;
-                        const edge = Math.abs(i - mid) / mid;
-                        return (
-                            <div key={i} className="giw-col" style={{
-                                flex: '1 1 0', minWidth: 0,
-                                /* roughly twice the old pace - at 46s+ it read as static */
-                                animation: `${i % 2 ? 'giw_down' : 'giw_up'} ${20 + i * 4}s linear infinite`,
-                                /* A base blur on EVERY column, not just the outer
-                                   ones. The wall used to be mostly empty boxes:
-                                   at 323 KB a card the lazy images rarely
-                                   finished loading, so it read as dark texture
-                                   by accident. On 11 KB thumbnails they all
-                                   arrive, the centre columns land near 1:1 and
-                                   the wall turned into a sharp gallery
-                                   competing with the headline. This puts the
-                                   softness back deliberately. */
-                                filter: `blur(${(1.6 + edge * 2.6).toFixed(1)}px)`,
-                                opacity: (mob ? 0.72 : 0.8) - edge * 0.3,
-                                transform: `scale(${1 - edge * 0.05})`,
-                            }}>
-                                {/* Each capture is cropped to a card rather than shown at
-                                    its full 4,000px height. Left whole, a column was one
-                                    enormous page creeping past and read as a single slow
-                                    screenshot; cropped to the top of each site, the same
-                                    column carries twenty-odd distinct builds and the wall
-                                    finally looks like the volume of work it is. */}
-                                {[...col, ...col].map((src, j) => (
-                                    <div key={j} style={{ width: '100%', aspectRatio: '4 / 3', overflow: 'hidden', borderRadius: 8, marginBottom: mob ? 8 : 12, border: '1px solid rgba(255,255,255,0.08)', background: '#11100e' }}>
-                                        <img src={src} alt="" loading="lazy" decoding="async"
-                                             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center', display: 'block' }} />
-                                    </div>
-                                ))}
-                            </div>
-                        );
-                    })}
-                </div>
-
-                {/* A phone shows 3 columns instead of 6, so each card is twice
-                    the size and the headline lands on top of one bright capture
-                    rather than a fine mosaic. At the desktop 0.42 centre the
-                    e-commerce headline was unreadable over a wall card, so the
-                    scrim runs much denser on mobile - the wall still reads as
-                    depth, the copy stays the thing you see. */}
-                <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(ellipse at 50% 50%, ${tint}${mob ? 0.74 : 0.42}) 0%, ${tint}${mob ? 0.87 : 0.72}) 48%, ${tint}${mob ? 0.96 : 0.92}) 82%)` }} />
-                <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(180deg, ${tint}1) 0%, transparent 16%, transparent 84%, ${tint}1) 100%)` }} />
-            </div>
-        );
-    };
 
     const renderLogisticsSlide = () => {
         const processSteps = [
@@ -2874,7 +2902,7 @@ const HeroCarousel = () => {
                                         background: dark ? '#0a0f1a' : '#0b0906',
                                     }}
                                 >
-                                    <WallBackdrop tint={dark ? 'rgba(10,15,26,' : 'rgba(11,9,6,'} />
+                                    <WallBackdrop mob={mob} tint={dark ? 'rgba(10,15,26,' : 'rgba(11,9,6,'} />
                                 </div>
                             );
                         })()}
