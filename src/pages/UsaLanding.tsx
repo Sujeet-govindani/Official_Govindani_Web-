@@ -486,15 +486,15 @@ export default function UsaLanding() {
             <img className="gusa-logo" src={`${R2}/govindanilogo-400w.webp`} alt="Govindani Infotech"  loading="lazy" decoding="async" />
             <p>Websites, e-commerce &amp; social media for businesses and non-profits worldwide.</p>
           </div>
-          <div className="gusa-foot-addr">
+          <div className="gusa-foot-addr" data-nosnippet>
             <h5>&#127482;&#127480; United States</h5>
             <p>Govindani Infotech LLC<br />30 N Gould St, Ste N<br />Sheridan, WY 82801</p>
           </div>
-          <div className="gusa-foot-addr">
+          <div className="gusa-foot-addr" data-nosnippet>
             <h5>&#127470;&#127475; India</h5>
             <p>Govindani Infotech Pvt. Ltd.<br />2nd Floor, Landmark Plaza, 206<br />Satara Rd, Pune, MH 411009</p>
           </div>
-          <div className="gusa-foot-addr">
+          <div className="gusa-foot-addr" data-nosnippet>
             <h5>Talk to us</h5>
             <p><a href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer">WhatsApp: +91 92019 58273</a><br />
             <button type="button" className="gusa-foot-link" onClick={openForm}>Get a free quote</button></p>

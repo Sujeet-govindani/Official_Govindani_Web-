@@ -336,20 +336,28 @@ export default function UsaLanding() {
 
       {/* footer — one clean footer, both addresses */}
       <footer className="gusa-foot">
+        {/* The address blocks below carry data-nosnippet. This page has its own
+            footer, so the fix applied to the main site footer missed it - and
+            /ngoindia is one of the pages whose sitelink Google was captioning
+            with the office address instead of its description. The addresses
+            stay visible and crawlable; Google just stops quoting them as a
+            page summary. Marked per address block, NOT on this wrapper: the
+            wrapper also holds the brand line, which is decent snippet text and
+            there is no reason to suppress it. */}
         <div className="gusa-foot-in">
           <div className="gusa-foot-brand">
             <img className="gusa-logo" src={`${R2}/govindanilogo-400w.webp`} alt="Govindani Infotech"  loading="lazy" decoding="async" />
             <p>Donation-ready websites, donor platforms and social media for non-profits across India.</p>
           </div>
-          <div className="gusa-foot-addr">
+          <div className="gusa-foot-addr" data-nosnippet>
             <h5>&#127482;&#127480; United States</h5>
             <p>Govindani Infotech LLC<br />30 N Gould St, Ste N<br />Sheridan, WY 82801</p>
           </div>
-          <div className="gusa-foot-addr">
+          <div className="gusa-foot-addr" data-nosnippet>
             <h5>&#127470;&#127475; India</h5>
             <p>Govindani Infotech Pvt. Ltd.<br />2nd Floor, Landmark Plaza, 206<br />Satara Rd, Pune, MH 411009</p>
           </div>
-          <div className="gusa-foot-addr">
+          <div className="gusa-foot-addr" data-nosnippet>
             <h5>Talk to us</h5>
             <p><a href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer">WhatsApp: +91 92019 58273</a><br />
             <button type="button" className="gusa-foot-link" onClick={goToForm}>Talk to us</button></p>
