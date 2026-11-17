@@ -2030,9 +2030,12 @@ const HeroCarousel = () => {
      * panel re-types itself every time the slide comes round (resetKey), which
      * is what makes it read as a live search rather than a screenshot.
      */
+    /* The root is transparent and carries no WallBackdrop: both the base colour
+       and the wall are painted once by the hoisted layer in the carousel
+       container. Mounted inside the slide, the wall built and threw away 217
+       <img> elements on every rotation. */
     const renderAiSlide = () => (
-        <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: '#0a0f1a', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
-                <WallBackdrop tint="rgba(10,15,26," />
+        <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
             <div style={{ position: 'relative', zIndex: 2, width: '100%', maxWidth: 1000, padding: `${slidePad.top}px ${slidePad.side}px ${slidePad.bot}px`, boxSizing: 'border-box' }}>
                 <div style={{ textAlign: 'center', marginBottom: mob ? 10 : 16 }}>
                     <span style={{ fontSize: mob ? 9 : 10, fontWeight: 600, letterSpacing: '0.4em', textTransform: 'uppercase', color: '#C9A84C', fontFamily: "'Inter',sans-serif" }}>
@@ -2082,8 +2085,9 @@ const HeroCarousel = () => {
                 @media (max-width:767px){.giw-visit{width:100%;justify-content:center;padding:0.72rem 1.2rem;font-size:0.85rem;}}
                 @media (prefers-reduced-motion:reduce){.giw-visit,.giw-visit .giw-ar{transition:none;}}
             `}</style>
-            <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: '#0b0906', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
-                <WallBackdrop tint="rgba(11,9,6," />
+            {/* Transparent for the same reason as the AI slide - the hoisted
+                layer paints the base colour and the wall. */}
+            <div style={{ position: 'relative', width: '100%', minHeight: 'var(--hero-h)', background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
                 <div style={{ position: 'relative', zIndex: 2, width: '100%', maxWidth: 1180, padding: `${slidePad.top}px ${slidePad.side}px ${slidePad.bot}px`, boxSizing: 'border-box' }}>
 
                     <div style={{ textAlign: 'center', marginBottom: mob ? 10 : 14 }}>
@@ -2187,8 +2191,17 @@ const HeroCarousel = () => {
                                 flex: '1 1 0', minWidth: 0,
                                 /* roughly twice the old pace - at 46s+ it read as static */
                                 animation: `${i % 2 ? 'giw_down' : 'giw_up'} ${20 + i * 4}s linear infinite`,
-                                filter: `blur(${(edge * 3.2).toFixed(1)}px)`,
-                                opacity: (mob ? 0.8 : 0.95) - edge * 0.34,
+                                /* A base blur on EVERY column, not just the outer
+                                   ones. The wall used to be mostly empty boxes:
+                                   at 323 KB a card the lazy images rarely
+                                   finished loading, so it read as dark texture
+                                   by accident. On 11 KB thumbnails they all
+                                   arrive, the centre columns land near 1:1 and
+                                   the wall turned into a sharp gallery
+                                   competing with the headline. This puts the
+                                   softness back deliberately. */
+                                filter: `blur(${(1.6 + edge * 2.6).toFixed(1)}px)`,
+                                opacity: (mob ? 0.72 : 0.8) - edge * 0.3,
                                 transform: `scale(${1 - edge * 0.05})`,
                             }}>
                                 {/* Each capture is cropped to a card rather than shown at
@@ -2838,6 +2851,34 @@ const HeroCarousel = () => {
                             // Reserve the strip it occupies (80px button + breathing room).
                             paddingTop: 0, paddingBottom: 0, paddingLeft: 0, paddingRight: 0 }}
                     >
+                        {/* The wall lives HERE, once, not inside the two slides
+                            that show it. Inside them it was mounted and
+                            unmounted on every rotation - 377 images and 2,204
+                            DOM nodes down to 160 and 1,786 and back, every few
+                            seconds, which is what made the hero stutter on a
+                            phone. Hidden with display:none rather than
+                            unmounted, so the nodes and decoded images survive
+                            the switch and the animations stop while unseen.
+                            It also paints the base colour, because the slides
+                            above it are transparent now. */}
+                        {(() => {
+                            const onWallSlide = origSlide === 7 || origSlide === 8 || origSlide === 9;
+                            const dark = origSlide === 7;
+                            return (
+                                <div
+                                    aria-hidden="true"
+                                    style={{
+                                        position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden',
+                                        pointerEvents: 'none',
+                                        display: onWallSlide ? 'block' : 'none',
+                                        background: dark ? '#0a0f1a' : '#0b0906',
+                                    }}
+                                >
+                                    <WallBackdrop tint={dark ? 'rgba(10,15,26,' : 'rgba(11,9,6,'} />
+                                </div>
+                            );
+                        })()}
+
                         {origSlide === 0 && renderNGOSlide()}
                         {origSlide === 1 && renderEcomSlide()}
                         {origSlide === 2 && renderInfraSlide()}

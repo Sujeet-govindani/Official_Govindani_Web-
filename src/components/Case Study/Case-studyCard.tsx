@@ -1,6 +1,5 @@
 import { CaseStudy } from "@/data/caseStudies";
 import { Link } from "react-router-dom";
-import FadeIn from "./FadeIn";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -9,291 +8,158 @@ interface Props {
   index: number;
 }
 
+/**
+ * The card is a HOOK, not the case study.
+ *
+ * It used to print the challenge, what we delivered and the impact, each
+ * clamped to three lines. Measured on the live page: 108 clipped blocks, and on
+ * the Mahipatsinh card those three paragraphs showed 82px of 218px, 191px and
+ * 136px - roughly 60% of the writing hidden. So the card asked you to read
+ * three half-sentences that all stopped mid-thought, under a bullet list and
+ * two equally loud buttons. That is what made it read cheap: not the colour or
+ * the type, but a layout fighting its own content.
+ *
+ * It now makes ONE point - who, the promise, the number that proves it, and a
+ * way in. Everything that was truncated lives on the detail page, in full,
+ * where there is room for it.
+ */
+
+/** "5,000+ children supported" -> ["5,000+", "children supported"]. */
+function splitStat(s: string): [string, string] {
+  const m = (s || "").match(
+    /^\s*([₹$]?[\d][\d,.]*\s*(?:\+|%|x|Cr|L|K|M|crore|lakh)?)\s+(.*)$/i,
+  );
+  return m ? [m[1].trim(), m[2].trim()] : ["", (s || "").trim()];
+}
+
+/** The first sentence of the impact - the claim, without the essay. */
+function firstSentence(text: string): string {
+  const t = (text || "").trim();
+  const cut = t.search(/[.!?]\s/);
+  return cut > 40 ? t.slice(0, cut + 1) : t;
+}
+
 const CaseStudyCard = ({ study, index }: Props) => {
   const isReversed = index % 2 === 1;
+  const [figure, figureLabel] = splitStat(study.stats?.[0] ?? "");
+  const restStats = (study.stats ?? []).slice(1);
 
   return (
-    <article className="border-t border-border/30 bg-background py-12 md:py-16 px-4 md:px-8">
-
-      {/* ═══════════════════════════════════════════════════
-          GLASSY CONTAINER WRAPPER wraps both mobile & desktop
-      ═══════════════════════════════════════════════════ */}
+    <article className="border-t border-border/30 bg-background px-4 py-10 md:px-8 md:py-14">
       <motion.div
-        className="relative mx-auto max-w-6xl rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-md shadow-[0_8px_48px_rgba(0,0,0,0.35)] overflow-hidden"
-        initial={{ opacity: 0, y: 48 }}
+        className="relative mx-auto max-w-6xl overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] shadow-[0_8px_48px_rgba(0,0,0,0.35)] backdrop-blur-md"
+        initial={{ opacity: 0, y: 36 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
-        transition={{ duration: 0.75, ease: [0.25, 0.46, 0.45, 0.94] }}
+        transition={{ duration: 0.65, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
-        {/* Subtle inner glow on top edge */}
         <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-        {/* Subtle inner glow on bottom edge */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
-        {/* ═══════════════════════════════════════════════════
-            MOBILE LAYOUT  (hidden on lg+)
-        ═══════════════════════════════════════════════════ */}
-        <div className="lg:hidden">
-
-          {/* Image box */}
-          <div
-            style={{
-              position: "relative",
-              width: "100%",
-              height: "min(52vw, 360px)",
-              minHeight: "200px",
-              overflow: "hidden",
-              display: "block",
-            }}
-          >
+        {/* One layout at every width. The old card carried a separate mobile
+            and desktop copy of the same content - 301 lines, already drifting
+            apart from each other. */}
+        <div
+          className={`flex flex-col lg:min-h-[26rem] lg:flex-row ${
+            isReversed ? "lg:flex-row-reverse" : ""
+          }`}
+        >
+          {/* ── The build ───────────────────────────────────────────────── */}
+          <div className="relative h-[clamp(190px,48vw,330px)] shrink-0 overflow-hidden lg:h-auto lg:w-[55%]">
             <img
               src={study.image}
-              alt={study.client}
+              alt={`The ${study.client} website, built by Govindani Infotech`}
               loading="lazy"
-              style={{
-                position: "absolute",
-                inset: 0,
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                objectPosition: "center top",
-                display: "block",
-              }}
+              decoding="async"
+              /* object-top, not object-center. These are page captures:
+                 centred, the frame landed halfway down the page and showed the
+                 client's own nav bar floating across the card, which reads as
+                 a mistake rather than a crop. */
+              className="absolute inset-0 h-full w-full object-cover object-top"
             />
-
-            {/* Bottom fade */}
             <div
-              style={{
-                position: "absolute",
-                inset: 0,
-                background: "linear-gradient(to bottom, transparent 55%, rgba(0,0,0,0.5) 100%)",
-                pointerEvents: "none",
-              }}
+              className={`pointer-events-none absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent lg:bg-gradient-to-r ${
+                isReversed
+                  ? "lg:from-background/80 lg:via-transparent lg:to-transparent"
+                  : "lg:from-transparent lg:via-transparent lg:to-background/80"
+              }`}
             />
-
-            {/* Category badge */}
-            <span
-              style={{
-                position: "absolute",
-                top: 14,
-                left: 14,
-                zIndex: 10,
-              }}
-              className="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-[0.18em] bg-black/70 backdrop-blur-md text-primary border border-primary/30 shadow-sm"
-            >
+            <span className="absolute left-4 top-4 z-10 inline-flex items-center rounded-full border border-primary/30 bg-black/70 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-primary backdrop-blur-md">
               {study.category}
             </span>
-
-            {/* Ghost number */}
             <span
-              style={{
-                position: "absolute",
-                bottom: 0,
-                right: 12,
-                fontSize: "6rem",
-                fontWeight: 900,
-                color: "rgba(255,255,255,0.04)",
-                lineHeight: 1,
-                userSelect: "none",
-                pointerEvents: "none",
-              }}
+              aria-hidden="true"
+              className="pointer-events-none absolute bottom-0 right-4 select-none text-[5rem] font-black leading-none text-white/[0.05] lg:text-[9rem]"
             >
               {String(index + 1).padStart(2, "0")}
             </span>
           </div>
 
-          {/* Content */}
-          <div className="px-6 py-8 space-y-6">
-
-            <h3 className="text-3xl sm:text-4xl font-extrabold leading-tight tracking-tight text-white">
+          {/* ── The hook ────────────────────────────────────────────────── */}
+          <div className="flex flex-1 flex-col justify-center gap-5 px-6 py-8 md:px-10 md:py-12">
+            <h3 className="text-[1.9rem] font-extrabold leading-[1.1] tracking-tight text-white md:text-[2.4rem]">
               {study.client}
             </h3>
 
-            <p className="text-lg sm:text-xl text-primary font-medium leading-relaxed border-l-[3px] border-primary/40 pl-4">
+            {/* The promise, in full. It is one line and was never the thing
+                that needed truncating. */}
+            <p className="border-l-[3px] border-primary/40 pl-4 text-lg font-medium leading-snug text-primary md:text-xl">
               {study.tagline}
             </p>
 
-            <div className="space-y-5">
-              {[
-                { label: "The Challenge", text: study.challenge },
-                { label: "What We Delivered", text: study.delivered },
-                { label: "The Impact", text: study.impact },
-              ].map(({ label, text }) => (
-                <div key={label}>
-                  <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-primary mb-2">
-                    {label}
-                  </h4>
-                  <p className="text-base sm:text-[1.05rem] leading-relaxed text-white/80 line-clamp-3">
-                    {text}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <ul className="space-y-2">
-              {study.highlights.map((h, i) => (
-                <li key={i} className="flex items-start gap-3 text-base sm:text-[1.05rem] text-white/85">
-                  <span className="mt-[9px] block h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                  {h}
-                </li>
-              ))}
-            </ul>
-
-            <div className="flex flex-wrap gap-2">
-              {study.stats.map((s, i) => (
-                <span
-                  key={i}
-                  className="inline-flex items-center px-3.5 py-1.5 rounded-full text-sm font-semibold bg-primary/10 text-primary border border-primary/20"
-                >
-                  {s}
+            {/* The number that proves it - one figure, large enough to be the
+                thing you carry away from the card. */}
+            {figure ? (
+              <div className="flex items-baseline gap-3">
+                <span className="text-[clamp(2.1rem,6vw,3rem)] font-extrabold leading-none text-white">
+                  {figure}
                 </span>
-              ))}
-            </div>
+                <span className="text-sm font-medium uppercase tracking-wide text-white/55 md:text-base">
+                  {figureLabel}
+                </span>
+              </div>
+            ) : (
+              <div className="text-lg font-semibold text-white">{figureLabel}</div>
+            )}
 
-            <Link
-              to={`/pages/case-study/${study.id}`}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary/50 text-primary font-semibold text-base hover:bg-primary/10 transition mr-3"
-            >
-              Read Case Study <ArrowUpRight className="h-4 w-4" />
-            </Link>
+            {/* One line, whole. Nothing on this card is clamped any more. */}
+            <p className="text-[1.02rem] leading-relaxed text-white/75 md:text-lg">
+              {firstSentence(study.impact)}
+            </p>
 
-            <a
-              href={study.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold text-base hover:opacity-90 transition-opacity"
-            >
-              View Project <ArrowUpRight className="h-4 w-4" />
-            </a>
+            {restStats.length > 0 && (
+              <div className="flex flex-wrap gap-2">
+                {restStats.map((s) => (
+                  <span
+                    key={s}
+                    className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1.5 text-[0.78rem] font-semibold text-primary"
+                  >
+                    {s}
+                  </span>
+                ))}
+              </div>
+            )}
 
-          </div>
-        </div>
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-3 pt-1">
+              <Link
+                to={`/pages/case-study/${study.id}`}
+                className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+              >
+                Read the case study <ArrowUpRight className="h-4 w-4" />
+              </Link>
 
-        {/* ═══════════════════════════════════════════════════
-            DESKTOP LAYOUT  (hidden below lg)
-        ═══════════════════════════════════════════════════ */}
-        <div
-          className={`hidden lg:flex min-h-[60vh] ${
-            isReversed ? "flex-row-reverse" : "flex-row"
-          }`}
-        >
-          {/* Image half slightly reduced width */}
-          <motion.div
-            className="relative overflow-hidden flex-shrink-0 w-[60%]"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, ease: "easeOut" }}
-          >
-            <motion.img
-              src={study.image}
-              alt={study.client}
-              loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover object-center"
-              whileHover={{ scale: 1.035 }}
-              transition={{ duration: 1, ease: [0.25, 0.46, 0.45, 0.94] }}
-            />
-            <div
-              className={`absolute inset-0 pointer-events-none ${
-                isReversed
-                  ? "bg-gradient-to-l from-background/85 via-background/20 to-transparent"
-                  : "bg-gradient-to-r from-transparent via-background/20 to-background/85"
-              }`}
-            />
-            <motion.span
-              className="absolute top-5 left-5 z-10 inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-[0.18em] bg-background/80 backdrop-blur-md text-primary border border-primary/25 shadow-sm"
-              initial={{ opacity: 0, y: -8 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3, duration: 0.5 }}
-            >
-              {study.category}
-            </motion.span>
-            <span className="absolute bottom-5 right-6 text-[14rem] font-black text-white/[0.04] leading-none select-none pointer-events-none">
-              {String(index + 1).padStart(2, "0")}
-            </span>
-          </motion.div>
-
-          {/* Content half */}
-          <div className="flex-1 flex items-center bg-transparent">
-            <div className="w-full px-10 xl:px-12 py-14 space-y-6">
-
-              <FadeIn>
-                <h3 className="text-[2.6rem] xl:text-5xl font-extrabold leading-[1.1] tracking-tight text-white">
-                  {study.client}
-                </h3>
-              </FadeIn>
-
-              <FadeIn delay={0.05}>
-                <p className="text-xl md:text-2xl text-primary font-medium leading-relaxed border-l-[3px] border-primary/40 pl-4">
-                  {study.tagline}
-                </p>
-              </FadeIn>
-
-              <FadeIn delay={0.1}>
-                <div className="space-y-5">
-                  {[
-                    { label: "The Challenge", text: study.challenge },
-                    { label: "What We Delivered", text: study.delivered },
-                    { label: "The Impact", text: study.impact },
-                  ].map(({ label, text }) => (
-                    <div key={label}>
-                      <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-primary mb-2">
-                        {label}
-                      </h4>
-                      <p className="text-[1.05rem] md:text-lg leading-relaxed text-white/80 line-clamp-3">
-                        {text}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </FadeIn>
-
-              <FadeIn delay={0.15}>
-                <ul className="space-y-2">
-                  {study.highlights.map((h, i) => (
-                    <li key={i} className="flex items-start gap-3 text-[1.05rem] md:text-lg text-white/85">
-                      <span className="mt-[9px] block h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                      {h}
-                    </li>
-                  ))}
-                </ul>
-              </FadeIn>
-
-              <FadeIn delay={0.2}>
-                <div className="flex flex-wrap gap-2">
-                  {study.stats.map((s, i) => (
-                    <span key={i} className="inline-flex items-center px-3.5 py-1.5 rounded-full text-sm font-semibold bg-primary/10 text-primary border border-primary/20">
-                      {s}
-                    </span>
-                  ))}
-                </div>
-              </FadeIn>
-
-              <FadeIn delay={0.25}>
-                <Link
-                  to={`/pages/case-study/${study.id}`}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary/50 text-primary font-semibold text-base hover:bg-primary/10 transition mr-3"
-                >
-                  Read Case Study <ArrowUpRight className="h-4 w-4" />
-                </Link>
-
-                <motion.a
-                  href={study.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold text-base hover:opacity-90 transition-opacity"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.97 }}
-                >
-                  View Project <ArrowUpRight className="h-4 w-4" />
-                </motion.a>
-              </FadeIn>
-
+              {/* Secondary, and quiet. Two equally loud buttons made the card
+                  ask twice and land neither. */}
+              <a
+                href={study.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-base font-medium text-white/60 underline-offset-4 transition-colors hover:text-primary hover:underline"
+              >
+                Visit the site <ArrowUpRight className="h-4 w-4" />
+              </a>
             </div>
           </div>
         </div>
-
       </motion.div>
     </article>
   );
