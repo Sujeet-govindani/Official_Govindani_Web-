@@ -334,8 +334,19 @@ const CITIES = [
 
 
 // ─── Sub-components ────────────────────────────────────────────────────────
-const LinkColumn: React.FC<{ title: string; links: { label: string; href: string }[] }> = ({ title, links }) => (
-  <div style={{ minWidth: 0 }}>
+/* noSnippet marks a column as boilerplate for search engines. Google was
+   quoting this footer's contact column - "support@govindaniit.org · India: 2nd
+   Floor, Landmark plaza ..." - as the description under five different
+   sitelinks, because a tidy repeated block of text is what its snippet picker
+   likes and nothing on the site said otherwise (data-nosnippet count was 0).
+   Every one of those pages already has a good, distinct meta description;
+   Google was simply preferring the address. This is the documented way to say
+   "boilerplate, do not quote". It hides nothing from users, changes no ranking
+   signal, and leaves the address readable, clickable and crawlable - the
+   office also sits in the Organization and LocalBusiness schema, which is
+   where Google should be reading it from. */
+const LinkColumn: React.FC<{ title: string; links: { label: string; href: string }[]; noSnippet?: boolean }> = ({ title, links, noSnippet }) => (
+  <div style={{ minWidth: 0 }} {...(noSnippet ? { 'data-nosnippet': true } : {})}>
     <p className="col-heading" style={{ marginBottom: "1.25rem" }}>{title}</p>
     <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: "0.6rem" }}>
       {links.map((l) => (
@@ -546,7 +557,7 @@ export default function PremiumFooter() {
                 <LinkColumn title="Careers" links={CAREERS} />
               </div>
               <div className="footer-col-contact">
-                <LinkColumn title="Contact" links={CONTACT} />
+                <LinkColumn title="Contact" links={CONTACT} noSnippet />
               </div>
               <div className="footer-col-company">
                 <LinkColumn title="Company" links={COMPANY} />

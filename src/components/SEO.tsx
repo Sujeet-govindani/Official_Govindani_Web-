@@ -68,7 +68,11 @@ const SEO = ({
       <meta property="og:type" content={ogType} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:url" content={resolved} />
-      <meta property="og:site_name" content="Govindani Infotech" />
+      {/* og:site_name deliberately lives in index.html, not here. It is one
+          value for the whole domain, and keeping it in this component meant
+          the 25 pages that use SEO.tsx had it while the HOME PAGE - the only
+          page where Google actually prints a site name - did not. Adding it
+          back here would emit it twice on those 25 pages. */}
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />

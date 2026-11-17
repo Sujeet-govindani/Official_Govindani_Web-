@@ -62,6 +62,13 @@
     <meta property="og:title" content="Govindani Infotech | Digital Excellence" />
     <meta property="og:description" content="Transform your business with cutting-edge web development, mobile apps, and innovative digital solutions." />
     <meta property="og:type" content="website" />
+    <!-- Site name is one value for the whole domain, never per page, so it
+         belongs in the shell. It was living in SEO.tsx, which 25 pages use and
+         the HOME PAGE does not - and the home page is the only page where
+         Google prints a site name at all, so the signal was missing exactly
+         where it counts. Must match WebSite.name in index.html and in
+         seo/schema.ts; Google cross-checks the three. -->
+    <meta property="og:site_name" content="Govindani Infotech Private Limited" />
     <meta property="og:image" content="https://gi-img-cdn.sujeet.workers.dev/Images/og-default.jpg" />
 
     <!-- Twitter -->
@@ -119,7 +126,8 @@
           "@type": "WebSite",
           "@id": "https://govindaniit.com/#website",
           "url": "https://govindaniit.com",
-          "name": "Govindani Infotech",
+          "name": "Govindani Infotech Private Limited",
+          "alternateName": "Govindani Infotech",
           "publisher": { "@id": "https://govindaniit.com/#organization" },
           "inLanguage": "en-IN"
         }

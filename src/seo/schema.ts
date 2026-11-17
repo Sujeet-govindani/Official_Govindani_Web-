@@ -50,7 +50,17 @@ export const websiteSchema = {
   "@type": "WebSite",
   "@id": "https://govindaniit.com/#website",
   "url": "https://govindaniit.com",
-  "name": "Govindani Infotech",
+  /* This is the bold label Google prints above the URL in search. It reads it
+     from WebSite.name, not from the title tag, which is why the SERP said
+     "Govindani Infotech" however the titles were written. The registered name
+     carries more weight with NGO boards and procurement.
+     alternateName is not decoration: Google's guidance is that a site name
+     should be short, so this hands it a sanctioned short form instead of
+     letting it invent one. Every other site-name signal - index.html's static
+     WebSite block and og:site_name - now says exactly the same thing; when
+     they disagree Google discards all of them and falls back to the title. */
+  "name": "Govindani Infotech Private Limited",
+  "alternateName": "Govindani Infotech",
   "publisher": { "@id": "https://govindaniit.com/#organization" },
   "inLanguage": "en-IN",
   "potentialAction": {
