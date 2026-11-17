@@ -103,3 +103,8 @@ GOVCRM_COMPLETE_HANDOFF.md
 .ig/
 .shots/
 .wall-thumbs/
+
+# ...but build tooling under scripts/ is tracked. wall-thumbs.py is what keeps
+# the homepage wall on 11 KB thumbnails instead of 4,688px-tall captures; an
+# untracked copy on one laptop is how that regresses.
+!scripts/*.py
