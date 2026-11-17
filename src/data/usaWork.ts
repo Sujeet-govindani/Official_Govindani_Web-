@@ -149,7 +149,7 @@ export const ECOM: Work[] = [
 
 export const HEALTH: Work[] = [
   {n:'Dentivaa (Femdent Care)',u:'https://dentivaa.com',i:'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioSites/dentivaa.jpg'},
-  {n:'OUR HEALTHCARE WEBSITE',u:'https://mahaveereyehospital.com/',i:'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Healthcare/Healthcare-mahaveer-eye-hospital.webp'},
+  {n:'OUR HEALTHCARE WEBSITE',u:'https://mahaveereyehospital.com/',i:'https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Healthcare/Healthcare-mahaveer-eye-hospital.webp?v=4'},
 ];
 
 export const BUSINESS: Work[] = [

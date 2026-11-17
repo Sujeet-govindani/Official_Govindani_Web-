@@ -522,7 +522,7 @@ const WebDevelopmentPage = () => {
     { title: "Dr. C.K. Reddy Group", category: "blog", url: "https://drckreddygroup.com/our-blogs/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/BusinessWebsites/Business-Website-Dr-C-K-Reddy-Group.webp" },
   ];
   const healthcareProjects = [
-    { title: "MAHAVEER EYE HOSPITAL", category: "healthcare", url: "https://mahaveereyehospital.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/hospital.webp" },
+    { title: "MAHAVEER EYE HOSPITAL", category: "healthcare", url: "https://mahaveereyehospital.com/", image: "https://gi-img-cdn.sujeet.workers.dev/Images/hospital.webp?v=4" },
   ];
 
   const features = [

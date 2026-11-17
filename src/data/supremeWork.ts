@@ -103,6 +103,19 @@ const SITES: Omit<SupremeSite, 'image'>[] = [
     url: 'https://tarushpranaa.com/',
     accent: '#b08b3a',
   },
+  {
+    id: 'mahaveer',
+    name: 'Mahaveer Eye Hospital',
+    sector: 'Healthcare · Super-speciality',
+    headline: 'A hospital site built the way a frightened patient searches.',
+    blurb:
+      'Thirteen specialities, cataract through paediatric eye care, each written as what happens and how we help rather than as a department list. Accreditation and cashless insurance sit where a patient looks for them, and the surgeon who will operate is on the page with his credentials.',
+    stats: [{ v: '13', k: 'Specialities' }, { v: 'Cashless', k: 'Insurance accepted' }, { v: 'NABH', k: 'Accredited' }],
+    tech: ['Treatment explainers', 'Appointment booking', 'Cashless insurance'],
+    url: 'https://mahaveereyehospital.com/',
+    caseStudy: '/pages/case-study/mahaveer-eye-hospital',
+    accent: '#1f7a6a',
+  },
 ];
 
 export const supremeWork: SupremeSite[] = SITES.map((s) => ({ ...s, image: `${IMG}/${s.id}.webp?v=1440` }));

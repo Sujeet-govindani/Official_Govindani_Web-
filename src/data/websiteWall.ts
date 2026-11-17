@@ -132,6 +132,6 @@ export const websiteWall: string[] = [
   'https://gi-img-cdn.sujeet.workers.dev/Images/wall/Shopify-Gllora.webp?v=3',
   'https://gi-img-cdn.sujeet.workers.dev/Images/wall/Ngo-Sarthak-Charitable-Trust.webp?v=3',
   'https://gi-img-cdn.sujeet.workers.dev/Images/wall/Ngo-Harit-Disha-Foundationngo.webp?v=3',
-  'https://gi-img-cdn.sujeet.workers.dev/Images/wall/Healthcare-mahaveer-eye-hospital.webp?v=3',
+  'https://gi-img-cdn.sujeet.workers.dev/Images/wall/Healthcare-mahaveer-eye-hospital.webp?v=4',
   'https://gi-img-cdn.sujeet.workers.dev/Images/wall/Ngo-Child-and-Baby-Care.webp?v=3',
 ];

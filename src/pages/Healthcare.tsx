@@ -257,7 +257,7 @@ const HealthcarePage = () => {
       title: "OUR HEALTHCARE WEBSITE",
       category: "healthcare",
       url: "https://mahaveereyehospital.com/",
-      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Healthcare/Healthcare-mahaveer-eye-hospital.webp",
+      image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Healthcare/Healthcare-mahaveer-eye-hospital.webp?v=4",
     },
   ];
 

@@ -259,7 +259,7 @@ export const caseStudies: CaseStudy[] = [
       "Credentials where doubt arises",
       "Testimony in context",
     ],
-    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Healthcare/Healthcare-mahaveer-eye-hospital.webp",
+    image: "https://gi-img-cdn.sujeet.workers.dev/Images/PortfolioProjects/PortFolioWebsites/Healthcare/Healthcare-mahaveer-eye-hospital.webp?v=4",
   },
 
   {
