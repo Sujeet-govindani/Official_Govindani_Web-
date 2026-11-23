@@ -859,6 +859,12 @@
   h1 {
     margin-top: 40px !important;
 }
+
+  /* The home page's WhatsApp section heading used to be an h1 and so picked up the rule above.
+     It is an h2 now (one h1 per page); this keeps its spacing on phones identical. */
+  .wa-engine-title {
+    margin-top: 40px !important;
+  }
 element.style {
     display: inline-block;
     font-family: Inter, sans-serif;

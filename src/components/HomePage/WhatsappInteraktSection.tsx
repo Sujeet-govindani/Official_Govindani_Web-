@@ -376,9 +376,12 @@ const PremiumSection = () => {
             </motion.div>
 
             <motion.div {...fadeUp(0.08)} style={{ textAlign: "center", marginBottom: 14 }}>
-              <h1 style={{ color: "#fff", fontSize: "clamp(1.65rem,6vw,2.4rem)", fontWeight: 900, letterSpacing: "-0.025em", lineHeight: 1.15, margin: "0 0 12px" }}>
+              {/* h2, not h1: this is a section of the home page, and the hero already carries the page's one h1.
+                  Every visual property is inline, and .wa-engine-title carries over the one global rule that
+                  applied to it as an h1 (40px top margin on phones), so it looks exactly as before. */}
+              <h2 className="wa-engine-title" style={{ color: "#fff", fontSize: "clamp(1.65rem,6vw,2.4rem)", fontWeight: 900, letterSpacing: "-0.025em", lineHeight: 1.15, margin: "0 0 12px" }}>
                 Scale <span style={{ color: "#25D366" }}>WhatsApp</span> Into a<br />Sales &amp; Automation Engine
-              </h1>
+              </h2>
               <p style={{ color: "rgba(201,220,210,0.6)", fontSize: "0.88rem", maxWidth: 320, margin: "0 auto", lineHeight: 1.65 }}>
                 We implement <strong style={{ color: "#e9edef" }}>Interakt</strong> for end-to-end WhatsApp automation from lead capture to payment collection.
               </p>
