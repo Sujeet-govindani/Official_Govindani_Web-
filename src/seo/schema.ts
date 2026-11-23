@@ -17,6 +17,12 @@ export const organizationSchema = {
     "postalCode": "411009",
     "addressCountry": "IN"
   },
+  "parentOrganization": {
+    "@type": "Organization",
+    "@id": "https://govindanigroup.com/#org",
+    "name": "Govindani Group",
+    "url": "https://govindanigroup.com/"
+  },
   "sameAs": [
     "https://www.linkedin.com/company/govindani-infotech",
     "https://www.instagram.com/govindani_infotech_pvt_ltd/",

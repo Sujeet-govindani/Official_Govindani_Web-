@@ -637,6 +637,13 @@ export default function PremiumFooter() {
                 © {year} Govindani Infotech Pvt. Ltd. All rights reserved.
               </a>
 
+              {/* Entity link to the holding-company site. order:3 keeps it last on mobile too,
+                  where the legal links and the copyright line are re-ordered by CSS. */}
+              <a href="https://govindanigroup.com/" className="font-inter"
+                style={{ order: 3, color: "rgba(245,234,212,0.7)", fontSize: "0.75rem", fontWeight: 300, margin: "-1.2rem 0 0", textDecoration: "none" }}>
+                A <span style={{ color: "var(--gold-light)" }}>Govindani Group</span> company
+              </a>
+
 
             </div>
           </div>
