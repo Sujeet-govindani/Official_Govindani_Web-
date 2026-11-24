@@ -580,7 +580,11 @@ export const ROUTE_META: Record<string, RouteMeta> = {
      these pages compete on the product's own name, not on ours — someone
      searching "CustomerBond" should see it in the first two words. */
   "/products": {
-    "title": "Our Products | CustomerBond, Trring, MsgSutra, Brandwheel & GiveSetu",
+    /* Under 62 characters: Seo.tsx cuts a longer title at 62 and drops the
+       partial word, which turned a five-brand list into "... Brandwheel &".
+       The brand names belong on the product pages, which are what should rank
+       for them; the hub ranks for the categories. */
+    "title": "Our Products | CRM, AI Calling, WhatsApp API & NGO Software",
     "description": "The software Govindani Infotech builds and runs: a sales CRM, AI calling, WhatsApp Business API, a social media workspace and an operating system for NGOs."
   },
   "/products/customerbond": {
