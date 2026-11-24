@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useHeaderSkin } from '@/hooks/useHeaderTint';
 import LangToggle from '../../i18n/LangToggle';
-import { PRICING_LIVE, usePreviewVisible } from '@/config/flags';
 import { Menu, X, ChevronRight, ChevronDown } from 'lucide-react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { GROUP_PRODUCTS } from '@/data/groupProducts';
@@ -306,7 +305,6 @@ const Header: React.FC = () => {
   const dropdownTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const [hoveredPricingItem, setHoveredPricingItem] = useState<string | null>(null);
-  const showPricing = usePreviewVisible(PRICING_LIVE);
   const skin = useHeaderSkin();
   const [websitesFlyoutRect, setWebsitesFlyoutRect] = useState<DOMRect | null>(null);
   const [showWebsitesFlyout, setShowWebsitesFlyout] = useState(false);
@@ -589,11 +587,11 @@ const Header: React.FC = () => {
   const LOGO_H = PILL_H - 12;
   const LOGO_W = Math.round(LOGO_H * 400 / 202);
   const dropdownTop = screen === 'tablet' ? '106px' : '116px';
-  // "Give Setu" replaces "Pricing". It is a plain link to the Give Setu page,
-  // not a dropdown and not the finder pop-up: the finder asked people to choose
-  // an industry and a platform before it would tell them anything, and we sell
-  // one product to non-profits. E-commerce, WordPress and social pricing are no
-  // longer offered from the menu at all.
+  // The solo "Give Setu" item is gone (24 Nov 2026, Sujeet): GiveSetu now sits
+  // under Products with the rest of the group's software, so a top-level tab of
+  // its own was the same destination advertised twice. /pricing/ngo-os itself is
+  // untouched and still reachable from the pricing lists, the "More" sheet on
+  // mobile and the sitemap — this removed the menu entry, not the page.
   // Landing pages carry no nav: they are bought traffic with one job, and every
   // menu item is a way to leave before the form is filled.
   const bare = ['/ngoindia'].includes((location.pathname.replace(/\/+$/, '') || '/').toLowerCase());
@@ -603,8 +601,7 @@ const Header: React.FC = () => {
   // is what we built for ourselves and now sell. It is also the only place on
   // this site that links to the sibling ventures at all — govindanigroup.com
   // links out to all seven and until now not one linked back.
-  const navItems = bare ? [] : ['Home', 'About Us', 'Services', 'Products', 'Portfolio', 'Whatsapp', 'Give Setu', 'Resources', 'Blog']
-    .filter((n) => n !== 'Give Setu' || showPricing);
+  const navItems = bare ? [] : ['Home', 'About Us', 'Services', 'Products', 'Portfolio', 'Whatsapp', 'Resources', 'Blog'];
   const dropdownItems = ['About Us', 'Services', 'Products', 'Portfolio', 'Whatsapp', 'Resources'];
 
   return (
@@ -653,7 +650,7 @@ const Header: React.FC = () => {
                   onMouseEnter={() => {
                     if (screen === 'desktop' || screen === 'tablet') {
                       clearDropdownTimer(); clearPricingDropdownTimer();
-                      setActiveDropdown(item === 'Give Setu' ? null : item);
+                      setActiveDropdown(item);
                       if (item !== 'Whatsapp') { setFlyoutChannel(null); setFlyoutRect(null); }
                       setShowWebsitesFlyout(false);
                     }
@@ -672,7 +669,7 @@ const Header: React.FC = () => {
                       }}
                       className="nav-link" style={{ color: skin.ink, fontSize: navFont, fontWeight: 500, opacity: skin.onLight ? 0.92 : 0.8, transition: '0.3s', whiteSpace: 'nowrap', padding: navPad, borderRadius: '50px', display: 'inline-block', cursor: 'pointer', background: activeDropdown === item ? skin.wash : 'transparent' }}>{item}</span>
                   ) : (
-                    <span onClick={() => { if (item === 'Home') navigate('/'); else if (item === 'Blog') navigate('/blog'); else if (item === 'Give Setu') { setActiveDropdown(null); setShowWebsitesFlyout(false); navigate('/pricing/ngo-os'); } }}
+                    <span onClick={() => { if (item === 'Home') navigate('/'); else if (item === 'Blog') navigate('/blog'); }}
                       className="nav-link" style={{ color: skin.ink, fontSize: navFont, fontWeight: 500, opacity: skin.onLight ? 0.92 : 0.8, transition: '0.3s', whiteSpace: 'nowrap', padding: navPad, borderRadius: '50px', display: 'inline-block', cursor: 'pointer', background: 'transparent' }}>{item}</span>
                   )}
 
@@ -1123,13 +1120,6 @@ const Header: React.FC = () => {
             )}
           </div>
 
-          {/* ── Give Setu — a solo button straight to the page ── */}
-          {showPricing && (
-            <div style={mobileAccRow(false)} onClick={() => { setMenuOpen(false); navigate('/pricing/ngo-os'); }}>
-              Give Setu
-            </div>
-          )}
-
           {/* ── Resources ── */}
           <div>
             <div style={mobileAccRow(mobileOpen === 'Resources')} onClick={() => toggleMobile('Resources')}>
@@ -1182,8 +1172,8 @@ const Header: React.FC = () => {
         .portfolio-scroll-hide::-webkit-scrollbar{display:none}
         .portfolio-scroll-hide{scrollbar-width:none;-ms-overflow-style:none}
       `}</style>
-          {/* The full-screen finder is no longer mounted. Nothing opens it now
-              that Give Setu is a direct link, and leaving it mounted kept a
+          {/* The full-screen finder is no longer mounted. Nothing opens it —
+              the menu item that used to is gone — and leaving it mounted kept a
               hidden dialog and its 42-function dataset on every page. */}
     </>
   );
