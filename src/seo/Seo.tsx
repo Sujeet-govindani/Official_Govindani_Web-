@@ -143,6 +143,36 @@ function stripContext(o: unknown) {
   return rest;
 }
 
+/**
+ * Turn whatever schemaFor returned into members of this page's @graph.
+ *
+ * Most branches return one node, but a few (/services and /services/*) return
+ * an object that already carries its own @graph. Wrapping one of those gave a
+ * @graph nested inside a @graph, whose outer member has no @type at all —
+ * Google discards a typeless node, so the Service and BreadcrumbList markup on
+ * every /services page was being emitted and then thrown away. Spreading the
+ * inner members instead puts them in the graph where they are read.
+ *
+ * null (a route with no section schema of its own) contributes nothing, rather
+ * than an empty typeless node.
+ */
+function flattenNode(node: unknown): Record<string, unknown>[] {
+  if (!node) return [];
+  const stripped = stripContext(node);
+  const inner = stripped['@graph'];
+  if (Array.isArray(inner)) {
+    /* Keep any sibling keys the wrapper carried (today: `url`) by folding them
+       onto the first member, so nothing the branch stated is dropped. */
+    const { ['@graph']: _g, ...rest } = stripped;
+    const members = inner.map((m) => stripContext(m));
+    if (members.length && Object.keys(rest).length) {
+      members[0] = { ...rest, ...members[0] };
+    }
+    return members;
+  }
+  return [stripped];
+}
+
 export default function Seo() {
   const { pathname } = useLocation();
 
@@ -249,10 +279,14 @@ export default function Seo() {
         /* schemaFor returns null for a route with no section schema of its
            own. Drop it rather than letting stripContext turn null into an
            empty, typeless node sitting in the graph. */
-        '@graph': [
-          ...(pageNode ? [stripContext(pageNode)] : []),
-          breadcrumb(clean, fitted),
-        ],
+        /* A branch that supplies its own BreadcrumbList (/services does) keeps
+           it; only routes without one get the generic trail. Appending
+           unconditionally put two BreadcrumbList nodes in the same graph. */
+        '@graph': (() => {
+          const members = flattenNode(pageNode);
+          const hasCrumbs = members.some((m) => m['@type'] === 'BreadcrumbList');
+          return hasCrumbs ? members : [...members, breadcrumb(clean, fitted)];
+        })(),
       });
     } else {
       // Homepage: Organization + WebSite + LocalBusiness, no breadcrumb needed.

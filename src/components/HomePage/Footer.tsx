@@ -326,6 +326,23 @@ const COMPANY = [
   { label: "Case Studies", href: "/pages/case-study" },
 ];
 
+/* The group's own software. These live in the footer, not only in the header
+   menu, because the header's Products dropdown is built in React state and a
+   crawler that does not run the hover still has to find these six pages — and
+   because govindanigroup.com links out to every venture while nothing here
+   linked back, which is what stopped the two sites being read as one company.
+   Rendered inside the existing Company cell: the footer grid's column count is
+   set inline and at two breakpoints, and a sixth column would have to be
+   threaded through all three. */
+const PRODUCTS = [
+  { label: "CustomerBond", href: "/products/customerbond" },
+  { label: "Trring", href: "/products/trring" },
+  { label: "MsgSutra", href: "/products/msgsutra" },
+  { label: "Brandwheel", href: "/products/brandwheel" },
+  { label: "GiveSetu", href: "/products/givesetu" },
+  { label: "Productions", href: "/products/productions" },
+];
+
 const CITIES = [
   "Pune", "Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai", "Kolkata",
   "Ahmedabad", "Surat", "Jaipur", "Lucknow", "Kochi", "Chandigarh", "Nagpur",
@@ -559,8 +576,9 @@ export default function PremiumFooter() {
               <div className="footer-col-contact">
                 <LinkColumn title="Contact" links={CONTACT} noSnippet />
               </div>
-              <div className="footer-col-company">
+              <div className="footer-col-company" style={{ display: "flex", flexDirection: "column", gap: "2rem", minWidth: 0 }}>
                 <LinkColumn title="Company" links={COMPANY} />
+                <LinkColumn title="Products" links={PRODUCTS} />
               </div>
             </div>
           </div>

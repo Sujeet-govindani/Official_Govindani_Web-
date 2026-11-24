@@ -4,6 +4,7 @@ import LangToggle from '../../i18n/LangToggle';
 import { PRICING_LIVE, usePreviewVisible } from '@/config/flags';
 import { Menu, X, ChevronRight, ChevronDown } from 'lucide-react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { GROUP_PRODUCTS } from '@/data/groupProducts';
 
 const colors = {
   midnightBlue: '#0B1929',
@@ -292,6 +293,7 @@ const Header: React.FC = () => {
   const [hoveredPortfolioFilter, setHoveredPortfolioFilter] = useState<string | null>(null);
   const [hoveredPortfolio, setHoveredPortfolio] = useState<string | null>(null);
   const [hoveredAbout, setHoveredAbout] = useState<string | null>(null);
+  const [hoveredProduct, setHoveredProduct] = useState<string | null>(null);
   const [hoveredResource, setHoveredResource] = useState<string | null>(null);
 
   const [waSection, setWaSection] = useState<'By Channels' | 'By Industry'>('By Channels');
@@ -574,6 +576,16 @@ const Header: React.FC = () => {
   // Header pill + logo: one rule everywhere. Logo keeps its 400:202 ratio and
   // always sits with the same 6px breathing room inside the pill.
   const PILL_H = screen === 'mobile' ? 60 : 80;
+
+  /* Nav links are tighter on tablet than on desktop.
+     The pill is a 'auto 1fr auto' grid — logo, links, actions — and the link
+     row does not shrink, so once it is wider than its track the actions column
+     is pushed clean out of the pill's right edge. Measured at 1060px wide:
+     "Contact Us" ended 97px outside the pill BEFORE a ninth item was added, and
+     200px outside with it. Shrinking the row on tablet is what makes nine items
+     fit; desktop keeps the original 0.85rem / 0.8rem spacing exactly. */
+  const navFont = screen === 'tablet' ? '0.78rem' : '0.85rem';
+  const navPad = screen === 'tablet' ? '0.5rem 0.42rem' : '0.5rem 0.8rem';
   const LOGO_H = PILL_H - 12;
   const LOGO_W = Math.round(LOGO_H * 400 / 202);
   const dropdownTop = screen === 'tablet' ? '106px' : '116px';
@@ -585,9 +597,15 @@ const Header: React.FC = () => {
   // Landing pages carry no nav: they are bought traffic with one job, and every
   // menu item is a way to leave before the form is filled.
   const bare = ['/ngoindia'].includes((location.pathname.replace(/\/+$/, '') || '/').toLowerCase());
-  const navItems = bare ? [] : ['Home', 'About Us', 'Services', 'Portfolio', 'Whatsapp', 'Give Setu', 'Resources', 'Blog']
+  // "Products" is the group's own software — CustomerBond, Trring, MsgSutra,
+  // Brandwheel, GiveSetu and Productions. It sits next to Services because that
+  // is the honest distinction: Services is what we build for a client, Products
+  // is what we built for ourselves and now sell. It is also the only place on
+  // this site that links to the sibling ventures at all — govindanigroup.com
+  // links out to all seven and until now not one linked back.
+  const navItems = bare ? [] : ['Home', 'About Us', 'Services', 'Products', 'Portfolio', 'Whatsapp', 'Give Setu', 'Resources', 'Blog']
     .filter((n) => n !== 'Give Setu' || showPricing);
-  const dropdownItems = ['About Us', 'Services', 'Portfolio', 'Whatsapp', 'Resources'];
+  const dropdownItems = ['About Us', 'Services', 'Products', 'Portfolio', 'Whatsapp', 'Resources'];
 
   return (
     <>
@@ -629,7 +647,7 @@ const Header: React.FC = () => {
 
           {/* ─── DESKTOP / TABLET NAV ─── */}
           {screen !== 'mobile' && (
-            <div style={{ display: 'flex', justifyContent: 'center', gap: screen === 'tablet' ? '0.9rem' : '1.3rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: screen === 'tablet' ? '0.32rem' : '1.3rem' }}>
               {navItems.map(item => (
                 <div key={item} className="nav-item" ref={item === 'Resources' ? resourcesNavRef : undefined} style={{ position: 'relative' }}
                   onMouseEnter={() => {
@@ -652,10 +670,10 @@ const Header: React.FC = () => {
                         setFlyoutChannel(null); setFlyoutRect(null); setShowWebsitesFlyout(false);
                         setActiveDropdown(activeDropdown === item ? null : item);
                       }}
-                      className="nav-link" style={{ color: skin.ink, fontSize: '0.85rem', fontWeight: 500, opacity: skin.onLight ? 0.92 : 0.8, transition: '0.3s', whiteSpace: 'nowrap', padding: '0.5rem 0.8rem', borderRadius: '50px', display: 'inline-block', cursor: 'pointer', background: activeDropdown === item ? skin.wash : 'transparent' }}>{item}</span>
+                      className="nav-link" style={{ color: skin.ink, fontSize: navFont, fontWeight: 500, opacity: skin.onLight ? 0.92 : 0.8, transition: '0.3s', whiteSpace: 'nowrap', padding: navPad, borderRadius: '50px', display: 'inline-block', cursor: 'pointer', background: activeDropdown === item ? skin.wash : 'transparent' }}>{item}</span>
                   ) : (
                     <span onClick={() => { if (item === 'Home') navigate('/'); else if (item === 'Blog') navigate('/blog'); else if (item === 'Give Setu') { setActiveDropdown(null); setShowWebsitesFlyout(false); navigate('/pricing/ngo-os'); } }}
-                      className="nav-link" style={{ color: skin.ink, fontSize: '0.85rem', fontWeight: 500, opacity: skin.onLight ? 0.92 : 0.8, transition: '0.3s', whiteSpace: 'nowrap', padding: '0.5rem 0.8rem', borderRadius: '50px', display: 'inline-block', cursor: 'pointer', background: 'transparent' }}>{item}</span>
+                      className="nav-link" style={{ color: skin.ink, fontSize: navFont, fontWeight: 500, opacity: skin.onLight ? 0.92 : 0.8, transition: '0.3s', whiteSpace: 'nowrap', padding: navPad, borderRadius: '50px', display: 'inline-block', cursor: 'pointer', background: 'transparent' }}>{item}</span>
                   )}
 
                   {item === 'About Us' && activeDropdown === 'About Us' && (
@@ -734,6 +752,51 @@ const Header: React.FC = () => {
                           <div style={{ fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(212,175,55,0.6)', fontWeight: 600, marginBottom: '0.5rem' }}>Social Media Pages click to visit</div>
                         )}
                         {renderServicesGrid(false)}
+                      </div>
+                    </div>
+                  )}
+
+                  {item === 'Products' && activeDropdown === 'Products' && (
+                    <div className="dropdown-container" onMouseLeave={() => { setActiveDropdown(null); setHoveredProduct(null); }}
+                      style={{ position: 'absolute', top: 'calc(100% + 10px)', left: '50%', transform: 'translateX(-50%)', background: 'rgba(11,25,41,0.92)', backdropFilter: 'blur(10px)', borderRadius: '24px', padding: '1.4rem', border: '1px solid rgba(255,255,255,0.1)', boxShadow: '0 20px 60px rgba(212,175,55,0.3)', width: '740px', maxWidth: '94vw', animation: 'slideDownLocal 0.3s ease-out', zIndex: 9999, overflow: 'visible' }}>
+                      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: '1rem', marginBottom: '1rem' }}>
+                        <div style={{ fontSize: '0.7rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(212,175,55,0.75)', fontWeight: 700 }}>Our own software</div>
+                        <Link to="/products" onClick={() => setActiveDropdown(null)}
+                          style={{ fontSize: '0.74rem', color: 'rgba(255,255,255,0.55)', textDecoration: 'none', whiteSpace: 'nowrap' }}>All products →</Link>
+                      </div>
+                      {/* Two columns of six: each card is the product, its category
+                          and one line of what it does, so hovering the menu is
+                          already an answer and not just a list of names. */}
+                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '0.6rem' }}>
+                        {GROUP_PRODUCTS.map(pr => {
+                          const on = hoveredProduct === pr.slug;
+                          return (
+                            <Link key={pr.slug} to={`/products/${pr.slug}`} onClick={() => { setActiveDropdown(null); setHoveredProduct(null); }}
+                              onMouseEnter={() => setHoveredProduct(pr.slug)} onMouseLeave={() => setHoveredProduct(null)}
+                              style={{
+                                display: 'flex', gap: '0.75rem', alignItems: 'flex-start', padding: '0.85rem 0.95rem',
+                                borderRadius: '16px', textDecoration: 'none', color: '#fff', minWidth: 0,
+                                background: on ? `color-mix(in srgb, ${pr.accent} 12%, transparent)` : 'rgba(255,255,255,0.03)',
+                                border: `1px solid ${on ? `color-mix(in srgb, ${pr.accent} 42%, transparent)` : 'rgba(255,255,255,0.08)'}`,
+                                transform: on ? 'translateY(-3px)' : 'none',
+                                transition: 'all 0.35s cubic-bezier(0.4,0,0.2,1)',
+                              }}>
+                              <img src={pr.mark} alt="" width={30} height={30} loading="lazy" decoding="async"
+                                style={{ width: '30px', height: '30px', objectFit: 'contain', flexShrink: 0, marginTop: '2px' }} />
+                              <span style={{ minWidth: 0 }}>
+                                <span style={{ display: 'flex', alignItems: 'baseline', gap: '0.4rem', minWidth: 0 }}>
+                                  <b style={{ fontSize: '0.86rem', fontWeight: 700, color: on ? pr.accent : '#fff', transition: 'color 0.3s', whiteSpace: 'nowrap' }}>{pr.name}</b>
+                                  <span style={{ fontSize: '0.64rem', color: 'rgba(255,255,255,0.4)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{pr.kicker}</span>
+                                </span>
+                                <span style={{ display: 'block', marginTop: '0.25rem', fontSize: '0.73rem', lineHeight: 1.45, color: 'rgba(255,255,255,0.58)' }}>{pr.menuLine}</span>
+                              </span>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                      <div style={{ marginTop: '0.9rem', paddingTop: '0.9rem', borderTop: '1px solid rgba(255,255,255,0.08)', fontSize: '0.72rem', color: 'rgba(255,255,255,0.42)' }}>
+                        All six are built and run by Govindani Infotech, part of the{' '}
+                        <a href="https://govindanigroup.com/" target="_blank" rel="noopener" style={{ color: 'rgba(212,175,55,0.9)', textDecoration: 'none' }}>Govindani Group</a>.
                       </div>
                     </div>
                   )}
@@ -934,6 +997,31 @@ const Header: React.FC = () => {
                   ))}
                 </div>
                 {renderServicesGrid(true)}
+              </div>
+            )}
+          </div>
+
+          {/* ── Products ── */}
+          <div>
+            <div style={mobileAccRow(mobileOpen === 'Products')} onClick={() => toggleMobile('Products')}>
+              Products
+              <ChevronRight size={18} style={{ transform: mobileOpen === 'Products' ? 'rotate(90deg)' : 'none', transition: '0.25s', pointerEvents: 'none', flexShrink: 0 }} />
+            </div>
+            {mobileOpen === 'Products' && (
+              <div style={{ marginTop: '0.35rem', display: 'grid', gap: '0.4rem' }}>
+                {GROUP_PRODUCTS.map(pr => (
+                  <Link key={pr.slug} to={`/products/${pr.slug}`} onClick={() => { setMenuOpen(false); setMobileOpen(null); }}
+                    style={{ display: 'flex', gap: '0.65rem', alignItems: 'center', padding: '0.7rem 0.8rem', borderRadius: '13px', textDecoration: 'none', color: '#fff', minWidth: 0, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)' }}>
+                    <img src={pr.mark} alt="" width={26} height={26} loading="lazy" decoding="async"
+                      style={{ width: '26px', height: '26px', objectFit: 'contain', flexShrink: 0 }} />
+                    <span style={{ minWidth: 0 }}>
+                      <span style={{ display: 'block', fontSize: '0.8rem', fontWeight: 700, color: pr.accent, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{pr.name}</span>
+                      <span style={{ display: 'block', fontSize: '0.66rem', lineHeight: 1.35, color: 'rgba(255,255,255,0.5)' }}>{pr.menuLine}</span>
+                    </span>
+                  </Link>
+                ))}
+                <Link to="/products" onClick={() => { setMenuOpen(false); setMobileOpen(null); }}
+                  style={{ padding: '0.6rem 0.8rem', fontSize: '0.75rem', color: 'rgba(212,175,55,0.9)', textDecoration: 'none' }}>All products →</Link>
               </div>
             )}
           </div>

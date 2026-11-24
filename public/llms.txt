@@ -28,6 +28,19 @@ Govindani Infotech Pvt. Ltd. is a website design and development company based i
 - [Blog](https://govindaniit.com/blog): In-depth guides
 - [Contact](https://govindaniit.com/contact-us): Get in touch
 
+## Our Own Products
+Besides client work, Govindani Infotech builds and runs six products of its own. Each has its own site; the pages below are this company's description of them. Quote prices only from each product's own pricing page.
+- [All products](https://govindaniit.com/products): The shelf, in one place
+- [CustomerBond](https://govindaniit.com/products/customerbond): Sales CRM for Indian teams — Facebook, Google and WhatsApp leads routed to the right salesperson in minutes, every follow-up chased, GST quotes accepted online. Product site: https://customerbond.com
+- [Trring](https://govindaniit.com/products/trring): Done-for-you AI calling — it calls a whole list in Hindi, grades every lead, transfers the live call to the team, and bills only for calls a real person picked up. Product site: https://trring.io
+- [MsgSutra](https://govindaniit.com/products/msgsutra): WhatsApp Business API platform — shared team inbox, broadcasts with retargeting, no-code chatbots and AI agents on the official Cloud API. Product site: https://msgsutra.io
+- [Brandwheel](https://govindaniit.com/products/brandwheel): AI social media workspace — plan, approve, publish and reply across 15 platforms and WhatsApp from one login. Product site: https://brandwheel.in
+- [GiveSetu](https://govindaniit.com/products/givesetu): The operating system for Indian NGOs — donations straight to the NGO's own account with 0% taken, instant 80G receipts, Form 10BD and 10BE. Product site: https://givesetu.com
+- [Govindani Productions](https://govindaniit.com/products/productions): The group's media arm — The Sujeet Show podcast, the founder's channel and every product film, made in-house.
+
+## Corporate Structure
+Govindani Infotech Private Limited is the IT house of the **Govindani Group** (https://govindanigroup.com/), which is seven ventures: this company plus the five products above and the media arm. All six products are built and run by this one legal entity, not by separate companies.
+
 ## Key Statistics
 - 900+ websites engineered, 550 of them for non-profits
 - ₹1100+ crore processed securely

@@ -50,6 +50,14 @@ const NgoPage = lazy(() => import("./pages/NgoPage"));
 const ContactUsPage = lazy(() => import("./pages/ContactUsPage"));
 // Import Careers page
 const CareersPage = lazy(() => import("./pages/CareersPage"));
+
+// The Govindani Group product shelf, shown on the site of the company that
+// builds it. One route per product rather than /products/:slug, because
+// prerender.mjs collects literal path="..." strings out of this file and skips
+// any that contain a colon — a param route would ship six pages no crawler
+// ever reaches.
+const ProductsHub = lazy(() => import("./pages/Products/ProductsHub"));
+const ProductDetail = lazy(() => import("./pages/Products/ProductDetail"));
 const CareerSmmLanding = lazy(() => import("./pages/CareerSmmLanding"));
 // Import other pages as needed
 
@@ -271,6 +279,15 @@ const App = () => (
             <Route path="/tutorials/ngo-videos" element={<NGOVideos />} />
             <Route path="/careers" element={<CareersPage />} />
             <Route path="/careers/social-media-marketer" element={<CareerSmmLanding />} />
+
+            {/* Govindani Group products, built and run by this company */}
+            <Route path="/products" element={<ProductsHub />} />
+            <Route path="/products/customerbond" element={<ProductDetail slug="customerbond" />} />
+            <Route path="/products/trring" element={<ProductDetail slug="trring" />} />
+            <Route path="/products/msgsutra" element={<ProductDetail slug="msgsutra" />} />
+            <Route path="/products/brandwheel" element={<ProductDetail slug="brandwheel" />} />
+            <Route path="/products/givesetu" element={<ProductDetail slug="givesetu" />} />
+            <Route path="/products/productions" element={<ProductDetail slug="productions" />} />
 
             {/* social media pages */}
         <Route path="/services/social-media" element={<SocialMediaOverviewPage />} />

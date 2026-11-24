@@ -575,6 +575,38 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     "description": "At 22 he shattered conventions. Today he ignites founders, fuels CEOs, and leads millions toward growth, impact and real transformation.",
     "image": "https://gi-img-cdn.sujeet.workers.dev/Images/og-about.jpg"
   },
+
+  /* The Govindani Group product shelf. Titles name the product first, because
+     these pages compete on the product's own name, not on ours — someone
+     searching "CustomerBond" should see it in the first two words. */
+  "/products": {
+    "title": "Our Products | CustomerBond, Trring, MsgSutra, Brandwheel & GiveSetu",
+    "description": "The software Govindani Infotech builds and runs: a sales CRM, AI calling, WhatsApp Business API, a social media workspace and an operating system for NGOs."
+  },
+  "/products/customerbond": {
+    "title": "CustomerBond — Sales CRM by Govindani Infotech",
+    "description": "CustomerBond routes Facebook, Google and WhatsApp leads to the right salesperson in minutes, chases every follow-up and gets GST quotes accepted online."
+  },
+  "/products/trring": {
+    "title": "Trring — AI Calling Platform by Govindani Infotech",
+    "description": "Trring calls your whole list in Hindi, grades every lead, transfers the live call to your team, and bills only the seconds a real person was talking."
+  },
+  "/products/msgsutra": {
+    "title": "MsgSutra — WhatsApp Business API by Govindani Infotech",
+    "description": "MsgSutra puts your whole team on one WhatsApp number: a shared inbox, broadcasts with retargeting, no-code chatbots and AI agents on the official Cloud API."
+  },
+  "/products/brandwheel": {
+    "title": "Brandwheel — AI Social Media Workspace by Govindani Infotech",
+    "description": "Brandwheel plans, approves, publishes and replies across 15 platforms and WhatsApp from one login, with client approval by magic link."
+  },
+  "/products/givesetu": {
+    "title": "GiveSetu — The Operating System for Indian NGOs",
+    "description": "GiveSetu settles donations into the NGO's own account with 0% taken, issues 80G receipts instantly, and handles Form 10BD, donors and the website from one login."
+  },
+  "/products/productions": {
+    "title": "Govindani Productions — Podcast, Channel & Product Films",
+    "description": "The media arm of the group: The Sujeet Show, 79 Hindi episodes, a 100,000+ subscriber channel and every product film made in-house."
+  },
 };
 
 export const DEFAULT_META: RouteMeta = {

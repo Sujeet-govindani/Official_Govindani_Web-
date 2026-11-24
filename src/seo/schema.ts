@@ -193,6 +193,52 @@ export function createBlogSchema(post: {
 }
 
 /** Per-route structured data. Called by Seo.tsx on every navigation. */
+/**
+ * The products' identity for structured data. Kept here rather than imported
+ * from src/data/groupProducts.ts on purpose: prerender.mjs evaluates this
+ * module to bake schema into the static HTML, and schema.ts deliberately has no
+ * component imports. Names and sites must match that file — when a product is
+ * added there, add it here too.
+ */
+const PRODUCT_SCHEMA: Record<string, { name: string; description: string; category: string; site: string }> = {
+  customerbond: {
+    name: 'CustomerBond',
+    description: "Sales CRM for Indian teams: Facebook, Google and WhatsApp leads routed to the right salesperson in minutes, every follow-up chased, GST quotes accepted online, and AI calling built in.",
+    category: 'BusinessApplication',
+    site: 'https://customerbond.com',
+  },
+  trring: {
+    name: 'Trring',
+    description: "Done-for-you AI calling platform for Indian businesses: it calls a whole list in Hindi, grades every lead, transfers the live call to the team, and bills only for calls a real person picked up.",
+    category: 'BusinessApplication',
+    site: 'https://trring.io',
+  },
+  msgsutra: {
+    name: 'MsgSutra',
+    description: "WhatsApp Business API platform for Indian businesses: a shared team inbox, broadcasts with retargeting, a no-code chatbot builder and AI agents trained on the business, on the official Cloud API.",
+    category: 'BusinessApplication',
+    site: 'https://msgsutra.io',
+  },
+  brandwheel: {
+    name: 'Brandwheel',
+    description: 'AI social media workspace for Indian brands and agencies: plan, approve, publish, reply and grow on 15 platforms and WhatsApp from one login.',
+    category: 'BusinessApplication',
+    site: 'https://brandwheel.in',
+  },
+  givesetu: {
+    name: 'GiveSetu',
+    description: "The operating system for Indian NGOs: donations straight to the NGO's own account with 0% taken, instant 80G receipts, Form 10BD and 10BE, donor CRM and WhatsApp on the NGO's own number.",
+    category: 'BusinessApplication',
+    site: 'https://givesetu.com',
+  },
+  productions: {
+    name: 'Govindani Productions',
+    description: "The media arm of the Govindani Group: The Sujeet Show podcast, the founder's YouTube channel and every product film, made in-house.",
+    category: 'MultimediaApplication',
+    site: 'https://govindanigroup.com/ventures/productions',
+  },
+};
+
 export function schemaFor(pathname: string) {
   const base = {
     "@context": "https://schema.org",
@@ -269,6 +315,65 @@ export function schemaFor(pathname: string) {
         }),
         createBreadcrumbSchema(crumbs),
       ],
+    };
+  }
+
+  // The Govindani Group product shelf.
+  //
+  // Each product page emits SoftwareApplication, not Service: these are named
+  // products with their own domains, and `sameAs` pointing at that domain is
+  // what lets Google tie this page to the product's own site and to the group's
+  // subOrganization node on govindanigroup.com. Without it the two sites look
+  // like unrelated pages that happen to share a word.
+  //
+  // Returned as ONE node, never a @graph — Seo.tsx nests whatever comes back
+  // inside the page's own @graph beside a breadcrumb, and a @graph inside a
+  // @graph yields a typeless node Google throws away.
+  if (pathname === '/products' || pathname.startsWith('/products/')) {
+    const slug = pathname.replace('/products/', '').replace(/\/+$/, '');
+    const p = pathname === '/products' ? undefined : PRODUCT_SCHEMA[slug];
+
+    if (!p) {
+      return {
+        ...base,
+        "@type": "CollectionPage",
+        "name": "Products by Govindani Infotech",
+        "description":
+          "The software Govindani Infotech builds and runs: CustomerBond (sales CRM), Trring (AI calling), MsgSutra (WhatsApp Business API), Brandwheel (social media) and GiveSetu (the operating system for NGOs).",
+        "isPartOf": { "@id": "https://govindaniit.com/#website" },
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": Object.entries(PRODUCT_SCHEMA).map(([s, v], i) => ({
+            "@type": "ListItem",
+            "position": i + 1,
+            "name": v.name,
+            "url": "https://govindaniit.com/products/" + s,
+          })),
+        },
+      };
+    }
+
+    return {
+      ...base,
+      "@type": "SoftwareApplication",
+      "name": p.name,
+      "description": p.description,
+      "applicationCategory": p.category,
+      "operatingSystem": "Web",
+      "url": "https://govindaniit.com" + pathname,
+      // The product's own site. This is the association that matters.
+      "sameAs": [p.site],
+      "publisher": { "@id": "https://govindaniit.com/#organization" },
+      "brand": {
+        "@type": "Organization",
+        "name": "Govindani Infotech Private Limited",
+        "url": "https://govindaniit.com",
+      },
+      "isPartOf": {
+        "@type": "Organization",
+        "name": "Govindani Group",
+        "url": "https://govindanigroup.com/",
+      },
     };
   }
 
