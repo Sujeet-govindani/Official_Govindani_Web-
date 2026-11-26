@@ -28,6 +28,7 @@ export function isPublished(date: string, now = new Date()): boolean {
 }
 
 const ALL: BlogPost[] = [
+  { id: "aadev-health-serve-foundation-case-study", title: "NGO website development case study in India – Aadev Health Serve Foundation", excerpt: "![Aadev Health Serve Foundation — website built by Govindani…", category: "Case Study", tags: ["NGO website development case study in India", "Aadev Health Serve Foundation", "NGO / Nonprofit"], readTime: 6, date: "2026-11-27" },
   { id: "janki-builders-case-study", title: "Real Estate Website Development Case Study in India – Janki Builders", excerpt: "![Janki Builders — website built by Govindani…", category: "Case Study", tags: ["real estate website development case study in India", "Janki Builders", "Real Estate", "Premium Positioning"], readTime: 5, date: "2026-11-26" },
   { id: "gsd-organics-case-study", title: "Ecommerce Website Development Case Study in India – GSD Organics", excerpt: "![GSD Organics — website built by Govindani…", category: "Case Study", tags: ["ecommerce website development case study in India", "GSD Organics", "E-Commerce", "Agriculture"], readTime: 5, date: "2026-11-24" },
   { id: "nanhi-pari-foundation-case-study", title: "NGO website development case study in India – Nanhi Pari Foundation", excerpt: "![Nanhi Pari Foundation — website built by Govindani…", category: "Case Study", tags: ["NGO website development case study in India", "Nanhi Pari Foundation", "Child Welfare", "Nonprofit", "Transparency"], readTime: 5, date: "2026-11-23" },
