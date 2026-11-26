@@ -761,14 +761,14 @@ const NgoPortfolio = () => {
            plus a former inline paddingTop of 0, kept this hero flush to the top
            and hid the title behind the fixed header - hence the double class
            and !important, which beat both.
-           The figures were guessed high and left a hole. Measured on this page:
-           the floating header's bottom edge sits at y=80, while the title was
-           starting at y=208 - 128px of empty black. 110px still left a 78px
-           hole, so these clear the header's y=80 bottom edge by roughly 45px,
-           which reads as breathing room rather than a gap. */
-        .ngo-hero-section.ngo-hero-section { padding-top: 78px !important; }
-        @media (max-width: 900px) { .ngo-hero-section.ngo-hero-section { padding-top: 86px !important; } }
-        @media (max-width: 600px) { .ngo-hero-section.ngo-hero-section { padding-top: 94px !important; } }
+           The hand-tuned 78/86/94px that replaced them were measured against a
+           pill whose bottom edge sits at y=80 - true only below 1040px. From
+           1040px up the pill is 80px tall under a 20px offset, so it ends at
+           y=100 and 78px of padding put the title's cap-height behind it.
+           --header-offset (index.css) is the site-wide token: pill bottom plus
+           breathing room, with its own 1039px breakpoint, so it tracks the pill
+           at every width and cannot drift out of sync again. */
+        .ngo-hero-section.ngo-hero-section { padding-top: var(--header-offset) !important; }
         .ngo-hero-section::before {
           content:'';
           position: absolute; inset: 0;
