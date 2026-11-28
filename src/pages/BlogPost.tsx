@@ -12,6 +12,24 @@ marked.setOptions({
   breaks: true,
 });
 
+
+// Off-core courier/blue-dart posts: high impressions, ~zero clicks, no relevance to a
+// web-dev agency. noindex (follow) removes them from search, keeps link equity, and
+// lifts site-wide CTR + topical focus. Kept delhivery-vs-blue-dart-d2c (ecommerce angle).
+const BLOG_NOINDEX = new Set([
+  'blue-dart-meaning-2026',
+  'bluedart-brands-500-g-surface-2026',
+  'delhivery-vs-bluedart-2026',
+  'blue-dart-surface-2026',
+  'bluedart-2026',
+  'blue-dart-means-2026',
+  'blue-dart-or-delhivery-which-is-better-2026',
+  'bluedart-premium-surface-2026',
+  'delhivery-and-bluedart-same-2026',
+  'blue-dart-vs-delhivery-2026',
+  'blue-dart-and-delhivery-are-same-2026',
+]);
+
 export default function BlogPost() {
   const { id } = useParams();
   const blog = blogs.find(b => b.id === id);
@@ -100,6 +118,7 @@ export default function BlogPost() {
         // FAQPage for JS-rendering crawlers, so this Helmet copy carries only the
         // article + breadcrumb.
         schema={[blogSchema, breadcrumbSchema]}
+        noindex={BLOG_NOINDEX.has(blog.id)}
       />
 
       <div className="min-h-screen bg-[#060b13] text-white" style={{ paddingTop: "clamp(100px, 8vw, 120px)", paddingBottom: "clamp(48px, 5vw, 80px)" }}>
