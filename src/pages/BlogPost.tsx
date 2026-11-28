@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { marked } from 'marked';
 import SEO from '@/components/SEO';
+import BlogLeadForm from '@/components/BlogLeadForm';
 import { BLOG_META } from '@/seo/blogMeta';
 import { blogs } from '@/data/blogIndex';
 import { createBlogSchema, createBreadcrumbSchema } from '@/seo/schema';
@@ -184,6 +185,7 @@ export default function BlogPost() {
               Govindani Infotech helps Indian businesses and NGOs build websites, run ads, and grow online. 
               Contact us for a free consultation.
             </p>
+            <BlogLeadForm slug={blog.id} title={blog.title} />
             <div className="flex flex-wrap justify-center gap-4">
               <Link to={consultHref} className="px-8 py-3 bg-yellow-500 text-black rounded-full font-bold hover:bg-yellow-400 transition">
                 Get Free Consultation
